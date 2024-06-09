@@ -26,9 +26,12 @@
 class Game {
 
 public:
-
+	void play();
+    void war();
 private:
-
+	void shuffle();
+	void distributeCards(); 
+    void burnCards();  
 };
 
 #endif // GAME_H
