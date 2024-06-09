@@ -1,7 +1,7 @@
 #include <iostream>
 
-#include "Game.h"
-#include "UserInterface.h"
+#include "game.h"
+#include "userinterface.h"
 
 using namespace std;
 

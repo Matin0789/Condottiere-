@@ -1,5 +1,5 @@
 #include <stdlib.h>
 #include <iostream>
 
-#include "UserInterface.h"
-#include "Game.h"
+#include "userinterface.h"
+#include "game.h"
