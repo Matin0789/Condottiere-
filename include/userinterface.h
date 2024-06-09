@@ -6,6 +6,9 @@ class UserInterface {
 
  public:
 
+  int getNumber() {} 
+
+  void setMarker() {}
 };
 
 #endif // USERINTERFACE
