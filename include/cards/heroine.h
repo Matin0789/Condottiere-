@@ -1,7 +1,7 @@
 #ifndef HEROINE_H
 #define HEROINE_H
 
-#include "PurpleCard.h"
+#include "purplecard.h"
 
 class Heroine : public PurpleCard {
 public:

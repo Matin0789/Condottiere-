@@ -1,7 +1,7 @@
 #ifndef BATTLEMARKER_H
 #define BATTLEMARKER_H
 
-#include "Marker.h"
+#include "marker.h"
 
 class BattleMarker : public Marker {
 private:

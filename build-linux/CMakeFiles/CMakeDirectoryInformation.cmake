@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/home/matin/Documents/University/Advanced/Project/Condottiere-")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/matin/Documents/University/Advanced/Project/Condottiere-/build")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/matin/Documents/University/Advanced/Project/Condottiere-/build-linux")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

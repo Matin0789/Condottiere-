@@ -1,8 +1,8 @@
 #ifndef PURPLECARD_H
 #define PURPLECARD_H
 
-#include "Card.h"
-#include "Game.h"
+#include "card.h"
+#include "game.h"
 
 class PurpleCard : public Card {
 public:

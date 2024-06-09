@@ -1,7 +1,7 @@
 #ifndef BISHOP_H
 #define BISHOP_H
 
-#include "PurpleCard.h"
+#include "purplecard.h"
 
 class Bishop : public PurpleCard {
 public:

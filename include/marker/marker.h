@@ -1,8 +1,8 @@
 #ifndef MARKER_H
 #define MARKER_H
 
-#include "enumColor.h"
-#include "State.h"
+#include "enumcolor.h"
+#include "state.h"
 
 class Marker
 {

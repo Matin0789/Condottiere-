@@ -1,7 +1,7 @@
 #ifndef SPRING_H
 #define SPRING_H
 
-#include "Season.h"
+#include "season.h"
 
 class Spring : public Season {
 public:

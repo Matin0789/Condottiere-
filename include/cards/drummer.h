@@ -1,7 +1,7 @@
 #ifndef DRUMMER_H
 #define DRUMMER_H
 
-#include "PurpleCard.h"
+#include "purplecard.h"
 
 class Drummer : public PurpleCard {
 public:

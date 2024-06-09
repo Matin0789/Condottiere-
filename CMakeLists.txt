@@ -10,6 +10,6 @@ add_executable(Condottiere ${Condottiere_SOURCES})
 
 target_include_directories(Condottiere PRIVATE
     ${PROJECT_SOURCE_DIR}/include
-    ${PROJECT_SOURCE_DIR}/include/Card
-    ${PROJECT_SOURCE_DIR}/include/Marker
+    ${PROJECT_SOURCE_DIR}/include/cards
+    ${PROJECT_SOURCE_DIR}/include/marker
     )

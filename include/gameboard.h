@@ -24,9 +24,42 @@
 class GameBoard
 {
 public:
+	bool checkAdjacency(const State* state1,const State* state2,const State* state3);
+	const std::unordered_map<std::string, State>& getStates() const;
 
 private:
-
+	const std::unordered_map<std::string, State> state = {
+		{BEL, State(BEL)},
+		{CAL, State(CAL)},
+		{ENN, State(ENN)},
+		{ATE, State(ATE)},
+		{PLA, State(PLA)},
+		{BOR, State(BOR)},
+		{DIM, State(DIM)},
+		{MOR, State(MOR)},
+		{OLI, State(OLI)},
+		{ROL, State(ROL)},
+		{TAL, State(TAL)},
+		{ARM, State(ARM)},
+		{LIA, State(LIA)},
+		{ELI, State(ELI)}
+	};
+	std::map<std::string,std::map<std::string,bool>> adjacency = {
+		{BEL,	{{CAL, 1}, {ENN, 0}, {ATE, 0}, {PLA, 1}, {BOR, 1}, {DIM, 0}, {MOR, 0}, {OLI, 0}, {ROL, 0}, {TAL, 0}, {ARM, 0}, {LIA, 0}, {ELI, 0}}},
+		{CAL,	{{ENN, 1}, {ATE, 1}, {PLA, 1}, {BOR, 1}, {DIM, 0}, {MOR, 0}, {OLI, 0}, {ROL, 0}, {TAL, 0}, {ARM, 0}, {LIA, 0}, {ELI, 0}, {BEL, 1}}},
+		{ENN,	{{ATE, 1}, {PLA, 0}, {BOR, 1}, {DIM, 1}, {MOR, 0}, {OLI, 0}, {ROL, 0}, {TAL, 0}, {ARM, 0}, {LIA, 0}, {ELI, 0}, {BEL, 1}, {CAL, 0}}},
+		{ATE,	{{PLA, 0}, {BOR, 0}, {DIM, 1}, {MOR, 0}, {OLI, 0}, {ROL, 0}, {TAL, 0}, {ARM, 0}, {LIA, 0}, {ELI, 0}, {BEL, 0}, {CAL, 1}, {ENN, 1}}},
+		{PLA,	{{BOR, 1}, {DIM, 0}, {MOR, 1}, {OLI, 0}, {ROL, 1}, {TAL, 0}, {ARM, 0}, {LIA, 0}, {ELI, 0}, {BEL, 1}, {CAL, 1}, {ENN, 0}, {ATE, 0}}},
+		{BOR,	{{DIM, 1}, {MOR, 1}, {OLI, 1}, {ROL, 0}, {TAL, 0}, {ARM, 0}, {LIA, 0}, {ELI, 0}, {BEL, 1}, {CAL, 1}, {ENN, 1}, {ATE, 0}, {PLA, 1}}},
+		{DIM,	{{MOR, 1}, {OLI, 1}, {ROL, 0}, {TAL, 0}, {ARM, 0}, {LIA, 0}, {ELI, 0}, {BEL, 0}, {CAL, 0}, {ENN, 1}, {ATE, 1}, {PLA, 0}, {BOR, 1}}},
+		{MOR,	{{OLI, 1}, {ROL, 1}, {TAL, 1}, {ARM, 1}, {LIA, 0}, {ELI, 0}, {BEL, 0}, {CAL, 0}, {ENN, 0}, {ATE, 0}, {PLA, 1}, {BOR, 1}, {DIM, 0}}},
+		{OLI,	{{ROL, 0}, {TAL, 0}, {ARM, 1}, {LIA, 1}, {ELI, 0}, {BEL, 0}, {CAL, 0}, {ENN, 0}, {ATE, 0}, {PLA, 0}, {BOR, 1}, {DIM, 1}, {MOR, 1}}},
+		{ROL,	{{TAL, 1}, {ARM, 0}, {LIA, 0}, {ELI, 1}, {BEL, 0}, {CAL, 0}, {ENN, 0}, {ATE, 0}, {PLA, 1}, {BOR, 0}, {DIM, 0}, {MOR, 1}, {OLI, 0}}},
+		{TAL,	{{ARM, 1}, {LIA, 0}, {ELI, 1}, {BEL, 0}, {CAL, 0}, {ENN, 0}, {ATE, 0}, {PLA, 0}, {BOR, 0}, {DIM, 0}, {MOR, 1}, {OLI, 0}, {ROL, 1}}},
+		{ARM,	{{LIA, 1}, {ELI, 0}, {BEL, 0}, {CAL, 0}, {ENN, 0}, {ATE, 0}, {PLA, 0}, {BOR, 0}, {DIM, 0}, {MOR, 1}, {OLI, 1}, {ROL, 0}, {TAL, 1}}},
+		{LIA,	{{ELI, 0}, {BEL, 0}, {CAL, 0}, {ENN, 0}, {ATE, 0}, {PLA, 0}, {BOR, 0}, {DIM, 0}, {MOR, 0}, {OLI, 1}, {ROL, 0}, {TAL, 0}, {ARM, 1}}},
+		{ELI,	{{BEL, 0}, {CAL, 0}, {ENN, 0}, {ATE, 0}, {PLA, 0}, {BOR, 0}, {DIM, 0}, {MOR, 0}, {OLI, 0}, {ROL, 1}, {TAL, 1}, {ARM, 0}, {LIA, 0}}},
+	};
 };
 
 #endif // GAMEBOARD_H
