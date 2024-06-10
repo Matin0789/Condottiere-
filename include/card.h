@@ -1,8 +1,8 @@
 #ifndef CARD_H
 #define CARD_H
 
-#include "game.h"
-#include "player.h"
+class Game;
+class Player;
 
 class Card
 {

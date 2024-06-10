@@ -5,9 +5,9 @@
 
 class Season : public PurpleCard
 {
-private:
-
 public:
+    Season(int,std::string,int,std::string);// (point,name,priority,help)
+private:
 
 };
 

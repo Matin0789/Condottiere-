@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/matin/Documents/University/Advanced/Project/Condottiere-/include -I/home/matin/Documents/University/Advanced/Project/Condottiere-/include/Card -I/home/matin/Documents/University/Advanced/Project/Condottiere-/include/Marker
+CXX_INCLUDES = -I/home/matin/Documents/University/Advanced/Project/Condottiere-/include -I/home/matin/Documents/University/Advanced/Project/Condottiere-/include/cards -I/home/matin/Documents/University/Advanced/Project/Condottiere-/include/marker
 
 CXX_FLAGS = 
 

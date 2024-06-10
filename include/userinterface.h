@@ -5,7 +5,8 @@ class UserInterface {
  private:
 
  public:
-
+  int getNumber();
+  void setMarker();
 };
 
 #endif // USERINTERFACE

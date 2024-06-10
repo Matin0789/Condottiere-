@@ -9,11 +9,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/matin/Documents/University/Advanced/Project/Condottiere-/build-linux/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp" "CMakeFiles/Condottiere.dir/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.o" "gcc" "CMakeFiles/Condottiere.dir/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.o.d"
+  "/home/matin/Documents/University/Advanced/Project/Condottiere-/build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp" "CMakeFiles/Condottiere.dir/build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.o" "gcc" "CMakeFiles/Condottiere.dir/build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.o.d"
   "/home/matin/Documents/University/Advanced/Project/Condottiere-/main.cpp" "CMakeFiles/Condottiere.dir/main.cpp.o" "gcc" "CMakeFiles/Condottiere.dir/main.cpp.o.d"
-  "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/Marker/BattleMarker.cpp" "CMakeFiles/Condottiere.dir/src/Marker/BattleMarker.cpp.o" "gcc" "CMakeFiles/Condottiere.dir/src/Marker/BattleMarker.cpp.o.d"
-  "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/Marker/FavorMarker.cpp" "CMakeFiles/Condottiere.dir/src/Marker/FavorMarker.cpp.o" "gcc" "CMakeFiles/Condottiere.dir/src/Marker/FavorMarker.cpp.o.d"
-  "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/Marker/Marker.cpp" "CMakeFiles/Condottiere.dir/src/Marker/Marker.cpp.o" "gcc" "CMakeFiles/Condottiere.dir/src/Marker/Marker.cpp.o.d"
-  "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/Marker/PlayerMarker.cpp" "CMakeFiles/Condottiere.dir/src/Marker/PlayerMarker.cpp.o" "gcc" "CMakeFiles/Condottiere.dir/src/Marker/PlayerMarker.cpp.o.d"
   "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/card.cpp" "CMakeFiles/Condottiere.dir/src/card.cpp.o" "gcc" "CMakeFiles/Condottiere.dir/src/card.cpp.o.d"
   "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/cards/bishop.cpp" "CMakeFiles/Condottiere.dir/src/cards/bishop.cpp.o" "gcc" "CMakeFiles/Condottiere.dir/src/cards/bishop.cpp.o.d"
   "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/cards/drummer.cpp" "CMakeFiles/Condottiere.dir/src/cards/drummer.cpp.o" "gcc" "CMakeFiles/Condottiere.dir/src/cards/drummer.cpp.o.d"
@@ -28,6 +25,10 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/cards/yellowcard.cpp" "CMakeFiles/Condottiere.dir/src/cards/yellowcard.cpp.o" "gcc" "CMakeFiles/Condottiere.dir/src/cards/yellowcard.cpp.o.d"
   "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/game.cpp" "CMakeFiles/Condottiere.dir/src/game.cpp.o" "gcc" "CMakeFiles/Condottiere.dir/src/game.cpp.o.d"
   "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/gameBoard.cpp" "CMakeFiles/Condottiere.dir/src/gameBoard.cpp.o" "gcc" "CMakeFiles/Condottiere.dir/src/gameBoard.cpp.o.d"
+  "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/BattleMarker.cpp" "CMakeFiles/Condottiere.dir/src/marker/BattleMarker.cpp.o" "gcc" "CMakeFiles/Condottiere.dir/src/marker/BattleMarker.cpp.o.d"
+  "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/FavorMarker.cpp" "CMakeFiles/Condottiere.dir/src/marker/FavorMarker.cpp.o" "gcc" "CMakeFiles/Condottiere.dir/src/marker/FavorMarker.cpp.o.d"
+  "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/Marker.cpp" "CMakeFiles/Condottiere.dir/src/marker/Marker.cpp.o" "gcc" "CMakeFiles/Condottiere.dir/src/marker/Marker.cpp.o.d"
+  "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/PlayerMarker.cpp" "CMakeFiles/Condottiere.dir/src/marker/PlayerMarker.cpp.o" "gcc" "CMakeFiles/Condottiere.dir/src/marker/PlayerMarker.cpp.o.d"
   "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/player.cpp" "CMakeFiles/Condottiere.dir/src/player.cpp.o" "gcc" "CMakeFiles/Condottiere.dir/src/player.cpp.o.d"
   "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/state.cpp" "CMakeFiles/Condottiere.dir/src/state.cpp.o" "gcc" "CMakeFiles/Condottiere.dir/src/state.cpp.o.d"
   "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/userinterface.cpp" "CMakeFiles/Condottiere.dir/src/userinterface.cpp.o" "gcc" "CMakeFiles/Condottiere.dir/src/userinterface.cpp.o.d"

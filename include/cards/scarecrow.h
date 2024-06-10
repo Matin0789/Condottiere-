@@ -5,9 +5,11 @@
 
 class Scarecrow : public PurpleCard {
 public:
-
+    Scarecrow();
+    static std::string getHelp();
 protected:
 private:
+    static std::string help;
 };
 
 #endif // SCARECROW_H

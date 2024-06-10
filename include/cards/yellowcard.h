@@ -2,11 +2,10 @@
 #define YELLOWCARD_H
 
 #include "card.h"
-#include "game.h"
 
-class YellowCard : public Card{
+class YellowCard : public Card {
 public:
-
+    YellowCard(unsigned int);// (point)
 private:
 };
 

@@ -5,7 +5,7 @@
 
 class Spy : public PurpleCard {
 public:
-
+    Spy();
 protected:
 private:
 };

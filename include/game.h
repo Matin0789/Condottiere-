@@ -25,11 +25,12 @@
 #include "favormarker.h"
 #include "battlemarker.h"
 
-
 class Game {
 
 public:
     Game(UserInterface&);
+    void play();
+    void war();
 private:
     UserInterface &ui;
 	GameBoard gameBoard;
@@ -53,6 +54,10 @@ private:
 	//const std::array<Heroine, 6> bishop;
     std::vector<const Card*> cards;
 	Card* season;
+private:
+	void shuffle();
+	void distributeCards(); 
+    void burnCards();  
 };
 
 #endif // GAME_H

@@ -1,16 +1,13 @@
 #ifndef CARD_H
 #define CARD_H
 
-#include "Game.h"
-#include "Player.h"
-
 class Card
 {
 public:
-
+    Card(unsigned int,unsigned int);// (point,priority)
 protected:
-
 private:
+    
 
 };
 

@@ -5,9 +5,11 @@
 
 class Heroine : public PurpleCard {
 public:
-
+    Heroine();
+    static std::string getHelp();
 protected:
 private:
+    static std::string help;
 };
 
 #endif // HEROINE_H

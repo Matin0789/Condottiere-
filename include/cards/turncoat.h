@@ -6,9 +6,11 @@
 
 class Turncoat : public PurpleCard {
 public:
-
+    Turncoat();
+    static std::string getHelp();
 protected:
 private:
+    static std::string help;
 };
 
 #endif // TURNCOAT_H
