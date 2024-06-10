@@ -41,7 +41,9 @@ Game::Game(UserInterface &inputUI) : cards(92), ui(inputUI), season(nullptr)
     }*/
 }
 
-void Game::distributeCards() {}
+void Game::distributeCards() {
+    shuffle();
+}
 
 void Game::shuffle()
 {
