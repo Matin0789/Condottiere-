@@ -87,7 +87,7 @@ void Game::war() {
 	const std::array<Spy, 12> spy;
 	const std::array<Heroine, 6> drummer;
 	//const std::array<Heroine, 6> bishop;
-	std::array<const Card*,104> cards;
+	std::vector<Card*> cards;
 };
 class GameBoard
 {

@@ -10,7 +10,6 @@ private:
     /* data */
 public:
     FavorMarker();
-    ~FavorMarker();
 };
 
 #endif // FAVORMARKER_H

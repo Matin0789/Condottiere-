@@ -8,7 +8,6 @@ private:
     /* data */
 public:
     BattleMarker();
-    ~BattleMarker();
 };
 
 #endif // BATTLEMARKER_H

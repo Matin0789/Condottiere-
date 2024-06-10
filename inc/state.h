@@ -9,7 +9,6 @@ private:
     std::string name;
 public:
     State(std::string); // (name)
-    ~State();
     std::string getName() const;
 };
 

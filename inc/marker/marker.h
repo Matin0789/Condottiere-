@@ -12,7 +12,6 @@ private:
     bool set;
 public:
     Marker(Color);
-    ~Marker();
     void setState(State*);
     const State& getState() const;
     bool is_set() const;

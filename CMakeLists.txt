@@ -1,15 +1,11 @@
 cmake_minimum_required(VERSION 3.10)
 
+set(CMAKE_C_COMPILER "/usr/bin/gcc")
+set(CMAKE_CXX_COMPILER "/usr/bin/g++")
+
 project(Condottiere)
 
 set(SOURCE_FILES
-    ${PROJECT_SOURCE_DIR}/src/main.cpp
-    ${PROJECT_SOURCE_DIR}/src/game.cpp
-    ${PROJECT_SOURCE_DIR}/src/userinterface.cpp
-    ${PROJECT_SOURCE_DIR}/src/player.cpp
-    ${PROJECT_SOURCE_DIR}/src/gameBoard.cpp
-    ${PROJECT_SOURCE_DIR}/src/state.cpp
-
     ${PROJECT_SOURCE_DIR}/src/card/card.cpp
     ${PROJECT_SOURCE_DIR}/src/card/purplecard.cpp
     ${PROJECT_SOURCE_DIR}/src/card/yellowcard.cpp
@@ -28,17 +24,16 @@ set(SOURCE_FILES
     ${PROJECT_SOURCE_DIR}/src/marker/battlemarker.cpp
     ${PROJECT_SOURCE_DIR}/src/marker/favormarker.cpp
     ${PROJECT_SOURCE_DIR}/src/marker/playermarker.cpp
-    
+
+    ${PROJECT_SOURCE_DIR}/src/main.cpp
+    ${PROJECT_SOURCE_DIR}/src/game.cpp
+    ${PROJECT_SOURCE_DIR}/src/userinterface.cpp
+    ${PROJECT_SOURCE_DIR}/src/player.cpp
+    ${PROJECT_SOURCE_DIR}/src/gameBoard.cpp
+    ${PROJECT_SOURCE_DIR}/src/state.cpp
 )
 
 set(HEADER_FILES
-    ${PROJECT_SOURCE_DIR}/inc/enumcolor.h 
-    ${PROJECT_SOURCE_DIR}/inc/game.h
-    ${PROJECT_SOURCE_DIR}/inc/userinterface.h 
-    ${PROJECT_SOURCE_DIR}/inc/player.h 
-    ${PROJECT_SOURCE_DIR}/inc/gameboard.h 
-    ${PROJECT_SOURCE_DIR}/inc/state.h 
-    
     ${PROJECT_SOURCE_DIR}/inc/card/card.h 
     ${PROJECT_SOURCE_DIR}/inc/card/purplecard.h 
     ${PROJECT_SOURCE_DIR}/inc/card/yellowcard.h
@@ -55,8 +50,16 @@ set(HEADER_FILES
     ${PROJECT_SOURCE_DIR}/inc/marker/marker.h 
     ${PROJECT_SOURCE_DIR}/inc/marker/battlemarker.h 
     ${PROJECT_SOURCE_DIR}/inc/marker/favormarker.h 
-    ${PROJECT_SOURCE_DIR}/inc/marker/playermarker.h 
+    ${PROJECT_SOURCE_DIR}/inc/marker/playermarker.h
+    
+    ${PROJECT_SOURCE_DIR}/inc/enumcolor.h 
+    ${PROJECT_SOURCE_DIR}/inc/game.h
+    ${PROJECT_SOURCE_DIR}/inc/userinterface.h 
+    ${PROJECT_SOURCE_DIR}/inc/player.h 
+    ${PROJECT_SOURCE_DIR}/inc/gameboard.h 
+    ${PROJECT_SOURCE_DIR}/inc/state.h 
 )
+
 
 add_executable(${PROJECT_NAME} ${SOURCE_FILES} ${HEADER_FILES})
 

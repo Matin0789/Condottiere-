@@ -10,7 +10,6 @@ private:
 
 public:
     PlayerMarker(Color);
-    ~PlayerMarker();
 };
 
 #endif // PLAYERMARKER_H

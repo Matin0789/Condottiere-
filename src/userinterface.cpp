@@ -7,6 +7,17 @@
 #include "userinterface.h"
 #include "game.h"
 
+void UserInterface::showPlayerCards(const std::vector<Player>& players) const{
+    for (auto &&player : players){
+        std::cout << "Player1 :";
+        for (auto &&cards : player.getPlayedCards()){
+            std::cout << card->getType() << '_'; 
+        }
+        std::cout << std::endl;
+    }
+    std::cout << "----------";
+}
+
 std::string UserInterface::getCommand(const Player& player,const BattleMarker& marker) {
     std::cout << marker.getState().getName() << std::endl;
     for (auto &&card : player.getCards())
@@ -80,3 +91,4 @@ std::string UserInterface::getCommand(const Player& player,const BattleMarker& m
     } while (flag == false);     
     return "";
 }
+

@@ -23,3 +23,8 @@ const std::vector<Card*>& Player::getPlayedCards() const {
 const std::vector<Card*>& Player::getCards() const {
     return cards;
 }
+
+void Player::setState(State* state) {
+    markers[stateCounter].setState(state);
+    stateCounter++;  
+}

@@ -11,7 +11,7 @@ class UserInterface {
  private:
 
  public:
-  void showPlayerCards(const std::vector<Player>&);
+  void showPlayerCards(const std::vector<Player>&) const;
   std::string getCommand(const Player&,const BattleMarker&);
   void clearTerminal();
   void pause();
