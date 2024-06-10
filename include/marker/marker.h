@@ -14,7 +14,7 @@ public:
     Marker(Color);
     ~Marker();
     void setState(State*);
-    State* getState() const;
+    const State& getState() const;
     bool is_set() const;
 };
 

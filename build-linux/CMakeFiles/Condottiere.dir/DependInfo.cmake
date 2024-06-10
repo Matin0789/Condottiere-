@@ -9,7 +9,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/matin/Documents/University/Advanced/Project/Condottiere-/build-linux/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp" "CMakeFiles/Condottiere.dir/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.o" "gcc" "CMakeFiles/Condottiere.dir/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.o.d"
-  "/home/matin/Documents/University/Advanced/Project/Condottiere-/build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp" "CMakeFiles/Condottiere.dir/build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.o" "gcc" "CMakeFiles/Condottiere.dir/build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.o.d"
   "/home/matin/Documents/University/Advanced/Project/Condottiere-/main.cpp" "CMakeFiles/Condottiere.dir/main.cpp.o" "gcc" "CMakeFiles/Condottiere.dir/main.cpp.o.d"
   "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/card.cpp" "CMakeFiles/Condottiere.dir/src/card.cpp.o" "gcc" "CMakeFiles/Condottiere.dir/src/card.cpp.o.d"
   "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/cards/bishop.cpp" "CMakeFiles/Condottiere.dir/src/cards/bishop.cpp.o" "gcc" "CMakeFiles/Condottiere.dir/src/cards/bishop.cpp.o.d"

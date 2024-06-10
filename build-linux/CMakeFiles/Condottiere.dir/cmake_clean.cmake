@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Condottiere.dir/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.o"
   "CMakeFiles/Condottiere.dir/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.o.d"
-  "CMakeFiles/Condottiere.dir/build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.o"
-  "CMakeFiles/Condottiere.dir/build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.o.d"
   "CMakeFiles/Condottiere.dir/main.cpp.o"
   "CMakeFiles/Condottiere.dir/main.cpp.o.d"
   "CMakeFiles/Condottiere.dir/src/card.cpp.o"

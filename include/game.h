@@ -57,7 +57,6 @@ private:
 private:
 	void shuffle();
 	void distributeCards(); 
-    void burnCards();  
 };
 
 #endif // GAME_H

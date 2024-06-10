@@ -1,11 +1,11 @@
-#include "Marker.h"
+#include "marker.h"
 
 Marker::Marker(Color inputColor) : color(inputColor) {
     set = false;
 }
 
-State* Marker::getState() const{
-    return state;
+const State& Marker::getState() const{
+    return *state;
 }
 void Marker::setState(State* state){
     this->state = state;
