@@ -7,12 +7,8 @@ class Heroine : public PurpleCard {
 public:
     Heroine();
     static std::string getHelp();
-<<<<<<< HEAD
     virtual std::string getType() const override;
-=======
     void applyFeature(Player* player, Game* game) const;
-    std::string Heroine::getType() const ;
->>>>>>> refs/remotes/origin/main
 protected:
 private:
     static std::string help;
