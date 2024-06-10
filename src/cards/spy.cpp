@@ -4,11 +4,11 @@
 
 #define HELP ""
 
-Spy::Spy() : PurpleCard(1,"Spy",5,HELP){
-    
+Spy::Spy() : PurpleCard(1,"Spy",5){
+    help = HELP;
 }
 
-void Card::applyFeature(Player* player, Game* game) const{
+void Spy::applyFeature(Player* player, Game* game) const{
     player->point += point;
     
 }

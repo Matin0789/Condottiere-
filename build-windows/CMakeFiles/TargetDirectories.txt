@@ -1,0 +1,3 @@
+F:/project advanced/Condottiere-/build-windows/CMakeFiles/Condottiere.dir
+F:/project advanced/Condottiere-/build-windows/CMakeFiles/ALL_BUILD.dir
+F:/project advanced/Condottiere-/build-windows/CMakeFiles/ZERO_CHECK.dir

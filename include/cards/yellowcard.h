@@ -6,6 +6,7 @@
 class YellowCard : public Card {
 public:
     YellowCard(unsigned int);// (point)
+    std::string YellowCard::getType() const ;
 private:
 };
 

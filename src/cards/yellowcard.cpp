@@ -1,3 +1,5 @@
+#include <string>
+
 #include "yellowcard.h"
 
 YellowCard::YellowCard(unsigned int point) : Card(point,0){
