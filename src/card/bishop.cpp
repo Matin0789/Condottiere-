@@ -8,3 +8,5 @@ class Player;
 Bishop::Bishop() : PurpleCard(0,"Bishop",1) {
     help = HELP ;
 }
+
+std::strig

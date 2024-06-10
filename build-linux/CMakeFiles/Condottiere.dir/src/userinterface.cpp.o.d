@@ -153,13 +153,12 @@ CMakeFiles/Condottiere.dir/src/userinterface.cpp.o: \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/battlemarker.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker/battlemarker.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker/marker.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/enumcolor.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/state.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/player.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/userinterface.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/card.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/game.h \
  /usr/include/c++/11/array /usr/include/c++/11/utility \
  /usr/include/c++/11/bits/stl_relops.h \
@@ -176,16 +175,20 @@ CMakeFiles/Condottiere.dir/src/userinterface.cpp.o: \
  /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/map \
  /usr/include/c++/11/bits/stl_tree.h /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/bishop.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/purplecard.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/drummer.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/heroine.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/scarecrow.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/spy.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/winter.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/season.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/spring.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/turncoat.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/yellowcard.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/playermarker.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/favormarker.h
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/state.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/userinterface.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/yellowcard.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/card.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/bishop.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/purplecard.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/drummer.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/heroine.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/scarecrow.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/spy.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/winter.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/season.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/spring.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/turncoat.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker/marker.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker/playermarker.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker/favormarker.h

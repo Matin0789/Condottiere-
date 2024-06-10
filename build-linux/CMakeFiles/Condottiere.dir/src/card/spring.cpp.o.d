@@ -1,34 +1,16 @@
-CMakeFiles/Condottiere.dir/src/game.cpp.o: \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/src/game.cpp \
- /usr/include/stdc-predef.h /usr/include/time.h /usr/include/features.h \
- /usr/include/features-time64.h \
+CMakeFiles/Condottiere.dir/src/card/spring.cpp.o: \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/spring.cpp \
+ /usr/include/stdc-predef.h /usr/include/c++/11/algorithm \
+ /usr/include/c++/11/utility \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
+ /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/bits/timesize.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/long-double.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
- /usr/include/x86_64-linux-gnu/bits/time.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h \
- /usr/include/x86_64-linux-gnu/bits/time64.h \
- /usr/include/x86_64-linux-gnu/bits/timex.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
- /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
- /usr/include/x86_64-linux-gnu/bits/endian.h \
- /usr/include/x86_64-linux-gnu/bits/endianness.h \
- /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
- /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/c++/11/algorithm /usr/include/c++/11/utility \
- /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
  /usr/include/c++/11/pstl/pstl_config.h \
  /usr/include/c++/11/bits/stl_relops.h \
@@ -50,18 +32,32 @@ CMakeFiles/Condottiere.dir/src/game.cpp.o: \
  /usr/include/c++/11/bits/stl_algo.h /usr/include/c++/11/cstdlib \
  /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+ /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/x86_64-linux-gnu/sys/types.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+ /usr/include/x86_64-linux-gnu/bits/time64.h \
+ /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h /usr/include/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/endianness.h \
  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
  /usr/include/x86_64-linux-gnu/sys/select.h \
  /usr/include/x86_64-linux-gnu/bits/select.h \
  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -103,7 +99,9 @@ CMakeFiles/Condottiere.dir/src/game.cpp.o: \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
  /usr/include/c++/11/pstl/execution_defs.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/game.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/spring.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/season.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/purplecard.h \
  /usr/include/c++/11/string /usr/include/c++/11/bits/stringfwd.h \
  /usr/include/c++/11/bits/char_traits.h \
  /usr/include/c++/11/bits/postypes.h /usr/include/c++/11/cwchar \
@@ -131,7 +129,11 @@ CMakeFiles/Condottiere.dir/src/game.cpp.o: \
  /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/x86_64-linux-gnu/bits/sched.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
- /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+ /usr/include/x86_64-linux-gnu/bits/cpu-set.h /usr/include/time.h \
+ /usr/include/x86_64-linux-gnu/bits/time.h \
+ /usr/include/x86_64-linux-gnu/bits/timex.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
@@ -151,30 +153,4 @@ CMakeFiles/Condottiere.dir/src/game.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/player.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/card.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/gameboard.h \
- /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
- /usr/include/c++/11/bits/stl_map.h \
- /usr/include/c++/11/bits/stl_multimap.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/state.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/userinterface.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker/battlemarker.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker/marker.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/enumcolor.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/state.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/yellowcard.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/card.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/bishop.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/purplecard.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/drummer.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/heroine.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/scarecrow.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/spy.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/winter.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/season.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/spring.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/turncoat.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker/marker.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker/playermarker.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker/favormarker.h
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/card.h

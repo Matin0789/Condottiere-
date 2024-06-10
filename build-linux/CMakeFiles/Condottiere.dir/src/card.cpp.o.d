@@ -135,15 +135,10 @@ CMakeFiles/Condottiere.dir/src/card.cpp.o: \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/userinterface.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/battlemarker.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/enumcolor.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/state.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/player.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/game.h \
  /usr/include/c++/11/array /usr/include/c++/11/utility \
  /usr/include/c++/11/bits/stl_relops.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/player.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/gameboard.h \
  /usr/include/c++/11/unordered_map \
  /usr/include/c++/11/ext/aligned_buffer.h \
@@ -157,6 +152,12 @@ CMakeFiles/Condottiere.dir/src/card.cpp.o: \
  /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/map \
  /usr/include/c++/11/bits/stl_tree.h /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/state.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/userinterface.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/battlemarker.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/enumcolor.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/yellowcard.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/bishop.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/purplecard.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/drummer.h \
@@ -167,7 +168,6 @@ CMakeFiles/Condottiere.dir/src/card.cpp.o: \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/season.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/spring.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/turncoat.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/yellowcard.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/playermarker.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/favormarker.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card.h

@@ -10,6 +10,10 @@ unsigned int Card::getPoint() const {
     return point ;
 }
 
+bool Card::is_season() const{
+    return false;
+}
+
 void Card::setPoint(unsigned int) {
    this->point = point ; 
 }

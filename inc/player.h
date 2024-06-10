@@ -6,7 +6,8 @@
 
 
 #include "card.h"
-#include "userinterface.h"
+
+class UserInterface;
 
 class Player {
 

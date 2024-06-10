@@ -1,7 +1,10 @@
-CMakeFiles/Condottiere.dir/src/player.cpp.o: \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/src/player.cpp \
+CMakeFiles/Condottiere.dir/src/marker/playermarker.cpp.o: \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/playermarker.cpp \
  /usr/include/stdc-predef.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/player.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker/playermarker.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker/marker.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/enumcolor.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/state.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -129,9 +132,4 @@ CMakeFiles/Condottiere.dir/src/player.cpp.o: \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
- /usr/include/c++/11/bits/basic_string.tcc /usr/include/c++/11/vector \
- /usr/include/c++/11/bits/stl_uninitialized.h \
- /usr/include/c++/11/bits/stl_vector.h \
- /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/vector.tcc \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/card.h
+ /usr/include/c++/11/bits/basic_string.tcc
