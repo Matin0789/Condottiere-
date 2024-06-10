@@ -5,8 +5,7 @@
 #include <vector>
 
 #include "battlemarker.h"
-
-class Player;
+#include "player.h"
 
 class UserInterface {
  private:
@@ -15,6 +14,7 @@ class UserInterface {
   void showPlayerCards(const std::vector<Player>&);
   std::string getCommand(const Player&,const BattleMarker&);
   void clearTerminal();
+  void pause();
 };
 
 #endif // USERINTERFACE

@@ -6,8 +6,10 @@
 class Spy : public PurpleCard {
 public:
     Spy();
+    static std::string getHelp();
 protected:
 private:
+    static std::string help;
 };
 
 #endif // SPY_H
