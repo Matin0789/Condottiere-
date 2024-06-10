@@ -13,6 +13,8 @@ class Player {
 public:
     std::string getName() const;
     int getID() const;
+    unsigned int getPoint() const;
+    void setPoint(unsigned int);
     const std::vector<Card*>& getPlayedCards() const;
     const std::vector<Card*>& getCards() const;
 private:
@@ -20,7 +22,7 @@ private:
     int ID;
     std::vector<Card*> cards;
     std::vector<Card*> playedCards;
-
+    unsigned int point;
 };
 
 #endif // PLAYER_H

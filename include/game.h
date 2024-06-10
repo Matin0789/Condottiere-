@@ -26,7 +26,14 @@
 #include "battlemarker.h"
 
 class Game {
-
+	friend Bishop;
+	friend Drummer;
+	friend Heroine;
+	friend Scarecrow;
+	friend Spy;
+	friend Turncoat;
+	friend Winter;
+	friend Spring;
 public:
     Game(UserInterface&);
     void play();
