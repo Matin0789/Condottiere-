@@ -1,3 +1,4 @@
+#include <time.h>
 #include <algorithm>
 
 #include "game.h"
