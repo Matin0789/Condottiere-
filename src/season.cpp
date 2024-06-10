@@ -1,6 +1,6 @@
 #include "season.h"
 
-Season::Season(int inputPoint,std::string inputName,int inputPriority,std::string inputHelp) : PurpleCard(inputPoint,inputName,inputPriority){
+Season::Season(int inputPoint,std::string inputName,int inputPriority) : PurpleCard(inputPoint,inputName,inputPriority){
 
 }
 

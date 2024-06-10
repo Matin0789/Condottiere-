@@ -1,4 +1,4 @@
-#include "BattleMarker.h"
+#include "battlemarker.h"
 
 BattleMarker::BattleMarker() : Marker(black) {
     

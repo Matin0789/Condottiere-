@@ -129,53 +129,53 @@ Condottiere/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/build
 .PHONY : Condottiere/fast
 
-CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.o: CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.o
-.PHONY : CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.o
+src/battlemarker.o: src/battlemarker.cpp.o
+.PHONY : src/battlemarker.o
 
 # target to build an object file
-CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.o
-.PHONY : CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.o
+src/battlemarker.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/battlemarker.cpp.o
+.PHONY : src/battlemarker.cpp.o
 
-CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.i: CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.i
-.PHONY : CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.i
+src/battlemarker.i: src/battlemarker.cpp.i
+.PHONY : src/battlemarker.i
 
 # target to preprocess a source file
-CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.i
-.PHONY : CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.i
+src/battlemarker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/battlemarker.cpp.i
+.PHONY : src/battlemarker.cpp.i
 
-CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.s: CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.s
-.PHONY : CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.s
+src/battlemarker.s: src/battlemarker.cpp.s
+.PHONY : src/battlemarker.s
 
 # target to generate assembly for a file
-CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.s
-.PHONY : CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.s
+src/battlemarker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/battlemarker.cpp.s
+.PHONY : src/battlemarker.cpp.s
 
-main.o: main.cpp.o
-.PHONY : main.o
+src/bishop.o: src/bishop.cpp.o
+.PHONY : src/bishop.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/bishop.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/bishop.cpp.o
+.PHONY : src/bishop.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/bishop.i: src/bishop.cpp.i
+.PHONY : src/bishop.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/bishop.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/bishop.cpp.i
+.PHONY : src/bishop.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/bishop.s: src/bishop.cpp.s
+.PHONY : src/bishop.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/bishop.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/bishop.cpp.s
+.PHONY : src/bishop.cpp.s
 
 src/card.o: src/card.cpp.o
 .PHONY : src/card.o
@@ -201,269 +201,53 @@ src/card.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/card.cpp.s
 .PHONY : src/card.cpp.s
 
-src/cards/bishop.o: src/cards/bishop.cpp.o
-.PHONY : src/cards/bishop.o
+src/drummer.o: src/drummer.cpp.o
+.PHONY : src/drummer.o
 
 # target to build an object file
-src/cards/bishop.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/cards/bishop.cpp.o
-.PHONY : src/cards/bishop.cpp.o
+src/drummer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/drummer.cpp.o
+.PHONY : src/drummer.cpp.o
 
-src/cards/bishop.i: src/cards/bishop.cpp.i
-.PHONY : src/cards/bishop.i
+src/drummer.i: src/drummer.cpp.i
+.PHONY : src/drummer.i
 
 # target to preprocess a source file
-src/cards/bishop.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/cards/bishop.cpp.i
-.PHONY : src/cards/bishop.cpp.i
+src/drummer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/drummer.cpp.i
+.PHONY : src/drummer.cpp.i
 
-src/cards/bishop.s: src/cards/bishop.cpp.s
-.PHONY : src/cards/bishop.s
+src/drummer.s: src/drummer.cpp.s
+.PHONY : src/drummer.s
 
 # target to generate assembly for a file
-src/cards/bishop.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/cards/bishop.cpp.s
-.PHONY : src/cards/bishop.cpp.s
+src/drummer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/drummer.cpp.s
+.PHONY : src/drummer.cpp.s
 
-src/cards/drummer.o: src/cards/drummer.cpp.o
-.PHONY : src/cards/drummer.o
+src/favormarker.o: src/favormarker.cpp.o
+.PHONY : src/favormarker.o
 
 # target to build an object file
-src/cards/drummer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/cards/drummer.cpp.o
-.PHONY : src/cards/drummer.cpp.o
+src/favormarker.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/favormarker.cpp.o
+.PHONY : src/favormarker.cpp.o
 
-src/cards/drummer.i: src/cards/drummer.cpp.i
-.PHONY : src/cards/drummer.i
-
-# target to preprocess a source file
-src/cards/drummer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/cards/drummer.cpp.i
-.PHONY : src/cards/drummer.cpp.i
-
-src/cards/drummer.s: src/cards/drummer.cpp.s
-.PHONY : src/cards/drummer.s
-
-# target to generate assembly for a file
-src/cards/drummer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/cards/drummer.cpp.s
-.PHONY : src/cards/drummer.cpp.s
-
-src/cards/heroine.o: src/cards/heroine.cpp.o
-.PHONY : src/cards/heroine.o
-
-# target to build an object file
-src/cards/heroine.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/cards/heroine.cpp.o
-.PHONY : src/cards/heroine.cpp.o
-
-src/cards/heroine.i: src/cards/heroine.cpp.i
-.PHONY : src/cards/heroine.i
+src/favormarker.i: src/favormarker.cpp.i
+.PHONY : src/favormarker.i
 
 # target to preprocess a source file
-src/cards/heroine.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/cards/heroine.cpp.i
-.PHONY : src/cards/heroine.cpp.i
+src/favormarker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/favormarker.cpp.i
+.PHONY : src/favormarker.cpp.i
 
-src/cards/heroine.s: src/cards/heroine.cpp.s
-.PHONY : src/cards/heroine.s
-
-# target to generate assembly for a file
-src/cards/heroine.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/cards/heroine.cpp.s
-.PHONY : src/cards/heroine.cpp.s
-
-src/cards/purplecard.o: src/cards/purplecard.cpp.o
-.PHONY : src/cards/purplecard.o
-
-# target to build an object file
-src/cards/purplecard.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/cards/purplecard.cpp.o
-.PHONY : src/cards/purplecard.cpp.o
-
-src/cards/purplecard.i: src/cards/purplecard.cpp.i
-.PHONY : src/cards/purplecard.i
-
-# target to preprocess a source file
-src/cards/purplecard.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/cards/purplecard.cpp.i
-.PHONY : src/cards/purplecard.cpp.i
-
-src/cards/purplecard.s: src/cards/purplecard.cpp.s
-.PHONY : src/cards/purplecard.s
+src/favormarker.s: src/favormarker.cpp.s
+.PHONY : src/favormarker.s
 
 # target to generate assembly for a file
-src/cards/purplecard.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/cards/purplecard.cpp.s
-.PHONY : src/cards/purplecard.cpp.s
-
-src/cards/scarecrow.o: src/cards/scarecrow.cpp.o
-.PHONY : src/cards/scarecrow.o
-
-# target to build an object file
-src/cards/scarecrow.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/cards/scarecrow.cpp.o
-.PHONY : src/cards/scarecrow.cpp.o
-
-src/cards/scarecrow.i: src/cards/scarecrow.cpp.i
-.PHONY : src/cards/scarecrow.i
-
-# target to preprocess a source file
-src/cards/scarecrow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/cards/scarecrow.cpp.i
-.PHONY : src/cards/scarecrow.cpp.i
-
-src/cards/scarecrow.s: src/cards/scarecrow.cpp.s
-.PHONY : src/cards/scarecrow.s
-
-# target to generate assembly for a file
-src/cards/scarecrow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/cards/scarecrow.cpp.s
-.PHONY : src/cards/scarecrow.cpp.s
-
-src/cards/season.o: src/cards/season.cpp.o
-.PHONY : src/cards/season.o
-
-# target to build an object file
-src/cards/season.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/cards/season.cpp.o
-.PHONY : src/cards/season.cpp.o
-
-src/cards/season.i: src/cards/season.cpp.i
-.PHONY : src/cards/season.i
-
-# target to preprocess a source file
-src/cards/season.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/cards/season.cpp.i
-.PHONY : src/cards/season.cpp.i
-
-src/cards/season.s: src/cards/season.cpp.s
-.PHONY : src/cards/season.s
-
-# target to generate assembly for a file
-src/cards/season.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/cards/season.cpp.s
-.PHONY : src/cards/season.cpp.s
-
-src/cards/spring.o: src/cards/spring.cpp.o
-.PHONY : src/cards/spring.o
-
-# target to build an object file
-src/cards/spring.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/cards/spring.cpp.o
-.PHONY : src/cards/spring.cpp.o
-
-src/cards/spring.i: src/cards/spring.cpp.i
-.PHONY : src/cards/spring.i
-
-# target to preprocess a source file
-src/cards/spring.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/cards/spring.cpp.i
-.PHONY : src/cards/spring.cpp.i
-
-src/cards/spring.s: src/cards/spring.cpp.s
-.PHONY : src/cards/spring.s
-
-# target to generate assembly for a file
-src/cards/spring.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/cards/spring.cpp.s
-.PHONY : src/cards/spring.cpp.s
-
-src/cards/spy.o: src/cards/spy.cpp.o
-.PHONY : src/cards/spy.o
-
-# target to build an object file
-src/cards/spy.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/cards/spy.cpp.o
-.PHONY : src/cards/spy.cpp.o
-
-src/cards/spy.i: src/cards/spy.cpp.i
-.PHONY : src/cards/spy.i
-
-# target to preprocess a source file
-src/cards/spy.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/cards/spy.cpp.i
-.PHONY : src/cards/spy.cpp.i
-
-src/cards/spy.s: src/cards/spy.cpp.s
-.PHONY : src/cards/spy.s
-
-# target to generate assembly for a file
-src/cards/spy.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/cards/spy.cpp.s
-.PHONY : src/cards/spy.cpp.s
-
-src/cards/turncoat.o: src/cards/turncoat.cpp.o
-.PHONY : src/cards/turncoat.o
-
-# target to build an object file
-src/cards/turncoat.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/cards/turncoat.cpp.o
-.PHONY : src/cards/turncoat.cpp.o
-
-src/cards/turncoat.i: src/cards/turncoat.cpp.i
-.PHONY : src/cards/turncoat.i
-
-# target to preprocess a source file
-src/cards/turncoat.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/cards/turncoat.cpp.i
-.PHONY : src/cards/turncoat.cpp.i
-
-src/cards/turncoat.s: src/cards/turncoat.cpp.s
-.PHONY : src/cards/turncoat.s
-
-# target to generate assembly for a file
-src/cards/turncoat.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/cards/turncoat.cpp.s
-.PHONY : src/cards/turncoat.cpp.s
-
-src/cards/winter.o: src/cards/winter.cpp.o
-.PHONY : src/cards/winter.o
-
-# target to build an object file
-src/cards/winter.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/cards/winter.cpp.o
-.PHONY : src/cards/winter.cpp.o
-
-src/cards/winter.i: src/cards/winter.cpp.i
-.PHONY : src/cards/winter.i
-
-# target to preprocess a source file
-src/cards/winter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/cards/winter.cpp.i
-.PHONY : src/cards/winter.cpp.i
-
-src/cards/winter.s: src/cards/winter.cpp.s
-.PHONY : src/cards/winter.s
-
-# target to generate assembly for a file
-src/cards/winter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/cards/winter.cpp.s
-.PHONY : src/cards/winter.cpp.s
-
-src/cards/yellowcard.o: src/cards/yellowcard.cpp.o
-.PHONY : src/cards/yellowcard.o
-
-# target to build an object file
-src/cards/yellowcard.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/cards/yellowcard.cpp.o
-.PHONY : src/cards/yellowcard.cpp.o
-
-src/cards/yellowcard.i: src/cards/yellowcard.cpp.i
-.PHONY : src/cards/yellowcard.i
-
-# target to preprocess a source file
-src/cards/yellowcard.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/cards/yellowcard.cpp.i
-.PHONY : src/cards/yellowcard.cpp.i
-
-src/cards/yellowcard.s: src/cards/yellowcard.cpp.s
-.PHONY : src/cards/yellowcard.s
-
-# target to generate assembly for a file
-src/cards/yellowcard.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/cards/yellowcard.cpp.s
-.PHONY : src/cards/yellowcard.cpp.s
+src/favormarker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/favormarker.cpp.s
+.PHONY : src/favormarker.cpp.s
 
 src/game.o: src/game.cpp.o
 .PHONY : src/game.o
@@ -513,101 +297,77 @@ src/gameBoard.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/gameBoard.cpp.s
 .PHONY : src/gameBoard.cpp.s
 
-src/marker/battlemarker.o: src/marker/battlemarker.cpp.o
-.PHONY : src/marker/battlemarker.o
+src/heroine.o: src/heroine.cpp.o
+.PHONY : src/heroine.o
 
 # target to build an object file
-src/marker/battlemarker.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/battlemarker.cpp.o
-.PHONY : src/marker/battlemarker.cpp.o
+src/heroine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/heroine.cpp.o
+.PHONY : src/heroine.cpp.o
 
-src/marker/battlemarker.i: src/marker/battlemarker.cpp.i
-.PHONY : src/marker/battlemarker.i
+src/heroine.i: src/heroine.cpp.i
+.PHONY : src/heroine.i
 
 # target to preprocess a source file
-src/marker/battlemarker.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/battlemarker.cpp.i
-.PHONY : src/marker/battlemarker.cpp.i
+src/heroine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/heroine.cpp.i
+.PHONY : src/heroine.cpp.i
 
-src/marker/battlemarker.s: src/marker/battlemarker.cpp.s
-.PHONY : src/marker/battlemarker.s
+src/heroine.s: src/heroine.cpp.s
+.PHONY : src/heroine.s
 
 # target to generate assembly for a file
-src/marker/battlemarker.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/battlemarker.cpp.s
-.PHONY : src/marker/battlemarker.cpp.s
+src/heroine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/heroine.cpp.s
+.PHONY : src/heroine.cpp.s
 
-src/marker/favormarker.o: src/marker/favormarker.cpp.o
-.PHONY : src/marker/favormarker.o
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
 
 # target to build an object file
-src/marker/favormarker.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/favormarker.cpp.o
-.PHONY : src/marker/favormarker.cpp.o
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-src/marker/favormarker.i: src/marker/favormarker.cpp.i
-.PHONY : src/marker/favormarker.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-src/marker/favormarker.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/favormarker.cpp.i
-.PHONY : src/marker/favormarker.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-src/marker/favormarker.s: src/marker/favormarker.cpp.s
-.PHONY : src/marker/favormarker.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-src/marker/favormarker.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/favormarker.cpp.s
-.PHONY : src/marker/favormarker.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
-src/marker/marker.o: src/marker/marker.cpp.o
-.PHONY : src/marker/marker.o
+src/marker.o: src/marker.cpp.o
+.PHONY : src/marker.o
 
 # target to build an object file
-src/marker/marker.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/marker.cpp.o
-.PHONY : src/marker/marker.cpp.o
+src/marker.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker.cpp.o
+.PHONY : src/marker.cpp.o
 
-src/marker/marker.i: src/marker/marker.cpp.i
-.PHONY : src/marker/marker.i
-
-# target to preprocess a source file
-src/marker/marker.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/marker.cpp.i
-.PHONY : src/marker/marker.cpp.i
-
-src/marker/marker.s: src/marker/marker.cpp.s
-.PHONY : src/marker/marker.s
-
-# target to generate assembly for a file
-src/marker/marker.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/marker.cpp.s
-.PHONY : src/marker/marker.cpp.s
-
-src/marker/playermarker.o: src/marker/playermarker.cpp.o
-.PHONY : src/marker/playermarker.o
-
-# target to build an object file
-src/marker/playermarker.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/playermarker.cpp.o
-.PHONY : src/marker/playermarker.cpp.o
-
-src/marker/playermarker.i: src/marker/playermarker.cpp.i
-.PHONY : src/marker/playermarker.i
+src/marker.i: src/marker.cpp.i
+.PHONY : src/marker.i
 
 # target to preprocess a source file
-src/marker/playermarker.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/playermarker.cpp.i
-.PHONY : src/marker/playermarker.cpp.i
+src/marker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker.cpp.i
+.PHONY : src/marker.cpp.i
 
-src/marker/playermarker.s: src/marker/playermarker.cpp.s
-.PHONY : src/marker/playermarker.s
+src/marker.s: src/marker.cpp.s
+.PHONY : src/marker.s
 
 # target to generate assembly for a file
-src/marker/playermarker.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/playermarker.cpp.s
-.PHONY : src/marker/playermarker.cpp.s
+src/marker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker.cpp.s
+.PHONY : src/marker.cpp.s
 
 src/player.o: src/player.cpp.o
 .PHONY : src/player.o
@@ -633,6 +393,150 @@ src/player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/player.cpp.s
 .PHONY : src/player.cpp.s
 
+src/playermarker.o: src/playermarker.cpp.o
+.PHONY : src/playermarker.o
+
+# target to build an object file
+src/playermarker.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/playermarker.cpp.o
+.PHONY : src/playermarker.cpp.o
+
+src/playermarker.i: src/playermarker.cpp.i
+.PHONY : src/playermarker.i
+
+# target to preprocess a source file
+src/playermarker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/playermarker.cpp.i
+.PHONY : src/playermarker.cpp.i
+
+src/playermarker.s: src/playermarker.cpp.s
+.PHONY : src/playermarker.s
+
+# target to generate assembly for a file
+src/playermarker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/playermarker.cpp.s
+.PHONY : src/playermarker.cpp.s
+
+src/purplecard.o: src/purplecard.cpp.o
+.PHONY : src/purplecard.o
+
+# target to build an object file
+src/purplecard.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/purplecard.cpp.o
+.PHONY : src/purplecard.cpp.o
+
+src/purplecard.i: src/purplecard.cpp.i
+.PHONY : src/purplecard.i
+
+# target to preprocess a source file
+src/purplecard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/purplecard.cpp.i
+.PHONY : src/purplecard.cpp.i
+
+src/purplecard.s: src/purplecard.cpp.s
+.PHONY : src/purplecard.s
+
+# target to generate assembly for a file
+src/purplecard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/purplecard.cpp.s
+.PHONY : src/purplecard.cpp.s
+
+src/scarecrow.o: src/scarecrow.cpp.o
+.PHONY : src/scarecrow.o
+
+# target to build an object file
+src/scarecrow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/scarecrow.cpp.o
+.PHONY : src/scarecrow.cpp.o
+
+src/scarecrow.i: src/scarecrow.cpp.i
+.PHONY : src/scarecrow.i
+
+# target to preprocess a source file
+src/scarecrow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/scarecrow.cpp.i
+.PHONY : src/scarecrow.cpp.i
+
+src/scarecrow.s: src/scarecrow.cpp.s
+.PHONY : src/scarecrow.s
+
+# target to generate assembly for a file
+src/scarecrow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/scarecrow.cpp.s
+.PHONY : src/scarecrow.cpp.s
+
+src/season.o: src/season.cpp.o
+.PHONY : src/season.o
+
+# target to build an object file
+src/season.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/season.cpp.o
+.PHONY : src/season.cpp.o
+
+src/season.i: src/season.cpp.i
+.PHONY : src/season.i
+
+# target to preprocess a source file
+src/season.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/season.cpp.i
+.PHONY : src/season.cpp.i
+
+src/season.s: src/season.cpp.s
+.PHONY : src/season.s
+
+# target to generate assembly for a file
+src/season.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/season.cpp.s
+.PHONY : src/season.cpp.s
+
+src/spring.o: src/spring.cpp.o
+.PHONY : src/spring.o
+
+# target to build an object file
+src/spring.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/spring.cpp.o
+.PHONY : src/spring.cpp.o
+
+src/spring.i: src/spring.cpp.i
+.PHONY : src/spring.i
+
+# target to preprocess a source file
+src/spring.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/spring.cpp.i
+.PHONY : src/spring.cpp.i
+
+src/spring.s: src/spring.cpp.s
+.PHONY : src/spring.s
+
+# target to generate assembly for a file
+src/spring.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/spring.cpp.s
+.PHONY : src/spring.cpp.s
+
+src/spy.o: src/spy.cpp.o
+.PHONY : src/spy.o
+
+# target to build an object file
+src/spy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/spy.cpp.o
+.PHONY : src/spy.cpp.o
+
+src/spy.i: src/spy.cpp.i
+.PHONY : src/spy.i
+
+# target to preprocess a source file
+src/spy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/spy.cpp.i
+.PHONY : src/spy.cpp.i
+
+src/spy.s: src/spy.cpp.s
+.PHONY : src/spy.s
+
+# target to generate assembly for a file
+src/spy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/spy.cpp.s
+.PHONY : src/spy.cpp.s
+
 src/state.o: src/state.cpp.o
 .PHONY : src/state.o
 
@@ -656,6 +560,30 @@ src/state.s: src/state.cpp.s
 src/state.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/state.cpp.s
 .PHONY : src/state.cpp.s
+
+src/turncoat.o: src/turncoat.cpp.o
+.PHONY : src/turncoat.o
+
+# target to build an object file
+src/turncoat.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/turncoat.cpp.o
+.PHONY : src/turncoat.cpp.o
+
+src/turncoat.i: src/turncoat.cpp.i
+.PHONY : src/turncoat.i
+
+# target to preprocess a source file
+src/turncoat.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/turncoat.cpp.i
+.PHONY : src/turncoat.cpp.i
+
+src/turncoat.s: src/turncoat.cpp.s
+.PHONY : src/turncoat.s
+
+# target to generate assembly for a file
+src/turncoat.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/turncoat.cpp.s
+.PHONY : src/turncoat.cpp.s
 
 src/userinterface.o: src/userinterface.cpp.o
 .PHONY : src/userinterface.o
@@ -681,6 +609,54 @@ src/userinterface.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/userinterface.cpp.s
 .PHONY : src/userinterface.cpp.s
 
+src/winter.o: src/winter.cpp.o
+.PHONY : src/winter.o
+
+# target to build an object file
+src/winter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/winter.cpp.o
+.PHONY : src/winter.cpp.o
+
+src/winter.i: src/winter.cpp.i
+.PHONY : src/winter.i
+
+# target to preprocess a source file
+src/winter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/winter.cpp.i
+.PHONY : src/winter.cpp.i
+
+src/winter.s: src/winter.cpp.s
+.PHONY : src/winter.s
+
+# target to generate assembly for a file
+src/winter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/winter.cpp.s
+.PHONY : src/winter.cpp.s
+
+src/yellowcard.o: src/yellowcard.cpp.o
+.PHONY : src/yellowcard.o
+
+# target to build an object file
+src/yellowcard.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/yellowcard.cpp.o
+.PHONY : src/yellowcard.cpp.o
+
+src/yellowcard.i: src/yellowcard.cpp.i
+.PHONY : src/yellowcard.i
+
+# target to preprocess a source file
+src/yellowcard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/yellowcard.cpp.i
+.PHONY : src/yellowcard.cpp.i
+
+src/yellowcard.s: src/yellowcard.cpp.s
+.PHONY : src/yellowcard.s
+
+# target to generate assembly for a file
+src/yellowcard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/yellowcard.cpp.s
+.PHONY : src/yellowcard.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -690,75 +666,72 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Condottiere"
-	@echo "... CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.o"
-	@echo "... CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.i"
-	@echo "... CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/battlemarker.o"
+	@echo "... src/battlemarker.i"
+	@echo "... src/battlemarker.s"
+	@echo "... src/bishop.o"
+	@echo "... src/bishop.i"
+	@echo "... src/bishop.s"
 	@echo "... src/card.o"
 	@echo "... src/card.i"
 	@echo "... src/card.s"
-	@echo "... src/cards/bishop.o"
-	@echo "... src/cards/bishop.i"
-	@echo "... src/cards/bishop.s"
-	@echo "... src/cards/drummer.o"
-	@echo "... src/cards/drummer.i"
-	@echo "... src/cards/drummer.s"
-	@echo "... src/cards/heroine.o"
-	@echo "... src/cards/heroine.i"
-	@echo "... src/cards/heroine.s"
-	@echo "... src/cards/purplecard.o"
-	@echo "... src/cards/purplecard.i"
-	@echo "... src/cards/purplecard.s"
-	@echo "... src/cards/scarecrow.o"
-	@echo "... src/cards/scarecrow.i"
-	@echo "... src/cards/scarecrow.s"
-	@echo "... src/cards/season.o"
-	@echo "... src/cards/season.i"
-	@echo "... src/cards/season.s"
-	@echo "... src/cards/spring.o"
-	@echo "... src/cards/spring.i"
-	@echo "... src/cards/spring.s"
-	@echo "... src/cards/spy.o"
-	@echo "... src/cards/spy.i"
-	@echo "... src/cards/spy.s"
-	@echo "... src/cards/turncoat.o"
-	@echo "... src/cards/turncoat.i"
-	@echo "... src/cards/turncoat.s"
-	@echo "... src/cards/winter.o"
-	@echo "... src/cards/winter.i"
-	@echo "... src/cards/winter.s"
-	@echo "... src/cards/yellowcard.o"
-	@echo "... src/cards/yellowcard.i"
-	@echo "... src/cards/yellowcard.s"
+	@echo "... src/drummer.o"
+	@echo "... src/drummer.i"
+	@echo "... src/drummer.s"
+	@echo "... src/favormarker.o"
+	@echo "... src/favormarker.i"
+	@echo "... src/favormarker.s"
 	@echo "... src/game.o"
 	@echo "... src/game.i"
 	@echo "... src/game.s"
 	@echo "... src/gameBoard.o"
 	@echo "... src/gameBoard.i"
 	@echo "... src/gameBoard.s"
-	@echo "... src/marker/battlemarker.o"
-	@echo "... src/marker/battlemarker.i"
-	@echo "... src/marker/battlemarker.s"
-	@echo "... src/marker/favormarker.o"
-	@echo "... src/marker/favormarker.i"
-	@echo "... src/marker/favormarker.s"
-	@echo "... src/marker/marker.o"
-	@echo "... src/marker/marker.i"
-	@echo "... src/marker/marker.s"
-	@echo "... src/marker/playermarker.o"
-	@echo "... src/marker/playermarker.i"
-	@echo "... src/marker/playermarker.s"
+	@echo "... src/heroine.o"
+	@echo "... src/heroine.i"
+	@echo "... src/heroine.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/marker.o"
+	@echo "... src/marker.i"
+	@echo "... src/marker.s"
 	@echo "... src/player.o"
 	@echo "... src/player.i"
 	@echo "... src/player.s"
+	@echo "... src/playermarker.o"
+	@echo "... src/playermarker.i"
+	@echo "... src/playermarker.s"
+	@echo "... src/purplecard.o"
+	@echo "... src/purplecard.i"
+	@echo "... src/purplecard.s"
+	@echo "... src/scarecrow.o"
+	@echo "... src/scarecrow.i"
+	@echo "... src/scarecrow.s"
+	@echo "... src/season.o"
+	@echo "... src/season.i"
+	@echo "... src/season.s"
+	@echo "... src/spring.o"
+	@echo "... src/spring.i"
+	@echo "... src/spring.s"
+	@echo "... src/spy.o"
+	@echo "... src/spy.i"
+	@echo "... src/spy.s"
 	@echo "... src/state.o"
 	@echo "... src/state.i"
 	@echo "... src/state.s"
+	@echo "... src/turncoat.o"
+	@echo "... src/turncoat.i"
+	@echo "... src/turncoat.s"
 	@echo "... src/userinterface.o"
 	@echo "... src/userinterface.i"
 	@echo "... src/userinterface.s"
+	@echo "... src/winter.o"
+	@echo "... src/winter.i"
+	@echo "... src/winter.s"
+	@echo "... src/yellowcard.o"
+	@echo "... src/yellowcard.i"
+	@echo "... src/yellowcard.s"
 .PHONY : help
 
 

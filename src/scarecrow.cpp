@@ -8,10 +8,6 @@ Scarecrow::Scarecrow() : PurpleCard(0,"Scarecrow",0){
     help = HELP;
 }
 
-void Scarecrow::applyFeature(Player* player, Game* game) const{
-
-}
-
 std::string Scarecrow::getType() const {
     return name;
 }

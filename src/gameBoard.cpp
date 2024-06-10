@@ -1,11 +1,7 @@
-#include "GameBoard.h"
+#include "gameboard.h"
 
 #include <vector>
 #include <string>
-
-GameBoard::GameBoard() {
-
-}
 
 bool GameBoard::checkAdjacency(const State* state1,const State* state2,const State* state3) {
     std::string name1{state1->getName()},name2{state2->getName()},name3{state3->getName()};

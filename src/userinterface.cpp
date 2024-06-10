@@ -78,4 +78,5 @@ std::string UserInterface::getCommand(const Player& player,const BattleMarker& m
             pause();
         } 
     } while (flag == false);     
+    return "";
 }

@@ -1,4 +1,4 @@
-#include "FavorMarker.h"
+#include "favormarker.h"
 
 FavorMarker::FavorMarker() : Marker(white) {
 
