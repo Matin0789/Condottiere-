@@ -12,7 +12,7 @@ public:
 protected:
 private:
     static std::string help;
-    
+    std::string name;
 };
 
 #endif // WINTER_H

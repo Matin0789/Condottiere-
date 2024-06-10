@@ -8,9 +8,11 @@ public:
     Spring();
     static std::string getHelp();
     virtual std::string getType() const override;
+    void applyFeature(Player* player, Game* game) const; 
 protected:
 private:
     static std::string help;
+    std::string name;
 };
 
 #endif // SPRING_H
