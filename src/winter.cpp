@@ -1,6 +1,6 @@
-#include "winter.h"
-#include "player.h"
-#include "game.h"
+#include "Winter.h"
+#include "Player.h"
+#include "Game.h"
 
 #define HELP "The value of each mercenary in play is “1.” This card replaces the current season"
 
