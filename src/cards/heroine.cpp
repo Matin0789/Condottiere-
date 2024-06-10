@@ -9,7 +9,7 @@ Heroine::Heroine() : PurpleCard(10,"Heroine",5){
 }
 
 void Heroine::applyFeature(Player* player, Game* game) const{
-    player->point += point;
+   // player->point += point;
 }
 
 std::string Heroine::getType() const {
