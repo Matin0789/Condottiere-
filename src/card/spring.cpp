@@ -15,6 +15,6 @@ static bool compareByPoint(const Card& card1, const Card& card2){
     return card1.getPoint() < card2.getPoint();
 }
 
-std::string Spring::getType() const {
-    return name;
+std::string Spring::getHelp() {
+    return help;
 }

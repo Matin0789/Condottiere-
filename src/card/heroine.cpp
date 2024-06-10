@@ -8,6 +8,7 @@ Heroine::Heroine() : PurpleCard(10,"Heroine",5){
     help = HELP ;
 }
 
-std::string Heroine::getType() const {
-    return name;
+std::string Heroine::getHelp() {
+    return help;
 }
+

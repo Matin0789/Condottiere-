@@ -8,6 +8,6 @@ Scarecrow::Scarecrow() : PurpleCard(0,"Scarecrow",0){
     help = HELP;
 }
 
-std::string Scarecrow::getType() const {
-    return name;
+std::string Scarecrow::getHelp() {
+    return help;
 }

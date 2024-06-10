@@ -8,6 +8,6 @@ Winter::Winter() : Season(0,"Winter",2){
   help = HELP ;
 }
 
-std::string Winter::getType() const {
-    return name;
+std::string Winter::getHelp(){
+    return help;
 }

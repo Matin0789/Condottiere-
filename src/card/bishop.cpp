@@ -9,4 +9,6 @@ Bishop::Bishop() : PurpleCard(0,"Bishop",1) {
     help = HELP ;
 }
 
-std::strig
+std::string Bishop::getHelp() {
+    return help;
+}

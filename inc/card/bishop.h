@@ -9,7 +9,6 @@
 class Bishop : public PurpleCard {
 public:
     Bishop();
-    virtual std::string getType() const override;
     static std::string getHelp();
 protected:
 private:

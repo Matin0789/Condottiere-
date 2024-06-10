@@ -9,6 +9,6 @@ Turncoat::Turncoat() : PurpleCard(0,"Turncoat",0){
     help = HELP;
 }
 
-std::string Turncoat::getType() const {
-    return name;
+std::string Turncoat::getHelp() {
+    return help;
 }

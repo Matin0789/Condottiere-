@@ -1,6 +1,8 @@
 #ifndef CARD_H
 #define CARD_H
 
+#include <string>
+
 class Game;
 class Player;
 

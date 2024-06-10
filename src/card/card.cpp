@@ -2,8 +2,10 @@
 #include "game.h"
 #include "card.h"
 
+Card::Card(unsigned int inputPoint,unsigned int inputPriority) : point(inputPoint), priority(inputPriority) {}
+
 unsigned int Card::getPriority() const {
-    return priority ;
+    return priority;
 }
 
 unsigned int Card::getPoint() const {

@@ -9,6 +9,6 @@ Spy::Spy() : PurpleCard(1,"Spy",5){
     help = HELP;
 }
 
-std::string Spy::getType() const {
-    return name;
+std::string Spy::getHelp() {
+    return help;
 }

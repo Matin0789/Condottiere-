@@ -11,8 +11,6 @@ public:
 protected:
 private:
     static std::string help;
-    unsigned int point;
-    std::string name;
 };
 
 #endif // HEROINE_H

@@ -7,3 +7,7 @@
 Drummer::Drummer() : PurpleCard(0,"Drummer",3){
     help = HELP;
 }
+
+std::string Drummer::getHelp() {
+    return help;
+}
