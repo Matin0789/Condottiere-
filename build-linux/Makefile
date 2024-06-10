@@ -513,101 +513,101 @@ src/gameBoard.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/gameBoard.cpp.s
 .PHONY : src/gameBoard.cpp.s
 
-src/marker/BattleMarker.o: src/marker/BattleMarker.cpp.o
-.PHONY : src/marker/BattleMarker.o
+src/marker/battlemarker.o: src/marker/battlemarker.cpp.o
+.PHONY : src/marker/battlemarker.o
 
 # target to build an object file
-src/marker/BattleMarker.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/BattleMarker.cpp.o
-.PHONY : src/marker/BattleMarker.cpp.o
+src/marker/battlemarker.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/battlemarker.cpp.o
+.PHONY : src/marker/battlemarker.cpp.o
 
-src/marker/BattleMarker.i: src/marker/BattleMarker.cpp.i
-.PHONY : src/marker/BattleMarker.i
+src/marker/battlemarker.i: src/marker/battlemarker.cpp.i
+.PHONY : src/marker/battlemarker.i
 
 # target to preprocess a source file
-src/marker/BattleMarker.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/BattleMarker.cpp.i
-.PHONY : src/marker/BattleMarker.cpp.i
+src/marker/battlemarker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/battlemarker.cpp.i
+.PHONY : src/marker/battlemarker.cpp.i
 
-src/marker/BattleMarker.s: src/marker/BattleMarker.cpp.s
-.PHONY : src/marker/BattleMarker.s
+src/marker/battlemarker.s: src/marker/battlemarker.cpp.s
+.PHONY : src/marker/battlemarker.s
 
 # target to generate assembly for a file
-src/marker/BattleMarker.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/BattleMarker.cpp.s
-.PHONY : src/marker/BattleMarker.cpp.s
+src/marker/battlemarker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/battlemarker.cpp.s
+.PHONY : src/marker/battlemarker.cpp.s
 
-src/marker/FavorMarker.o: src/marker/FavorMarker.cpp.o
-.PHONY : src/marker/FavorMarker.o
+src/marker/favormarker.o: src/marker/favormarker.cpp.o
+.PHONY : src/marker/favormarker.o
 
 # target to build an object file
-src/marker/FavorMarker.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/FavorMarker.cpp.o
-.PHONY : src/marker/FavorMarker.cpp.o
+src/marker/favormarker.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/favormarker.cpp.o
+.PHONY : src/marker/favormarker.cpp.o
 
-src/marker/FavorMarker.i: src/marker/FavorMarker.cpp.i
-.PHONY : src/marker/FavorMarker.i
+src/marker/favormarker.i: src/marker/favormarker.cpp.i
+.PHONY : src/marker/favormarker.i
 
 # target to preprocess a source file
-src/marker/FavorMarker.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/FavorMarker.cpp.i
-.PHONY : src/marker/FavorMarker.cpp.i
+src/marker/favormarker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/favormarker.cpp.i
+.PHONY : src/marker/favormarker.cpp.i
 
-src/marker/FavorMarker.s: src/marker/FavorMarker.cpp.s
-.PHONY : src/marker/FavorMarker.s
+src/marker/favormarker.s: src/marker/favormarker.cpp.s
+.PHONY : src/marker/favormarker.s
 
 # target to generate assembly for a file
-src/marker/FavorMarker.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/FavorMarker.cpp.s
-.PHONY : src/marker/FavorMarker.cpp.s
+src/marker/favormarker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/favormarker.cpp.s
+.PHONY : src/marker/favormarker.cpp.s
 
-src/marker/Marker.o: src/marker/Marker.cpp.o
-.PHONY : src/marker/Marker.o
+src/marker/marker.o: src/marker/marker.cpp.o
+.PHONY : src/marker/marker.o
 
 # target to build an object file
-src/marker/Marker.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/Marker.cpp.o
-.PHONY : src/marker/Marker.cpp.o
+src/marker/marker.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/marker.cpp.o
+.PHONY : src/marker/marker.cpp.o
 
-src/marker/Marker.i: src/marker/Marker.cpp.i
-.PHONY : src/marker/Marker.i
+src/marker/marker.i: src/marker/marker.cpp.i
+.PHONY : src/marker/marker.i
 
 # target to preprocess a source file
-src/marker/Marker.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/Marker.cpp.i
-.PHONY : src/marker/Marker.cpp.i
+src/marker/marker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/marker.cpp.i
+.PHONY : src/marker/marker.cpp.i
 
-src/marker/Marker.s: src/marker/Marker.cpp.s
-.PHONY : src/marker/Marker.s
+src/marker/marker.s: src/marker/marker.cpp.s
+.PHONY : src/marker/marker.s
 
 # target to generate assembly for a file
-src/marker/Marker.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/Marker.cpp.s
-.PHONY : src/marker/Marker.cpp.s
+src/marker/marker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/marker.cpp.s
+.PHONY : src/marker/marker.cpp.s
 
-src/marker/PlayerMarker.o: src/marker/PlayerMarker.cpp.o
-.PHONY : src/marker/PlayerMarker.o
+src/marker/playermarker.o: src/marker/playermarker.cpp.o
+.PHONY : src/marker/playermarker.o
 
 # target to build an object file
-src/marker/PlayerMarker.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/PlayerMarker.cpp.o
-.PHONY : src/marker/PlayerMarker.cpp.o
+src/marker/playermarker.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/playermarker.cpp.o
+.PHONY : src/marker/playermarker.cpp.o
 
-src/marker/PlayerMarker.i: src/marker/PlayerMarker.cpp.i
-.PHONY : src/marker/PlayerMarker.i
+src/marker/playermarker.i: src/marker/playermarker.cpp.i
+.PHONY : src/marker/playermarker.i
 
 # target to preprocess a source file
-src/marker/PlayerMarker.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/PlayerMarker.cpp.i
-.PHONY : src/marker/PlayerMarker.cpp.i
+src/marker/playermarker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/playermarker.cpp.i
+.PHONY : src/marker/playermarker.cpp.i
 
-src/marker/PlayerMarker.s: src/marker/PlayerMarker.cpp.s
-.PHONY : src/marker/PlayerMarker.s
+src/marker/playermarker.s: src/marker/playermarker.cpp.s
+.PHONY : src/marker/playermarker.s
 
 # target to generate assembly for a file
-src/marker/PlayerMarker.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/PlayerMarker.cpp.s
-.PHONY : src/marker/PlayerMarker.cpp.s
+src/marker/playermarker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Condottiere.dir/build.make CMakeFiles/Condottiere.dir/src/marker/playermarker.cpp.s
+.PHONY : src/marker/playermarker.cpp.s
 
 src/player.o: src/player.cpp.o
 .PHONY : src/player.o
@@ -738,18 +738,18 @@ help:
 	@echo "... src/gameBoard.o"
 	@echo "... src/gameBoard.i"
 	@echo "... src/gameBoard.s"
-	@echo "... src/marker/BattleMarker.o"
-	@echo "... src/marker/BattleMarker.i"
-	@echo "... src/marker/BattleMarker.s"
-	@echo "... src/marker/FavorMarker.o"
-	@echo "... src/marker/FavorMarker.i"
-	@echo "... src/marker/FavorMarker.s"
-	@echo "... src/marker/Marker.o"
-	@echo "... src/marker/Marker.i"
-	@echo "... src/marker/Marker.s"
-	@echo "... src/marker/PlayerMarker.o"
-	@echo "... src/marker/PlayerMarker.i"
-	@echo "... src/marker/PlayerMarker.s"
+	@echo "... src/marker/battlemarker.o"
+	@echo "... src/marker/battlemarker.i"
+	@echo "... src/marker/battlemarker.s"
+	@echo "... src/marker/favormarker.o"
+	@echo "... src/marker/favormarker.i"
+	@echo "... src/marker/favormarker.s"
+	@echo "... src/marker/marker.o"
+	@echo "... src/marker/marker.i"
+	@echo "... src/marker/marker.s"
+	@echo "... src/marker/playermarker.o"
+	@echo "... src/marker/playermarker.i"
+	@echo "... src/marker/playermarker.s"
 	@echo "... src/player.o"
 	@echo "... src/player.i"
 	@echo "... src/player.s"

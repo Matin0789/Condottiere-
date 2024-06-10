@@ -7,6 +7,7 @@ class Drummer : public PurpleCard {
 public:
     Drummer();
     static std::string getHelp();
+    virtual std::string getType() const override;
 protected:
 private:
     static std::string help;

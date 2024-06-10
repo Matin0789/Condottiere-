@@ -9,7 +9,6 @@ class PurpleCard : public Card {
 public:
     PurpleCard(int,std::string,int);// (point,name,priority)
 protected:
-
 private:
 
 };

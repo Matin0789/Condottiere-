@@ -153,8 +153,12 @@ CMakeFiles/Condottiere.dir/main.cpp.o: \
  /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/array \
  /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/include/player.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/include/card.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/include/cards/card.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/include/userinterface.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/include/marker/battlemarker.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/include/marker/marker.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/include/enumcolor.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/include/state.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/include/gameboard.h \
  /usr/include/c++/11/unordered_map \
  /usr/include/c++/11/ext/aligned_buffer.h \
@@ -182,10 +186,6 @@ CMakeFiles/Condottiere.dir/main.cpp.o: \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/include/cards/turncoat.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/include/cards/yellowcard.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/include/marker/marker.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/include/enumcolor.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/include/state.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/include/marker/playermarker.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/include/marker/marker.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/include/marker/favormarker.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/include/marker/battlemarker.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/include/userinterface.h

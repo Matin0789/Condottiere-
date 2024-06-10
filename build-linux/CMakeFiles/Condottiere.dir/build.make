@@ -293,61 +293,61 @@ CMakeFiles/Condottiere.dir/src/gameBoard.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Condottiere.dir/src/gameBoard.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matin/Documents/University/Advanced/Project/Condottiere-/src/gameBoard.cpp -o CMakeFiles/Condottiere.dir/src/gameBoard.cpp.s
 
-CMakeFiles/Condottiere.dir/src/marker/BattleMarker.cpp.o: CMakeFiles/Condottiere.dir/flags.make
-CMakeFiles/Condottiere.dir/src/marker/BattleMarker.cpp.o: ../src/marker/BattleMarker.cpp
-CMakeFiles/Condottiere.dir/src/marker/BattleMarker.cpp.o: CMakeFiles/Condottiere.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matin/Documents/University/Advanced/Project/Condottiere-/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Condottiere.dir/src/marker/BattleMarker.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Condottiere.dir/src/marker/BattleMarker.cpp.o -MF CMakeFiles/Condottiere.dir/src/marker/BattleMarker.cpp.o.d -o CMakeFiles/Condottiere.dir/src/marker/BattleMarker.cpp.o -c /home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/BattleMarker.cpp
+CMakeFiles/Condottiere.dir/src/marker/battlemarker.cpp.o: CMakeFiles/Condottiere.dir/flags.make
+CMakeFiles/Condottiere.dir/src/marker/battlemarker.cpp.o: ../src/marker/battlemarker.cpp
+CMakeFiles/Condottiere.dir/src/marker/battlemarker.cpp.o: CMakeFiles/Condottiere.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matin/Documents/University/Advanced/Project/Condottiere-/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Condottiere.dir/src/marker/battlemarker.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Condottiere.dir/src/marker/battlemarker.cpp.o -MF CMakeFiles/Condottiere.dir/src/marker/battlemarker.cpp.o.d -o CMakeFiles/Condottiere.dir/src/marker/battlemarker.cpp.o -c /home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/battlemarker.cpp
 
-CMakeFiles/Condottiere.dir/src/marker/BattleMarker.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Condottiere.dir/src/marker/BattleMarker.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/BattleMarker.cpp > CMakeFiles/Condottiere.dir/src/marker/BattleMarker.cpp.i
+CMakeFiles/Condottiere.dir/src/marker/battlemarker.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Condottiere.dir/src/marker/battlemarker.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/battlemarker.cpp > CMakeFiles/Condottiere.dir/src/marker/battlemarker.cpp.i
 
-CMakeFiles/Condottiere.dir/src/marker/BattleMarker.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Condottiere.dir/src/marker/BattleMarker.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/BattleMarker.cpp -o CMakeFiles/Condottiere.dir/src/marker/BattleMarker.cpp.s
+CMakeFiles/Condottiere.dir/src/marker/battlemarker.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Condottiere.dir/src/marker/battlemarker.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/battlemarker.cpp -o CMakeFiles/Condottiere.dir/src/marker/battlemarker.cpp.s
 
-CMakeFiles/Condottiere.dir/src/marker/FavorMarker.cpp.o: CMakeFiles/Condottiere.dir/flags.make
-CMakeFiles/Condottiere.dir/src/marker/FavorMarker.cpp.o: ../src/marker/FavorMarker.cpp
-CMakeFiles/Condottiere.dir/src/marker/FavorMarker.cpp.o: CMakeFiles/Condottiere.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matin/Documents/University/Advanced/Project/Condottiere-/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Condottiere.dir/src/marker/FavorMarker.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Condottiere.dir/src/marker/FavorMarker.cpp.o -MF CMakeFiles/Condottiere.dir/src/marker/FavorMarker.cpp.o.d -o CMakeFiles/Condottiere.dir/src/marker/FavorMarker.cpp.o -c /home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/FavorMarker.cpp
+CMakeFiles/Condottiere.dir/src/marker/favormarker.cpp.o: CMakeFiles/Condottiere.dir/flags.make
+CMakeFiles/Condottiere.dir/src/marker/favormarker.cpp.o: ../src/marker/favormarker.cpp
+CMakeFiles/Condottiere.dir/src/marker/favormarker.cpp.o: CMakeFiles/Condottiere.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matin/Documents/University/Advanced/Project/Condottiere-/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Condottiere.dir/src/marker/favormarker.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Condottiere.dir/src/marker/favormarker.cpp.o -MF CMakeFiles/Condottiere.dir/src/marker/favormarker.cpp.o.d -o CMakeFiles/Condottiere.dir/src/marker/favormarker.cpp.o -c /home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/favormarker.cpp
 
-CMakeFiles/Condottiere.dir/src/marker/FavorMarker.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Condottiere.dir/src/marker/FavorMarker.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/FavorMarker.cpp > CMakeFiles/Condottiere.dir/src/marker/FavorMarker.cpp.i
+CMakeFiles/Condottiere.dir/src/marker/favormarker.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Condottiere.dir/src/marker/favormarker.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/favormarker.cpp > CMakeFiles/Condottiere.dir/src/marker/favormarker.cpp.i
 
-CMakeFiles/Condottiere.dir/src/marker/FavorMarker.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Condottiere.dir/src/marker/FavorMarker.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/FavorMarker.cpp -o CMakeFiles/Condottiere.dir/src/marker/FavorMarker.cpp.s
+CMakeFiles/Condottiere.dir/src/marker/favormarker.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Condottiere.dir/src/marker/favormarker.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/favormarker.cpp -o CMakeFiles/Condottiere.dir/src/marker/favormarker.cpp.s
 
-CMakeFiles/Condottiere.dir/src/marker/Marker.cpp.o: CMakeFiles/Condottiere.dir/flags.make
-CMakeFiles/Condottiere.dir/src/marker/Marker.cpp.o: ../src/marker/Marker.cpp
-CMakeFiles/Condottiere.dir/src/marker/Marker.cpp.o: CMakeFiles/Condottiere.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matin/Documents/University/Advanced/Project/Condottiere-/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Condottiere.dir/src/marker/Marker.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Condottiere.dir/src/marker/Marker.cpp.o -MF CMakeFiles/Condottiere.dir/src/marker/Marker.cpp.o.d -o CMakeFiles/Condottiere.dir/src/marker/Marker.cpp.o -c /home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/Marker.cpp
+CMakeFiles/Condottiere.dir/src/marker/marker.cpp.o: CMakeFiles/Condottiere.dir/flags.make
+CMakeFiles/Condottiere.dir/src/marker/marker.cpp.o: ../src/marker/marker.cpp
+CMakeFiles/Condottiere.dir/src/marker/marker.cpp.o: CMakeFiles/Condottiere.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matin/Documents/University/Advanced/Project/Condottiere-/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Condottiere.dir/src/marker/marker.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Condottiere.dir/src/marker/marker.cpp.o -MF CMakeFiles/Condottiere.dir/src/marker/marker.cpp.o.d -o CMakeFiles/Condottiere.dir/src/marker/marker.cpp.o -c /home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/marker.cpp
 
-CMakeFiles/Condottiere.dir/src/marker/Marker.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Condottiere.dir/src/marker/Marker.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/Marker.cpp > CMakeFiles/Condottiere.dir/src/marker/Marker.cpp.i
+CMakeFiles/Condottiere.dir/src/marker/marker.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Condottiere.dir/src/marker/marker.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/marker.cpp > CMakeFiles/Condottiere.dir/src/marker/marker.cpp.i
 
-CMakeFiles/Condottiere.dir/src/marker/Marker.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Condottiere.dir/src/marker/Marker.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/Marker.cpp -o CMakeFiles/Condottiere.dir/src/marker/Marker.cpp.s
+CMakeFiles/Condottiere.dir/src/marker/marker.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Condottiere.dir/src/marker/marker.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/marker.cpp -o CMakeFiles/Condottiere.dir/src/marker/marker.cpp.s
 
-CMakeFiles/Condottiere.dir/src/marker/PlayerMarker.cpp.o: CMakeFiles/Condottiere.dir/flags.make
-CMakeFiles/Condottiere.dir/src/marker/PlayerMarker.cpp.o: ../src/marker/PlayerMarker.cpp
-CMakeFiles/Condottiere.dir/src/marker/PlayerMarker.cpp.o: CMakeFiles/Condottiere.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matin/Documents/University/Advanced/Project/Condottiere-/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Condottiere.dir/src/marker/PlayerMarker.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Condottiere.dir/src/marker/PlayerMarker.cpp.o -MF CMakeFiles/Condottiere.dir/src/marker/PlayerMarker.cpp.o.d -o CMakeFiles/Condottiere.dir/src/marker/PlayerMarker.cpp.o -c /home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/PlayerMarker.cpp
+CMakeFiles/Condottiere.dir/src/marker/playermarker.cpp.o: CMakeFiles/Condottiere.dir/flags.make
+CMakeFiles/Condottiere.dir/src/marker/playermarker.cpp.o: ../src/marker/playermarker.cpp
+CMakeFiles/Condottiere.dir/src/marker/playermarker.cpp.o: CMakeFiles/Condottiere.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matin/Documents/University/Advanced/Project/Condottiere-/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Condottiere.dir/src/marker/playermarker.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Condottiere.dir/src/marker/playermarker.cpp.o -MF CMakeFiles/Condottiere.dir/src/marker/playermarker.cpp.o.d -o CMakeFiles/Condottiere.dir/src/marker/playermarker.cpp.o -c /home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/playermarker.cpp
 
-CMakeFiles/Condottiere.dir/src/marker/PlayerMarker.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Condottiere.dir/src/marker/PlayerMarker.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/PlayerMarker.cpp > CMakeFiles/Condottiere.dir/src/marker/PlayerMarker.cpp.i
+CMakeFiles/Condottiere.dir/src/marker/playermarker.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Condottiere.dir/src/marker/playermarker.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/playermarker.cpp > CMakeFiles/Condottiere.dir/src/marker/playermarker.cpp.i
 
-CMakeFiles/Condottiere.dir/src/marker/PlayerMarker.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Condottiere.dir/src/marker/PlayerMarker.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/PlayerMarker.cpp -o CMakeFiles/Condottiere.dir/src/marker/PlayerMarker.cpp.s
+CMakeFiles/Condottiere.dir/src/marker/playermarker.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Condottiere.dir/src/marker/playermarker.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/playermarker.cpp -o CMakeFiles/Condottiere.dir/src/marker/playermarker.cpp.s
 
 CMakeFiles/Condottiere.dir/src/player.cpp.o: CMakeFiles/Condottiere.dir/flags.make
 CMakeFiles/Condottiere.dir/src/player.cpp.o: ../src/player.cpp
@@ -409,10 +409,10 @@ Condottiere_OBJECTS = \
 "CMakeFiles/Condottiere.dir/src/cards/yellowcard.cpp.o" \
 "CMakeFiles/Condottiere.dir/src/game.cpp.o" \
 "CMakeFiles/Condottiere.dir/src/gameBoard.cpp.o" \
-"CMakeFiles/Condottiere.dir/src/marker/BattleMarker.cpp.o" \
-"CMakeFiles/Condottiere.dir/src/marker/FavorMarker.cpp.o" \
-"CMakeFiles/Condottiere.dir/src/marker/Marker.cpp.o" \
-"CMakeFiles/Condottiere.dir/src/marker/PlayerMarker.cpp.o" \
+"CMakeFiles/Condottiere.dir/src/marker/battlemarker.cpp.o" \
+"CMakeFiles/Condottiere.dir/src/marker/favormarker.cpp.o" \
+"CMakeFiles/Condottiere.dir/src/marker/marker.cpp.o" \
+"CMakeFiles/Condottiere.dir/src/marker/playermarker.cpp.o" \
 "CMakeFiles/Condottiere.dir/src/player.cpp.o" \
 "CMakeFiles/Condottiere.dir/src/state.cpp.o" \
 "CMakeFiles/Condottiere.dir/src/userinterface.cpp.o"
@@ -436,10 +436,10 @@ Condottiere: CMakeFiles/Condottiere.dir/src/cards/winter.cpp.o
 Condottiere: CMakeFiles/Condottiere.dir/src/cards/yellowcard.cpp.o
 Condottiere: CMakeFiles/Condottiere.dir/src/game.cpp.o
 Condottiere: CMakeFiles/Condottiere.dir/src/gameBoard.cpp.o
-Condottiere: CMakeFiles/Condottiere.dir/src/marker/BattleMarker.cpp.o
-Condottiere: CMakeFiles/Condottiere.dir/src/marker/FavorMarker.cpp.o
-Condottiere: CMakeFiles/Condottiere.dir/src/marker/Marker.cpp.o
-Condottiere: CMakeFiles/Condottiere.dir/src/marker/PlayerMarker.cpp.o
+Condottiere: CMakeFiles/Condottiere.dir/src/marker/battlemarker.cpp.o
+Condottiere: CMakeFiles/Condottiere.dir/src/marker/favormarker.cpp.o
+Condottiere: CMakeFiles/Condottiere.dir/src/marker/marker.cpp.o
+Condottiere: CMakeFiles/Condottiere.dir/src/marker/playermarker.cpp.o
 Condottiere: CMakeFiles/Condottiere.dir/src/player.cpp.o
 Condottiere: CMakeFiles/Condottiere.dir/src/state.cpp.o
 Condottiere: CMakeFiles/Condottiere.dir/src/userinterface.cpp.o
