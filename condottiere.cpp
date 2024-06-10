@@ -3,6 +3,24 @@
 #include <map>
 #include <array>
 #include <string>
+#include <unordered_map>
+#include <algorithm>
+
+
+#define BEL "BELLA"
+#define CAL "CALINE"
+#define ENN "ENNA"
+#define ATE "ATELA"
+#define PLA "PLADACI"
+#define BOR "BORGE"
+#define DIM "DIMASE"
+#define MOR "MORINA"
+#define OLI "OLIVADI"
+#define ROL "ROLLO"
+#define TAL "TALIMONE"
+#define ARM "ARMENTO"
+#define LIA "LIA"
+#define ELI "ELINIA"
 
 class UserInterface
 {};
@@ -92,79 +110,222 @@ void Game::war() {
 class GameBoard
 {
    public:
-   private: 
+   bool GameBoard::checkAdjacency(const State* state1,const State* state2,const State* state3) {
+    std::string name1{state1->getName()},name2{state2->getName()},name3{state3->getName()};
+    return (adjacency[name1][name2] && adjacency[name1][name3] && adjacency[name2][name3]);
+}
+
+const std::unordered_map<std::string, State>& GameBoard::getStates() const { return state; }
+   private:
+	const std::unordered_map<std::string, State> state = {
+		{BEL, State(BEL)},
+		{CAL, State(CAL)},
+		{ENN, State(ENN)},
+		{ATE, State(ATE)},
+		{PLA, State(PLA)},
+		{BOR, State(BOR)},
+		{DIM, State(DIM)},
+		{MOR, State(MOR)},
+		{OLI, State(OLI)},
+		{ROL, State(ROL)},
+		{TAL, State(TAL)},
+		{ARM, State(ARM)},
+		{LIA, State(LIA)},
+		{ELI, State(ELI)}
+	};
+	std::map<std::string,std::map<std::string,bool>> adjacency = {
+		{BEL,	{{CAL, 1}, {ENN, 0}, {ATE, 0}, {PLA, 1}, {BOR, 1}, {DIM, 0}, {MOR, 0}, {OLI, 0}, {ROL, 0}, {TAL, 0}, {ARM, 0}, {LIA, 0}, {ELI, 0}}},
+		{CAL,	{{ENN, 1}, {ATE, 1}, {PLA, 1}, {BOR, 1}, {DIM, 0}, {MOR, 0}, {OLI, 0}, {ROL, 0}, {TAL, 0}, {ARM, 0}, {LIA, 0}, {ELI, 0}, {BEL, 1}}},
+		{ENN,	{{ATE, 1}, {PLA, 0}, {BOR, 1}, {DIM, 1}, {MOR, 0}, {OLI, 0}, {ROL, 0}, {TAL, 0}, {ARM, 0}, {LIA, 0}, {ELI, 0}, {BEL, 1}, {CAL, 0}}},
+		{ATE,	{{PLA, 0}, {BOR, 0}, {DIM, 1}, {MOR, 0}, {OLI, 0}, {ROL, 0}, {TAL, 0}, {ARM, 0}, {LIA, 0}, {ELI, 0}, {BEL, 0}, {CAL, 1}, {ENN, 1}}},
+		{PLA,	{{BOR, 1}, {DIM, 0}, {MOR, 1}, {OLI, 0}, {ROL, 1}, {TAL, 0}, {ARM, 0}, {LIA, 0}, {ELI, 0}, {BEL, 1}, {CAL, 1}, {ENN, 0}, {ATE, 0}}},
+		{BOR,	{{DIM, 1}, {MOR, 1}, {OLI, 1}, {ROL, 0}, {TAL, 0}, {ARM, 0}, {LIA, 0}, {ELI, 0}, {BEL, 1}, {CAL, 1}, {ENN, 1}, {ATE, 0}, {PLA, 1}}},
+		{DIM,	{{MOR, 1}, {OLI, 1}, {ROL, 0}, {TAL, 0}, {ARM, 0}, {LIA, 0}, {ELI, 0}, {BEL, 0}, {CAL, 0}, {ENN, 1}, {ATE, 1}, {PLA, 0}, {BOR, 1}}},
+		{MOR,	{{OLI, 1}, {ROL, 1}, {TAL, 1}, {ARM, 1}, {LIA, 0}, {ELI, 0}, {BEL, 0}, {CAL, 0}, {ENN, 0}, {ATE, 0}, {PLA, 1}, {BOR, 1}, {DIM, 0}}},
+		{OLI,	{{ROL, 0}, {TAL, 0}, {ARM, 1}, {LIA, 1}, {ELI, 0}, {BEL, 0}, {CAL, 0}, {ENN, 0}, {ATE, 0}, {PLA, 0}, {BOR, 1}, {DIM, 1}, {MOR, 1}}},
+		{ROL,	{{TAL, 1}, {ARM, 0}, {LIA, 0}, {ELI, 1}, {BEL, 0}, {CAL, 0}, {ENN, 0}, {ATE, 0}, {PLA, 1}, {BOR, 0}, {DIM, 0}, {MOR, 1}, {OLI, 0}}},
+		{TAL,	{{ARM, 1}, {LIA, 0}, {ELI, 1}, {BEL, 0}, {CAL, 0}, {ENN, 0}, {ATE, 0}, {PLA, 0}, {BOR, 0}, {DIM, 0}, {MOR, 1}, {OLI, 0}, {ROL, 1}}},
+		{ARM,	{{LIA, 1}, {ELI, 0}, {BEL, 0}, {CAL, 0}, {ENN, 0}, {ATE, 0}, {PLA, 0}, {BOR, 0}, {DIM, 0}, {MOR, 1}, {OLI, 1}, {ROL, 0}, {TAL, 1}}},
+		{LIA,	{{ELI, 0}, {BEL, 0}, {CAL, 0}, {ENN, 0}, {ATE, 0}, {PLA, 0}, {BOR, 0}, {DIM, 0}, {MOR, 0}, {OLI, 1}, {ROL, 0}, {TAL, 0}, {ARM, 1}}},
+		{ELI,	{{BEL, 0}, {CAL, 0}, {ENN, 0}, {ATE, 0}, {PLA, 0}, {BOR, 0}, {DIM, 0}, {MOR, 0}, {OLI, 0}, {ROL, 1}, {TAL, 1}, {ARM, 0}, {LIA, 0}}},
+	};
 };
 class Player
 {
   public:
+  std::string getName() const {
+    return name;
+}
+
+int getID() const {
+    return ID;
+};
+
+unsigned int getPoint() const {
+    return point;
+}
+
+void setPoint(unsigned int point) {
+    this->point;
+}
+
+const std::vector<Card*>& getPlayedCards() const {
+    return playedCards;
+}
+
+const std::vector<Card*>& getCards() const {
+    return cards;
+}
   private:  
+   string name;
+   int ID;
+   unsigned int point;
+
 };
 class State
 {};
 class Card
 {
    public:
+ Card::Card(unsigned int inputPoint,unsigned int inputPriority) : point(inputPoint), priority(inputPriority) {}
+
+unsigned int getPriority() const {
+    return priority;
+}
+
+unsigned int getPoint() const {
+    return point ;
+}
+
+bool is_season() const{
+    return false;
+}
+
+void setPoint(unsigned int) {
+   this->point = point ; 
+}
    private:
-};
-class Bishop
-{
-   public:
-   private: 
-};
-class Drummer
-{
-  public:
-  private:
-};
-class Heroine
-{
-   public:
-   private: 
+   unsigned int priority;
+   unsigned int point;
 };
 class PurpleCard
 {
    public:
    private: 
 };
+class Bishop
+{
+   public:
+   Bishop() : PurpleCard(0,"Bishop",1) {
+
+}
+
+std::string Bishop::getHelp() {
+    return help;
+}
+   private: 
+   string help;
+};
+class Drummer
+{
+  public:
+  Drummer::Drummer() : PurpleCard(0,"Drummer",3){
+    
+}
+
+std::string getHelp() {
+    return help;
+}
+  private:
+  string help;
+};
+class Heroine
+{
+   public:
+   Heroine::Heroine() : PurpleCard(10,"Heroine",5){
+}
+
+std::string getHelp() {
+    return help;
+}
+   private: 
+   string  help;
+};
 class Scarecrow
 {
    public:
+   Scarecrow() : PurpleCard(0,"Scarecrow",0){
+
+}
+
+std::string getHelp() {
+    return help;
+}
    private: 
+   string help;
 };
 class Spy
 {
    public:
+    Spy() : PurpleCard(1,"Spy",5){
+    help = HELP;
+}
+
+std::string getHelp() {
+    return help;
+}
    private: 
+   string help;
 };
 class Turncoat
 {
    public:
+   Turncoat() : PurpleCard(0,"Turncoat",0){
+    help = HELP;
+}
+
+std::string getHelp() {
+    return help;
+}
    private: 
+   string help;
 };
 class Winter
 {
    public:
+   Winter() : Season(0,"Winter",2){
+  help = HELP ;
+}
+
+std::string getHelp(){
+    return help;
+}
    private:
+   string help;
 };
 class YellowCard
 {
    public:
    private: 
+
 };
 class Marker
 {
    public:
    private: 
+
 };
 class BattleMarker
 {
    public:
    private: 
+ 
 };
 class Favormarker
 {
    public:
    private: 
+
 };
 class PlayerMarker
 {
