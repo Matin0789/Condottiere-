@@ -4,8 +4,8 @@
 
 #define HELP ""
 
-Scarecrow::Scarecrow() : PurpleCard(0,"Scarecrow",0,HELP){
-    
+Scarecrow::Scarecrow() : PurpleCard(0,"Scarecrow",0){
+    help = HELP;
 }
 
 void Scarecrow::applyFeature(Player* player, Game* game) const{

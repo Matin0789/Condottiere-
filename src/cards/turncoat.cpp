@@ -4,11 +4,11 @@
 
 #define HELP ""
 
-Turncoat::Turncoat() : PurpleCard(0,"Turncoat",0,HELP){
-    
+Turncoat::Turncoat() : PurpleCard(0,"Turncoat",0){
+    help = HELP;
 }
 
-void Card::applyFeature(Player* player, Game* game) const{
+void Turncoat::applyFeature(Player* player, Game* game) const{
     
 }
 

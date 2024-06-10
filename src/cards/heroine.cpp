@@ -4,8 +4,8 @@
 
 #define HELP ""
 
-Heroine::Heroine() : PurpleCard(10,"Heroine",5,HELP){
-    
+Heroine::Heroine() : PurpleCard(10,"Heroine",5){
+    help = HELP ;
 }
 
 void Heroine::applyFeature(Player* player, Game* game) const{

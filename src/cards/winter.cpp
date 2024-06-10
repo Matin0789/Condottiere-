@@ -8,7 +8,7 @@ Winter::Winter() : Season(0,"Winter",2,HELP){
     
 }
 
-void Card::applyFeature(Player* player, Game* game) const{
+void Winter::applyFeature(Player* player, Game* game) const{
     for (auto &&player : game->players){
         for (auto &&card : player.playedCards)
             if (card.getType().substr(0,10) == "YellowCard")

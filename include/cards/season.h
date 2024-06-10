@@ -7,6 +7,7 @@ class Season : public PurpleCard
 {
 public:
     Season(int,std::string,int,std::string);// (point,name,priority,help)
+    bool Season::is_season() const ;
 private:
 
 };

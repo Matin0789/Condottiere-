@@ -1,3 +1,4 @@
+#include <time.h>
 #include <algorithm>
 
 #include "game.h"
@@ -41,8 +42,6 @@ Game::Game(UserInterface &inputUI) : cards(92), ui(inputUI), season(nullptr)
 }
 
 void Game::distributeCards() {}
-
-void Game::burnCards() {}
 
 void Game::shuffle()
 {
