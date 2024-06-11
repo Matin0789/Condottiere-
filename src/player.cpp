@@ -1,4 +1,7 @@
+#include <stdexcept>
+
 #include "player.h"
+
 
 Player::Player(std::string inputName, size_t inputID, unsigned int inputAge, Color inputColor) :
     name(inputName),
@@ -45,4 +48,19 @@ const std::vector<const Card*>& Player::getCards() const {
 void Player::setState(State* state) {
     markers[stateCounter].setState(state);
     stateCounter++;  
+}
+
+const Card* Player::drawn_card(std::string inputCard){
+    for (size_t i = 0;i < cards.size(); i++) {
+        if (cards[i]->getType() == inputCard) {
+            const Card* card = cards[i];
+            cards.erase(cards.begin() + i); 
+            return card;
+        }
+    }
+    throw std::invalid_argument("There is no such card");
+}
+
+void Player::push_to_playedCards(const Card*){
+    
 }
