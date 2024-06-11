@@ -3,6 +3,7 @@
 
 #include <unordered_map>
 #include <map>
+#include <vector>
 
 #include "state.h"
 
@@ -25,10 +26,10 @@ class GameBoard
 {
 public:
 	bool checkAdjacency(const State* state1,const State* state2,const State* state3);
-	const State* getState(std::string) const;
-
+	State* getState(std::string);
+	std::vector<std::string> get_active_states_name() const;
 private:
-	const std::unordered_map<std::string, State> state = {
+	std::unordered_map<std::string, State> states = {
 		{BEL, State(BEL)},
 		{CAL, State(CAL)},
 		{ENN, State(ENN)},

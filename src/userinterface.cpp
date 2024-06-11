@@ -17,7 +17,7 @@ void UserInterface::pause(){
     getchar();
 }
 
-void UserInterface::showPlayerCards(const std::vector<Player>& players) const{
+void UserInterface::showPlayerPlayedCards(const std::vector<Player>& players) const{
     clearTerminal();
     for (auto &&player : players){
         std::cout << "Player" << player.getID() << " : ";
@@ -107,7 +107,24 @@ std::string UserInterface::getCommand(const Player& player,const BattleMarker& m
     return "";
 }
 
-const State* UserInterface::get_battleground(const Player&,const GameBoard&) {
+State* UserInterface::get_battleground(const Player& player,GameBoard& gameBoard) {
+    bool flag = false;
+    std::string choice;
+    do {
+        std::cout << "active states : ";
+        for (auto &&stateName : gameBoard.get_active_states_name()) {
+            std::cout << stateName << ", ";
+        }
+        std::cout << std::endl;
+        std::cout << "Player" << player.getID() << ", please specify the battleground : ";
+        std::cin >> choice;
+        for (auto &&stateName : gameBoard.get_active_states_name()) {
+            if (stateName == choice) {
+                return gameBoard.getState(choice);
+                flag = true;
+            }
+        }
+    } while (flag == false);
     
 }
  

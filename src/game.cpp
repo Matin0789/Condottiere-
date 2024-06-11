@@ -80,6 +80,7 @@ void Game::play()
     getPlayers();
     distributeCards();
     int currentPlayerID;
+    currentPlayerID = 0;
     while (true){
         set_battleground(players[currentPlayerID]);
         currentPlayerID = war(currentPlayerID);
@@ -97,7 +98,7 @@ bool Game::check_number_of_player(int n) {
 }
 
 void Game::set_battleground(const Player& currentPlayer) {
-    const State* battlegroud = ui.get_battleground(currentPlayer,gameBoard);
+    State* battlegroud = ui.get_battleground(currentPlayer,gameBoard);
     battleMarker.setState(battlegroud);
 }
 
@@ -109,7 +110,7 @@ int Game::war(int currentPlayerID) {
     size_t i = currentPlayerID;
     while(!activePlayers.empty()){
         for (;; i++) {
-            ui.showPlayerCards(players);
+            ui.showPlayerPlayedCards(players);
             std::string command = ui.getCommand(*activePlayers[i],battleMarker);
             if (command == "pass") {
                 activePlayers.erase(activePlayers.begin() + i);

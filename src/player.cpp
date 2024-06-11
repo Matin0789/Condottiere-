@@ -61,6 +61,6 @@ const Card* Player::drawn_card(std::string inputCard){
     throw std::invalid_argument("There is no such card");
 }
 
-void Player::push_to_playedCards(const Card*){
-    
+void Player::push_to_playedCards(const Card* card){
+    playedCards.push_back(card);
 }

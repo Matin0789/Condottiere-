@@ -17,9 +17,10 @@ private:
 public:
   void clearTerminal() const;
   void pause();
-  void showPlayerCards(const std::vector<Player> &) const;
+  void showPlayerPlayedCards(const std::vector<Player> &) const;
   std::string getCommand(const Player&, const BattleMarker &);
-  const State* get_battleground(const Player&,const GameBoard&);
+  State* get_battleground(const Player&,GameBoard&);
+  
   //
   int get_players_number();
   std::string get_player_name(size_t);
