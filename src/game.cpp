@@ -114,30 +114,28 @@ int Game::war(int currentPlayerID) {
         activePlayers.push_back(&player);
     }
     size_t i = currentPlayerID;
-    while(!activePlayers.empty()){
-        for (;; i++) {
-            ui.showPlayerPlayedCards(players);
-            ui.showPlayerStates(players);
-            std::string command = ui.getCommand(*activePlayers[i],battleMarker);
-            if (command == "pass") {
-                activePlayers.erase(activePlayers.begin() + i);
-            }
-            else {
-                const Card* drawnCard = activePlayers[i]->drawn_card(command);
-                if (drawnCard->getType() == "Turncoat"){
-                    cards.push_back(drawnCard);
-                    break;
-                }
-                else if (drawnCard->is_season() == true){
-                    cards.push_back(season);
-                    season = drawnCard;
-                }
-                else{
-                    activePlayers[i]->push_to_playedCards(drawnCard);
-                }
-            }
-            if (i >= activePlayers.size()) i = 0;
+    for (;!activePlayers.empty(); i++) {
+        ui.showPlayerPlayedCards(players);
+        ui.showPlayerStates(players);
+        std::string command = ui.getCommand(*activePlayers[i],battleMarker);
+        if (command == "pass") {
+            activePlayers.erase(activePlayers.begin() + i);
         }
+        else {
+            const Card* drawnCard = activePlayers[i]->drawn_card(command);
+            if (drawnCard->getType() == "Turncoat"){
+                cards.push_back(drawnCard);
+                break;
+            }
+            else if (drawnCard->is_season() == true){
+                cards.push_back(season);
+                season = drawnCard;
+            }
+            else{
+                activePlayers[i]->push_to_playedCards(drawnCard);
+            }
+        }
+        if (i >= activePlayers.size()) i = 0;
     }
     return currentPlayerID;
 }

@@ -12,7 +12,7 @@ void UserInterface::clearTerminal() const{
     //system("cls"); // for windows
 }
 
-void UserInterface::pause(){
+void UserInterface::pause() const{
     getchar();
     getchar();
 }
@@ -34,7 +34,7 @@ void UserInterface::showPlayerPlayedCards(const std::vector<Player>& players) co
 std::string UserInterface::getCommand(const Player& player,const BattleMarker& marker) {
     std::cout << marker.getState().getName() << std::endl;
     for (auto &&card : player.getCards())
-        std::cout << card->getType() << ',';
+        std::cout << card->getType() << ", ";
     std::cout << std::endl;
     bool flag = false;
     do
@@ -129,6 +129,17 @@ void UserInterface::showPlayerStates(const std::vector<Player>& players) const{
         std::cout << std::endl;
     }
     std::cout << "--------------------" << std::endl;
+}
+
+void UserInterface::showPlayerCards(const Player& player) const{
+    clearTerminal();
+    std::cout << "Player" << player.getID() << "'s cards are about to be shown.\nPlease hand over the system to him.";
+    pause();
+    clearTerminal();
+    for (auto &&card : player.getCards()){
+        std::cout << card->getType() << ", ";
+    }
+    pause();
 }
 
 int UserInterface::get_players_number() {

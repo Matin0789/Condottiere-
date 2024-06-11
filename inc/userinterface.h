@@ -16,7 +16,7 @@ class UserInterface
 private:
 public:
 	void clearTerminal() const;
-	void pause();
+	void pause() const;
 	void showPlayerPlayedCards(const std::vector<Player> &) const;
 	std::string getCommand(const Player&, const BattleMarker &);
 	State* get_battleground(const Player&,GameBoard&);
