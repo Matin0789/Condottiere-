@@ -79,8 +79,8 @@ void Game::play()
 {
     getPlayers();
     distributeCards();
-    int currentPlayerID;
-    currentPlayerID = 0;
+    size_t currentPlayerID;
+    currentPlayerID = compareAge();
     while (true){
         set_battleground(players[currentPlayerID]);
         currentPlayerID = war(currentPlayerID);
@@ -135,7 +135,7 @@ int Game::war(int currentPlayerID) {
     return currentPlayerID;
 }
 
-int Game::compareAge()
+size_t Game::compareAge()
 {
     if (players.empty())
     {
@@ -152,5 +152,5 @@ int Game::compareAge()
         }
     }
 
-    return (*youngestPlayer).getID();
+    return youngestPlayer->getID();
 }

@@ -28,7 +28,7 @@ void UserInterface::showPlayerPlayedCards(const std::vector<Player>& players) co
         }
         std::cout << std::endl;
     }
-    std::cout << "--------------------";
+    std::cout << "--------------------" << std::endl;
 }
 
 std::string UserInterface::getCommand(const Player& player,const BattleMarker& marker) {
@@ -52,43 +52,33 @@ std::string UserInterface::getCommand(const Player& player,const BattleMarker& m
             getline(std::cin,helpChoice);
             if (helpChoice == ""){
                 Game::getHelp();
-                flag = true;
             }
             else if(helpChoice == "Bishop"){
                 Bishop::getHelp();
-                flag = true;
             }
             else if(helpChoice == "Drummer"){
                 Drummer::getHelp();
-                flag = true;
             }
             else if(helpChoice == "Heroine"){
                 Heroine::getHelp();
-                flag = true;
             }     
             else if(helpChoice == "Scarecrow"){
                 Scarecrow::getHelp();
-                flag = true;
             }
             else if(helpChoice == "Spy"){
                 Spy::getHelp();
-                flag = true;
             }
             else if(helpChoice == "Turncoat"){
                 Turncoat::getHelp();
-                flag = true;
             }
             else if(helpChoice == "Winter"){
                 Winter::getHelp();
-                flag = true;
             }
             else if(helpChoice == "Spring"){
                 Spring::getHelp();
-                flag = true;
             }
             else{
                 std::cout << "Error! please try again" << std::endl;
-                flag = false;
                 pause();
             }
         }
@@ -116,7 +106,7 @@ State* UserInterface::get_battleground(const Player& player,GameBoard& gameBoard
             std::cout << stateName << ", ";
         }
         std::cout << std::endl;
-        //std::cout << "Player" << player.getID() << ", please specify the battleground : ";
+        std::cout << "Player" << player.getID() << ", please specify the battleground : ";
         std::cin >> choice;
         for (auto &&stateName : gameBoard.get_active_states_name()) {
             if (stateName == choice) {
