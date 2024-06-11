@@ -80,3 +80,55 @@ std::string UserInterface::getCommand(const Player& player,const BattleMarker& m
     } while (flag == false);     
     return "";
 }
+
+
+std::vector<Player> getPlayer()
+{
+    system("cls");
+    int n;
+    bool flag = true;
+    do
+    {
+        std::cout << "Please enter your number of players: ";
+        std::cin >> n;
+        if(n>=3 && n<=6)
+        {
+            std::vector<Player> players;
+            for (int i = 0; i < n; i++) 
+            {
+                std::string name;
+                std::cout << "Enter the name for player " << (i + 1) << ": ";
+                std::cin >> name;
+
+                int age;
+                std::cout << "Enter the age for player " << (i + 1) << ": ";
+                std::cin >> age;
+
+                Color color;
+                std::cout << "Choose a color for player " << (i + 1) << " (0: orange, 1: blue, 2: green, 3: red, 4: gray, 5: brown): ";
+                int colorChoice;
+                 std::cin >> colorChoice;
+                switch (colorChoice) {
+
+                case 0: flag=true; color = Color::oranage; break;
+                case 1: flag=true; color = Color::blue; break;
+                case 2: flag=true; color = Color::green; break;
+                case 3: flag=true; color = Color::red; break;
+                case 4: flag=true; color = Color::gray; break;
+                case 5: flag=true; color = Color::brown; break;
+                default:
+                    std::cout << "Invalid color choice, please try again." << std::endl;
+                    break;
+            }
+            }
+            return players;
+        }
+        else
+        {
+         flag=true;
+        }
+
+    }while (flag==false);
+          
+}
+

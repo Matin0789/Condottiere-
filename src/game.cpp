@@ -1,5 +1,6 @@
 #include <time.h>
 #include <algorithm>
+#include <cmath>
 
 #include "game.h"
 
@@ -53,12 +54,24 @@ void Game::shuffle()
 void Game::play()
 {
     distributeCards();
+
     while (true)
     {
         war();
     }
 }
 
-void Game::war() {
+void Game::war() 
+{
+    
+}
+
+void Game::dealTheCards()
+{
+  
+}
+
+std::vector<Player*> Game::compareByAge(std::vector<Player> &players) 
+{
     
 }
