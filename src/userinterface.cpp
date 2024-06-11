@@ -116,9 +116,21 @@ State* UserInterface::get_battleground(const Player& player,GameBoard& gameBoard
             }
         }
     } while (flag == false);
-    
 }
- 
+
+void UserInterface::showPlayerStates(const std::vector<Player>& players) const{
+    for (auto &&player : players){
+        std::cout << "Player" << player.getID() << " : ";
+        if (!player.get_states_name().empty()){
+            for (auto &&stateName : player.get_states_name()){
+                std::cout << stateName << ", "; 
+            }
+        }
+        std::cout << std::endl;
+    }
+    std::cout << "--------------------" << std::endl;
+}
+
 int UserInterface::get_players_number() {
     int n;
     bool flag = false;

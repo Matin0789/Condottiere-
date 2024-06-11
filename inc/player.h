@@ -21,10 +21,16 @@ public:
     int getID() const;
     unsigned int getPoint() const;
     void setPoint(unsigned int);
+
+    //
     const std::vector<const Card*>& getPlayedCards() const;
     const std::vector<const Card*>& getCards() const;
-    void setState(State*);
 
+    //
+    void setState(State*);
+	std::vector<std::string> get_states_name() const;
+
+    //
     const Card* drawn_card(std::string);
     void push_to_playedCards(const Card*);
     

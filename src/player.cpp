@@ -50,6 +50,15 @@ void Player::setState(State* state) {
     stateCounter++;  
 }
 
+std::vector<std::string> Player::get_states_name() const{
+    std::vector<std::string> stateNames;
+    for (const auto marker : markers) {
+        if (marker.is_set() == true)
+            stateNames.push_back(marker.getState().getName());
+    }
+    return stateNames;
+}
+
 const Card* Player::drawn_card(std::string inputCard){
     for (size_t i = 0;i < cards.size(); i++) {
         if (cards[i]->getType() == inputCard) {
@@ -64,3 +73,4 @@ const Card* Player::drawn_card(std::string inputCard){
 void Player::push_to_playedCards(const Card* card){
     playedCards.push_back(card);
 }
+

@@ -79,7 +79,7 @@ void Game::play()
 {
     getPlayers();
     distributeCards();
-    size_t currentPlayerID;
+    size_t currentPlayerID = 1;
     currentPlayerID = compareAge();
     while (true){
         set_battleground(players[currentPlayerID]);
@@ -111,6 +111,7 @@ int Game::war(int currentPlayerID) {
     while(!activePlayers.empty()){
         for (;; i++) {
             ui.showPlayerPlayedCards(players);
+            ui.showPlayerStates(players);
             std::string command = ui.getCommand(*activePlayers[i],battleMarker);
             if (command == "pass") {
                 activePlayers.erase(activePlayers.begin() + i);
