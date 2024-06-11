@@ -39,7 +39,7 @@ std::string UserInterface::getCommand(const Player& player,const BattleMarker& m
     bool flag = false;
     do
     {
-        std::cout << "Player" << player.getID() << "@ : ";
+        std::cout << "@Player" << player.getID() << " : ";
         std::string choice;
         std::cin >> choice;
         if (choice == "pass"){
@@ -51,31 +51,31 @@ std::string UserInterface::getCommand(const Player& player,const BattleMarker& m
             std::string helpChoice;
             getline(std::cin,helpChoice);
             if (helpChoice == ""){
-                Game::getHelp();
+                std::cout << Game::getHelp() << std::endl;
             }
             else if(helpChoice == "Bishop"){
-                Bishop::getHelp();
+                std::cout << Bishop::getHelp() << std::endl;
             }
             else if(helpChoice == "Drummer"){
-                Drummer::getHelp();
+                std::cout << Drummer::getHelp() << std::endl;
             }
             else if(helpChoice == "Heroine"){
-                Heroine::getHelp();
+                std::cout << Heroine::getHelp() << std::endl;
             }     
             else if(helpChoice == "Scarecrow"){
-                Scarecrow::getHelp();
+                std::cout << Scarecrow::getHelp() << std::endl;
             }
             else if(helpChoice == "Spy"){
-                Spy::getHelp();
+                std::cout << Spy::getHelp() << std::endl;
             }
             else if(helpChoice == "Turncoat"){
-                Turncoat::getHelp();
+                std::cout << Turncoat::getHelp() << std::endl;
             }
             else if(helpChoice == "Winter"){
-                Winter::getHelp();
+                std::cout << Winter::getHelp() << std::endl;
             }
             else if(helpChoice == "Spring"){
-                Spring::getHelp();
+                std::cout << Spring::getHelp() << std::endl;
             }
             else{
                 std::cout << "Error! please try again" << std::endl;
@@ -98,6 +98,7 @@ std::string UserInterface::getCommand(const Player& player,const BattleMarker& m
 }
 
 State* UserInterface::get_battleground(const Player& player,GameBoard& gameBoard) {
+    clearTerminal();
     bool flag = false;
     std::string choice;
     do {
@@ -114,7 +115,6 @@ State* UserInterface::get_battleground(const Player& player,GameBoard& gameBoard
                 flag = true;
             }
         }
-        pause();
     } while (flag == false);
     
 }

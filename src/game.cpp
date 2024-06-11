@@ -142,15 +142,10 @@ size_t Game::compareAge()
         throw std::runtime_error("No players in the game");
     }
 
-    const Player* youngestPlayer = &players[0]; 
+    auto youngestPlayer = *std::min_element(players.begin(), players.end(), 
+        [](const Player& p1, const Player& p2) {
+            return p1.getAge() > p2.getAge();
+        });
 
-    for (size_t i = 1; i < players.size(); i++)
-    {
-        if (players[i].getAge() < youngestPlayer->getAge())
-        {
-            youngestPlayer = &players[i];
-        }
-    }
-
-    return youngestPlayer->getID();
+    return youngestPlayer.getID();
 }
