@@ -45,6 +45,10 @@ const std::vector<const Card*>& Player::getCards() const {
     return cards;
 }
 
+void Player::setCards(std::vector<const Card*> inputCards) {
+    this->cards = inputCards;
+}
+
 void Player::setState(State* state) {
     markers[stateCounter].setState(state);
     stateCounter++;  

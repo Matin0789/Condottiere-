@@ -25,6 +25,7 @@ public:
     //
     const std::vector<const Card*>& getPlayedCards() const;
     const std::vector<const Card*>& getCards() const;
+    void setCards(std::vector<const Card*>);
 
     //
     void setState(State*);
