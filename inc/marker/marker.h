@@ -7,12 +7,12 @@
 class Marker
 {
 private:
-    State *state;
+    const State* state;
     const Color color;
     bool set;
 public:
     Marker(Color);
-    void setState(State*);
+    void setState(const State*);
     const State& getState() const;
     bool is_set() const;
 };

@@ -7,7 +7,7 @@ Marker::Marker(Color inputColor) : color(inputColor) {
 const State& Marker::getState() const{
     return *state;
 }
-void Marker::setState(State* state){
+void Marker::setState(const State* state){
     this->state = state;
     set = true;
 }

@@ -4,11 +4,14 @@
 #include <cstddef>
 #include <cmath>
 
+#define HELP ""
 
 //test
 #include <iostream>
 
 #include "game.h"
+
+std::string Game::help = HELP;
 
 Game::Game(UserInterface &inputUI) : cards(92), ui(inputUI), season(nullptr)
 {
@@ -48,6 +51,10 @@ Game::Game(UserInterface &inputUI) : cards(92), ui(inputUI), season(nullptr)
     }*/
 }
 
+std::string Game::getHelp() {
+    return help;
+}
+
 void Game::getPlayers() {
     int n = ui.get_players_number();
     for (size_t i = 0; i < n; i++)
@@ -72,8 +79,10 @@ void Game::play()
 {
     getPlayers();
     distributeCards();
+    int currentPlayerID;
     while (true){
-        war();
+        set_battleground(players[currentPlayerID]);
+        currentPlayerID = war(currentPlayerID);
     }
 }
 
@@ -87,11 +96,40 @@ bool Game::check_number_of_player(int n) {
     }
 }
 
-void Game::war() {
-    while(true){
-        ui.showPlayerCards(players);
-        for (auto &&player : players){
-            ui.getCommand(player,battleMarker);
+void Game::set_battleground(const Player& currentPlayer) {
+    const State* battlegroud = ui.get_battleground(currentPlayer,gameBoard);
+    battleMarker.setState(battlegroud);
+}
+
+int Game::war(int currentPlayerID) {
+    std::vector<Player*> activePlayers;
+    for (auto &&player : players) {
+        activePlayers.push_back(&player);
+    }
+    size_t i = currentPlayerID;
+    while(!activePlayers.empty()){
+        for (;; i++) {
+            ui.showPlayerCards(players);
+            std::string command = ui.getCommand(*activePlayers[i],battleMarker);
+            if (command == "pass") {
+                activePlayers.erase(activePlayers.begin() + i);
+            }
+            else {
+                const Card* drawnCard = activePlayers[i]->drawn_card(command);
+                if (drawnCard->getType() == "Turncoat"){
+                    cards.push_back(drawnCard);
+                    break;
+                }
+                else if (drawnCard->is_season() == true){
+                    cards.push_back(season);
+                    season = drawnCard;
+                }
+                else{
+                    activePlayers[i]->push_to_playedCards(drawnCard);
+                }
+            }
+            if (i >= activePlayers.size()) i = 0;
         }
     }
+    return currentPlayerID;
 }

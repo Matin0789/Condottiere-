@@ -32,7 +32,7 @@ void UserInterface::showPlayerCards(const std::vector<Player>& players) const{
 }
 
 std::string UserInterface::getCommand(const Player& player,const BattleMarker& marker) {
-    //std::cout << marker.getState().getName() << std::endl;
+    std::cout << marker.getState().getName() << std::endl;
     for (auto &&card : player.getCards())
         std::cout << card->getType() << ',';
     std::cout << std::endl;
@@ -49,12 +49,14 @@ std::string UserInterface::getCommand(const Player& player,const BattleMarker& m
         else if (choice == "help"){
             getchar();
             std::string helpChoice;
-            getline(std::cin,helpChoice,'\n');
+            getline(std::cin,helpChoice);
             if (helpChoice == ""){
+                Game::getHelp();
                 flag = true;
             }
             else if(helpChoice == "Bishop"){
                 Bishop::getHelp();
+                flag = true;
             }
             else if(helpChoice == "Drummer"){
                 Drummer::getHelp();
@@ -100,11 +102,15 @@ std::string UserInterface::getCommand(const Player& player,const BattleMarker& m
             std::cout << "Error! please try again" << std::endl;
             flag = false;
             pause();
-        } 
+        }
     } while (flag == false);     
     return "";
 }
 
+const State* UserInterface::get_battleground(const Player&,const GameBoard&) {
+    
+}
+ 
 int UserInterface::get_players_number() {
     int n;
     bool flag = false;

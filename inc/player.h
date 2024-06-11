@@ -21,15 +21,19 @@ public:
     int getID() const;
     unsigned int getPoint() const;
     void setPoint(unsigned int);
-    const std::vector<Card*>& getPlayedCards() const;
-    const std::vector<Card*>& getCards() const;
+    const std::vector<const Card*>& getPlayedCards() const;
+    const std::vector<const Card*>& getCards() const;
     void setState(State*);
+
+    const Card* drawn_card(std::string);
+    void push_to_playedCards(const Card*);
+    
 private:
     const std::string name;
     const size_t ID;
     const unsigned int age;
-    std::vector<Card*> cards;
-    std::vector<Card*> playedCards;
+    std::vector<const Card*> cards;
+    std::vector<const Card*> playedCards;
     unsigned int point;
     size_t stateCounter;
 	std::array<PlayerMarker, 5> markers;

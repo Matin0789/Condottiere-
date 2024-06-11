@@ -28,15 +28,18 @@
 class Game {
 public:
     Game(UserInterface&);
+	static std::string getHelp();
     void play();
 	static bool check_number_of_player(int);
+	void set_battleground(const Player&);
 private:
 	//private methods
 	void getPlayers();
 	void shuffle();
 	void distributeCards();
-	void war();
+	int war(int);
 	//private atributes
+	static std::string help;
     UserInterface &ui;
 	GameBoard gameBoard;
 	BattleMarker battleMarker;
@@ -58,8 +61,8 @@ private:
 	//std::array<Spy, 12> spy;
 	//const std::array<Heroine, 6> bishop;
     std::vector<const Card*> cards;
-	Card* season;
-
+	const Card* season;
+	
 };
 
 #endif // GAME_H

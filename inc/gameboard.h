@@ -25,7 +25,7 @@ class GameBoard
 {
 public:
 	bool checkAdjacency(const State* state1,const State* state2,const State* state3);
-	const std::unordered_map<std::string, State>& getStates() const;
+	const State* getState(std::string) const;
 
 private:
 	const std::unordered_map<std::string, State> state = {

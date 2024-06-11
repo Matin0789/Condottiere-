@@ -19,7 +19,7 @@ std::string Player::getName() const {
 
 int Player::getAge() const
 {
-    return Age;
+    return age;
 }
 
 int Player::getID() const {
@@ -34,11 +34,11 @@ void Player::setPoint(unsigned int point) {
     this->point = point;
 }
 
-const std::vector<Card*>& Player::getPlayedCards() const {
+const std::vector<const Card*>& Player::getPlayedCards() const {
     return playedCards;
 }
 
-const std::vector<Card*>& Player::getCards() const {
+const std::vector<const Card*>& Player::getCards() const {
     return cards;
 }
 
