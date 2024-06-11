@@ -134,3 +134,21 @@ int Game::war(int currentPlayerID) {
     }
     return currentPlayerID;
 }
+
+size_t Game::compareAge() {
+    if (players.empty()) {
+        throw std::runtime_error("No players in the game.");
+    }
+
+    size_t minAgeIndex = 0;
+    unsigned int minAge = players[0].getAge();
+
+    for (size_t i = 1; i < players.size(); i++) {
+        if (players[i].getAge() < minAge) {
+            minAge = players[i].getAge();
+            minAgeIndex = i;
+        }
+    }
+
+    return players[minAgeIndex].getID();
+}
