@@ -38,6 +38,8 @@ public:
     Game(UserInterface&);
     void play();
     void war();
+	void dealTheCards();
+	std::vector<Player*> Game::compareByAge(std::vector<Player> &players); 
 private:
     UserInterface &ui;
 	GameBoard gameBoard;
