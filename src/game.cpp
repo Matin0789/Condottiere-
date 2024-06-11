@@ -69,7 +69,10 @@ void Game::getPlayers() {
 void Game::distributeCards() {
     shuffle();
     for (auto &&player : players) {
-        std::vector<const Card*> playerCards(cards.begin(), cards.begin() + (10 + player.) );
+        std::vector<const Card*> playerCards(cards.begin(), cards.begin() + (10 + player.getStateCount()));
+        cards.erase(cards.begin(), cards.begin() + (10 + player.getStateCount()));
+        player.setCards(playerCards);
+        ui.showPlayerCards(player);
     }
 }
 
