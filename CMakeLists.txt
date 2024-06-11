@@ -6,6 +6,8 @@ set(CMAKE_CXX_COMPILER "/usr/bin/g++")
 project(Condottiere)
 
 set(SOURCE_FILES
+    ${PROJECT_SOURCE_DIR}/src/main.cpp
+
     ${PROJECT_SOURCE_DIR}/src/card/card.cpp
     ${PROJECT_SOURCE_DIR}/src/card/purplecard.cpp
     ${PROJECT_SOURCE_DIR}/src/card/yellowcard.cpp
@@ -25,7 +27,6 @@ set(SOURCE_FILES
     ${PROJECT_SOURCE_DIR}/src/marker/favormarker.cpp
     ${PROJECT_SOURCE_DIR}/src/marker/playermarker.cpp
 
-    ${PROJECT_SOURCE_DIR}/src/main.cpp
     ${PROJECT_SOURCE_DIR}/src/game.cpp
     ${PROJECT_SOURCE_DIR}/src/userinterface.cpp
     ${PROJECT_SOURCE_DIR}/src/player.cpp

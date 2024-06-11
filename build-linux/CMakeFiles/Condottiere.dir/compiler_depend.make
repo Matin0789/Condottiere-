@@ -313,11 +313,17 @@ CMakeFiles/Condottiere.dir/src/card/card.cpp.o: ../src/card/card.cpp \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
-  ../inc/card/card.h \
-  ../inc/game.h \
   /usr/include/c++/11/array \
   /usr/include/c++/11/utility \
   /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/cstddef \
+  ../inc/card/card.h \
+  ../inc/state.h \
+  ../inc/marker/playermarker.h \
+  ../inc/marker/marker.h \
+  ../inc/enumcolor.h \
+  ../inc/state.h \
+  ../inc/game.h \
   ../inc/player.h \
   ../inc/gameboard.h \
   /usr/include/c++/11/unordered_map \
@@ -335,12 +341,9 @@ CMakeFiles/Condottiere.dir/src/card/card.cpp.o: ../src/card/card.cpp \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/bits/stl_multimap.h \
-  ../inc/state.h \
   ../inc/userinterface.h \
   ../inc/marker/battlemarker.h \
-  ../inc/marker/marker.h \
   ../inc/enumcolor.h \
-  ../inc/state.h \
   ../inc/card/yellowcard.h \
   ../inc/card/card.h \
   ../inc/card/bishop.h \
@@ -354,7 +357,6 @@ CMakeFiles/Condottiere.dir/src/card/card.cpp.o: ../src/card/card.cpp \
   ../inc/card/spring.h \
   ../inc/card/turncoat.h \
   ../inc/marker/marker.h \
-  ../inc/marker/playermarker.h \
   ../inc/marker/favormarker.h
 
 CMakeFiles/Condottiere.dir/src/card/drummer.cpp.o: ../src/card/drummer.cpp \
@@ -517,11 +519,17 @@ CMakeFiles/Condottiere.dir/src/card/drummer.cpp.o: ../src/card/drummer.cpp \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
-  ../inc/card/card.h \
-  ../inc/game.h \
   /usr/include/c++/11/array \
   /usr/include/c++/11/utility \
   /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/cstddef \
+  ../inc/card/card.h \
+  ../inc/state.h \
+  ../inc/marker/playermarker.h \
+  ../inc/marker/marker.h \
+  ../inc/enumcolor.h \
+  ../inc/state.h \
+  ../inc/game.h \
   ../inc/player.h \
   ../inc/gameboard.h \
   /usr/include/c++/11/unordered_map \
@@ -539,12 +547,9 @@ CMakeFiles/Condottiere.dir/src/card/drummer.cpp.o: ../src/card/drummer.cpp \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/bits/stl_multimap.h \
-  ../inc/state.h \
   ../inc/userinterface.h \
   ../inc/marker/battlemarker.h \
-  ../inc/marker/marker.h \
   ../inc/enumcolor.h \
-  ../inc/state.h \
   ../inc/card/yellowcard.h \
   ../inc/card/bishop.h \
   ../inc/card/heroine.h \
@@ -555,7 +560,6 @@ CMakeFiles/Condottiere.dir/src/card/drummer.cpp.o: ../src/card/drummer.cpp \
   ../inc/card/spring.h \
   ../inc/card/turncoat.h \
   ../inc/marker/marker.h \
-  ../inc/marker/playermarker.h \
   ../inc/marker/favormarker.h
 
 CMakeFiles/Condottiere.dir/src/card/heroine.cpp.o: ../src/card/heroine.cpp \
@@ -1027,11 +1031,17 @@ CMakeFiles/Condottiere.dir/src/card/scarecrow.cpp.o: ../src/card/scarecrow.cpp \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
-  ../inc/card/card.h \
-  ../inc/game.h \
   /usr/include/c++/11/array \
   /usr/include/c++/11/utility \
   /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/cstddef \
+  ../inc/card/card.h \
+  ../inc/state.h \
+  ../inc/marker/playermarker.h \
+  ../inc/marker/marker.h \
+  ../inc/enumcolor.h \
+  ../inc/state.h \
+  ../inc/game.h \
   ../inc/player.h \
   ../inc/gameboard.h \
   /usr/include/c++/11/unordered_map \
@@ -1049,12 +1059,9 @@ CMakeFiles/Condottiere.dir/src/card/scarecrow.cpp.o: ../src/card/scarecrow.cpp \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/bits/stl_multimap.h \
-  ../inc/state.h \
   ../inc/userinterface.h \
   ../inc/marker/battlemarker.h \
-  ../inc/marker/marker.h \
   ../inc/enumcolor.h \
-  ../inc/state.h \
   ../inc/card/yellowcard.h \
   ../inc/card/bishop.h \
   ../inc/card/drummer.h \
@@ -1065,7 +1072,6 @@ CMakeFiles/Condottiere.dir/src/card/scarecrow.cpp.o: ../src/card/scarecrow.cpp \
   ../inc/card/spring.h \
   ../inc/card/turncoat.h \
   ../inc/marker/marker.h \
-  ../inc/marker/playermarker.h \
   ../inc/marker/favormarker.h
 
 CMakeFiles/Condottiere.dir/src/card/season.cpp.o: ../src/card/season.cpp \
@@ -1881,11 +1887,17 @@ CMakeFiles/Condottiere.dir/src/card/winter.cpp.o: ../src/card/winter.cpp \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
-  ../inc/card/card.h \
-  ../inc/game.h \
   /usr/include/c++/11/array \
   /usr/include/c++/11/utility \
   /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/cstddef \
+  ../inc/card/card.h \
+  ../inc/state.h \
+  ../inc/marker/playermarker.h \
+  ../inc/marker/marker.h \
+  ../inc/enumcolor.h \
+  ../inc/state.h \
+  ../inc/game.h \
   ../inc/player.h \
   ../inc/gameboard.h \
   /usr/include/c++/11/unordered_map \
@@ -1903,12 +1915,9 @@ CMakeFiles/Condottiere.dir/src/card/winter.cpp.o: ../src/card/winter.cpp \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/bits/stl_multimap.h \
-  ../inc/state.h \
   ../inc/userinterface.h \
   ../inc/marker/battlemarker.h \
-  ../inc/marker/marker.h \
   ../inc/enumcolor.h \
-  ../inc/state.h \
   ../inc/card/yellowcard.h \
   ../inc/card/bishop.h \
   ../inc/card/drummer.h \
@@ -1918,7 +1927,6 @@ CMakeFiles/Condottiere.dir/src/card/winter.cpp.o: ../src/card/winter.cpp \
   ../inc/card/spring.h \
   ../inc/card/turncoat.h \
   ../inc/marker/marker.h \
-  ../inc/marker/playermarker.h \
   ../inc/marker/favormarker.h
 
 CMakeFiles/Condottiere.dir/src/card/yellowcard.cpp.o: ../src/card/yellowcard.cpp \
@@ -2196,7 +2204,11 @@ CMakeFiles/Condottiere.dir/src/game.cpp.o: ../src/game.cpp \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
   /usr/include/c++/11/pstl/execution_defs.h \
-  ../inc/game.h \
+  /usr/include/c++/11/stdexcept \
+  /usr/include/c++/11/exception \
+  /usr/include/c++/11/bits/exception_ptr.h \
+  /usr/include/c++/11/bits/cxxabi_init_exception.h \
+  /usr/include/c++/11/bits/nested_exception.h \
   /usr/include/c++/11/string \
   /usr/include/c++/11/bits/stringfwd.h \
   /usr/include/c++/11/bits/char_traits.h \
@@ -2258,19 +2270,46 @@ CMakeFiles/Condottiere.dir/src/game.cpp.o: ../src/game.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
+  /usr/include/c++/11/cstddef \
+  /usr/include/c++/11/iostream \
+  /usr/include/c++/11/ostream \
+  /usr/include/c++/11/ios \
+  /usr/include/c++/11/bits/ios_base.h \
+  /usr/include/c++/11/bits/locale_classes.h \
+  /usr/include/c++/11/bits/locale_classes.tcc \
+  /usr/include/c++/11/system_error \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
+  /usr/include/c++/11/streambuf \
+  /usr/include/c++/11/bits/streambuf.tcc \
+  /usr/include/c++/11/bits/basic_ios.h \
+  /usr/include/c++/11/bits/locale_facets.h \
+  /usr/include/c++/11/cwctype \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
+  /usr/include/c++/11/bits/streambuf_iterator.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
+  /usr/include/c++/11/bits/locale_facets.tcc \
+  /usr/include/c++/11/bits/basic_ios.tcc \
+  /usr/include/c++/11/bits/ostream.tcc \
+  /usr/include/c++/11/istream \
+  /usr/include/c++/11/bits/istream.tcc \
+  ../inc/game.h \
   ../inc/player.h \
   ../inc/card/card.h \
+  ../inc/state.h \
+  ../inc/marker/playermarker.h \
+  ../inc/marker/marker.h \
+  ../inc/enumcolor.h \
+  ../inc/state.h \
   ../inc/gameboard.h \
   /usr/include/c++/11/map \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/bits/stl_multimap.h \
-  ../inc/state.h \
   ../inc/userinterface.h \
   ../inc/marker/battlemarker.h \
-  ../inc/marker/marker.h \
   ../inc/enumcolor.h \
-  ../inc/state.h \
   ../inc/card/yellowcard.h \
   ../inc/card/card.h \
   ../inc/card/bishop.h \
@@ -2284,7 +2323,6 @@ CMakeFiles/Condottiere.dir/src/game.cpp.o: ../src/game.cpp \
   ../inc/card/spring.h \
   ../inc/card/turncoat.h \
   ../inc/marker/marker.h \
-  ../inc/marker/playermarker.h \
   ../inc/marker/favormarker.h
 
 CMakeFiles/Condottiere.dir/src/gameBoard.cpp.o: ../src/gameBoard.cpp \
@@ -2654,7 +2692,13 @@ CMakeFiles/Condottiere.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/utility \
   /usr/include/c++/11/bits/stl_relops.h \
   ../inc/player.h \
+  /usr/include/c++/11/cstddef \
   ../inc/card/card.h \
+  ../inc/state.h \
+  ../inc/marker/playermarker.h \
+  ../inc/marker/marker.h \
+  ../inc/enumcolor.h \
+  ../inc/state.h \
   ../inc/gameboard.h \
   /usr/include/c++/11/unordered_map \
   /usr/include/c++/11/ext/aligned_buffer.h \
@@ -2671,12 +2715,9 @@ CMakeFiles/Condottiere.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/bits/stl_multimap.h \
-  ../inc/state.h \
   ../inc/userinterface.h \
   ../inc/marker/battlemarker.h \
-  ../inc/marker/marker.h \
   ../inc/enumcolor.h \
-  ../inc/state.h \
   ../inc/card/yellowcard.h \
   ../inc/card/card.h \
   ../inc/card/bishop.h \
@@ -2690,7 +2731,6 @@ CMakeFiles/Condottiere.dir/src/main.cpp.o: ../src/main.cpp \
   ../inc/card/spring.h \
   ../inc/card/turncoat.h \
   ../inc/marker/marker.h \
-  ../inc/marker/playermarker.h \
   ../inc/marker/favormarker.h \
   ../inc/userinterface.h
 
@@ -3474,7 +3514,16 @@ CMakeFiles/Condottiere.dir/src/player.cpp.o: ../src/player.cpp \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
-  ../inc/card/card.h
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/cstddef \
+  ../inc/card/card.h \
+  ../inc/state.h \
+  ../inc/marker/playermarker.h \
+  ../inc/marker/marker.h \
+  ../inc/enumcolor.h \
+  ../inc/state.h
 
 CMakeFiles/Condottiere.dir/src/state.cpp.o: ../src/state.cpp \
   /usr/include/stdc-predef.h \
@@ -3816,16 +3865,20 @@ CMakeFiles/Condottiere.dir/src/userinterface.cpp.o: ../src/userinterface.cpp \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/c++/11/cstddef \
   ../inc/marker/battlemarker.h \
   ../inc/marker/marker.h \
   ../inc/enumcolor.h \
   ../inc/state.h \
   ../inc/player.h \
-  ../inc/card/card.h \
-  ../inc/game.h \
   /usr/include/c++/11/array \
   /usr/include/c++/11/utility \
   /usr/include/c++/11/bits/stl_relops.h \
+  ../inc/card/card.h \
+  ../inc/state.h \
+  ../inc/marker/playermarker.h \
+  ../inc/enumcolor.h \
+  ../inc/game.h \
   ../inc/gameboard.h \
   /usr/include/c++/11/unordered_map \
   /usr/include/c++/11/ext/aligned_buffer.h \
@@ -3842,7 +3895,6 @@ CMakeFiles/Condottiere.dir/src/userinterface.cpp.o: ../src/userinterface.cpp \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/bits/stl_multimap.h \
-  ../inc/state.h \
   ../inc/userinterface.h \
   ../inc/card/yellowcard.h \
   ../inc/card/card.h \
@@ -3857,11 +3909,12 @@ CMakeFiles/Condottiere.dir/src/userinterface.cpp.o: ../src/userinterface.cpp \
   ../inc/card/spring.h \
   ../inc/card/turncoat.h \
   ../inc/marker/marker.h \
-  ../inc/marker/playermarker.h \
   ../inc/marker/favormarker.h
 
 
 /usr/include/c++/11/stdlib.h:
+
+../src/userinterface.cpp:
 
 /usr/include/stdlib.h:
 
@@ -4215,6 +4268,8 @@ CMakeFiles/Condottiere.dir/src/userinterface.cpp.o: ../src/userinterface.cpp \
 
 /usr/include/c++/11/vector:
 
+/usr/include/c++/11/cstddef:
+
 /usr/include/c++/11/bits/stl_vector.h:
 
 /usr/include/c++/11/system_error:
@@ -4230,6 +4285,16 @@ CMakeFiles/Condottiere.dir/src/userinterface.cpp.o: ../src/userinterface.cpp \
 ../src/card/yellowcard.cpp:
 
 /usr/include/c++/11/bits/stl_relops.h:
+
+/usr/include/c++/11/new:
+
+../inc/state.h:
+
+/usr/include/c++/11/bits/stl_map.h:
+
+../inc/marker/playermarker.h:
+
+../inc/marker/marker.h:
 
 /usr/include/c++/11/bits/hashtable_policy.h:
 
@@ -4249,15 +4314,7 @@ CMakeFiles/Condottiere.dir/src/userinterface.cpp.o: ../src/userinterface.cpp \
 
 /usr/include/c++/11/bits/erase_if.h:
 
-/usr/include/c++/11/bits/stl_map.h:
-
-/usr/include/c++/11/new:
-
-../inc/state.h:
-
 ../inc/marker/battlemarker.h:
-
-../inc/marker/marker.h:
 
 ../inc/card/drummer.h:
 
@@ -4276,8 +4333,6 @@ CMakeFiles/Condottiere.dir/src/userinterface.cpp.o: ../src/userinterface.cpp \
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
 ../inc/card/turncoat.h:
-
-../inc/marker/playermarker.h:
 
 ../inc/marker/favormarker.h:
 
@@ -4313,15 +4368,17 @@ CMakeFiles/Condottiere.dir/src/userinterface.cpp.o: ../src/userinterface.cpp \
 
 ../src/game.cpp:
 
-../src/main.cpp:
+/usr/include/c++/11/pstl/glue_algorithm_defs.h:
 
-/usr/include/c++/11/ostream:
+/usr/include/c++/11/stdexcept:
 
 ../src/state.cpp:
 
 /usr/include/c++/11/exception:
 
 /usr/include/c++/11/bits/nested_exception.h:
+
+/usr/include/c++/11/ostream:
 
 /usr/include/c++/11/bits/ios_base.h:
 
@@ -4334,10 +4391,6 @@ CMakeFiles/Condottiere.dir/src/userinterface.cpp.o: ../src/userinterface.cpp \
 /usr/include/c++/11/utility:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
-
-/usr/include/c++/11/pstl/glue_algorithm_defs.h:
-
-/usr/include/c++/11/stdexcept:
 
 /usr/include/c++/11/bits/uniform_int_dist.h:
 
@@ -4365,6 +4418,8 @@ CMakeFiles/Condottiere.dir/src/userinterface.cpp.o: ../src/userinterface.cpp \
 
 /usr/include/c++/11/bits/istream.tcc:
 
+../src/main.cpp:
+
 ../src/marker/favormarker.cpp:
 
 ../src/marker/marker.cpp:
@@ -4374,5 +4429,3 @@ CMakeFiles/Condottiere.dir/src/userinterface.cpp.o: ../src/userinterface.cpp \
 /usr/include/errno.h:
 
 ../src/player.cpp:
-
-../src/userinterface.cpp:

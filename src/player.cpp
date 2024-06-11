@@ -1,5 +1,18 @@
 #include "player.h"
 
+Player::Player(std::string inputName, size_t inputID, unsigned int inputAge, Color inputColor) :
+    name(inputName),
+    ID(inputID),
+    age(inputAge),
+    markers{PlayerMarker(inputColor),
+        PlayerMarker(inputColor),
+        PlayerMarker(inputColor),
+        PlayerMarker(inputColor),
+        PlayerMarker(inputColor)},
+    stateCounter(0) {
+        
+}
+
 std::string Player::getName() const {
     return name;
 }
@@ -13,7 +26,7 @@ unsigned int Player::getPoint() const {
 }
 
 void Player::setPoint(unsigned int point) {
-    this->point;
+    this->point = point;
 }
 
 const std::vector<Card*>& Player::getPlayedCards() const {

@@ -4,8 +4,10 @@
 
 #define HELP "Take 1 mercenary from your row back to your hand."
 
+std::string Scarecrow::help = HELP;
+
 Scarecrow::Scarecrow() : PurpleCard(0,"Scarecrow",0){
-    help = HELP;
+
 }
 
 std::string Scarecrow::getHelp() {

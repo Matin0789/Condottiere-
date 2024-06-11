@@ -1,5 +1,10 @@
 #include <time.h>
 #include <algorithm>
+#include <stdexcept>
+#include <cstddef>
+
+//test
+#include <iostream>
 
 #include "game.h"
 
@@ -41,6 +46,17 @@ Game::Game(UserInterface &inputUI) : cards(92), ui(inputUI), season(nullptr)
     }*/
 }
 
+void Game::getPlayers() {
+    int n = ui.get_players_number();
+    for (size_t i = 0; i < n; i++)
+    {
+        std::string name = ui.get_player_name(i + 1);
+        unsigned int age = ui.get_player_old(i + 1);
+        Color color = ui.get_player_color(i + 1);
+        //players.push_back(Player(name, i + 1, age, color));
+    }
+}
+
 void Game::distributeCards() {
     shuffle();
 }
@@ -52,13 +68,28 @@ void Game::shuffle()
 
 void Game::play()
 {
+    getPlayers();
     distributeCards();
-    while (true)
-    {
+    while (true){
         war();
     }
 }
 
+bool Game::check_number_of_player(int n) {
+    if (n >= 3 && n <= 6){
+        return true;
+    }
+    else{
+        throw std::out_of_range("Invalid number of players! please enter a number between 3 , 6");
+        return false;
+    }
+}
+
 void Game::war() {
-    
+    while(true){
+        ui.showPlayerCards(players);
+        for (auto &&player : players){
+            ui.getCommand(player,battleMarker);
+        }
+    }
 }

@@ -4,8 +4,10 @@
 
 #define HELP "While you have a Drummer in your row, double the value of each mercenary in your row. You can play additional Drummers, but they have no effect."
 
+std::string Drummer::help = HELP;
+
 Drummer::Drummer() : PurpleCard(0,"Drummer",3){
-    help = HELP;
+    
 }
 
 std::string Drummer::getHelp() {

@@ -3,7 +3,7 @@
 
 enum Color
 {
-    oranage,
+    orange,
     blue,
     green,
     red,

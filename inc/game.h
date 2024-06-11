@@ -26,19 +26,17 @@
 #include "battlemarker.h"
 
 class Game {
-	friend Bishop;
-	friend Drummer;
-	friend Heroine;
-	friend Scarecrow;
-	friend Spy;
-	friend Turncoat;
-	friend Winter;
-	friend Spring;
 public:
     Game(UserInterface&);
     void play();
-    void war();
+	static bool check_number_of_player(int);
 private:
+	//private methods
+	void getPlayers();
+	void shuffle();
+	void distributeCards();
+	void war();
+	//private atributes
     UserInterface &ui;
 	GameBoard gameBoard;
 	BattleMarker battleMarker;
@@ -61,9 +59,7 @@ private:
 	//const std::array<Heroine, 6> bishop;
     std::vector<const Card*> cards;
 	Card* season;
-private:
-	void shuffle();
-	void distributeCards(); 
+
 };
 
 #endif // GAME_H

@@ -3,15 +3,19 @@
 
 #include <string>
 #include <vector>
-
+#include <array>
+#include <cstddef>
 
 #include "card.h"
+#include "state.h"
+#include "playermarker.h"
 
 class UserInterface;
 
 class Player {
 
 public:
+    Player(std::string, size_t, unsigned int, Color);// (name,ID,old,marker Color)
     std::string getName() const;
     int getID() const;
     unsigned int getPoint() const;
@@ -20,12 +24,13 @@ public:
     const std::vector<Card*>& getCards() const;
     void setState(State*);
 private:
-    std::string name;
-    int ID;
+    const std::string name;
+    const size_t ID;
+    const unsigned int age;
     std::vector<Card*> cards;
     std::vector<Card*> playedCards;
     unsigned int point;
-    size_t stateCount;
+    size_t stateCounter;
 	std::array<PlayerMarker, 5> markers;
 };
 
