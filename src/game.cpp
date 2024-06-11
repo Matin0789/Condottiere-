@@ -62,7 +62,7 @@ void Game::getPlayers() {
         std::string name = ui.get_player_name(i + 1);
         unsigned int age = ui.get_player_old(i + 1);
         Color color = ui.get_player_color(i + 1);
-        //players.push_back(Player(name, i + 1, age, color));
+        players.push_back(Player(name, i + 1, age, color));
     }
 }
 

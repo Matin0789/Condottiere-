@@ -25,8 +25,8 @@ void UserInterface::showPlayerPlayedCards(const std::vector<Player>& players) co
             for (auto &&card : player.getPlayedCards()){
                 std::cout << card->getType() << '_'; 
             }
-            std::cout << std::endl;
         }
+        std::cout << std::endl;
     }
     std::cout << "--------------------";
 }
@@ -116,7 +116,7 @@ State* UserInterface::get_battleground(const Player& player,GameBoard& gameBoard
             std::cout << stateName << ", ";
         }
         std::cout << std::endl;
-        std::cout << "Player" << player.getID() << ", please specify the battleground : ";
+        //std::cout << "Player" << player.getID() << ", please specify the battleground : ";
         std::cin >> choice;
         for (auto &&stateName : gameBoard.get_active_states_name()) {
             if (stateName == choice) {
@@ -124,6 +124,7 @@ State* UserInterface::get_battleground(const Player& player,GameBoard& gameBoard
                 flag = true;
             }
         }
+        pause();
     } while (flag == false);
     
 }
@@ -147,7 +148,7 @@ int UserInterface::get_players_number() {
 }
 
 std::string UserInterface::get_player_name(size_t playerID) {
-    std::cout << "please enter name Player" << playerID << " name : ";
+    std::cout << "please enter Player" << playerID << " name : ";
     std::string name;
     std::cin >> name;
     return name;
@@ -163,7 +164,7 @@ unsigned int UserInterface::get_player_old(size_t playerID) {
 Color  UserInterface::get_player_color(size_t playerID) {
     std::string input;
     Color color;
-    bool flag = false;
+    bool flag = true;
     do
     {
         std::cout << "please enter Player" << playerID << " Color [orange,blue,green,red,gray,brown] : ";

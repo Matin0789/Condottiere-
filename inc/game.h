@@ -27,6 +27,7 @@
 
 class Game {
 public:
+	size_t compareAge();
     Game(UserInterface&);
 	static std::string getHelp();
     void play();
