@@ -78,3 +78,6 @@ void Player::push_to_playedCards(const Card* card){
     playedCards.push_back(card);
 }
 
+size_t Player::getStateCount() const {
+    return stateCounter;
+}

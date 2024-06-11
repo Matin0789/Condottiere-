@@ -68,6 +68,9 @@ void Game::getPlayers() {
 
 void Game::distributeCards() {
     shuffle();
+    for (auto &&player : players) {
+        std::vector<const Card*> playerCards(cards.begin(), cards.begin() + (10 + player.) );
+    }
 }
 
 void Game::shuffle()

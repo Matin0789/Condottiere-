@@ -21,6 +21,8 @@ public:
 	std::string getCommand(const Player&, const BattleMarker &);
 	State* get_battleground(const Player&,GameBoard&);
 	void showPlayerStates(const std::vector<Player> &) const;	
+	void showPlayerCards(const Player&) const;
+
 	//
 	int get_players_number();
 	std::string get_player_name(size_t);
