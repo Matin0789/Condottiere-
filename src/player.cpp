@@ -17,6 +17,11 @@ std::string Player::getName() const {
     return name;
 }
 
+int Player::getAge() const
+{
+    return Age;
+}
+
 int Player::getID() const {
     return ID;
 };

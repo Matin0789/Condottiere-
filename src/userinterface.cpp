@@ -49,7 +49,7 @@ std::string UserInterface::getCommand(const Player& player,const BattleMarker& m
         else if (choice == "help"){
             getchar();
             std::string helpChoice;
-            getline(std::cin,helpChoice);
+            getline(std::cin,helpChoice,'\n');
             if (helpChoice == ""){
                 flag = true;
             }

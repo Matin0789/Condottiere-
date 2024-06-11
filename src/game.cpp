@@ -2,6 +2,8 @@
 #include <algorithm>
 #include <stdexcept>
 #include <cstddef>
+#include <cmath>
+
 
 //test
 #include <iostream>

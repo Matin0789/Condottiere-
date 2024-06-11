@@ -17,6 +17,7 @@ class Player {
 public:
     Player(std::string, size_t, unsigned int, Color);// (name,ID,old,marker Color)
     std::string getName() const;
+    int getAge() const;
     int getID() const;
     unsigned int getPoint() const;
     void setPoint(unsigned int);
