@@ -74,8 +74,24 @@ const Card* Player::drawn_card(std::string inputCard){
     throw std::invalid_argument("There is no such card");
 }
 
+void Player::push_to_cards(const Card* card){
+    cards.push_back(card);
+}
+
 void Player::push_to_playedCards(const Card* card){
     playedCards.push_back(card);
+}
+
+
+const Card* Player::drawn_playedCard(std::string inputCard){
+    for (size_t i = 0;i < playedCards.size(); i++) {
+        if (playedCards[i]->getType() == inputCard) {
+            const Card* card = playedCards[i];
+            playedCards.erase(playedCards.begin() + i); 
+            return card;
+        }
+    }
+    throw std::invalid_argument("There is no such card");
 }
 
 size_t Player::getStateCount() const {

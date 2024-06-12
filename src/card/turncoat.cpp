@@ -14,3 +14,7 @@ Turncoat::Turncoat() : PurpleCard(0,"Turncoat",0){
 std::string Turncoat::getHelp() {
     return help;
 }
+
+void Turncoat::applyFeature(std::vector<std::vector<unsigned int>> playersCardPoints, int currentPlayerID) {
+    
+}

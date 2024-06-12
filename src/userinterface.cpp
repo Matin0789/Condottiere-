@@ -1,8 +1,7 @@
 #include <stdlib.h>
-#include <iostream>
-
 #include <string>
 #include <iostream>
+#include <stdexcept>
 
 #include "userinterface.h"
 #include "game.h"
@@ -17,28 +16,31 @@ void UserInterface::pause() const{
     getchar();
 }
 
-void UserInterface::showPlayerPlayedCards(const std::vector<Player>& players) const{
-    clearTerminal();
-    for (auto &&player : players){
-        std::cout << "Player" << player.getID() + 1 << " : ";
-        if (!player.getPlayedCards().empty()){
-            for (auto &&card : player.getPlayedCards()){
-                std::cout << card->getType() << '_'; 
-            }
-        }
-        std::cout << std::endl;
-    }
-    std::cout << "--------------------" << std::endl;
+void UserInterface::spliter() const {
+    std::cout << "----------------------------------------" << std::endl;
 }
 
-std::string UserInterface::getCommand(const Player& player,const BattleMarker& marker) {
-    std::cout << marker.getState().getName() << std::endl;
+void UserInterface::showPlayerPlayedCards(const Player& player) const{
+    std::cout << "Player" << player.getID() + 1 << " : ";
+    if (!player.getPlayedCards().empty()){
+        for (auto &&card : player.getPlayedCards()){
+            std::cout << card->getType() << '_';
+        }
+    }
+    std::cout << std::endl;
+}
+
+std::string UserInterface::getCommand(const Player& player,const BattleMarker& marker, const Card* season) {
+    std::cout << "Battleground : " << marker.getState().getName();
+    if (season != nullptr)
+        std::cout << "Season : " << season;
+    std::cout << std::endl;
+
     for (auto &&card : player.getCards())
         std::cout << card->getType() << ", ";
     std::cout << std::endl;
     bool flag = false;
-    do
-    {
+    do {
         std::cout << "@Player" << player.getID() + 1 << " : ";
         std::string choice;
         std::cin >> choice;
@@ -93,7 +95,7 @@ std::string UserInterface::getCommand(const Player& player,const BattleMarker& m
             flag = false;
             pause();
         }
-    } while (flag == false);     
+    } while (flag == false);
     return "";
 }
 
@@ -111,24 +113,23 @@ State* UserInterface::get_battleground(const Player& player,GameBoard& gameBoard
         std::cin >> choice;
         for (auto &&stateName : gameBoard.get_active_states_name()) {
             if (stateName == choice) {
+                clearTerminal();
                 return gameBoard.getState(choice);
                 flag = true;
             }
         }
     } while (flag == false);
+    throw std::runtime_error("UserInterface::get__battleground bad choice");
 }
 
-void UserInterface::showPlayerStates(const std::vector<Player>& players) const{
-    for (auto &&player : players){
-        std::cout << "Player" << player.getID() + 1 << " : ";
-        if (!player.get_states_name().empty()){
-            for (auto &&stateName : player.get_states_name()){
-                std::cout << stateName << ", "; 
-            }
+void UserInterface::showPlayerStates(const Player& player) const{
+    std::cout << "Player" << player.getID() + 1 << " : ";
+    if (!player.get_states_name().empty()){
+        for (auto &&stateName : player.get_states_name()){
+            std::cout << stateName << ", "; 
         }
-        std::cout << std::endl;
     }
-    std::cout << "--------------------" << std::endl;
+    std::cout << std::endl;
 }
 
 void UserInterface::showPlayerCards(const Player& player) const{
@@ -140,6 +141,13 @@ void UserInterface::showPlayerCards(const Player& player) const{
         std::cout << card->getType() << ", ";
     }
     pause();
+}
+
+std::string UserInterface::get_card_name() {
+    std::string choose;
+    std::cin >> choose;
+    clearTerminal();
+    return choose;
 }
 
 int UserInterface::get_players_number() {

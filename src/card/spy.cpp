@@ -15,6 +15,6 @@ std::string Spy::getHelp() {
     return help;
 }
 
-void Spy::applyFeature(std::vector<std::vector<unsigned int>> playersCardPoints, int currentPlayerID) {
+void Spy::applyFeature(std::vector<std::vector<unsigned int>> playersCardPoint, int currentPlayerID) {
     playersCardPoint[currentPlayerID].push_back(point);
 }

@@ -119,9 +119,18 @@ int Game::war(int currentPlayerID) {
     }
     size_t i = currentPlayerID;
     for (;!activePlayers.empty(); i++) {
-        ui.showPlayerPlayedCards(players);
-        ui.showPlayerStates(players);
-        std::string command = ui.getCommand(*activePlayers[i],battleMarker);
+        for (auto &&player : players)
+        {
+            ui.showPlayerPlayedCards(player);
+        }
+        ui.spliter();
+        for (auto &&player : players)
+        {
+            ui.showPlayerStates(player);
+        }
+        ui.spliter();
+        std::string command = ui.getCommand(*activePlayers[i],battleMarker, season);
+        ui.clearTerminal();
         if (command == "pass") {
             activePlayers.erase(activePlayers.begin() + i);
         }
@@ -131,6 +140,26 @@ int Game::war(int currentPlayerID) {
                 cards.push_back(drawnCard);
                 break;
             }
+            else if (drawnCard->getType() == "Scarecrow"){
+                if (!activePlayers[i]->getPlayedCards().empty()) {
+                    ui.showPlayerPlayedCards(*activePlayers[i]);
+                    bool flag = false;
+                    do {
+                        std::string choose = ui.get_card_name();
+                        for (const auto &card : activePlayers[i]->getPlayedCards()) {
+                            if (card->getType() == choose) {
+                                const Card* drawnPlayedCard = activePlayers[i]->drawn_playedCard(choose);
+                                activePlayers[i]->push_to_playedCards(drawnCard);
+                                activePlayers[i]->push_to_cards(drawnPlayedCard);
+                                flag = true;
+                            }
+                        }
+                    } while (!flag);
+                }
+                else{
+                    activePlayers[i]->push_to_playedCards(drawnCard);
+                }
+            }
             else if (drawnCard->is_season() == true){
                 cards.push_back(season);
                 season = drawnCard;
@@ -139,7 +168,7 @@ int Game::war(int currentPlayerID) {
                 activePlayers[i]->push_to_playedCards(drawnCard);
             }
         }
-        if (i >= activePlayers.size()) i = 0;
+        if (i >= activePlayers.size() - 1) i = -1;
     }
     //find_war_winner();
     return currentPlayerID;
@@ -154,7 +183,7 @@ size_t Game::compareAge()
 
     auto youngestPlayer = *std::min_element(players.begin(), players.end(), 
         [](const Player& p1, const Player& p2) {
-            return p1.getAge() > p2.getAge();
+            return p1.getAge() < p2.getAge();
         });
 
     return youngestPlayer.getID();

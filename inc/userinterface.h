@@ -17,12 +17,13 @@ private:
 public:
 	void clearTerminal() const;
 	void pause() const;
-	void showPlayerPlayedCards(const std::vector<Player> &) const;
-	std::string getCommand(const Player&, const BattleMarker &);
+	void spliter() const;
+	void showPlayerPlayedCards(const Player&) const;
+	std::string getCommand(const Player&, const BattleMarker&, const Card*);
 	State* get_battleground(const Player&,GameBoard&);
-	void showPlayerStates(const std::vector<Player> &) const;	
+	void showPlayerStates(const Player&) const;	
 	void showPlayerCards(const Player&) const;
-
+	std::string get_card_name();
 	//
 	int get_players_number();
 	std::string get_player_name(size_t);

@@ -33,7 +33,9 @@ public:
     size_t getStateCount() const;
     //
     const Card* drawn_card(std::string);
+    void push_to_cards(const Card*);
     void push_to_playedCards(const Card*);
+    const Card* drawn_playedCard(std::string);
     
 private:
     const std::string name;
