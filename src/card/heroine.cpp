@@ -15,3 +15,7 @@ std::string Heroine::getHelp() {
     return help;
 }
 
+void Herione::applyFeature(std::vector<std::vector<unsigned int>> playersCardPoints, int currentPlayerID) {
+    playersCardPoint[currentPlayerID].push_back(point);
+}
+

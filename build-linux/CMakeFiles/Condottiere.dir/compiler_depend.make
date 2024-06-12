@@ -154,7 +154,12 @@ CMakeFiles/Condottiere.dir/src/card/bishop.cpp.o: ../src/card/bishop.cpp \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
   ../inc/card/purplecard.h \
-  ../inc/card/card.h
+  ../inc/card/card.h \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc
 
 CMakeFiles/Condottiere.dir/src/card/card.cpp.o: ../src/card/card.cpp \
   /usr/include/stdc-predef.h \
@@ -513,12 +518,12 @@ CMakeFiles/Condottiere.dir/src/card/drummer.cpp.o: ../src/card/drummer.cpp \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
   ../inc/card/card.h \
-  ../inc/player.h \
   /usr/include/c++/11/vector \
   /usr/include/c++/11/bits/stl_uninitialized.h \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
+  ../inc/player.h \
   /usr/include/c++/11/array \
   /usr/include/c++/11/utility \
   /usr/include/c++/11/bits/stl_relops.h \
@@ -715,7 +720,12 @@ CMakeFiles/Condottiere.dir/src/card/heroine.cpp.o: ../src/card/heroine.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
-  ../inc/card/card.h
+  ../inc/card/card.h \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc
 
 CMakeFiles/Condottiere.dir/src/card/purplecard.cpp.o: ../src/card/purplecard.cpp \
   /usr/include/stdc-predef.h \
@@ -869,7 +879,12 @@ CMakeFiles/Condottiere.dir/src/card/purplecard.cpp.o: ../src/card/purplecard.cpp
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
-  ../inc/card/card.h
+  ../inc/card/card.h \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc
 
 CMakeFiles/Condottiere.dir/src/card/scarecrow.cpp.o: ../src/card/scarecrow.cpp \
   /usr/include/stdc-predef.h \
@@ -1025,12 +1040,12 @@ CMakeFiles/Condottiere.dir/src/card/scarecrow.cpp.o: ../src/card/scarecrow.cpp \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
   ../inc/card/card.h \
-  ../inc/player.h \
   /usr/include/c++/11/vector \
   /usr/include/c++/11/bits/stl_uninitialized.h \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
+  ../inc/player.h \
   /usr/include/c++/11/array \
   /usr/include/c++/11/utility \
   /usr/include/c++/11/bits/stl_relops.h \
@@ -1227,7 +1242,12 @@ CMakeFiles/Condottiere.dir/src/card/season.cpp.o: ../src/card/season.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
-  ../inc/card/card.h
+  ../inc/card/card.h \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc
 
 CMakeFiles/Condottiere.dir/src/card/spring.cpp.o: ../src/card/spring.cpp \
   /usr/include/stdc-predef.h \
@@ -1569,7 +1589,12 @@ CMakeFiles/Condottiere.dir/src/card/spy.cpp.o: ../src/card/spy.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
-  ../inc/card/card.h
+  ../inc/card/card.h \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc
 
 CMakeFiles/Condottiere.dir/src/card/turncoat.cpp.o: ../src/card/turncoat.cpp \
   /usr/include/stdc-predef.h \
@@ -1724,7 +1749,12 @@ CMakeFiles/Condottiere.dir/src/card/turncoat.cpp.o: ../src/card/turncoat.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
-  ../inc/card/card.h
+  ../inc/card/card.h \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc
 
 CMakeFiles/Condottiere.dir/src/card/winter.cpp.o: ../src/card/winter.cpp \
   /usr/include/stdc-predef.h \
@@ -1881,12 +1911,12 @@ CMakeFiles/Condottiere.dir/src/card/winter.cpp.o: ../src/card/winter.cpp \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
   ../inc/card/card.h \
-  ../inc/player.h \
   /usr/include/c++/11/vector \
   /usr/include/c++/11/bits/stl_uninitialized.h \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
+  ../inc/player.h \
   /usr/include/c++/11/array \
   /usr/include/c++/11/utility \
   /usr/include/c++/11/bits/stl_relops.h \
@@ -2080,6 +2110,11 @@ CMakeFiles/Condottiere.dir/src/card/yellowcard.cpp.o: ../src/card/yellowcard.cpp
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
   ../inc/card/yellowcard.h \
   ../inc/card/card.h
 
@@ -4339,17 +4374,11 @@ CMakeFiles/Condottiere.dir/src/userinterface.cpp.o: ../src/userinterface.cpp \
 
 ../inc/card/card.h:
 
-../src/card/card.cpp:
+/usr/include/c++/11/vector:
 
 /usr/include/c++/11/bits/stl_uninitialized.h:
 
-../inc/player.h:
-
-/usr/include/c++/11/bits/hashtable.h:
-
-../src/card/turncoat.cpp:
-
-/usr/include/c++/11/vector:
+../src/card/card.cpp:
 
 /usr/include/c++/11/cstddef:
 
@@ -4360,6 +4389,12 @@ CMakeFiles/Condottiere.dir/src/userinterface.cpp.o: ../src/userinterface.cpp \
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
 /usr/include/c++/11/bits/stl_bvector.h:
+
+../inc/player.h:
+
+/usr/include/c++/11/bits/hashtable.h:
+
+../src/card/turncoat.cpp:
 
 /usr/include/c++/11/tr1/beta_function.tcc:
 

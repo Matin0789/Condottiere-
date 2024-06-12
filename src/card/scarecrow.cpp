@@ -13,3 +13,7 @@ Scarecrow::Scarecrow() : PurpleCard(0,"Scarecrow",0){
 std::string Scarecrow::getHelp() {
     return help;
 }
+
+void Scarecrow::applyFeature(std::vector<std::vector<unsigned int>> playersCardPoints, int currentPlayerID) {
+    
+}

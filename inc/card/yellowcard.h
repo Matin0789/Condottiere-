@@ -7,6 +7,7 @@ class YellowCard : public Card {
 public:
     YellowCard(unsigned int);// (point)
     virtual std::string getType() const override;
+    virtual void applyFeature(std::vector<std::vector<unsigned int>>, int) override;
 private:
 };
 

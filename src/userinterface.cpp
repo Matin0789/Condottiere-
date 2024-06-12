@@ -20,7 +20,7 @@ void UserInterface::pause() const{
 void UserInterface::showPlayerPlayedCards(const std::vector<Player>& players) const{
     clearTerminal();
     for (auto &&player : players){
-        std::cout << "Player" << player.getID() << " : ";
+        std::cout << "Player" << player.getID() + 1 << " : ";
         if (!player.getPlayedCards().empty()){
             for (auto &&card : player.getPlayedCards()){
                 std::cout << card->getType() << '_'; 
@@ -39,7 +39,7 @@ std::string UserInterface::getCommand(const Player& player,const BattleMarker& m
     bool flag = false;
     do
     {
-        std::cout << "@Player" << player.getID() << " : ";
+        std::cout << "@Player" << player.getID() + 1 << " : ";
         std::string choice;
         std::cin >> choice;
         if (choice == "pass"){
@@ -107,7 +107,7 @@ State* UserInterface::get_battleground(const Player& player,GameBoard& gameBoard
             std::cout << stateName << ", ";
         }
         std::cout << std::endl;
-        std::cout << "Player" << player.getID() << ", please specify the battleground : ";
+        std::cout << "Player" << player.getID() + 1 << ", please specify the battleground : ";
         std::cin >> choice;
         for (auto &&stateName : gameBoard.get_active_states_name()) {
             if (stateName == choice) {
@@ -120,7 +120,7 @@ State* UserInterface::get_battleground(const Player& player,GameBoard& gameBoard
 
 void UserInterface::showPlayerStates(const std::vector<Player>& players) const{
     for (auto &&player : players){
-        std::cout << "Player" << player.getID() << " : ";
+        std::cout << "Player" << player.getID() + 1 << " : ";
         if (!player.get_states_name().empty()){
             for (auto &&stateName : player.get_states_name()){
                 std::cout << stateName << ", "; 
@@ -133,7 +133,7 @@ void UserInterface::showPlayerStates(const std::vector<Player>& players) const{
 
 void UserInterface::showPlayerCards(const Player& player) const{
     clearTerminal();
-    std::cout << "Player" << player.getID() << "'s cards are about to be shown.\nPlease hand over the system to him.";
+    std::cout << "Player" << player.getID() + 1 << "'s cards are about to be shown.\nPlease hand over the system to him.";
     pause();
     clearTerminal();
     for (auto &&card : player.getCards()){

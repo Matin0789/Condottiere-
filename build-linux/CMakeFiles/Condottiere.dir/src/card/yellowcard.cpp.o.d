@@ -127,6 +127,10 @@ CMakeFiles/Condottiere.dir/src/card/yellowcard.cpp.o: \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
- /usr/include/c++/11/bits/basic_string.tcc \
+ /usr/include/c++/11/bits/basic_string.tcc /usr/include/c++/11/vector \
+ /usr/include/c++/11/bits/stl_uninitialized.h \
+ /usr/include/c++/11/bits/stl_vector.h \
+ /usr/include/c++/11/bits/stl_bvector.h \
+ /usr/include/c++/11/bits/vector.tcc \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/yellowcard.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/card.h

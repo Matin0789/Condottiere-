@@ -35,6 +35,7 @@ public:
 	void set_battleground(const Player&);
 private:
 	//private methods
+	size_t find_war_winner() const;
 	void getPlayers();
 	void shuffle();
 	void distributeCards();

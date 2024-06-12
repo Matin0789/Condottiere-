@@ -55,6 +55,10 @@ std::string Game::getHelp() {
     return help;
 }
 
+/*size_t Game::find_war_winner() const{
+
+}*/
+
 void Game::getPlayers() {
     int n = ui.get_players_number();
     for (size_t i = 0; i < n; i++)
@@ -62,7 +66,7 @@ void Game::getPlayers() {
         std::string name = ui.get_player_name(i + 1);
         unsigned int age = ui.get_player_old(i + 1);
         Color color = ui.get_player_color(i + 1);
-        players.push_back(Player(name, i + 1, age, color));
+        players.push_back(Player(name, i, age, color));
     }
 }
 
@@ -137,6 +141,7 @@ int Game::war(int currentPlayerID) {
         }
         if (i >= activePlayers.size()) i = 0;
     }
+    //find_war_winner();
     return currentPlayerID;
 }
 

@@ -14,3 +14,7 @@ Spy::Spy() : PurpleCard(1,"Spy",5){
 std::string Spy::getHelp() {
     return help;
 }
+
+void Spy::applyFeature(std::vector<std::vector<unsigned int>> playersCardPoints, int currentPlayerID) {
+    playersCardPoint[currentPlayerID].push_back(point);
+}

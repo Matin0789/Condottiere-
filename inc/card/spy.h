@@ -7,6 +7,8 @@ class Spy : public PurpleCard {
 public:
     Spy();
     static std::string getHelp();
+    virtual void applyFeature(std::vector<std::vector<unsigned int>>, int) override;
+
 protected:
     
 private:

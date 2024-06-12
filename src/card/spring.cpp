@@ -1,5 +1,6 @@
 #include <algorithm>
 
+
 #include "spring.h"
 
 class Game;
@@ -10,12 +11,31 @@ class Player;
 std::string Spring::help = HELP;
 
 Spring::Spring() : Season(0,"Spring",4){
-}
 
-static bool compareByPoint(const Card& card1, const Card& card2){
-    return card1.getPoint() < card2.getPoint();
 }
 
 std::string Spring::getHelp() {
     return help;
+}
+
+void Spring::applyFeature(std::vector<std::vector<unsigned int>> playersCardPoints, int currentPlayerID) {
+    unsigned int maxPoint = 0;
+    for (auto &&cardsPoint : playersCardPoints)
+    {
+        unsigned int playerMaxPoint = *std::max_element(cardsPoint.begin(), cardsPoint.end());
+        maxPoint = (maxPoint < playerMaxPoint) ? playerMaxPoint:maxPoint;
+    }
+    
+    for (auto &&cardsPoint : playersCardPoints)
+	{
+		if (!cardsPoint.empty()) {
+			for (auto &&point : cardsPoint)
+			{
+				if (point == maxPoint) {
+                    point += 3;
+                }
+			}
+		}
+	}
+    
 }
