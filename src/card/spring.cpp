@@ -18,12 +18,14 @@ std::string Spring::getHelp() {
     return help;
 }
 
-void Spring::applyFeature(std::vector<std::vector<unsigned int>> playersCardPoints, int currentPlayerID) {
+void Spring::applyFeature(std::vector<std::vector<unsigned int>>& playersCardPoints, int currentPlayerID) const{
     unsigned int maxPoint = 0;
     for (auto &&cardsPoint : playersCardPoints)
     {
-        unsigned int playerMaxPoint = *std::max_element(cardsPoint.begin(), cardsPoint.end());
-        maxPoint = (maxPoint < playerMaxPoint) ? playerMaxPoint:maxPoint;
+        if (!cardsPoint.empty()) {
+            unsigned int playerMaxPoint = *std::max_element(cardsPoint.begin(), cardsPoint.end());
+            maxPoint = (maxPoint < playerMaxPoint) ? playerMaxPoint:maxPoint;
+        }
     }
     
     for (auto &&cardsPoint : playersCardPoints)

@@ -25,7 +25,7 @@
 class GameBoard
 {
 public:
-	bool checkAdjacency(const State* state1,const State* state2,const State* state3);
+	bool checkAdjacency(const std::string, const std::string, const std::string);
 	State* getState(std::string);
 	std::vector<std::string> get_active_states_name() const;
 private:

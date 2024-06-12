@@ -15,6 +15,6 @@ std::string Turncoat::getHelp() {
     return help;
 }
 
-void Turncoat::applyFeature(std::vector<std::vector<unsigned int>> playersCardPoints, int currentPlayerID) {
+void Turncoat::applyFeature(std::vector<std::vector<unsigned int>>& playersCardPoints, int currentPlayerID) const {
     
 }

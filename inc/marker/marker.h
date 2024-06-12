@@ -13,7 +13,7 @@ private:
 public:
     Marker(Color);
     void setState(State*);
-    const State& getState() const;
+    State& getState() const;
     bool is_set() const;
 };
 

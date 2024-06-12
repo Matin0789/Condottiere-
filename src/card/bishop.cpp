@@ -16,7 +16,7 @@ std::string Bishop::getHelp() {
     return Bishop::help;
 }
 
-void Bishop::applyFeature(std::vector<std::vector<unsigned int>> playersCardPoints, int currentPlayerID) { 
+void Bishop::applyFeature(std::vector<std::vector<unsigned int>>& playersCardPoints, int currentPlayerID) const { 
     unsigned int minPoint = 0;
     for (auto &&cardsPoint : playersCardPoints)
     {

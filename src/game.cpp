@@ -3,6 +3,7 @@
 #include <stdexcept>
 #include <cstddef>
 #include <cmath>
+#include <utility>
 
 #define HELP ""
 
@@ -13,7 +14,7 @@
 
 std::string Game::help = HELP;
 
-Game::Game(UserInterface &inputUI) : cards(92), ui(inputUI), season(nullptr)
+Game::Game(UserInterface &inputUI) : cards(89), ui(inputUI), season(nullptr)
 {
     srand(time(0));
     for (int i = 0; i < 10; i++)
@@ -31,23 +32,25 @@ Game::Game(UserInterface &inputUI) : cards(92), ui(inputUI), season(nullptr)
     }
     for (int i = 0; i < 3; i++)
     {
-        cards[i + 58] = &turncoat[i];
-        cards[i + 61] = &heroine[i];
-        cards[i + 64] = &spring[i];
-        cards[i + 67] = &winter[i];
+        cards[i + 58] = &heroine[i];
+        cards[i + 61] = &spring[i];
+        cards[i + 64] = &winter[i];
     }
     for (int i = 0; i < 16; i++)
     {
-        cards[i + 70] = &scarecrow[i];
+        cards[i + 67] = &scarecrow[i];
     }
     for (int i = 0; i < 6; i++)
     {
 
-        cards[i + 86] = &drummer[i];
-        // cards[i + 103] = &bishop[i];
+        cards[i + 83] = &drummer[i];
+        // cards[i + 100] = &bishop[i];
     }
     /*for (int i = 0;i < 12;i++){
-        cards[i + 109] = &spy[i];
+        cards[i + 106] = &spy[i];
+    }*/
+    /*for (int i = 0; i < 3; i++) {
+        cards[i + 118] = &turncoat[i];
     }*/
 }
 
@@ -55,14 +58,95 @@ std::string Game::getHelp() {
     return help;
 }
 
-/*size_t Game::find_war_winner() const{
+size_t Game::find_war_winner(){
+    std::vector<std::vector<unsigned int>> yellowCards(players.size());
+    std::vector<std::pair<size_t ,const Card*>> purpleCards;
+    for (size_t i = 0; i < players.size(); i++)
+    {
+        for (auto &&card : players[i].getPlayedCards())
+        {
+            if (card->getType()[0] >= '0' && card->getType()[0] <= '9'){
+                
+                //yellowCards[i].push_back(card->getPoint());
+                card->applyFeature(yellowCards, i);
+            }
+            else {
 
-}*/
+                purpleCards.push_back(std::make_pair(i, card));
+            }
+            cards.push_back(players[i].drawn_playedCard(card->getType()));
+        }
+    }
+    if (season) {
+        purpleCards.push_back(std::make_pair(players.size(), season));
+        cards.push_back(season);
+        season = nullptr;
+    }
+    std::sort(purpleCards.begin(), purpleCards.end(),
+        [](const std::pair<size_t ,const Card*>& pair1 , std::pair<size_t ,const Card*>& pair2) {
+            return pair1.second->getPriority() < pair2.second->getPriority();
+        });
+    for (auto &&purpleCard : purpleCards)
+    {
+        purpleCard.second->applyFeature(yellowCards, purpleCard.first);
+    }
+    size_t winnerID = players.size();
+    unsigned int highestScore = 0;
+    std::vector<std::pair<size_t, unsigned int>> scores;
+    for (size_t i = 0; i < players.size(); i++)
+    {
+        unsigned int maxScore{0};
+        for (auto &&cardPoint : yellowCards[i])
+        {
+            maxScore += cardPoint;
+        }
+        scores.push_back(std::make_pair(i, maxScore));
+    }
+
+    std::sort(scores.begin(), scores.end(),
+        [](const std::pair<size_t, unsigned int>& pair1, const std::pair<size_t, unsigned int>& pair2){
+            return pair1.second > pair2.second;
+        });
+    
+    std::cerr << scores[0].second << std::endl;
+    std::cerr << scores[1].second << std::endl;
+    std::cerr << scores[2].second << std::endl;
+    if (scores[0].second != scores[1].second) {
+        winnerID = scores[0].first;
+    }
+    return winnerID;
+    
+}
+
+bool Game::find_game_winner(const Player& player){
+    size_t number_of_player_states = player.getStateNumber();
+    if (number_of_player_states >= 5){
+        return true;
+    }
+    else if (number_of_player_states >= 3){
+        for (size_t i = 0; i < number_of_player_states; i++)
+        {
+            for (size_t j = i; j < number_of_player_states; j++)
+            {
+                for (size_t k = j; k < number_of_player_states; k++)
+                {
+                    std::vector<std::string> statesName = player.get_states_name();
+                    if (gameBoard.checkAdjacency(statesName[i], statesName[j], statesName[k]))
+                        return true;
+                }
+            }
+            
+        }
+        
+    }
+    else
+        return false;
+    return false;
+}
 
 void Game::getPlayers() {
     int n = ui.get_players_number();
-    for (size_t i = 0; i < n; i++)
-    {
+    for (size_t i = 0; i < n; i++) {
         std::string name = ui.get_player_name(i + 1);
         unsigned int age = ui.get_player_old(i + 1);
         Color color = ui.get_player_color(i + 1);
@@ -73,8 +157,8 @@ void Game::getPlayers() {
 void Game::distributeCards() {
     shuffle();
     for (auto &&player : players) {
-        std::vector<const Card*> playerCards(cards.begin(), cards.begin() + (10 + player.getStateCount()));
-        cards.erase(cards.begin(), cards.begin() + (10 + player.getStateCount()));
+        std::vector<const Card*> playerCards(cards.begin(), cards.begin() + (10 + player.getStateNumber()));
+        cards.erase(cards.begin(), cards.begin() + (10 + player.getStateNumber()));
         player.setCards(playerCards);
         ui.showPlayerCards(player);
     }
@@ -94,6 +178,11 @@ void Game::play()
     while (true){
         set_battleground(players[currentPlayerID]);
         currentPlayerID = war(currentPlayerID);
+        bool gameEnd = find_game_winner(players[currentPlayerID]);
+        if (gameEnd){
+            ui.declare_gameWinner(players[currentPlayerID]);
+            break;
+        }
     }
 }
 
@@ -132,7 +221,9 @@ int Game::war(int currentPlayerID) {
         std::string command = ui.getCommand(*activePlayers[i],battleMarker, season);
         ui.clearTerminal();
         if (command == "pass") {
+            if (activePlayers.size() == 1) currentPlayerID = activePlayers[i]->getID();
             activePlayers.erase(activePlayers.begin() + i);
+            i--;
         }
         else {
             const Card* drawnCard = activePlayers[i]->drawn_card(command);
@@ -170,7 +261,20 @@ int Game::war(int currentPlayerID) {
         }
         if (i >= activePlayers.size() - 1) i = -1;
     }
-    //find_war_winner();
+
+    size_t winnerID = find_war_winner();
+    std::cerr << winnerID;
+    ui.pause();
+
+    if (winnerID < players.size()) {
+        currentPlayerID = winnerID;
+        players[currentPlayerID].setState(&battleMarker.getState());
+        ui.declare_warWinner(players[currentPlayerID]);
+    }
+    else {
+        ui.declare_warWinner();
+        battleMarker.getState().set(false);
+    }
     return currentPlayerID;
 }
 
