@@ -20,6 +20,10 @@ void UserInterface::spliter() const {
     std::cout << "----------------------------------------" << std::endl;
 }
 
+void UserInterface::operator<<(const std::string& out) const {
+    std::cout << out;
+}
+
 void UserInterface::showPlayerPlayedCards(const Player& player) const{
     std::cout << "Player" << player.getID() + 1 << " : ";
     if (!player.getPlayedCards().empty()){

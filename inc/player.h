@@ -35,6 +35,10 @@ public:
     void push_to_playedCards(const Card*);
     const Card* drawn_playedCard(std::string);
     
+    //
+    std::vector<const Card*> burnCards();
+    std::vector<const Card*> burnPlayedCards();
+
 private:
     const std::string name;
     const size_t ID;

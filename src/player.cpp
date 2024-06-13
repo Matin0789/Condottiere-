@@ -28,6 +28,7 @@ int Player::getAge() const
 int Player::getID() const {
     return ID;
 };
+
 const std::vector<const Card*>& Player::getPlayedCards() const {
     return playedCards;
 }
@@ -87,4 +88,16 @@ const Card* Player::drawn_playedCard(std::string inputCard){
 
 size_t Player::getStateNumber() const {
     return stateCounter;
+}
+
+std::vector<const Card*> Player::burnCards(){
+    std::vector<const Card*> tmp(cards);
+    cards.clear();
+    return tmp;
+}
+    
+std::vector<const Card*> Player::burnPlayedCards(){
+    std::vector<const Card*> tmp(playedCards);
+    playedCards.clear();
+    return tmp;
 }

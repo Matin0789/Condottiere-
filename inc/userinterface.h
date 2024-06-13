@@ -18,6 +18,8 @@ public:
 	void clearTerminal() const;
 	void pause() const;
 	void spliter() const;
+	void operator<<(const std::string&) const;
+
 	void showPlayerPlayedCards(const Player&) const;
 	std::string getCommand(const Player&, const BattleMarker&, const Card*);
 	State* get_battleground(const Player&,GameBoard&);

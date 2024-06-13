@@ -59,16 +59,17 @@ std::string Game::getHelp() {
 }
 
 size_t Game::find_war_winner(){
-    std::vector<std::vector<unsigned int>> yellowCards(players.size());
+    std::vector<std::vector<unsigned int>> pointCards(players.size());
     std::vector<std::pair<size_t ,const Card*>> purpleCards;
+    std::vector<bool> drummer_set(players.size(),false);
+
     for (size_t i = 0; i < players.size(); i++)
     {
         for (auto &&card : players[i].getPlayedCards())
         {
             if (card->getType()[0] >= '0' && card->getType()[0] <= '9'){
                 
-                //yellowCards[i].push_back(card->getPoint());
-                card->applyFeature(yellowCards, i);
+                card->applyFeature(pointCards, i);
             }
             else {
 
@@ -88,7 +89,18 @@ size_t Game::find_war_winner(){
         });
     for (auto &&purpleCard : purpleCards)
     {
-        purpleCard.second->applyFeature(yellowCards, purpleCard.first);
+        if (purpleCard.second->getType() == "drummer") {
+            if (drummer_set[purpleCard.first] == false) {
+                purpleCard.second->applyFeature(pointCards, purpleCard.first);
+            }
+        }
+        else{
+            purpleCard.second->applyFeature(pointCards, purpleCard.first);
+        }
+
+        if (purpleCard.second->getType() == "drummer") {
+            drummer_set[purpleCard.first] = true;
+        }
     }
     size_t winnerID = players.size();
     unsigned int highestScore = 0;
@@ -96,7 +108,7 @@ size_t Game::find_war_winner(){
     for (size_t i = 0; i < players.size(); i++)
     {
         unsigned int maxScore{0};
-        for (auto &&cardPoint : yellowCards[i])
+        for (auto &&cardPoint : pointCards[i])
         {
             maxScore += cardPoint;
         }
@@ -108,12 +120,24 @@ size_t Game::find_war_winner(){
             return pair1.second > pair2.second;
         });
     
+    //Test
     std::cerr << scores[0].second << std::endl;
     std::cerr << scores[1].second << std::endl;
     std::cerr << scores[2].second << std::endl;
+    ui.pause();
+    //
+    
     if (scores[0].second != scores[1].second) {
         winnerID = scores[0].first;
     }
+
+    for (auto &&player : players)
+    {
+        std::vector<const Card*> tmp(player.burnPlayedCards());
+        if (!tmp.empty());
+            cards.insert(cards.end(), tmp.begin(), tmp.end());
+    }
+    
     return winnerID;
     
 }
@@ -183,6 +207,24 @@ void Game::play()
             ui.declare_gameWinner(players[currentPlayerID]);
             break;
         }
+        size_t counter = 0;
+        for (auto &&player : players)
+        {
+            if (!player.getCards().empty()){
+                counter++;
+            }
+        }
+        if (counter <= 1){
+            for (auto &&player : players)
+            {
+                std::vector<const Card*> tmp(player.burnCards());
+                if (!tmp.empty()){
+                    cards.insert(cards.end(), tmp.begin(), tmp.end());
+                }
+            }
+            distributeCards();
+        }
+        
     }
 }
 
@@ -237,14 +279,21 @@ int Game::war(int currentPlayerID) {
                     bool flag = false;
                     do {
                         std::string choose = ui.get_card_name();
-                        for (const auto &card : activePlayers[i]->getPlayedCards()) {
-                            if (card->getType() == choose) {
-                                const Card* drawnPlayedCard = activePlayers[i]->drawn_playedCard(choose);
-                                activePlayers[i]->push_to_playedCards(drawnCard);
-                                activePlayers[i]->push_to_cards(drawnPlayedCard);
-                                flag = true;
+                        if (choose[0] >= '0' and choose[0] <= '9'){
+                            for (const auto &card : activePlayers[i]->getPlayedCards()) {
+                                if (card->getType() == choose) {
+                                    const Card* drawnPlayedCard = activePlayers[i]->drawn_playedCard(choose);
+                                    activePlayers[i]->push_to_playedCards(drawnCard);
+                                    activePlayers[i]->push_to_cards(drawnPlayedCard);
+                                    flag = true;
+                                }
                             }
                         }
+                        else {
+                            ui << "You can only choose from yellow cards, ";
+                            flag = false;
+                        }
+                        if (!flag) ui << "Please try again";
                     } while (!flag);
                 }
                 else{
@@ -263,9 +312,6 @@ int Game::war(int currentPlayerID) {
     }
 
     size_t winnerID = find_war_winner();
-    std::cerr << winnerID;
-    ui.pause();
-
     if (winnerID < players.size()) {
         currentPlayerID = winnerID;
         players[currentPlayerID].setState(&battleMarker.getState());
