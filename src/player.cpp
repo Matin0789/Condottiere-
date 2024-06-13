@@ -2,6 +2,8 @@
 
 #include "player.h"
 
+//Test
+#include <iostream>
 
 Player::Player(std::string inputName, size_t inputID, unsigned int inputAge, Color inputColor) :
     name(inputName),
@@ -80,6 +82,7 @@ const Card* Player::drawn_playedCard(std::string inputCard){
         if (playedCards[i]->getType() == inputCard) {
             const Card* card = playedCards[i];
             playedCards.erase(playedCards.begin() + i); 
+            std::cerr << card->getType() << ' ' << ID << std::endl;
             return card;
         }
     }

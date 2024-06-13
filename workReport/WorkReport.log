@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.5.30)  9 JUN 2024 15:50
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.5.30)  13 JUN 2024 21:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -647,25 +647,118 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
  [1
 
-] [2] [1] [1
+] [2]
+Overfull \hbox (24.8291pt too wide) in paragraph at lines 31--37
+[]\TU/BZar(0)/m/n/18 در دورانی که قلمرو شاهی به استان های خود مختار تقسیم شده،س
+ردارانی[]
+ []
+
+[1] [1
 
 ]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 38.
+(hyperref)                than one, level fixed on input line 43.
 
-[2] [3] [4] [5] [6] [7] [8
 
-] [9
+Overfull \hbox (2.27223pt too wide) in paragraph at lines 47--49
+[]\TU/BZar(0)/m/n/18 اشیاء مورد نیاز این کلاس از کلاس هایی مانند []\TU/lmroman1
+0-regular(0)/m/n/18 ui[] \TU/BZar(0)/m/n/18 ، []\TU/lmroman10-regular(0)/m/n/18
+ gameboard[][]
+ []
+
+[2]
+Overfull \hbox (21.20459pt too wide) in paragraph at lines 62--66
+[] []\TU/BZar(0)/b/n/18 متدها[] \TU/BZar(0)/m/n/18 متد ها یا رفتار های این کلاس
+ عبارتند از []\TU/lmroman10-regular(0)/m/n/18 clearTerminal[][]
+ []
+
+
+Overfull \hbox (75.90376pt too wide) in paragraph at lines 62--66
+[]\TU/BZar(0)/m/n/18 ، []\TU/lmroman10-regular(0)/m/n/18 pause[] \TU/BZar(0)/m/
+n/18 ، []\TU/lmroman10-regular(0)/m/n/18 spliter[] \TU/BZar(0)/m/n/18 ، []\TU/l
+mroman10-regular(0)/m/n/18 showPlayerPlayedCards[] \TU/BZar(0)/m/n/18 ، []\TU/l
+mroman10-regular(0)/m/n/18 getCommand[][]
+ []
+
+
+Overfull \hbox (90.54788pt too wide) in paragraph at lines 62--66
+[]\TU/BZar(0)/m/n/18 ، []\TU/lmroman10-regular(0)/m/n/18 get_battleground[] \TU
+/BZar(0)/m/n/18 ، []\TU/lmroman10-regular(0)/m/n/18 showPlayerStates[] \TU/BZar
+(0)/m/n/18 ، []\TU/lmroman10-regular(0)/m/n/18 showPlayerCards[][]
+ []
+
+
+Overfull \hbox (113.71388pt too wide) in paragraph at lines 62--66
+[]\TU/BZar(0)/m/n/18 ، []\TU/lmroman10-regular(0)/m/n/18 get_card_name[] \TU/BZ
+ar(0)/m/n/18 ، []\TU/lmroman10-regular(0)/m/n/18 get_players_number[] \TU/BZar(
+0)/m/n/18 ، []\TU/lmroman10-regular(0)/m/n/18 get_player_name[][]
+ []
+
+
+Overfull \hbox (95.74988pt too wide) in paragraph at lines 62--66
+[]\TU/BZar(0)/m/n/18 ، []\TU/lmroman10-regular(0)/m/n/18 get_player_old[] \TU/B
+Zar(0)/m/n/18 ، []\TU/lmroman10-regular(0)/m/n/18 get_player_color[] \TU/BZar(0
+)/m/n/18 ، []\TU/lmroman10-regular(0)/m/n/18 declare_warWinner[][]
+ []
+
+[3]
+Overfull \hbox (22.32434pt too wide) in paragraph at lines 71--74
+[]\TU/BZar(0)/m/n/18 شامل ۱۴ استان میشوند این استان ها با استفاده از []\TU/lmro
+man10-regular(0)/m/n/18 unordered_map[][]
+ []
+
+[4]
+Overfull \hbox (0.57544pt too wide) in paragraph at lines 84--87
+[]\TU/BZar(0)/m/n/18 صورت []\TU/lmroman10-regular(0)/m/n/18 protected[] \TU/BZa
+r(0)/m/n/18 نوشته ایم ۲ - و ویژگی اولویت که به صورت[]
+ []
+
+
+Overfull \hbox (18.68176pt too wide) in paragraph at lines 89--91
+[]\TU/BZar(0)/m/n/18 ، []\TU/lmroman10-regular(0)/m/n/18 applyFeature[] \TU/BZa
+r(0)/m/n/18 ، []\TU/lmroman10-regular(0)/m/n/18 is_season[] \TU/BZar(0)/m/n/18 
+، []\TU/lmroman10-regular(0)/m/n/18 getPriority[] \TU/BZar(0)/m/n/18 ، []\TU/lm
+roman10-regular(0)/m/n/18 setPoint[][]
+ []
+
+
+Overfull \hbox (22.26065pt too wide) in paragraph at lines 93--95
+[]\TU/BZar(0)/m/n/18 بری میکنند کلاس هایی همچون []\TU/lmroman10-regular(0)/m/n/
+18 bishop[] \TU/BZar(0)/m/n/18 ، []\TU/lmroman10-regular(0)/m/n/18 drummer[] \T
+U/BZar(0)/m/n/18 ، []\TU/lmroman10-regular(0)/m/n/18 heroine[][]
+ []
+
+
+Overfull \hbox (1.58203pt too wide) in paragraph at lines 102--104
+[]\TU/BZar(0)/m/n/18 میشود بازیکن میتواند یک کارت زرد را به بازی برگرداند این ک
+ارت[]
+ []
+
+[5] [6] [7] [8] [9] [10] [11] [12
+
+]
+Overfull \hbox (15.24329pt too wide) in paragraph at lines 225--231
+[]\TU/BZar(0)/m/n/18 سازی ماهیت استان ها با استفاده از []\TU/lmroman10-regular(
+0)/m/n/18 unordered_map[] \TU/BZar(0)/m/n/18 ۴- کامپایل[]
+ []
+
+
+Overfull \hbox (14.55762pt too wide) in paragraph at lines 225--231
+[]\TU/BZar(0)/m/n/18 چندین فایل)” ۵- ایجاد بستری برای اجرای برنامه توسط رابط گر
+افیکی[]
+ []
+
+[13] [14
 
 ]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 126.
+(hyperref)                than one, level fixed on input line 234.
 
-[10] [11
+[15] [16
 
-] [12] (./WorkReport.aux)
+] [17] (./WorkReport.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.85994pt have occurred.
@@ -674,12 +767,12 @@ Package rerunfilecheck Info: File `WorkReport.out' has not changed.
 (rerunfilecheck)             Checksum: 1D41DFC33DE3D78029B0417C8031FB4A;2082.
  ) 
 Here is how much of TeX's memory you used:
- 12721 strings out of 478190
- 263058 string characters out of 5854827
+ 12724 strings out of 478190
+ 263200 string characters out of 5854827
  696851 words of memory out of 5000000
- 33116 multiletter control sequences out of 15000+600000
- 475333 words of font info for 76 fonts, out of 8000000 for 9000
+ 33117 multiletter control sequences out of 15000+600000
+ 475341 words of font info for 77 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 74i,8n,87p,1040b,362s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 74i,8n,87p,1040b,461s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on WorkReport.pdf (16 pages).
+Output written on WorkReport.pdf (21 pages).

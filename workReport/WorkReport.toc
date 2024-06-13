@@ -1,7 +1,7 @@
 \contentsline {part}{اول\hspace {1em}کلاس ها}{1}{part.1}%
 \contentsline {section}{\numberline {0.1}بازی}{2}{section.0.1}%
 \contentsline {paragraph}{صفات}{2}{section*.2}%
-\contentsline {subparagraph}{رابط گرافیکی}{2}{section*.3}%
+\contentsline {subparagraph}{رابط کاربری}{2}{section*.3}%
 \contentsline {paragraph}{متدها}{2}{section*.4}%
 \contentsline {subparagraph}{شروع بازی}{2}{section*.5}%
 \contentsline {section}{\numberline {0.2}رابط گرافیکی}{3}{section.0.2}%
@@ -17,40 +17,40 @@
 \contentsline {paragraph}{صفات}{5}{section*.12}%
 \contentsline {subparagraph}{}{5}{section*.13}%
 \contentsline {paragraph}{متدها}{5}{section*.14}%
-\contentsline {subsubsection}{مترسک}{5}{section*.15}%
-\contentsline {paragraph}{صفات}{5}{section*.16}%
-\contentsline {paragraph}{متدها}{5}{section*.17}%
-\contentsline {subsubsection}{طبل زن}{5}{section*.18}%
-\contentsline {paragraph}{صفات}{5}{section*.19}%
-\contentsline {paragraph}{متدها}{5}{section*.20}%
-\contentsline {subsubsection}{شاهدخت}{5}{section*.21}%
-\contentsline {paragraph}{صفات}{5}{section*.22}%
-\contentsline {paragraph}{متدها}{5}{section*.23}%
-\contentsline {subsection}{\numberline {0.4.2}فصل ها}{6}{subsection.0.4.2}%
-\contentsline {paragraph}{صفات}{6}{section*.24}%
-\contentsline {paragraph}{متدها}{6}{section*.25}%
-\contentsline {subsubsection}{بهار}{6}{section*.26}%
-\contentsline {paragraph}{صفات}{6}{section*.27}%
-\contentsline {paragraph}{متدها}{6}{section*.28}%
-\contentsline {subsubsection}{زمستان}{6}{section*.29}%
-\contentsline {paragraph}{صفات}{6}{section*.30}%
-\contentsline {paragraph}{متدها}{6}{section*.31}%
-\contentsline {subsection}{\numberline {0.4.3}کارت های زرد(سرباز)}{6}{subsection.0.4.3}%
-\contentsline {paragraph}{صفات}{6}{section*.32}%
-\contentsline {paragraph}{متدها}{6}{section*.33}%
-\contentsline {section}{\numberline {0.5}نشان}{7}{section.0.5}%
-\contentsline {paragraph}{صفات}{7}{section*.34}%
-\contentsline {paragraph}{متدها}{7}{section*.35}%
-\contentsline {subsection}{\numberline {0.5.1}نشان بازیکن}{7}{subsection.0.5.1}%
-\contentsline {paragraph}{صفات}{7}{section*.36}%
-\contentsline {paragraph}{متدها}{7}{section*.37}%
-\contentsline {subsection}{\numberline {0.5.2}ایالت}{7}{subsection.0.5.2}%
-\contentsline {paragraph}{صفات}{7}{section*.38}%
-\contentsline {paragraph}{متدها}{7}{section*.39}%
-\contentsline {section}{\numberline {0.6}بازیکن}{7}{section.0.6}%
-\contentsline {paragraph}{صفات}{7}{section*.40}%
-\contentsline {paragraph}{متدها}{7}{section*.41}%
-\contentsline {part}{دوم\hspace {1em}چالش ها}{8}{part.2}%
-\contentsline {part}{سوم\hspace {1em}پیوندها}{9}{part.3}%
-\contentsline {section}{\numberline {0.7}گیت هاب}{10}{section.0.7}%
-\contentsline {part}{چهارم\hspace {1em}منابع}{11}{part.4}%
+\contentsline {subsubsection}{مترسک}{6}{section*.15}%
+\contentsline {paragraph}{صفات}{6}{section*.16}%
+\contentsline {paragraph}{متدها}{6}{section*.17}%
+\contentsline {subsubsection}{طبل زن}{6}{section*.18}%
+\contentsline {paragraph}{صفات}{6}{section*.19}%
+\contentsline {paragraph}{متدها}{6}{section*.20}%
+\contentsline {subsubsection}{شاهدخت}{7}{section*.21}%
+\contentsline {paragraph}{صفات}{7}{section*.22}%
+\contentsline {paragraph}{متدها}{7}{section*.23}%
+\contentsline {subsection}{\numberline {0.4.2}فصل ها}{7}{subsection.0.4.2}%
+\contentsline {paragraph}{صفات}{7}{section*.24}%
+\contentsline {paragraph}{متدها}{7}{section*.25}%
+\contentsline {subsubsection}{بهار}{7}{section*.26}%
+\contentsline {paragraph}{صفات}{7}{section*.27}%
+\contentsline {paragraph}{متدها}{8}{section*.28}%
+\contentsline {subsubsection}{زمستان}{8}{section*.29}%
+\contentsline {paragraph}{صفات}{8}{section*.30}%
+\contentsline {paragraph}{متدها}{8}{section*.31}%
+\contentsline {subsection}{\numberline {0.4.3}کارت های زرد(سرباز)}{8}{subsection.0.4.3}%
+\contentsline {paragraph}{صفات}{8}{section*.32}%
+\contentsline {paragraph}{متدها}{8}{section*.33}%
+\contentsline {section}{\numberline {0.5}نشان}{9}{section.0.5}%
+\contentsline {paragraph}{صفات}{9}{section*.34}%
+\contentsline {paragraph}{متدها}{9}{section*.35}%
+\contentsline {subsection}{\numberline {0.5.1}نشان بازیکن}{9}{subsection.0.5.1}%
+\contentsline {paragraph}{صفات}{9}{section*.36}%
+\contentsline {paragraph}{متدها}{9}{section*.37}%
+\contentsline {subsection}{\numberline {0.5.2}ایالت}{9}{subsection.0.5.2}%
+\contentsline {paragraph}{صفات}{10}{section*.38}%
+\contentsline {paragraph}{متدها}{10}{section*.39}%
+\contentsline {section}{\numberline {0.6}بازیکن}{10}{section.0.6}%
+\contentsline {paragraph}{صفات}{10}{section*.40}%
+\contentsline {paragraph}{متدها}{10}{section*.41}%
+\contentsline {part}{دوم\hspace {1em}چالش ها}{12}{part.2}%
+\contentsline {part}{سوم\hspace {1em}پیوندها}{14}{part.3}%
+\contentsline {section}{\numberline {0.7}گیت هاب}{15}{section.0.7}%
+\contentsline {part}{چهارم\hspace {1em}منابع}{16}{part.4}%

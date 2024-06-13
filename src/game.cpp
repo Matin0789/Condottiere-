@@ -5,7 +5,7 @@
 #include <cmath>
 #include <utility>
 
-#define HELP ""
+#define HELP "1. Place the board in the center of the table2.\nShuffle the remaining cards and deal 10 facedown to each player.\nPlace the deck facedown near the board3.\nEach player chooses a color and takes the six control markers of that color4.\nThe youngest player takes the battle marker.\nHe or she initiates the first battle and takes the first turn of the game5.\nPlayer turns are taken in clockwise order starting with the player who initiated the battle.\nWhen you take your turn, you can choose to either play a card or pass.\nPlaying a card allows you to increase your strength, hinder opponents, or trigger other effects.\nThere are two types of cards: mercenary and special cards\n"
 
 //test
 #include <iostream>
@@ -75,9 +75,11 @@ size_t Game::find_war_winner(){
 
                 purpleCards.push_back(std::make_pair(i, card));
             }
-            cards.push_back(players[i].drawn_playedCard(card->getType()));
+            if (!players[i].getPlayedCards().empty())
+                cards.push_back(players[i].drawn_playedCard(card->getType()));
         }
     }
+
     if (season) {
         purpleCards.push_back(std::make_pair(players.size(), season));
         cards.push_back(season);
@@ -102,6 +104,7 @@ size_t Game::find_war_winner(){
             drummer_set[purpleCard.first] = true;
         }
     }
+
     size_t winnerID = players.size();
     unsigned int highestScore = 0;
     std::vector<std::pair<size_t, unsigned int>> scores;
@@ -137,7 +140,7 @@ size_t Game::find_war_winner(){
         if (!tmp.empty());
             cards.insert(cards.end(), tmp.begin(), tmp.end());
     }
-    
+
     return winnerID;
     
 }
@@ -224,7 +227,6 @@ void Game::play()
             }
             distributeCards();
         }
-        
     }
 }
 
@@ -275,9 +277,9 @@ int Game::war(int currentPlayerID) {
             }
             else if (drawnCard->getType() == "Scarecrow"){
                 if (!activePlayers[i]->getPlayedCards().empty()) {
-                    ui.showPlayerPlayedCards(*activePlayers[i]);
                     bool flag = false;
                     do {
+                        ui.showPlayerPlayedCards(*activePlayers[i]);
                         std::string choose = ui.get_card_name();
                         if (choose[0] >= '0' and choose[0] <= '9'){
                             for (const auto &card : activePlayers[i]->getPlayedCards()) {
@@ -293,7 +295,10 @@ int Game::war(int currentPlayerID) {
                             ui << "You can only choose from yellow cards, ";
                             flag = false;
                         }
-                        if (!flag) ui << "Please try again";
+                        if (!flag) {
+                            ui << "Please try again";
+                            ui.pause();
+                        }
                     } while (!flag);
                 }
                 else{
@@ -312,6 +317,7 @@ int Game::war(int currentPlayerID) {
     }
 
     size_t winnerID = find_war_winner();
+
     if (winnerID < players.size()) {
         currentPlayerID = winnerID;
         players[currentPlayerID].setState(&battleMarker.getState());

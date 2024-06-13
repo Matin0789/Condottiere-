@@ -8,22 +8,3 @@ blue
 Ali
 18
 green
-
-
-
-
-
-
-In the era when the royal territory was divided into independent provinces, the chieftains from the corner of the land, in order to conquer the country, sent their armies to conquer the cities. To fight with skill and courage and to compete with the opponents with strategy and cunning to gain power and be proud
-	 Rakab is a board game played by 3 to 6 players 
-	 This game includes two types of purple and yellow cards, each purple card has its own points, but yellow cards have no special features
-	 Purple cards are: Scarecrow, Drummer, Princess, Lioness, Spring, Winter, White Beard. 
-	 Players must fight with the cards in their hand and try to win the war, and if they conquer three adjacent provinces or five provinces, they will win the whole game.
-
-
-
-#define HELP "1. Place the board in the center of the table.2.  Shuffle the remaining cards and deal 10 facedown to each player. Place the deck facedown near the board.3. Each player chooses a color and takes the six control markers of that color. 4. The youngest player takes the battle marker. He or she initiates the first battle and takes the first turn of the game. 5. Player turns are taken in clockwise order starting with the player who initiated the battle. When you take your turn, you can choose to either play a card or pass. Playing a card allows you to increase your strength, hinder opponents, or trigger other effects. There are two types of cards: mercenary and special cards"
-
-
-دومی بهتره
-
