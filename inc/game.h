@@ -35,7 +35,8 @@ public:
 	void set_battleground(const Player&);
 private:
 	//private methods
-	size_t find_war_winner() const;
+	size_t find_war_winner();
+	bool find_game_winner(const Player&);
 	void getPlayers();
 	void shuffle();
 	void distributeCards();
@@ -54,14 +55,14 @@ private:
 	const std::array<YellowCard, 8> five_point_yellow_card = {YellowCard(5),YellowCard(5),YellowCard(5),YellowCard(5),YellowCard(5),YellowCard(5),YellowCard(5),YellowCard(5)};
 	const std::array<YellowCard, 8> six_point_yellow_card = {YellowCard(6),YellowCard(6),YellowCard(6),YellowCard(6),YellowCard(6),YellowCard(6),YellowCard(6),YellowCard(6)};
 	const std::array<YellowCard, 8> ten_point_yellow_card = {YellowCard(10),YellowCard(10),YellowCard(10),YellowCard(10),YellowCard(10),YellowCard(10),YellowCard(10),YellowCard(10)};
-	std::array<Turncoat, 3> turncoat;
-    std::array<Heroine, 3> heroine;
-    std::array<Spring, 3> spring;
-    std::array<Winter, 3> winter;
-    std::array<Scarecrow, 16> scarecrow;
-    std::array<Heroine, 6> drummer;
+	const std::array<Turncoat, 3> turncoat;
+    const std::array<Heroine, 3> heroine;
+    const std::array<Spring, 3> spring;
+    const std::array<Winter, 3> winter;
+    const std::array<Scarecrow, 16> scarecrow;
+    const std::array<Heroine, 6> drummer;
 	//std::array<Spy, 12> spy;
-	//const std::array<Heroine, 6> bishop;
+	//std::array<Bishop, 6> bishop;
     std::vector<const Card*> cards;
 	const Card* season;
 	

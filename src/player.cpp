@@ -28,15 +28,6 @@ int Player::getAge() const
 int Player::getID() const {
     return ID;
 };
-
-unsigned int Player::getPoint() const {
-    return point;
-}
-
-void Player::setPoint(unsigned int point) {
-    this->point = point;
-}
-
 const std::vector<const Card*>& Player::getPlayedCards() const {
     return playedCards;
 }
@@ -94,6 +85,6 @@ const Card* Player::drawn_playedCard(std::string inputCard){
     throw std::invalid_argument("There is no such card");
 }
 
-size_t Player::getStateCount() const {
+size_t Player::getStateNumber() const {
     return stateCounter;
 }

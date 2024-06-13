@@ -14,7 +14,7 @@ std::string Drummer::getHelp() {
     return help;
 }
 
-void Drummer::applyFeature(std::vector<std::vector<unsigned int>> playersCardPoints, int currentPlayerID) {
+void Drummer::applyFeature(std::vector<std::vector<unsigned int>>& playersCardPoints, int currentPlayerID) const {
     for (auto &&point : playersCardPoints[currentPlayerID])
     {
         point *= 2;

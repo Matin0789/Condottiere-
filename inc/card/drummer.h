@@ -7,7 +7,7 @@ class Drummer : public PurpleCard {
 public:
     Drummer();
     static std::string getHelp();
-    virtual void applyFeature(std::vector<std::vector<unsigned int>>, int) override;
+    virtual void applyFeature(std::vector<std::vector<unsigned int>>&, int) const override;
 
 protected:
 private:

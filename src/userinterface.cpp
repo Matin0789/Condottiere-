@@ -6,12 +6,12 @@
 #include "userinterface.h"
 #include "game.h"
 
-void UserInterface::clearTerminal() const{
+void UserInterface::clearTerminal() const {
     system("clear");// for linux
     //system("cls"); // for windows
 }
 
-void UserInterface::pause() const{
+void UserInterface::pause() const {
     getchar();
     getchar();
 }
@@ -33,7 +33,7 @@ void UserInterface::showPlayerPlayedCards(const Player& player) const{
 std::string UserInterface::getCommand(const Player& player,const BattleMarker& marker, const Card* season) {
     std::cout << "Battleground : " << marker.getState().getName();
     if (season != nullptr)
-        std::cout << "Season : " << season;
+        std::cout << "\tSeason : " << season->getType();
     std::cout << std::endl;
 
     for (auto &&card : player.getCards())
@@ -202,4 +202,22 @@ Color  UserInterface::get_player_color(size_t playerID) {
         }
     } while (flag == false);
     return color;
+}
+
+void UserInterface::declare_warWinner(const Player& player) const{
+    clearTerminal();
+    std::cout << "It was a hard battle. Player" << player.getID() + 1 << " wins the battle and captures the state";
+    pause();
+}
+
+void UserInterface::declare_warWinner() const{
+    clearTerminal();
+    std::cout << "It was a hard battle. The battle was inconclusive and no player captured the state";
+    pause();
+}
+
+void UserInterface::declare_gameWinner(const Player& player) const{
+    clearTerminal();
+    std::cout << "The game finished\nPlayer"<< player.getID() + 1 << " won the game";
+    pause();
 }

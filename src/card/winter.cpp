@@ -16,7 +16,7 @@ std::string Winter::getHelp(){
     return help;
 }
 
-void Winter::applyFeature(std::vector<std::vector<unsigned int>> playersCardPoints, int currentPlayerID) {
+void Winter::applyFeature(std::vector<std::vector<unsigned int>>& playersCardPoints, int currentPlayerID) const {
 	for (auto &&CardsPoint : playersCardPoints)
 	{
 		if (!CardsPoint.empty()) {

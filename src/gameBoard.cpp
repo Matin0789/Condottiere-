@@ -4,9 +4,8 @@
 #include <string>
 #include <stdexcept>
 
-bool GameBoard::checkAdjacency(const State* state1,const State* state2,const State* state3) {
-    std::string name1{state1->getName()},name2{state2->getName()},name3{state3->getName()};
-    return (adjacency[name1][name2] && adjacency[name1][name3] && adjacency[name2][name3]);
+bool GameBoard::checkAdjacency(const std::string state1Name,const std::string state2Name, const std::string state3Name) {
+    return (adjacency[state1Name][state2Name] && adjacency[state1Name][state3Name] && adjacency[state2Name][state3Name]);
 }
 
 State* GameBoard::getState(std::string name){ 

@@ -24,11 +24,18 @@ public:
 	void showPlayerStates(const Player&) const;	
 	void showPlayerCards(const Player&) const;
 	std::string get_card_name();
+	
 	//
 	int get_players_number();
 	std::string get_player_name(size_t);
 	unsigned int get_player_old(size_t);
 	Color get_player_color(size_t);
+
+	//
+	void declare_warWinner(const Player&) const;
+	void declare_warWinner() const;
+
+	void declare_gameWinner(const Player&) const;
 };
 
 #endif // USERINTERFACE
