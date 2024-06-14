@@ -1,18 +1,31 @@
 \documentclass[pdf,titlepage,a4paper]{report}
 
 \usepackage{graphicx}
+\usepackage{color}
 
-%\usepackage{fancyhdr}
-%\setlength{\headheight}{15.2pt}
-%\pagestyle{fancy}
-%\rhead{\includegraphics[scale=0.1]{Graphics/BASU_Logo_header.png}}
-%\chead{فاز یک پروژه پیشرفته}
+\usepackage{fancyhdr}
+\setlength{\headheight}{20pt}
+\pagestyle{fancy}
+\rhead{\includegraphics[scale=0.2]{Graphics/nav-logo.png}}
+\chead{فاز یک پروژه پیشرفته}
 
 \usepackage[hidelinks]{hyperref}
 
 \usepackage[fontsize=18pt]{fontsize}
 
-\usepackage{tikz}
+
+%\usepackage[top=2cm, bottom=2cm, outer=0cm, inner=0cm]{geometry}
+\usepackage{background}
+
+\backgroundsetup{
+	scale=1,
+	color=white,
+	opacity=0.4,
+	angle=0,
+	contents={%
+		\includegraphics[width=\paperwidth,height=\paperheight]{Graphics/0d430388ec86043008f3ddd51b87958a.jpeg}
+	}%
+}
 
 \usepackage{xepersian}
 \settextfont{B Zar}
@@ -20,26 +33,29 @@
 %\newcommand{\s}{\fontdimen2\font=0.125em}
 
 \begin{titlepage}
-	\title{\includegraphics[scale=0.5]{Graphics/BASU_Logo_header.png} \\ \Huge{فاز یک پروژه پیشرفته}}
-	\author{متین امیرپناه فر \\ شماره داشنجویی : 40212358003  \and \\ نیما مخملی \\ شماره داشنجویی : 40212358035}
+	\title{\includegraphics[scale=0.8]{Graphics/BASU_logo.png} \\ \Huge{فاز یک پروژه پیشرفته}}
+	\author{متین امیرپناه فر \\ شماره داشنجویی : 40212358003
+		  \and \\ نیما مخملی \\ شماره داشنجویی : 40212358035}
 	\date{\today}
 \end{titlepage}
 
 \begin{document}
+	\color{white}
 	\maketitle
+	\color{black}
 	\tableofcontents
 	\newpage
-	\tikz[remember picture,overlay] \node[opacity=0.3,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{Graphics/horse.png}}
 
 	\begin{abstract}
 		
-     در دورانی که قلمرو شاهی به استان های خود مختار تقسیم شده،سردارانی از گوشه ی سرزمین در سودای کشورگشایی،ارتش خود را برای فتح شهرها گسیل داشته اند.تا با مهارت و شجاعت بجنگند و با تدبیر و مکر به حریفان رکب بزنند تا قدرت و افتخار کسب کنند\\
+		در دورانی که قلمرو شاهی به استان های خود مختار تقسیم شده،سردارانی از گوشه ی سرزمین در سودای کشورگشایی،ارتش خود را برای فتح شهرها گسیل داشته اند.تا با مهارت و شجاعت بجنگند و با تدبیر و مکر به حریفان رکب بزنند تا قدرت و افتخار کسب کنند \\
 
      بازی رکب یک بازی تخته ای است که توسط 3 تا 6 بازیکن انجام میشود 
 	 این بازی شامل دو نوع کارت بنفش و زرد است که هر کارت بنفش امتیاز خاص خود را دارد ولی کارت های زرد ویژگی خاصی ندارند
 	 کارت های بنفش عبارتند از : مترسک , طبل زن , شاهدخت ,  شیرزن  ,  بهار  , زمستان , ریش سفید 
 	 بازیکنان باید با کارت هایی که در دست دارند به جنگ بپردازند و سعی کنند در جنگ پیروز شوند و اگر سه استان مجاور یا پنج استان را فتح کنند پیروز کل بازی خواهند شد 
-	 ما این بازی را به صورت شی گرا نوشته ایم که شرح کلاس ها و قابلیت های آنها را در ادامه برایتان میگوییم 
+	 ما این بازی را به صورت شی گرا نوشته ایم که شرح کلاس ها و قابلیت های آنها را در ادامه برایتان میگوییم
+	  
 	\end{abstract}
     
 	\newpage
@@ -321,11 +337,8 @@
 	
 	
 	\part{منابع}
-	کتاب برنامه نویسی به زبان سی پلاس پلاس اثر دایتل و دایتل ویرایش دهم
-	\href{https://www.geeksforgeeks.org/c-plus-plus/}{لینک}
-	
-	\tikz[remember picture,overlay] \node[opacity=0.3,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{Graphics/mkokrc6inchb1.jpg}};
-	
+	کتاب برنامه نویسی به زبان سی پلاس پلاس اثر دایتل و دایتل ویرایش دهم\\
+	\href{https://www.geeksforgeeks.org/c-plus-plus/}{\lr{www.geeksforgeeks.org/c-plus-plus}}
 	
 	
 \end{document}
