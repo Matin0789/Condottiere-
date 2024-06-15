@@ -1,3 +1,0 @@
-/home/matin/Documents/University/Advanced/Project/Condottiere-/build-linux/CMakeFiles/Condottiere.dir
-/home/matin/Documents/University/Advanced/Project/Condottiere-/build-linux/CMakeFiles/edit_cache.dir
-/home/matin/Documents/University/Advanced/Project/Condottiere-/build-linux/CMakeFiles/rebuild_cache.dir

@@ -1,3 +1,0 @@
-C:/Users/mnah/Documents/Univercity/Condottiere-/build/CMakeFiles/Condottiere.dir
-C:/Users/mnah/Documents/Univercity/Condottiere-/build/CMakeFiles/edit_cache.dir
-C:/Users/mnah/Documents/Univercity/Condottiere-/build/CMakeFiles/rebuild_cache.dir

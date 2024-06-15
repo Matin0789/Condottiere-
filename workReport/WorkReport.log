@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.5.30)  15 JUN 2024 10:17
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.5.30)  15 JUN 2024 10:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -411,7 +411,9 @@ Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
 \AP@output=\toks31
 \AP@partial=\box63
 \AP@footins=\box64
-)) (/home/matin/texmf/tex/xelatex/xepersian/xepersian.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+) (/home/matin/texmf/tex/xelatex/xepersian/xepersian.sty
 Package: xepersian 2022/02/20 v23.7 Persian typesetting in XeLaTeX
  (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2022-01-12 L3 Experimental document command parser
@@ -677,31 +679,31 @@ LaTeX Warning: Unused global option(s):
 (./WorkReport.aux)
 \openout1 = `WorkReport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 44.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 45.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-Package hyperref Info: Link coloring OFF on input line 44.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+Package hyperref Info: Link coloring OFF on input line 45.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -711,47 +713,47 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count356
 )
-LaTeX Info: Redefining \ref on input line 44.
-LaTeX Info: Redefining \pageref on input line 44.
-LaTeX Info: Redefining \nameref on input line 44.
+LaTeX Info: Redefining \ref on input line 45.
+LaTeX Info: Redefining \pageref on input line 45.
+LaTeX Info: Redefining \nameref on input line 45.
  (./WorkReport.out) (./WorkReport.out)
 \@outlinefile=\write4
 \openout4 = `WorkReport.out'.
 
 File: Graphics/BASU_logo.png Graphic file (type bmp)
 <Graphics/BASU_logo.png>
-LaTeX Font Info:    Calculating math sizes for size <21.59995> on input line 46.
+LaTeX Font Info:    Calculating math sizes for size <21.59995> on input line 47.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <21.59995> not available
-(Font)              size <20.74> substituted on input line 46.
+(Font)              size <20.74> substituted on input line 47.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <15.11989> not available
-(Font)              size <14.4> substituted on input line 46.
+(Font)              size <14.4> substituted on input line 47.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <21.59995> not available
-(Font)              size <20.74> substituted on input line 46.
+(Font)              size <20.74> substituted on input line 47.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <15.11989> not available
-(Font)              size <14.4> substituted on input line 46.
+(Font)              size <14.4> substituted on input line 47.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <21.59995> not available
-(Font)              size <20.74> substituted on input line 46.
+(Font)              size <20.74> substituted on input line 47.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <15.11989> not available
-(Font)              size <14.4> substituted on input line 46.
+(Font)              size <14.4> substituted on input line 47.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <21.59995> on input line 46.
+(Font)              <21.59995> on input line 47.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <15.11989> on input line 46.
+(Font)              <15.11989> on input line 47.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.79997> on input line 46.
+(Font)              <10.79997> on input line 47.
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
 [1
@@ -800,21 +802,21 @@ File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 
 
 LaTeX Font Warning: Font shape `TU/BZar(0)/m/sl' undefined
-(Font)              using `TU/BZar(0)/m/n' instead on input line 48.
+(Font)              using `TU/BZar(0)/m/n' instead on input line 49.
 
 File: Graphics/nav-logo.png Graphic file (type bmp)
 <Graphics/nav-logo.png>
 
-Package fancyhdr Warning: \headheight is too small (20.0pt): 
+Package fancyhdr Warning: \headheight is too small (24.0pt): 
 (fancyhdr)                Make it at least 36.52245pt, for example:
 (fancyhdr)                \setlength{\headheight}{36.52245pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-16.52245pt}.
+(fancyhdr)                \addtolength{\topmargin}{-12.52245pt}.
 
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
 [][]
  []
 
@@ -826,18 +828,18 @@ File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
  [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 64--72
+Underfull \hbox (badness 10000) in paragraph at lines 65--73
 [][]
  []
 
 File: Graphics/nav-logo.png Graphic file (type bmp)
 <Graphics/nav-logo.png>
 
-Package fancyhdr Warning: \headheight is too small (20.0pt): 
+Package fancyhdr Warning: \headheight is too small (24.0pt): 
 (fancyhdr)                Make it at least 36.52245pt, for example:
 (fancyhdr)                \setlength{\headheight}{36.52245pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-16.52245pt}.
+(fancyhdr)                \addtolength{\topmargin}{-12.52245pt}.
 
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
@@ -849,16 +851,16 @@ File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 ]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 76.
+(hyperref)                than one, level fixed on input line 77.
 
 File: Graphics/nav-logo.png Graphic file (type bmp)
 <Graphics/nav-logo.png>
 
-Package fancyhdr Warning: \headheight is too small (20.0pt): 
+Package fancyhdr Warning: \headheight is too small (24.0pt): 
 (fancyhdr)                Make it at least 36.52245pt, for example:
 (fancyhdr)                \setlength{\headheight}{36.52245pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-16.52245pt}.
+(fancyhdr)                \addtolength{\topmargin}{-12.52245pt}.
 
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
@@ -867,72 +869,69 @@ File: Graphics/nav-logo.png Graphic file (type bmp)
 <Graphics/nav-logo.png>
 
 
-Package fancyhdr Warning: \headheight is too small (20.0pt): 
+Package fancyhdr Warning: \headheight is too small (24.0pt): 
 (fancyhdr)                Make it at least 36.52245pt, for example:
 (fancyhdr)                \setlength{\headheight}{36.52245pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-16.52245pt}.
+(fancyhdr)                \addtolength{\topmargin}{-12.52245pt}.
 
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+File: Graphics/nav-logo.png Graphic file (type bmp)
+<Graphics/nav-logo.png>
+
+
+Package fancyhdr Warning: \headheight is too small (24.0pt): 
+(fancyhdr)                Make it at least 36.52245pt, for example:
+(fancyhdr)                \setlength{\headheight}{36.52245pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.52245pt}.
+
+File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
+<Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
 [][]
  []
 
 File: Graphics/nav-logo.png Graphic file (type bmp)
 <Graphics/nav-logo.png>
 
-Package fancyhdr Warning: \headheight is too small (20.0pt): 
+Package fancyhdr Warning: \headheight is too small (24.0pt): 
 (fancyhdr)                Make it at least 36.52245pt, for example:
 (fancyhdr)                \setlength{\headheight}{36.52245pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-16.52245pt}.
+(fancyhdr)                \addtolength{\topmargin}{-12.52245pt}.
 
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
-[6]
-Overfull \hbox (22.32434pt too wide) in paragraph at lines 133--136
+[7]
+Overfull \hbox (22.32434pt too wide) in paragraph at lines 132--135
 []\TU/BZar(0)/m/n/18 شامل ۱۴ استان میشوند این استان ها با استفاده از []\TU/lmroman10-regular(0)/m/n/18 unordered_map[][]
  []
 
 File: Graphics/nav-logo.png Graphic file (type bmp)
 <Graphics/nav-logo.png>
 
-Package fancyhdr Warning: \headheight is too small (20.0pt): 
+Package fancyhdr Warning: \headheight is too small (24.0pt): 
 (fancyhdr)                Make it at least 36.52245pt, for example:
 (fancyhdr)                \setlength{\headheight}{36.52245pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-16.52245pt}.
-
-File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
-<Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
-[7]
-File: Graphics/nav-logo.png Graphic file (type bmp)
-<Graphics/nav-logo.png>
-
-
-Package fancyhdr Warning: \headheight is too small (20.0pt): 
-(fancyhdr)                Make it at least 36.52245pt, for example:
-(fancyhdr)                \setlength{\headheight}{36.52245pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-16.52245pt}.
+(fancyhdr)                \addtolength{\topmargin}{-12.52245pt}.
 
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
 [8]
-Overfull \hbox (1.58203pt too wide) in paragraph at lines 190--192
-[]\TU/BZar(0)/m/n/18 میشود بازیکن میتواند یک کارت زرد را به بازی برگرداند این کارت[]
- []
-
 File: Graphics/nav-logo.png Graphic file (type bmp)
 <Graphics/nav-logo.png>
 
-Package fancyhdr Warning: \headheight is too small (20.0pt): 
+
+Package fancyhdr Warning: \headheight is too small (24.0pt): 
 (fancyhdr)                Make it at least 36.52245pt, for example:
 (fancyhdr)                \setlength{\headheight}{36.52245pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-16.52245pt}.
+(fancyhdr)                \addtolength{\topmargin}{-12.52245pt}.
 
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
@@ -941,45 +940,45 @@ File: Graphics/nav-logo.png Graphic file (type bmp)
 <Graphics/nav-logo.png>
 
 
-Package fancyhdr Warning: \headheight is too small (20.0pt): 
+Package fancyhdr Warning: \headheight is too small (24.0pt): 
 (fancyhdr)                Make it at least 36.52245pt, for example:
 (fancyhdr)                \setlength{\headheight}{36.52245pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-16.52245pt}.
+(fancyhdr)                \addtolength{\topmargin}{-12.52245pt}.
 
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 214--215
+File: Graphics/nav-logo.png Graphic file (type bmp)
+<Graphics/nav-logo.png>
+
+
+Package fancyhdr Warning: \headheight is too small (24.0pt): 
+(fancyhdr)                Make it at least 36.52245pt, for example:
+(fancyhdr)                \setlength{\headheight}{36.52245pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.52245pt}.
+
+File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
+<Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
 [][]
  []
 
 
-Overfull \hbox (2.3174pt too wide) in paragraph at lines 218--219
+Overfull \hbox (2.3174pt too wide) in paragraph at lines 217--218
 [][][]\TU/lmroman10-regular(0)/m/n/18 applyFeature[] \TU/BZar(0)/m/n/18 این تابع نیز برای اعمال ویژگی کارت است []
  []
 
 File: Graphics/nav-logo.png Graphic file (type bmp)
 <Graphics/nav-logo.png>
 
-Package fancyhdr Warning: \headheight is too small (20.0pt): 
+Package fancyhdr Warning: \headheight is too small (24.0pt): 
 (fancyhdr)                Make it at least 36.52245pt, for example:
 (fancyhdr)                \setlength{\headheight}{36.52245pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-16.52245pt}.
-
-File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
-<Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
-[11]
-File: Graphics/nav-logo.png Graphic file (type bmp)
-<Graphics/nav-logo.png>
-
-
-Package fancyhdr Warning: \headheight is too small (20.0pt): 
-(fancyhdr)                Make it at least 36.52245pt, for example:
-(fancyhdr)                \setlength{\headheight}{36.52245pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-16.52245pt}.
+(fancyhdr)                \addtolength{\topmargin}{-12.52245pt}.
 
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
@@ -988,11 +987,11 @@ File: Graphics/nav-logo.png Graphic file (type bmp)
 <Graphics/nav-logo.png>
 
 
-Package fancyhdr Warning: \headheight is too small (20.0pt): 
+Package fancyhdr Warning: \headheight is too small (24.0pt): 
 (fancyhdr)                Make it at least 36.52245pt, for example:
 (fancyhdr)                \setlength{\headheight}{36.52245pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-16.52245pt}.
+(fancyhdr)                \addtolength{\topmargin}{-12.52245pt}.
 
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
@@ -1001,15 +1000,28 @@ File: Graphics/nav-logo.png Graphic file (type bmp)
 <Graphics/nav-logo.png>
 
 
-Package fancyhdr Warning: \headheight is too small (20.0pt): 
+Package fancyhdr Warning: \headheight is too small (24.0pt): 
 (fancyhdr)                Make it at least 36.52245pt, for example:
 (fancyhdr)                \setlength{\headheight}{36.52245pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-16.52245pt}.
+(fancyhdr)                \addtolength{\topmargin}{-12.52245pt}.
 
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
 [14]
+File: Graphics/nav-logo.png Graphic file (type bmp)
+<Graphics/nav-logo.png>
+
+
+Package fancyhdr Warning: \headheight is too small (24.0pt): 
+(fancyhdr)                Make it at least 36.52245pt, for example:
+(fancyhdr)                \setlength{\headheight}{36.52245pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.52245pt}.
+
+File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
+<Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
+[15]
 Missing character: There is no ن (U+0646) in font [lmroman10-regular]/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no ا (U+0627) in font [lmroman10-regular]/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no م (U+0645) in font [lmroman10-regular]/OT:script=latn;language=dflt;mapping=tex-text;!
@@ -1040,101 +1052,101 @@ Missing character: There is no ت (U+062A) in font [lmroman10-regular]/OT:script
 Missing character: There is no ا (U+0627) in font [lmroman10-regular]/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no ن (U+0646) in font [lmroman10-regular]/OT:script=latn;language=dflt;mapping=tex-text;!
 
-Overfull \hbox (15.00752pt too wide) in paragraph at lines 305--306
+Overfull \hbox (15.00752pt too wide) in paragraph at lines 304--305
 [][][]\TU/lmroman10-regular(0)/m/n/18 getPlayedCards[] \TU/BZar(0)/m/n/18 برای ارسال کارت های بازی شده بازیکن []
  []
 
 File: Graphics/nav-logo.png Graphic file (type bmp)
 <Graphics/nav-logo.png>
 
-Package fancyhdr Warning: \headheight is too small (20.0pt): 
+Package fancyhdr Warning: \headheight is too small (24.0pt): 
 (fancyhdr)                Make it at least 36.52245pt, for example:
 (fancyhdr)                \setlength{\headheight}{36.52245pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-16.52245pt}.
+(fancyhdr)                \addtolength{\topmargin}{-12.52245pt}.
 
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
-[15]
-Overfull \hbox (8.67351pt too wide) in paragraph at lines 312--313
+[16]
+Overfull \hbox (8.67351pt too wide) in paragraph at lines 311--312
 [][][]\TU/lmroman10-regular(0)/m/n/18 push_to_playedCards[] \TU/BZar(0)/m/n/18 افزودن به کارت های مصرف[]
  []
 
 File: Graphics/nav-logo.png Graphic file (type bmp)
 <Graphics/nav-logo.png>
 
-Package fancyhdr Warning: \headheight is too small (20.0pt): 
+Package fancyhdr Warning: \headheight is too small (24.0pt): 
 (fancyhdr)                Make it at least 36.52245pt, for example:
 (fancyhdr)                \setlength{\headheight}{36.52245pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-16.52245pt}.
+(fancyhdr)                \addtolength{\topmargin}{-12.52245pt}.
 
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
-[16]
+[17]
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
- [17
+ [18
 
 ]
-Overfull \hbox (6.39075pt too wide) in paragraph at lines 325--326
+Overfull \hbox (6.39075pt too wide) in paragraph at lines 324--325
 [][]\TU/BZar(0)/m/n/18 پیاده سازی ماهیت استان ها با استفاده از []\TU/lmroman10-regular(0)/m/n/18 unordered_map[] []
  []
 
 File: Graphics/nav-logo.png Graphic file (type bmp)
 <Graphics/nav-logo.png>
 
-Package fancyhdr Warning: \headheight is too small (20.0pt): 
+Package fancyhdr Warning: \headheight is too small (24.0pt): 
 (fancyhdr)                Make it at least 36.52245pt, for example:
 (fancyhdr)                \setlength{\headheight}{36.52245pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-16.52245pt}.
+(fancyhdr)                \addtolength{\topmargin}{-12.52245pt}.
 
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
-[18]
+[19]
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
- [19
+ [20
 
 ]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 333.
+(hyperref)                than one, level fixed on input line 332.
 
 File: Graphics/nav-logo.png Graphic file (type bmp)
 <Graphics/nav-logo.png>
 
-Package fancyhdr Warning: \headheight is too small (20.0pt): 
+Package fancyhdr Warning: \headheight is too small (24.0pt): 
 (fancyhdr)                Make it at least 36.52245pt, for example:
 (fancyhdr)                \setlength{\headheight}{36.52245pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-16.52245pt}.
+(fancyhdr)                \addtolength{\topmargin}{-12.52245pt}.
 
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
-[20]
+[21]
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
- [21
+ [22
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 342--343
+Underfull \hbox (badness 10000) in paragraph at lines 341--342
 [][]
  []
 
 File: Graphics/nav-logo.png Graphic file (type bmp)
 <Graphics/nav-logo.png>
 
-Package fancyhdr Warning: \headheight is too small (20.0pt): 
+Package fancyhdr Warning: \headheight is too small (24.0pt): 
 (fancyhdr)                Make it at least 36.52245pt, for example:
 (fancyhdr)                \setlength{\headheight}{36.52245pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-16.52245pt}.
+(fancyhdr)                \addtolength{\topmargin}{-12.52245pt}.
 
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
-[22] (./WorkReport.aux)
+[23] (./WorkReport.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.85994pt have occurred.
@@ -1143,15 +1155,15 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `WorkReport.out' has not changed.
-(rerunfilecheck)             Checksum: 4668363E7F5924D0EB3B3F8604FE0F04;2236.
+(rerunfilecheck)             Checksum: 14BD707F1EBC5BCCAB660D82E4AA0F6B;2381.
  ) 
 Here is how much of TeX's memory you used:
- 23676 strings out of 478190
- 500221 string characters out of 5854827
- 901738 words of memory out of 5000000
- 43814 multiletter control sequences out of 15000+600000
+ 23699 strings out of 478190
+ 500974 string characters out of 5854827
+ 901806 words of memory out of 5000000
+ 43834 multiletter control sequences out of 15000+600000
  475349 words of font info for 78 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  99i,13n,103p,1114b,844s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on WorkReport.xdv (26 pages, 148960 bytes).
+Output written on WorkReport.xdv (27 pages, 151776 bytes).

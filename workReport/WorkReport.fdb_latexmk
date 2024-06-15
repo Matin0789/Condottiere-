@@ -1,12 +1,12 @@
 # Fdb version 3
-["xdvipdfmx"] 1718434035 "WorkReport.xdv" "WorkReport.pdf" "WorkReport" 1718434036
-  "WorkReport.xdv" 1718434035 148960 24060445543d0a674f104c918e479905 "xelatex"
+["xdvipdfmx"] 1718434942 "WorkReport.xdv" "WorkReport.pdf" "WorkReport" 1718434943
+  "WorkReport.xdv" 1718434942 151776 67e358a95d31a044500dfe57abf56d05 "xelatex"
   (generated)
   "WorkReport.pdf"
-["xelatex"] 1718434031 "/home/matin/Documents/University/Advanced/Project/Condottiere-/workReport/WorkReport.tex" "WorkReport.xdv" "WorkReport" 1718434036
+["xelatex"] 1718434938 "/home/matin/Documents/University/Advanced/Project/Condottiere-/workReport/WorkReport.tex" "WorkReport.xdv" "WorkReport" 1718434943
   "/etc/texmf/web2c/texmf.cnf" 1706551891 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/matin/.texlive2021/texmf-var/web2c/xetex/xelatex.fmt" 1717055491 3606616 0eff829f5979ccd6ce182b9a2b213e3a ""
-  "/home/matin/Documents/University/Advanced/Project/Condottiere-/workReport/WorkReport.tex" 1718434029 18093 c935a9e987d270552fb62a7e5696ae74 ""
+  "/home/matin/Documents/University/Advanced/Project/Condottiere-/workReport/WorkReport.tex" 1718434935 18125 4ecc48abe9b6f851611509e81041c85f ""
   "/home/matin/texmf/tex/xelatex/xepersian/footnote-xepersian.def" 1645392184 2032 925324c7e792eb09f55c80e2d3b3c3b5 ""
   "/home/matin/texmf/tex/xelatex/xepersian/hyperref-xepersian.def" 1645392184 3464 34913ba6d370fe5640882042aa30a7b5 ""
   "/home/matin/texmf/tex/xelatex/xepersian/loadingorder-xepersian.def" 1645392184 4455 c619d7d8c852676c055e0e312e7a91dc ""
@@ -147,6 +147,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty" 1576624809 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1575674187 9715 b051d5b493d9fe5f4bc251462d039e5f ""
   "/usr/share/texlive/texmf-dist/tex/latex/tools/afterpage.sty" 1622581934 4085 5d204adcbe1ad2fc72fe565763c803ee ""
+  "/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty" 1622581934 1618 786b14c5a3e144c3a51452d08232d18b ""
   "/usr/share/texlive/texmf-dist/tex/latex/url/url.sty" 1388531844 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty" 1635798903 56029 3f7889dab51d620aa43177c391b7b190 ""
   "/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty" 1605910342 4902 efb3d66683a2da2a232f71e3a571a899 ""
@@ -169,10 +170,10 @@
   "Graphics/0d430388ec86043008f3ddd51b87958a.jpeg" 1718385991 21821 c8883737ef812da9627f44481bc90044 ""
   "Graphics/BASU_logo.png" 1718396275 8265 99a5458fe64928071521352680874b55 ""
   "Graphics/nav-logo.png" 1718394519 8107 35e287152256388327344ab98d30054a ""
-  "WorkReport.aux" 1718434035 7812 00ccc70d98d423d5e0a75cdba660e06a "xelatex"
-  "WorkReport.out" 1718434035 2236 4668363e7f5924d0eb3b3f8604fe0f04 "xelatex"
-  "WorkReport.tex" 1718434029 18093 c935a9e987d270552fb62a7e5696ae74 ""
-  "WorkReport.toc" 1718434035 3554 49797b498a613caa525fd1ff10c9b8f1 "xelatex"
+  "WorkReport.aux" 1718434942 7863 e05d730d7fd05d0550c7a552dd5de9af "xelatex"
+  "WorkReport.out" 1718434942 2381 14bd707f1ebc5bccab660d82e4aa0f6b "xelatex"
+  "WorkReport.tex" 1718434935 18125 4ecc48abe9b6f851611509e81041c85f ""
+  "WorkReport.toc" 1718434942 3560 5fd88b17d486d0342b73a559e59a26aa "xelatex"
   (generated)
   "WorkReport.aux"
   "WorkReport.log"
