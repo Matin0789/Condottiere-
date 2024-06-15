@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.5.30)  14 JUN 2024 23:50
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.5.30)  15 JUN 2024 10:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -677,31 +677,31 @@ LaTeX Warning: Unused global option(s):
 (./WorkReport.aux)
 \openout1 = `WorkReport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 42.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 44.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-Package hyperref Info: Link coloring OFF on input line 42.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+Package hyperref Info: Link coloring OFF on input line 44.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -711,47 +711,47 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count356
 )
-LaTeX Info: Redefining \ref on input line 42.
-LaTeX Info: Redefining \pageref on input line 42.
-LaTeX Info: Redefining \nameref on input line 42.
+LaTeX Info: Redefining \ref on input line 44.
+LaTeX Info: Redefining \pageref on input line 44.
+LaTeX Info: Redefining \nameref on input line 44.
  (./WorkReport.out) (./WorkReport.out)
 \@outlinefile=\write4
 \openout4 = `WorkReport.out'.
 
 File: Graphics/BASU_logo.png Graphic file (type bmp)
 <Graphics/BASU_logo.png>
-LaTeX Font Info:    Calculating math sizes for size <21.59995> on input line 45.
+LaTeX Font Info:    Calculating math sizes for size <21.59995> on input line 46.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <21.59995> not available
-(Font)              size <20.74> substituted on input line 45.
+(Font)              size <20.74> substituted on input line 46.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <15.11989> not available
-(Font)              size <14.4> substituted on input line 45.
+(Font)              size <14.4> substituted on input line 46.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <21.59995> not available
-(Font)              size <20.74> substituted on input line 45.
+(Font)              size <20.74> substituted on input line 46.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <15.11989> not available
-(Font)              size <14.4> substituted on input line 45.
+(Font)              size <14.4> substituted on input line 46.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <21.59995> not available
-(Font)              size <20.74> substituted on input line 45.
+(Font)              size <20.74> substituted on input line 46.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <15.11989> not available
-(Font)              size <14.4> substituted on input line 45.
+(Font)              size <14.4> substituted on input line 46.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <21.59995> on input line 45.
+(Font)              <21.59995> on input line 46.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <15.11989> on input line 45.
+(Font)              <15.11989> on input line 46.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.79997> on input line 45.
+(Font)              <10.79997> on input line 46.
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
 [1
@@ -800,7 +800,7 @@ File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 
 
 LaTeX Font Warning: Font shape `TU/BZar(0)/m/sl' undefined
-(Font)              using `TU/BZar(0)/m/n' instead on input line 47.
+(Font)              using `TU/BZar(0)/m/n' instead on input line 48.
 
 File: Graphics/nav-logo.png Graphic file (type bmp)
 <Graphics/nav-logo.png>
@@ -814,7 +814,7 @@ Package fancyhdr Warning: \headheight is too small (20.0pt):
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
 [][]
  []
 
@@ -826,7 +826,7 @@ File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
  [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 63--71
+Underfull \hbox (badness 10000) in paragraph at lines 64--72
 [][]
  []
 
@@ -849,7 +849,7 @@ File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 ]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 75.
+(hyperref)                than one, level fixed on input line 76.
 
 File: Graphics/nav-logo.png Graphic file (type bmp)
 <Graphics/nav-logo.png>
@@ -876,7 +876,7 @@ Package fancyhdr Warning: \headheight is too small (20.0pt):
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
 [][]
  []
 
@@ -892,13 +892,10 @@ Package fancyhdr Warning: \headheight is too small (20.0pt):
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
 [6]
-Overfull \hbox (22.32434pt too wide) in paragraph at lines 132--135
+Overfull \hbox (22.32434pt too wide) in paragraph at lines 133--136
 []\TU/BZar(0)/m/n/18 شامل ۱۴ استان میشوند این استان ها با استفاده از []\TU/lmroman10-regular(0)/m/n/18 unordered_map[][]
  []
 
-Missing character: There is no • (U+2022) in font B Zar/OT:language=dflt;script=arab;mapping=persian-tex-text;!
-Missing character: There is no • (U+2022) in font B Zar/OT:language=dflt;script=arab;mapping=persian-tex-text;!
-Missing character: There is no • (U+2022) in font B Zar/OT:language=dflt;script=arab;mapping=persian-tex-text;!
 File: Graphics/nav-logo.png Graphic file (type bmp)
 <Graphics/nav-logo.png>
 
@@ -911,15 +908,9 @@ Package fancyhdr Warning: \headheight is too small (20.0pt):
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
 [7]
-Missing character: There is no • (U+2022) in font B Zar/OT:language=dflt;script=arab;mapping=persian-tex-text;!
-Missing character: There is no • (U+2022) in font B Zar/OT:language=dflt;script=arab;mapping=persian-tex-text;!
-Missing character: There is no • (U+2022) in font B Zar/OT:language=dflt;script=arab;mapping=persian-tex-text;!
-Missing character: There is no • (U+2022) in font B Zar/OT:language=dflt;script=arab;mapping=persian-tex-text;!
-Missing character: There is no • (U+2022) in font B Zar/OT:language=dflt;script=arab;mapping=persian-tex-text;!
-Missing character: There is no • (U+2022) in font B Zar/OT:language=dflt;script=arab;mapping=persian-tex-text;!
-Missing character: There is no • (U+2022) in font B Zar/OT:language=dflt;script=arab;mapping=persian-tex-text;!
 File: Graphics/nav-logo.png Graphic file (type bmp)
 <Graphics/nav-logo.png>
+
 
 Package fancyhdr Warning: \headheight is too small (20.0pt): 
 (fancyhdr)                Make it at least 36.52245pt, for example:
@@ -930,15 +921,7 @@ Package fancyhdr Warning: \headheight is too small (20.0pt):
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
 [8]
-Missing character: There is no • (U+2022) in font B Zar/OT:language=dflt;script=arab;mapping=persian-tex-text;!
-Missing character: There is no • (U+2022) in font B Zar/OT:language=dflt;script=arab;mapping=persian-tex-text;!
-Missing character: There is no • (U+2022) in font B Zar/OT:language=dflt;script=arab;mapping=persian-tex-text;!
-Missing character: There is no • (U+2022) in font B Zar/OT:language=dflt;script=arab;mapping=persian-tex-text;!
-Missing character: There is no • (U+2022) in font B Zar/OT:language=dflt;script=arab;mapping=persian-tex-text;!
-Missing character: There is no • (U+2022) in font B Zar/OT:language=dflt;script=arab;mapping=persian-tex-text;!
-Missing character: There is no • (U+2022) in font B Zar/OT:language=dflt;script=arab;mapping=persian-tex-text;!
-
-Overfull \hbox (1.58203pt too wide) in paragraph at lines 189--191
+Overfull \hbox (1.58203pt too wide) in paragraph at lines 190--192
 []\TU/BZar(0)/m/n/18 میشود بازیکن میتواند یک کارت زرد را به بازی برگرداند این کارت[]
  []
 
@@ -967,14 +950,12 @@ Package fancyhdr Warning: \headheight is too small (20.0pt):
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
+Underfull \hbox (badness 10000) in paragraph at lines 214--215
 [][]
  []
 
-Missing character: There is no • (U+2022) in font B Zar/OT:language=dflt;script=arab;mapping=persian-tex-text;!
-Missing character: There is no • (U+2022) in font B Zar/OT:language=dflt;script=arab;mapping=persian-tex-text;!
 
-Overfull \hbox (2.3174pt too wide) in paragraph at lines 217--218
+Overfull \hbox (2.3174pt too wide) in paragraph at lines 218--219
 [][][]\TU/lmroman10-regular(0)/m/n/18 applyFeature[] \TU/BZar(0)/m/n/18 این تابع نیز برای اعمال ویژگی کارت است []
  []
 
@@ -1016,11 +997,9 @@ Package fancyhdr Warning: \headheight is too small (20.0pt):
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
 [13]
-Missing character: There is no • (U+2022) in font B Zar/OT:language=dflt;script=arab;mapping=persian-tex-text;!
-Missing character: There is no • (U+2022) in font B Zar/OT:language=dflt;script=arab;mapping=persian-tex-text;!
-Missing character: There is no • (U+2022) in font B Zar/OT:language=dflt;script=arab;mapping=persian-tex-text;!
 File: Graphics/nav-logo.png Graphic file (type bmp)
 <Graphics/nav-logo.png>
+
 
 Package fancyhdr Warning: \headheight is too small (20.0pt): 
 (fancyhdr)                Make it at least 36.52245pt, for example:
@@ -1060,19 +1039,11 @@ Missing character: There is no س (U+0633) in font [lmroman10-regular]/OT:script
 Missing character: There is no ت (U+062A) in font [lmroman10-regular]/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no ا (U+0627) in font [lmroman10-regular]/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no ن (U+0646) in font [lmroman10-regular]/OT:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no • (U+2022) in font B Zar/OT:language=dflt;script=arab;mapping=persian-tex-text;!
-Missing character: There is no • (U+2022) in font B Zar/OT:language=dflt;script=arab;mapping=persian-tex-text;!
-Missing character: There is no • (U+2022) in font B Zar/OT:language=dflt;script=arab;mapping=persian-tex-text;!
-Missing character: There is no • (U+2022) in font B Zar/OT:language=dflt;script=arab;mapping=persian-tex-text;!
 
-Overfull \hbox (15.00752pt too wide) in paragraph at lines 304--305
+Overfull \hbox (15.00752pt too wide) in paragraph at lines 305--306
 [][][]\TU/lmroman10-regular(0)/m/n/18 getPlayedCards[] \TU/BZar(0)/m/n/18 برای ارسال کارت های بازی شده بازیکن []
  []
 
-Missing character: There is no • (U+2022) in font B Zar/OT:language=dflt;script=arab;mapping=persian-tex-text;!
-Missing character: There is no • (U+2022) in font B Zar/OT:language=dflt;script=arab;mapping=persian-tex-text;!
-Missing character: There is no • (U+2022) in font B Zar/OT:language=dflt;script=arab;mapping=persian-tex-text;!
-Missing character: There is no • (U+2022) in font B Zar/OT:language=dflt;script=arab;mapping=persian-tex-text;!
 File: Graphics/nav-logo.png Graphic file (type bmp)
 <Graphics/nav-logo.png>
 
@@ -1085,15 +1056,10 @@ Package fancyhdr Warning: \headheight is too small (20.0pt):
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
 [15]
-Missing character: There is no • (U+2022) in font B Zar/OT:language=dflt;script=arab;mapping=persian-tex-text;!
-Missing character: There is no • (U+2022) in font B Zar/OT:language=dflt;script=arab;mapping=persian-tex-text;!
-Missing character: There is no • (U+2022) in font B Zar/OT:language=dflt;script=arab;mapping=persian-tex-text;!
-
-Overfull \hbox (8.67351pt too wide) in paragraph at lines 311--312
+Overfull \hbox (8.67351pt too wide) in paragraph at lines 312--313
 [][][]\TU/lmroman10-regular(0)/m/n/18 push_to_playedCards[] \TU/BZar(0)/m/n/18 افزودن به کارت های مصرف[]
  []
 
-Missing character: There is no • (U+2022) in font B Zar/OT:language=dflt;script=arab;mapping=persian-tex-text;!
 File: Graphics/nav-logo.png Graphic file (type bmp)
 <Graphics/nav-logo.png>
 
@@ -1111,7 +1077,7 @@ File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
  [17
 
 ]
-Overfull \hbox (6.39075pt too wide) in paragraph at lines 324--325
+Overfull \hbox (6.39075pt too wide) in paragraph at lines 325--326
 [][]\TU/BZar(0)/m/n/18 پیاده سازی ماهیت استان ها با استفاده از []\TU/lmroman10-regular(0)/m/n/18 unordered_map[] []
  []
 
@@ -1134,7 +1100,7 @@ File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 ]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 332.
+(hyperref)                than one, level fixed on input line 333.
 
 File: Graphics/nav-logo.png Graphic file (type bmp)
 <Graphics/nav-logo.png>
@@ -1153,9 +1119,12 @@ File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
  [21
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 342--343
+[][]
+ []
+
 File: Graphics/nav-logo.png Graphic file (type bmp)
 <Graphics/nav-logo.png>
-
 
 Package fancyhdr Warning: \headheight is too small (20.0pt): 
 (fancyhdr)                Make it at least 36.52245pt, for example:
@@ -1185,4 +1154,4 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  99i,13n,103p,1114b,844s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on WorkReport.xdv (26 pages, 149576 bytes).
+Output written on WorkReport.xdv (26 pages, 148960 bytes).

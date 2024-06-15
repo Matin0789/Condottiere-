@@ -39,10 +39,11 @@
 	\date{\today}
 \end{titlepage}
 
+\renewcommand{\labelitemi}{$\bullet$}
+
 \begin{document}
-	\color{white}
-	\maketitle
-	\color{black}
+	{\color{white}
+	\maketitle}
 	\tableofcontents
 	\newpage
 
@@ -337,8 +338,12 @@
 	
 	
 	\part{منابع}
-	کتاب برنامه نویسی به زبان سی پلاس پلاس اثر دایتل و دایتل ویرایش دهم\\
-	\href{https://www.geeksforgeeks.org/c-plus-plus/}{\lr{www.geeksforgeeks.org/c-plus-plus}}
+	\begin{itemize}
+		\item کتاب برنامه نویسی به زبان سی پلاس پلاس اثر دایتل و دایتل ویرایش دهم\\
+	\begin{latin}
+		\item \href{https://www.geeksforgeeks.org/c-plus-plus/}{www.geeksforgeeks.org/c-plus-plus}
+	\end{latin}
+	\end{itemize}
 	
 	
 \end{document}
