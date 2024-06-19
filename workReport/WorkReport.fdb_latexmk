@@ -1,12 +1,12 @@
 # Fdb version 3
-["xdvipdfmx"] 1718785138 "WorkReport.xdv" "WorkReport.pdf" "WorkReport" 1718785139
-  "WorkReport.xdv" 1718785137 167976 3e6eb3aa84c4127d37601cc19397d026 "xelatex"
+["xdvipdfmx"] 1718787784 "WorkReport.xdv" "WorkReport.pdf" "WorkReport" 1718787785
+  "WorkReport.xdv" 1718787783 171160 f9d4a0eacd64bac29422c21a8917e920 "xelatex"
   (generated)
   "WorkReport.pdf"
-["xelatex"] 1718785133 "/home/matin/Documents/University/Advanced/Project/Condottiere-/workReport/WorkReport.tex" "WorkReport.xdv" "WorkReport" 1718785139
+["xelatex"] 1718787779 "/home/matin/Documents/University/Advanced/Project/Condottiere-/workReport/WorkReport.tex" "WorkReport.xdv" "WorkReport" 1718787785
   "/etc/texmf/web2c/texmf.cnf" 1706551891 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/matin/.texlive2021/texmf-var/web2c/xetex/xelatex.fmt" 1717055491 3606616 0eff829f5979ccd6ce182b9a2b213e3a ""
-  "/home/matin/Documents/University/Advanced/Project/Condottiere-/workReport/WorkReport.tex" 1718785127 20726 9f09acff1917b79d131ac306e7f11c48 ""
+  "/home/matin/Documents/University/Advanced/Project/Condottiere-/workReport/WorkReport.tex" 1718786822 21355 748b7128b24221d542b4fbf920cec5fe ""
   "/home/matin/texmf/tex/xelatex/xepersian/footnote-xepersian.def" 1645392184 2032 925324c7e792eb09f55c80e2d3b3c3b5 ""
   "/home/matin/texmf/tex/xelatex/xepersian/hyperref-xepersian.def" 1645392184 3464 34913ba6d370fe5640882042aa30a7b5 ""
   "/home/matin/texmf/tex/xelatex/xepersian/loadingorder-xepersian.def" 1645392184 4455 c619d7d8c852676c055e0e312e7a91dc ""
@@ -167,13 +167,13 @@
   "/usr/share/texlive/texmf-dist/tex/xelatex/bidi/xcolor-xetex-bidi.def" 1643577475 5908 0f605f4e86aa75a30584632fe8b2fcf4 ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
-  "Graphics/0d430388ec86043008f3ddd51b87958a.jpeg" 1718385991 21821 c8883737ef812da9627f44481bc90044 ""
-  "Graphics/BASU_logo.png" 1718396275 8265 99a5458fe64928071521352680874b55 ""
-  "Graphics/nav-logo.png" 1718394519 8107 35e287152256388327344ab98d30054a ""
-  "WorkReport.aux" 1718785137 8685 0357a676c00ee304501a91c4a897bdea "xelatex"
-  "WorkReport.out" 1718785137 2381 14bd707f1ebc5bccab660d82e4aa0f6b "xelatex"
-  "WorkReport.tex" 1718785127 20726 9f09acff1917b79d131ac306e7f11c48 ""
-  "WorkReport.toc" 1718785137 4008 df22d7024e6341b516d2c683525a76c7 "xelatex"
+  "Graphics/0d430388ec86043008f3ddd51b87958a.jpeg" 1718787736 21821 c8883737ef812da9627f44481bc90044 ""
+  "Graphics/BASU_logo.png" 1718787736 8265 99a5458fe64928071521352680874b55 ""
+  "Graphics/nav-logo.png" 1718787736 8107 35e287152256388327344ab98d30054a ""
+  "WorkReport.aux" 1718787783 8686 43902a3df9f0d383de6cb513fa8ba38d "xelatex"
+  "WorkReport.out" 1718787783 2381 14bd707f1ebc5bccab660d82e4aa0f6b "xelatex"
+  "WorkReport.tex" 1718786822 21355 748b7128b24221d542b4fbf920cec5fe ""
+  "WorkReport.toc" 1718787783 4008 df22d7024e6341b516d2c683525a76c7 "xelatex"
   (generated)
   "WorkReport.aux"
   "WorkReport.log"
