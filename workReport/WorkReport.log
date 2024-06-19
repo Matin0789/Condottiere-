@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.5.30)  15 JUN 2024 10:32
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.5.30)  19 JUN 2024 11:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -802,7 +802,7 @@ File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 
 
 LaTeX Font Warning: Font shape `TU/BZar(0)/m/sl' undefined
-(Font)              using `TU/BZar(0)/m/n' instead on input line 49.
+(Font)              using `TU/BZar(0)/m/n' instead on input line 51.
 
 File: Graphics/nav-logo.png Graphic file (type bmp)
 <Graphics/nav-logo.png>
@@ -816,7 +816,7 @@ Package fancyhdr Warning: \headheight is too small (24.0pt):
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
 [][]
  []
 
@@ -828,7 +828,7 @@ File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
  [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 65--73
+Underfull \hbox (badness 10000) in paragraph at lines 67--75
 [][]
  []
 
@@ -851,7 +851,12 @@ File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 ]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 77.
+(hyperref)                than one, level fixed on input line 79.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--85
+[][]
+ []
 
 File: Graphics/nav-logo.png Graphic file (type bmp)
 <Graphics/nav-logo.png>
@@ -891,12 +896,9 @@ Package fancyhdr Warning: \headheight is too small (24.0pt):
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
-[][]
- []
-
 File: Graphics/nav-logo.png Graphic file (type bmp)
 <Graphics/nav-logo.png>
+
 
 Package fancyhdr Warning: \headheight is too small (24.0pt): 
 (fancyhdr)                Make it at least 36.52245pt, for example:
@@ -907,7 +909,25 @@ Package fancyhdr Warning: \headheight is too small (24.0pt):
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
 [7]
-Overfull \hbox (22.32434pt too wide) in paragraph at lines 132--135
+File: Graphics/nav-logo.png Graphic file (type bmp)
+<Graphics/nav-logo.png>
+
+
+Package fancyhdr Warning: \headheight is too small (24.0pt): 
+(fancyhdr)                Make it at least 36.52245pt, for example:
+(fancyhdr)                \setlength{\headheight}{36.52245pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.52245pt}.
+
+File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
+<Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
+[][]
+ []
+
+
+Overfull \hbox (22.32434pt too wide) in paragraph at lines 153--156
 []\TU/BZar(0)/m/n/18 شامل ۱۴ استان میشوند این استان ها با استفاده از []\TU/lmroman10-regular(0)/m/n/18 unordered_map[][]
  []
 
@@ -922,23 +942,13 @@ Package fancyhdr Warning: \headheight is too small (24.0pt):
 
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
-[8]
-File: Graphics/nav-logo.png Graphic file (type bmp)
-<Graphics/nav-logo.png>
-
-
-Package fancyhdr Warning: \headheight is too small (24.0pt): 
-(fancyhdr)                Make it at least 36.52245pt, for example:
-(fancyhdr)                \setlength{\headheight}{36.52245pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-12.52245pt}.
-
-File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
-<Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
 [9]
+Underfull \hbox (badness 10000) in paragraph at lines 170--172
+[][]
+ []
+
 File: Graphics/nav-logo.png Graphic file (type bmp)
 <Graphics/nav-logo.png>
-
 
 Package fancyhdr Warning: \headheight is too small (24.0pt): 
 (fancyhdr)                Make it at least 36.52245pt, for example:
@@ -949,9 +959,12 @@ Package fancyhdr Warning: \headheight is too small (24.0pt):
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
 [10]
+Underfull \hbox (badness 10000) in paragraph at lines 209--212
+[][]
+ []
+
 File: Graphics/nav-logo.png Graphic file (type bmp)
 <Graphics/nav-logo.png>
-
 
 Package fancyhdr Warning: \headheight is too small (24.0pt): 
 (fancyhdr)                Make it at least 36.52245pt, for example:
@@ -962,17 +975,9 @@ Package fancyhdr Warning: \headheight is too small (24.0pt):
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
-[][]
- []
-
-
-Overfull \hbox (2.3174pt too wide) in paragraph at lines 217--218
-[][][]\TU/lmroman10-regular(0)/m/n/18 applyFeature[] \TU/BZar(0)/m/n/18 این تابع نیز برای اعمال ویژگی کارت است []
- []
-
 File: Graphics/nav-logo.png Graphic file (type bmp)
 <Graphics/nav-logo.png>
+
 
 Package fancyhdr Warning: \headheight is too small (24.0pt): 
 (fancyhdr)                Make it at least 36.52245pt, for example:
@@ -983,9 +988,17 @@ Package fancyhdr Warning: \headheight is too small (24.0pt):
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
 [12]
+Underfull \hbox (badness 10000) in paragraph at lines 242--243
+[][]
+ []
+
+
+Overfull \hbox (2.3174pt too wide) in paragraph at lines 246--247
+[][][]\TU/lmroman10-regular(0)/m/n/18 applyFeature[] \TU/BZar(0)/m/n/18 این تابع نیز برای اعمال ویژگی کارت است []
+ []
+
 File: Graphics/nav-logo.png Graphic file (type bmp)
 <Graphics/nav-logo.png>
-
 
 Package fancyhdr Warning: \headheight is too small (24.0pt): 
 (fancyhdr)                Make it at least 36.52245pt, for example:
@@ -1022,6 +1035,22 @@ Package fancyhdr Warning: \headheight is too small (24.0pt):
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
 [15]
+Underfull \hbox (badness 10000) in paragraph at lines 305--306
+[][]
+ []
+
+File: Graphics/nav-logo.png Graphic file (type bmp)
+<Graphics/nav-logo.png>
+
+Package fancyhdr Warning: \headheight is too small (24.0pt): 
+(fancyhdr)                Make it at least 36.52245pt, for example:
+(fancyhdr)                \setlength{\headheight}{36.52245pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.52245pt}.
+
+File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
+<Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
+[16]
 Missing character: There is no ن (U+0646) in font [lmroman10-regular]/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no ا (U+0627) in font [lmroman10-regular]/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no م (U+0645) in font [lmroman10-regular]/OT:script=latn;language=dflt;mapping=tex-text;!
@@ -1052,86 +1081,7 @@ Missing character: There is no ت (U+062A) in font [lmroman10-regular]/OT:script
 Missing character: There is no ا (U+0627) in font [lmroman10-regular]/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no ن (U+0646) in font [lmroman10-regular]/OT:script=latn;language=dflt;mapping=tex-text;!
 
-Overfull \hbox (15.00752pt too wide) in paragraph at lines 304--305
-[][][]\TU/lmroman10-regular(0)/m/n/18 getPlayedCards[] \TU/BZar(0)/m/n/18 برای ارسال کارت های بازی شده بازیکن []
- []
-
-File: Graphics/nav-logo.png Graphic file (type bmp)
-<Graphics/nav-logo.png>
-
-Package fancyhdr Warning: \headheight is too small (24.0pt): 
-(fancyhdr)                Make it at least 36.52245pt, for example:
-(fancyhdr)                \setlength{\headheight}{36.52245pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-12.52245pt}.
-
-File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
-<Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
-[16]
-Overfull \hbox (8.67351pt too wide) in paragraph at lines 311--312
-[][][]\TU/lmroman10-regular(0)/m/n/18 push_to_playedCards[] \TU/BZar(0)/m/n/18 افزودن به کارت های مصرف[]
- []
-
-File: Graphics/nav-logo.png Graphic file (type bmp)
-<Graphics/nav-logo.png>
-
-Package fancyhdr Warning: \headheight is too small (24.0pt): 
-(fancyhdr)                Make it at least 36.52245pt, for example:
-(fancyhdr)                \setlength{\headheight}{36.52245pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-12.52245pt}.
-
-File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
-<Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
-[17]
-File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
-<Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
- [18
-
-]
-Overfull \hbox (6.39075pt too wide) in paragraph at lines 324--325
-[][]\TU/BZar(0)/m/n/18 پیاده سازی ماهیت استان ها با استفاده از []\TU/lmroman10-regular(0)/m/n/18 unordered_map[] []
- []
-
-File: Graphics/nav-logo.png Graphic file (type bmp)
-<Graphics/nav-logo.png>
-
-Package fancyhdr Warning: \headheight is too small (24.0pt): 
-(fancyhdr)                Make it at least 36.52245pt, for example:
-(fancyhdr)                \setlength{\headheight}{36.52245pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-12.52245pt}.
-
-File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
-<Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
-[19]
-File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
-<Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
- [20
-
-]
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 332.
-
-File: Graphics/nav-logo.png Graphic file (type bmp)
-<Graphics/nav-logo.png>
-
-Package fancyhdr Warning: \headheight is too small (24.0pt): 
-(fancyhdr)                Make it at least 36.52245pt, for example:
-(fancyhdr)                \setlength{\headheight}{36.52245pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-12.52245pt}.
-
-File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
-<Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
-[21]
-File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
-<Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
- [22
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 341--342
+Underfull \hbox (badness 10000) in paragraph at lines 330--331
 [][]
  []
 
@@ -1146,7 +1096,91 @@ Package fancyhdr Warning: \headheight is too small (24.0pt):
 
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
-[23] (./WorkReport.aux)
+[17]
+Overfull \hbox (15.00752pt too wide) in paragraph at lines 339--340
+[][][]\TU/lmroman10-regular(0)/m/n/18 getPlayedCards[] \TU/BZar(0)/m/n/18 برای ارسال کارت های بازی شده بازیکن []
+ []
+
+
+Overfull \hbox (8.67351pt too wide) in paragraph at lines 346--347
+[][][]\TU/lmroman10-regular(0)/m/n/18 push_to_playedCards[] \TU/BZar(0)/m/n/18 افزودن به کارت های مصرف[]
+ []
+
+File: Graphics/nav-logo.png Graphic file (type bmp)
+<Graphics/nav-logo.png>
+
+Package fancyhdr Warning: \headheight is too small (24.0pt): 
+(fancyhdr)                Make it at least 36.52245pt, for example:
+(fancyhdr)                \setlength{\headheight}{36.52245pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.52245pt}.
+
+File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
+<Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
+[18]
+File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
+<Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
+ [19
+
+]
+Overfull \hbox (6.39075pt too wide) in paragraph at lines 359--360
+[][]\TU/BZar(0)/m/n/18 پیاده سازی ماهیت استان ها با استفاده از []\TU/lmroman10-regular(0)/m/n/18 unordered_map[] []
+ []
+
+File: Graphics/nav-logo.png Graphic file (type bmp)
+<Graphics/nav-logo.png>
+
+Package fancyhdr Warning: \headheight is too small (24.0pt): 
+(fancyhdr)                Make it at least 36.52245pt, for example:
+(fancyhdr)                \setlength{\headheight}{36.52245pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.52245pt}.
+
+File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
+<Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
+[20]
+File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
+<Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
+ [21
+
+]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 369.
+
+File: Graphics/nav-logo.png Graphic file (type bmp)
+<Graphics/nav-logo.png>
+
+Package fancyhdr Warning: \headheight is too small (24.0pt): 
+(fancyhdr)                Make it at least 36.52245pt, for example:
+(fancyhdr)                \setlength{\headheight}{36.52245pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.52245pt}.
+
+File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
+<Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
+[22]
+File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
+<Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
+ [23
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 378--379
+[][]
+ []
+
+File: Graphics/nav-logo.png Graphic file (type bmp)
+<Graphics/nav-logo.png>
+
+Package fancyhdr Warning: \headheight is too small (24.0pt): 
+(fancyhdr)                Make it at least 36.52245pt, for example:
+(fancyhdr)                \setlength{\headheight}{36.52245pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.52245pt}.
+
+File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
+<Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
+[24] (./WorkReport.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.85994pt have occurred.
@@ -1158,12 +1192,12 @@ Package rerunfilecheck Info: File `WorkReport.out' has not changed.
 (rerunfilecheck)             Checksum: 14BD707F1EBC5BCCAB660D82E4AA0F6B;2381.
  ) 
 Here is how much of TeX's memory you used:
- 23699 strings out of 478190
- 500974 string characters out of 5854827
+ 23701 strings out of 478190
+ 501017 string characters out of 5854827
  901806 words of memory out of 5000000
- 43834 multiletter control sequences out of 15000+600000
+ 43836 multiletter control sequences out of 15000+600000
  475349 words of font info for 78 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  99i,13n,103p,1114b,844s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on WorkReport.xdv (27 pages, 151776 bytes).
+Output written on WorkReport.xdv (28 pages, 167976 bytes).

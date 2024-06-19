@@ -45,7 +45,9 @@
 \begin{document}
 	{\color{white}
 	\maketitle}
+
 	\tableofcontents
+
 	\newpage
 
 	\begin{abstract}
@@ -79,33 +81,32 @@
 	این کلاس با کلاس های بازیکن , زمین بازی , رابط کاربری , تمام کلاس های کارت ها و تمام کلاس های نشان رابطه دارد
 	\paragraph{روابط}
 	این کلاس با کلاس های بازیکن , زمین بازی , تمام کارت ها ,تمام نشان ها و رابط کاربری رابطه دارد.\\
-	رابط بین این کلاس ها همه از نوع \Ir{composition}میباشد.\\
+	رابط بین این کلاس ها همه از نوع \lr{composition}میباشد.\\
+
 	\paragraph{صفات}
 	صفات این بازی عبارتند از آرایه ای از تمام کارت های بازی مانند آرایه هایی از کارت های بنفش با تعداد مختلف
 	همچنین اشیاء مورد نیاز این کلاس از کلاس هایی مانند
 	\begin{latin}
 		\begin{itemize}
-			\item \lr{ui}
-			\item \lr{gameboard}
-			\item \lr{battlemarker}
-			\item \lr{player}
+			\item ui
+			\item gameboard
+			\item battlemarker
+			\item player
 		\end{itemize}
 	\end{latin}
 	\paragraph{متدها}
-	\begin{latin}
-		\begin{itemize}
-			\item \lr{play} این تابع وظایف شروع و مدیریت بازی را دارد
-			\item \lr{gethelp} برای ارسال متن راهنمایی است
-			\item \lr{check\_number\_of\_player} چک کردن 
-			\item \lr{set\_battleground} ست کردن محل جنگ
-			\item \Ir{find\_war\_winner} پیدا کردن برنده جنگ 
-			\item \Ir{find\_game\_winner} پیدا کردن برنده کل بازی 
-			\item \Ir{getPlayers} ارسال بازیکنان البته اطلاعات بازیکنان
-			\item \Ir{shuffle} مخلوط کردن کارت ها
-			\item \Ir{distributeCards} پخش کارت ها
-			\item \Ir{war} این تابع برای مدیریت جنگ است
-		\end{itemize}
-	\end{latin}
+	\begin{itemize}
+		\item \lr{play} این تابع وظایف شروع و مدیریت بازی را دارد
+		\item \lr{gethelp} برای ارسال متن راهنمایی است
+		\item \lr{check\_number\_of\_player} چک کردن 
+		\item \lr{set\_battleground} ست کردن محل جنگ
+		\item \lr{find\_war\_winner} پیدا کردن برنده جنگ 
+		\item \lr{find\_game\_winner} پیدا کردن برنده کل بازی 
+		\item \lr{getPlayers} ارسال بازیکنان البته اطلاعات بازیکنان
+		\item \lr{shuffle} مخلوط کردن کارت ها
+		\item \lr{distributeCards} پخش کارت ها
+		\item \lr{war} این تابع برای مدیریت جنگ است
+	\end{itemize}
 	\newpage
 	\section{رابط کاربری}
 	این کلاس وظیفه برقراری ارتباط سیستم و کاربران را دارد دستورات را از ورودی میگیرد و گزارشات را در خروجی برای رویت کردن کاربران چاپ میکند\\
@@ -156,18 +157,19 @@
 	
 	متد های این کلاس عبارتند از :
 
-		\begin{itemize}
-			\item \lr{checkAdjacency} برای چک کردن 
-			\item \lr{getState} ارسال استان های بازی 
-			\item \lr{get\_active\_states\_name} ارسال نام استان فعال و منتخب
-		\end{itemize}
+	\begin{itemize}
+		\item \lr{checkAdjacency} برای چک کردن 
+		\item \lr{getState} ارسال استان های بازی 
+		\item \lr{get\_active\_states\_name} ارسال نام استان فعال و منتخب
+	\end{itemize}
 	
 	\newpage
 	\section{کارت ها}
 	این کلاس مسئول نگهداری و سازماندهی کارت هاست این کلاس دو زیر کلاس دارد که بیانگر دو نوع کارت بنفش و زرد ایست که در بازی داریم
     \paragraph{روابط}
     این کلاس با کلاس های بازی و بازیکن رابطه دارد
-	این روابط از نوع \Ir{assosiation} و \Ir{compositon} است.\\
+	این روابط از نوع \lr{assosiation} و \lr{compositon} است.\\
+	
 	\paragraph{صفات}
 	صفات کلاس کارت ها  عبارتند از 
 	\begin{enumerate}
@@ -358,7 +360,7 @@
 		\item کامپایل کردن و اجرای برنامه توسط \lr{CMAKE} (اجرای برنامه ای با چندین فایل)
     	\item برقراری ارتباط بین کلاس ها  ایجاد بستری برای اجرای برنامه توسط رابط گرافیکی \lr{QT}
 	    \item تعیین نوع رابطه موجود بین کلاس ها برای اینکه برنامه از لحاظ شی گرایی بی نقص باشد.
-		\item رسم نمودار \Ir{class\diagram}این برنامه
+		\item رسم نمودار \lr{class\\diagram}این برنامه
 	\end{enumerate}
 
 	\newpage
