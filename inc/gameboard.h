@@ -7,6 +7,7 @@
 
 #include "state.h"
 
+//
 #define BEL "BELLA"
 #define CAL "CALINE"
 #define ENN "ENNA"
@@ -21,6 +22,7 @@
 #define ARM "ARMENTO"
 #define LIA "LIA"
 #define ELI "ELINIA"
+//
 
 class GameBoard
 {

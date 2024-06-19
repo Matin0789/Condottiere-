@@ -30,7 +30,7 @@ set(SOURCE_FILES
     ${PROJECT_SOURCE_DIR}/src/game.cpp
     ${PROJECT_SOURCE_DIR}/src/userinterface.cpp
     ${PROJECT_SOURCE_DIR}/src/player.cpp
-    ${PROJECT_SOURCE_DIR}/src/gameBoard.cpp
+    ${PROJECT_SOURCE_DIR}/src/gameboard.cpp
     ${PROJECT_SOURCE_DIR}/src/state.cpp
 )
 
