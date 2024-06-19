@@ -4,7 +4,7 @@
 #include <cstddef>
 #include <cmath>
 #include <utility>
-
+ // The text of the game guide
 #define HELP "1. Place the board in the center of the table2.\nShuffle the remaining cards and deal 10 facedown to each player.\nPlace the deck facedown near the board3.\nEach player chooses a color and takes the six control markers of that color4.\nThe youngest player takes the battle marker.\nHe or she initiates the first battle and takes the first turn of the game5.\nPlayer turns are taken in clockwise order starting with the player who initiated the battle.\nWhen you take your turn, you can choose to either play a card or pass.\nPlaying a card allows you to increase your strength, hinder opponents, or trigger other effects.\nThere are two types of cards: mercenary and special cards\n"
 
 //test
@@ -12,16 +12,16 @@
 
 #include "game.h"
 
-std::string Game::help = HELP;
+std::string Game::help = HELP; // set help
 
-Game::Game(UserInterface &inputUI) : cards(89), ui(inputUI), season(nullptr)
+Game::Game(UserInterface &inputUI) : cards(89), ui(inputUI), season(nullptr)  // constructor
 {
-    srand(time(0));
+    srand(time(0));    // for rand function
     for (int i = 0; i < 10; i++)
     {
-        cards[i] = &one_point_yellow_card[i];
+        cards[i] = &one_point_yellow_card[i];  // an array of yellow cards
     }
-    for (int i = 0; i < 8; i++)
+    for (int i = 0; i < 8; i++)    // point of yellow cards
     {
         cards[i + 10] = &two_point_yellow_card[i];
         cards[i + 18] = &three_point_yellow_card[i];
@@ -30,13 +30,13 @@ Game::Game(UserInterface &inputUI) : cards(89), ui(inputUI), season(nullptr)
         cards[i + 42] = &six_point_yellow_card[i];
         cards[i + 50] = &ten_point_yellow_card[i];
     }
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < 3; i++)     // an array of purple cards (heroine , spring , winter)
     {
         cards[i + 58] = &heroine[i];
         cards[i + 61] = &spring[i];
         cards[i + 64] = &winter[i];
     }
-    for (int i = 0; i < 16; i++)
+    for (int i = 0; i < 16; i++)  // an array of purple cards (scarecrow)
     {
         cards[i + 67] = &scarecrow[i];
     }
@@ -44,7 +44,7 @@ Game::Game(UserInterface &inputUI) : cards(89), ui(inputUI), season(nullptr)
     {
 
         cards[i + 83] = &drummer[i];
-        // cards[i + 100] = &bishop[i];
+        // cards[i + 100] = &bishop[i];   // This is for the next phase of the project
     }
     /*for (int i = 0;i < 12;i++){
         cards[i + 106] = &spy[i];
@@ -54,11 +54,11 @@ Game::Game(UserInterface &inputUI) : cards(89), ui(inputUI), season(nullptr)
     }*/
 }
 
-std::string Game::getHelp() {
+std::string Game::getHelp() {    // send help texts for user
     return help;
 }
 
-size_t Game::find_war_winner(){
+size_t Game::find_war_winner(){    
     std::vector<std::vector<unsigned int>> pointCards(players.size());
     std::vector<std::pair<size_t ,const Card*>> purpleCards;
     std::vector<bool> drummer_set(players.size(),false);
@@ -80,12 +80,12 @@ size_t Game::find_war_winner(){
         }
     }
 
-    if (season) {
+    if (season) {   //check
         purpleCards.push_back(std::make_pair(players.size(), season));
         cards.push_back(season);
         season = nullptr;
     }
-    std::sort(purpleCards.begin(), purpleCards.end(),
+    std::sort(purpleCards.begin(), purpleCards.end(),    // algorithms function
         [](const std::pair<size_t ,const Card*>& pair1 , std::pair<size_t ,const Card*>& pair2) {
             return pair1.second->getPriority() < pair2.second->getPriority();
         });
@@ -191,9 +191,9 @@ void Game::distributeCards() {
     }
 }
 
-void Game::shuffle()
+void Game::shuffle()  //This function is for shuffling cards
 {
-    std::random_shuffle(cards.begin(), cards.end());
+    std::random_shuffle(cards.begin(), cards.end()); //This is a default function in C++ that is used for shuffling
 }
 
 void Game::play()
@@ -245,7 +245,7 @@ void Game::set_battleground(const Player& currentPlayer) {
     battleMarker.setState(battlegroud);
 }
 
-int Game::war(int currentPlayerID) {
+int Game::war(int currentPlayerID) {     //This function starts working when the conditions are ready and the province of the battle location is selected
     std::vector<Player*> activePlayers;
     for (auto &&player : players) {
         activePlayers.push_back(&player);
@@ -264,7 +264,7 @@ int Game::war(int currentPlayerID) {
         ui.spliter();
         std::string command = ui.getCommand(*activePlayers[i],battleMarker, season);
         ui.clearTerminal();
-        if (command == "pass") {
+        if (command == "pass") {       // if player select passing 
             if (activePlayers.size() == 1) currentPlayerID = activePlayers[i]->getID();
             activePlayers.erase(activePlayers.begin() + i);
             i--;
@@ -330,7 +330,7 @@ int Game::war(int currentPlayerID) {
     return currentPlayerID;
 }
 
-size_t Game::compareAge()
+size_t Game::compareAge()   // search in players ages
 {
     if (players.empty())
     {
@@ -342,5 +342,5 @@ size_t Game::compareAge()
             return p1.getAge() < p2.getAge();
         });
 
-    return youngestPlayer.getID();
+    return youngestPlayer.getID();   // send id of current player
 }

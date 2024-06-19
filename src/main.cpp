@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream> 
 
 #include "game.h"
 #include "userinterface.h"
@@ -6,8 +6,8 @@
 using namespace std;
 
 int main(){
-	UserInterface interface;
-	Game game(interface);
-	game.play();
+	UserInterface interface;  // set object
+	Game game(interface);  //relationship
+	game.play();  //start game 
 	return 0;
 }

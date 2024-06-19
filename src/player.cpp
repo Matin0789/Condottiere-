@@ -5,7 +5,7 @@
 //Test
 #include <iostream>
 
-Player::Player(std::string inputName, size_t inputID, unsigned int inputAge, Color inputColor) :
+Player::Player(std::string inputName, size_t inputID, unsigned int inputAge, Color inputColor) : // constructor
     name(inputName),
     ID(inputID),
     age(inputAge),
@@ -18,28 +18,28 @@ Player::Player(std::string inputName, size_t inputID, unsigned int inputAge, Col
         
 }
 
-std::string Player::getName() const {
+std::string Player::getName() const {   // Submit name
     return name;
 }
 
-int Player::getAge() const
+int Player::getAge() const  // submit age
 {
     return age;
 }
 
-int Player::getID() const {
+int Player::getID() const {  // submit id
     return ID;
 };
 
-const std::vector<const Card*>& Player::getPlayedCards() const {
+const std::vector<const Card*>& Player::getPlayedCards() const {  // submit played cards
     return playedCards;
 }
 
-const std::vector<const Card*>& Player::getCards() const {
+const std::vector<const Card*>& Player::getCards() const {   // submit vector of playercards
     return cards;
 }
 
-void Player::setCards(std::vector<const Card*> inputCards) {
+void Player::setCards(std::vector<const Card*> inputCards) {    
     this->cards = inputCards;
 }
 
@@ -86,21 +86,21 @@ const Card* Player::drawn_playedCard(std::string inputCard){
             return card;
         }
     }
-    throw std::invalid_argument("There is no such card");
+    throw std::invalid_argument("There is no such card");  // exception 
 }
 
-size_t Player::getStateNumber() const {
+size_t Player::getStateNumber() const {  // counter of Conquered provinces
     return stateCounter;
 }
 
-std::vector<const Card*> Player::burnCards(){
+std::vector<const Card*> Player::burnCards(){   
     std::vector<const Card*> tmp(cards);
     cards.clear();
     return tmp;
 }
     
-std::vector<const Card*> Player::burnPlayedCards(){
+std::vector<const Card*> Player::burnPlayedCards(){  // killing cards or delete cards 
     std::vector<const Card*> tmp(playedCards);
-    playedCards.clear();
+    playedCards.clear(); // remove from player hands 
     return tmp;
 }
