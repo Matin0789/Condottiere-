@@ -1,0 +1,5 @@
+module Condottiere
+typeinfo appCondottiere.qmltypes
+prefer :/Condottiere/
+Main 1.0 Main.qml
+

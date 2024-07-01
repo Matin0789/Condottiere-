@@ -1,0 +1,169 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-1c6b7964a143bd2c14bf.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Condottiere",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-Debug-4a66760e5fca6b4f6bad.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-Debug-c6441df904a6dedf57a1.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_module-Debug-0a4d84a89e26022a48fe.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-Debug-41ab81a3303909897556.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appCondottiere::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appCondottiere-Debug-7d239ec315d3cbadf763.json",
+					"name" : "appCondottiere",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appCondottiere_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appCondottiere_autogen-Debug-7c1c236ea72dc35164fa.json",
+					"name" : "appCondottiere_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appCondottiere_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appCondottiere_autogen_timestamp_deps-Debug-e3960b6385c6551188af.json",
+					"name" : "appCondottiere_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appCondottiere_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appCondottiere_qmlimportscan-Debug-8fb4e88e68654b4e6b3b.json",
+					"name" : "appCondottiere_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appCondottiere_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appCondottiere_qmllint-Debug-ac7636fa83620171858d.json",
+					"name" : "appCondottiere_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appCondottiere_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appCondottiere_qmllint_json-Debug-a790db33c6bbe6b9ccc0.json",
+					"name" : "appCondottiere_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appCondottiere_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appCondottiere_qmllint_module-Debug-e3edbf3815ee10b0f020.json",
+					"name" : "appCondottiere_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appCondottiere_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appCondottiere_qmltyperegistration-Debug-f47eead861471dafc646.json",
+					"name" : "appCondottiere_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appCondottiere_tooling::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appCondottiere_tooling-Debug-f9fcc495bb6d2d15748a.json",
+					"name" : "appCondottiere_tooling",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/mnah/Documents/Univercity/Condottiere-/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug",
+		"source" : "C:/Users/mnah/Documents/Univercity/Condottiere-/Condottiere"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
