@@ -865,6 +865,9 @@
 	"MOC_INCLUDES" : 
 	[
 		"C:/Users/mnah/Documents/Univercity/Condottiere",
+		"C:/Users/mnah/Documents/Univercity/Condottiere/inc",
+		"C:/Users/mnah/Documents/Univercity/Condottiere/inc/card",
+		"C:/Users/mnah/Documents/Univercity/Condottiere/inc/marker",
 		"C:/Qt/6.7.2/mingw_64/include/QtQml/6.7.2",
 		"C:/Qt/6.7.2/mingw_64/include/QtQml/6.7.2/QtQml",
 		"C:/Qt/6.7.2/mingw_64/include/QtCore/6.7.2",
@@ -996,11 +999,6 @@
 		],
 		[
 			"C:/Users/mnah/Documents/Univercity/Condottiere/src/gameboard.cpp",
-			"Mu",
-			null
-		],
-		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/src/main.cpp",
 			"Mu",
 			null
 		],
