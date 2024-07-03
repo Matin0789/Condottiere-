@@ -44,12 +44,17 @@ private:
 	//private atributes
 	static std::string help;
     UserInterface &ui;
+
+    //
 	GameBoard gameBoard;
 	BattleMarker battleMarker;
 	FavorMarker favorMarker;
 	std::vector<Player> players;
     std::vector<const Card*> cards;
     const Card* season;
+
+
+    //Cards
 	const std::array<YellowCard, 10> one_point_yellow_card = {YellowCard(1),YellowCard(1),YellowCard(1),YellowCard(1),YellowCard(1),YellowCard(1),YellowCard(1),YellowCard(1),YellowCard(1),YellowCard(1)};
 	const std::array<YellowCard, 8> two_point_yellow_card = {YellowCard(2),YellowCard(2),YellowCard(2),YellowCard(2),YellowCard(2),YellowCard(2),YellowCard(2),YellowCard(2)};
 	const std::array<YellowCard, 8> three_point_yellow_card = {YellowCard(3),YellowCard(3),YellowCard(3),YellowCard(3),YellowCard(3),YellowCard(3),YellowCard(3),YellowCard(3)};
