@@ -14,7 +14,8 @@ qt_add_executable(appCondottiere
 qt_add_qml_module(appCondottiere
     URI Condottiere
     VERSION 1.0
-    QML_FILES main.qml 
+    QML_FILES main.qml
+    SOURCES inc/card/bishop.h inc/card/card.h inc/card/drummer.h inc/card/heroine.h inc/card/purplecard.h inc/card/scarecrow.h inc/card/season.h inc/card/spring.h inc/card/spy.h inc/card/turncoat.h inc/card/winter.h inc/card/yellowcard.h inc/marker/battlemarker.h inc/marker/favormarker.h inc/marker/marker.h inc/marker/playermarker.h inc/enumcolor.h inc/game.h inc/gameboard.h inc/player.h inc/state.h inc/userinterface.h src/card/bishop.cpp src/card/card.cpp src/card/drummer.cpp src/card/heroine.cpp src/card/purplecard.cpp src/card/scarecrow.cpp src/card/season.cpp src/card/spring.cpp src/card/spy.cpp src/card/turncoat.cpp src/card/winter.cpp src/card/yellowcard.cpp src/marker/battlemarker.cpp src/marker/favormarker.cpp src/marker/marker.cpp src/marker/playermarker.cpp src/game.cpp src/gameboard.cpp src/main.cpp src/player.cpp src/state.cpp src/userinterface.cpp
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
