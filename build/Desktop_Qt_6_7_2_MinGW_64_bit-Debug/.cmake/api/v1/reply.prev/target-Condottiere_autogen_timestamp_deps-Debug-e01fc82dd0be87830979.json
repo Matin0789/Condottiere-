@@ -1,0 +1,38 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"imports/Condottiere/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "Condottiere_tooling::@e57e0b54ce44d9aad26d"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "Condottiere_autogen_timestamp_deps::@e57e0b54ce44d9aad26d",
+	"isGeneratorProvided" : true,
+	"name" : "Condottiere_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "imports/Condottiere",
+		"source" : "imports/Condottiere"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}
