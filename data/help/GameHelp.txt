@@ -1,0 +1,11 @@
+GAME help:
+Place the board in the center of the table2.
+Shuffle the remaining cards and deal 10 facedown to each player.
+Place the deck facedown near the board3.
+Each player chooses a color and takes the six control markers of that color4.
+The youngest player takes the battle marker.
+He or she initiates the first battle and takes the first turn of the game5.
+Player turns are taken in clockwise order starting with the player who initiated the battle.
+When you take your turn, you can choose to either play a card or pass.
+Playing a card allows you to increase your strength, hinder opponents, or trigger other effects.
+There are two types of cards: mercenary and special cards.

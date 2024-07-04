@@ -1,15 +1,25 @@
 #include <algorithm>
+#include <fstream>
+#include <sstream>
 
 #include "bishop.h"
 
-class Game;
-class Player;
 
-#define HELP "When you play a Bishop, check which mercenary has the highest value among all player rows. Discard all copies of that card from all player rows"
+std::string Bishop::help;
 
-std::string Bishop::help = HELP;
-
-Bishop::Bishop() : PurpleCard(0,"Bishop",1) {
+Bishop::Bishop(std::string helpFilePath) : PurpleCard(0,"Bishop",1) {
+    std::ifstream helpFile(helpFilePath);
+    if (helpFile.is_open()){
+        std::stringstream helpString;
+        std::string tmp;
+        while(getline(helpFile,tmp)){
+            helpString << tmp;
+        }
+        help = helpString.str();
+        helpFile.close();
+    }
+    else 
+        throw std::runtime_error("The Bishop help file cannot be opened");
 }
 
 std::string Bishop::getHelp() {

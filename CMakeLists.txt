@@ -57,7 +57,7 @@ set(HEADER_FILES
 )
 
 add_executable(${PROJECT_NAME}
-    main.cpp
+    ${PROJECT_SOURCE_DIR}/main.cpp
     ${SOURCE_FILES}
     ${HEADER_FILES}
 )

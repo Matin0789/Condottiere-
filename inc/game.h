@@ -33,6 +33,8 @@ public:
     void play();
 	static bool check_number_of_player(int);
 	void set_battleground(const Player&);
+	bool save(); // (save file path)
+	bool load();	// (save file path)
 private:
 	//private methods
 	size_t find_war_winner();
@@ -44,7 +46,6 @@ private:
 	//private atributes
 	static std::string help;
     UserInterface &ui;
-
     //
 	GameBoard gameBoard;
 	BattleMarker battleMarker;
@@ -52,24 +53,22 @@ private:
 	std::vector<Player> players;
     std::vector<const Card*> cards;
     const Card* season;
-
-
-    //Cards
-	const std::array<YellowCard, 10> one_point_yellow_card = {YellowCard(1),YellowCard(1),YellowCard(1),YellowCard(1),YellowCard(1),YellowCard(1),YellowCard(1),YellowCard(1),YellowCard(1),YellowCard(1)};
-	const std::array<YellowCard, 8> two_point_yellow_card = {YellowCard(2),YellowCard(2),YellowCard(2),YellowCard(2),YellowCard(2),YellowCard(2),YellowCard(2),YellowCard(2)};
-	const std::array<YellowCard, 8> three_point_yellow_card = {YellowCard(3),YellowCard(3),YellowCard(3),YellowCard(3),YellowCard(3),YellowCard(3),YellowCard(3),YellowCard(3)};
-	const std::array<YellowCard, 8> four_point_yellow_card = {YellowCard(4),YellowCard(4),YellowCard(4),YellowCard(4),YellowCard(4),YellowCard(4),YellowCard(4),YellowCard(4)};
-	const std::array<YellowCard, 8> five_point_yellow_card = {YellowCard(5),YellowCard(5),YellowCard(5),YellowCard(5),YellowCard(5),YellowCard(5),YellowCard(5),YellowCard(5)};
-	const std::array<YellowCard, 8> six_point_yellow_card = {YellowCard(6),YellowCard(6),YellowCard(6),YellowCard(6),YellowCard(6),YellowCard(6),YellowCard(6),YellowCard(6)};
-	const std::array<YellowCard, 8> ten_point_yellow_card = {YellowCard(10),YellowCard(10),YellowCard(10),YellowCard(10),YellowCard(10),YellowCard(10),YellowCard(10),YellowCard(10)};
-	const std::array<Turncoat, 3> turncoat;
-    const std::array<Heroine, 3> heroine;
-    const std::array<Spring, 3> spring;
-    const std::array<Winter, 3> winter;
-    const std::array<Scarecrow, 16> scarecrow;
-    const std::array<Heroine, 6> drummer;
-	//std::array<Spy, 12> spy;
-	//std::array<Bishop, 6> bishop;
+    // Cards
+	const std::vector<YellowCard> one_point_yellow_card;
+	const std::vector<YellowCard> two_point_yellow_card;
+	const std::vector<YellowCard> three_point_yellow_card;
+	const std::vector<YellowCard> four_point_yellow_card;
+	const std::vector<YellowCard> five_point_yellow_card;
+	const std::vector<YellowCard> six_point_yellow_card;
+	const std::vector<YellowCard> ten_point_yellow_card;
+	const std::vector<Bishop> bishop;
+	const std::vector<Turncoat> turncoat;
+    const std::vector<Heroine> heroine;
+    const std::vector<Spring> spring;
+    const std::vector<Winter> winter;
+    const std::vector<Scarecrow> scarecrow;
+    const std::vector<Drummer> drummer;
+	const std::vector<Spy> spy;
 };
 
 #endif // GAME_H

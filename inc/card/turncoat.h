@@ -7,7 +7,7 @@ class Game;
 
 class Turncoat : public PurpleCard {
 public:
-    Turncoat();
+    Turncoat(std::string); // (help path)
     static std::string getHelp();
     virtual void applyFeature(std::vector<std::vector<unsigned int>>&, int) const override;
 

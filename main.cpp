@@ -1,10 +1,19 @@
 #include "game.h"
 #include "userinterface.h"
 
+#include <iostream>
+
 int main()
 {
-    UserInterface ui;
-    Game game(ui);
-    game.play();
+    try
+    {
+        UserInterface ui;
+        Game game(ui);
+        game.play();
+    }
+    catch(const std::exception& e)
+    {
+        std::cerr << e.what() << '\n';
+    }
     return 0;
 }

@@ -1,14 +1,26 @@
 #include "turncoat.h"
 
-class Game;
-class Player;
+#include <fstream>
+#include <string>
+#include <stdexcept>
+#include <sstream>
 
-#define HELP "The battle ends immediately with the winner determined as normal."
 
-std::string Turncoat::help = HELP;
+std::string Turncoat::help;
 
-Turncoat::Turncoat() : PurpleCard(0,"Turncoat",0){
-    help = HELP;
+Turncoat::Turncoat(std::string helpFilePath) : PurpleCard(0,"Turncoat",0){
+    std::ifstream helpFile(helpFilePath);
+    if (helpFile.is_open()){
+        std::stringstream helpString;
+        std::string tmp;
+        while(getline(helpFile,tmp)){
+            helpString << tmp;
+        }
+        help = helpString.str();
+        helpFile.close();
+    }
+    else 
+        throw std::runtime_error("The Turncoat help file cannot be opened");
 }
 
 std::string Turncoat::getHelp() {

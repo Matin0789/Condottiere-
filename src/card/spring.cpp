@@ -1,17 +1,26 @@
 #include <algorithm>
-
+#include <fstream>
+#include <string>
+#include <stdexcept>
+#include <sstream>
 
 #include "spring.h"
 
-class Game;
-class Player;
+std::string Spring::help;
 
-#define HELP "While Spring is in play, check which mercenary has the highest value among all player rows. Add “3” to the value of all copies of that card in all player rows. Note that the mercenary affected by Spring can change during the battle."
-
-std::string Spring::help = HELP;
-
-Spring::Spring() : Season(0,"Spring",4){
-
+Spring::Spring(std::string helpFilePath) : Season(0,"Spring",4){
+    std::ifstream helpFile(helpFilePath);
+    if (helpFile.is_open()){
+        std::stringstream helpString;
+        std::string tmp;
+        while(getline(helpFile,tmp)){
+            helpString << tmp;
+        }
+        help = helpString.str();
+        helpFile.close();
+    }
+    else 
+        throw std::runtime_error("The Spring help file cannot be opened");
 }
 
 std::string Spring::getHelp() {

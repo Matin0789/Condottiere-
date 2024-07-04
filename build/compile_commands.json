@@ -1,0 +1,112 @@
+[
+{
+  "directory": "/home/matin/Documents/University/Advanced/Project/Condottiere-/build",
+  "command": "/usr/bin/c++  -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker -g -o CMakeFiles/Condottiere.dir/main.cpp.o -c /home/matin/Documents/University/Advanced/Project/Condottiere-/main.cpp",
+  "file": "/home/matin/Documents/University/Advanced/Project/Condottiere-/main.cpp"
+},
+{
+  "directory": "/home/matin/Documents/University/Advanced/Project/Condottiere-/build",
+  "command": "/usr/bin/c++  -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker -g -o CMakeFiles/Condottiere.dir/src/card/card.cpp.o -c /home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/card.cpp",
+  "file": "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/card.cpp"
+},
+{
+  "directory": "/home/matin/Documents/University/Advanced/Project/Condottiere-/build",
+  "command": "/usr/bin/c++  -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker -g -o CMakeFiles/Condottiere.dir/src/card/purplecard.cpp.o -c /home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/purplecard.cpp",
+  "file": "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/purplecard.cpp"
+},
+{
+  "directory": "/home/matin/Documents/University/Advanced/Project/Condottiere-/build",
+  "command": "/usr/bin/c++  -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker -g -o CMakeFiles/Condottiere.dir/src/card/yellowcard.cpp.o -c /home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/yellowcard.cpp",
+  "file": "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/yellowcard.cpp"
+},
+{
+  "directory": "/home/matin/Documents/University/Advanced/Project/Condottiere-/build",
+  "command": "/usr/bin/c++  -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker -g -o CMakeFiles/Condottiere.dir/src/card/season.cpp.o -c /home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/season.cpp",
+  "file": "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/season.cpp"
+},
+{
+  "directory": "/home/matin/Documents/University/Advanced/Project/Condottiere-/build",
+  "command": "/usr/bin/c++  -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker -g -o CMakeFiles/Condottiere.dir/src/card/bishop.cpp.o -c /home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/bishop.cpp",
+  "file": "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/bishop.cpp"
+},
+{
+  "directory": "/home/matin/Documents/University/Advanced/Project/Condottiere-/build",
+  "command": "/usr/bin/c++  -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker -g -o CMakeFiles/Condottiere.dir/src/card/drummer.cpp.o -c /home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/drummer.cpp",
+  "file": "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/drummer.cpp"
+},
+{
+  "directory": "/home/matin/Documents/University/Advanced/Project/Condottiere-/build",
+  "command": "/usr/bin/c++  -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker -g -o CMakeFiles/Condottiere.dir/src/card/heroine.cpp.o -c /home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/heroine.cpp",
+  "file": "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/heroine.cpp"
+},
+{
+  "directory": "/home/matin/Documents/University/Advanced/Project/Condottiere-/build",
+  "command": "/usr/bin/c++  -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker -g -o CMakeFiles/Condottiere.dir/src/card/scarecrow.cpp.o -c /home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/scarecrow.cpp",
+  "file": "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/scarecrow.cpp"
+},
+{
+  "directory": "/home/matin/Documents/University/Advanced/Project/Condottiere-/build",
+  "command": "/usr/bin/c++  -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker -g -o CMakeFiles/Condottiere.dir/src/card/turncoat.cpp.o -c /home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/turncoat.cpp",
+  "file": "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/turncoat.cpp"
+},
+{
+  "directory": "/home/matin/Documents/University/Advanced/Project/Condottiere-/build",
+  "command": "/usr/bin/c++  -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker -g -o CMakeFiles/Condottiere.dir/src/card/spy.cpp.o -c /home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/spy.cpp",
+  "file": "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/spy.cpp"
+},
+{
+  "directory": "/home/matin/Documents/University/Advanced/Project/Condottiere-/build",
+  "command": "/usr/bin/c++  -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker -g -o CMakeFiles/Condottiere.dir/src/card/winter.cpp.o -c /home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/winter.cpp",
+  "file": "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/winter.cpp"
+},
+{
+  "directory": "/home/matin/Documents/University/Advanced/Project/Condottiere-/build",
+  "command": "/usr/bin/c++  -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker -g -o CMakeFiles/Condottiere.dir/src/card/spring.cpp.o -c /home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/spring.cpp",
+  "file": "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/spring.cpp"
+},
+{
+  "directory": "/home/matin/Documents/University/Advanced/Project/Condottiere-/build",
+  "command": "/usr/bin/c++  -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker -g -o CMakeFiles/Condottiere.dir/src/marker/marker.cpp.o -c /home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/marker.cpp",
+  "file": "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/marker.cpp"
+},
+{
+  "directory": "/home/matin/Documents/University/Advanced/Project/Condottiere-/build",
+  "command": "/usr/bin/c++  -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker -g -o CMakeFiles/Condottiere.dir/src/marker/battlemarker.cpp.o -c /home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/battlemarker.cpp",
+  "file": "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/battlemarker.cpp"
+},
+{
+  "directory": "/home/matin/Documents/University/Advanced/Project/Condottiere-/build",
+  "command": "/usr/bin/c++  -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker -g -o CMakeFiles/Condottiere.dir/src/marker/favormarker.cpp.o -c /home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/favormarker.cpp",
+  "file": "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/favormarker.cpp"
+},
+{
+  "directory": "/home/matin/Documents/University/Advanced/Project/Condottiere-/build",
+  "command": "/usr/bin/c++  -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker -g -o CMakeFiles/Condottiere.dir/src/marker/playermarker.cpp.o -c /home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/playermarker.cpp",
+  "file": "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/playermarker.cpp"
+},
+{
+  "directory": "/home/matin/Documents/University/Advanced/Project/Condottiere-/build",
+  "command": "/usr/bin/c++  -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker -g -o CMakeFiles/Condottiere.dir/src/game.cpp.o -c /home/matin/Documents/University/Advanced/Project/Condottiere-/src/game.cpp",
+  "file": "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/game.cpp"
+},
+{
+  "directory": "/home/matin/Documents/University/Advanced/Project/Condottiere-/build",
+  "command": "/usr/bin/c++  -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker -g -o CMakeFiles/Condottiere.dir/src/userinterface.cpp.o -c /home/matin/Documents/University/Advanced/Project/Condottiere-/src/userinterface.cpp",
+  "file": "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/userinterface.cpp"
+},
+{
+  "directory": "/home/matin/Documents/University/Advanced/Project/Condottiere-/build",
+  "command": "/usr/bin/c++  -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker -g -o CMakeFiles/Condottiere.dir/src/player.cpp.o -c /home/matin/Documents/University/Advanced/Project/Condottiere-/src/player.cpp",
+  "file": "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/player.cpp"
+},
+{
+  "directory": "/home/matin/Documents/University/Advanced/Project/Condottiere-/build",
+  "command": "/usr/bin/c++  -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker -g -o CMakeFiles/Condottiere.dir/src/gameboard.cpp.o -c /home/matin/Documents/University/Advanced/Project/Condottiere-/src/gameboard.cpp",
+  "file": "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/gameboard.cpp"
+},
+{
+  "directory": "/home/matin/Documents/University/Advanced/Project/Condottiere-/build",
+  "command": "/usr/bin/c++  -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker -g -o CMakeFiles/Condottiere.dir/src/state.cpp.o -c /home/matin/Documents/University/Advanced/Project/Condottiere-/src/state.cpp",
+  "file": "/home/matin/Documents/University/Advanced/Project/Condottiere-/src/state.cpp"
+}
+]

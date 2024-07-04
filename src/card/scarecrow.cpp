@@ -2,12 +2,27 @@
 #include "player.h"
 #include "game.h"
 
-#define HELP "Take 1 mercenary from your row back to your hand."
+#include <fstream>
+#include <string>
+#include <stdexcept>
+#include <sstream>
 
-std::string Scarecrow::help = HELP;
 
-Scarecrow::Scarecrow() : PurpleCard(0,"Scarecrow",0){
+std::string Scarecrow::help;
 
+Scarecrow::Scarecrow(std::string helpFilePath) : PurpleCard(0,"Scarecrow",0){
+    std::ifstream helpFile(helpFilePath);
+    if (helpFile.is_open()){
+        std::stringstream helpString;
+        std::string tmp;
+        while(getline(helpFile,tmp)){
+            helpString << tmp;
+        }
+        help = helpString.str();
+        helpFile.close();
+    }
+    else 
+        throw std::runtime_error("The Scarecrow help file cannot be opened");
 }
 
 std::string Scarecrow::getHelp() {

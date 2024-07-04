@@ -4,18 +4,61 @@
 #include <cstddef>
 #include <cmath>
 #include <utility>
- // The text of the game guide
-#define HELP "1. Place the board in the center of the table2.\nShuffle the remaining cards and deal 10 facedown to each player.\nPlace the deck facedown near the board3.\nEach player chooses a color and takes the six control markers of that color4.\nThe youngest player takes the battle marker.\nHe or she initiates the first battle and takes the first turn of the game5.\nPlayer turns are taken in clockwise order starting with the player who initiated the battle.\nWhen you take your turn, you can choose to either play a card or pass.\nPlaying a card allows you to increase your strength, hinder opponents, or trigger other effects.\nThere are two types of cards: mercenary and special cards\n"
+#include <fstream> // for files
+#include <sstream> // for read file as stream
 
-//test
-#include <iostream>
+ // The file path of the game guide
+#define Game_HELP_FILE      "../data/help/GameHelp.txt"
+#define BISHOP_HELP_FILE    "../../data/help/BishopHelp.txt"
+#define TURNCOAT_HELP_FILE  "../../data/help/TurncoatHelp.txt"
+#define HEROINE_HELP_FILE   "../../data/help/HeroineHelp.txt"
+#define SPRING_HELP_FILE    "../../data/help/SpringHelp.txt"
+#define WINTER_HELP_FILE    "../../data/help/WinterHelp.txt"
+#define SCARECROW_HELP_FILE "../../data/help/ScarecrowHelp.txt"
+#define DRUMMER_HELP_FILE   "../../data/help/DrummerHelp.txt"
+#define SPY_HELP_FILE       "../../data/help/SpyHelp.txt"
+
+#define BOARD_FILE          "../data/board/"
 
 #include "game.h"
 
-std::string Game::help = HELP; // set help
-
-Game::Game(UserInterface &inputUI) : cards(89), ui(inputUI), season(nullptr)  // constructor
+std::string Game::help; // set help
+// constructor
+Game::Game(UserInterface &inputUI) : 
+    cards(121),
+    ui(inputUI),
+    season(nullptr),
+    one_point_yellow_card(10, YellowCard(1)),  
+    two_point_yellow_card(8,YellowCard(2)),
+    three_point_yellow_card(8,YellowCard(3)),
+    four_point_yellow_card(8,YellowCard(4)),
+    five_point_yellow_card(8,YellowCard(5)),
+    six_point_yellow_card(8,YellowCard(6)),
+    ten_point_yellow_card(8,YellowCard(10)),
+    bishop(6,Bishop(BISHOP_HELP_FILE)),
+    turncoat(3,Turncoat(TURNCOAT_HELP_FILE)),
+    heroine(3, Heroine(HEROINE_HELP_FILE)),
+    spring(3, Spring(SPRING_HELP_FILE)),
+    winter(3, Winter(WINTER_HELP_FILE)),
+    scarecrow(16, Scarecrow(SCARECROW_HELP_FILE)),
+    drummer(6, Drummer(DRUMMER_HELP_FILE)),
+    spy(12, Spy(SPY_HELP_FILE))
+    gameBoard()
 {
+    // Read
+    std::ifstream helpFile(Game_HELP_FILE);
+    if (helpFile.is_open()){
+        std::stringstream helpString;
+        std::string tmp;
+        while(getline(helpFile,tmp)){
+            helpString << tmp;
+        }
+        Game::help = helpString.str();
+        helpFile.close();
+    }
+    else 
+        throw std::runtime_error("The game help file cannot be opened");
+
     srand(time(0));    // for rand function
     for (int i = 0; i < 10; i++)
     {
@@ -44,14 +87,14 @@ Game::Game(UserInterface &inputUI) : cards(89), ui(inputUI), season(nullptr)  //
     {
 
         cards[i + 83] = &drummer[i];
-        // cards[i + 100] = &bishop[i];   // This is for the next phase of the project
+        cards[i + 100] = &bishop[i];   // This is for the next phase of the project
     }
-    /*for (int i = 0;i < 12;i++){
+    for (int i = 0;i < 12;i++){
         cards[i + 106] = &spy[i];
-    }*/
-    /*for (int i = 0; i < 3; i++) {
+    }
+    for (int i = 0; i < 3; i++) {
         cards[i + 118] = &turncoat[i];
-    }*/
+    }
 }
 
 std::string Game::getHelp() {    // send help texts for user
@@ -122,13 +165,6 @@ size_t Game::find_war_winner(){
         [](const std::pair<size_t, unsigned int>& pair1, const std::pair<size_t, unsigned int>& pair2){
             return pair1.second > pair2.second;
         });
-    
-    //Test
-    std::cerr << scores[0].second << std::endl;
-    std::cerr << scores[1].second << std::endl;
-    std::cerr << scores[2].second << std::endl;
-    ui.pause();
-    //
     
     if (scores[0].second != scores[1].second) {
         winnerID = scores[0].first;

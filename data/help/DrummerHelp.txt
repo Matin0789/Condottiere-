@@ -1,0 +1,4 @@
+Drummer help:
+While you have a Drummer in your row, 
+double the value of each mercenary in your row.
+You can play additional Drummers, but they have no effect.
