@@ -28,8 +28,8 @@ set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
 include(ExternalProject)
 ExternalProject_Add(ds-populate
                      "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://code.qt.io/qt-labs/qtquickdesigner-components.git" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "GIT_TAG" "qds-4.4"
-                    SOURCE_DIR          "C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-src"
-                    BINARY_DIR          "C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build"
+                    SOURCE_DIR          "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-src"
+                    BINARY_DIR          "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

@@ -1,6 +1,6 @@
 <RCC>
   <qresource prefix="/">
-    <file alias="/qt/qml/Main">C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/qml/Main</file>
+    <file alias="/qt/qml/Main">C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/qml/Main</file>
 
   </qresource>
 </RCC>

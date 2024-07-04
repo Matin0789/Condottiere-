@@ -1,6 +1,6 @@
 <RCC>
   <qresource prefix="/">
-    <file alias="/QtQuick/Studio/Utils">C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/qml/QtQuick/Studio/Utils</file>
+    <file alias="/QtQuick/Studio/Utils">C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/qml/QtQuick/Studio/Utils</file>
 
   </qresource>
 </RCC>

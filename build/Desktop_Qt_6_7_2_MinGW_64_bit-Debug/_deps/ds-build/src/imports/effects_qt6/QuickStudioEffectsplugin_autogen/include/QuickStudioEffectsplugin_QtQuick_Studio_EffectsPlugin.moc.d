@@ -1,5 +1,5 @@
-C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/effects_qt6/QuickStudioEffectsplugin_autogen/include/QuickStudioEffectsplugin_QtQuick_Studio_EffectsPlugin.moc: C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/effects_qt6/QuickStudioEffectsplugin_QtQuick_Studio_EffectsPlugin.cpp \
-  C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/effects_qt6/QuickStudioEffectsplugin_autogen/moc_predefs.h \
+C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/effects_qt6/QuickStudioEffectsplugin_autogen/include/QuickStudioEffectsplugin_QtQuick_Studio_EffectsPlugin.moc: C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/effects_qt6/QuickStudioEffectsplugin_QtQuick_Studio_EffectsPlugin.cpp \
+  C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/effects_qt6/QuickStudioEffectsplugin_autogen/moc_predefs.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/QUrl \
   C:/Qt/6.7.2/mingw_64/include/QtCore/q20algorithm.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/q20functional.h \

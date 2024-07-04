@@ -1,5 +1,5 @@
-C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/utils/QuickStudioUtilsplugin_autogen/include/QuickStudioUtilsplugin_QtQuick_Studio_UtilsPlugin.moc: C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/utils/QuickStudioUtilsplugin_QtQuick_Studio_UtilsPlugin.cpp \
-  C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/utils/QuickStudioUtilsplugin_autogen/moc_predefs.h \
+C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/utils/QuickStudioUtilsplugin_autogen/include/QuickStudioUtilsplugin_QtQuick_Studio_UtilsPlugin.moc: C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/utils/QuickStudioUtilsplugin_QtQuick_Studio_UtilsPlugin.cpp \
+  C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/utils/QuickStudioUtilsplugin_autogen/moc_predefs.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/QUrl \
   C:/Qt/6.7.2/mingw_64/include/QtCore/q20algorithm.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/q20functional.h \

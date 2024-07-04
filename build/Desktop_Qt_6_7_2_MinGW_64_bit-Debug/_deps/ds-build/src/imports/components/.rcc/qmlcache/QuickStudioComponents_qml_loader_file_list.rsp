@@ -1,7 +1,7 @@
 --resource
-C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/components/.qt/rcc/qmake_QtQuick_Studio_Components.qrc
+C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/components/.qt/rcc/qmake_QtQuick_Studio_Components.qrc
 --resource
-C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/components/.qt/rcc/QuickStudioComponents_raw_qml_0.qrc
+C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/components/.qt/rcc/QuickStudioComponents_raw_qml_0.qrc
 /qt-project.org/imports/QtQuick/Studio/Components/ArcItem.qml
 /qt-project.org/imports/QtQuick/Studio/Components/PieItem.qml
 /qt-project.org/imports/QtQuick/Studio/Components/TriangleItem.qml

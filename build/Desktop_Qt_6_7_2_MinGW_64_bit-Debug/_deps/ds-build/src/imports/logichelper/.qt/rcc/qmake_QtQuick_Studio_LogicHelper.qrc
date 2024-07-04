@@ -1,6 +1,6 @@
 <RCC>
   <qresource prefix="/qt-project.org/imports/QtQuick/Studio/LogicHelper">
-    <file alias="qmldir">C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/qml/QtQuick/Studio/LogicHelper/qmldir</file>
+    <file alias="qmldir">C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/qml/QtQuick/Studio/LogicHelper/qmldir</file>
   </qresource>
 </RCC>
 

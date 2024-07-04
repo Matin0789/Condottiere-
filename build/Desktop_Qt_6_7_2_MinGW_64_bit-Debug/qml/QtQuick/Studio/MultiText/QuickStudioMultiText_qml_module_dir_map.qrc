@@ -1,6 +1,6 @@
 <RCC>
   <qresource prefix="/">
-    <file alias="/qt-project.org/imports/QtQuick/Studio/MultiText">C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/qml/QtQuick/Studio/MultiText</file>
+    <file alias="/qt-project.org/imports/QtQuick/Studio/MultiText">C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/qml/QtQuick/Studio/MultiText</file>
 
   </qresource>
 </RCC>

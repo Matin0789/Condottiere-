@@ -1,5 +1,5 @@
-C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/utils/QuickStudioUtils_autogen/EWIEGA46WW/moc_quickstudiocsvtablemodel_p.cpp: C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-src/src/imports/utils/quickstudiocsvtablemodel_p.h \
-  C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/utils/QuickStudioUtils_autogen/moc_predefs.h \
+C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/utils/QuickStudioUtils_autogen/EWIEGA46WW/moc_quickstudiocsvtablemodel_p.cpp: C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-src/src/imports/utils/quickstudiocsvtablemodel_p.h \
+  C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/utils/QuickStudioUtils_autogen/moc_predefs.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/QAbstractTableModel \
   C:/Qt/6.7.2/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/q20memory.h \

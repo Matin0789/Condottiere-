@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/mnah/Documents/Univercity/Condottiere/imports/Condottiere
+# Install script for directory: C:/QtProjects/Condottiere/imports/Condottiere
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

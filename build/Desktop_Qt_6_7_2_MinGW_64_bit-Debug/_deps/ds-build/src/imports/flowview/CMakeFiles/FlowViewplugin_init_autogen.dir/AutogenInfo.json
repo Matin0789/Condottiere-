@@ -1,27 +1,27 @@
 {
 	"AUTOGEN_COMMAND_LINE_LENGTH_MAX" : 32000,
-	"BUILD_DIR" : "C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/FlowViewplugin_init_autogen",
-	"CMAKE_BINARY_DIR" : "C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug",
-	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview",
-	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-src/src/imports/flowview",
+	"BUILD_DIR" : "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/FlowViewplugin_init_autogen",
+	"CMAKE_BINARY_DIR" : "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-src/src/imports/flowview",
 	"CMAKE_EXECUTABLE" : "C:/Qt/Tools/CMake_64/bin/cmake.exe",
 	"CMAKE_LIST_FILES" : 
 	[
-		"C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-src/src/imports/flowview/CMakeLists.txt",
+		"C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-src/src/imports/flowview/CMakeLists.txt",
 		"C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Qml/Qt6QmlPluginTemplate.cpp.in",
 		"C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Qml/Qt6QmlModuleDirMappingTemplate.qrc.in",
 		"C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
 		"C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreResourceInit.in.cpp",
-		"C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/FlowViewplugin_FlowViewPlugin_in.cpp"
+		"C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/FlowViewplugin_FlowViewPlugin_in.cpp"
 	],
-	"CMAKE_SOURCE_DIR" : "C:/Users/mnah/Documents/Univercity/Condottiere",
+	"CMAKE_SOURCE_DIR" : "C:/QtProjects/Condottiere",
 	"CROSS_CONFIG" : false,
-	"DEP_FILE" : "C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/FlowViewplugin_init_autogen/deps",
+	"DEP_FILE" : "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/FlowViewplugin_init_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "FlowViewplugin_init_autogen/timestamp",
 	"HEADERS" : [],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/FlowViewplugin_init_autogen/include",
-	"MOC_COMPILATION_FILE" : "C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/FlowViewplugin_init_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/FlowViewplugin_init_autogen/include",
+	"MOC_COMPILATION_FILE" : "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/FlowViewplugin_init_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"MINGW_HAS_SECURE_API=1",
@@ -49,7 +49,7 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/FlowViewplugin_autogen/include",
+		"C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/FlowViewplugin_autogen/include",
 		"C:/Qt/6.7.2/mingw_64/include/QtQml",
 		"C:/Qt/6.7.2/mingw_64/include/QtQmlIntegration",
 		"C:/Qt/6.7.2/mingw_64/include/QtQmlBuiltins",
@@ -83,28 +83,28 @@
 		"-c",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/FlowViewplugin_init_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/FlowViewplugin_init_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : 
 	[
-		"C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/.qt/rcc/qrc_FlowView_raw_qml_0.cpp",
-		"C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/.qt/rcc/qrc_FlowView_raw_qml_0_init.cpp",
-		"C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/FlowView_autogen/mocs_compilation.cpp",
-		"C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/FlowViewplugin_autogen/mocs_compilation.cpp",
-		"C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/flowview_qmltyperegistrations.cpp"
+		"C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/.qt/rcc/qrc_FlowView_raw_qml_0.cpp",
+		"C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/.qt/rcc/qrc_FlowView_raw_qml_0_init.cpp",
+		"C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/FlowView_autogen/mocs_compilation.cpp",
+		"C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/FlowViewplugin_autogen/mocs_compilation.cpp",
+		"C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/flowview_qmltyperegistrations.cpp"
 	],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 2,
-	"PARSE_CACHE_FILE" : "C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/CMakeFiles/FlowViewplugin_init_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/CMakeFiles/FlowViewplugin_init_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "C:/Qt/6.7.2/mingw_64/./bin/moc.exe",
 	"QT_UIC_EXECUTABLE" : "",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 7,
-	"SETTINGS_FILE" : "C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/CMakeFiles/FlowViewplugin_init_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/CMakeFiles/FlowViewplugin_init_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/FlowViewplugin_init.cpp",
+			"C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/FlowViewplugin_init.cpp",
 			"MU",
 			null
 		]
@@ -113,11 +113,11 @@
 	"UIC_SEARCH_PATHS" : [],
 	"UIC_SKIP" : 
 	[
-		"C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/.qt/rcc/qrc_FlowView_raw_qml_0.cpp",
-		"C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/.qt/rcc/qrc_FlowView_raw_qml_0_init.cpp",
-		"C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/FlowView_autogen/mocs_compilation.cpp",
-		"C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/FlowViewplugin_autogen/mocs_compilation.cpp",
-		"C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/flowview_qmltyperegistrations.cpp"
+		"C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/.qt/rcc/qrc_FlowView_raw_qml_0.cpp",
+		"C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/.qt/rcc/qrc_FlowView_raw_qml_0_init.cpp",
+		"C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/FlowView_autogen/mocs_compilation.cpp",
+		"C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/FlowViewplugin_autogen/mocs_compilation.cpp",
+		"C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/flowview_qmltyperegistrations.cpp"
 	],
 	"UIC_UI_FILES" : [],
 	"USE_BETTER_GRAPH" : false,

@@ -2,6 +2,6 @@
 # The patch step will be re-executed if anything in this file changes.
 # No other meaning or use of this file is supported.
 
-command (connected)=C:/Qt/Tools/CMake_64/bin/cmake.exe;-Dcan_fetch=YES;-P;C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-subbuild/ds-populate-prefix/tmp/ds-populate-gitupdate.cmake
-command (disconnected)=C:/Qt/Tools/CMake_64/bin/cmake.exe;-Dcan_fetch=NO;-P;C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-subbuild/ds-populate-prefix/tmp/ds-populate-gitupdate.cmake
-work_dir=C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-src
+command (connected)=C:/Qt/Tools/CMake_64/bin/cmake.exe;-Dcan_fetch=YES;-P;C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-subbuild/ds-populate-prefix/tmp/ds-populate-gitupdate.cmake
+command (disconnected)=C:/Qt/Tools/CMake_64/bin/cmake.exe;-Dcan_fetch=NO;-P;C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-subbuild/ds-populate-prefix/tmp/ds-populate-gitupdate.cmake
+work_dir=C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-src

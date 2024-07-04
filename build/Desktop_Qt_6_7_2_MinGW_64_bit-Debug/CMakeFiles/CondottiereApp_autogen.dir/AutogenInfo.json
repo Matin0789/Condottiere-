@@ -1,18 +1,18 @@
 {
 	"AUTOGEN_COMMAND_LINE_LENGTH_MAX" : 32000,
-	"BUILD_DIR" : "C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CondottiereApp_autogen",
-	"CMAKE_BINARY_DIR" : "C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug",
-	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug",
-	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/mnah/Documents/Univercity/Condottiere",
+	"BUILD_DIR" : "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CondottiereApp_autogen",
+	"CMAKE_BINARY_DIR" : "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/QtProjects/Condottiere",
 	"CMAKE_EXECUTABLE" : "C:/Qt/Tools/CMake_64/bin/cmake.exe",
 	"CMAKE_LIST_FILES" : 
 	[
-		"C:/Users/mnah/Documents/Univercity/Condottiere/CMakeLists.txt",
-		"C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake",
-		"C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeSystem.cmake",
+		"C:/QtProjects/Condottiere/CMakeLists.txt",
+		"C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake",
+		"C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeSystem.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake",
-		"C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeCXXCompiler.cmake",
+		"C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeCXXCompiler.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake",
@@ -25,7 +25,7 @@
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake",
-		"C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeRCCompiler.cmake",
+		"C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeRCCompiler.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeRCInformation.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake",
@@ -681,164 +681,164 @@
 		"C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Quick/Qt6QuickPlugins.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/GNUInstallDirs.cmake",
 		"C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
-		"C:/Users/mnah/Documents/Univercity/Condottiere/qmlcomponents",
+		"C:/QtProjects/Condottiere/qmlcomponents",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/FetchContent.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/ExternalProject/shared_internal_commands.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/FindGit.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/FindPackageMessage.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/FetchContent/CMakeLists.cmake.in",
-		"C:/Users/mnah/Documents/Univercity/Condottiere/qmlmodules",
+		"C:/QtProjects/Condottiere/qmlmodules",
 		"C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
 		"C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Qml/Qt6QmlModuleDirMappingTemplate.qrc.in",
 		"C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
-		"C:/Users/mnah/Documents/Univercity/Condottiere/insight",
+		"C:/QtProjects/Condottiere/insight",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/GNUInstallDirs.cmake",
 		"C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in",
-		"C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/qml_imports/CondottiereApp_conf.cmake"
+		"C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/qml_imports/CondottiereApp_conf.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "C:/Users/mnah/Documents/Univercity/Condottiere",
+	"CMAKE_SOURCE_DIR" : "C:/QtProjects/Condottiere",
 	"CROSS_CONFIG" : false,
-	"DEP_FILE" : "C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CondottiereApp_autogen/deps",
+	"DEP_FILE" : "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CondottiereApp_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "CondottiereApp_autogen/timestamp",
 	"HEADERS" : 
 	[
 		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/inc/card/bishop.h",
+			"C:/QtProjects/Condottiere/inc/card/bishop.h",
 			"MU",
 			"EV75SBWRFC/moc_bishop.cpp",
 			null
 		],
 		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/inc/card/card.h",
+			"C:/QtProjects/Condottiere/inc/card/card.h",
 			"MU",
 			"EV75SBWRFC/moc_card.cpp",
 			null
 		],
 		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/inc/card/drummer.h",
+			"C:/QtProjects/Condottiere/inc/card/drummer.h",
 			"MU",
 			"EV75SBWRFC/moc_drummer.cpp",
 			null
 		],
 		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/inc/card/heroine.h",
+			"C:/QtProjects/Condottiere/inc/card/heroine.h",
 			"MU",
 			"EV75SBWRFC/moc_heroine.cpp",
 			null
 		],
 		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/inc/card/purplecard.h",
+			"C:/QtProjects/Condottiere/inc/card/purplecard.h",
 			"MU",
 			"EV75SBWRFC/moc_purplecard.cpp",
 			null
 		],
 		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/inc/card/scarecrow.h",
+			"C:/QtProjects/Condottiere/inc/card/scarecrow.h",
 			"MU",
 			"EV75SBWRFC/moc_scarecrow.cpp",
 			null
 		],
 		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/inc/card/season.h",
+			"C:/QtProjects/Condottiere/inc/card/season.h",
 			"MU",
 			"EV75SBWRFC/moc_season.cpp",
 			null
 		],
 		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/inc/card/spring.h",
+			"C:/QtProjects/Condottiere/inc/card/spring.h",
 			"MU",
 			"EV75SBWRFC/moc_spring.cpp",
 			null
 		],
 		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/inc/card/spy.h",
+			"C:/QtProjects/Condottiere/inc/card/spy.h",
 			"MU",
 			"EV75SBWRFC/moc_spy.cpp",
 			null
 		],
 		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/inc/card/turncoat.h",
+			"C:/QtProjects/Condottiere/inc/card/turncoat.h",
 			"MU",
 			"EV75SBWRFC/moc_turncoat.cpp",
 			null
 		],
 		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/inc/card/winter.h",
+			"C:/QtProjects/Condottiere/inc/card/winter.h",
 			"MU",
 			"EV75SBWRFC/moc_winter.cpp",
 			null
 		],
 		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/inc/card/yellowcard.h",
+			"C:/QtProjects/Condottiere/inc/card/yellowcard.h",
 			"MU",
 			"EV75SBWRFC/moc_yellowcard.cpp",
 			null
 		],
 		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/inc/enumcolor.h",
+			"C:/QtProjects/Condottiere/inc/enumcolor.h",
 			"MU",
 			"DIG64O274K/moc_enumcolor.cpp",
 			null
 		],
 		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/inc/game.h",
+			"C:/QtProjects/Condottiere/inc/game.h",
 			"MU",
 			"DIG64O274K/moc_game.cpp",
 			null
 		],
 		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/inc/gameboard.h",
+			"C:/QtProjects/Condottiere/inc/gameboard.h",
 			"MU",
 			"DIG64O274K/moc_gameboard.cpp",
 			null
 		],
 		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/inc/marker/battlemarker.h",
+			"C:/QtProjects/Condottiere/inc/marker/battlemarker.h",
 			"MU",
 			"YR4O4XTLV6/moc_battlemarker.cpp",
 			null
 		],
 		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/inc/marker/favormarker.h",
+			"C:/QtProjects/Condottiere/inc/marker/favormarker.h",
 			"MU",
 			"YR4O4XTLV6/moc_favormarker.cpp",
 			null
 		],
 		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/inc/marker/marker.h",
+			"C:/QtProjects/Condottiere/inc/marker/marker.h",
 			"MU",
 			"YR4O4XTLV6/moc_marker.cpp",
 			null
 		],
 		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/inc/marker/playermarker.h",
+			"C:/QtProjects/Condottiere/inc/marker/playermarker.h",
 			"MU",
 			"YR4O4XTLV6/moc_playermarker.cpp",
 			null
 		],
 		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/inc/player.h",
+			"C:/QtProjects/Condottiere/inc/player.h",
 			"MU",
 			"DIG64O274K/moc_player.cpp",
 			null
 		],
 		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/inc/state.h",
+			"C:/QtProjects/Condottiere/inc/state.h",
 			"MU",
 			"DIG64O274K/moc_state.cpp",
 			null
 		],
 		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/inc/userinterface.h",
+			"C:/QtProjects/Condottiere/inc/userinterface.h",
 			"MU",
 			"DIG64O274K/moc_userinterface.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CondottiereApp_autogen/include",
-	"MOC_COMPILATION_FILE" : "C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CondottiereApp_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CondottiereApp_autogen/include",
+	"MOC_COMPILATION_FILE" : "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CondottiereApp_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"BULD_QDS_COMPONENTS=true",
@@ -868,10 +868,10 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"C:/Users/mnah/Documents/Univercity/Condottiere/inc",
-		"C:/Users/mnah/Documents/Univercity/Condottiere/inc/card",
-		"C:/Users/mnah/Documents/Univercity/Condottiere/inc/marker",
-		"C:/Users/mnah/Documents/Univercity/Condottiere",
+		"C:/QtProjects/Condottiere/inc",
+		"C:/QtProjects/Condottiere/inc/card",
+		"C:/QtProjects/Condottiere/inc/marker",
+		"C:/QtProjects/Condottiere",
 		"C:/Qt/6.7.2/mingw_64/include/QtQml/6.7.2",
 		"C:/Qt/6.7.2/mingw_64/include/QtQml/6.7.2/QtQml",
 		"C:/Qt/6.7.2/mingw_64/include/QtCore/6.7.2",
@@ -915,148 +915,60 @@
 		"-c",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CondottiereApp_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CondottiereApp_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : 
 	[
-		"C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qrc_CondottiereApp_raw_qml_0.cpp",
-		"C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qrc_configuration.cpp",
-		"C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_Main.cpp",
-		"C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/CondottiereApp_main_qml.cpp",
-		"C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/CondottiereApp_qmlcache_loader.cpp",
-		"C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/condottiereapp_qmltyperegistrations.cpp"
+		"C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qrc_CondottiereApp_raw_qml_0.cpp",
+		"C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qrc_configuration.cpp",
+		"C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_Main.cpp",
+		"C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/CondottiereApp_main_qml.cpp",
+		"C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/CondottiereApp_qmlcache_loader.cpp",
+		"C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/condottiereapp_qmltyperegistrations.cpp"
 	],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 2,
-	"PARSE_CACHE_FILE" : "C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/CondottiereApp_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/CondottiereApp_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "C:/Qt/6.7.2/mingw_64/./bin/moc.exe",
 	"QT_UIC_EXECUTABLE" : "",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 7,
-	"SETTINGS_FILE" : "C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/CondottiereApp_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/CondottiereApp_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/src/card/bishop.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/src/card/card.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/src/card/drummer.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/src/card/heroine.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/src/card/purplecard.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/src/card/scarecrow.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/src/card/season.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/src/card/spring.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/src/card/spy.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/src/card/turncoat.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/src/card/winter.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/src/card/yellowcard.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/src/game.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/src/gameboard.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/src/main.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/src/marker/battlemarker.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/src/marker/favormarker.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/src/marker/marker.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/src/marker/playermarker.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/src/player.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/src/state.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/mnah/Documents/Univercity/Condottiere/src/userinterface.cpp",
-			"MU",
-			null
-		]
+		[ "C:/QtProjects/Condottiere/src/card/bishop.cpp", "MU", null ],
+		[ "C:/QtProjects/Condottiere/src/card/card.cpp", "MU", null ],
+		[ "C:/QtProjects/Condottiere/src/card/drummer.cpp", "MU", null ],
+		[ "C:/QtProjects/Condottiere/src/card/heroine.cpp", "MU", null ],
+		[ "C:/QtProjects/Condottiere/src/card/purplecard.cpp", "MU", null ],
+		[ "C:/QtProjects/Condottiere/src/card/scarecrow.cpp", "MU", null ],
+		[ "C:/QtProjects/Condottiere/src/card/season.cpp", "MU", null ],
+		[ "C:/QtProjects/Condottiere/src/card/spring.cpp", "MU", null ],
+		[ "C:/QtProjects/Condottiere/src/card/spy.cpp", "MU", null ],
+		[ "C:/QtProjects/Condottiere/src/card/turncoat.cpp", "MU", null ],
+		[ "C:/QtProjects/Condottiere/src/card/winter.cpp", "MU", null ],
+		[ "C:/QtProjects/Condottiere/src/card/yellowcard.cpp", "MU", null ],
+		[ "C:/QtProjects/Condottiere/src/game.cpp", "MU", null ],
+		[ "C:/QtProjects/Condottiere/src/gameboard.cpp", "MU", null ],
+		[ "C:/QtProjects/Condottiere/src/main.cpp", "MU", null ],
+		[ "C:/QtProjects/Condottiere/src/marker/battlemarker.cpp", "MU", null ],
+		[ "C:/QtProjects/Condottiere/src/marker/favormarker.cpp", "MU", null ],
+		[ "C:/QtProjects/Condottiere/src/marker/marker.cpp", "MU", null ],
+		[ "C:/QtProjects/Condottiere/src/marker/playermarker.cpp", "MU", null ],
+		[ "C:/QtProjects/Condottiere/src/player.cpp", "MU", null ],
+		[ "C:/QtProjects/Condottiere/src/state.cpp", "MU", null ],
+		[ "C:/QtProjects/Condottiere/src/userinterface.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],
 	"UIC_SKIP" : 
 	[
-		"C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qrc_CondottiereApp_raw_qml_0.cpp",
-		"C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qrc_configuration.cpp",
-		"C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_Main.cpp",
-		"C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/CondottiereApp_main_qml.cpp",
-		"C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/CondottiereApp_qmlcache_loader.cpp",
-		"C:/Users/mnah/Documents/Univercity/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/condottiereapp_qmltyperegistrations.cpp"
+		"C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qrc_CondottiereApp_raw_qml_0.cpp",
+		"C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qrc_configuration.cpp",
+		"C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_Main.cpp",
+		"C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/CondottiereApp_main_qml.cpp",
+		"C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/CondottiereApp_qmlcache_loader.cpp",
+		"C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/condottiereapp_qmltyperegistrations.cpp"
 	],
 	"UIC_UI_FILES" : [],
 	"USE_BETTER_GRAPH" : false,

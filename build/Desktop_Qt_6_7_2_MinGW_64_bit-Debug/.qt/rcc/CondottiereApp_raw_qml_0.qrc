@@ -1,6 +1,6 @@
 <RCC>
   <qresource prefix="/qt/qml/Main/">
-    <file alias="main.qml">C:/Users/mnah/Documents/Univercity/Condottiere/main.qml</file>
+    <file alias="main.qml">C:/QtProjects/Condottiere/main.qml</file>
   </qresource>
 </RCC>
 

@@ -69,8 +69,8 @@ endif()
 
 qt_add_executable(CondottiereApp
     src/main.cpp
-    ${SOURCE_FILES}
     ${HEADER_FILES}
+    ${SOURCE_FILES}
 )
 
 qt_add_resources(CondottiereApp "configuration"
