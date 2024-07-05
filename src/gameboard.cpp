@@ -8,12 +8,16 @@
 #include <fstream>
 #include <sstream>
 #include <algorithm>
+#include <utility>
 
 GameBoard::GameBoard(std::string filePath) {
     std::ifstream file(filePath);
+    if (!file) {
+        throw std::runtime_error("board file cannot be open");
+    }
     std::string tmp_state_name;
     while(file >> quoted(tmp_state_name)){ // add state to states and adjacent of them
-        states[tmp_state_name] = State(tmp_state_name);
+        states.insert(std::pair<std::string, State>(tmp_state_name, State(tmp_state_name)));
         std::string tmp_adjacency_line; //A line in the file where the adjacent is written
         getline(file, tmp_adjacency_line);// read adjacency line in file
         std::stringstream tmp(tmp_adjacency_line); // for keep the line of adjacency
@@ -65,4 +69,36 @@ std::vector<std::string> GameBoard::get_active_states_name() const{
             active_states_name.push_back(state.first);
     }
     return active_states_name;
+}
+
+bool GameBoard::save(std::string filePath) const{
+    std::ofstream file(filePath, std::ios::binary | std::ios::app);
+    if (!file) {
+        throw std::runtime_error("save file cannot be open in gameboard");
+    }
+
+
+    //save unordered_map states
+    size_t statesSize = states.size();
+    file.write(reinterpret_cast<const char*>(&statesSize), sizeof(size_t));
+    for (auto &&state : states)
+    {
+        std::pair<std::string,State> tmp(state.first, state.second);
+        size_t statesCount = sizeof(tmp);
+        file.write(reinterpret_cast<const char*>(&statesCount), sizeof(size_t));
+        file.write(reinterpret_cast<const char*>(&tmp), statesCount);
+        std::list<std::string> tmp_state_adjacency_list (adjacency.find(tmp.first)->second);
+        
+        size_t state_adjacent_count = tmp_state_adjacency_list.size();
+        file.write(reinterpret_cast<const char*>(&state_adjacent_count), sizeof(size_t));
+        for (auto &&stateAdjacent : tmp_state_adjacency_list)
+        {
+            size_t size = stateAdjacent.capacity();
+            file.write(reinterpret_cast<const char*>(&size), sizeof(size_t));
+            file.write(reinterpret_cast<const char*>(&stateAdjacent), size);
+        }
+    }
+
+    file.close();
+    return true;
 }
