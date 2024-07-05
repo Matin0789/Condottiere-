@@ -759,11 +759,11 @@
 			"id" : "QuickStudioEffects_tooling::@981cd0cfbc19161bec24"
 		},
 		{
-			"id" : "QuickStudioEffects_autogen_timestamp_deps::@981cd0cfbc19161bec24"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "QuickStudioEffects_autogen::@981cd0cfbc19161bec24"
+		},
+		{
+			"id" : "QuickStudioEffects_autogen_timestamp_deps::@981cd0cfbc19161bec24"
 		}
 	],
 	"id" : "QuickStudioEffects::@981cd0cfbc19161bec24",

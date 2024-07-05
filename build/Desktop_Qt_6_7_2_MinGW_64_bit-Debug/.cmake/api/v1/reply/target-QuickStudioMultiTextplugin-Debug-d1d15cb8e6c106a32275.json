@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "qml/content/libcontentplugin.a"
+			"path" : "qml/QtQuick/Studio/MultiText/libQuickStudioMultiTextplugin.a"
 		}
 	],
 	"backtrace" : 5,
@@ -24,7 +24,7 @@
 		[
 			"C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
 			"C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
-			"content/CMakeLists.txt"
+			"build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-src/src/imports/multitext/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -34,7 +34,7 @@
 			{
 				"command" : 4,
 				"file" : 2,
-				"line" : 5,
+				"line" : 2,
 				"parent" : 0
 			},
 			{
@@ -169,7 +169,7 @@
 			[
 				{
 					"backtrace" : 0,
-					"path" : "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/content/contentplugin_autogen/include"
+					"path" : "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/multitext/QuickStudioMultiTextplugin_autogen/include"
 				},
 				{
 					"backtrace" : 7,
@@ -219,31 +219,31 @@
 	[
 		{
 			"backtrace" : 6,
-			"id" : "content::@73a38b9e525c9c2ae262"
+			"id" : "QuickStudioMultiText::@a7b8d61f767e497853c2"
 		},
 		{
 			"backtrace" : 6,
-			"id" : "content_resources_1::@73a38b9e525c9c2ae262"
+			"id" : "QuickStudioMultiText_resources_1::@a7b8d61f767e497853c2"
 		},
 		{
 			"backtrace" : 6,
-			"id" : "content_resources_2::@73a38b9e525c9c2ae262"
-		},
-		{
-			"id" : "contentplugin_autogen_timestamp_deps::@73a38b9e525c9c2ae262"
+			"id" : "QuickStudioMultiText_resources_2::@a7b8d61f767e497853c2"
 		},
 		{
 			"backtrace" : 0,
-			"id" : "contentplugin_autogen::@73a38b9e525c9c2ae262"
+			"id" : "QuickStudioMultiTextplugin_autogen::@a7b8d61f767e497853c2"
+		},
+		{
+			"id" : "QuickStudioMultiTextplugin_autogen_timestamp_deps::@a7b8d61f767e497853c2"
 		}
 	],
-	"id" : "contentplugin::@73a38b9e525c9c2ae262",
-	"name" : "contentplugin",
-	"nameOnDisk" : "libcontentplugin.a",
+	"id" : "QuickStudioMultiTextplugin::@a7b8d61f767e497853c2",
+	"name" : "QuickStudioMultiTextplugin",
+	"nameOnDisk" : "libQuickStudioMultiTextplugin.a",
 	"paths" : 
 	{
-		"build" : "content",
-		"source" : "content"
+		"build" : "_deps/ds-build/src/imports/multitext",
+		"source" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-src/src/imports/multitext"
 	},
 	"sourceGroups" : 
 	[
@@ -276,26 +276,26 @@
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/content/contentplugin_autogen/mocs_compilation.cpp",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/multitext/QuickStudioMultiTextplugin_autogen/mocs_compilation.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 10,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/content/contentplugin_contentPlugin.cpp",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/multitext/QuickStudioMultiTextplugin_QtQuick_Studio_MultiTextPlugin.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/content/contentplugin_autogen/timestamp",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/multitext/QuickStudioMultiTextplugin_autogen/timestamp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/content/contentplugin_autogen/timestamp.rule",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/multitext/QuickStudioMultiTextplugin_autogen/timestamp.rule",
 			"sourceGroupIndex" : 2
 		}
 	],

@@ -19,8 +19,8 @@
 			"qmlmodules",
 			"CMakeLists.txt",
 			"build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-src/src/imports/logichelper/CMakeLists.txt",
-			"build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-src/src/imports/application/CMakeLists.txt",
 			"build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-src/src/imports/utils/CMakeLists.txt",
+			"build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-src/src/imports/application/CMakeLists.txt",
 			"content/CMakeLists.txt",
 			"imports/Condottiere/CMakeLists.txt"
 		],
@@ -159,7 +159,7 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 2306,
+				"line" : 2553,
 				"parent" : 23
 			},
 			{
@@ -192,7 +192,7 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 2553,
+				"line" : 2306,
 				"parent" : 29
 			},
 			{
@@ -291,11 +291,11 @@
 		},
 		{
 			"backtrace" : 26,
-			"id" : "QuickStudioApplication_qmllint_module::@a324641c06033e250fc2"
+			"id" : "QuickStudioUtils_qmllint_module::@4bd307a73a027a216fab"
 		},
 		{
 			"backtrace" : 32,
-			"id" : "QuickStudioUtils_qmllint_module::@4bd307a73a027a216fab"
+			"id" : "QuickStudioApplication_qmllint_module::@a324641c06033e250fc2"
 		},
 		{
 			"backtrace" : 38,

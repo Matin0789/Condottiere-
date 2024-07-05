@@ -1,11 +1,9 @@
 {
+	"archive" : {},
 	"artifacts" : 
 	[
 		{
-			"path" : "_deps/ds-build/src/imports/effects_qt6/CMakeFiles/QuickStudioEffectsplugin_init.dir/./QuickStudioEffectsplugin_init_autogen/mocs_compilation.cpp.obj"
-		},
-		{
-			"path" : "_deps/ds-build/src/imports/effects_qt6/CMakeFiles/QuickStudioEffectsplugin_init.dir/./QuickStudioEffectsplugin_init.cpp.obj"
+			"path" : "qml/QtQuick/Studio/Effects/libQuickStudioEffectsplugin.a"
 		}
 	],
 	"backtrace" : 5,
@@ -15,47 +13,46 @@
 		[
 			"add_library",
 			"_qt_internal_add_library",
-			"qt6_add_library",
-			"__qt_internal_add_static_plugin_init_object_library",
+			"qt6_add_plugin",
+			"qt6_add_qml_plugin",
 			"qt6_add_qml_module",
-			"set_property",
-			"_qt_internal_copy_dependency_properties",
-			"__qt_internal_propagate_object_library"
+			"target_link_libraries",
+			"target_compile_definitions",
+			"target_sources"
 		],
 		"files" : 
 		[
 			"C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
-			"C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6/QtPublicPluginHelpers.cmake",
 			"C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
 			"build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-src/src/imports/effects_qt6/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
 			{
-				"file" : 3
+				"file" : 2
 			},
 			{
 				"command" : 4,
-				"file" : 3,
+				"file" : 2,
 				"line" : 2,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
-				"file" : 2,
-				"line" : 664,
+				"file" : 1,
+				"line" : 625,
 				"parent" : 1
 			},
 			{
 				"command" : 2,
 				"file" : 1,
-				"line" : 258,
+				"line" : 2043,
 				"parent" : 2
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 2564,
+				"line" : 2451,
 				"parent" : 3
 			},
 			{
@@ -65,28 +62,34 @@
 				"parent" : 4
 			},
 			{
-				"command" : 7,
-				"file" : 2,
-				"line" : 668,
-				"parent" : 1
+				"command" : 5,
+				"file" : 1,
+				"line" : 2248,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 2244,
+				"parent" : 2
 			},
 			{
 				"command" : 6,
 				"file" : 0,
-				"line" : 1893,
-				"parent" : 6
+				"line" : 2518,
+				"parent" : 3
 			},
 			{
-				"command" : 5,
+				"command" : 6,
 				"file" : 0,
-				"line" : 2765,
-				"parent" : 7
+				"line" : 2456,
+				"parent" : 3
 			},
 			{
-				"command" : 5,
-				"file" : 0,
-				"line" : 2765,
-				"parent" : 7
+				"command" : 7,
+				"file" : 1,
+				"line" : 2237,
+				"parent" : 2
 			}
 		]
 	},
@@ -102,11 +105,11 @@
 			"defines" : 
 			[
 				{
-					"backtrace" : 8,
+					"backtrace" : 7,
 					"define" : "MINGW_HAS_SECURE_API=1"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 7,
 					"define" : "QT_CORE_LIB"
 				},
 				{
@@ -114,7 +117,7 @@
 					"define" : "QT_DEPRECATED_WARNINGS"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 7,
 					"define" : "QT_NETWORK_LIB"
 				},
 				{
@@ -122,43 +125,43 @@
 					"define" : "QT_PLUGIN"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 7,
 					"define" : "QT_QMLBUILTINS_LIB"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 7,
 					"define" : "QT_QMLINTEGRATION_LIB"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 7,
 					"define" : "QT_QML_LIB"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 9,
 					"define" : "QT_STATICPLUGIN"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 7,
 					"define" : "UNICODE"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 7,
 					"define" : "WIN32"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 7,
 					"define" : "WIN64"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 7,
 					"define" : "_ENABLE_EXTENDED_ALIGNED_STORAGE"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 7,
 					"define" : "_UNICODE"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 7,
 					"define" : "_WIN64"
 				}
 			],
@@ -166,42 +169,42 @@
 			[
 				{
 					"backtrace" : 0,
-					"path" : "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/effects_qt6/QuickStudioEffectsplugin_init_autogen/include"
-				},
-				{
-					"backtrace" : 9,
 					"path" : "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/effects_qt6/QuickStudioEffectsplugin_autogen/include"
 				},
 				{
-					"backtrace" : 9,
+					"backtrace" : 7,
+					"isSystem" : true,
 					"path" : "C:/Qt/6.7.2/mingw_64/include/QtQml"
 				},
 				{
-					"backtrace" : 9,
-					"path" : "C:/Qt/6.7.2/mingw_64/include/QtQmlIntegration"
-				},
-				{
-					"backtrace" : 9,
-					"path" : "C:/Qt/6.7.2/mingw_64/include/QtQmlBuiltins"
-				},
-				{
-					"backtrace" : 9,
-					"path" : "C:/Qt/6.7.2/mingw_64/include/QtNetwork"
-				},
-				{
-					"backtrace" : 9,
+					"backtrace" : 7,
 					"isSystem" : true,
 					"path" : "C:/Qt/6.7.2/mingw_64/include"
 				},
 				{
-					"backtrace" : 9,
+					"backtrace" : 7,
 					"isSystem" : true,
 					"path" : "C:/Qt/6.7.2/mingw_64/include/QtCore"
 				},
 				{
-					"backtrace" : 9,
+					"backtrace" : 7,
 					"isSystem" : true,
 					"path" : "C:/Qt/6.7.2/mingw_64/mkspecs/win32-g++"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.7.2/mingw_64/include/QtQmlIntegration"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.7.2/mingw_64/include/QtQmlBuiltins"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.7.2/mingw_64/include/QtNetwork"
 				}
 			],
 			"language" : "CXX",
@@ -215,15 +218,28 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 0,
-			"id" : "QuickStudioEffectsplugin_init_autogen::@981cd0cfbc19161bec24"
+			"backtrace" : 6,
+			"id" : "QuickStudioEffects::@981cd0cfbc19161bec24"
 		},
 		{
-			"id" : "QuickStudioEffectsplugin_init_autogen_timestamp_deps::@981cd0cfbc19161bec24"
+			"backtrace" : 6,
+			"id" : "QuickStudioEffects_resources_2::@981cd0cfbc19161bec24"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "QuickStudioEffects_resources_1::@981cd0cfbc19161bec24"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "QuickStudioEffectsplugin_autogen::@981cd0cfbc19161bec24"
+		},
+		{
+			"id" : "QuickStudioEffectsplugin_autogen_timestamp_deps::@981cd0cfbc19161bec24"
 		}
 	],
-	"id" : "QuickStudioEffectsplugin_init::@981cd0cfbc19161bec24",
-	"name" : "QuickStudioEffectsplugin_init",
+	"id" : "QuickStudioEffectsplugin::@981cd0cfbc19161bec24",
+	"name" : "QuickStudioEffectsplugin",
+	"nameOnDisk" : "libQuickStudioEffectsplugin.a",
 	"paths" : 
 	{
 		"build" : "_deps/ds-build/src/imports/effects_qt6",
@@ -260,28 +276,28 @@
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/effects_qt6/QuickStudioEffectsplugin_init_autogen/mocs_compilation.cpp",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/effects_qt6/QuickStudioEffectsplugin_autogen/mocs_compilation.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 5,
+			"backtrace" : 10,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/effects_qt6/QuickStudioEffectsplugin_init.cpp",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/effects_qt6/QuickStudioEffectsplugin_QtQuick_Studio_EffectsPlugin.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/effects_qt6/QuickStudioEffectsplugin_init_autogen/timestamp",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/effects_qt6/QuickStudioEffectsplugin_autogen/timestamp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/effects_qt6/QuickStudioEffectsplugin_init_autogen/timestamp.rule",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/effects_qt6/QuickStudioEffectsplugin_autogen/timestamp.rule",
 			"sourceGroupIndex" : 2
 		}
 	],
-	"type" : "OBJECT_LIBRARY"
+	"type" : "STATIC_LIBRARY"
 }

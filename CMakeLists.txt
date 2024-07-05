@@ -10,57 +10,57 @@ set(CMAKE_AUTOMOC ON)
 find_package(Qt6 6.2 REQUIRED COMPONENTS Core Gui Qml Quick)
 
 set(SOURCE_FILES
-    ${PROJECT_SOURCE_DIR}/src/card/card.cpp
-    ${PROJECT_SOURCE_DIR}/src/card/bishop.cpp
-    ${PROJECT_SOURCE_DIR}/src/card/drummer.cpp
-    ${PROJECT_SOURCE_DIR}/src/card/heroine.cpp
-    ${PROJECT_SOURCE_DIR}/src/card/purplecard.cpp
-    ${PROJECT_SOURCE_DIR}/src/card/scarecrow.cpp
-    ${PROJECT_SOURCE_DIR}/src/card/season.cpp
-    ${PROJECT_SOURCE_DIR}/src/card/spring.cpp
-    ${PROJECT_SOURCE_DIR}/src/card/spy.cpp
-    ${PROJECT_SOURCE_DIR}/src/card/turncoat.cpp
-    ${PROJECT_SOURCE_DIR}/src/card/winter.cpp
-    ${PROJECT_SOURCE_DIR}/src/card/yellowcard.cpp
+    src/card/card.cpp
+    src/card/bishop.cpp
+    src/card/drummer.cpp
+    src/card/heroine.cpp
+    src/card/purplecard.cpp
+    src/card/scarecrow.cpp
+    src/card/season.cpp
+    src/card/spring.cpp
+    src/card/spy.cpp
+    src/card/turncoat.cpp
+    src/card/winter.cpp
+    src/card/yellowcard.cpp
 
-    ${PROJECT_SOURCE_DIR}/src/marker/battlemarker.cpp
-    ${PROJECT_SOURCE_DIR}/src/marker/favormarker.cpp
-    ${PROJECT_SOURCE_DIR}/src/marker/marker.cpp
-    ${PROJECT_SOURCE_DIR}/src/marker/playermarker.cpp
+    src/marker/battlemarker.cpp
+    src/marker/favormarker.cpp
+    src/marker/marker.cpp
+    src/marker/playermarker.cpp
 
-    ${PROJECT_SOURCE_DIR}/src/game.cpp
-    ${PROJECT_SOURCE_DIR}/src/gameboard.cpp
-    ${PROJECT_SOURCE_DIR}/src/player.cpp
-    ${PROJECT_SOURCE_DIR}/src/state.cpp
-    ${PROJECT_SOURCE_DIR}/src/userinterface.cpp
+    src/game.cpp
+    src/gameboard.cpp
+    src/player.cpp
+    src/state.cpp
+    src/userinterface.cpp
 )
 
 set(HEADER_FILES
 
-    ${PROJECT_SOURCE_DIR}/inc/card/card.h
-    ${PROJECT_SOURCE_DIR}/inc/card/bishop.h
-    ${PROJECT_SOURCE_DIR}/inc/card/drummer.h
-    ${PROJECT_SOURCE_DIR}/inc/card/heroine.h
-    ${PROJECT_SOURCE_DIR}/inc/card/purplecard.h
-    ${PROJECT_SOURCE_DIR}/inc/card/scarecrow.h
-    ${PROJECT_SOURCE_DIR}/inc/card/season.h
-    ${PROJECT_SOURCE_DIR}/inc/card/spring.h
-    ${PROJECT_SOURCE_DIR}/inc/card/winter.h
-    ${PROJECT_SOURCE_DIR}/inc/card/spy.h
-    ${PROJECT_SOURCE_DIR}/inc/card/turncoat.h
-    ${PROJECT_SOURCE_DIR}/inc/card/yellowcard.h
+    inc/card/card.h
+    inc/card/bishop.h
+    inc/card/drummer.h
+    inc/card/heroine.h
+    inc/card/purplecard.h
+    inc/card/scarecrow.h
+    inc/card/season.h
+    inc/card/spring.h
+    inc/card/winter.h
+    inc/card/spy.h
+    inc/card/turncoat.h
+    inc/card/yellowcard.h
 
-    ${PROJECT_SOURCE_DIR}/inc/marker/marker.h
-    ${PROJECT_SOURCE_DIR}/inc/marker/battlemarker.h
-    ${PROJECT_SOURCE_DIR}/inc/marker/favormarker.h
-    ${PROJECT_SOURCE_DIR}/inc/marker/playermarker.h
+    inc/marker/marker.h
+    inc/marker/battlemarker.h
+    inc/marker/favormarker.h
+    inc/marker/playermarker.h
 
-    ${PROJECT_SOURCE_DIR}/inc/enumcolor.h
-    ${PROJECT_SOURCE_DIR}/inc/game.h
-    ${PROJECT_SOURCE_DIR}/inc/gameboard.h
-    ${PROJECT_SOURCE_DIR}/inc/player.h
-    ${PROJECT_SOURCE_DIR}/inc/state.h
-    ${PROJECT_SOURCE_DIR}/inc/userinterface.h
+    inc/enumcolor.h
+    inc/game.h
+    inc/gameboard.h
+    inc/player.h
+    inc/state.h
+    inc/userinterface.h
 )
 
 if (Qt6_VERSION VERSION_GREATER_EQUAL 6.3)

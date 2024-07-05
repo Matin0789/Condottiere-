@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "qml/QtQuick/Studio/Effects/libQuickStudioEffectsplugin.a"
+			"path" : "qml/QtQuick/Studio/Utils/libQuickStudioUtilsplugin.a"
 		}
 	],
 	"backtrace" : 5,
@@ -24,7 +24,7 @@
 		[
 			"C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
 			"C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
-			"build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-src/src/imports/effects_qt6/CMakeLists.txt"
+			"build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-src/src/imports/utils/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -34,7 +34,7 @@
 			{
 				"command" : 4,
 				"file" : 2,
-				"line" : 2,
+				"line" : 6,
 				"parent" : 0
 			},
 			{
@@ -169,7 +169,7 @@
 			[
 				{
 					"backtrace" : 0,
-					"path" : "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/effects_qt6/QuickStudioEffectsplugin_autogen/include"
+					"path" : "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/utils/QuickStudioUtilsplugin_autogen/include"
 				},
 				{
 					"backtrace" : 7,
@@ -219,31 +219,31 @@
 	[
 		{
 			"backtrace" : 6,
-			"id" : "QuickStudioEffects::@981cd0cfbc19161bec24"
+			"id" : "QuickStudioUtils_resources_2::@4bd307a73a027a216fab"
 		},
 		{
 			"backtrace" : 6,
-			"id" : "QuickStudioEffects_resources_1::@981cd0cfbc19161bec24"
+			"id" : "QuickStudioUtils_resources_1::@4bd307a73a027a216fab"
 		},
 		{
 			"backtrace" : 6,
-			"id" : "QuickStudioEffects_resources_2::@981cd0cfbc19161bec24"
+			"id" : "QuickStudioUtils::@4bd307a73a027a216fab"
+		},
+		{
+			"id" : "QuickStudioUtilsplugin_autogen_timestamp_deps::@4bd307a73a027a216fab"
 		},
 		{
 			"backtrace" : 0,
-			"id" : "QuickStudioEffectsplugin_autogen::@981cd0cfbc19161bec24"
-		},
-		{
-			"id" : "QuickStudioEffectsplugin_autogen_timestamp_deps::@981cd0cfbc19161bec24"
+			"id" : "QuickStudioUtilsplugin_autogen::@4bd307a73a027a216fab"
 		}
 	],
-	"id" : "QuickStudioEffectsplugin::@981cd0cfbc19161bec24",
-	"name" : "QuickStudioEffectsplugin",
-	"nameOnDisk" : "libQuickStudioEffectsplugin.a",
+	"id" : "QuickStudioUtilsplugin::@4bd307a73a027a216fab",
+	"name" : "QuickStudioUtilsplugin",
+	"nameOnDisk" : "libQuickStudioUtilsplugin.a",
 	"paths" : 
 	{
-		"build" : "_deps/ds-build/src/imports/effects_qt6",
-		"source" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-src/src/imports/effects_qt6"
+		"build" : "_deps/ds-build/src/imports/utils",
+		"source" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-src/src/imports/utils"
 	},
 	"sourceGroups" : 
 	[
@@ -276,26 +276,26 @@
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/effects_qt6/QuickStudioEffectsplugin_autogen/mocs_compilation.cpp",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/utils/QuickStudioUtilsplugin_autogen/mocs_compilation.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 10,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/effects_qt6/QuickStudioEffectsplugin_QtQuick_Studio_EffectsPlugin.cpp",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/utils/QuickStudioUtilsplugin_QtQuick_Studio_UtilsPlugin.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/effects_qt6/QuickStudioEffectsplugin_autogen/timestamp",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/utils/QuickStudioUtilsplugin_autogen/timestamp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/effects_qt6/QuickStudioEffectsplugin_autogen/timestamp.rule",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/utils/QuickStudioUtilsplugin_autogen/timestamp.rule",
 			"sourceGroupIndex" : 2
 		}
 	],

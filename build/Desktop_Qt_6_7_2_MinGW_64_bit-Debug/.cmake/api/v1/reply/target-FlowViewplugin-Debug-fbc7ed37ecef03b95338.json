@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "qml/QtQuick/Studio/Utils/libQuickStudioUtilsplugin.a"
+			"path" : "qml/FlowView/libFlowViewplugin.a"
 		}
 	],
 	"backtrace" : 5,
@@ -24,7 +24,7 @@
 		[
 			"C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
 			"C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
-			"build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-src/src/imports/utils/CMakeLists.txt"
+			"build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-src/src/imports/flowview/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -169,7 +169,7 @@
 			[
 				{
 					"backtrace" : 0,
-					"path" : "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/utils/QuickStudioUtilsplugin_autogen/include"
+					"path" : "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/FlowViewplugin_autogen/include"
 				},
 				{
 					"backtrace" : 7,
@@ -219,31 +219,27 @@
 	[
 		{
 			"backtrace" : 6,
-			"id" : "QuickStudioUtils_resources_1::@4bd307a73a027a216fab"
+			"id" : "FlowView::@f99fd1e4b9fa497fd232"
 		},
 		{
 			"backtrace" : 6,
-			"id" : "QuickStudioUtils_resources_2::@4bd307a73a027a216fab"
-		},
-		{
-			"backtrace" : 6,
-			"id" : "QuickStudioUtils::@4bd307a73a027a216fab"
+			"id" : "FlowView_resources_1::@f99fd1e4b9fa497fd232"
 		},
 		{
 			"backtrace" : 0,
-			"id" : "QuickStudioUtilsplugin_autogen::@4bd307a73a027a216fab"
+			"id" : "FlowViewplugin_autogen::@f99fd1e4b9fa497fd232"
 		},
 		{
-			"id" : "QuickStudioUtilsplugin_autogen_timestamp_deps::@4bd307a73a027a216fab"
+			"id" : "FlowViewplugin_autogen_timestamp_deps::@f99fd1e4b9fa497fd232"
 		}
 	],
-	"id" : "QuickStudioUtilsplugin::@4bd307a73a027a216fab",
-	"name" : "QuickStudioUtilsplugin",
-	"nameOnDisk" : "libQuickStudioUtilsplugin.a",
+	"id" : "FlowViewplugin::@f99fd1e4b9fa497fd232",
+	"name" : "FlowViewplugin",
+	"nameOnDisk" : "libFlowViewplugin.a",
 	"paths" : 
 	{
-		"build" : "_deps/ds-build/src/imports/utils",
-		"source" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-src/src/imports/utils"
+		"build" : "_deps/ds-build/src/imports/flowview",
+		"source" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-src/src/imports/flowview"
 	},
 	"sourceGroups" : 
 	[
@@ -276,26 +272,26 @@
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/utils/QuickStudioUtilsplugin_autogen/mocs_compilation.cpp",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/FlowViewplugin_autogen/mocs_compilation.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 10,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/utils/QuickStudioUtilsplugin_QtQuick_Studio_UtilsPlugin.cpp",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/FlowViewplugin_FlowViewPlugin.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/utils/QuickStudioUtilsplugin_autogen/timestamp",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/FlowViewplugin_autogen/timestamp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/utils/QuickStudioUtilsplugin_autogen/timestamp.rule",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/flowview/FlowViewplugin_autogen/timestamp.rule",
 			"sourceGroupIndex" : 2
 		}
 	],

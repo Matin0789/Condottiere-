@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "content/CMakeFiles/contentplugin_init.dir/./contentplugin_init_autogen/mocs_compilation.cpp.obj"
+			"path" : "imports/Condottiere/CMakeFiles/Condottiereplugin_init.dir/./Condottiereplugin_init_autogen/mocs_compilation.cpp.obj"
 		},
 		{
-			"path" : "content/CMakeFiles/contentplugin_init.dir/./contentplugin_init.cpp.obj"
+			"path" : "imports/Condottiere/CMakeFiles/Condottiereplugin_init.dir/./Condottiereplugin_init.cpp.obj"
 		}
 	],
 	"backtrace" : 5,
@@ -27,7 +27,7 @@
 			"C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
 			"C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6/QtPublicPluginHelpers.cmake",
 			"C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
-			"content/CMakeLists.txt"
+			"imports/Condottiere/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -37,7 +37,7 @@
 			{
 				"command" : 4,
 				"file" : 3,
-				"line" : 5,
+				"line" : 10,
 				"parent" : 0
 			},
 			{
@@ -166,11 +166,11 @@
 			[
 				{
 					"backtrace" : 0,
-					"path" : "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/content/contentplugin_init_autogen/include"
+					"path" : "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/imports/Condottiere/Condottiereplugin_init_autogen/include"
 				},
 				{
 					"backtrace" : 9,
-					"path" : "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/content/contentplugin_autogen/include"
+					"path" : "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/imports/Condottiere/Condottiereplugin_autogen/include"
 				},
 				{
 					"backtrace" : 9,
@@ -216,18 +216,18 @@
 	[
 		{
 			"backtrace" : 0,
-			"id" : "contentplugin_init_autogen::@73a38b9e525c9c2ae262"
+			"id" : "Condottiereplugin_init_autogen::@e57e0b54ce44d9aad26d"
 		},
 		{
-			"id" : "contentplugin_init_autogen_timestamp_deps::@73a38b9e525c9c2ae262"
+			"id" : "Condottiereplugin_init_autogen_timestamp_deps::@e57e0b54ce44d9aad26d"
 		}
 	],
-	"id" : "contentplugin_init::@73a38b9e525c9c2ae262",
-	"name" : "contentplugin_init",
+	"id" : "Condottiereplugin_init::@e57e0b54ce44d9aad26d",
+	"name" : "Condottiereplugin_init",
 	"paths" : 
 	{
-		"build" : "content",
-		"source" : "content"
+		"build" : "imports/Condottiere",
+		"source" : "imports/Condottiere"
 	},
 	"sourceGroups" : 
 	[
@@ -260,26 +260,26 @@
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/content/contentplugin_init_autogen/mocs_compilation.cpp",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/imports/Condottiere/Condottiereplugin_init_autogen/mocs_compilation.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 5,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/content/contentplugin_init.cpp",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/imports/Condottiere/Condottiereplugin_init.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/content/contentplugin_init_autogen/timestamp",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/imports/Condottiere/Condottiereplugin_init_autogen/timestamp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/content/contentplugin_init_autogen/timestamp.rule",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/imports/Condottiere/Condottiereplugin_init_autogen/timestamp.rule",
 			"sourceGroupIndex" : 2
 		}
 	],

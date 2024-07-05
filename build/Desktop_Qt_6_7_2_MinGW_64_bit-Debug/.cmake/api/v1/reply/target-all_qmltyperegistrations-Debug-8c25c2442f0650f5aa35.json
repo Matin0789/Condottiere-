@@ -23,8 +23,8 @@
 			"build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-src/src/imports/tools/eventsimulator/CMakeLists.txt",
 			"build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-src/src/imports/tools/eventsystem/CMakeLists.txt",
 			"build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-src/src/imports/application/CMakeLists.txt",
-			"content/CMakeLists.txt",
 			"build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-src/src/imports/utils/CMakeLists.txt",
+			"content/CMakeLists.txt",
 			"imports/Condottiere/CMakeLists.txt"
 		],
 		"nodes" : 
@@ -240,7 +240,7 @@
 			{
 				"command" : 2,
 				"file" : 11,
-				"line" : 5,
+				"line" : 6,
 				"parent" : 39
 			},
 			{
@@ -261,7 +261,7 @@
 			{
 				"command" : 2,
 				"file" : 12,
-				"line" : 6,
+				"line" : 5,
 				"parent" : 43
 			},
 			{
@@ -339,11 +339,11 @@
 		},
 		{
 			"backtrace" : 42,
-			"id" : "content_qmltyperegistration::@73a38b9e525c9c2ae262"
+			"id" : "QuickStudioUtils_qmltyperegistration::@4bd307a73a027a216fab"
 		},
 		{
 			"backtrace" : 46,
-			"id" : "QuickStudioUtils_qmltyperegistration::@4bd307a73a027a216fab"
+			"id" : "content_qmltyperegistration::@73a38b9e525c9c2ae262"
 		},
 		{
 			"backtrace" : 50,

@@ -2259,7 +2259,7 @@
 		},
 		{
 			"backtrace" : 194,
-			"id" : "QuickStudioComponents_resources_1::@b8ea75ca72e9d0096cda"
+			"id" : "QuickStudioComponents::@b8ea75ca72e9d0096cda"
 		},
 		{
 			"backtrace" : 194,
@@ -2267,11 +2267,11 @@
 		},
 		{
 			"backtrace" : 194,
-			"id" : "QuickStudioComponents::@b8ea75ca72e9d0096cda"
+			"id" : "QuickStudioComponents_resources_2::@b8ea75ca72e9d0096cda"
 		},
 		{
 			"backtrace" : 194,
-			"id" : "QuickStudioComponentsplugin_init::@b8ea75ca72e9d0096cda"
+			"id" : "QuickStudioComponents_resources_1::@b8ea75ca72e9d0096cda"
 		},
 		{
 			"backtrace" : 194,
@@ -2279,23 +2279,7 @@
 		},
 		{
 			"backtrace" : 194,
-			"id" : "QuickStudioEffects_resources_1::@981cd0cfbc19161bec24"
-		},
-		{
-			"backtrace" : 194,
-			"id" : "QuickStudioEffects_resources_2::@981cd0cfbc19161bec24"
-		},
-		{
-			"backtrace" : 194,
-			"id" : "QuickStudioEffectsplugin::@981cd0cfbc19161bec24"
-		},
-		{
-			"backtrace" : 194,
-			"id" : "QuickStudioEffectsplugin_init::@981cd0cfbc19161bec24"
-		},
-		{
-			"backtrace" : 194,
-			"id" : "QuickStudioComponents_resources_2::@b8ea75ca72e9d0096cda"
+			"id" : "QuickStudioComponentsplugin_init::@b8ea75ca72e9d0096cda"
 		},
 		{
 			"backtrace" : 194,
@@ -2303,15 +2287,19 @@
 		},
 		{
 			"backtrace" : 194,
-			"id" : "FlowViewplugin::@f99fd1e4b9fa497fd232"
+			"id" : "QuickStudioEffects_resources_2::@981cd0cfbc19161bec24"
 		},
 		{
 			"backtrace" : 194,
-			"id" : "FlowView_resources_1::@f99fd1e4b9fa497fd232"
+			"id" : "QuickStudioEffectsplugin_init::@981cd0cfbc19161bec24"
 		},
 		{
 			"backtrace" : 194,
-			"id" : "FlowViewplugin_init::@f99fd1e4b9fa497fd232"
+			"id" : "QuickStudioEffects_resources_1::@981cd0cfbc19161bec24"
+		},
+		{
+			"backtrace" : 194,
+			"id" : "QuickStudioEffectsplugin::@981cd0cfbc19161bec24"
 		},
 		{
 			"backtrace" : 194,
@@ -2319,11 +2307,11 @@
 		},
 		{
 			"backtrace" : 194,
-			"id" : "QuickStudioLogicHelper_resources_1::@a133c4daf6f4e56b78b8"
+			"id" : "FlowViewplugin::@f99fd1e4b9fa497fd232"
 		},
 		{
 			"backtrace" : 194,
-			"id" : "QuickStudioLogicHelperplugin::@a133c4daf6f4e56b78b8"
+			"id" : "QuickStudioLogicHelper_resources_1::@a133c4daf6f4e56b78b8"
 		},
 		{
 			"backtrace" : 194,
@@ -2331,11 +2319,19 @@
 		},
 		{
 			"backtrace" : 194,
-			"id" : "QuickStudioLogicHelperplugin_init::@a133c4daf6f4e56b78b8"
+			"id" : "FlowViewplugin_init::@f99fd1e4b9fa497fd232"
 		},
 		{
 			"backtrace" : 194,
-			"id" : "QuickStudioMultiTextplugin::@a7b8d61f767e497853c2"
+			"id" : "FlowView_resources_1::@f99fd1e4b9fa497fd232"
+		},
+		{
+			"backtrace" : 194,
+			"id" : "QuickStudioLogicHelperplugin::@a133c4daf6f4e56b78b8"
+		},
+		{
+			"backtrace" : 194,
+			"id" : "QuickStudioLogicHelperplugin_init::@a133c4daf6f4e56b78b8"
 		},
 		{
 			"backtrace" : 194,
@@ -2343,19 +2339,19 @@
 		},
 		{
 			"backtrace" : 194,
-			"id" : "QuickStudioMultiText_resources_2::@a7b8d61f767e497853c2"
-		},
-		{
-			"backtrace" : 194,
 			"id" : "QuickStudioMultiText_resources_1::@a7b8d61f767e497853c2"
 		},
 		{
 			"backtrace" : 194,
-			"id" : "QuickStudioMultiTextplugin_init::@a7b8d61f767e497853c2"
+			"id" : "QuickStudioMultiTextplugin::@a7b8d61f767e497853c2"
 		},
 		{
 			"backtrace" : 194,
 			"id" : "QuickStudioEventSimulator_resources_1::@639cba86296065e16922"
+		},
+		{
+			"backtrace" : 194,
+			"id" : "QuickStudioMultiText_resources_2::@a7b8d61f767e497853c2"
 		},
 		{
 			"backtrace" : 194,
@@ -2367,7 +2363,7 @@
 		},
 		{
 			"backtrace" : 194,
-			"id" : "QuickStudioEventSimulatorplugin_init::@639cba86296065e16922"
+			"id" : "QuickStudioMultiTextplugin_init::@a7b8d61f767e497853c2"
 		},
 		{
 			"backtrace" : 194,
@@ -2375,15 +2371,23 @@
 		},
 		{
 			"backtrace" : 194,
-			"id" : "QuickStudioEventSystem::@c931a55b2364f386d7db"
-		},
-		{
-			"backtrace" : 194,
-			"id" : "QuickStudioEventSystem_resources_1::@c931a55b2364f386d7db"
+			"id" : "QuickStudioEventSimulatorplugin_init::@639cba86296065e16922"
 		},
 		{
 			"backtrace" : 194,
 			"id" : "QuickStudioEventSystemplugin::@c931a55b2364f386d7db"
+		},
+		{
+			"backtrace" : 194,
+			"id" : "QuickStudioEventSystem::@c931a55b2364f386d7db"
+		},
+		{
+			"backtrace" : 194,
+			"id" : "QuickStudioEventSystemplugin_init::@c931a55b2364f386d7db"
+		},
+		{
+			"backtrace" : 194,
+			"id" : "QuickStudioEventSystem_resources_1::@c931a55b2364f386d7db"
 		},
 		{
 			"backtrace" : 194,
@@ -2395,23 +2399,15 @@
 		},
 		{
 			"backtrace" : 194,
-			"id" : "QuickStudioApplication_resources_1::@a324641c06033e250fc2"
-		},
-		{
-			"backtrace" : 194,
-			"id" : "QuickStudioApplicationplugin_init::@a324641c06033e250fc2"
-		},
-		{
-			"backtrace" : 194,
-			"id" : "QuickStudioEventSystemplugin_init::@c931a55b2364f386d7db"
-		},
-		{
-			"backtrace" : 194,
 			"id" : "QuickStudioApplicationplugin::@a324641c06033e250fc2"
 		},
 		{
 			"backtrace" : 194,
-			"id" : "QuickStudioUtils_resources_1::@4bd307a73a027a216fab"
+			"id" : "QuickStudioUtilsplugin::@4bd307a73a027a216fab"
+		},
+		{
+			"backtrace" : 194,
+			"id" : "QuickStudioApplication_resources_1::@a324641c06033e250fc2"
 		},
 		{
 			"backtrace" : 194,
@@ -2419,15 +2415,19 @@
 		},
 		{
 			"backtrace" : 194,
-			"id" : "QuickStudioUtils::@4bd307a73a027a216fab"
+			"id" : "QuickStudioApplicationplugin_init::@a324641c06033e250fc2"
+		},
+		{
+			"backtrace" : 194,
+			"id" : "QuickStudioUtils_resources_1::@4bd307a73a027a216fab"
 		},
 		{
 			"backtrace" : 194,
 			"id" : "QuickStudioUtilsplugin_init::@4bd307a73a027a216fab"
 		},
 		{
-			"backtrace" : 197,
-			"id" : "content::@73a38b9e525c9c2ae262"
+			"backtrace" : 194,
+			"id" : "QuickStudioUtils::@4bd307a73a027a216fab"
 		},
 		{
 			"backtrace" : 197,
@@ -2438,12 +2438,8 @@
 			"id" : "contentplugin::@73a38b9e525c9c2ae262"
 		},
 		{
-			"backtrace" : 194,
-			"id" : "QuickStudioUtilsplugin::@4bd307a73a027a216fab"
-		},
-		{
 			"backtrace" : 197,
-			"id" : "contentplugin_init::@73a38b9e525c9c2ae262"
+			"id" : "content::@73a38b9e525c9c2ae262"
 		},
 		{
 			"backtrace" : 197,
@@ -2451,18 +2447,23 @@
 		},
 		{
 			"backtrace" : 197,
+			"id" : "contentplugin_init::@73a38b9e525c9c2ae262"
+		},
+		{
+			"backtrace" : 197,
 			"id" : "Condottiereplugin::@e57e0b54ce44d9aad26d"
 		},
 		{
 			"backtrace" : 197,
-			"id" : "Condottiere::@e57e0b54ce44d9aad26d"
-		},
-		{
-			"id" : "CondottiereApp_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"id" : "Condottiereplugin_init::@e57e0b54ce44d9aad26d"
 		},
 		{
 			"backtrace" : 197,
 			"id" : "Condottiere_resources_1::@e57e0b54ce44d9aad26d"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "CondottiereApp_autogen::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 197,
@@ -2470,11 +2471,10 @@
 		},
 		{
 			"backtrace" : 197,
-			"id" : "Condottiereplugin_init::@e57e0b54ce44d9aad26d"
+			"id" : "Condottiere::@e57e0b54ce44d9aad26d"
 		},
 		{
-			"backtrace" : 0,
-			"id" : "CondottiereApp_autogen::@6890427a1f51a3e7e1df"
+			"id" : "CondottiereApp_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "CondottiereApp::@6890427a1f51a3e7e1df",

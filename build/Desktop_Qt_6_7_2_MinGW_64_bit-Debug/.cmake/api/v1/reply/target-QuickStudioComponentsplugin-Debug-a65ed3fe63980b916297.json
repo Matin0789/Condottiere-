@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "qml/QtQuick/Studio/Application/libQuickStudioApplicationplugin.a"
+			"path" : "qml/QtQuick/Studio/Components/libQuickStudioComponentsplugin.a"
 		}
 	],
 	"backtrace" : 5,
@@ -24,7 +24,7 @@
 		[
 			"C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
 			"C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
-			"build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-src/src/imports/application/CMakeLists.txt"
+			"build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-src/src/imports/components/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -34,7 +34,7 @@
 			{
 				"command" : 4,
 				"file" : 2,
-				"line" : 6,
+				"line" : 2,
 				"parent" : 0
 			},
 			{
@@ -169,7 +169,7 @@
 			[
 				{
 					"backtrace" : 0,
-					"path" : "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/application/QuickStudioApplicationplugin_autogen/include"
+					"path" : "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/components/QuickStudioComponentsplugin_autogen/include"
 				},
 				{
 					"backtrace" : 7,
@@ -219,27 +219,31 @@
 	[
 		{
 			"backtrace" : 6,
-			"id" : "QuickStudioApplication::@a324641c06033e250fc2"
+			"id" : "QuickStudioComponents::@b8ea75ca72e9d0096cda"
 		},
 		{
 			"backtrace" : 6,
-			"id" : "QuickStudioApplication_resources_1::@a324641c06033e250fc2"
+			"id" : "QuickStudioComponents_resources_2::@b8ea75ca72e9d0096cda"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "QuickStudioComponents_resources_1::@b8ea75ca72e9d0096cda"
+		},
+		{
+			"id" : "QuickStudioComponentsplugin_autogen_timestamp_deps::@b8ea75ca72e9d0096cda"
 		},
 		{
 			"backtrace" : 0,
-			"id" : "QuickStudioApplicationplugin_autogen::@a324641c06033e250fc2"
-		},
-		{
-			"id" : "QuickStudioApplicationplugin_autogen_timestamp_deps::@a324641c06033e250fc2"
+			"id" : "QuickStudioComponentsplugin_autogen::@b8ea75ca72e9d0096cda"
 		}
 	],
-	"id" : "QuickStudioApplicationplugin::@a324641c06033e250fc2",
-	"name" : "QuickStudioApplicationplugin",
-	"nameOnDisk" : "libQuickStudioApplicationplugin.a",
+	"id" : "QuickStudioComponentsplugin::@b8ea75ca72e9d0096cda",
+	"name" : "QuickStudioComponentsplugin",
+	"nameOnDisk" : "libQuickStudioComponentsplugin.a",
 	"paths" : 
 	{
-		"build" : "_deps/ds-build/src/imports/application",
-		"source" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-src/src/imports/application"
+		"build" : "_deps/ds-build/src/imports/components",
+		"source" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-src/src/imports/components"
 	},
 	"sourceGroups" : 
 	[
@@ -272,26 +276,26 @@
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/application/QuickStudioApplicationplugin_autogen/mocs_compilation.cpp",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/components/QuickStudioComponentsplugin_autogen/mocs_compilation.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 10,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/application/QuickStudioApplicationplugin_QtQuick_Studio_ApplicationPlugin.cpp",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/components/QuickStudioComponentsplugin_QtQuick_Studio_ComponentsPlugin.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/application/QuickStudioApplicationplugin_autogen/timestamp",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/components/QuickStudioComponentsplugin_autogen/timestamp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/application/QuickStudioApplicationplugin_autogen/timestamp.rule",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/components/QuickStudioComponentsplugin_autogen/timestamp.rule",
 			"sourceGroupIndex" : 2
 		}
 	],

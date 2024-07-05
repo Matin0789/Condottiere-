@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "qml/QtQuick/Studio/Components/libQuickStudioComponentsplugin.a"
+			"path" : "qml/Condottiere/libCondottiereplugin.a"
 		}
 	],
 	"backtrace" : 5,
@@ -24,7 +24,7 @@
 		[
 			"C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
 			"C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
-			"build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-src/src/imports/components/CMakeLists.txt"
+			"imports/Condottiere/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -34,7 +34,7 @@
 			{
 				"command" : 4,
 				"file" : 2,
-				"line" : 2,
+				"line" : 10,
 				"parent" : 0
 			},
 			{
@@ -169,7 +169,7 @@
 			[
 				{
 					"backtrace" : 0,
-					"path" : "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/components/QuickStudioComponentsplugin_autogen/include"
+					"path" : "C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/imports/Condottiere/Condottiereplugin_autogen/include"
 				},
 				{
 					"backtrace" : 7,
@@ -219,31 +219,31 @@
 	[
 		{
 			"backtrace" : 6,
-			"id" : "QuickStudioComponents_resources_1::@b8ea75ca72e9d0096cda"
+			"id" : "Condottiere_resources_1::@e57e0b54ce44d9aad26d"
 		},
 		{
 			"backtrace" : 6,
-			"id" : "QuickStudioComponents::@b8ea75ca72e9d0096cda"
+			"id" : "Condottiere_resources_2::@e57e0b54ce44d9aad26d"
 		},
 		{
 			"backtrace" : 6,
-			"id" : "QuickStudioComponents_resources_2::@b8ea75ca72e9d0096cda"
+			"id" : "Condottiere::@e57e0b54ce44d9aad26d"
 		},
 		{
-			"id" : "QuickStudioComponentsplugin_autogen_timestamp_deps::@b8ea75ca72e9d0096cda"
+			"id" : "Condottiereplugin_autogen_timestamp_deps::@e57e0b54ce44d9aad26d"
 		},
 		{
 			"backtrace" : 0,
-			"id" : "QuickStudioComponentsplugin_autogen::@b8ea75ca72e9d0096cda"
+			"id" : "Condottiereplugin_autogen::@e57e0b54ce44d9aad26d"
 		}
 	],
-	"id" : "QuickStudioComponentsplugin::@b8ea75ca72e9d0096cda",
-	"name" : "QuickStudioComponentsplugin",
-	"nameOnDisk" : "libQuickStudioComponentsplugin.a",
+	"id" : "Condottiereplugin::@e57e0b54ce44d9aad26d",
+	"name" : "Condottiereplugin",
+	"nameOnDisk" : "libCondottiereplugin.a",
 	"paths" : 
 	{
-		"build" : "_deps/ds-build/src/imports/components",
-		"source" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-src/src/imports/components"
+		"build" : "imports/Condottiere",
+		"source" : "imports/Condottiere"
 	},
 	"sourceGroups" : 
 	[
@@ -276,26 +276,26 @@
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/components/QuickStudioComponentsplugin_autogen/mocs_compilation.cpp",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/imports/Condottiere/Condottiereplugin_autogen/mocs_compilation.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 10,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/components/QuickStudioComponentsplugin_QtQuick_Studio_ComponentsPlugin.cpp",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/imports/Condottiere/Condottiereplugin_CondottierePlugin.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/components/QuickStudioComponentsplugin_autogen/timestamp",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/imports/Condottiere/Condottiereplugin_autogen/timestamp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/ds-build/src/imports/components/QuickStudioComponentsplugin_autogen/timestamp.rule",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/imports/Condottiere/Condottiereplugin_autogen/timestamp.rule",
 			"sourceGroupIndex" : 2
 		}
 	],
