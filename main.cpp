@@ -1,19 +1,11 @@
 #include "game.h"
 #include "userinterface.h"
 
-#include <iostream>
+using namespace std;
 
-int main()
-{
-    try
-    {
-        UserInterface ui;
-        Game game(ui);
-        game.play();
-    }
-    catch(const std::exception& e)
-    {
-        std::cerr << e.what() << '\n';
-    }
-    return 0;
+int main(){
+	UserInterface interface;  // set object
+	Game game(interface);  //relationship
+	game.play();  //start game 
+	return 0;
 }

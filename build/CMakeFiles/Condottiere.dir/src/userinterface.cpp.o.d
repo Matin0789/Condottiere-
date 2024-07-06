@@ -148,36 +148,46 @@ CMakeFiles/Condottiere.dir/src/userinterface.cpp.o: \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/userinterface.h \
- /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
+ /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/utility \
+ /usr/include/c++/11/bits/stl_relops.h /usr/include/c++/11/algorithm \
+ /usr/include/c++/11/bits/stl_algo.h \
+ /usr/include/c++/11/bits/algorithmfwd.h \
+ /usr/include/c++/11/bits/stl_heap.h \
+ /usr/include/c++/11/bits/stl_tempbuf.h \
+ /usr/include/c++/11/bits/uniform_int_dist.h \
+ /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/11/functional /usr/include/c++/11/tuple \
+ /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
+ /usr/include/c++/11/bits/invoke.h /usr/include/c++/11/bits/refwrap.h \
+ /usr/include/c++/11/bits/std_function.h \
+ /usr/include/c++/11/unordered_map \
+ /usr/include/c++/11/ext/aligned_buffer.h \
+ /usr/include/c++/11/bits/hashtable.h \
+ /usr/include/c++/11/bits/hashtable_policy.h \
+ /usr/include/c++/11/bits/enable_special_members.h \
+ /usr/include/c++/11/bits/node_handle.h \
+ /usr/include/c++/11/bits/unordered_map.h \
+ /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/vector \
+ /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/cstddef \
+ /usr/include/c++/11/bits/vector.tcc \
+ /usr/include/c++/11/pstl/execution_defs.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/userinterface.h \
+ /usr/include/c++/11/cstddef \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker/battlemarker.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker/marker.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/enumcolor.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/state.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/player.h \
- /usr/include/c++/11/array /usr/include/c++/11/utility \
- /usr/include/c++/11/bits/stl_relops.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/card.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/state.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker/playermarker.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/enumcolor.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/game.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/gameboard.h \
- /usr/include/c++/11/unordered_map \
- /usr/include/c++/11/ext/aligned_buffer.h \
- /usr/include/c++/11/bits/hashtable.h \
- /usr/include/c++/11/bits/hashtable_policy.h /usr/include/c++/11/tuple \
- /usr/include/c++/11/bits/uses_allocator.h \
- /usr/include/c++/11/bits/invoke.h \
- /usr/include/c++/11/bits/enable_special_members.h \
- /usr/include/c++/11/bits/node_handle.h \
- /usr/include/c++/11/bits/unordered_map.h \
- /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/map \
- /usr/include/c++/11/bits/stl_tree.h /usr/include/c++/11/bits/stl_map.h \
+ /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
+ /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h /usr/include/c++/11/list \
  /usr/include/c++/11/bits/stl_list.h \
  /usr/include/c++/11/bits/allocated_ptr.h \

@@ -29,12 +29,13 @@ class Game {
 public:
 	size_t compareAge();
     Game(UserInterface&);
+	~Game();
 	static std::string getHelp();
     void play();
-	static bool check_number_of_player(int);
+	static bool check_number_of_player(std::string);
 	void set_battleground(const Player&);
-	bool save(); // (save file path)
-	bool load();	// (save file path)
+	bool save(std::string) const; 	// (save file path)
+	bool load(std::string);	// (save file path)
 private:
 	//private methods
 	size_t find_war_winner();
@@ -45,30 +46,15 @@ private:
 	int war(int);
 	//private atributes
 	static std::string help;
-    UserInterface &ui;
-    //
-	GameBoard gameBoard;
+    //data
 	BattleMarker battleMarker;
 	FavorMarker favorMarker;
-	std::vector<Player> players;
     std::vector<const Card*> cards;
     const Card* season;
-    // Cards
-	const std::vector<YellowCard> one_point_yellow_card;
-	const std::vector<YellowCard> two_point_yellow_card;
-	const std::vector<YellowCard> three_point_yellow_card;
-	const std::vector<YellowCard> four_point_yellow_card;
-	const std::vector<YellowCard> five_point_yellow_card;
-	const std::vector<YellowCard> six_point_yellow_card;
-	const std::vector<YellowCard> ten_point_yellow_card;
-	const std::vector<Bishop> bishop;
-	const std::vector<Turncoat> turncoat;
-    const std::vector<Heroine> heroine;
-    const std::vector<Spring> spring;
-    const std::vector<Winter> winter;
-    const std::vector<Scarecrow> scarecrow;
-    const std::vector<Drummer> drummer;
-	const std::vector<Spy> spy;
+	GameBoard gameBoard;
+	std::vector<Player> players;
+    UserInterface &ui;
+	//
 };
 
 #endif // GAME_H

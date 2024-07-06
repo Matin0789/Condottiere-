@@ -71,7 +71,7 @@ std::vector<std::string> GameBoard::get_active_states_name() const{
     return active_states_name;
 }
 
-bool GameBoard::save(std::string filePath) const{
+/*bool GameBoard::save(std::string filePath) const{
     std::ofstream file(filePath, std::ios::binary | std::ios::app);
     if (!file) {
         throw std::runtime_error("save file cannot be open in gameboard");
@@ -101,4 +101,4 @@ bool GameBoard::save(std::string filePath) const{
 
     file.close();
     return true;
-}
+}*/

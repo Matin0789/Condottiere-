@@ -15,6 +15,8 @@ public:
     void setState(State*);
     State& getState() const;
     bool is_set() const;
+    bool save(std::string) const;
+    bool load(std::string);
 };
 
 #endif // MARKER_H

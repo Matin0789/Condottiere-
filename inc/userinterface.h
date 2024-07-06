@@ -3,6 +3,7 @@
 
 #include <string>
 #include <vector>
+#include <utility> // for pair color and color name
 #include <cstddef>
 
 #include "battlemarker.h"
@@ -14,7 +15,9 @@ class GameBoard;
 class UserInterface
 {
 private:
+	std::vector<std::pair<std::string, Color>> freeColors;
 public:
+	UserInterface();
 	void clearTerminal() const;
 	void pause() const;
 	void spliter() const;

@@ -1,9 +1,7 @@
 #include <stdexcept>
+#include <fstream>
 
 #include "player.h"
-
-//Test
-#include <iostream>
 
 Player::Player(std::string inputName, size_t inputID, unsigned int inputAge, Color inputColor) : // constructor
     name(inputName),
@@ -82,7 +80,6 @@ const Card* Player::drawn_playedCard(std::string inputCard){
         if (playedCards[i]->getType() == inputCard) {
             const Card* card = playedCards[i];
             playedCards.erase(playedCards.begin() + i); 
-            std::cerr << card->getType() << ' ' << ID << std::endl;
             return card;
         }
     }
@@ -103,4 +100,62 @@ std::vector<const Card*> Player::burnPlayedCards(){  // killing cards or delete 
     std::vector<const Card*> tmp(playedCards);
     playedCards.clear(); // remove from player hands 
     return tmp;
+}
+
+bool Player::save(std::string filePath) const{
+    std::ofstream file(filePath, std::ios::binary | std::ios::app);
+    if (!file) {
+        throw std::runtime_error("save file cannot be open in player" + ID);
+    }
+    
+
+    // name
+    {
+        size_t size = name.capacity();
+        file.write(reinterpret_cast<const char*>(&size), sizeof(size_t));
+        file.write(reinterpret_cast<const char*>(&name), size);
+    }
+    
+    // ID
+    file.write(reinterpret_cast<const char*>(&ID), sizeof(size_t));
+
+    // age
+    file.write(reinterpret_cast<const char*>(&age), sizeof(size_t));
+
+    // save cards
+    {
+        size_t size = cards.size();
+        file.write(reinterpret_cast<const char*>(&size), sizeof(size_t));
+        for (auto &&card : cards) {
+            size_t capacity = card->getType().capacity();
+            file.write(reinterpret_cast<const char*>(&capacity), sizeof(size_t));
+            std::string tmp = card->getType();
+            file.write(reinterpret_cast<const char*>(&tmp), capacity);
+        }  
+    }
+    
+
+    // save played cards
+    {
+        size_t size = playedCards.size();
+        file.write(reinterpret_cast<const char*>(&size), sizeof(size_t));
+        for (auto &&playedCard : playedCards) {
+            size_t capacity = playedCard->getType().capacity();
+            file.write(reinterpret_cast<const char*>(&capacity), sizeof(size_t));
+            std::string tmp = playedCard->getType();
+            file.write(reinterpret_cast<const char*>(&tmp), capacity);
+        }
+    }
+    
+    // state counter
+    file.write(reinterpret_cast<const char*>(&stateCounter), sizeof(size_t));
+
+    file.close();
+
+    // markers
+    for (auto &&marker : markers)
+    {
+        marker.save(filePath);
+    }
+    
 }

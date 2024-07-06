@@ -185,6 +185,10 @@ CMakeFiles/Condottiere.dir/main.cpp.o: ../main.cpp \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/bits/stl_multimap.h \
+  /usr/include/c++/11/list \
+  /usr/include/c++/11/bits/stl_list.h \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/bits/list.tcc \
   ../inc/userinterface.h \
   ../inc/marker/battlemarker.h \
   ../inc/enumcolor.h \
@@ -638,6 +642,10 @@ CMakeFiles/Condottiere.dir/src/card/card.cpp.o: ../src/card/card.cpp \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/bits/stl_multimap.h \
+  /usr/include/c++/11/list \
+  /usr/include/c++/11/bits/stl_list.h \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/bits/list.tcc \
   ../inc/userinterface.h \
   ../inc/marker/battlemarker.h \
   ../inc/enumcolor.h \
@@ -844,6 +852,10 @@ CMakeFiles/Condottiere.dir/src/card/drummer.cpp.o: ../src/card/drummer.cpp \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/bits/stl_multimap.h \
+  /usr/include/c++/11/list \
+  /usr/include/c++/11/bits/stl_list.h \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/bits/list.tcc \
   ../inc/userinterface.h \
   ../inc/marker/battlemarker.h \
   ../inc/enumcolor.h \
@@ -1436,6 +1448,10 @@ CMakeFiles/Condottiere.dir/src/card/scarecrow.cpp.o: ../src/card/scarecrow.cpp \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/bits/stl_multimap.h \
+  /usr/include/c++/11/list \
+  /usr/include/c++/11/bits/stl_list.h \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/bits/list.tcc \
   ../inc/userinterface.h \
   ../inc/marker/battlemarker.h \
   ../inc/enumcolor.h \
@@ -2481,6 +2497,10 @@ CMakeFiles/Condottiere.dir/src/card/winter.cpp.o: ../src/card/winter.cpp \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/bits/stl_multimap.h \
+  /usr/include/c++/11/list \
+  /usr/include/c++/11/bits/stl_list.h \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/bits/list.tcc \
   ../inc/userinterface.h \
   ../inc/marker/battlemarker.h \
   ../inc/enumcolor.h \
@@ -2896,7 +2916,6 @@ CMakeFiles/Condottiere.dir/src/game.cpp.o: ../src/game.cpp \
   /usr/include/c++/11/bits/fstream.tcc \
   /usr/include/c++/11/sstream \
   /usr/include/c++/11/bits/sstream.tcc \
-  /usr/include/c++/11/iostream \
   ../inc/game.h \
   ../inc/player.h \
   ../inc/card/card.h \
@@ -2910,6 +2929,10 @@ CMakeFiles/Condottiere.dir/src/game.cpp.o: ../src/game.cpp \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/bits/stl_multimap.h \
+  /usr/include/c++/11/list \
+  /usr/include/c++/11/bits/stl_list.h \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/bits/list.tcc \
   ../inc/userinterface.h \
   ../inc/marker/battlemarker.h \
   ../inc/enumcolor.h \
@@ -2998,6 +3021,10 @@ CMakeFiles/Condottiere.dir/src/gameboard.cpp.o: ../src/gameboard.cpp \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/c++/11/list \
+  /usr/include/c++/11/bits/stl_list.h \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/bits/list.tcc \
   ../inc/state.h \
   /usr/include/c++/11/string \
   /usr/include/c++/11/bits/stringfwd.h \
@@ -3104,12 +3131,64 @@ CMakeFiles/Condottiere.dir/src/gameboard.cpp.o: ../src/gameboard.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
+  ../inc/state.h \
+  /usr/include/c++/11/iomanip \
+  /usr/include/c++/11/bits/ios_base.h \
+  /usr/include/c++/11/bits/locale_classes.h \
+  /usr/include/c++/11/bits/locale_classes.tcc \
+  /usr/include/c++/11/system_error \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
   /usr/include/c++/11/stdexcept \
   /usr/include/c++/11/exception \
   /usr/include/c++/11/bits/exception_ptr.h \
   /usr/include/c++/11/bits/cxxabi_init_exception.h \
   /usr/include/c++/11/typeinfo \
-  /usr/include/c++/11/bits/nested_exception.h
+  /usr/include/c++/11/bits/nested_exception.h \
+  /usr/include/c++/11/locale \
+  /usr/include/c++/11/bits/locale_facets.h \
+  /usr/include/c++/11/cwctype \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
+  /usr/include/c++/11/streambuf \
+  /usr/include/c++/11/bits/streambuf.tcc \
+  /usr/include/c++/11/bits/streambuf_iterator.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
+  /usr/include/c++/11/bits/locale_facets.tcc \
+  /usr/include/c++/11/bits/locale_facets_nonio.h \
+  /usr/include/c++/11/ctime \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
+  /usr/include/libintl.h \
+  /usr/include/c++/11/bits/codecvt.h \
+  /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+  /usr/include/c++/11/bits/locale_conv.h \
+  /usr/include/c++/11/bits/unique_ptr.h \
+  /usr/include/c++/11/bits/quoted_string.h \
+  /usr/include/c++/11/sstream \
+  /usr/include/c++/11/istream \
+  /usr/include/c++/11/ios \
+  /usr/include/c++/11/bits/basic_ios.h \
+  /usr/include/c++/11/bits/basic_ios.tcc \
+  /usr/include/c++/11/ostream \
+  /usr/include/c++/11/bits/ostream.tcc \
+  /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/c++/11/bits/sstream.tcc \
+  /usr/include/c++/11/fstream \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+  /usr/include/c++/11/bits/fstream.tcc \
+  /usr/include/c++/11/algorithm \
+  /usr/include/c++/11/bits/stl_algo.h \
+  /usr/include/c++/11/bits/algorithmfwd.h \
+  /usr/include/c++/11/bits/stl_heap.h \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/11/functional \
+  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/pstl/execution_defs.h
 
 CMakeFiles/Condottiere.dir/src/marker/battlemarker.cpp.o: ../src/marker/battlemarker.cpp \
   /usr/include/stdc-predef.h \
@@ -3576,7 +3655,40 @@ CMakeFiles/Condottiere.dir/src/marker/marker.cpp.o: ../src/marker/marker.cpp \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
-  /usr/include/c++/11/bits/basic_string.tcc
+  /usr/include/c++/11/bits/basic_string.tcc \
+  /usr/include/c++/11/fstream \
+  /usr/include/c++/11/istream \
+  /usr/include/c++/11/ios \
+  /usr/include/c++/11/exception \
+  /usr/include/c++/11/bits/exception_ptr.h \
+  /usr/include/c++/11/bits/cxxabi_init_exception.h \
+  /usr/include/c++/11/typeinfo \
+  /usr/include/c++/11/bits/nested_exception.h \
+  /usr/include/c++/11/bits/ios_base.h \
+  /usr/include/c++/11/bits/locale_classes.h \
+  /usr/include/c++/11/bits/locale_classes.tcc \
+  /usr/include/c++/11/system_error \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
+  /usr/include/c++/11/stdexcept \
+  /usr/include/c++/11/streambuf \
+  /usr/include/c++/11/bits/streambuf.tcc \
+  /usr/include/c++/11/bits/basic_ios.h \
+  /usr/include/c++/11/bits/locale_facets.h \
+  /usr/include/c++/11/cwctype \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
+  /usr/include/c++/11/bits/streambuf_iterator.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
+  /usr/include/c++/11/bits/locale_facets.tcc \
+  /usr/include/c++/11/bits/basic_ios.tcc \
+  /usr/include/c++/11/ostream \
+  /usr/include/c++/11/bits/ostream.tcc \
+  /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/c++/11/bits/codecvt.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+  /usr/include/c++/11/bits/fstream.tcc
 
 CMakeFiles/Condottiere.dir/src/marker/playermarker.cpp.o: ../src/marker/playermarker.cpp \
   /usr/include/stdc-predef.h \
@@ -4265,42 +4377,57 @@ CMakeFiles/Condottiere.dir/src/userinterface.cpp.o: ../src/userinterface.cpp \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
-  ../inc/userinterface.h \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/algorithm \
+  /usr/include/c++/11/bits/stl_algo.h \
+  /usr/include/c++/11/bits/algorithmfwd.h \
+  /usr/include/c++/11/bits/stl_heap.h \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/11/functional \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/unordered_map.h \
+  /usr/include/c++/11/bits/erase_if.h \
   /usr/include/c++/11/vector \
   /usr/include/c++/11/bits/stl_uninitialized.h \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/c++/11/pstl/execution_defs.h \
+  ../inc/userinterface.h \
   /usr/include/c++/11/cstddef \
   ../inc/marker/battlemarker.h \
   ../inc/marker/marker.h \
   ../inc/enumcolor.h \
   ../inc/state.h \
   ../inc/player.h \
-  /usr/include/c++/11/array \
-  /usr/include/c++/11/utility \
-  /usr/include/c++/11/bits/stl_relops.h \
   ../inc/card/card.h \
   ../inc/state.h \
   ../inc/marker/playermarker.h \
   ../inc/enumcolor.h \
   ../inc/game.h \
   ../inc/gameboard.h \
-  /usr/include/c++/11/unordered_map \
-  /usr/include/c++/11/ext/aligned_buffer.h \
-  /usr/include/c++/11/bits/hashtable.h \
-  /usr/include/c++/11/bits/hashtable_policy.h \
-  /usr/include/c++/11/tuple \
-  /usr/include/c++/11/bits/uses_allocator.h \
-  /usr/include/c++/11/bits/invoke.h \
-  /usr/include/c++/11/bits/enable_special_members.h \
-  /usr/include/c++/11/bits/node_handle.h \
-  /usr/include/c++/11/bits/unordered_map.h \
-  /usr/include/c++/11/bits/erase_if.h \
   /usr/include/c++/11/map \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/bits/stl_multimap.h \
+  /usr/include/c++/11/list \
+  /usr/include/c++/11/bits/stl_list.h \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/bits/list.tcc \
   ../inc/userinterface.h \
   ../inc/card/yellowcard.h \
   ../inc/card/card.h \
@@ -4322,13 +4449,29 @@ CMakeFiles/Condottiere.dir/src/userinterface.cpp.o: ../src/userinterface.cpp \
 
 ../src/userinterface.cpp:
 
-../src/marker/playermarker.cpp:
-
 ../src/marker/marker.cpp:
 
 ../src/marker/favormarker.cpp:
 
 ../src/marker/battlemarker.cpp:
+
+/usr/include/c++/11/bits/quoted_string.h:
+
+/usr/include/c++/11/bits/unique_ptr.h:
+
+/usr/include/c++/11/bits/locale_conv.h:
+
+/usr/include/c++/11/bits/locale_facets_nonio.tcc:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
+
+/usr/include/c++/11/ctime:
+
+../src/marker/playermarker.cpp:
+
+/usr/include/c++/11/bits/locale_facets_nonio.h:
 
 /usr/include/c++/11/tr1/riemann_zeta.tcc:
 
@@ -4352,8 +4495,6 @@ CMakeFiles/Condottiere.dir/src/userinterface.cpp.o: ../src/userinterface.cpp \
 
 /usr/include/c++/11/bits/specfun.h:
 
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
-
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
@@ -4364,6 +4505,12 @@ CMakeFiles/Condottiere.dir/src/userinterface.cpp.o: ../src/userinterface.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
+../src/card/yellowcard.cpp:
+
+../src/card/winter.cpp:
+
+../src/card/turncoat.cpp:
+
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
@@ -4371,6 +4518,8 @@ CMakeFiles/Condottiere.dir/src/userinterface.cpp.o: ../src/userinterface.cpp \
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+/usr/include/c++/11/bits/allocated_ptr.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
@@ -4414,6 +4563,8 @@ CMakeFiles/Condottiere.dir/src/userinterface.cpp.o: ../src/userinterface.cpp \
 
 ../inc/gameboard.h:
 
+/usr/include/c++/11/iomanip:
+
 /usr/include/c++/11/cctype:
 
 /usr/include/c++/11/unordered_map:
@@ -4453,6 +4604,8 @@ CMakeFiles/Condottiere.dir/src/userinterface.cpp.o: ../src/userinterface.cpp \
 /usr/include/math.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+
+/usr/include/libintl.h:
 
 ../src/card/spy.cpp:
 
@@ -4656,7 +4809,7 @@ CMakeFiles/Condottiere.dir/src/userinterface.cpp.o: ../src/userinterface.cpp \
 
 /usr/include/c++/11/array:
 
-../src/card/yellowcard.cpp:
+/usr/include/c++/11/locale:
 
 /usr/include/ctype.h:
 
@@ -4704,7 +4857,13 @@ CMakeFiles/Condottiere.dir/src/userinterface.cpp.o: ../src/userinterface.cpp \
 
 /usr/include/wchar.h:
 
+../src/game.cpp:
+
+/usr/include/c++/11/bits/cxxabi_init_exception.h:
+
 /usr/include/c++/11/ext/string_conversions.h:
+
+/usr/include/c++/11/list:
 
 /usr/include/c++/11/bits/exception_ptr.h:
 
@@ -4750,8 +4909,6 @@ CMakeFiles/Condottiere.dir/src/userinterface.cpp.o: ../src/userinterface.cpp \
 
 /usr/include/c++/11/bits/hashtable.h:
 
-../src/card/turncoat.cpp:
-
 ../inc/card/card.h:
 
 /usr/include/c++/11/bits/sstream.tcc:
@@ -4784,11 +4941,19 @@ CMakeFiles/Condottiere.dir/src/userinterface.cpp.o: ../src/userinterface.cpp \
 
 /usr/include/c++/11/bits/erase_if.h:
 
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+/usr/include/c++/11/bits/stl_list.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
+
 ../inc/marker/battlemarker.h:
 
 ../inc/card/purplecard.h:
 
 ../inc/card/drummer.h:
+
+/usr/include/c++/11/bits/list.tcc:
 
 ../inc/card/heroine.h:
 
@@ -4854,8 +5019,6 @@ CMakeFiles/Condottiere.dir/src/userinterface.cpp.o: ../src/userinterface.cpp \
 
 /usr/include/c++/11/bits/streambuf_iterator.h:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
 /usr/include/c++/11/bits/locale_facets.tcc:
@@ -4876,8 +5039,6 @@ CMakeFiles/Condottiere.dir/src/userinterface.cpp.o: ../src/userinterface.cpp \
 
 /usr/include/c++/11/bits/stl_heap.h:
 
-../src/card/winter.cpp:
-
 /usr/include/c++/11/bits/refwrap.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
@@ -4895,7 +5056,3 @@ CMakeFiles/Condottiere.dir/src/userinterface.cpp.o: ../src/userinterface.cpp \
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
 ../src/card/heroine.cpp:
-
-/usr/include/c++/11/bits/cxxabi_init_exception.h:
-
-../src/game.cpp:

@@ -8,44 +8,33 @@
 #include <sstream> // for read file as stream
 
  // The file path of the game guide
-#define Game_HELP_FILE      "../data/help/GameHelp.txt"
-#define BISHOP_HELP_FILE    "../../data/help/BishopHelp.txt"
-#define TURNCOAT_HELP_FILE  "../../data/help/TurncoatHelp.txt"
-#define HEROINE_HELP_FILE   "../../data/help/HeroineHelp.txt"
-#define SPRING_HELP_FILE    "../../data/help/SpringHelp.txt"
-#define WINTER_HELP_FILE    "../../data/help/WinterHelp.txt"
-#define SCARECROW_HELP_FILE "../../data/help/ScarecrowHelp.txt"
-#define DRUMMER_HELP_FILE   "../../data/help/DrummerHelp.txt"
-#define SPY_HELP_FILE       "../../data/help/SpyHelp.txt"
+#define SAVE_FILE(n)        "../data/save/save_" + itos(n) + ".bin"
 
-#define BOARD_FILE          "../data/board/"
+#define Game_HELP_FILE      "../data/help/GameHelp.txt"
+#define BISHOP_HELP_FILE    "../data/help/BishopHelp.txt"
+#define TURNCOAT_HELP_FILE  "../data/help/TurncoatHelp.txt"
+#define HEROINE_HELP_FILE   "../data/help/HeroineHelp.txt"
+#define SPRING_HELP_FILE    "../data/help/SpringHelp.txt"
+#define WINTER_HELP_FILE    "../data/help/WinterHelp.txt"
+#define SCARECROW_HELP_FILE "../data/help/ScarecrowHelp.txt"
+#define DRUMMER_HELP_FILE   "../data/help/DrummerHelp.txt"
+#define SPY_HELP_FILE       "../data/help/SpyHelp.txt"
+
+#define BOARD_FILE          "../data/board/adjacency.txt"
 
 #include "game.h"
 
 std::string Game::help; // set help
 // constructor
 Game::Game(UserInterface &inputUI) : 
-    cards(121),
+    cards(110),
     ui(inputUI),
     season(nullptr),
-    one_point_yellow_card(10, YellowCard(1)),  
-    two_point_yellow_card(8,YellowCard(2)),
-    three_point_yellow_card(8,YellowCard(3)),
-    four_point_yellow_card(8,YellowCard(4)),
-    five_point_yellow_card(8,YellowCard(5)),
-    six_point_yellow_card(8,YellowCard(6)),
-    ten_point_yellow_card(8,YellowCard(10)),
-    bishop(6,Bishop(BISHOP_HELP_FILE)),
-    turncoat(3,Turncoat(TURNCOAT_HELP_FILE)),
-    heroine(3, Heroine(HEROINE_HELP_FILE)),
-    spring(3, Spring(SPRING_HELP_FILE)),
-    winter(3, Winter(WINTER_HELP_FILE)),
-    scarecrow(16, Scarecrow(SCARECROW_HELP_FILE)),
-    drummer(6, Drummer(DRUMMER_HELP_FILE)),
-    spy(12, Spy(SPY_HELP_FILE))
-    gameBoard()
+    gameBoard(BOARD_FILE)
 {
-    // Read
+    srand(time(0));    // for rand function
+
+    // Read help from file
     std::ifstream helpFile(Game_HELP_FILE);
     if (helpFile.is_open()){
         std::stringstream helpString;
@@ -58,47 +47,67 @@ Game::Game(UserInterface &inputUI) :
     }
     else 
         throw std::runtime_error("The game help file cannot be opened");
+    //
 
-    srand(time(0));    // for rand function
+    
     for (int i = 0; i < 10; i++)
     {
-        cards[i] = &one_point_yellow_card[i];  // an array of yellow cards
+        cards.push_back(new YellowCard(1));  // an array of yellow cards
     }
     for (int i = 0; i < 8; i++)    // point of yellow cards
     {
-        cards[i + 10] = &two_point_yellow_card[i];
-        cards[i + 18] = &three_point_yellow_card[i];
-        cards[i + 26] = &four_point_yellow_card[i];
-        cards[i + 34] = &five_point_yellow_card[i];
-        cards[i + 42] = &six_point_yellow_card[i];
-        cards[i + 50] = &ten_point_yellow_card[i];
+        cards.push_back(new YellowCard(2));
+        cards.push_back(new YellowCard(3));
+        cards.push_back(new YellowCard(4));
+        cards.push_back(new YellowCard(5));
+        cards.push_back(new YellowCard(6));
+        cards.push_back(new YellowCard(10));
     }
     for (int i = 0; i < 3; i++)     // an array of purple cards (heroine , spring , winter)
     {
-        cards[i + 58] = &heroine[i];
-        cards[i + 61] = &spring[i];
-        cards[i + 64] = &winter[i];
+        cards.push_back(new Heroine(HEROINE_HELP_FILE));
+        cards.push_back(new Spring(SPRING_HELP_FILE));
+        cards.push_back(new Winter(WINTER_HELP_FILE));
+        cards.push_back(new Turncoat(TURNCOAT_HELP_FILE));
     }
     for (int i = 0; i < 16; i++)  // an array of purple cards (scarecrow)
     {
-        cards[i + 67] = &scarecrow[i];
+        cards.push_back(new Scarecrow(SCARECROW_HELP_FILE));
     }
     for (int i = 0; i < 6; i++)
     {
 
-        cards[i + 83] = &drummer[i];
-        cards[i + 100] = &bishop[i];   // This is for the next phase of the project
+        cards.push_back(new Drummer(DRUMMER_HELP_FILE));
+        cards.push_back(new Bishop(BISHOP_HELP_FILE));
     }
     for (int i = 0;i < 12;i++){
-        cards[i + 106] = &spy[i];
-    }
-    for (int i = 0; i < 3; i++) {
-        cards[i + 118] = &turncoat[i];
+        cards.push_back(new Spy(SPY_HELP_FILE));
     }
 }
 
 std::string Game::getHelp() {    // send help texts for user
     return help;
+}
+
+Game::~Game() {
+    for (auto &&player : players)
+    {
+        std::vector<const Card*> tmp(player.burnCards());
+        if (!tmp.empty()){
+            cards.insert(cards.end(), tmp.begin(), tmp.end());
+        }
+    }
+    for (auto &&player : players)
+    {
+        std::vector<const Card*> tmp(player.burnPlayedCards());
+        if (!tmp.empty()){
+            cards.insert(cards.end(), tmp.begin(), tmp.end());
+        }
+    }
+    for (auto &&card : cards)
+    {
+        delete card;
+    }
 }
 
 size_t Game::find_war_winner(){    
@@ -266,8 +275,8 @@ void Game::play()
     }
 }
 
-bool Game::check_number_of_player(int n) {
-    if (n >= 3 && n <= 6){
+bool Game::check_number_of_player(std::string n) {
+    if (n >= "3" && n <= "6" && n.size() <= 1) {
         return true;
     }
     else{
@@ -279,6 +288,42 @@ bool Game::check_number_of_player(int n) {
 void Game::set_battleground(const Player& currentPlayer) {
     State* battlegroud = ui.get_battleground(currentPlayer,gameBoard);
     battleMarker.setState(battlegroud);
+}
+
+bool Game::save(std::string filePath) const {
+    std::ofstream file(filePath, std::ios::binary | std::ios::trunc | std::ios::app);
+    if (!file) {
+        throw std::runtime_error("save file cannot be open in game");
+    }
+
+    // save cards
+    size_t size = cards.size();
+    file.write(reinterpret_cast<const char*>(&size), sizeof(size_t));
+    for (auto &&card : cards) {
+        size_t capacity = card->getType().capacity();
+        file.write(reinterpret_cast<const char*>(&capacity), sizeof(size_t));
+        std::string tmp = card->getType();
+        file.write(reinterpret_cast<const char*>(&tmp), capacity);
+    }
+
+    // save ui object
+    size_t size_UI = sizeof(ui);
+    file.write(reinterpret_cast<const char*>(&size_UI), sizeof(size_t));
+    file.write(reinterpret_cast<const char*>(&ui), size_UI);
+
+    // save gameboard
+    size_t size_gameBoard = sizeof(gameBoard);
+    file.write(reinterpret_cast<const char*>(&size_gameBoard), sizeof(size_t));
+    file.write(reinterpret_cast<const char*>(&gameBoard), size_gameBoard);
+
+    file.close();
+
+    favorMarker.save(filePath);
+    battleMarker.save(filePath);
+    for (auto &&player : players) {
+        player.save(filePath);
+    }
+    return true;
 }
 
 int Game::war(int currentPlayerID) {     //This function starts working when the conditions are ready and the province of the battle location is selected

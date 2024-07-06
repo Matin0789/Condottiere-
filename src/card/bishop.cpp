@@ -22,6 +22,7 @@ Bishop::Bishop(std::string helpFilePath) : PurpleCard(0,"Bishop",1) {
         throw std::runtime_error("The Bishop help file cannot be opened");
 }
 
+
 std::string Bishop::getHelp() {
     return Bishop::help;
 }
