@@ -27,7 +27,6 @@
 std::string Game::help; // set help
 // constructor
 Game::Game(UserInterface &inputUI) : 
-    cards(110),
     ui(inputUI),
     season(nullptr),
     gameBoard(BOARD_FILE)

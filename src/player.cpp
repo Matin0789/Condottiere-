@@ -157,5 +157,5 @@ bool Player::save(std::string filePath) const{
     {
         marker.save(filePath);
     }
-    
+    return true;
 }
