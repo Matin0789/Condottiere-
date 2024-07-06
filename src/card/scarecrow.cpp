@@ -16,7 +16,7 @@ Scarecrow::Scarecrow(std::string helpFilePath) : PurpleCard(0,"Scarecrow",0){
         std::stringstream helpString;
         std::string tmp;
         while(getline(helpFile,tmp)){
-            helpString << tmp;
+            helpString << '\n' << tmp;
         }
         help = helpString.str();
         helpFile.close();

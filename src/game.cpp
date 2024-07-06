@@ -39,7 +39,7 @@ Game::Game(UserInterface &inputUI) :
         std::stringstream helpString;
         std::string tmp;
         while(getline(helpFile,tmp)){
-            helpString << tmp;
+            helpString << '\n' << tmp;
         }
         Game::help = helpString.str();
         helpFile.close();

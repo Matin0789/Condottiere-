@@ -14,7 +14,7 @@ Spring::Spring(std::string helpFilePath) : Season(0,"Spring",4){
         std::stringstream helpString;
         std::string tmp;
         while(getline(helpFile,tmp)){
-            helpString << tmp;
+            helpString << '\n' << tmp;
         }
         help = helpString.str();
         helpFile.close();
