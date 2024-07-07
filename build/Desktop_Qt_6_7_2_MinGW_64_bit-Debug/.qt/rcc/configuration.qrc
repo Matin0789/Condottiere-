@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/">
-    <file alias="qtquickcontrols2.conf">C:/QtProjects/Condottiere/qtquickcontrols2.conf</file>
-  </qresource>
-</RCC>
-

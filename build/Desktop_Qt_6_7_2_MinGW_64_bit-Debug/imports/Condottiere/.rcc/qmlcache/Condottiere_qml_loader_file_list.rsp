@@ -1,8 +1,0 @@
---resource
-C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/imports/Condottiere/.qt/rcc/qmake_Condottiere.qrc
---resource
-C:/QtProjects/Condottiere/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/imports/Condottiere/.qt/rcc/Condottiere_raw_qml_0.qrc
-/qt/qml/Condottiere/Constants.qml
-/qt/qml/Condottiere/DirectoryFontLoader.qml
-/qt/qml/Condottiere/EventListModel.qml
-/qt/qml/Condottiere/EventListSimulator.qml

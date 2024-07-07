@@ -1,4 +1,0 @@
-module Main
-typeinfo CondottiereApp.qmltypes
-prefer :/qt/qml/Main/
-

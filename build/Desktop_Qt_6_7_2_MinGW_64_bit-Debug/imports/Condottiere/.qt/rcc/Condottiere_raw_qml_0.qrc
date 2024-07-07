@@ -1,9 +1,0 @@
-<RCC>
-  <qresource prefix="/qt/qml/Condottiere/">
-    <file alias="Constants.qml">C:/QtProjects/Condottiere/imports/Condottiere/Constants.qml</file>
-    <file alias="DirectoryFontLoader.qml">C:/QtProjects/Condottiere/imports/Condottiere/DirectoryFontLoader.qml</file>
-    <file alias="EventListModel.qml">C:/QtProjects/Condottiere/imports/Condottiere/EventListModel.qml</file>
-    <file alias="EventListSimulator.qml">C:/QtProjects/Condottiere/imports/Condottiere/EventListSimulator.qml</file>
-  </qresource>
-</RCC>
-
