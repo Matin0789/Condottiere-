@@ -2,9 +2,22 @@
 #include <string>
 #include <iostream>
 #include <stdexcept>
+#include <utility> // for pair,make_pair
+#include <ctype.h> // for toupper()
+#include <algorithm> // for transform
 
 #include "userinterface.h"
 #include "game.h"
+#include "enumcolor.h"
+
+UserInterface::UserInterface() {
+    freeColors.push_back(std::make_pair("ORANGE", orange));
+    freeColors.push_back(std::make_pair("BLUE",   blue));
+    freeColors.push_back(std::make_pair("GREEN",  green));
+    freeColors.push_back(std::make_pair("RED",    red));
+    freeColors.push_back(std::make_pair("GRAY",   gray));
+    freeColors.push_back(std::make_pair("BROWN",  brown));
+}
 
 void UserInterface::clearTerminal() const {
     system("clear");// for linux
@@ -126,6 +139,34 @@ State* UserInterface::get_battleground(const Player& player,GameBoard& gameBoard
     throw std::runtime_error("UserInterface::get__battleground bad choice");
 }
 
+State* UserInterface::get_favorground(const Player& player,GameBoard& gameBoard) {
+    clearTerminal();
+    bool flag = false;
+    std::string choice;
+    do {
+        std::cout << "active states : ";
+        for (auto &&stateName : gameBoard.get_active_states_name()) {
+            std::cout << stateName << ", ";
+        }
+        std::cout << "OUT";
+        std::cout << std::endl;
+        std::cout << "Player" << player.getID() + 1 << ", please specify the favorground : ";
+        std::cin >> choice;
+        for (auto &&stateName : gameBoard.get_active_states_name()) {
+            if (stateName == choice) {
+                clearTerminal();
+                return gameBoard.getState(choice);
+                flag = true;
+            }
+        }
+        if (choice == "OUT") {
+            clearTerminal();
+            return nullptr;
+            flag = true;
+        }
+    } while (flag == false);
+    throw std::runtime_error("UserInterface::get__favorground bad choice");
+}
 void UserInterface::showPlayerStates(const Player& player) const{
     std::cout << "Player" << player.getID() + 1 << " : ";
     if (!player.get_states_name().empty()){
@@ -155,7 +196,7 @@ std::string UserInterface::get_card_name() {
 }
 
 int UserInterface::get_players_number() {
-    int n;
+    std::string n;
     bool flag = false;
     do
     {
@@ -168,7 +209,7 @@ int UserInterface::get_players_number() {
             std::cerr << e.what() << '\n';
         }
     } while (flag == false);
-    return n;
+    return stoi(n);
    
 }
 
@@ -188,24 +229,33 @@ unsigned int UserInterface::get_player_old(size_t playerID) {
 
 Color  UserInterface::get_player_color(size_t playerID) {
     std::string input;
-    Color color;
-    bool flag = true;
+    Color choiceColor;
+    bool flag =true;
     do
     {
-        std::cout << "please enter Player" << playerID << " Color [orange,blue,green,red,gray,brown] : ";
-        std::cin >> input;
-        if (input == "orange") {color = orange; flag = true; }
-        else if (input == "blue") {color = blue; flag = true; }
-        else if (input == "green") {color = green; flag = true; }
-        else if (input == "red") {color = red; flag = true; }
-        else if (input == "gray") {color = gray; flag = true; }
-        else if (input == "brown") {color = brown; flag = true; }
-        else {
-            std::cout << "undifiend please try again!" << std::endl;
-            flag = false;
+        std::cout << "please enter Player" << playerID;
+        std::cout << " [";    
+        for (auto &&color : freeColors)
+        {
+            std::cout << color.first << ',';
         }
+        std::cout << "] : ";
+
+        std::cin >> input;
+        std::transform(input.begin(), input.end(), input.begin(), ::toupper); 
+        for (size_t i = 0; i < freeColors.size(); i++)
+        {
+            if (input == freeColors[i].first) {
+                flag = true;
+                choiceColor = freeColors[i].second;
+                freeColors.erase(freeColors.begin() + i);
+                return choiceColor;
+            }
+        }
+        std::cout << "undifiend please try again!" << std::endl;
+        flag = false;
     } while (flag == false);
-    return color;
+    return choiceColor;
 }
 
 void UserInterface::declare_warWinner(const Player& player) const{

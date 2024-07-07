@@ -1,14 +1,25 @@
 #include "heroine.h"
 
-class Game;
-class Player;
+#include <fstream>
+#include <string>
+#include <stdexcept>
+#include <sstream>
 
-#define HELP "For each Heroine in your row, add 10 to your strength."
+std::string Heroine::help;
 
-std::string Heroine::help = HELP;
-
-Heroine::Heroine() : PurpleCard(10,"Heroine",5){
-
+Heroine::Heroine(std::string helpFilePath) : PurpleCard(10,"Heroine",5){
+    std::ifstream helpFile(helpFilePath);
+    if (helpFile.is_open()){
+        std::stringstream helpString;
+        std::string tmp;
+        while(getline(helpFile,tmp)){
+            helpString << '\n' << tmp;
+        }
+        help = helpString.str();
+        helpFile.close();
+    }
+    else 
+        throw std::runtime_error("The Heroine help file cannot be opened");
 }
 
 std::string Heroine::getHelp() {

@@ -2,12 +2,26 @@
 #include "player.h"
 #include "game.h"
 
-#define HELP "While you have a Drummer in your row, double the value of each mercenary in your row. You can play additional Drummers, but they have no effect."
+#include <fstream>
+#include <string>
+#include <stdexcept>
+#include <sstream>
 
-std::string Drummer::help = HELP;
+std::string Drummer::help;
 
-Drummer::Drummer() : PurpleCard(0,"Drummer",3){
-    
+Drummer::Drummer(std::string helpFilePath) : PurpleCard(0,"Drummer",3){
+    std::ifstream helpFile(helpFilePath);
+    if (helpFile.is_open()){
+        std::stringstream helpString;
+        std::string tmp;
+        while(getline(helpFile,tmp)){
+            helpString << '\n' << tmp;
+        }
+        help = helpString.str();
+        helpFile.close();
+    }
+    else 
+        throw std::runtime_error("The Drummer help file cannot be opened");
 }
 
 std::string Drummer::getHelp() {

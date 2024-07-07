@@ -1,15 +1,28 @@
 #include <vector>
+#include <fstream>
+#include <string>
+#include <stdexcept>
+#include <sstream>
 
 #include "winter.h"
 #include "player.h"
 #include "game.h"
 
-#define HELP "The value of each mercenary in play is “1.” This card replaces the current season"
+std::string Winter::help;
 
-std::string Winter::help = HELP;
-
-Winter::Winter() : Season(0,"Winter",2){
-	help = HELP ;
+Winter::Winter(std::string helpFilePath) : Season(0,"Winter",2) {
+	std::ifstream helpFile(helpFilePath);
+    if (helpFile.is_open()){
+        std::stringstream helpString;
+        std::string tmp;
+        while(getline(helpFile,tmp)){
+            helpString << '\n' << tmp;
+        }
+        help = helpString.str();
+        helpFile.close();
+    }
+    else 
+        throw std::runtime_error("The Turncoat help file cannot be opened");
 }
 
 std::string Winter::getHelp(){

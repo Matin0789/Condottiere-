@@ -1,0 +1,2 @@
+Heroine help:
+For each Heroine in your row, add 10 to your strength.

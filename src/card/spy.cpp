@@ -1,14 +1,25 @@
 #include "spy.h"
 
-class Game;
-class Player;
+#include <fstream>
+#include <string>
+#include <stdexcept>
+#include <sstream>
 
-#define HELP "For each Spy in your row,add 1 to your strength.Also, after each battle, the player with the most Spies takes the battle marker instead of the player who won the battle. If players are tied for most Spies, the battle marker is taken as normal"
+std::string Spy::help;
 
-std::string Spy::help = HELP;
-
-Spy::Spy() : PurpleCard(1,"Spy",5){
-    help = HELP;
+Spy::Spy(std::string helpFilePath) : PurpleCard(1,"Spy",5){
+    std::ifstream helpFile(helpFilePath, std::ios::in);
+    if (helpFile.is_open()){
+        std::stringstream helpString;
+        std::string tmp;
+        while(getline(helpFile,tmp)){
+            helpString << '\n' << tmp;
+        }
+        help = helpString.str();
+        helpFile.close();
+    }
+    else 
+        throw std::runtime_error("The Spy help file cannot be opened");
 }
 
 std::string Spy::getHelp() {
