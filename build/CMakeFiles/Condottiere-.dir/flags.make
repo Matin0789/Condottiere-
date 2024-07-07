@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
 
-CXX_INCLUDES = -I/home/matin/Documents/University/Advanced/Project/Condottiere-/build/Condottiere-_autogen/include -isystem /home/matin/anaconda3/include/qt -isystem /home/matin/anaconda3/include/qt/QtWidgets -isystem /home/matin/anaconda3/include/qt/QtGui -isystem /home/matin/anaconda3/include/qt/QtCore -isystem /home/matin/anaconda3/./mkspecs/linux-g++
+CXX_INCLUDES = -I/home/matin/Documents/University/Advanced/Project/Condottiere-/build/Condottiere-_autogen/include -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card -I/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker -isystem /home/matin/anaconda3/include/qt -isystem /home/matin/anaconda3/include/qt/QtWidgets -isystem /home/matin/anaconda3/include/qt/QtGui -isystem /home/matin/anaconda3/include/qt/QtCore -isystem /home/matin/anaconda3/./mkspecs/linux-g++
 
 CXX_FLAGS = -g -fPIC -std=gnu++17
 

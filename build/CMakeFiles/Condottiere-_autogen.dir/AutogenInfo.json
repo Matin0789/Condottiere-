@@ -233,6 +233,9 @@
 	],
 	"MOC_INCLUDES" : 
 	[
+		"/home/matin/Documents/University/Advanced/Project/Condottiere-/inc",
+		"/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card",
+		"/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker",
 		"/home/matin/anaconda3/include/qt",
 		"/home/matin/anaconda3/include/qt/QtWidgets",
 		"/home/matin/anaconda3/include/qt/QtGui",

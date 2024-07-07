@@ -102,6 +102,12 @@ endif()
 
 target_link_libraries(Condottiere- PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 
+target_include_directories(Condottiere- PRIVATE
+    ${PROJECT_SOURCE_DIR}/inc
+    ${PROJECT_SOURCE_DIR}/inc/card
+    ${PROJECT_SOURCE_DIR}/inc/marker
+)
+
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
 # explicit, fixed bundle identifier manually though.
