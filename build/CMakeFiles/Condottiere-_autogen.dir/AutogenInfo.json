@@ -1,0 +1,394 @@
+{
+	"BUILD_DIR" : "/home/matin/Documents/University/Advanced/Project/Condottiere-/build/Condottiere-_autogen",
+	"CMAKE_BINARY_DIR" : "/home/matin/Documents/University/Advanced/Project/Condottiere-/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/matin/Documents/University/Advanced/Project/Condottiere-/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/matin/Documents/University/Advanced/Project/Condottiere-",
+	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
+	"CMAKE_LIST_FILES" : 
+	[
+		"/home/matin/Documents/University/Advanced/Project/Condottiere-/CMakeLists.txt",
+		"/home/matin/Documents/University/Advanced/Project/Condottiere-/build/CMakeFiles/3.22.1/CMakeSystem.cmake",
+		"/usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake",
+		"/home/matin/Documents/University/Advanced/Project/Condottiere-/build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake",
+		"/usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake",
+		"/usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake",
+		"/usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake",
+		"/usr/share/cmake-3.22/Modules/Platform/Linux.cmake",
+		"/usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake",
+		"/usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake",
+		"/usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake",
+		"/usr/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake",
+		"/usr/share/cmake-3.22/Modules/Compiler/GNU.cmake",
+		"/usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
+		"/usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake",
+		"/usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake",
+		"/usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5/Qt5ConfigVersion.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5/Qt5Config.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5/Qt5ConfigVersion.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5/Qt5Config.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5/Qt5ModuleLocation.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Core/Qt5CoreConfig.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Core/Qt5CoreMacros.cmake",
+		"/usr/share/cmake-3.22/Modules/CMakeParseArguments.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QComposePlatformInputContextPlugin.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QEglFSEmulatorIntegrationPlugin.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QEglFSIntegrationPlugin.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QEglFSKmsEglDeviceIntegrationPlugin.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QEglFSX11IntegrationPlugin.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QEvdevKeyboardPlugin.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QEvdevMousePlugin.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QEvdevTabletPlugin.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QEvdevTouchScreenPlugin.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QIbusPlatformInputContextPlugin.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QMinimalEglIntegrationPlugin.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QPdfPlugin.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QSvgPlugin.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QVirtualKeyboardPlugin.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QVncIntegrationPlugin.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QWebGLIntegrationPlugin.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QXcbEglIntegrationPlugin.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QXdgDesktopPortalThemePlugin.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake",
+		"/home/matin/anaconda3/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake",
+		"/usr/share/cmake-3.22/Modules/CMakeParseArguments.cmake",
+		"/usr/share/cmake-3.22/Modules/GNUInstallDirs.cmake"
+	],
+	"CMAKE_SOURCE_DIR" : "/home/matin/Documents/University/Advanced/Project/Condottiere-",
+	"DEP_FILE" : "",
+	"DEP_FILE_RULE_NAME" : "",
+	"HEADERS" : 
+	[
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/bishop.h",
+			"MU",
+			"EV75SBWRFC/moc_bishop.cpp",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/card.h",
+			"MU",
+			"EV75SBWRFC/moc_card.cpp",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/drummer.h",
+			"MU",
+			"EV75SBWRFC/moc_drummer.cpp",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/heroine.h",
+			"MU",
+			"EV75SBWRFC/moc_heroine.cpp",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/purplecard.h",
+			"MU",
+			"EV75SBWRFC/moc_purplecard.cpp",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/scarecrow.h",
+			"MU",
+			"EV75SBWRFC/moc_scarecrow.cpp",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/season.h",
+			"MU",
+			"EV75SBWRFC/moc_season.cpp",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/spring.h",
+			"MU",
+			"EV75SBWRFC/moc_spring.cpp",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/spy.h",
+			"MU",
+			"EV75SBWRFC/moc_spy.cpp",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/turncoat.h",
+			"MU",
+			"EV75SBWRFC/moc_turncoat.cpp",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/winter.h",
+			"MU",
+			"EV75SBWRFC/moc_winter.cpp",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/yellowcard.h",
+			"MU",
+			"EV75SBWRFC/moc_yellowcard.cpp",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/enumcolor.h",
+			"MU",
+			"DIG64O274K/moc_enumcolor.cpp",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/game.h",
+			"MU",
+			"DIG64O274K/moc_game.cpp",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/gameboard.h",
+			"MU",
+			"DIG64O274K/moc_gameboard.cpp",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker/battlemarker.h",
+			"MU",
+			"YR4O4XTLV6/moc_battlemarker.cpp",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker/favormarker.h",
+			"MU",
+			"YR4O4XTLV6/moc_favormarker.cpp",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker/marker.h",
+			"MU",
+			"YR4O4XTLV6/moc_marker.cpp",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker/playermarker.h",
+			"MU",
+			"YR4O4XTLV6/moc_playermarker.cpp",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/player.h",
+			"MU",
+			"DIG64O274K/moc_player.cpp",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/state.h",
+			"MU",
+			"DIG64O274K/moc_state.cpp",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/inc/userinterface.h",
+			"MU",
+			"DIG64O274K/moc_userinterface.cpp",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/mainwindow.h",
+			"MU",
+			"EWIEGA46WW/moc_mainwindow.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/matin/Documents/University/Advanced/Project/Condottiere-/build/Condottiere-_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/matin/Documents/University/Advanced/Project/Condottiere-/build/Condottiere-_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_WIDGETS_LIB" ],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/matin/anaconda3/include/qt",
+		"/home/matin/anaconda3/include/qt/QtWidgets",
+		"/home/matin/anaconda3/include/qt/QtGui",
+		"/home/matin/anaconda3/include/qt/QtCore",
+		"/home/matin/anaconda3/mkspecs/linux-g++",
+		"/usr/include",
+		"/usr/include/c++/11",
+		"/usr/include/x86_64-linux-gnu/c++/11",
+		"/usr/include/c++/11/backward",
+		"/usr/lib/gcc/x86_64-linux-gnu/11/include",
+		"/usr/local/include",
+		"/usr/include/x86_64-linux-gnu"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/usr/bin/c++",
+		"-dM",
+		"-E",
+		"-c",
+		"/usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/matin/Documents/University/Advanced/Project/Condottiere-/build/Condottiere-_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 2,
+	"PARSE_CACHE_FILE" : "/home/matin/Documents/University/Advanced/Project/Condottiere-/build/CMakeFiles/Condottiere-_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/home/matin/anaconda3/bin/moc",
+	"QT_UIC_EXECUTABLE" : "/home/matin/anaconda3/bin/uic",
+	"QT_VERSION_MAJOR" : 5,
+	"QT_VERSION_MINOR" : 15,
+	"SETTINGS_FILE" : "/home/matin/Documents/University/Advanced/Project/Condottiere-/build/CMakeFiles/Condottiere-_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/main.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/bishop.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/card.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/drummer.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/heroine.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/purplecard.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/scarecrow.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/season.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/spring.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/spy.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/turncoat.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/winter.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/src/card/yellowcard.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/src/game.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/src/gameboard.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/battlemarker.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/favormarker.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/marker.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/src/marker/playermarker.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/src/player.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/src/state.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/matin/Documents/University/Advanced/Project/Condottiere-/src/userinterface.cpp",
+			"MU",
+			null
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"VERBOSITY" : 0
+}
