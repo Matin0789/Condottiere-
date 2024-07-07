@@ -167,8 +167,6 @@ CMakeFiles/Condottiere.dir/src/card/winter.cpp.o: \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker/marker.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/enumcolor.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/state.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/game.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/player.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/gameboard.h \
  /usr/include/c++/11/unordered_map \
  /usr/include/c++/11/ext/aligned_buffer.h \
@@ -185,6 +183,9 @@ CMakeFiles/Condottiere.dir/src/card/winter.cpp.o: \
  /usr/include/c++/11/bits/stl_list.h \
  /usr/include/c++/11/bits/allocated_ptr.h \
  /usr/include/c++/11/bits/list.tcc \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/game.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/player.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/gameboard.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/userinterface.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker/battlemarker.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/enumcolor.h \

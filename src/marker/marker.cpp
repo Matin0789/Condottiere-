@@ -22,7 +22,7 @@ bool Marker::is_set() const{
 bool Marker::save(std::string filePath) const {
     std::ofstream file(filePath, std::ios::binary | std::ios::app);
     if (!file) {
-        throw std::runtime_error("save file cannot be open in marker");
+        throw std::runtime_error("file " + filePath + "cannot be open in marker");
     }
 
     std::string stateName = state->getName();
@@ -35,4 +35,24 @@ bool Marker::save(std::string filePath) const {
 
     file.close();
     return true;
+}
+
+bool Marker::load(std::string filePath, GameBoard& gameBoard) {
+    std::ifstream file(filePath, std::ios::binary);
+    if (!file) {
+        throw std::runtime_error("file " + filePath + "cannot be open in marker");
+    }
+    
+    std::string stateName;
+    size_t size;
+    file.read(reinterpret_cast<char*>(&size), sizeof(size_t));
+    file.read(reinterpret_cast<char*>(&stateName), size);
+    state = gameBoard.getState(stateName);
+
+    file.read(reinterpret_cast<char*>(&color), sizeof(Color));
+    file.read(reinterpret_cast<char*>(&set), sizeof(bool));
+
+    file.close();
+    return true;
+
 }

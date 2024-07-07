@@ -39,12 +39,12 @@ public:
 
     // save and load
     bool save(std::string) const;
-    bool load(std::string);
+    bool load(std::string, GameBoard&);
 
 private:
-    const std::string name;
-    const size_t ID;
-    const size_t age;
+    std::string name;
+    size_t ID;
+    size_t age;
     std::vector<const Card*> cards;
     std::vector<const Card*> playedCards;
     size_t stateCounter;

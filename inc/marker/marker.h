@@ -3,12 +3,13 @@
 
 #include "enumcolor.h"
 #include "state.h"
+#include "gameboard.h"
 
 class Marker
 {
 private:
     State* state;
-    const Color color;
+    Color color;
     bool set;
 public:
     Marker(Color);
@@ -16,7 +17,7 @@ public:
     State& getState() const;
     bool is_set() const;
     bool save(std::string) const;
-    bool load(std::string);
+    bool load(std::string, GameBoard&);
 };
 
 #endif // MARKER_H

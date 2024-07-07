@@ -6,28 +6,15 @@
 #include <utility>
 #include <fstream> // for files
 #include <sstream> // for read file as stream
-
- // The file path of the game guide
-#define SAVE_FILE(n)        "../data/save/save_" + itos(n) + ".bin"
-
-#define Game_HELP_FILE      "../data/help/GameHelp.txt"
-#define BISHOP_HELP_FILE    "../data/help/BishopHelp.txt"
-#define TURNCOAT_HELP_FILE  "../data/help/TurncoatHelp.txt"
-#define HEROINE_HELP_FILE   "../data/help/HeroineHelp.txt"
-#define SPRING_HELP_FILE    "../data/help/SpringHelp.txt"
-#define WINTER_HELP_FILE    "../data/help/WinterHelp.txt"
-#define SCARECROW_HELP_FILE "../data/help/ScarecrowHelp.txt"
-#define DRUMMER_HELP_FILE   "../data/help/DrummerHelp.txt"
-#define SPY_HELP_FILE       "../data/help/SpyHelp.txt"
-
-#define BOARD_FILE          "../data/board/adjacency.txt"
+#include <typeinfo>
 
 #include "game.h"
+#include "filepath.h"
 
 std::string Game::help; // set help
 // constructor
 Game::Game(UserInterface &inputUI) : 
-    ui(inputUI),
+    ui(&inputUI),
     season(nullptr),
     gameBoard(BOARD_FILE)
 {
@@ -35,7 +22,7 @@ Game::Game(UserInterface &inputUI) :
 
     // Read help from file
     std::ifstream helpFile(Game_HELP_FILE);
-    if (helpFile.is_open()){
+    if (helpFile.is_open()) {
         std::stringstream helpString;
         std::string tmp;
         while(getline(helpFile,tmp)){
@@ -44,7 +31,7 @@ Game::Game(UserInterface &inputUI) :
         Game::help = helpString.str();
         helpFile.close();
     }
-    else 
+    else
         throw std::runtime_error("The game help file cannot be opened");
     //
 
@@ -84,10 +71,6 @@ Game::Game(UserInterface &inputUI) :
     }
 }
 
-std::string Game::getHelp() {    // send help texts for user
-    return help;
-}
-
 Game::~Game() {
     for (auto &&player : players)
     {
@@ -103,13 +86,21 @@ Game::~Game() {
             cards.insert(cards.end(), tmp.begin(), tmp.end());
         }
     }
+
+    cards.push_back(season);
+    season = nullptr;
+
     for (auto &&card : cards)
     {
         delete card;
     }
 }
 
-size_t Game::find_war_winner(){    
+std::string Game::getHelp() {    // send help texts for user
+    return help;
+}
+
+size_t Game::warـanalyst(){    
     std::vector<std::vector<unsigned int>> pointCards(players.size());
     std::vector<std::pair<size_t ,const Card*>> purpleCards;
     std::vector<bool> drummer_set(players.size(),false);
@@ -142,17 +133,14 @@ size_t Game::find_war_winner(){
         });
     for (auto &&purpleCard : purpleCards)
     {
-        if (purpleCard.second->getType() == "drummer") {
+        if (typeid(*purpleCard.second) == typeid(Drummer)) {
             if (drummer_set[purpleCard.first] == false) {
                 purpleCard.second->applyFeature(pointCards, purpleCard.first);
+                drummer_set[purpleCard.first] = true;
             }
         }
         else{
             purpleCard.second->applyFeature(pointCards, purpleCard.first);
-        }
-
-        if (purpleCard.second->getType() == "drummer") {
-            drummer_set[purpleCard.first] = true;
         }
     }
 
@@ -208,7 +196,6 @@ bool Game::find_game_winner(const Player& player){
             }
             
         }
-        
     }
     else
         return false;
@@ -216,11 +203,11 @@ bool Game::find_game_winner(const Player& player){
 }
 
 void Game::getPlayers() {
-    int n = ui.get_players_number();
+    int n = ui->get_players_number();
     for (size_t i = 0; i < n; i++) {
-        std::string name = ui.get_player_name(i + 1);
-        unsigned int age = ui.get_player_old(i + 1);
-        Color color = ui.get_player_color(i + 1);
+        std::string name = ui->get_player_name(i + 1);
+        unsigned int age = ui->get_player_old(i + 1);
+        Color color = ui->get_player_color(i + 1);
         players.push_back(Player(name, i, age, color));
     }
 }
@@ -231,7 +218,7 @@ void Game::distributeCards() {
         std::vector<const Card*> playerCards(cards.begin(), cards.begin() + (10 + player.getStateNumber()));
         cards.erase(cards.begin(), cards.begin() + (10 + player.getStateNumber()));
         player.setCards(playerCards);
-        ui.showPlayerCards(player);
+        ui->showPlayerCards(player);
     }
 }
 
@@ -246,12 +233,21 @@ void Game::play()
     distributeCards();
     size_t currentPlayerID = 1;
     currentPlayerID = compareAge();
+    size_t favorSetterID = players.size();
+    size_t battleSetterID = currentPlayerID;
     while (true){
-        set_battleground(players[currentPlayerID]);
-        currentPlayerID = war(currentPlayerID);
+        if (favorSetterID < players.size()) {
+            set_favorground(players[favorSetterID]);
+        }
+        set_battleground(players[battleSetterID]);
+        std::pair<size_t, std::pair<size_t, size_t>> war_return_value = war(currentPlayerID);
+        currentPlayerID = war_return_value.first;
+        favorSetterID = war_return_value.second.first;
+        battleSetterID = war_return_value.second.second;
+
         bool gameEnd = find_game_winner(players[currentPlayerID]);
         if (gameEnd){
-            ui.declare_gameWinner(players[currentPlayerID]);
+            ui->declare_gameWinner(players[currentPlayerID]);
             break;
         }
         size_t counter = 0;
@@ -285,14 +281,19 @@ bool Game::check_number_of_player(std::string n) {
 }
 
 void Game::set_battleground(const Player& currentPlayer) {
-    State* battlegroud = ui.get_battleground(currentPlayer,gameBoard);
-    battleMarker.setState(battlegroud);
+    State* battleground = ui->get_battleground(currentPlayer,gameBoard);
+    battleMarker.setState(battleground);
+}
+
+void Game::set_favorground(const Player& currentPlayer) {
+    State* favorground = ui->get_favorground(currentPlayer,gameBoard);
+    favorMarker.setState(favorground);
 }
 
 bool Game::save(std::string filePath) const {
     std::ofstream file(filePath, std::ios::binary | std::ios::trunc | std::ios::app);
     if (!file) {
-        throw std::runtime_error("save file cannot be open in game");
+        throw std::runtime_error("file " + filePath + " cannot be open in game");
     }
 
     // save cards
@@ -301,49 +302,155 @@ bool Game::save(std::string filePath) const {
     for (auto &&card : cards) {
         size_t capacity = card->getType().capacity();
         file.write(reinterpret_cast<const char*>(&capacity), sizeof(size_t));
-        std::string tmp = card->getType();
-        file.write(reinterpret_cast<const char*>(&tmp), capacity);
+        std::string cardName = card->getType();
+        file.write(reinterpret_cast<const char*>(&cardName), capacity);
+    }
+    bool season_set = false;
+    if (season){
+        season_set = true;
+        file.write(reinterpret_cast<const char*>(&season_set), sizeof(bool));
+        std::string season_type = season->getType();
+        size_t capacity = season_type.capacity();
+        file.write(reinterpret_cast<const char*>(&capacity), sizeof(size_t));
+        file.write(reinterpret_cast<const char*>(&season_type), capacity);
+    }
+    else {
+        season_set = false;
+        file.write(reinterpret_cast<const char*>(&season_set), sizeof(bool));
     }
 
     // save ui object
-    size_t size_UI = sizeof(ui);
+    size_t size_UI = sizeof(*ui);
     file.write(reinterpret_cast<const char*>(&size_UI), sizeof(size_t));
-    file.write(reinterpret_cast<const char*>(&ui), size_UI);
+    file.write(reinterpret_cast<const char*>(&*ui), size_UI);
 
-    // save gameboard
-    size_t size_gameBoard = sizeof(gameBoard);
-    file.write(reinterpret_cast<const char*>(&size_gameBoard), sizeof(size_t));
-    file.write(reinterpret_cast<const char*>(&gameBoard), size_gameBoard);
 
     file.close();
 
+    // save gameboard
+    size_t gameBoard_size = sizeof(gameBoard);
+    file.write(reinterpret_cast<const char*>(&gameBoard_size), sizeof(size_t));
+    file.write(reinterpret_cast<const char*>(&gameBoard), gameBoard_size);
+    // save markers
     favorMarker.save(filePath);
     battleMarker.save(filePath);
+
+    size_t players_size = players.size();
+    file.write(reinterpret_cast<const char*>(&players_size), sizeof(size_t));
     for (auto &&player : players) {
         player.save(filePath);
     }
+
     return true;
 }
 
-int Game::war(int currentPlayerID) {     //This function starts working when the conditions are ready and the province of the battle location is selected
+bool Game::load(std::string filePath) {
+    std::ifstream file(filePath, std::ios::binary);
+    if (!file) {
+        throw std::runtime_error("file " + filePath + " cannot be open in game");
+    }
+
+    // read cards
+    size_t size;
+    file.read(reinterpret_cast<char*>(&size), sizeof(size_t));
+    for (size_t i = 0; i < size; i++)
+    {
+        size_t capacity;
+        file.read(reinterpret_cast<char*>(&capacity), sizeof(size_t));
+        std::string cardName;
+        file.read(reinterpret_cast<char*>(&cardName), sizeof(capacity));
+        if (cardName == "1")
+            cards.push_back(new YellowCard(1));
+        else if (cardName == "2")
+            cards.push_back(new YellowCard(2));
+        else if (cardName == "3")
+            cards.push_back(new YellowCard(3));
+        else if (cardName == "4")
+            cards.push_back(new YellowCard(4));
+        else if (cardName == "5")
+            cards.push_back(new YellowCard(5));
+        else if (cardName == "6")
+            cards.push_back(new YellowCard(6));
+        else if (cardName == "10")
+            cards.push_back(new YellowCard(10));
+        else if (cardName == "Heroine")
+            cards.push_back(new Heroine(HEROINE_HELP_FILE));
+        else if (cardName == "Turncoat")
+            cards.push_back(new Turncoat(TURNCOAT_HELP_FILE));
+        else if (cardName == "Scarecrow")
+            cards.push_back(new Scarecrow(SCARECROW_HELP_FILE));
+        else if (cardName == "Drummer")
+            cards.push_back(new Drummer(DRUMMER_HELP_FILE));
+        else if (cardName == "Bishop")
+            cards.push_back(new Bishop(BISHOP_HELP_FILE));
+        else if (cardName == "Spy")
+            cards.push_back(new Spy(SPY_HELP_FILE));
+        else 
+            throw std::runtime_error("card" + cardName + " not found");
+    }
+
+    bool season_set;
+    file.read(reinterpret_cast<char*>(&season_set), sizeof(bool));
+    if (season_set){
+        size_t capacity;
+        file.read(reinterpret_cast<char*>(&capacity), sizeof(size_t));
+        std::string season_type;
+        file.read(reinterpret_cast<char*>(&season_type), capacity);
+        if (season_type == "Spring")
+            season = new Spring(SPRING_HELP_FILE);
+        else if (season_type == "Winter")
+            season = new Winter(WINTER_HELP_FILE);
+    }
+    // read ui object
+    size_t size_UI;
+    file.read(reinterpret_cast<char*>(&size_UI), sizeof(size_t));
+    file.read(reinterpret_cast<char*>(&*ui), size_UI);
+    // read gameboard
+    size_t gameBoard_size;
+    file.read(reinterpret_cast<char*>(&gameBoard_size), sizeof(size_t));
+    file.read(reinterpret_cast<char*>(&gameBoard), gameBoard_size);
+
+    file.close();
+    
+    // read markers
+    favorMarker.load(filePath, gameBoard);
+    battleMarker.load(filePath, gameBoard);
+
+    // read players
+    size_t players_size;
+    file.read(reinterpret_cast<char*>(&players_size), sizeof(size_t));
+    players.clear();
+    for (size_t i = 0; i < players_size; i++)
+    {
+        Player tmp(" ", players_size, 0, Color::white);
+        tmp.load(filePath, gameBoard);
+        players.push_back(tmp);
+    }
+
+    return true;
+}
+std::pair<size_t, std::pair<size_t, size_t>> Game::war(int currentPlayerID) {     //This function starts working when the conditions are ready and the province of the battle location is selected
     std::vector<Player*> activePlayers;
     for (auto &&player : players) {
         activePlayers.push_back(&player);
     }
     size_t i = currentPlayerID;
+    size_t battleSetterID = players.size();
+    size_t favorSetterID = players.size();
+    std::vector<size_t> spyCounter(players.size());
     for (;!activePlayers.empty(); i++) {
         for (auto &&player : players)
         {
-            ui.showPlayerPlayedCards(player);
+            ui->showPlayerPlayedCards(player);
         }
-        ui.spliter();
+        ui->spliter();
         for (auto &&player : players)
         {
-            ui.showPlayerStates(player);
+            ui->showPlayerStates(player);
         }
-        ui.spliter();
-        std::string command = ui.getCommand(*activePlayers[i],battleMarker, season);
-        ui.clearTerminal();
+        ui->spliter();
+        std::string command = ui->getCommand(*activePlayers[i],battleMarker, season);
+        ui->clearTerminal();
         if (command == "pass") {       // if player select passing 
             if (activePlayers.size() == 1) currentPlayerID = activePlayers[i]->getID();
             activePlayers.erase(activePlayers.begin() + i);
@@ -351,16 +458,16 @@ int Game::war(int currentPlayerID) {     //This function starts working when the
         }
         else {
             const Card* drawnCard = activePlayers[i]->drawn_card(command);
-            if (drawnCard->getType() == "Turncoat"){
+            if (typeid(*drawnCard) == typeid(Turncoat)){
                 cards.push_back(drawnCard);
                 break;
             }
-            else if (drawnCard->getType() == "Scarecrow"){
+            else if (typeid(*drawnCard) == typeid(Scarecrow)){
                 if (!activePlayers[i]->getPlayedCards().empty()) {
                     bool flag = false;
                     do {
-                        ui.showPlayerPlayedCards(*activePlayers[i]);
-                        std::string choose = ui.get_card_name();
+                        ui->showPlayerPlayedCards(*activePlayers[i]);
+                        std::string choose = ui->get_card_name();
                         if (choose[0] >= '0' and choose[0] <= '9'){
                             for (const auto &card : activePlayers[i]->getPlayedCards()) {
                                 if (card->getType() == choose) {
@@ -372,12 +479,12 @@ int Game::war(int currentPlayerID) {     //This function starts working when the
                             }
                         }
                         else {
-                            ui << "You can only choose from yellow cards, ";
+                            *ui << "You can only choose from yellow cards, ";
                             flag = false;
                         }
                         if (!flag) {
-                            ui << "Please try again";
-                            ui.pause();
+                            *ui << "Please try again";
+                            ui->pause();
                         }
                     } while (!flag);
                 }
@@ -390,24 +497,41 @@ int Game::war(int currentPlayerID) {     //This function starts working when the
                 season = drawnCard;
             }
             else{
+                if (typeid(*drawnCard) == typeid(Bishop)) {
+                    battleSetterID = activePlayers[i]->getID();
+                }
+                else if (typeid(*drawnCard) == typeid(Spy)) {
+                    spyCounter[activePlayers[i]->getID()]++;
+                }
                 activePlayers[i]->push_to_playedCards(drawnCard);
             }
         }
         if (i >= activePlayers.size() - 1) i = -1;
     }
 
-    size_t winnerID = find_war_winner();
+    size_t winnerID = warـanalyst();
 
     if (winnerID < players.size()) {
         currentPlayerID = winnerID;
         players[currentPlayerID].setState(&battleMarker.getState());
-        ui.declare_warWinner(players[currentPlayerID]);
+        ui->declare_warWinner(players[currentPlayerID]);
     }
     else {
-        ui.declare_warWinner();
+        ui->declare_warWinner();
         battleMarker.getState().set(false);
     }
-    return currentPlayerID;
+    
+    favorSetterID = (std::max_element(spyCounter.begin(), spyCounter.end()) - spyCounter.begin());
+    std::pair<size_t, std::pair<size_t, size_t>> r; // first currentplayerID, second.first favorSetterID, second.second battleSetterID
+    r.first = currentPlayerID;
+    r.second.first = favorSetterID;
+    if (battleSetterID < players.size()){
+        r.second.second = battleSetterID;
+    }
+    else {
+        r.second.second = currentPlayerID;
+    }
+    return r;
 }
 
 size_t Game::compareAge()   // search in players ages

@@ -139,6 +139,34 @@ State* UserInterface::get_battleground(const Player& player,GameBoard& gameBoard
     throw std::runtime_error("UserInterface::get__battleground bad choice");
 }
 
+State* UserInterface::get_favorground(const Player& player,GameBoard& gameBoard) {
+    clearTerminal();
+    bool flag = false;
+    std::string choice;
+    do {
+        std::cout << "active states : ";
+        for (auto &&stateName : gameBoard.get_active_states_name()) {
+            std::cout << stateName << ", ";
+        }
+        std::cout << "OUT";
+        std::cout << std::endl;
+        std::cout << "Player" << player.getID() + 1 << ", please specify the favorground : ";
+        std::cin >> choice;
+        for (auto &&stateName : gameBoard.get_active_states_name()) {
+            if (stateName == choice) {
+                clearTerminal();
+                return gameBoard.getState(choice);
+                flag = true;
+            }
+        }
+        if (choice == "OUT") {
+            clearTerminal();
+            return nullptr;
+            flag = true;
+        }
+    } while (flag == false);
+    throw std::runtime_error("UserInterface::get__favorground bad choice");
+}
 void UserInterface::showPlayerStates(const Player& player) const{
     std::cout << "Player" << player.getID() + 1 << " : ";
     if (!player.get_states_name().empty()){

@@ -189,6 +189,7 @@ CMakeFiles/Condottiere.dir/main.cpp.o: ../main.cpp \
   /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
   /usr/include/c++/11/bits/list.tcc \
+  ../inc/gameboard.h \
   ../inc/userinterface.h \
   ../inc/marker/battlemarker.h \
   ../inc/enumcolor.h \
@@ -595,8 +596,6 @@ CMakeFiles/Condottiere.dir/src/card/card.cpp.o: ../src/card/card.cpp \
   ../inc/marker/marker.h \
   ../inc/enumcolor.h \
   ../inc/state.h \
-  ../inc/game.h \
-  ../inc/player.h \
   ../inc/gameboard.h \
   /usr/include/c++/11/unordered_map \
   /usr/include/c++/11/ext/aligned_buffer.h \
@@ -617,6 +616,9 @@ CMakeFiles/Condottiere.dir/src/card/card.cpp.o: ../src/card/card.cpp \
   /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
   /usr/include/c++/11/bits/list.tcc \
+  ../inc/game.h \
+  ../inc/player.h \
+  ../inc/gameboard.h \
   ../inc/userinterface.h \
   ../inc/marker/battlemarker.h \
   ../inc/enumcolor.h \
@@ -805,8 +807,6 @@ CMakeFiles/Condottiere.dir/src/card/drummer.cpp.o: ../src/card/drummer.cpp \
   ../inc/marker/marker.h \
   ../inc/enumcolor.h \
   ../inc/state.h \
-  ../inc/game.h \
-  ../inc/player.h \
   ../inc/gameboard.h \
   /usr/include/c++/11/unordered_map \
   /usr/include/c++/11/ext/aligned_buffer.h \
@@ -827,6 +827,9 @@ CMakeFiles/Condottiere.dir/src/card/drummer.cpp.o: ../src/card/drummer.cpp \
   /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
   /usr/include/c++/11/bits/list.tcc \
+  ../inc/game.h \
+  ../inc/player.h \
+  ../inc/gameboard.h \
   ../inc/userinterface.h \
   ../inc/marker/battlemarker.h \
   ../inc/enumcolor.h \
@@ -1401,8 +1404,6 @@ CMakeFiles/Condottiere.dir/src/card/scarecrow.cpp.o: ../src/card/scarecrow.cpp \
   ../inc/marker/marker.h \
   ../inc/enumcolor.h \
   ../inc/state.h \
-  ../inc/game.h \
-  ../inc/player.h \
   ../inc/gameboard.h \
   /usr/include/c++/11/unordered_map \
   /usr/include/c++/11/ext/aligned_buffer.h \
@@ -1423,6 +1424,9 @@ CMakeFiles/Condottiere.dir/src/card/scarecrow.cpp.o: ../src/card/scarecrow.cpp \
   /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
   /usr/include/c++/11/bits/list.tcc \
+  ../inc/game.h \
+  ../inc/player.h \
+  ../inc/gameboard.h \
   ../inc/userinterface.h \
   ../inc/marker/battlemarker.h \
   ../inc/enumcolor.h \
@@ -2450,8 +2454,6 @@ CMakeFiles/Condottiere.dir/src/card/winter.cpp.o: ../src/card/winter.cpp \
   ../inc/marker/marker.h \
   ../inc/enumcolor.h \
   ../inc/state.h \
-  ../inc/game.h \
-  ../inc/player.h \
   ../inc/gameboard.h \
   /usr/include/c++/11/unordered_map \
   /usr/include/c++/11/ext/aligned_buffer.h \
@@ -2472,6 +2474,9 @@ CMakeFiles/Condottiere.dir/src/card/winter.cpp.o: ../src/card/winter.cpp \
   /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
   /usr/include/c++/11/bits/list.tcc \
+  ../inc/game.h \
+  ../inc/player.h \
+  ../inc/gameboard.h \
   ../inc/userinterface.h \
   ../inc/marker/battlemarker.h \
   ../inc/enumcolor.h \
@@ -2904,6 +2909,7 @@ CMakeFiles/Condottiere.dir/src/game.cpp.o: ../src/game.cpp \
   /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
   /usr/include/c++/11/bits/list.tcc \
+  ../inc/gameboard.h \
   ../inc/userinterface.h \
   ../inc/marker/battlemarker.h \
   ../inc/enumcolor.h \
@@ -2920,7 +2926,8 @@ CMakeFiles/Condottiere.dir/src/game.cpp.o: ../src/game.cpp \
   ../inc/card/spring.h \
   ../inc/card/turncoat.h \
   ../inc/marker/marker.h \
-  ../inc/marker/favormarker.h
+  ../inc/marker/favormarker.h \
+  ../inc/filepath.h
 
 CMakeFiles/Condottiere.dir/src/gameboard.cpp.o: ../src/gameboard.cpp \
   /usr/include/stdc-predef.h \
@@ -3315,7 +3322,36 @@ CMakeFiles/Condottiere.dir/src/marker/battlemarker.cpp.o: ../src/marker/battlema
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
-  /usr/include/c++/11/bits/basic_string.tcc
+  /usr/include/c++/11/bits/basic_string.tcc \
+  ../inc/gameboard.h \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/unordered_map.h \
+  /usr/include/c++/11/bits/erase_if.h \
+  /usr/include/c++/11/map \
+  /usr/include/c++/11/bits/stl_tree.h \
+  /usr/include/c++/11/bits/stl_map.h \
+  /usr/include/c++/11/bits/stl_multimap.h \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/c++/11/list \
+  /usr/include/c++/11/bits/stl_list.h \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/bits/list.tcc \
+  ../inc/state.h
 
 CMakeFiles/Condottiere.dir/src/marker/favormarker.cpp.o: ../src/marker/favormarker.cpp \
   /usr/include/stdc-predef.h \
@@ -3471,7 +3507,36 @@ CMakeFiles/Condottiere.dir/src/marker/favormarker.cpp.o: ../src/marker/favormark
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
-  /usr/include/c++/11/bits/basic_string.tcc
+  /usr/include/c++/11/bits/basic_string.tcc \
+  ../inc/gameboard.h \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/unordered_map.h \
+  /usr/include/c++/11/bits/erase_if.h \
+  /usr/include/c++/11/map \
+  /usr/include/c++/11/bits/stl_tree.h \
+  /usr/include/c++/11/bits/stl_map.h \
+  /usr/include/c++/11/bits/stl_multimap.h \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/c++/11/list \
+  /usr/include/c++/11/bits/stl_list.h \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/bits/list.tcc \
+  ../inc/state.h
 
 CMakeFiles/Condottiere.dir/src/marker/marker.cpp.o: ../src/marker/marker.cpp \
   /usr/include/stdc-predef.h \
@@ -3627,6 +3692,35 @@ CMakeFiles/Condottiere.dir/src/marker/marker.cpp.o: ../src/marker/marker.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
+  ../inc/gameboard.h \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/unordered_map.h \
+  /usr/include/c++/11/bits/erase_if.h \
+  /usr/include/c++/11/map \
+  /usr/include/c++/11/bits/stl_tree.h \
+  /usr/include/c++/11/bits/stl_map.h \
+  /usr/include/c++/11/bits/stl_multimap.h \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/c++/11/list \
+  /usr/include/c++/11/bits/stl_list.h \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/bits/list.tcc \
+  ../inc/state.h \
   /usr/include/c++/11/fstream \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/ios \
@@ -3815,7 +3909,36 @@ CMakeFiles/Condottiere.dir/src/marker/playermarker.cpp.o: ../src/marker/playerma
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
-  /usr/include/c++/11/bits/basic_string.tcc
+  /usr/include/c++/11/bits/basic_string.tcc \
+  ../inc/gameboard.h \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/unordered_map.h \
+  /usr/include/c++/11/bits/erase_if.h \
+  /usr/include/c++/11/map \
+  /usr/include/c++/11/bits/stl_tree.h \
+  /usr/include/c++/11/bits/stl_map.h \
+  /usr/include/c++/11/bits/stl_multimap.h \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/c++/11/list \
+  /usr/include/c++/11/bits/stl_list.h \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/bits/list.tcc \
+  ../inc/state.h
 
 CMakeFiles/Condottiere.dir/src/player.cpp.o: ../src/player.cpp \
   /usr/include/stdc-predef.h \
@@ -4016,7 +4139,40 @@ CMakeFiles/Condottiere.dir/src/player.cpp.o: ../src/player.cpp \
   ../inc/marker/playermarker.h \
   ../inc/marker/marker.h \
   ../inc/enumcolor.h \
-  ../inc/state.h
+  ../inc/state.h \
+  ../inc/gameboard.h \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/unordered_map.h \
+  /usr/include/c++/11/bits/erase_if.h \
+  /usr/include/c++/11/map \
+  /usr/include/c++/11/bits/stl_tree.h \
+  /usr/include/c++/11/bits/stl_map.h \
+  /usr/include/c++/11/bits/stl_multimap.h \
+  /usr/include/c++/11/list \
+  /usr/include/c++/11/bits/stl_list.h \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/bits/list.tcc \
+  ../inc/card/yellowcard.h \
+  ../inc/card/card.h \
+  ../inc/card/bishop.h \
+  ../inc/card/purplecard.h \
+  ../inc/card/drummer.h \
+  ../inc/card/heroine.h \
+  ../inc/card/scarecrow.h \
+  ../inc/card/spy.h \
+  ../inc/card/winter.h \
+  ../inc/card/season.h \
+  ../inc/card/spring.h \
+  ../inc/card/turncoat.h \
+  ../inc/filepath.h
 
 CMakeFiles/Condottiere.dir/src/state.cpp.o: ../src/state.cpp \
   /usr/include/stdc-predef.h \
@@ -4388,12 +4544,6 @@ CMakeFiles/Condottiere.dir/src/userinterface.cpp.o: ../src/userinterface.cpp \
   ../inc/marker/marker.h \
   ../inc/enumcolor.h \
   ../inc/state.h \
-  ../inc/player.h \
-  ../inc/card/card.h \
-  ../inc/state.h \
-  ../inc/marker/playermarker.h \
-  ../inc/enumcolor.h \
-  ../inc/game.h \
   ../inc/gameboard.h \
   /usr/include/c++/11/map \
   /usr/include/c++/11/bits/stl_tree.h \
@@ -4403,6 +4553,13 @@ CMakeFiles/Condottiere.dir/src/userinterface.cpp.o: ../src/userinterface.cpp \
   /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
   /usr/include/c++/11/bits/list.tcc \
+  ../inc/state.h \
+  ../inc/player.h \
+  ../inc/card/card.h \
+  ../inc/marker/playermarker.h \
+  ../inc/enumcolor.h \
+  ../inc/game.h \
+  ../inc/gameboard.h \
   ../inc/userinterface.h \
   ../inc/card/yellowcard.h \
   ../inc/card/card.h \
@@ -4447,6 +4604,8 @@ CMakeFiles/Condottiere.dir/src/userinterface.cpp.o: ../src/userinterface.cpp \
 ../src/marker/playermarker.cpp:
 
 /usr/include/c++/11/bits/locale_facets_nonio.h:
+
+../inc/filepath.h:
 
 /usr/include/c++/11/tr1/riemann_zeta.tcc:
 

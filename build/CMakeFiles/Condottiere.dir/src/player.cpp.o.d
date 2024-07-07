@@ -165,4 +165,33 @@ CMakeFiles/Condottiere.dir/src/player.cpp.o: \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker/playermarker.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker/marker.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/enumcolor.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/state.h
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/state.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/gameboard.h \
+ /usr/include/c++/11/unordered_map \
+ /usr/include/c++/11/ext/aligned_buffer.h \
+ /usr/include/c++/11/bits/hashtable.h \
+ /usr/include/c++/11/bits/hashtable_policy.h /usr/include/c++/11/tuple \
+ /usr/include/c++/11/bits/uses_allocator.h \
+ /usr/include/c++/11/bits/invoke.h \
+ /usr/include/c++/11/bits/enable_special_members.h \
+ /usr/include/c++/11/bits/node_handle.h \
+ /usr/include/c++/11/bits/unordered_map.h \
+ /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/map \
+ /usr/include/c++/11/bits/stl_tree.h /usr/include/c++/11/bits/stl_map.h \
+ /usr/include/c++/11/bits/stl_multimap.h /usr/include/c++/11/list \
+ /usr/include/c++/11/bits/stl_list.h \
+ /usr/include/c++/11/bits/allocated_ptr.h \
+ /usr/include/c++/11/bits/list.tcc \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/yellowcard.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/card.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/bishop.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/purplecard.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/drummer.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/heroine.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/scarecrow.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/spy.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/winter.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/season.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/spring.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/turncoat.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/filepath.h

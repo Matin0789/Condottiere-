@@ -4,6 +4,7 @@
 #include <vector>
 #include <array>
 #include <string>
+#include <utility>
 
 #include "player.h"
 #include "gameboard.h"
@@ -34,16 +35,17 @@ public:
     void play();
 	static bool check_number_of_player(std::string);
 	void set_battleground(const Player&);
+	void set_favorground(const Player&);
 	bool save(std::string) const; 	// (save file path)
 	bool load(std::string);	// (save file path)
 private:
 	//private methods
-	size_t find_war_winner();
+	size_t warـanalyst();
 	bool find_game_winner(const Player&);
 	void getPlayers();
 	void shuffle();
 	void distributeCards();
-	int war(int);
+	std::pair<size_t, std::pair<size_t, size_t>> war(int); // // first currentplayerID, second.first favorSetterID, second.second battleSetterID
 	//private atributes
 	static std::string help;
     //data
@@ -53,7 +55,7 @@ private:
     const Card* season;
 	GameBoard gameBoard;
 	std::vector<Player> players;
-    UserInterface &ui;
+    UserInterface *ui;
 	//
 };
 

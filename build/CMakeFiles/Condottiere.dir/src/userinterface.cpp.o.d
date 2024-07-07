@@ -179,12 +179,6 @@ CMakeFiles/Condottiere.dir/src/userinterface.cpp.o: \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker/marker.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/enumcolor.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/state.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/player.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/card.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/state.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker/playermarker.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/enumcolor.h \
- /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/game.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/gameboard.h \
  /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/bits/stl_map.h \
@@ -192,6 +186,13 @@ CMakeFiles/Condottiere.dir/src/userinterface.cpp.o: \
  /usr/include/c++/11/bits/stl_list.h \
  /usr/include/c++/11/bits/allocated_ptr.h \
  /usr/include/c++/11/bits/list.tcc \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/state.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/player.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/card.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/marker/playermarker.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/enumcolor.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/game.h \
+ /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/gameboard.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/userinterface.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/yellowcard.h \
  /home/matin/Documents/University/Advanced/Project/Condottiere-/inc/card/card.h \
