@@ -1,9 +1,0 @@
-# ninja log v6
-14	1724	7420393981108384	Condottiere-_autogen/timestamp	cc3021ed64c68990
-14	1724	7420393981108384	Condottiere-_autogen/mocs_compilation.cpp	cc3021ed64c68990
-14	1724	7420393981108384	E:/info/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/timestamp	cc3021ed64c68990
-14	1724	7420393981108384	E:/info/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/mocs_compilation.cpp	cc3021ed64c68990
-1732	10674	7420393982658350	CMakeFiles/Condottiere-.dir/Condottiere-_autogen/mocs_compilation.cpp.obj	64213265ca6186b7
-1737	10781	7420393982698378	CMakeFiles/Condottiere-.dir/main.cpp.obj	66f8d4942c1181cd
-1746	10996	7420393982798385	CMakeFiles/Condottiere-.dir/mainwindow.cpp.obj	62fc8f993e717a71
-10999	11738	7420394075325967	Condottiere-.exe	7f4c2d5600f78a2
