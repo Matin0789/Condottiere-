@@ -1,120 +1,70 @@
-cmake_minimum_required(VERSION 3.21.1)
+cmake_minimum_required(VERSION 3.5)
 
-option(LINK_INSIGHT "Link Qt Insight Tracker library" ON)
-option(BUILD_QDS_COMPONENTS "Build design studio components" ON)
+project(Condottiere- VERSION 0.1 LANGUAGES CXX)
 
-project(CondottiereApp LANGUAGES CXX)
-
+set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
 
-find_package(Qt6 6.2 REQUIRED COMPONENTS Core Gui Qml Quick)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-set(SOURCE_FILES
-    src/card/card.cpp
-    src/card/bishop.cpp
-    src/card/drummer.cpp
-    src/card/heroine.cpp
-    src/card/purplecard.cpp
-    src/card/scarecrow.cpp
-    src/card/season.cpp
-    src/card/spring.cpp
-    src/card/spy.cpp
-    src/card/turncoat.cpp
-    src/card/winter.cpp
-    src/card/yellowcard.cpp
+find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
-    src/marker/battlemarker.cpp
-    src/marker/favormarker.cpp
-    src/marker/marker.cpp
-    src/marker/playermarker.cpp
-
-    src/game.cpp
-    src/gameboard.cpp
-    src/player.cpp
-    src/state.cpp
-    src/userinterface.cpp
+set(PROJECT_SOURCES
+        main.cpp
+        mainwindow.cpp
+        mainwindow.h
+        mainwindow.ui
 )
 
-set(HEADER_FILES
-
-    inc/card/card.h
-    inc/card/bishop.h
-    inc/card/drummer.h
-    inc/card/heroine.h
-    inc/card/purplecard.h
-    inc/card/scarecrow.h
-    inc/card/season.h
-    inc/card/spring.h
-    inc/card/winter.h
-    inc/card/spy.h
-    inc/card/turncoat.h
-    inc/card/yellowcard.h
-
-    inc/marker/marker.h
-    inc/marker/battlemarker.h
-    inc/marker/favormarker.h
-    inc/marker/playermarker.h
-
-    inc/enumcolor.h
-    inc/game.h
-    inc/gameboard.h
-    inc/player.h
-    inc/state.h
-    inc/userinterface.h
-)
-
-if (Qt6_VERSION VERSION_GREATER_EQUAL 6.3)
-    qt_standard_project_setup()
+if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
+    qt_add_executable(Condottiere-
+        MANUAL_FINALIZATION
+        ${PROJECT_SOURCES}
+    )
+# Define target properties for Android with Qt 6 as:
+#    set_property(TARGET Condottiere- APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
+#                 ${CMAKE_CURRENT_SOURCE_DIR}/android)
+# For more information, see https://doc.qt.io/qt-6/qt-add-executable.html#target-creation
+else()
+    if(ANDROID)
+        add_library(Condottiere- SHARED
+            ${PROJECT_SOURCES}
+        )
+# Define properties for Android with Qt 5 after find_package() calls as:
+#    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
+    else()
+        add_executable(Condottiere-
+            ${PROJECT_SOURCES}
+        )
+    endif()
 endif()
 
-qt_add_executable(CondottiereApp
-    src/main.cpp
-    ${HEADER_FILES}
-    ${SOURCE_FILES}
-)
+target_link_libraries(Condottiere- PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 
-qt_add_resources(CondottiereApp "configuration"
-    PREFIX "/"
-    FILES
-        qtquickcontrols2.conf
-)
-
-target_link_libraries(CondottiereApp PRIVATE
-    Qt6::Core
-    Qt6::Gui
-    Qt6::Qml
-    Qt6::Quick
-)
-
-target_include_directories(CondottiereApp PRIVATE
-    ${PROJECT_SOURCE_DIR}/inc
-    ${PROJECT_SOURCE_DIR}/inc/card
-    ${PROJECT_SOURCE_DIR}/inc/marker
-)
-
-set(QT_QML_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/qml)
-set(QML_IMPORT_PATH ${QT_QML_OUTPUT_DIRECTORY}
-    CACHE STRING "Import paths for Qt Creator's code model"
-    FORCE
-)
-
-if (BUILD_QDS_COMPONENTS)
-    include(${CMAKE_CURRENT_SOURCE_DIR}/qmlcomponents)
+# Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
+# If you are developing for iOS or macOS you should consider setting an
+# explicit, fixed bundle identifier manually though.
+if(${QT_VERSION} VERSION_LESS 6.1.0)
+  set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.Condottiere-)
 endif()
-
-include(${CMAKE_CURRENT_SOURCE_DIR}/qmlmodules)
-
-if (LINK_INSIGHT)
-    include(${CMAKE_CURRENT_SOURCE_DIR}/insight)
-endif ()
+set_target_properties(Condottiere- PROPERTIES
+    ${BUNDLE_ID_OPTION}
+    MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
+    MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
+    MACOSX_BUNDLE TRUE
+    WIN32_EXECUTABLE TRUE
+)
 
 include(GNUInstallDirs)
-install(TARGETS CondottiereApp
+install(TARGETS Condottiere-
     BUNDLE DESTINATION .
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
 
-# make IDEs aware of the QML import path
-set(QML_IMPORT_PATH ${PROJECT_BINARY_DIR}/qml CACHE PATH
-    "Path to the custom QML components defined by the project")
+if(QT_VERSION_MAJOR EQUAL 6)
+    qt_finalize_executable(Condottiere-)
+endif()
