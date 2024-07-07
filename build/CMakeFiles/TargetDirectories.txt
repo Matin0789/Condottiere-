@@ -1,8 +1,0 @@
-/home/matin/Documents/University/Advanced/Project/Condottiere-/build/CMakeFiles/Condottiere-.dir
-/home/matin/Documents/University/Advanced/Project/Condottiere-/build/CMakeFiles/edit_cache.dir
-/home/matin/Documents/University/Advanced/Project/Condottiere-/build/CMakeFiles/rebuild_cache.dir
-/home/matin/Documents/University/Advanced/Project/Condottiere-/build/CMakeFiles/list_install_components.dir
-/home/matin/Documents/University/Advanced/Project/Condottiere-/build/CMakeFiles/install.dir
-/home/matin/Documents/University/Advanced/Project/Condottiere-/build/CMakeFiles/install/local.dir
-/home/matin/Documents/University/Advanced/Project/Condottiere-/build/CMakeFiles/install/strip.dir
-/home/matin/Documents/University/Advanced/Project/Condottiere-/build/CMakeFiles/Condottiere-_autogen.dir
