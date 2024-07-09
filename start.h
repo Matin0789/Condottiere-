@@ -15,11 +15,6 @@ public:
     explicit Start(QWidget *parent = nullptr);
     ~Start();
 
-private slots:
-
-
-    void on_pushButton_Next_clicked();
-
 private:
     Ui::Start *ui;
 };
