@@ -12,3 +12,11 @@ Start::~Start()
 {
     delete ui;
 }
+
+void Start::on_pushButton_start_clicked()
+{
+    hide();
+    set = new Set(this);
+    set->show();
+}
+

@@ -19,94 +19,114 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>370</x>
+     <x>360</x>
      <y>210</y>
      <width>91</width>
      <height>31</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/Description/Graphics/photos/download.jpg);
-background-color: rgb(255, 255, 255);</string>
+    <string notr="true">
+QPushButton
+{
+	border : none ;
+	color : black ;
+	background-color : white ;
+	font : 700 22pt &quot;8514oem&quot; ;
+	border-image: 30px url(:/Description/Graphics/photos/white (1).jpg);
+}
+QPushButton : Hover
+{
+	background-color : black ;
+    border-radius : 40px ;
+	border-image: 10px  url(:/Description/Graphics/photos/download.jpg);
+}
+QPushButton : pressed
+{
+	background-color : black ;
+	color : white ;
+	border-image: 10px  url(:/Description/Graphics/photos/download.jpg);
+}</string>
    </property>
    <property name="text">
     <string>Next</string>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="" native="true">
    <property name="geometry">
     <rect>
-     <x>307</x>
-     <y>90</y>
+     <x>290</x>
+     <y>70</y>
      <width>221</width>
      <height>111</height>
     </rect>
    </property>
-   <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0">
-     <layout class="QGridLayout" name="gridLayout_2">
-      <item row="0" column="0">
-       <layout class="QHBoxLayout" name="horizontalLayout">
-        <item>
-         <widget class="QLabel" name="label">
-          <property name="styleSheet">
-           <string notr="true">border-image: url(:/Description/Graphics/photos/white (1).jpg);</string>
-          </property>
-          <property name="text">
-           <string>Name</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="lineEdit">
-          <property name="styleSheet">
-           <string notr="true">border-image: url(:/Description/Graphics/photos/white (1).jpg);</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);
+border-image: url(:/Description/Graphics/photos/download.jpg);
+background-image: url(:/Description/Graphics/photos/download.jpg);</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/Description/Graphics/photos/white (1).jpg);</string>
+        </property>
+        <property name="text">
+         <string> Name </string>
+        </property>
+       </widget>
       </item>
-      <item row="1" column="0">
-       <layout class="QHBoxLayout" name="horizontalLayout_2">
-        <item>
-         <widget class="QLabel" name="label_2">
-          <property name="styleSheet">
-           <string notr="true">border-image: url(:/Description/Graphics/photos/white (1).jpg);</string>
-          </property>
-          <property name="text">
-           <string>Age</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="lineEdit_2">
-          <property name="styleSheet">
-           <string notr="true">border-image: url(:/Description/Graphics/photos/white (1).jpg);</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_4">
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/Description/Graphics/photos/white (1).jpg);</string>
+        </property>
+       </widget>
       </item>
-      <item row="2" column="0">
-       <layout class="QHBoxLayout" name="horizontalLayout_3">
-        <item>
-         <widget class="QLabel" name="label_3">
-          <property name="styleSheet">
-           <string notr="true">border-image: url(:/Description/Graphics/photos/white (1).jpg);</string>
-          </property>
-          <property name="text">
-           <string>Color</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="lineEdit_3">
-          <property name="styleSheet">
-           <string notr="true">border-image: url(:/Description/Graphics/photos/white (1).jpg);</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/Description/Graphics/photos/white (1).jpg);</string>
+        </property>
+        <property name="text">
+         <string> Age </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_5">
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/Description/Graphics/photos/white (1).jpg);</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="label_6">
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/Description/Graphics/photos/white (1).jpg);</string>
+        </property>
+        <property name="text">
+         <string> Color </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_6">
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/Description/Graphics/photos/white (1).jpg);</string>
+        </property>
+       </widget>
       </item>
      </layout>
     </item>

@@ -14,9 +14,9 @@
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">border-image: url(:/Description/Graphics/photos/500439-ELEX-video-games-nature-fantasy-art-sword-landscape.jpg);</string>
+   <string notr="true">border-image: url(:/Description/Graphics/photos/pngtree-canyon-game-cg-scene-background-map-image_2207196.jpg);</string>
   </property>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="pushButton_start">
    <property name="geometry">
     <rect>
      <x>310</x>
@@ -25,8 +25,31 @@
      <height>41</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton
+{
+	border : none ;
+	color : black ;
+	background-color : white ;
+	font : 700 22pt &quot;8514oem&quot;;
+	border-image: 30px url(:/Description/Graphics/photos/white (1).jpg);
+}
+QPushButton : Hover
+{
+	background-color : black ;
+    border-radius : 40px ;
+	border-image: 10px url(:/Description/Graphics/photos/white (1).jpg);
+}
+QPushButton : pressed
+{
+	background-color : black ;
+	color : white ;
+	border-image: 10px url(:/Description/Graphics/photos/white (1).jpg);
+}</string>
+   </property>
    <property name="text">
-    <string>PushButton</string>
+    <string>Next</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit">
