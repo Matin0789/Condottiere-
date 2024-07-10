@@ -1,5 +1,10 @@
 <RCC>
     <qresource prefix="/">
+        <file>Description/Graphics/Assets/Map.png</file>
+        <file>Description/Graphics/Assets/Pe_Sym.png</file>
+        <file>Description/Graphics/Assets/Wa_Sym.png</file>
+        <file>Description/Graphics/photos/360_F_554613505_mHuxeAL5xSskoGxXUIiKqoeJlc84iA1z.jpg</file>
+        <file>Description/Graphics/photos/360_F_581151308_Z0lMkq1tP9zwkzDLE4wiVhemu7kIksky.jpg</file>
         <file>Description/Graphics/photos/500439-ELEX-video-games-nature-fantasy-art-sword-landscape.jpg</file>
         <file>Description/Graphics/photos/1440496.jpg</file>
         <file>Description/Graphics/photos/ai-generated-a-snowy-mountain-landscape-with-a-blue-sky-photo.jpg</file>
@@ -19,6 +24,8 @@
         <file>Description/Graphics/photos/HD-wallpaper-spring-tree-art-tree-oriental-asian-beautiful-spring-blossons-cherry.jpg</file>
         <file>Description/Graphics/photos/hogwarts-legacy-dark-edition-official-pc-wallpaper-v0-potn7vwaxyj91.webp</file>
         <file>Description/Graphics/photos/images.jfif</file>
+        <file>Description/Graphics/photos/istockphoto-604867582-170667a.jpg</file>
+        <file>Description/Graphics/photos/istockphoto-852110414-170667a.jpg</file>
         <file>Description/Graphics/photos/mars-planet-style-concept-space-fantastic-planet-surface-rocky-mountains-background-against-night-sky-with-stars-shining-bright-horizon-generative-ai_1423-10194.avif</file>
         <file>Description/Graphics/photos/mercenaries2.webp</file>
         <file>Description/Graphics/photos/nature-landscape.jpg</file>
@@ -35,9 +42,27 @@
         <file>Description/Graphics/photos/pngtree-game-war-texture-background-image_784885.jpg</file>
         <file>Description/Graphics/photos/pngtree-waterside-building-scene-game-background-picture-image_2511459.jpg</file>
         <file>Description/Graphics/photos/snowy-landscape-with-lake-and-pine-tree-mountain-scene-background-nature-and-rural-scene-concept-digital-art-illustration-generative-ai-photo.jpg</file>
+        <file>Description/Graphics/photos/warriors-in-medieval-battle-scene-fighting-in-silhouette-against-a-foggy-background-with-castle-free-photo.jpg</file>
         <file>Description/Graphics/photos/white (1).jpg</file>
         <file>Description/Graphics/photos/wp3945596.jpg</file>
         <file>Description/Graphics/photos/wp7007718.png</file>
         <file>Description/Graphics/photos/ZNJjWr5ahVGZvCmUi6OL--1--I2UGS.webp</file>
+        <file>Description/Graphics/photos/12485407-medieval-knights-in-battle-background-rider-leader-duel.jpg</file>
+        <file>Description/Graphics/photos/download2.jpg</file>
+        <file>Description/Graphics/photos/download3.jpg</file>
+        <file>Description/Graphics/photos/download4.jpg</file>
+        <file>Description/Graphics/photos/download5.jpg</file>
+        <file>Description/Graphics/photos/download7.jpg</file>
+        <file>Description/Graphics/photos/download10.jpg</file>
+        <file>Description/Graphics/photos/download12.jpg</file>
+        <file>Description/Graphics/photos/orange.jpg</file>
+        <file>Description/Graphics/photos/blue.jpg</file>
+        <file>Description/Graphics/photos/brown.jpg</file>
+        <file>Description/Graphics/markers/icons8-battle-100(1).png</file>
+        <file>Description/Graphics/markers/icons8-battle-100.png</file>
+        <file>Description/Graphics/markers/icons8-flag-100.png</file>
+        <file>Description/Graphics/markers/icons8-peace-90.png</file>
+        <file>Description/Graphics/markers/icons8-peace-100(1).png</file>
+        <file>Description/Graphics/markers/icons8-peace-100.png</file>
     </qresource>
 </RCC>

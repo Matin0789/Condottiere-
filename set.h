@@ -15,8 +15,12 @@ public:
     explicit Set(QWidget *parent = nullptr);
     ~Set();
 
+private slots:
+    void on_pushButton_Back_clicked();
+
 private:
     Ui::Set *ui;
+
 };
 
 #endif // SET_H

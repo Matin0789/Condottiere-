@@ -82,8 +82,12 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${PROJECT_SOURCES}
 
         start.h start.cpp start.ui
-        img.qrc
+
         set.h set.cpp set.ui
+        showcards.h showcards.cpp showcards.ui
+        img.qrc
+        campaign.h campaign.cpp campaign.ui
+        img.qrc
         
     )
 # Define target properties for Android with Qt 6 as:
