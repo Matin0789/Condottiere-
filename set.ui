@@ -16,7 +16,7 @@
   <property name="styleSheet">
    <string notr="true">border-image: url(:/Description/Graphics/photos/360_F_554613505_mHuxeAL5xSskoGxXUIiKqoeJlc84iA1z.jpg);</string>
   </property>
-  <widget class="QPushButton" name="pb_set_next">
+  <widget class="QPushButton" name="pb_set_back">
    <property name="geometry">
     <rect>
      <x>290</x>
@@ -55,7 +55,7 @@ QPushButton : pressed
     <string>Back</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_Back">
+  <widget class="QPushButton" name="pb_next">
    <property name="geometry">
     <rect>
      <x>290</x>

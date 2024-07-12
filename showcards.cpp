@@ -6,6 +6,7 @@ showCards::showCards(QWidget *parent)
     , ui(new Ui::showCards)
 {
     ui->setupUi(this);
+
 }
 
 showCards::~showCards()
@@ -18,5 +19,12 @@ void showCards::on_pb_go_clicked()
     hide();
     Campaign = new campaign(this);
     Campaign->show();
+}
+
+
+
+void showCards::on_toolButton_6_clicked()
+{
+
 }
 

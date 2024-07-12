@@ -2,9 +2,17 @@
 #define CAMPAIGN_H
 
 #include <QDialog>
+#include <QGraphicsScene>
+#include <QGraphicsRectItem>
+#include <QGraphicsView>
 
 #include "options.h"
 #include "help.h"
+
+#include "userinterface.h"
+#include "enumcolor.h"
+#include "purplecard.h"
+#include "player.h"
 
 namespace Ui {
 class campaign;
@@ -27,6 +35,9 @@ private:
     Ui::campaign *ui;
         Options *options;
         Help *help;
+        QGraphicsScene *scene = new QGraphicsScene();
+        QGraphicsRectItem *rect = new QGraphicsRectItem();
+        QGraphicsView *view = new QGraphicsView(scene);
 };
 
 #endif // CAMPAIGN_H

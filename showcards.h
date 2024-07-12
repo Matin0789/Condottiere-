@@ -2,7 +2,8 @@
 #define SHOWCARDS_H
 
 #include <QDialog>
-
+#include <QGraphicsPixmapItem>
+#include <QGraphicsItem>
 #include "campaign.h"
 
 namespace Ui {
@@ -19,6 +20,9 @@ public:
 
 private slots:
     void on_pb_go_clicked();
+
+
+    void on_toolButton_6_clicked();
 
 private:
     Ui::showCards *ui;

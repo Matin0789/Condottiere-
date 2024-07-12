@@ -12,3 +12,30 @@ Options::~Options()
 {
     delete ui;
 }
+
+
+void Options::on_pb_save_clicked()
+{
+
+   // game.save();
+
+}
+
+
+void Options::on_pb_load_clicked()
+{
+    //game.load();
+}
+
+
+void Options::on_pb_audio_clicked()
+{
+    //
+}
+
+
+void Options::on_pb_quit_clicked()
+{
+    close();
+}
+

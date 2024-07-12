@@ -13,7 +13,9 @@ Set::~Set()
     delete ui;
 }
 
-void Set::on_pb_set_next_clicked()
+
+
+void Set::on_pb_next_pressed()
 {
     hide();
     showcards = new showCards(this);

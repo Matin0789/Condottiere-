@@ -18,9 +18,9 @@ public:
     ~Set();
 
 private slots:
-    void on_pushButton_Back_clicked();
 
-    void on_pb_set_next_clicked();
+
+    void on_pb_next_pressed();
 
 private:
     Ui::Set *ui;

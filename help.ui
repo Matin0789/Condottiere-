@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1659</width>
+    <width>1028</width>
     <height>796</height>
    </rect>
   </property>
@@ -14,57 +14,158 @@
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">border-image: url(:/Description/Graphics/photos/antique-style-lined-paper-template-design-f0afe8303318fda46d4c362bd2d0d70d_screen.jpg);</string>
+   <string notr="true">border-image: url(:/Description/Graphics/photos/brown.jpg);</string>
   </property>
-  <widget class="QLineEdit" name="lineEdit">
-   <property name="geometry">
-    <rect>
-     <x>550</x>
-     <y>100</y>
-     <width>571</width>
-     <height>601</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(:/Description/Graphics/photos/white (1).jpg);</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>760</x>
+     <x>170</x>
      <y>20</y>
-     <width>141</width>
-     <height>16</height>
+     <width>691</width>
+     <height>741</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/Description/Graphics/photos/white (1).jpg);
-
-
+    <string notr="true">border-image: url(:/Description/Graphics/photos/pngtree-vintage-paper-background-with-old-map-art-image_627360.jpg);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cb_help_list">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>50</y>
+     <width>101</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Click</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Drummer</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Spy</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Heroine</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Scarecrow</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bishop</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Turncoat</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Spring</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Winter</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string/>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="pb_ok">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>90</y>
+     <width>41</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
 QPushButton
 {
-	border : none ;
 	color : black ;
-	background-color : white ;
-	font : 700 22pt &quot;8514oem&quot; ;
-	border-image: 30px url(:/Description/Graphics/photos/white (1).jpg);
+	background-color : ;
+	font: 700 10pt &quot;B Koodak&quot;;
+	border-image: 30px ;
 }
+
 QPushButton : Hover
 {
-	background-color : black ;
+	background-color : ;
     border-radius : 40px ;
-	border-image: 10px  url(:/Description/Graphics/photos/download.jpg);
+	border-image: 10px ;
 }
+
 QPushButton : pressed
 {
-	background-color : black ;
+	background-color :black ;
 	color : white ;
-	border-image: 10px  url(:/Description/Graphics/photos/download.jpg);
+	border-image: url(:/Description/Graphics/photos/blue.jpg);
+
 }</string>
    </property>
    <property name="text">
-    <string>          CONDOTTIERE</string>
+    <string>OK</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_go_back">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>90</y>
+     <width>41</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton
+{
+	color : black ;
+	background-color : ;
+	font: 700 10pt &quot;B Koodak&quot;;
+	border-image: 30px ;
+}
+
+QPushButton : Hover
+{
+	background-color : ;
+    border-radius : 40px ;
+	border-image: 10px ;
+}
+
+QPushButton : pressed
+{
+	background-color :black ;
+	color : white ;
+	border-image: url(:/Description/Graphics/photos/blue.jpg);
+
+}</string>
+   </property>
+   <property name="text">
+    <string>Back</string>
    </property>
   </widget>
  </widget>

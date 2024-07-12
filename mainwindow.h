@@ -26,8 +26,6 @@ private slots:
 
     void on_btn_exit_clicked();
 
-    void on_pushButton_Start_4_clicked();
-
 private:
     Ui::MainWindow *ui;
     Start *start;
