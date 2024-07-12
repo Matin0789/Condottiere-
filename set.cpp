@@ -13,4 +13,10 @@ Set::~Set()
     delete ui;
 }
 
+void Set::on_pb_set_next_clicked()
+{
+    hide();
+    showcards = new showCards(this);
+    showcards->show();
+}
 

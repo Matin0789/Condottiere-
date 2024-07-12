@@ -2,7 +2,11 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+
+
 #include "start.h"
+
+
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -20,6 +24,9 @@ public:
 private slots:
     void on_pushButton_Start_clicked();
 
+    void on_btn_exit_clicked();
+
+    void on_pushButton_Start_4_clicked();
 
 private:
     Ui::MainWindow *ui;

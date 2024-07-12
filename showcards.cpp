@@ -12,3 +12,11 @@ showCards::~showCards()
 {
     delete ui;
 }
+
+void showCards::on_pb_go_clicked()
+{
+    hide();
+    Campaign = new campaign(this);
+    Campaign->show();
+}
+

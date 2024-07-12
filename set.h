@@ -3,6 +3,8 @@
 
 #include <QDialog>
 
+#include "showcards.h"
+
 namespace Ui {
 class Set;
 }
@@ -18,9 +20,11 @@ public:
 private slots:
     void on_pushButton_Back_clicked();
 
+    void on_pb_set_next_clicked();
+
 private:
     Ui::Set *ui;
-
+    showCards *showcards;
 };
 
 #endif // SET_H

@@ -11,6 +11,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
+find_package(Qt6 REQUIRED COMPONENTS Multimedia)
+#find_package(Qt6 REQUIRED COMPONENTS Multimedia Widgets)
+
 
 set(SOURCE_FILES
     ${PROJECT_SOURCE_DIR}/src/card/card.cpp
@@ -88,6 +91,9 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         img.qrc
         campaign.h campaign.cpp campaign.ui
         img.qrc
+        help.h help.cpp help.ui
+        options.h options.cpp options.ui
+        Sound.qrc
         
     )
 # Define target properties for Android with Qt 6 as:
@@ -109,6 +115,8 @@ else()
 endif()
 
 target_link_libraries(Condottiere- PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(Condottiere- PRIVATE Qt6::Multimedia)
+#target_link_libraries(Condottiere- PRIVATE Qt6::MultimediaWidgets)
 
 target_include_directories(Condottiere- PRIVATE
     ${PROJECT_SOURCE_DIR}/inc

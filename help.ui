@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Help</class>
+ <widget class="QDialog" name="Help">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1659</width>
+    <height>796</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">border-image: url(:/Description/Graphics/photos/antique-style-lined-paper-template-design-f0afe8303318fda46d4c362bd2d0d70d_screen.jpg);</string>
+  </property>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>100</y>
+     <width>571</width>
+     <height>601</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/Description/Graphics/photos/white (1).jpg);</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>20</y>
+     <width>141</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/Description/Graphics/photos/white (1).jpg);
+
+
+QPushButton
+{
+	border : none ;
+	color : black ;
+	background-color : white ;
+	font : 700 22pt &quot;8514oem&quot; ;
+	border-image: 30px url(:/Description/Graphics/photos/white (1).jpg);
+}
+QPushButton : Hover
+{
+	background-color : black ;
+    border-radius : 40px ;
+	border-image: 10px  url(:/Description/Graphics/photos/download.jpg);
+}
+QPushButton : pressed
+{
+	background-color : black ;
+	color : white ;
+	border-image: 10px  url(:/Description/Graphics/photos/download.jpg);
+}</string>
+   </property>
+   <property name="text">
+    <string>          CONDOTTIERE</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
