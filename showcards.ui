@@ -20,9 +20,9 @@
    <property name="geometry">
     <rect>
      <x>480</x>
-     <y>510</y>
-     <width>80</width>
-     <height>31</height>
+     <y>520</y>
+     <width>91</width>
+     <height>41</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -51,7 +51,7 @@ QPushButton : pressed
 }</string>
    </property>
    <property name="text">
-    <string>Go</string>
+    <string>Lets Go</string>
    </property>
   </widget>
   <widget class="QToolButton" name="toolButton">
@@ -193,7 +193,7 @@ QPushButton : pressed
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/Description/Graphics/photos/blue.jpg);
-border-image: url(:/Description/Graphics/photos/white (1).jpg);</string>
+</string>
    </property>
    <property name="text">
     <string/>
@@ -283,9 +283,9 @@ border-image: url(:/Description/Graphics/photos/white (1).jpg);</string>
    <property name="geometry">
     <rect>
      <x>480</x>
-     <y>460</y>
-     <width>80</width>
-     <height>31</height>
+     <y>450</y>
+     <width>91</width>
+     <height>41</height>
     </rect>
    </property>
    <property name="styleSheet">

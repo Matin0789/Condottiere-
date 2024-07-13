@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1196</width>
+    <width>952</width>
     <height>733</height>
    </rect>
   </property>
@@ -14,13 +14,13 @@
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">border-image: url(:/Description/Graphics/photos/1440496.jpg);</string>
+   <string notr="true">border-image: url(:/Description/Graphics/photos/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f394f536d38504f3668302d7459513d3d2d3437393739353437352e313465653336356266383336.jpg);</string>
   </property>
   <widget class="QTextEdit" name="textEdit">
    <property name="geometry">
     <rect>
-     <x>250</x>
-     <y>40</y>
+     <x>120</x>
+     <y>30</y>
      <width>711</width>
      <height>91</height>
     </rect>
@@ -44,7 +44,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
   <widget class="QPushButton" name="pushButton_3">
    <property name="geometry">
     <rect>
-     <x>540</x>
+     <x>410</x>
      <y>160</y>
      <width>121</width>
      <height>41</height>
