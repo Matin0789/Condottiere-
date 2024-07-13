@@ -27,6 +27,8 @@ private slots:
 
     void on_pb_quit_clicked();
 
+    void on_pb_Continue_clicked();
+
 private:
     Ui::Options *ui;
     //Game game;

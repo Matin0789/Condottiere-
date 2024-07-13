@@ -14,15 +14,15 @@
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">border-image: url(:/Description/Graphics/photos/brown.jpg);</string>
+   <string notr="true">border-image: url(:/Description/Graphics/photos/galileus_Medieval_Crusades_1142ddf9-36f2-4043-962c-1104585e7033.jpg);</string>
   </property>
   <widget class="QPushButton" name="pb_go">
    <property name="geometry">
     <rect>
-     <x>520</x>
-     <y>450</y>
+     <x>480</x>
+     <y>510</y>
      <width>80</width>
-     <height>24</height>
+     <height>31</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -57,10 +57,10 @@ QPushButton : pressed
   <widget class="QToolButton" name="toolButton">
    <property name="geometry">
     <rect>
-     <x>170</x>
-     <y>190</y>
-     <width>101</width>
-     <height>181</height>
+     <x>160</x>
+     <y>280</y>
+     <width>81</width>
+     <height>131</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -73,10 +73,10 @@ QPushButton : pressed
   <widget class="QToolButton" name="toolButton_2">
    <property name="geometry">
     <rect>
-     <x>290</x>
-     <y>190</y>
-     <width>101</width>
-     <height>181</height>
+     <x>560</x>
+     <y>280</y>
+     <width>81</width>
+     <height>131</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -89,10 +89,10 @@ QPushButton : pressed
   <widget class="QToolButton" name="toolButton_3">
    <property name="geometry">
     <rect>
-     <x>410</x>
-     <y>190</y>
-     <width>101</width>
-     <height>181</height>
+     <x>660</x>
+     <y>280</y>
+     <width>81</width>
+     <height>131</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -105,10 +105,10 @@ QPushButton : pressed
   <widget class="QToolButton" name="toolButton_4">
    <property name="geometry">
     <rect>
-     <x>530</x>
-     <y>190</y>
-     <width>101</width>
-     <height>181</height>
+     <x>360</x>
+     <y>280</y>
+     <width>81</width>
+     <height>131</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -121,10 +121,10 @@ QPushButton : pressed
   <widget class="QToolButton" name="toolButton_5">
    <property name="geometry">
     <rect>
-     <x>650</x>
-     <y>190</y>
-     <width>101</width>
-     <height>181</height>
+     <x>760</x>
+     <y>280</y>
+     <width>81</width>
+     <height>131</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -137,10 +137,10 @@ QPushButton : pressed
   <widget class="QToolButton" name="toolButton_6">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>190</y>
-     <width>101</width>
-     <height>181</height>
+     <x>260</x>
+     <y>280</y>
+     <width>81</width>
+     <height>131</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -153,10 +153,10 @@ QPushButton : pressed
   <widget class="QToolButton" name="toolButton_7">
    <property name="geometry">
     <rect>
-     <x>770</x>
-     <y>190</y>
-     <width>101</width>
-     <height>181</height>
+     <x>460</x>
+     <y>280</y>
+     <width>81</width>
+     <height>131</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -169,10 +169,10 @@ QPushButton : pressed
   <widget class="QToolButton" name="toolButton_8">
    <property name="geometry">
     <rect>
-     <x>920</x>
-     <y>190</y>
-     <width>101</width>
-     <height>181</height>
+     <x>60</x>
+     <y>280</y>
+     <width>81</width>
+     <height>131</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -182,6 +182,155 @@ QPushButton : pressed
     <string/>
    </property>
   </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>300</y>
+     <width>1021</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/Description/Graphics/photos/blue.jpg);
+border-image: url(:/Description/Graphics/photos/white (1).jpg);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_9">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>280</y>
+     <width>81</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/Description/Graphics/Assets/Qermez/Herkol.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_10">
+   <property name="geometry">
+    <rect>
+     <x>960</x>
+     <y>280</y>
+     <width>81</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/Description/Graphics/Assets/Qermez/Herkol.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cb_show_player_list">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>50</y>
+     <width>151</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/Description/Graphics/photos/download5.jpg);</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>PLAYERS</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>#Name player 1</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>#Name player 2</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>#Name player 3</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>#Name player 4</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>#Name player 5</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>#Name player 6</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="pb_go_2">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>460</y>
+     <width>80</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton
+{
+	color : black ;
+	background-color : ;
+	font: 700 10pt &quot;B Koodak&quot;;
+	border-image: 30px ;
+}
+
+QPushButton : Hover
+{
+	background-color : ;
+    border-radius : 40px ;
+	border-image: 10px ;
+}
+
+QPushButton : pressed
+{
+	background-color :black ;
+	color : white ;
+	border-image: url(:/Description/Graphics/photos/blue.jpg);
+
+}</string>
+   </property>
+   <property name="text">
+    <string>Next player</string>
+   </property>
+  </widget>
+  <zorder>label_5</zorder>
+  <zorder>pb_go</zorder>
+  <zorder>toolButton</zorder>
+  <zorder>toolButton_2</zorder>
+  <zorder>toolButton_3</zorder>
+  <zorder>toolButton_4</zorder>
+  <zorder>toolButton_5</zorder>
+  <zorder>toolButton_6</zorder>
+  <zorder>toolButton_7</zorder>
+  <zorder>toolButton_8</zorder>
+  <zorder>toolButton_9</zorder>
+  <zorder>toolButton_10</zorder>
+  <zorder>cb_show_player_list</zorder>
+  <zorder>pb_go_2</zorder>
  </widget>
  <resources/>
  <connections/>

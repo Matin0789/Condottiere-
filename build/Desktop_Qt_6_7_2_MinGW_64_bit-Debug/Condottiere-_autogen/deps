@@ -640,6 +640,8 @@ Condottiere-_autogen/timestamp: \
 	E:/Condottiere-/src/userinterface.cpp \
 	E:/Condottiere-/start.cpp \
 	E:/Condottiere-/start.h \
+	E:/Condottiere-/winner.cpp \
+	E:/Condottiere-/winner.h \
 	E:/Condottiere-/campaign.ui \
 	E:/Condottiere-/help.ui \
 	E:/Condottiere-/mainwindow.ui \
@@ -647,4 +649,5 @@ Condottiere-_autogen/timestamp: \
 	E:/Condottiere-/set.ui \
 	E:/Condottiere-/showcards.ui \
 	E:/Condottiere-/start.ui \
+	E:/Condottiere-/winner.ui \
 	C:/Qt/Tools/CMake_64/bin/cmake.exe

@@ -475,7 +475,8 @@
 			"EWIEGA46WW/moc_showcards.cpp",
 			null
 		],
-		[ "E:/Condottiere-/start.h", "MU", "EWIEGA46WW/moc_start.cpp", null ]
+		[ "E:/Condottiere-/start.h", "MU", "EWIEGA46WW/moc_start.cpp", null ],
+		[ "E:/Condottiere-/winner.h", "MU", "EWIEGA46WW/moc_winner.cpp", null ]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "E:/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/include",
@@ -583,7 +584,8 @@
 		[ "E:/Condottiere-/src/player.cpp", "MU", null ],
 		[ "E:/Condottiere-/src/state.cpp", "MU", null ],
 		[ "E:/Condottiere-/src/userinterface.cpp", "MU", null ],
-		[ "E:/Condottiere-/start.cpp", "MU", null ]
+		[ "E:/Condottiere-/start.cpp", "MU", null ],
+		[ "E:/Condottiere-/winner.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

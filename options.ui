@@ -19,9 +19,9 @@
   <widget class="QPushButton" name="pb_load">
    <property name="geometry">
     <rect>
-     <x>457</x>
-     <y>290</y>
-     <width>99</width>
+     <x>460</x>
+     <y>360</y>
+     <width>101</width>
      <height>41</height>
     </rect>
    </property>
@@ -57,9 +57,9 @@ QPushButton : pressed
   <widget class="QPushButton" name="pb_save">
    <property name="geometry">
     <rect>
-     <x>457</x>
+     <x>460</x>
      <y>200</y>
-     <width>99</width>
+     <width>101</width>
      <height>41</height>
     </rect>
    </property>
@@ -95,9 +95,9 @@ QPushButton : pressed
   <widget class="QPushButton" name="pb_quit">
    <property name="geometry">
     <rect>
-     <x>457</x>
-     <y>470</y>
-     <width>99</width>
+     <x>460</x>
+     <y>520</y>
+     <width>101</width>
      <height>41</height>
     </rect>
    </property>
@@ -133,9 +133,9 @@ QPushButton : pressed
   <widget class="QPushButton" name="pb_audio">
    <property name="geometry">
     <rect>
-     <x>457</x>
-     <y>380</y>
-     <width>99</width>
+     <x>460</x>
+     <y>440</y>
+     <width>101</width>
      <height>41</height>
     </rect>
    </property>
@@ -207,12 +207,51 @@ li.checked::marker { content: &quot;\2612&quot;; }
 &lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt;OPTIONS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="pb_Continue">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>280</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton
+{
+	color : black ;
+	background-color : ;
+	font: 700 11pt &quot;B Koodak&quot;;
+	border-image: 30px ;
+}
+
+QPushButton : Hover
+{
+	background-color : ;
+    border-radius : 40px ;
+	border-image: 10px ;
+}
+
+QPushButton : pressed
+{
+	background-color :black ;
+	color : white ;
+	border-image: url(:/Description/Graphics/photos/blue.jpg);
+
+}</string>
+   </property>
+   <property name="text">
+    <string>Continue </string>
+   </property>
+  </widget>
   <zorder>label</zorder>
   <zorder>pb_load</zorder>
   <zorder>pb_save</zorder>
   <zorder>pb_quit</zorder>
   <zorder>pb_audio</zorder>
   <zorder>textEdit</zorder>
+  <zorder>pb_Continue</zorder>
  </widget>
  <resources/>
  <connections/>

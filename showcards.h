@@ -24,6 +24,8 @@ private slots:
 
     void on_toolButton_6_clicked();
 
+    void on_cb_show_player_list_activated(int index);
+
 private:
     Ui::showCards *ui;
     campaign *Campaign;

@@ -6,3 +6,4 @@
 #include "EWIEGA46WW/moc_set.cpp"
 #include "EWIEGA46WW/moc_showcards.cpp"
 #include "EWIEGA46WW/moc_start.cpp"
+#include "EWIEGA46WW/moc_winner.cpp"

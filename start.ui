@@ -14,7 +14,7 @@
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">border-image: url(:/Description/Graphics/photos/pexels-photo-247671.jpg);</string>
+   <string notr="true">border-image: url(:/Description/Graphics/photos/knights-templar.jpg);</string>
   </property>
   <widget class="QPushButton" name="pushButton_start">
    <property name="geometry">
@@ -65,6 +65,8 @@ QPushButton : pressed
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/Description/Graphics/photos/white (1).jpg);
+color: rgb(0, 0, 0);
+background-color: rgb(0, 0, 0);
 font: 700 italic 9pt &quot;System&quot;;</string>
    </property>
    <property name="text">

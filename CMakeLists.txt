@@ -94,6 +94,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         help.h help.cpp help.ui
         options.h options.cpp options.ui
         Sound.qrc
+        winner.h winner.cpp winner.ui
 
         
     )

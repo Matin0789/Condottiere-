@@ -28,3 +28,9 @@ void showCards::on_toolButton_6_clicked()
 
 }
 
+
+void showCards::on_cb_show_player_list_activated(int index)
+{
+
+}
+

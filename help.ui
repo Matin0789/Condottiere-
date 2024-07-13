@@ -41,6 +41,10 @@
      <height>24</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(0, 0, 0);</string>
+   </property>
    <item>
     <property name="text">
      <string>Click</string>

@@ -39,3 +39,9 @@ void Options::on_pb_quit_clicked()
     close();
 }
 
+
+void Options::on_pb_Continue_clicked()
+{
+
+}
+
