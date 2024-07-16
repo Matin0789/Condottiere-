@@ -1,5 +1,5 @@
-#include "winner.h"
-#include "ui_winner.h"
+#include "Warwinner.h"
+#include "ui_Warwinner.h"
 
 Winner::Winner(QWidget *parent)
     : QDialog(parent)

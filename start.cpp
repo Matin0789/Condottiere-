@@ -13,10 +13,19 @@ Start::~Start()
     delete ui;
 }
 
-void Start::on_pushButton_start_clicked()
+
+
+
+
+void Start::on_btn_next_clicked()
 {
     hide();
-    set = new Set(this);
-    set->show();
+    playerinfo = new Playerinfo(this);
+    playerinfo->show();
+}
+
+void Start::on_btn_back_clicked()
+{
+
 }
 

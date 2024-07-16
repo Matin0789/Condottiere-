@@ -13,35 +13,28 @@ Options::~Options()
     delete ui;
 }
 
-
-void Options::on_pb_save_clicked()
+void Options::on_btn_save_clicked()
 {
+     // game.save();
+}
 
-   // game.save();
+void Options::on_btn_Continue_clicked()
+{
 
 }
 
-
-void Options::on_pb_load_clicked()
+void Options::on_btn_load_games_clicked()
 {
     //game.load();
 }
 
-
-void Options::on_pb_audio_clicked()
+void Options::on_btn_audio_clicked()
 {
-    //
+
 }
 
-
-void Options::on_pb_quit_clicked()
+void Options::on_btn_quit_clicked()
 {
     close();
-}
-
-
-void Options::on_pb_Continue_clicked()
-{
-
 }
 

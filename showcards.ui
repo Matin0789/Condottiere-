@@ -16,7 +16,7 @@
   <property name="styleSheet">
    <string notr="true">border-image: url(:/Description/Graphics/photos/galileus_Medieval_Crusades_1142ddf9-36f2-4043-962c-1104585e7033.jpg);</string>
   </property>
-  <widget class="QPushButton" name="pb_go">
+  <widget class="QPushButton" name="btn_lets_go">
    <property name="geometry">
     <rect>
      <x>480</x>
@@ -279,7 +279,7 @@ QPushButton : pressed
     </property>
    </item>
   </widget>
-  <widget class="QPushButton" name="pb_go_2">
+  <widget class="QPushButton" name="btn_Nplayer">
    <property name="geometry">
     <rect>
      <x>480</x>
@@ -318,7 +318,7 @@ QPushButton : pressed
    </property>
   </widget>
   <zorder>label_5</zorder>
-  <zorder>pb_go</zorder>
+  <zorder>btn_lets_go</zorder>
   <zorder>toolButton</zorder>
   <zorder>toolButton_2</zorder>
   <zorder>toolButton_3</zorder>
@@ -330,7 +330,7 @@ QPushButton : pressed
   <zorder>toolButton_9</zorder>
   <zorder>toolButton_10</zorder>
   <zorder>cb_show_player_list</zorder>
-  <zorder>pb_go_2</zorder>
+  <zorder>btn_Nplayer</zorder>
  </widget>
  <resources/>
  <connections/>

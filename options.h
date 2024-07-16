@@ -19,15 +19,17 @@ public:
     ~Options();
 
 private slots:
-    void on_pb_save_clicked();
 
-    void on_pb_load_clicked();
 
-    void on_pb_audio_clicked();
+    void on_btn_save_clicked();
 
-    void on_pb_quit_clicked();
+    void on_btn_Continue_clicked();
 
-    void on_pb_Continue_clicked();
+    void on_btn_load_games_clicked();
+
+    void on_btn_audio_clicked();
+
+    void on_btn_quit_clicked();
 
 private:
     Ui::Options *ui;

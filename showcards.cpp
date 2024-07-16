@@ -14,16 +14,8 @@ showCards::~showCards()
     delete ui;
 }
 
-void showCards::on_pb_go_clicked()
-{
-    hide();
-    Campaign = new campaign(this);
-    Campaign->show();
-}
 
-
-
-void showCards::on_toolButton_6_clicked()
+void showCards::on_btn_Nplayer_clicked()
 {
 
 }
@@ -32,5 +24,13 @@ void showCards::on_toolButton_6_clicked()
 void showCards::on_cb_show_player_list_activated(int index)
 {
 
+}
+
+
+void showCards::on_btn_lets_go_clicked()
+{
+    hide();
+    Campaign = new campaign(this);
+    Campaign->show();
 }
 

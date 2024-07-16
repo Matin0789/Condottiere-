@@ -19,12 +19,13 @@ public:
     ~showCards();
 
 private slots:
-    void on_pb_go_clicked();
 
 
-    void on_toolButton_6_clicked();
+    void on_btn_Nplayer_clicked();
 
     void on_cb_show_player_list_activated(int index);
+
+    void on_btn_lets_go_clicked();
 
 private:
     Ui::showCards *ui;

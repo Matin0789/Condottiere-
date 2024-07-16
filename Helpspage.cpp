@@ -1,5 +1,5 @@
-#include "help.h"
-#include "ui_help.h"
+#include "Helpspage.h"
+#include "ui_Helpspage.h"
 
 Help::Help(QWidget *parent)
     : QDialog(parent)
@@ -19,13 +19,13 @@ void Help::on_cb_help_list_activated(int index)
 }
 
 
-void Help::on_pb_ok_clicked()
+void Help::on_btn_ok_clicked()
 {
 
 }
 
 
-void Help::on_pb_go_back_clicked()
+void Help::on_ptn_back_clicked()
 {
 
 }

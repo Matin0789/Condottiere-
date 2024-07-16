@@ -16,7 +16,7 @@
   <property name="styleSheet">
    <string notr="true">border-image: url(:/Description/Graphics/photos/brown.jpg);</string>
   </property>
-  <widget class="QPushButton" name="pb_load">
+  <widget class="QPushButton" name="btn_load_games">
    <property name="geometry">
     <rect>
      <x>460</x>
@@ -54,7 +54,7 @@ QPushButton : pressed
     <string>LOAD GAMES</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pb_save">
+  <widget class="QPushButton" name="btn_save">
    <property name="geometry">
     <rect>
      <x>460</x>
@@ -92,7 +92,7 @@ QPushButton : pressed
     <string>SAVE</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pb_quit">
+  <widget class="QPushButton" name="btn_quit">
    <property name="geometry">
     <rect>
      <x>460</x>
@@ -130,7 +130,7 @@ QPushButton : pressed
     <string>QUIT GAME</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pb_audio">
+  <widget class="QPushButton" name="btn_audio">
    <property name="geometry">
     <rect>
      <x>460</x>
@@ -184,7 +184,7 @@ QPushButton : pressed
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="pb_Continue">
+  <widget class="QPushButton" name="btn_Continue">
    <property name="geometry">
     <rect>
      <x>460</x>
@@ -239,11 +239,11 @@ QPushButton : pressed
    </property>
   </widget>
   <zorder>label</zorder>
-  <zorder>pb_load</zorder>
-  <zorder>pb_save</zorder>
-  <zorder>pb_quit</zorder>
-  <zorder>pb_audio</zorder>
-  <zorder>pb_Continue</zorder>
+  <zorder>btn_load_games</zorder>
+  <zorder>btn_save</zorder>
+  <zorder>btn_quit</zorder>
+  <zorder>btn_audio</zorder>
+  <zorder>btn_Continue</zorder>
   <zorder>label_2</zorder>
  </widget>
  <resources/>

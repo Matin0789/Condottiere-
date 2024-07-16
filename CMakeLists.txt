@@ -85,18 +85,16 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${PROJECT_SOURCES}
 
         start.h start.cpp start.ui
-
-        set.h set.cpp set.ui
+        playerInfo.h playerInfo.cpp playerInfo.ui
         showcards.h showcards.cpp showcards.ui
-        img.qrc
         campaign.h campaign.cpp campaign.ui
-        img.qrc
-        help.h help.cpp help.ui
+        Helpspage.h Helpspage.cpp Helpspage.ui
         options.h options.cpp options.ui
-        Sound.qrc
-        winner.h winner.cpp winner.ui
+        Warwinner.h Warwinner.cpp Warwinner.ui
 
-        
+        img.qrc
+        Sound.qrc
+
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Condottiere- APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
@@ -124,6 +122,8 @@ target_include_directories(Condottiere- PRIVATE
     ${PROJECT_SOURCE_DIR}/inc
     ${PROJECT_SOURCE_DIR}/inc/card
     ${PROJECT_SOURCE_DIR}/inc/marker
+    ${PROJECT_SOURCE_DIR}
+
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

@@ -1,5 +1,5 @@
-#include "set.h"
-#include "ui_set.h"
+#include "playerInfo.h"
+#include "ui_playerInfo.h"
 
 Set::Set(QWidget *parent)
     : QDialog(parent)
@@ -13,12 +13,16 @@ Set::~Set()
     delete ui;
 }
 
-
-
-void Set::on_pb_next_pressed()
+void Set::on_ptn_next_clicked()
 {
     hide();
     showcards = new showCards(this);
     showcards->show();
+}
+
+
+void Set::on_btn_back_clicked()
+{
+
 }
 

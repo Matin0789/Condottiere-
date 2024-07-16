@@ -87,13 +87,13 @@
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 119,
+				"line" : 117,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 120,
+				"line" : 118,
 				"parent" : 0
 			},
 			{
@@ -359,7 +359,7 @@
 			{
 				"command" : 11,
 				"file" : 1,
-				"line" : 123,
+				"line" : 121,
 				"parent" : 0
 			}
 		]
@@ -447,6 +447,10 @@
 					"path" : "E:/Condottiere-/inc/marker"
 				},
 				{
+					"backtrace" : 57,
+					"path" : "E:/Condottiere-"
+				},
+				{
 					"backtrace" : 37,
 					"isSystem" : true,
 					"path" : "C:/Qt/6.7.2/mingw_64/include/QtCore"
@@ -521,10 +525,10 @@
 				49,
 				52,
 				55,
-				59,
-				62,
-				65,
-				69,
+				58,
+				61,
+				64,
+				67,
 				80,
 				81
 			]
@@ -533,11 +537,11 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "Condottiere-_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "Condottiere-_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "Condottiere-_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "Condottiere-::@6890427a1f51a3e7e1df",
@@ -689,10 +693,10 @@
 				49,
 				52,
 				55,
-				59,
-				62,
-				65,
-				69,
+				58,
+				61,
+				64,
+				67,
 				80,
 				81
 			]
@@ -727,10 +731,10 @@
 				48,
 				51,
 				54,
-				58,
-				61,
-				64,
-				68,
+				57,
+				60,
+				63,
+				66,
 				71,
 				72,
 				73,
@@ -749,11 +753,11 @@
 				50,
 				53,
 				56,
-				57,
-				60,
-				63,
-				66,
-				67,
+				59,
+				62,
+				65,
+				68,
+				69,
 				70,
 				79
 			]
@@ -1053,18 +1057,18 @@
 		},
 		{
 			"backtrace" : 4,
-			"path" : "set.h",
+			"path" : "playerInfo.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
-			"path" : "set.cpp",
+			"path" : "playerInfo.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 4,
-			"path" : "set.ui",
+			"path" : "playerInfo.ui",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1085,11 +1089,6 @@
 		},
 		{
 			"backtrace" : 4,
-			"path" : "img.qrc",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 4,
 			"path" : "campaign.h",
 			"sourceGroupIndex" : 1
 		},
@@ -1106,18 +1105,18 @@
 		},
 		{
 			"backtrace" : 4,
-			"path" : "help.h",
+			"path" : "Helpspage.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
-			"path" : "help.cpp",
+			"path" : "Helpspage.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 4,
-			"path" : "help.ui",
+			"path" : "Helpspage.ui",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1138,23 +1137,28 @@
 		},
 		{
 			"backtrace" : 4,
-			"path" : "Sound.qrc",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 4,
-			"path" : "winner.h",
+			"path" : "Warwinner.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
-			"path" : "winner.cpp",
+			"path" : "Warwinner.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 4,
-			"path" : "winner.ui",
+			"path" : "Warwinner.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "img.qrc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "Sound.qrc",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1172,7 +1176,7 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/include/ui_set.h",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/include/ui_playerInfo.h",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -1190,7 +1194,7 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/include/ui_help.h",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/include/ui_Helpspage.h",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -1202,7 +1206,7 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/include/ui_winner.h",
+			"path" : "build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/include/ui_Warwinner.h",
 			"sourceGroupIndex" : 1
 		},
 		{

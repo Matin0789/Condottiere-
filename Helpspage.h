@@ -1,5 +1,5 @@
-#ifndef HELP_H
-#define HELP_H
+#ifndef HELPSPAGE_H
+#define HELPSPAGE_H
 
 #include <QDialog>
 
@@ -26,4 +26,4 @@ private:
     Ui::Help *ui;
 };
 
-#endif // HELP_H
+#endif // HELPSPAGE_H

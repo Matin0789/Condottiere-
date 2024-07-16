@@ -9,11 +9,9 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
+    , game(new UserInterface)
 {
     ui->setupUi(this);
-    QMediaPlayer * music = new QMediaPlayer();
-    //music->setActiveAudioTrack(QUrl("qrc:/Description/Graphics/Sounds/pirate-of-caribbean.mp3"));
-        music->play();
 
 }
 
@@ -23,12 +21,10 @@ MainWindow::~MainWindow()
 }
 
 
-void MainWindow::on_pushButton_Start_clicked()
+void MainWindow::on_btn_Start_clicked()
 {
     hide();
-    start = new Start(this);
-    start->show();
-
+    game->play();
 }
 
 
@@ -38,4 +34,10 @@ void MainWindow::on_btn_exit_clicked()
     close();
 }
 
+
+
+void MainWindow::on_btn_load_game_clicked()
+{
+
+}
 

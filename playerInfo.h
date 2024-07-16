@@ -1,5 +1,5 @@
-#ifndef SET_H
-#define SET_H
+#ifndef PLAYERINFO_H
+#define PLAYERINFO_H
 
 #include <QDialog>
 
@@ -27,4 +27,4 @@ private:
     showCards *showcards;
 };
 
-#endif // SET_H
+#endif // PLAYERINFO_H

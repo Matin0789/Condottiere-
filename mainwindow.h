@@ -22,9 +22,11 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_pushButton_Start_clicked();
+    void on_btn_Start_clicked();
 
     void on_btn_exit_clicked();
+
+    void on_btn_load_game_clicked();
 
 private:
     Ui::MainWindow *ui;

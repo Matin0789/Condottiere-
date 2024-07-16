@@ -9,6 +9,7 @@
 #include "userinterface.h"
 #include "game.h"
 #include "enumcolor.h"
+#include "playerInfo.h"
 
 UserInterface::UserInterface() {
     freeColors.push_back(std::make_pair("ORANGE", orange));
@@ -196,21 +197,8 @@ std::string UserInterface::get_card_name() {
 }
 
 int UserInterface::get_players_number() {
-    std::string n;
-    bool flag = false;
-    do
-    {
-        std::cout << "Please enter player numbers:";
-        std::cin >> n;
-        try{
-            flag = Game::check_number_of_player(n);
-        }
-        catch(const std::out_of_range& e){
-            std::cerr << e.what() << '\n';
-        }
-    } while (flag == false);
-    return stoi(n);
-   
+    Set set;
+    set.show();
 }
 
 std::string UserInterface::get_player_name(size_t playerID) {

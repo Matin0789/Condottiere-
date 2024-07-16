@@ -7,7 +7,7 @@
 #include <QGraphicsView>
 
 #include "options.h"
-#include "help.h"
+#include "Helpspage.h"
 
 #include "userinterface.h"
 #include "enumcolor.h"

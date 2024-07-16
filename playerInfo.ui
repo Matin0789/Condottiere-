@@ -16,7 +16,7 @@
   <property name="styleSheet">
    <string notr="true">border-image: url(:/Description/Graphics/photos/galileus_medieval_heroes_Crusaders_78320800-6418-4de7-bf57-39a3ad7f6f3b-1024x512.jpg);</string>
   </property>
-  <widget class="QPushButton" name="pb_set_back">
+  <widget class="QPushButton" name="btn_back">
    <property name="geometry">
     <rect>
      <x>290</x>
@@ -55,7 +55,7 @@ QPushButton : pressed
     <string>Back</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pb_next">
+  <widget class="QPushButton" name="ptn_next">
    <property name="geometry">
     <rect>
      <x>290</x>

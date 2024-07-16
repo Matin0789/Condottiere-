@@ -333,12 +333,23 @@
 	"HEADERS" : 
 	[
 		[
+			"E:/Condottiere-/Helpspage.h",
+			"MU",
+			"EWIEGA46WW/moc_Helpspage.cpp",
+			null
+		],
+		[
+			"E:/Condottiere-/Warwinner.h",
+			"MU",
+			"EWIEGA46WW/moc_Warwinner.cpp",
+			null
+		],
+		[
 			"E:/Condottiere-/campaign.h",
 			"MU",
 			"EWIEGA46WW/moc_campaign.cpp",
 			null
 		],
-		[ "E:/Condottiere-/help.h", "MU", "EWIEGA46WW/moc_help.cpp", null ],
 		[
 			"E:/Condottiere-/inc/card/bishop.h",
 			"MU",
@@ -468,15 +479,19 @@
 			null
 		],
 		[ "E:/Condottiere-/options.h", "MU", "EWIEGA46WW/moc_options.cpp", null ],
-		[ "E:/Condottiere-/set.h", "MU", "EWIEGA46WW/moc_set.cpp", null ],
+		[
+			"E:/Condottiere-/playerInfo.h",
+			"MU",
+			"EWIEGA46WW/moc_playerInfo.cpp",
+			null
+		],
 		[
 			"E:/Condottiere-/showcards.h",
 			"MU",
 			"EWIEGA46WW/moc_showcards.cpp",
 			null
 		],
-		[ "E:/Condottiere-/start.h", "MU", "EWIEGA46WW/moc_start.cpp", null ],
-		[ "E:/Condottiere-/winner.h", "MU", "EWIEGA46WW/moc_winner.cpp", null ]
+		[ "E:/Condottiere-/start.h", "MU", "EWIEGA46WW/moc_start.cpp", null ]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "E:/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/include",
@@ -509,6 +524,7 @@
 		"E:/Condottiere-/inc",
 		"E:/Condottiere-/inc/card",
 		"E:/Condottiere-/inc/marker",
+		"E:/Condottiere-",
 		"C:/Qt/6.7.2/mingw_64/include/QtCore",
 		"C:/Qt/6.7.2/mingw_64/include",
 		"C:/Qt/6.7.2/mingw_64/mkspecs/win32-g++",
@@ -556,12 +572,13 @@
 	"SETTINGS_FILE" : "E:/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/Condottiere-_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "E:/Condottiere-/Helpspage.cpp", "MU", null ],
+		[ "E:/Condottiere-/Warwinner.cpp", "MU", null ],
 		[ "E:/Condottiere-/campaign.cpp", "MU", null ],
-		[ "E:/Condottiere-/help.cpp", "MU", null ],
 		[ "E:/Condottiere-/main.cpp", "MU", null ],
 		[ "E:/Condottiere-/mainwindow.cpp", "MU", null ],
 		[ "E:/Condottiere-/options.cpp", "MU", null ],
-		[ "E:/Condottiere-/set.cpp", "MU", null ],
+		[ "E:/Condottiere-/playerInfo.cpp", "MU", null ],
 		[ "E:/Condottiere-/showcards.cpp", "MU", null ],
 		[ "E:/Condottiere-/src/card/bishop.cpp", "MU", null ],
 		[ "E:/Condottiere-/src/card/card.cpp", "MU", null ],
@@ -584,8 +601,7 @@
 		[ "E:/Condottiere-/src/player.cpp", "MU", null ],
 		[ "E:/Condottiere-/src/state.cpp", "MU", null ],
 		[ "E:/Condottiere-/src/userinterface.cpp", "MU", null ],
-		[ "E:/Condottiere-/start.cpp", "MU", null ],
-		[ "E:/Condottiere-/winner.cpp", "MU", null ]
+		[ "E:/Condottiere-/start.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

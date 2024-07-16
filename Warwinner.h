@@ -1,5 +1,5 @@
-#ifndef WINNER_H
-#define WINNER_H
+#ifndef WARWINNER_H
+#define WARWINNER_H
 
 #include <QDialog>
 
@@ -19,4 +19,4 @@ private:
     Ui::Winner *ui;
 };
 
-#endif // WINNER_H
+#endif // WARWINNER_H

@@ -30,7 +30,7 @@
 border-image: url(:/Description/Graphics/photos/condottiere.jpg);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton_Start">
+   <widget class="QPushButton" name="btn_Start">
     <property name="geometry">
      <rect>
       <x>310</x>
@@ -104,7 +104,7 @@ QPushButton : pressed
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_Start_2">
+   <widget class="QPushButton" name="btn_load_game">
     <property name="geometry">
      <rect>
       <x>110</x>
@@ -140,7 +140,7 @@ QPushButton : pressed
      <string>Load Game</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_Start_4">
+   <widget class="QPushButton" name="btn_exit">
     <property name="geometry">
      <rect>
       <x>510</x>

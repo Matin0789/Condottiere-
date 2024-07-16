@@ -16,7 +16,7 @@
   <property name="styleSheet">
    <string notr="true">border-image: url(:/Description/Graphics/photos/knights-templar.jpg);</string>
   </property>
-  <widget class="QPushButton" name="pushButton_start">
+  <widget class="QPushButton" name="btn_next">
    <property name="geometry">
     <rect>
      <x>310</x>
@@ -73,7 +73,7 @@ font: 700 italic 9pt &quot;System&quot;;</string>
     <string>  Please Enter Number of Players : </string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_start_2">
+  <widget class="QPushButton" name="btn_back">
    <property name="geometry">
     <rect>
      <x>310</x>
@@ -111,6 +111,9 @@ QPushButton : pressed
     <string>Back</string>
    </property>
   </widget>
+  <zorder>btn_back</zorder>
+  <zorder>btn_next</zorder>
+  <zorder>lineEdit</zorder>
  </widget>
  <resources/>
  <connections/>
