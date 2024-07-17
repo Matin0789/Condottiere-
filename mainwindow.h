@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
+#include <controller.h>
 
 #include "start.h"
 
@@ -21,13 +21,18 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+
 private slots:
     void on_btn_Start_clicked();
     void on_btn_exit_clicked();
     void on_btn_load_game_clicked();
     void on_btn_sound_clicked();
+
 private:
     Ui::MainWindow *ui;
     Start *start;
+    Set *set;
+    showCards *showcards;
+    Controller *controller;
 };
 #endif // MAINWINDOW_H

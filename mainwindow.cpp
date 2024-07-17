@@ -8,9 +8,14 @@
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
+    , ui(new Ui::MainWindow),
+    controller(new Controller)
 {
     ui->setupUi(this);
+    QObject::connect(start, &Start::get_players_number, controller, &Controller::get_players_number);
+    QObject::connect(set, &Set::get_player_name, controller, &Controller::get_player_name);
+    QObject::connect(set, &Set::get_player_old, controller, &Controller::get_player_old);
+    QObject::connect(set, &Set::get_player_color, controller, &Controller::get_player_color);
 
 }
 

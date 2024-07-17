@@ -12,12 +12,7 @@
 #include "Set.h"
 
 UserInterface::UserInterface() {
-    freeColors.push_back(std::make_pair("ORANGE", orange));
-    freeColors.push_back(std::make_pair("BLUE",   blue));
-    freeColors.push_back(std::make_pair("GREEN",  green));
-    freeColors.push_back(std::make_pair("RED",    red));
-    freeColors.push_back(std::make_pair("GRAY",   gray));
-    freeColors.push_back(std::make_pair("BROWN",  brown));
+
 }
 
 void UserInterface::clearTerminal() const {
@@ -197,8 +192,7 @@ std::string UserInterface::get_card_name() {
 }
 
 int UserInterface::get_players_number() {
-    Set set;
-    set.show();
+
 }
 
 std::string UserInterface::get_player_name(size_t playerID) {
@@ -231,15 +225,6 @@ Color  UserInterface::get_player_color(size_t playerID) {
 
         std::cin >> input;
         std::transform(input.begin(), input.end(), input.begin(), ::toupper); 
-        for (size_t i = 0; i < freeColors.size(); i++)
-        {
-            if (input == freeColors[i].first) {
-                flag = true;
-                choiceColor = freeColors[i].second;
-                freeColors.erase(freeColors.begin() + i);
-                return choiceColor;
-            }
-        }
         std::cout << "undifiend please try again!" << std::endl;
         flag = false;
     } while (flag == false);

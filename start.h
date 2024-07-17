@@ -19,19 +19,19 @@ public:
     explicit Start(QWidget *parent = nullptr);
     ~Start();
 
+signals:
+    int get_players_number(size_t);
+
 private slots:
 
     void on_btn_next_clicked();
 
     void on_btn_back_clicked();
 
-    void on_le_number_cursorPositionChanged(int arg1);
+    //void on_le_number_cursorPositionChanged(int arg1);
 
 private:
     Ui::Start *ui;
-    Set *set;
-    Game *game;
-    UserInterface *user;
 };
 
 #endif // START_H

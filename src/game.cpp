@@ -13,8 +13,7 @@
 
 std::string Game::help; // set help
 // constructor
-Game::Game(UserInterface &inputUI) : 
-    ui(&inputUI),
+Game::Game() :
     season(nullptr),
     gameBoard(BOARD_FILE)
 {
@@ -203,11 +202,11 @@ bool Game::find_game_winner(const Player& player){
 }
 
 void Game::getPlayers() {
-    int n = ui->get_players_number();
+    int n /*= ui->get_players_number()*/;
     for (size_t i = 0; i < n; i++) {
-        std::string name = ui->get_player_name(i + 1);
-        unsigned int age = ui->get_player_old(i + 1);
-        Color color = ui->get_player_color(i + 1);
+        std::string name /*= ui->get_player_name(i + 1)*/;
+        unsigned int age /*= ui->get_player_old(i + 1)*/;
+        Color color /*= ui->get_player_color(i + 1)*/;
         players.push_back(Player(name, i, age, color));
     }
 }
@@ -218,7 +217,7 @@ void Game::distributeCards() {
         std::vector<const Card*> playerCards(cards.begin(), cards.begin() + (10 + player.getStateNumber()));
         cards.erase(cards.begin(), cards.begin() + (10 + player.getStateNumber()));
         player.setCards(playerCards);
-        ui->showPlayerCards(player);
+        //ui->showPlayerCards(player);
     }
 }
 
@@ -247,7 +246,7 @@ void Game::play()
 
         bool gameEnd = find_game_winner(players[currentPlayerID]);
         if (gameEnd){
-            ui->declare_gameWinner(players[currentPlayerID]);
+            //ui->declare_gameWinner(players[currentPlayerID]);
             break;
         }
         size_t counter = 0;
@@ -281,13 +280,13 @@ bool Game::check_number_of_player(std::string n) {
 }
 
 void Game::set_battleground(const Player& currentPlayer) {
-    State* battleground = ui->get_battleground(currentPlayer,gameBoard);
-    battleMarker.setState(battleground);
+    //State* battleground = ui->get_battleground(currentPlayer,gameBoard);
+    //battleMarker.setState(battleground);
 }
 
 void Game::set_favorground(const Player& currentPlayer) {
-    State* favorground = ui->get_favorground(currentPlayer,gameBoard);
-    favorMarker.setState(favorground);
+    //State* favorground = ui->get_favorground(currentPlayer,gameBoard);
+    //favorMarker.setState(favorground);
 }
 
 bool Game::save(std::string filePath) const {
@@ -320,9 +319,9 @@ bool Game::save(std::string filePath) const {
     }
 
     // save ui object
-    size_t size_UI = sizeof(*ui);
-    file.write(reinterpret_cast<const char*>(&size_UI), sizeof(size_t));
-    file.write(reinterpret_cast<const char*>(&*ui), size_UI);
+    //size_t size_UI = sizeof(*ui);
+    //file.write(reinterpret_cast<const char*>(&size_UI), sizeof(size_t));
+    //file.write(reinterpret_cast<const char*>(&*ui), size_UI);
 
 
     file.close();
@@ -402,9 +401,9 @@ bool Game::load(std::string filePath) {
             season = new Winter(WINTER_HELP_FILE);
     }
     // read ui object
-    size_t size_UI;
-    file.read(reinterpret_cast<char*>(&size_UI), sizeof(size_t));
-    file.read(reinterpret_cast<char*>(&*ui), size_UI);
+    //size_t size_UI;
+    //file.read(reinterpret_cast<char*>(&size_UI), sizeof(size_t));
+    //file.read(reinterpret_cast<char*>(&*ui), size_UI);
     // read gameboard
     size_t gameBoard_size;
     file.read(reinterpret_cast<char*>(&gameBoard_size), sizeof(size_t));
@@ -441,16 +440,13 @@ std::pair<size_t, std::pair<size_t, size_t>> Game::war(int currentPlayerID) {   
     for (;!activePlayers.empty(); i++) {
         for (auto &&player : players)
         {
-            ui->showPlayerPlayedCards(player);
+            //ui->showPlayerPlayedCards(player);
         }
-        ui->spliter();
         for (auto &&player : players)
         {
-            ui->showPlayerStates(player);
+            //ui->showPlayerStates(player);
         }
-        ui->spliter();
-        std::string command = ui->getCommand(*activePlayers[i],battleMarker, season);
-        ui->clearTerminal();
+        std::string command /*= ui->getCommand(*activePlayers[i],battleMarker, season)*/;
         if (command == "pass") {       // if player select passing 
             if (activePlayers.size() == 1) currentPlayerID = activePlayers[i]->getID();
             activePlayers.erase(activePlayers.begin() + i);
@@ -466,8 +462,8 @@ std::pair<size_t, std::pair<size_t, size_t>> Game::war(int currentPlayerID) {   
                 if (!activePlayers[i]->getPlayedCards().empty()) {
                     bool flag = false;
                     do {
-                        ui->showPlayerPlayedCards(*activePlayers[i]);
-                        std::string choose = ui->get_card_name();
+                        //ui->showPlayerPlayedCards(*activePlayers[i]);
+                        std::string choose /*= ui->get_card_name()*/;
                         if (choose[0] >= '0' and choose[0] <= '9'){
                             for (const auto &card : activePlayers[i]->getPlayedCards()) {
                                 if (card->getType() == choose) {
@@ -479,12 +475,11 @@ std::pair<size_t, std::pair<size_t, size_t>> Game::war(int currentPlayerID) {   
                             }
                         }
                         else {
-                            *ui << "You can only choose from yellow cards, ";
+                            //*ui << "You can only choose from yellow cards, ";
                             flag = false;
                         }
                         if (!flag) {
-                            *ui << "Please try again";
-                            ui->pause();
+                            //*ui << "Please try again";
                         }
                     } while (!flag);
                 }
@@ -514,10 +509,10 @@ std::pair<size_t, std::pair<size_t, size_t>> Game::war(int currentPlayerID) {   
     if (winnerID < players.size()) {
         currentPlayerID = winnerID;
         players[currentPlayerID].setState(&battleMarker.getState());
-        ui->declare_warWinner(players[currentPlayerID]);
+        //ui->declare_warWinner(players[currentPlayerID]);
     }
     else {
-        ui->declare_warWinner();
+        //ui->declare_warWinner();
         battleMarker.getState().set(false);
     }
     

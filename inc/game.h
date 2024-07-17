@@ -29,7 +29,7 @@
 class Game {
 public:
 	size_t compareAge();
-    Game(UserInterface&);
+    Game();
 	~Game();
 	static std::string getHelp();
     void play();
