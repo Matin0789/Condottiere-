@@ -3,6 +3,9 @@
 
 #include <QDialog>
 
+#include "game.h"
+#include "userinterface.h"
+
 namespace Ui {
 class Winner;
 }
@@ -17,6 +20,8 @@ public:
 
 private:
     Ui::Winner *ui;
+    Game *game;
+    UserInterface *user;
 };
 
 #endif // WARWINNER_H

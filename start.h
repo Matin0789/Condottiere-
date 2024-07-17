@@ -2,7 +2,12 @@
 #define START_H
 
 #include <QDialog>
-#include "playerInfo.h"
+
+#include "Set.h"
+#include "game.h"
+#include "userinterface.h"
+
+
 namespace Ui {
 class Start;
 }
@@ -21,9 +26,13 @@ private slots:
 
     void on_btn_back_clicked();
 
+    void on_le_number_cursorPositionChanged(int arg1);
+
 private:
     Ui::Start *ui;
-    Playerinfo *playerinfo ;
+    Set *set;
+    Game *game;
+    UserInterface *user;
 };
 
 #endif // START_H

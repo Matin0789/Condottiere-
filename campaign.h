@@ -7,12 +7,14 @@
 #include <QGraphicsView>
 
 #include "options.h"
-#include "Helpspage.h"
+#include "Help.h"
 
+#include "game.h"
 #include "userinterface.h"
 #include "enumcolor.h"
 #include "purplecard.h"
 #include "player.h"
+
 
 namespace Ui {
 class campaign;
@@ -38,6 +40,8 @@ private:
         QGraphicsScene *scene = new QGraphicsScene();
         QGraphicsRectItem *rect = new QGraphicsRectItem();
         QGraphicsView *view = new QGraphicsView(scene);
+        Game *game;
+        UserInterface *user;
 };
 
 #endif // CAMPAIGN_H

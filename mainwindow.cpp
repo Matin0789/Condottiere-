@@ -9,7 +9,6 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
-    , game(new UserInterface)
 {
     ui->setupUi(this);
 
@@ -24,7 +23,8 @@ MainWindow::~MainWindow()
 void MainWindow::on_btn_Start_clicked()
 {
     hide();
-    game->play();
+    start = new Start(this);
+    start->show();
 }
 
 
@@ -39,5 +39,11 @@ void MainWindow::on_btn_exit_clicked()
 void MainWindow::on_btn_load_game_clicked()
 {
 
+}
+
+
+void MainWindow::on_btn_sound_clicked()
+{
+    // end of project
 }
 

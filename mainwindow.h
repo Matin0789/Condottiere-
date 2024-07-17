@@ -28,6 +28,8 @@ private slots:
 
     void on_btn_load_game_clicked();
 
+    void on_btn_sound_clicked();
+
 private:
     Ui::MainWindow *ui;
     Start *start;

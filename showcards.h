@@ -4,7 +4,11 @@
 #include <QDialog>
 #include <QGraphicsPixmapItem>
 #include <QGraphicsItem>
+
 #include "campaign.h"
+#include "game.h"
+#include "userinterface.h"
+
 
 namespace Ui {
 class showCards;
@@ -30,6 +34,8 @@ private slots:
 private:
     Ui::showCards *ui;
     campaign *Campaign;
+    Game *game;
+    UserInterface *user;
 };
 
 #endif // SHOWCARDS_H

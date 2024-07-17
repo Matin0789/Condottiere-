@@ -9,7 +9,7 @@
 #include "userinterface.h"
 #include "game.h"
 #include "enumcolor.h"
-#include "playerInfo.h"
+#include "Set.h"
 
 UserInterface::UserInterface() {
     freeColors.push_back(std::make_pair("ORANGE", orange));

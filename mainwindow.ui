@@ -27,7 +27,7 @@
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(255, 255, 255);
-border-image: url(:/Description/Graphics/photos/condottiere.jpg);</string>
+border-image: url(:/Description/Graphics/photos/Sc 145857.jpg.png);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="btn_Start">
@@ -68,7 +68,7 @@ QPushButton : pressed
      <string>Start Game</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="btn_sound">
     <property name="geometry">
      <rect>
       <x>30</x>

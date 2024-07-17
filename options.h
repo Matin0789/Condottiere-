@@ -3,8 +3,8 @@
 
 #include <QDialog>
 
-//#include "game.h"
-
+#include "game.h"
+#include "userinterface.h"
 
 namespace Ui {
 class Options;
@@ -33,7 +33,8 @@ private slots:
 
 private:
     Ui::Options *ui;
-    //Game game;
+    Game *game;
+    UserInterface *user;
 };
 
 #endif // OPTIONS_H

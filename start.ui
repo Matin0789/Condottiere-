@@ -54,7 +54,7 @@ QPushButton : pressed
     <string>Next</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="le_number">
    <property name="geometry">
     <rect>
      <x>210</x>
@@ -113,7 +113,7 @@ QPushButton : pressed
   </widget>
   <zorder>btn_back</zorder>
   <zorder>btn_next</zorder>
-  <zorder>lineEdit</zorder>
+  <zorder>le_number</zorder>
  </widget>
  <resources/>
  <connections/>
