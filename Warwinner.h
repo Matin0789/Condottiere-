@@ -6,7 +6,8 @@
 #include "game.h"
 #include "userinterface.h"
 
-namespace Ui {
+namespace Ui 
+{
 class Winner;
 }
 

@@ -7,7 +7,6 @@
 #include "game.h"
 #include "userinterface.h"
 
-
 namespace Ui {
 class Start;
 }

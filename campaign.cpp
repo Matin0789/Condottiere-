@@ -20,11 +20,9 @@ void campaign::on_pb_help_clicked()
     help->show();
 }
 
-
 void campaign::on_pb_setting_clicked()
 {
     hide();
     options = new Options(this);
     options->show();
 }
-

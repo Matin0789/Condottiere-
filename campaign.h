@@ -30,7 +30,6 @@ public:
 
 private slots:
     void on_pb_help_clicked();
-
     void on_pb_setting_clicked();
 
 private:

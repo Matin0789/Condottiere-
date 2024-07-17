@@ -27,4 +27,3 @@ void Help::on_cb_help_list_activated(int index)
 {
 
 }
-

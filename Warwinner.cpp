@@ -4,6 +4,7 @@
 Winner::Winner(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::Winner)
+    
 {
     ui->setupUi(this);
 }

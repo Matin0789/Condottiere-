@@ -19,16 +19,10 @@ public:
     ~Options();
 
 private slots:
-
-
     void on_btn_save_clicked();
-
     void on_btn_Continue_clicked();
-
     void on_btn_load_games_clicked();
-
     void on_btn_audio_clicked();
-
     void on_btn_quit_clicked();
 
 private:

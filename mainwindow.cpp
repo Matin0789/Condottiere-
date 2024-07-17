@@ -19,7 +19,6 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-
 void MainWindow::on_btn_Start_clicked()
 {
     hide();
@@ -27,23 +26,17 @@ void MainWindow::on_btn_Start_clicked()
     start->show();
 }
 
-
-
 void MainWindow::on_btn_exit_clicked()
 {
     close();
 }
-
-
 
 void MainWindow::on_btn_load_game_clicked()
 {
 
 }
 
-
 void MainWindow::on_btn_sound_clicked()
 {
     // end of project
 }
-

@@ -20,9 +20,7 @@ void Set::on_btn_next_clicked()
     showcards->show();
 }
 
-
 void Set::on_btn_back_clicked()
 {
 
 }
-

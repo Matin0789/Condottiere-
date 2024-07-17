@@ -21,7 +21,6 @@ public:
     ~Set();
 
 private slots:
-
     void on_btn_next_clicked();
     void on_btn_back_clicked();
 

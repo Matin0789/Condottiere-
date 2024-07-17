@@ -1,6 +1,7 @@
 #include "start.h"
 #include "ui_start.h"
 
+
 Start::Start(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::Start)
@@ -24,7 +25,6 @@ void Start::on_btn_back_clicked()
 {
 
 }
-
 
 void Start::on_le_number_cursorPositionChanged(int arg1)
 {

@@ -37,4 +37,3 @@ void Options::on_btn_quit_clicked()
 {
     close();
 }
-
