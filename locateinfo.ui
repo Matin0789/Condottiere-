@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Locateinfo</class>
+ <widget class="QDialog" name="Locateinfo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">border-image: url(:/Description/Graphics/photos/galileus_medieval_Crusader_knights_photo_realistic_3ec554ad-f8c8-4fc9-b88c-0af222cac15a.jpg);</string>
+  </property>
+  <widget class="QComboBox" name="cb">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>90</y>
+     <width>91</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/Description/Graphics/photos/download7.jpg);
+font: 9pt &quot;Segoe Print&quot;;
+color: rgb(0, 0, 0);</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>States</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ATELA</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ARMENTO</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>BELLA</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>BORGE</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>CALINE</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>DIMASE</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ELINIA</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ENNA</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>LIA</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>MORINA</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>OLIVADI</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>PLADACI</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ROLLO</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>TALMONE</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="lb_state">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>30</y>
+     <width>281</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/Description/Graphics/photos/download7.jpg);
+font: 9pt &quot;Segoe Print&quot;;
+
+color: rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>Please select a state to start the battle ...</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_peace">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>160</y>
+     <width>281</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/Description/Graphics/photos/download7.jpg);
+font: 9pt &quot;Segoe Print&quot;;
+
+color: rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>Do you want to make a peace sign ? </string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="le_peace_sign">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>230</y>
+     <width>113</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/Description/Graphics/photos/download7.jpg);
+font: 9pt &quot;Segoe Print&quot;;
+
+color: rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>State : </string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_next">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>290</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/Description/Graphics/photos/download7.jpg);
+font: 9pt &quot;Segoe Print&quot;;
+
+color: rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>Next</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_back">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>290</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/Description/Graphics/photos/download7.jpg);
+font: 9pt &quot;Segoe Print&quot;;
+
+color: rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

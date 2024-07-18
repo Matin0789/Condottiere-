@@ -1,5 +1,5 @@
-#ifndef SET_H
-#define SET_H
+#ifndef PLAYERINFO_H
+#define PLAYERINFO_H
 
 #include <QDialog>
 #include <string>
@@ -9,16 +9,16 @@
 
 
 namespace Ui {
-class Set;
+class PlayerInfo;
 }
 
-class Set : public QDialog
+class Playerinfo : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit Set(QWidget *parent = nullptr);
-    ~Set();
+    explicit Playerinfo(QWidget *parent = nullptr);
+    ~Playerinfo();
 
 signals:
     void get_player_name(std::string);
@@ -30,8 +30,8 @@ private slots:
     void on_btn_back_clicked();
 
 private:
-    Ui::Set *ui;
+    Ui::Playerinfo *ui;
     std::vector<std::pair<QString, Color>> freeColors;
 };
 
-#endif // SET_H
+#endif // PLAYERINFO_H

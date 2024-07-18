@@ -1,12 +1,12 @@
 #include <utility>
 #include <QMessageBox>
 
-#include "Set.h"
-#include "ui_Set.h"
+#include "Playerinfo.h"
+#include "ui_Playerinfo.h"
 
 Set::Set(QWidget *parent)
     : QDialog(parent)
-    , ui(new Ui::Set)
+    , ui(new Ui::PlayerInfo)
 {
     ui->setupUi(this);
     freeColors.push_back(std::pair<QString, Color>("ORANGE", orange));
@@ -25,12 +25,12 @@ Set::Set(QWidget *parent)
     });
 }
 
-Set::~Set()
+Playerinfo::~Playerinfo()
 {
     delete ui;
 }
 
-void Set::on_btn_next_clicked()
+void Playerinfo::on_btn_next_clicked()
 {
     hide();
     QString name = ui->lineEdit_name->text();
@@ -60,7 +60,7 @@ void Set::on_btn_next_clicked()
     }
 }
 
-void Set::on_btn_back_clicked()
+void Playerinfo::on_btn_back_clicked()
 {
 
 }

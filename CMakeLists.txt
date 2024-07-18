@@ -85,7 +85,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${PROJECT_SOURCES}
 
         start.h start.cpp start.ui
-        Set.h Set.cpp Set.ui
+        Playerinfo.h Playerinfo.cpp Playerinfo.ui
         showcards.h showcards.cpp showcards.ui
         campaign.h campaign.cpp campaign.ui
         Help.h Help.cpp Help.ui
@@ -95,6 +95,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         img.qrc
         sound.qrc
         controller.h controller.cpp
+        locateinfo.h locateinfo.cpp locateinfo.ui
 
     )
 # Define target properties for Android with Qt 6 as:

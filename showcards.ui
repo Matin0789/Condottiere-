@@ -231,54 +231,6 @@ QPushButton : pressed
     <string/>
    </property>
   </widget>
-  <widget class="QComboBox" name="cb_show_player_list">
-   <property name="geometry">
-    <rect>
-     <x>440</x>
-     <y>110</y>
-     <width>151</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(:/Description/Graphics/photos/download5.jpg);</string>
-   </property>
-   <item>
-    <property name="text">
-     <string>PLAYERS</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>#Name player 1</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>#Name player 2</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>#Name player 3</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>#Name player 4</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>#Name player 5</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>#Name player 6</string>
-    </property>
-   </item>
-  </widget>
   <widget class="QPushButton" name="btn_Nplayer">
    <property name="geometry">
     <rect>
@@ -317,6 +269,19 @@ QPushButton : pressed
     <string>Next player</string>
    </property>
   </widget>
+  <widget class="QSpinBox" name="sb">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>110</y>
+     <width>101</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/Description/Graphics/photos/brown.jpg);</string>
+   </property>
+  </widget>
   <zorder>label_5</zorder>
   <zorder>btn_lets_go</zorder>
   <zorder>toolButton</zorder>
@@ -329,8 +294,8 @@ QPushButton : pressed
   <zorder>toolButton_8</zorder>
   <zorder>toolButton_9</zorder>
   <zorder>toolButton_10</zorder>
-  <zorder>cb_show_player_list</zorder>
   <zorder>btn_Nplayer</zorder>
+  <zorder>sb</zorder>
  </widget>
  <resources/>
  <connections/>

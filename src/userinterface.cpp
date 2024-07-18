@@ -9,7 +9,7 @@
 #include "userinterface.h"
 #include "game.h"
 #include "enumcolor.h"
-#include "Set.h"
+#include "Playerinfo.h"
 
 UserInterface::UserInterface() {
 
