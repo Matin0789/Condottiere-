@@ -10,26 +10,24 @@ class Controller : public QObject
     Q_OBJECT
 public:
     explicit Controller(QObject *parent = nullptr);
+    ~Controller();
 public slots:
-    void showPlayerPlayedCards(const Player&) const;
+    /*void showPlayerPlayedCards(const Player&) const;
     std::string getCommand(const Player&, const BattleMarker&, const Card*);
     State* get_battleground(const Player&,GameBoard&);
     State* get_favorground(const Player&,GameBoard&);
-    void showPlayerStates(const Player&) const;
-    void showPlayerCards(const Player&) const;
-    std::string get_card_name();
+    void getPlayerStates(const Player&) const;
+    void getPlayerCards(const Player&) const;
+    std::string get_card_name();*/
 
     //
-    int get_players_number(size_t);
-    void get_player_name(std::string);
-    void get_player_old(size_t);
-    void get_player_color(Color);
+    void get_player(std::string, size_t, Color);
 
     //
-    void declare_warWinner(const Player&) const;
+    /*void declare_warWinner(const Player&) const;
     void declare_warWinner() const;
 
-    void declare_gameWinner(const Player&) const;
+    void declare_gameWinner(const Player&) const;*/
 signals:
 
 private:

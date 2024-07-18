@@ -18,10 +18,11 @@ class Start : public QDialog
 public:
     explicit Start(QWidget *parent = nullptr);
     ~Start();
-
+public slots:
+    void get_player(std::string, size_t, Color);
 signals:
-    int get_players_number(size_t);
-
+    void set_player(std::string, size_t, Color);
+    void end();
 private slots:
 
     void on_btn_next_clicked();
@@ -32,6 +33,10 @@ private slots:
 
 private:
     Ui::Start *ui;
+    size_t playersNumber;
+    size_t playerID;
+    Set *set;
+    std::vector<std::pair<QString, Color>> freeColors;
 };
 
 #endif // START_H

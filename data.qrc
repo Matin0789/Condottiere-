@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/">
+        <file>data/board/adjacency.txt</file>
+        <file>data/help/BishopHelp.txt</file>
+        <file>data/help/DrummerHelp.txt</file>
+        <file>data/help/GameHelp.txt</file>
+        <file>data/help/HeroineHelp.txt</file>
+        <file>data/help/ScarecrowHelp.txt</file>
+        <file>data/help/SpringHelp.txt</file>
+        <file>data/help/SpyHelp.txt</file>
+        <file>data/help/TurncoatHelp.txt</file>
+        <file>data/help/WinterHelp.txt</file>
+        <file>data/save/save_1.bin</file>
+        <file>data/save/save_2.bin</file>
+        <file>data/save/save_3.bin</file>
+        <file>data/save/save_4.bin</file>
+        <file>data/save/save_5.bin</file>
+    </qresource>
+</RCC>

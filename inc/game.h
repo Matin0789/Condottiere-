@@ -38,11 +38,12 @@ public:
 	void set_favorground(const Player&);
 	bool save(std::string) const; 	// (save file path)
 	bool load(std::string);	// (save file path)
+    void getPlayer(std::string, size_t, Color);
 private:
 	//private methods
 	size_t warـanalyst();
 	bool find_game_winner(const Player&);
-	void getPlayers();
+
 	void shuffle();
 	void distributeCards();
 	std::pair<size_t, std::pair<size_t, size_t>> war(int); // // first currentplayerID, second.first favorSetterID, second.second battleSetterID

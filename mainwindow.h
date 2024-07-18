@@ -21,6 +21,8 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+public slots:
+    void nextPage();
 
 private slots:
     void on_btn_Start_clicked();
@@ -31,7 +33,6 @@ private slots:
 private:
     Ui::MainWindow *ui;
     Start *start;
-    Set *set;
     showCards *showcards;
     Controller *controller;
 };

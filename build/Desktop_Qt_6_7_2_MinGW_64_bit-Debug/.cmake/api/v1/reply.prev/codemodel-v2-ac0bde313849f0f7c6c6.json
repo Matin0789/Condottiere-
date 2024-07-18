@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-a45f41a8eb76b1b2a12a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Condottiere-",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Condottiere-::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Condottiere--Debug-dfffcdcabb888c25fa25.json",
+					"name" : "Condottiere-",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Condottiere-_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Condottiere-_autogen-Debug-7c0cfbc9de9d37246cd8.json",
+					"name" : "Condottiere-_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Condottiere-_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Condottiere-_autogen_timestamp_deps-Debug-8358a06dffb36456e3ef.json",
+					"name" : "Condottiere-_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug",
+		"source" : "C:/project/Condottiere-"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

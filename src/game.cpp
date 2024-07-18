@@ -201,14 +201,8 @@ bool Game::find_game_winner(const Player& player){
     return false;
 }
 
-void Game::getPlayers() {
-    int n /*= ui->get_players_number()*/;
-    for (size_t i = 0; i < n; i++) {
-        std::string name /*= ui->get_player_name(i + 1)*/;
-        unsigned int age /*= ui->get_player_old(i + 1)*/;
-        Color color /*= ui->get_player_color(i + 1)*/;
-        players.push_back(Player(name, i, age, color));
-    }
+void Game::getPlayer(std::string name, size_t age, Color color) {
+    players.push_back(Player(name, players.size(), age, color));
 }
 
 void Game::distributeCards() {
@@ -217,7 +211,6 @@ void Game::distributeCards() {
         std::vector<const Card*> playerCards(cards.begin(), cards.begin() + (10 + player.getStateNumber()));
         cards.erase(cards.begin(), cards.begin() + (10 + player.getStateNumber()));
         player.setCards(playerCards);
-        //ui->showPlayerCards(player);
     }
 }
 
@@ -228,7 +221,6 @@ void Game::shuffle()  //This function is for shuffling cards
 
 void Game::play()
 {
-    getPlayers();
     distributeCards();
     size_t currentPlayerID = 1;
     currentPlayerID = compareAge();

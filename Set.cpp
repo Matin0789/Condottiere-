@@ -4,25 +4,14 @@
 #include "Set.h"
 #include "ui_Set.h"
 
-Set::Set(QWidget *parent)
+Set::Set(std::vector<std::pair<QString, Color>> freeColors, size_t playerID, QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::Set)
 {
     ui->setupUi(this);
-    freeColors.push_back(std::pair<QString, Color>("ORANGE", orange));
-    freeColors.push_back(std::pair<QString, Color>("BLUE",   blue));
-    freeColors.push_back(std::pair<QString, Color>("GREEN",  green));
-    freeColors.push_back(std::pair<QString, Color>("RED",    red));
-    freeColors.push_back(std::pair<QString, Color>("GRAY",   gray));
-    freeColors.push_back(std::pair<QString, Color>("BROWN",  brown));
-    ui->comboBox_color->addItems({
-        "ORANGE",
-        "BLUE",
-        "GREEN",
-        "RED",
-        "GRAY",
-        "BROWN",
-    });
+    for(auto &&freeColor : freeColors)
+        ui->comboBox_color->addItem(freeColor.first);
+    this->freeColors = freeColors;
 }
 
 Set::~Set()
@@ -54,9 +43,7 @@ void Set::on_btn_next_clicked()
         msgBox.exec();
     }
     else {
-        get_player_name(name.toStdString());
-        get_player_old(old);
-        get_player_color(choiceColor);
+        get_player(name.toStdString(), old, choiceColor);
     }
 }
 

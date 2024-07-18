@@ -12,16 +12,23 @@ MainWindow::MainWindow(QWidget *parent)
     controller(new Controller)
 {
     ui->setupUi(this);
-    QObject::connect(start, &Start::get_players_number, controller, &Controller::get_players_number);
-    QObject::connect(set, &Set::get_player_name, controller, &Controller::get_player_name);
-    QObject::connect(set, &Set::get_player_old, controller, &Controller::get_player_old);
-    QObject::connect(set, &Set::get_player_color, controller, &Controller::get_player_color);
-
+    QObject::connect(start, &Start::end, this, &MainWindow::nextPage);
+    QObject::connect(start, &Start::set_player, controller, &Controller::get_player);
 }
 
 MainWindow::~MainWindow()
 {
+    QObject::disconnect(start, &Start::set_player, controller, &Controller::get_player);
+
+    delete start;
     delete ui;
+}
+
+void MainWindow::nextPage()
+{
+    QObject::disconnect(start, &Start::end, this, &MainWindow::nextPage);
+    showcards = new showCards(this);
+    showcards->show();
 }
 
 void MainWindow::on_btn_Start_clicked()

@@ -9,6 +9,7 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+find_package(Qt6 REQUIRED COMPONENTS Core)
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 find_package(Qt6 REQUIRED COMPONENTS Multimedia)
@@ -16,57 +17,56 @@ find_package(Qt6 REQUIRED COMPONENTS Multimedia)
 
 
 set(SOURCE_FILES
-    ${PROJECT_SOURCE_DIR}/src/card/card.cpp
-    ${PROJECT_SOURCE_DIR}/src/card/purplecard.cpp
-    ${PROJECT_SOURCE_DIR}/src/card/yellowcard.cpp
-    ${PROJECT_SOURCE_DIR}/src/card/season.cpp
-    ${PROJECT_SOURCE_DIR}/src/card/bishop.cpp
-    ${PROJECT_SOURCE_DIR}/src/card/drummer.cpp
-    ${PROJECT_SOURCE_DIR}/src/card/heroine.cpp
-    ${PROJECT_SOURCE_DIR}/src/card/scarecrow.cpp
-    ${PROJECT_SOURCE_DIR}/src/card/turncoat.cpp
-    ${PROJECT_SOURCE_DIR}/src/card/spy.cpp
-    ${PROJECT_SOURCE_DIR}/src/card/winter.cpp
-    ${PROJECT_SOURCE_DIR}/src/card/spring.cpp
+    src/card/card.cpp
+    src/card/purplecard.cpp
+    src/card/yellowcard.cpp
+    src/card/season.cpp
+    src/card/bishop.cpp
+    src/card/drummer.cpp
+    src/card/heroine.cpp
+    src/card/scarecrow.cpp
+    src/card/turncoat.cpp
+    src/card/spy.cpp
+    src/card/winter.cpp
+    src/card/spring.cpp
 
 
-    ${PROJECT_SOURCE_DIR}/src/marker/marker.cpp
-    ${PROJECT_SOURCE_DIR}/src/marker/battlemarker.cpp
-    ${PROJECT_SOURCE_DIR}/src/marker/favormarker.cpp
-    ${PROJECT_SOURCE_DIR}/src/marker/playermarker.cpp
+    src/marker/marker.cpp
+    src/marker/battlemarker.cpp
+    src/marker/favormarker.cpp
+    src/marker/playermarker.cpp
 
-    ${PROJECT_SOURCE_DIR}/src/game.cpp
-    ${PROJECT_SOURCE_DIR}/src/userinterface.cpp
-    ${PROJECT_SOURCE_DIR}/src/player.cpp
-    ${PROJECT_SOURCE_DIR}/src/gameboard.cpp
-    ${PROJECT_SOURCE_DIR}/src/state.cpp
+    src/game.cpp
+    src/player.cpp
+    src/gameboard.cpp
+    src/state.cpp
 )
 
 set(HEADER_FILES
-    ${PROJECT_SOURCE_DIR}/inc/card/card.h
-    ${PROJECT_SOURCE_DIR}/inc/card/purplecard.h
-    ${PROJECT_SOURCE_DIR}/inc/card/yellowcard.h
-    ${PROJECT_SOURCE_DIR}/inc/card/season.h
-    ${PROJECT_SOURCE_DIR}/inc/card/bishop.h
-    ${PROJECT_SOURCE_DIR}/inc/card/drummer.h
-    ${PROJECT_SOURCE_DIR}/inc/card/heroine.h
-    ${PROJECT_SOURCE_DIR}/inc/card/scarecrow.h
-    ${PROJECT_SOURCE_DIR}/inc/card/turncoat.h
-    ${PROJECT_SOURCE_DIR}/inc/card/spy.h
-    ${PROJECT_SOURCE_DIR}/inc/card/winter.h
-    ${PROJECT_SOURCE_DIR}/inc/card/spring.h
+    inc/card/card.h
+    inc/card/purplecard.h
+    inc/card/yellowcard.h
+    inc/card/season.h
+    inc/card/bishop.h
+    inc/card/drummer.h
+    inc/card/heroine.h
+    inc/card/scarecrow.h
+    inc/card/turncoat.h
+    inc/card/spy.h
+    inc/card/winter.h
+    inc/card/spring.h
 
-    ${PROJECT_SOURCE_DIR}/inc/marker/marker.h
-    ${PROJECT_SOURCE_DIR}/inc/marker/battlemarker.h
-    ${PROJECT_SOURCE_DIR}/inc/marker/favormarker.h
-    ${PROJECT_SOURCE_DIR}/inc/marker/playermarker.h
+    inc/marker/marker.h
+    inc/marker/battlemarker.h
+    inc/marker/favormarker.h
+    inc/marker/playermarker.h
 
-    ${PROJECT_SOURCE_DIR}/inc/enumcolor.h
-    ${PROJECT_SOURCE_DIR}/inc/game.h
-    ${PROJECT_SOURCE_DIR}/inc/userinterface.h
-    ${PROJECT_SOURCE_DIR}/inc/player.h
-    ${PROJECT_SOURCE_DIR}/inc/gameboard.h
-    ${PROJECT_SOURCE_DIR}/inc/state.h
+    inc/enumcolor.h
+    inc/filepath.h
+    inc/game.h
+    inc/player.h
+    inc/gameboard.h
+    inc/state.h
 )
 
 
@@ -91,10 +91,11 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         Help.h Help.cpp Help.ui
         options.h options.cpp options.ui
         Warwinner.h Warwinner.cpp Warwinner.ui
+        controller.h controller.cpp
 
         img.qrc
         sound.qrc
-        controller.h controller.cpp
+        data.qrc
 
     )
 # Define target properties for Android with Qt 6 as:
@@ -117,6 +118,7 @@ endif()
 
 target_link_libraries(Condottiere- PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 target_link_libraries(Condottiere- PRIVATE Qt6::Multimedia)
+target_link_libraries(Condottiere- PRIVATE Qt6::Core)
 #target_link_libraries(Condottiere- PRIVATE Qt6::MultimediaWidgets)
 
 target_include_directories(Condottiere- PRIVATE
