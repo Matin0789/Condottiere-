@@ -3,7 +3,7 @@
 
 #include <QDialog>
 
-#include "Set.h"
+#include "Playerinfo.h"
 #include "game.h"
 #include "userinterface.h"
 
