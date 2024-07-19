@@ -4,7 +4,7 @@
 #include "Playerinfo.h"
 #include "ui_Playerinfo.h"
 
-Set::Set(std::vector<std::pair<QString, Color>> freeColors, size_t playerID, QWidget *parent)
+PlayerInfo::PlayerInfo(std::vector<std::pair<QString, Color>> freeColors, size_t playerID, QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::PlayerInfo)
 {
@@ -14,12 +14,12 @@ Set::Set(std::vector<std::pair<QString, Color>> freeColors, size_t playerID, QWi
     this->freeColors = freeColors;
 }
 
-Playerinfo::~Playerinfo()
+PlayerInfo::~PlayerInfo()
 {
     delete ui;
 }
 
-void Playerinfo::on_btn_next_clicked()
+void PlayerInfo::on_btn_next_clicked()
 {
     hide();
     QString name = ui->lineEdit_name->text();
@@ -47,7 +47,7 @@ void Playerinfo::on_btn_next_clicked()
     }
 }
 
-void Playerinfo::on_btn_back_clicked()
+void PlayerInfo::on_btn_back_clicked()
 {
 
 }

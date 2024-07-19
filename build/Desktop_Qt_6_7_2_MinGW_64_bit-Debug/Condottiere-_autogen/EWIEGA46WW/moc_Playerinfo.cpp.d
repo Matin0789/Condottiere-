@@ -1,4 +1,4 @@
-C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/EWIEGA46WW/moc_start.cpp: C:/project/Condottiere-/start.h \
+C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/EWIEGA46WW/moc_Playerinfo.cpp: C:/project/Condottiere-/Playerinfo.h \
   C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/moc_predefs.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/q20memory.h \
@@ -364,7 +364,6 @@ C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_a
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
   C:/project/Condottiere-/Help.h \
-  C:/project/Condottiere-/Playerinfo.h \
   C:/project/Condottiere-/campaign.h \
   C:/project/Condottiere-/inc/card/bishop.h \
   C:/project/Condottiere-/inc/card/card.h \

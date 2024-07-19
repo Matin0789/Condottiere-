@@ -1,4 +1,4 @@
-C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/EWIEGA46WW/moc_start.cpp: C:/project/Condottiere-/start.h \
+C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/EWIEGA46WW/moc_locateinfo.cpp: C:/project/Condottiere-/locateinfo.h \
   C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/moc_predefs.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/q20memory.h \
@@ -147,8 +147,6 @@ C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_a
   C:/Qt/6.7.2/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.7.2/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/QDialog \
-  C:/Qt/6.7.2/mingw_64/include/QtWidgets/QGraphicsItem \
-  C:/Qt/6.7.2/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/QGraphicsRectItem \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/QGraphicsScene \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/QGraphicsView \
@@ -364,7 +362,6 @@ C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_a
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
   C:/project/Condottiere-/Help.h \
-  C:/project/Condottiere-/Playerinfo.h \
   C:/project/Condottiere-/campaign.h \
   C:/project/Condottiere-/inc/card/bishop.h \
   C:/project/Condottiere-/inc/card/card.h \
@@ -388,5 +385,4 @@ C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_a
   C:/project/Condottiere-/inc/player.h \
   C:/project/Condottiere-/inc/state.h \
   C:/project/Condottiere-/inc/userinterface.h \
-  C:/project/Condottiere-/options.h \
-  C:/project/Condottiere-/showcards.h
+  C:/project/Condottiere-/options.h

@@ -12,13 +12,13 @@ namespace Ui {
 class PlayerInfo;
 }
 
-class Playerinfo : public QDialog
+class PlayerInfo : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit Playerinfo(std::vector<std::pair<QString, Color>>, size_t, QWidget *parent = nullptr);
-    ~Playerinfo();
+    explicit PlayerInfo(std::vector<std::pair<QString, Color>>, size_t, QWidget *parent = nullptr);
+    ~PlayerInfo();
 
 private slots:
     void on_btn_next_clicked();
@@ -26,7 +26,7 @@ private slots:
 signals:
     void get_player(std::string, size_t, Color);
 private:
-    Ui::Playerinfo *ui;
+    Ui::PlayerInfo *ui;
     std::vector<std::pair<QString, Color>> freeColors;
 };
 

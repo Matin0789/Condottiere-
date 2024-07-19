@@ -355,7 +355,12 @@
 			"EWIEGA46WW/moc_Help.cpp",
 			null
 		],
-		[ "C:/project/Condottiere-/Set.h", "MU", "EWIEGA46WW/moc_Set.cpp", null ],
+		[
+			"C:/project/Condottiere-/Playerinfo.h",
+			"MU",
+			"EWIEGA46WW/moc_Playerinfo.cpp",
+			null
+		],
 		[
 			"C:/project/Condottiere-/Warwinner.h",
 			"MU",
@@ -507,6 +512,12 @@
 			null
 		],
 		[
+			"C:/project/Condottiere-/locateinfo.h",
+			"MU",
+			"EWIEGA46WW/moc_locateinfo.cpp",
+			null
+		],
+		[
 			"C:/project/Condottiere-/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
@@ -611,10 +622,11 @@
 	"SOURCES" : 
 	[
 		[ "C:/project/Condottiere-/Help.cpp", "MU", null ],
-		[ "C:/project/Condottiere-/Set.cpp", "MU", null ],
+		[ "C:/project/Condottiere-/Playerinfo.cpp", "MU", null ],
 		[ "C:/project/Condottiere-/Warwinner.cpp", "MU", null ],
 		[ "C:/project/Condottiere-/campaign.cpp", "MU", null ],
 		[ "C:/project/Condottiere-/controller.cpp", "MU", null ],
+		[ "C:/project/Condottiere-/locateinfo.cpp", "MU", null ],
 		[ "C:/project/Condottiere-/main.cpp", "MU", null ],
 		[ "C:/project/Condottiere-/mainwindow.cpp", "MU", null ],
 		[ "C:/project/Condottiere-/options.cpp", "MU", null ],

@@ -35,7 +35,7 @@ private:
     Ui::Start *ui;
     size_t playersNumber;
     size_t playerID;
-    Set *set;
+    PlayerInfo *playerInfo;
     std::vector<std::pair<QString, Color>> freeColors;
 };
 

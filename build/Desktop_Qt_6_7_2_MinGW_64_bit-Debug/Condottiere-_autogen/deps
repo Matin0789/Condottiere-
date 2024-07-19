@@ -578,8 +578,8 @@ Condottiere-_autogen/timestamp: \
 	C:/project/Condottiere-/CMakeLists.txt \
 	C:/project/Condottiere-/Help.cpp \
 	C:/project/Condottiere-/Help.h \
-	C:/project/Condottiere-/Set.cpp \
-	C:/project/Condottiere-/Set.h \
+	C:/project/Condottiere-/Playerinfo.cpp \
+	C:/project/Condottiere-/Playerinfo.h \
 	C:/project/Condottiere-/Sound.qrc \
 	C:/project/Condottiere-/Warwinner.cpp \
 	C:/project/Condottiere-/Warwinner.h \
@@ -617,6 +617,8 @@ Condottiere-_autogen/timestamp: \
 	C:/project/Condottiere-/inc/player.h \
 	C:/project/Condottiere-/inc/state.h \
 	C:/project/Condottiere-/inc/userinterface.h \
+	C:/project/Condottiere-/locateinfo.cpp \
+	C:/project/Condottiere-/locateinfo.h \
 	C:/project/Condottiere-/main.cpp \
 	C:/project/Condottiere-/mainwindow.cpp \
 	C:/project/Condottiere-/mainwindow.h \
@@ -647,9 +649,10 @@ Condottiere-_autogen/timestamp: \
 	C:/project/Condottiere-/start.cpp \
 	C:/project/Condottiere-/start.h \
 	C:/project/Condottiere-/Help.ui \
-	C:/project/Condottiere-/Set.ui \
+	C:/project/Condottiere-/Playerinfo.ui \
 	C:/project/Condottiere-/Warwinner.ui \
 	C:/project/Condottiere-/campaign.ui \
+	C:/project/Condottiere-/locateinfo.ui \
 	C:/project/Condottiere-/mainwindow.ui \
 	C:/project/Condottiere-/options.ui \
 	C:/project/Condottiere-/showcards.ui \

@@ -1405,6 +1405,9 @@
 			"path" : "C:/Program Files/CMake/share/cmake-3.30/Modules/GNUInstallDirs.cmake"
 		},
 		{
+			"path" : "img.qrc"
+		},
+		{
 			"path" : "Sound.qrc"
 		},
 		{
