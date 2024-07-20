@@ -1,12 +1,12 @@
 #include <utility>
 #include <QMessageBox>
 
-#include "Playerinfo.h"
-#include "ui_Playerinfo.h"
+#include "Setplayer.h"
+#include "ui_Setplayer.h"
 
-PlayerInfo::PlayerInfo(std::vector<std::pair<QString, Color>> freeColors, size_t playerID, QWidget *parent)
+Setplayer::Setplayer(std::vector<std::pair<QString, Color>> freeColors, size_t playerID, QWidget *parent)
     : QDialog(parent)
-    , ui(new Ui::PlayerInfo)
+    , ui(new Ui::Setplayer)
 {
     ui->setupUi(this);
     for(auto &&freeColor : freeColors)
@@ -14,12 +14,12 @@ PlayerInfo::PlayerInfo(std::vector<std::pair<QString, Color>> freeColors, size_t
     this->freeColors = freeColors;
 }
 
-PlayerInfo::~PlayerInfo()
+Setplayer::~Setplayer()
 {
     delete ui;
 }
 
-void PlayerInfo::on_btn_next_clicked()
+void Setplayer::on_btn_next_clicked()
 {
     hide();
     QString name = ui->lineEdit_name->text();
@@ -47,7 +47,7 @@ void PlayerInfo::on_btn_next_clicked()
     }
 }
 
-void PlayerInfo::on_btn_back_clicked()
+void Setplayer::on_btn_back_clicked()
 {
 
 }

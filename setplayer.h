@@ -1,5 +1,5 @@
-#ifndef PLAYERINFO_H
-#define PLAYERINFO_H
+#ifndef SETPLAYER_H
+#define SETPLAYER_H
 
 #include <QDialog>
 #include <string>
@@ -9,16 +9,16 @@
 
 
 namespace Ui {
-class PlayerInfo;
+class Setplayer;
 }
 
-class PlayerInfo : public QDialog
+class Setplayer : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit PlayerInfo(std::vector<std::pair<QString, Color>>, size_t, QWidget *parent = nullptr);
-    ~PlayerInfo();
+    explicit Setplayer(std::vector<std::pair<QString, Color>>, size_t, QWidget *parent = nullptr);
+    ~Setplayer();
 
 private slots:
     void on_btn_next_clicked();
@@ -26,8 +26,8 @@ private slots:
 signals:
     void get_player(std::string, size_t, Color);
 private:
-    Ui::PlayerInfo *ui;
+    Ui::Setplayer *ui;
     std::vector<std::pair<QString, Color>> freeColors;
 };
 
-#endif // PLAYERINFO_H
+#endif // SETPLAYER_H

@@ -2,8 +2,8 @@
 #define START_H
 
 #include <QDialog>
-
-
+#include <limits>
+#include <vector>
 #include "game.h"
 #include "userinterface.h"
 #include "controller.h"
@@ -35,7 +35,7 @@ private slots:
 
 private:
     Ui::Start *ui;
-    PlayerInfo *playerinfo;
+    Setplayer *setplayer;
     size_t playersNumber;
     size_t playerID;
     std::vector<std::pair<QString, Color>> freeColors;

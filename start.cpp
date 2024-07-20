@@ -19,19 +19,19 @@ Start::Start(QWidget *parent)
 
 Start::~Start()
 {
-    delete playerinfo;
+    delete setplayer;
     delete ui;
 }
 
 void Start::get_player(std::string name, size_t age, Color color)
 {
     set_player(name, age, color);
-    QObject::disconnect(playerinfo, &PlayerInfo::get_player, this, &get_player);
-    delete playerinfo;
+    QObject::disconnect(setplayer, &Setplayer::get_player, this, &get_player);
+    delete setplayer;
     playerID++;
     if (playersNumber > playerID) {
-        playerinfo = new PlayerInfo(freeColors, playerID,this);
-        playerinfo->show();
+        setplayer = new Setplayer(freeColors, playerID,this);
+        setplayer->show();
     }
     else {
         hide();
@@ -42,9 +42,9 @@ void Start::get_player(std::string name, size_t age, Color color)
 void Start::on_btn_next_clicked()
 {
     hide();
-    playerinfo = new PlayerInfo(freeColors, playerID,this);
-    QObject::connect(playerinfo, &PlayerInfo::get_player, this, &get_player);
-    playerinfo->show();
+    setplayer = new Setplayer(freeColors, playerID,this);
+    QObject::connect(setplayer, &Setplayer::get_player, this, &get_player);
+    setplayer->show();
 }
 
 void Start::on_btn_back_clicked()
