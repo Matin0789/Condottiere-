@@ -85,7 +85,6 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${PROJECT_SOURCES}
 
         start.h start.cpp start.ui
-        Playerinfo.h Playerinfo.cpp Playerinfo.ui
         showcards.h showcards.cpp showcards.ui
         campaign.h campaign.cpp campaign.ui
         Help.h Help.cpp Help.ui
@@ -93,10 +92,12 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         Warwinner.h Warwinner.cpp Warwinner.ui
         controller.h controller.cpp
         locateinfo.h locateinfo.cpp locateinfo.ui
+        setplayer.h setplayer.cpp setplayer.ui
 
         img.qrc
         sound.qrc
         data.qrc
+
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Condottiere- APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

@@ -3,9 +3,11 @@
 
 #include <QDialog>
 
-#include "Playerinfo.h"
+
 #include "game.h"
 #include "userinterface.h"
+#include "controller.h"
+#include "setplayer.h"
 
 namespace Ui {
 class Start;
@@ -33,9 +35,9 @@ private slots:
 
 private:
     Ui::Start *ui;
+    PlayerInfo *playerinfo;
     size_t playersNumber;
     size_t playerID;
-    PlayerInfo *playerInfo;
     std::vector<std::pair<QString, Color>> freeColors;
 };
 

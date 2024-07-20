@@ -5,7 +5,7 @@
 #include <controller.h>
 
 #include "start.h"
-
+#include "setplayer.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {

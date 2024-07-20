@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Setplayer</class>
+ <widget class="QDialog" name="Setplayer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">border-image: url(:/Description/Graphics/photos/galileus_medieval_heroes_Crusaders_78320800-6418-4de7-bf57-39a3ad7f6f3b-1024x512.jpg);</string>
+  </property>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
