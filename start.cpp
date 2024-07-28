@@ -8,6 +8,8 @@ Start::Start(QWidget *parent)
     , playerID(0)
 {
     ui->setupUi(this);
+    ui->sb->setMaximum(6);
+    ui->sb->setMinimum(3);
 
     freeColors.push_back(std::pair<QString, Color>("ORANGE", orange));
     freeColors.push_back(std::pair<QString, Color>("BLUE",   blue));
@@ -41,6 +43,7 @@ void Start::get_player(std::string name, size_t age, Color color)
 
 void Start::on_btn_next_clicked()
 {
+    playersNumber = ui->sb->value();
     setplayer = new Setplayer(freeColors, playerID,this);
     QObject::connect(setplayer, &Setplayer::get_player, this, &get_player);
     setplayer->show();
@@ -50,12 +53,4 @@ void Start::on_btn_back_clicked()
 {
 
 }
-
-/*void Start::on_le_number_cursorPositionChanged(int arg1)
-{
-    user = new UserInterface();
-    user->get_players_number();  // prototype ----> int arg1    sent to function
-
-    // after call function  should stop in this page
-}*/
 
