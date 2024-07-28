@@ -25,7 +25,7 @@ Start::~Start()
 
 void Start::get_player(std::string name, size_t age, Color color)
 {
-    set_player(name, age, color);
+    emit set_player(name, age, color);
     QObject::disconnect(setplayer, &Setplayer::get_player, this, &get_player);
     delete setplayer;
     playerID++;
@@ -35,13 +35,12 @@ void Start::get_player(std::string name, size_t age, Color color)
     }
     else {
         hide();
-        end();
+        emit end();
     }
 }
 
 void Start::on_btn_next_clicked()
 {
-    hide();
     setplayer = new Setplayer(freeColors, playerID,this);
     QObject::connect(setplayer, &Setplayer::get_player, this, &get_player);
     setplayer->show();

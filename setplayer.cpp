@@ -21,29 +21,44 @@ Setplayer::~Setplayer()
 
 void Setplayer::on_btn_next_clicked()
 {
-    hide();
-    QString name = ui->lineEdit_name->text();
-    size_t old = ui->lineEdit_name->text().toInt();
-    QString color = ui->comboBox_color->currentText();
-    Color choiceColor;
-    bool flag = false;
-    for (size_t i = 0; i < freeColors.size(); i++)
-    {
-        if (color == freeColors[i].first) {
-            flag = true;
-            choiceColor = freeColors[i].second;
-            freeColors.erase(freeColors.begin() + i);
-            break;
-        }
+    if(ui->lineEdit_name->text() == "") {
+        QMessageBox ErrorMessage;
+        ErrorMessage.setText("name is empty!");
+        ErrorMessage.exec();
     }
+    else if (ui->lineEdit_age->text() == ""){
+        QMessageBox ErrorMessage;
+        ErrorMessage.setText("age is empty!");
+        ErrorMessage.exec();
+    }
+    // else if (ui->comboBox_color->){
 
-    if (!flag) {
-        QMessageBox msgBox;
-        msgBox.setText("bad color choice");
-        msgBox.exec();
-    }
+    // }
     else {
-        get_player(name.toStdString(), old, choiceColor);
+        hide();
+        QString name = ui->lineEdit_name->text();
+        size_t old = ui->lineEdit_age->text().toInt();
+        QString color = ui->comboBox_color->currentText();
+        Color choiceColor;
+        bool flag = false;
+        for (size_t i = 0; i < freeColors.size(); i++)
+        {
+            if (color == freeColors[i].first) {
+                flag = true;
+                choiceColor = freeColors[i].second;
+                freeColors.erase(freeColors.begin() + i);
+                break;
+            }
+        }
+
+        if (!flag) {
+            QMessageBox msgBox;
+            msgBox.setText("bad color choice");
+            msgBox.exec();
+        }
+        else {
+            emit get_player(name.toStdString(), old, choiceColor);
+        }
     }
 }
 
