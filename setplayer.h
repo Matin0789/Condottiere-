@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include <string>
+#include <map>
 
 #include "showcards.h"
 #include "enumcolor.h"
@@ -17,7 +18,7 @@ class Setplayer : public QDialog
     Q_OBJECT
 
 public:
-    explicit Setplayer(std::vector<std::pair<QString, Color>>, size_t, QWidget *parent = nullptr);
+    explicit Setplayer(std::map<QString, Color>, size_t, QWidget *parent = nullptr);
     ~Setplayer();
 
 private slots:
@@ -27,7 +28,7 @@ signals:
     void get_player(std::string, size_t, Color);
 private:
     Ui::Setplayer *ui;
-    std::vector<std::pair<QString, Color>> freeColors;
+    std::map<QString, Color> freeColors;
 };
 
 #endif // SETPLAYER_H

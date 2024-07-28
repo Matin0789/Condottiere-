@@ -4,7 +4,7 @@
 #include "Setplayer.h"
 #include "ui_Setplayer.h"
 
-Setplayer::Setplayer(std::vector<std::pair<QString, Color>> freeColors, size_t playerID, QWidget *parent)
+Setplayer::Setplayer(std::map<QString, Color> freeColors, size_t playerID, QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::Setplayer)
 {
@@ -40,23 +40,13 @@ void Setplayer::on_btn_next_clicked()
         size_t old = ui->lineEdit_age->text().toInt();
         QString color = ui->comboBox_color->currentText();
         Color choiceColor;
-        bool flag = false;
-        for (size_t i = 0; i < freeColors.size(); i++)
-        {
-            if (color == freeColors[i].first) {
-                flag = true;
-                choiceColor = freeColors[i].second;
-                freeColors.erase(freeColors.begin() + i);
-                break;
-            }
-        }
-
-        if (!flag) {
+        if (freeColors.find(color) == freeColors.end()) {
             QMessageBox msgBox;
             msgBox.setText("bad color choice");
             msgBox.exec();
         }
         else {
+            choiceColor = freeColors[color];
             emit get_player(name.toStdString(), old, choiceColor);
         }
     }

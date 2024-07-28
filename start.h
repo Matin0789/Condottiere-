@@ -2,8 +2,7 @@
 #define START_H
 
 #include <QDialog>
-#include <limits>
-#include <vector>
+#include <map>
 #include "game.h"
 #include "userinterface.h"
 #include "controller.h"
@@ -38,7 +37,7 @@ private:
     Setplayer *setplayer;
     size_t playersNumber;
     size_t playerID;
-    std::vector<std::pair<QString, Color>> freeColors;
+    std::map<QString, Color> freeColors;
 };
 
 #endif // START_H

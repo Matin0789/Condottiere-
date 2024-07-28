@@ -1,6 +1,5 @@
 #include "start.h"
-#include "ui_start.h"
-
+#include <QMessageBox>
 
 Start::Start(QWidget *parent)
     : QDialog(parent)
@@ -11,12 +10,12 @@ Start::Start(QWidget *parent)
     ui->sb->setMaximum(6);
     ui->sb->setMinimum(3);
 
-    freeColors.push_back(std::pair<QString, Color>("ORANGE", orange));
-    freeColors.push_back(std::pair<QString, Color>("BLUE",   blue));
-    freeColors.push_back(std::pair<QString, Color>("GREEN",  green));
-    freeColors.push_back(std::pair<QString, Color>("RED",    red));
-    freeColors.push_back(std::pair<QString, Color>("GRAY",   gray));
-    freeColors.push_back(std::pair<QString, Color>("BROWN",  brown));
+    freeColors["ORANGE"] =  orange;
+    freeColors["BLUE"]   =  blue;
+    freeColors["GREEN"]  =  green;
+    freeColors["RED"]    =  red;
+    freeColors["GRAY"]   =  gray;
+    freeColors["BROWN"]  =  brown;
 }
 
 Start::~Start()
@@ -27,11 +26,16 @@ Start::~Start()
 
 void Start::get_player(std::string name, size_t age, Color color)
 {
+    for (auto &&freeColor : freeColors) {
+        if(freeColor.second == color){
+            freeColors.erase(freeColors.find(freeColor.first));
+        }
+    }
     emit set_player(name, age, color);
     QObject::disconnect(setplayer, &Setplayer::get_player, this, &get_player);
     delete setplayer;
     playerID++;
-    if (playersNumber > playerID) {
+    if (playersNumber >= playerID) {
         setplayer = new Setplayer(freeColors, playerID,this);
         setplayer->show();
     }
