@@ -12,6 +12,7 @@ MainWindow::MainWindow(QWidget *parent)
     controller(new Controller)
 {
     ui->setupUi(this);
+    start = new Start(this);
     QObject::connect(start, &Start::end, this, &MainWindow::nextPage);
     QObject::connect(start, &Start::set_player, controller, &Controller::get_player);
 }
@@ -19,14 +20,13 @@ MainWindow::MainWindow(QWidget *parent)
 MainWindow::~MainWindow()
 {
     QObject::disconnect(start, &Start::set_player, controller, &Controller::get_player);
-
+    QObject::disconnect(start, &Start::end, this, &MainWindow::nextPage);
     delete start;
     delete ui;
 }
 
 void MainWindow::nextPage()
 {
-    QObject::disconnect(start, &Start::end, this, &MainWindow::nextPage);
     showcards = new showCards(this);
     showcards->show();
 }
@@ -34,7 +34,6 @@ void MainWindow::nextPage()
 void MainWindow::on_btn_Start_clicked()
 {
     hide();
-    start = new Start(this);
     start->show();
 }
 

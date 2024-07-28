@@ -563,7 +563,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/first/new/Condottiere-"
+			"value" : "C:/project/Condottiere-"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -1563,7 +1563,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/first/new/Condottiere-"
+			"value" : "C:/project/Condottiere-"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Threads",

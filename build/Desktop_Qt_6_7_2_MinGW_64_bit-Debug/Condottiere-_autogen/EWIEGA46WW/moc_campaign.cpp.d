@@ -1,4 +1,4 @@
-C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/EWIEGA46WW/moc_campaign.cpp: C:/first/new/Condottiere-/campaign.h \
+C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/EWIEGA46WW/moc_campaign.cpp: C:/project/Condottiere-/campaign.h \
   C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/moc_predefs.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/q20memory.h \
@@ -361,27 +361,27 @@ C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_a
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
-  C:/first/new/Condottiere-/Help.h \
-  C:/first/new/Condottiere-/inc/card/bishop.h \
-  C:/first/new/Condottiere-/inc/card/card.h \
-  C:/first/new/Condottiere-/inc/card/drummer.h \
-  C:/first/new/Condottiere-/inc/card/heroine.h \
-  C:/first/new/Condottiere-/inc/card/purplecard.h \
-  C:/first/new/Condottiere-/inc/card/scarecrow.h \
-  C:/first/new/Condottiere-/inc/card/season.h \
-  C:/first/new/Condottiere-/inc/card/spring.h \
-  C:/first/new/Condottiere-/inc/card/spy.h \
-  C:/first/new/Condottiere-/inc/card/turncoat.h \
-  C:/first/new/Condottiere-/inc/card/winter.h \
-  C:/first/new/Condottiere-/inc/card/yellowcard.h \
-  C:/first/new/Condottiere-/inc/enumcolor.h \
-  C:/first/new/Condottiere-/inc/game.h \
-  C:/first/new/Condottiere-/inc/gameboard.h \
-  C:/first/new/Condottiere-/inc/marker/battlemarker.h \
-  C:/first/new/Condottiere-/inc/marker/favormarker.h \
-  C:/first/new/Condottiere-/inc/marker/marker.h \
-  C:/first/new/Condottiere-/inc/marker/playermarker.h \
-  C:/first/new/Condottiere-/inc/player.h \
-  C:/first/new/Condottiere-/inc/state.h \
-  C:/first/new/Condottiere-/inc/userinterface.h \
-  C:/first/new/Condottiere-/options.h
+  C:/project/Condottiere-/Help.h \
+  C:/project/Condottiere-/inc/card/bishop.h \
+  C:/project/Condottiere-/inc/card/card.h \
+  C:/project/Condottiere-/inc/card/drummer.h \
+  C:/project/Condottiere-/inc/card/heroine.h \
+  C:/project/Condottiere-/inc/card/purplecard.h \
+  C:/project/Condottiere-/inc/card/scarecrow.h \
+  C:/project/Condottiere-/inc/card/season.h \
+  C:/project/Condottiere-/inc/card/spring.h \
+  C:/project/Condottiere-/inc/card/spy.h \
+  C:/project/Condottiere-/inc/card/turncoat.h \
+  C:/project/Condottiere-/inc/card/winter.h \
+  C:/project/Condottiere-/inc/card/yellowcard.h \
+  C:/project/Condottiere-/inc/enumcolor.h \
+  C:/project/Condottiere-/inc/game.h \
+  C:/project/Condottiere-/inc/gameboard.h \
+  C:/project/Condottiere-/inc/marker/battlemarker.h \
+  C:/project/Condottiere-/inc/marker/favormarker.h \
+  C:/project/Condottiere-/inc/marker/marker.h \
+  C:/project/Condottiere-/inc/marker/playermarker.h \
+  C:/project/Condottiere-/inc/player.h \
+  C:/project/Condottiere-/inc/state.h \
+  C:/project/Condottiere-/inc/userinterface.h \
+  C:/project/Condottiere-/options.h

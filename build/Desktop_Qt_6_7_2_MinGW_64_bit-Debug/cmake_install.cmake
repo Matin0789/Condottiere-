@@ -1,4 +1,4 @@
-# Install script for directory: C:/first/new/Condottiere-
+# Install script for directory: C:/project/Condottiere-
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

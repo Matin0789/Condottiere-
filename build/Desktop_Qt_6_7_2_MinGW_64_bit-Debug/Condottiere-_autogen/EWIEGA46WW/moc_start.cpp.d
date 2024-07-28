@@ -1,5 +1,6 @@
-C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/EWIEGA46WW/moc_start.cpp: C:/first/new/Condottiere-/start.h \
+C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/EWIEGA46WW/moc_start.cpp: C:/project/Condottiere-/start.h \
   C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/moc_predefs.h \
+  C:/Qt/6.7.2/mingw_64/include/QtCore/QObject \
   C:/Qt/6.7.2/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/q20memory.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/q20type_traits.h \
@@ -129,13 +130,17 @@ C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_a
   C:/Qt/6.7.2/mingw_64/include/QtGui/qimage.h \
   C:/Qt/6.7.2/mingw_64/include/QtGui/qkeysequence.h \
   C:/Qt/6.7.2/mingw_64/include/QtGui/qpaintdevice.h \
+  C:/Qt/6.7.2/mingw_64/include/QtGui/qpainter.h \
+  C:/Qt/6.7.2/mingw_64/include/QtGui/qpainterpath.h \
   C:/Qt/6.7.2/mingw_64/include/QtGui/qpalette.h \
+  C:/Qt/6.7.2/mingw_64/include/QtGui/qpen.h \
   C:/Qt/6.7.2/mingw_64/include/QtGui/qpixelformat.h \
   C:/Qt/6.7.2/mingw_64/include/QtGui/qpixmap.h \
   C:/Qt/6.7.2/mingw_64/include/QtGui/qpolygon.h \
   C:/Qt/6.7.2/mingw_64/include/QtGui/qregion.h \
   C:/Qt/6.7.2/mingw_64/include/QtGui/qrgb.h \
   C:/Qt/6.7.2/mingw_64/include/QtGui/qrgba64.h \
+  C:/Qt/6.7.2/mingw_64/include/QtGui/qtextoption.h \
   C:/Qt/6.7.2/mingw_64/include/QtGui/qtgui-config.h \
   C:/Qt/6.7.2/mingw_64/include/QtGui/qtguiexports.h \
   C:/Qt/6.7.2/mingw_64/include/QtGui/qtguiglobal.h \
@@ -143,7 +148,18 @@ C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_a
   C:/Qt/6.7.2/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.7.2/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/QDialog \
+  C:/Qt/6.7.2/mingw_64/include/QtWidgets/QGraphicsItem \
+  C:/Qt/6.7.2/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
+  C:/Qt/6.7.2/mingw_64/include/QtWidgets/QGraphicsRectItem \
+  C:/Qt/6.7.2/mingw_64/include/QtWidgets/QGraphicsScene \
+  C:/Qt/6.7.2/mingw_64/include/QtWidgets/QGraphicsView \
+  C:/Qt/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/qdialog.h \
+  C:/Qt/6.7.2/mingw_64/include/QtWidgets/qframe.h \
+  C:/Qt/6.7.2/mingw_64/include/QtWidgets/qgraphicsitem.h \
+  C:/Qt/6.7.2/mingw_64/include/QtWidgets/qgraphicsscene.h \
+  C:/Qt/6.7.2/mingw_64/include/QtWidgets/qgraphicsview.h \
+  C:/Qt/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/qtwidgetsexports.h \
@@ -348,25 +364,31 @@ C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_a
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
-  C:/first/new/Condottiere-/inc/card/bishop.h \
-  C:/first/new/Condottiere-/inc/card/card.h \
-  C:/first/new/Condottiere-/inc/card/drummer.h \
-  C:/first/new/Condottiere-/inc/card/heroine.h \
-  C:/first/new/Condottiere-/inc/card/purplecard.h \
-  C:/first/new/Condottiere-/inc/card/scarecrow.h \
-  C:/first/new/Condottiere-/inc/card/season.h \
-  C:/first/new/Condottiere-/inc/card/spring.h \
-  C:/first/new/Condottiere-/inc/card/spy.h \
-  C:/first/new/Condottiere-/inc/card/turncoat.h \
-  C:/first/new/Condottiere-/inc/card/winter.h \
-  C:/first/new/Condottiere-/inc/card/yellowcard.h \
-  C:/first/new/Condottiere-/inc/enumcolor.h \
-  C:/first/new/Condottiere-/inc/game.h \
-  C:/first/new/Condottiere-/inc/gameboard.h \
-  C:/first/new/Condottiere-/inc/marker/battlemarker.h \
-  C:/first/new/Condottiere-/inc/marker/favormarker.h \
-  C:/first/new/Condottiere-/inc/marker/marker.h \
-  C:/first/new/Condottiere-/inc/marker/playermarker.h \
-  C:/first/new/Condottiere-/inc/player.h \
-  C:/first/new/Condottiere-/inc/state.h \
-  C:/first/new/Condottiere-/inc/userinterface.h
+  C:/project/Condottiere-/Help.h \
+  C:/project/Condottiere-/campaign.h \
+  C:/project/Condottiere-/controller.h \
+  C:/project/Condottiere-/inc/card/bishop.h \
+  C:/project/Condottiere-/inc/card/card.h \
+  C:/project/Condottiere-/inc/card/drummer.h \
+  C:/project/Condottiere-/inc/card/heroine.h \
+  C:/project/Condottiere-/inc/card/purplecard.h \
+  C:/project/Condottiere-/inc/card/scarecrow.h \
+  C:/project/Condottiere-/inc/card/season.h \
+  C:/project/Condottiere-/inc/card/spring.h \
+  C:/project/Condottiere-/inc/card/spy.h \
+  C:/project/Condottiere-/inc/card/turncoat.h \
+  C:/project/Condottiere-/inc/card/winter.h \
+  C:/project/Condottiere-/inc/card/yellowcard.h \
+  C:/project/Condottiere-/inc/enumcolor.h \
+  C:/project/Condottiere-/inc/game.h \
+  C:/project/Condottiere-/inc/gameboard.h \
+  C:/project/Condottiere-/inc/marker/battlemarker.h \
+  C:/project/Condottiere-/inc/marker/favormarker.h \
+  C:/project/Condottiere-/inc/marker/marker.h \
+  C:/project/Condottiere-/inc/marker/playermarker.h \
+  C:/project/Condottiere-/inc/player.h \
+  C:/project/Condottiere-/inc/state.h \
+  C:/project/Condottiere-/inc/userinterface.h \
+  C:/project/Condottiere-/options.h \
+  C:/project/Condottiere-/setplayer.h \
+  C:/project/Condottiere-/showcards.h
