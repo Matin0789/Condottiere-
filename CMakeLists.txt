@@ -90,7 +90,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         Help.h Help.cpp Help.ui
         options.h options.cpp options.ui
         Warwinner.h Warwinner.cpp Warwinner.ui
-        controller.h controller.cpp
+
         locateinfo.h locateinfo.cpp locateinfo.ui
         setplayer.h setplayer.cpp setplayer.ui
 

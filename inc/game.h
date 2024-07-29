@@ -1,6 +1,8 @@
 #ifndef GAME_H
 #define GAME_H
 
+#include <QObject>
+
 #include <vector>
 #include <array>
 #include <string>
@@ -20,13 +22,32 @@
 #include "winter.h"
 #include "spring.h"
 #include "turncoat.h"
-
 #include "marker.h"
 #include "playermarker.h"
 #include "favormarker.h"
 #include "battlemarker.h"
 
-class Game {
+class Game : public QObject
+{
+public slots:
+    /*
+    std::string getCommand(const Player&, const BattleMarker&, const Card*);
+
+    void getPlayerStates(const Player&) const;
+    void getPlayerCards(const Player&) const;
+    void getPlayerPlayedCards(const Player&) const;
+    std::string get_card_name();*/
+
+    void getPlayer(std::string, size_t, Color);
+
+    //
+    /*void declare_warWinner(const Player&) const;
+    void declare_warWinner() const;
+
+    void declare_gameWinner(const Player&) const;*/
+signals :
+    State* set_battleground(const Player&,GameBoard&);
+    State* set_favorground(const Player&,GameBoard&);
 public:
 	size_t compareAge();
     Game();
@@ -34,8 +55,6 @@ public:
 	static std::string getHelp();
     void play();
 	static bool check_number_of_player(std::string);
-	void set_battleground(const Player&);
-	void set_favorground(const Player&);
 	bool save(std::string) const; 	// (save file path)
 	bool load(std::string);	// (save file path)
     void getPlayer(std::string, size_t, Color);

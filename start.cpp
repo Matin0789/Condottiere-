@@ -1,4 +1,6 @@
 #include "start.h"
+#include "ui_start.h"
+
 #include <QMessageBox>
 
 Start::Start(QWidget *parent)
@@ -35,8 +37,9 @@ void Start::get_player(std::string name, size_t age, Color color)
     QObject::disconnect(setplayer, &Setplayer::get_player, this, &get_player);
     delete setplayer;
     playerID++;
-    if (playersNumber >= playerID) {
+    if (playersNumber > playerID) {
         setplayer = new Setplayer(freeColors, playerID,this);
+        QObject::connect(setplayer, &Setplayer::get_player, this, &get_player);
         setplayer->show();
     }
     else {

@@ -34,6 +34,6 @@ private:
     Ui::MainWindow *ui;
     Start *start;
     showCards *showcards;
-    Controller *controller;
+    Game *game;
 };
 #endif // MAINWINDOW_H

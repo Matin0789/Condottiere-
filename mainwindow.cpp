@@ -9,20 +9,21 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow),
-    controller(new Controller)
+    game(new Game)
 {
     ui->setupUi(this);
     start = new Start(this);
     QObject::connect(start, &Start::end, this, &MainWindow::nextPage);
-    QObject::connect(start, &Start::set_player, controller, &Controller::get_player);
+    QObject::connect(start, &Start::set_player, game, &Game::get_player);
 }
 
 MainWindow::~MainWindow()
 {
-    QObject::disconnect(start, &Start::set_player, controller, &Controller::get_player);
+    QObject::disconnect(start, &Start::set_player, game, &Game::get_player);
     QObject::disconnect(start, &Start::end, this, &MainWindow::nextPage);
     delete start;
     delete ui;
+    delete game;
 }
 
 void MainWindow::nextPage()

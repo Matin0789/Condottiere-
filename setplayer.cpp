@@ -21,34 +21,30 @@ Setplayer::~Setplayer()
 
 void Setplayer::on_btn_next_clicked()
 {
-    if(ui->lineEdit_name->text() == "") {
+    QString name = ui->lineEdit_name->text();
+    QString old = ui->lineEdit_age->text();
+    QString color = ui->comboBox_color->currentText();
+
+    if(name == "") {
         QMessageBox ErrorMessage;
         ErrorMessage.setText("name is empty!");
         ErrorMessage.exec();
     }
-    else if (ui->lineEdit_age->text() == ""){
+    else if (old == ""){
         QMessageBox ErrorMessage;
         ErrorMessage.setText("age is empty!");
         ErrorMessage.exec();
     }
-    // else if (ui->comboBox_color->){
-
-    // }
+    else if (freeColors.find(color) == freeColors.end()) {
+        QMessageBox ErrorMessage;
+        ErrorMessage.setText("bad color choice");
+        ErrorMessage.exec();
+    }
     else {
         hide();
-        QString name = ui->lineEdit_name->text();
-        size_t old = ui->lineEdit_age->text().toInt();
-        QString color = ui->comboBox_color->currentText();
         Color choiceColor;
-        if (freeColors.find(color) == freeColors.end()) {
-            QMessageBox msgBox;
-            msgBox.setText("bad color choice");
-            msgBox.exec();
-        }
-        else {
-            choiceColor = freeColors[color];
-            emit get_player(name.toStdString(), old, choiceColor);
-        }
+        choiceColor = freeColors[color];
+        emit get_player(name.toStdString(), old.toInt(), choiceColor);
     }
 }
 

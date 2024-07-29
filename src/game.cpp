@@ -228,9 +228,9 @@ void Game::play()
     size_t battleSetterID = currentPlayerID;
     while (true){
         if (favorSetterID < players.size()) {
-            set_favorground(players[favorSetterID]);
+            favorMarker.setState(set_favorground(players[favorSetterID], gameBoard));
         }
-        set_battleground(players[battleSetterID]);
+        battleMarker.setState(set_battleground(players[battleSetterID], gameBoard));
         std::pair<size_t, std::pair<size_t, size_t>> war_return_value = war(currentPlayerID);
         currentPlayerID = war_return_value.first;
         favorSetterID = war_return_value.second.first;
@@ -269,16 +269,6 @@ bool Game::check_number_of_player(std::string n) {
         throw std::out_of_range("Invalid number of players! please enter a number between 3 , 6");
         return false;
     }
-}
-
-void Game::set_battleground(const Player& currentPlayer) {
-    //State* battleground = ui->get_battleground(currentPlayer,gameBoard);
-    //battleMarker.setState(battleground);
-}
-
-void Game::set_favorground(const Player& currentPlayer) {
-    //State* favorground = ui->get_favorground(currentPlayer,gameBoard);
-    //favorMarker.setState(favorground);
 }
 
 bool Game::save(std::string filePath) const {
