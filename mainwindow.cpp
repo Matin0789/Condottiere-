@@ -57,7 +57,7 @@ void MainWindow::showLocateinfo(Marker *marker)
     }
     else {
         QMessageBox msgBox;
-        msgBox.setText(typeid(*marker));
+        msgBox.setText(QString::fromStdString(typeid(*marker).name()));
         msgBox.exec();
         //throw std::runtime_error("invalid marker");
     }
