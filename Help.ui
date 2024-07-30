@@ -43,6 +43,7 @@
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(0, 0, 0);
+font: 9pt &quot;Segoe Print&quot;;
 color: rgb(0, 0, 0);</string>
    </property>
    <item>
@@ -111,7 +112,7 @@ QPushButton
 {
 	color : black ;
 	background-color : ;
-	font: 700 10pt &quot;B Koodak&quot;;
+	font: 700 10pt &quot;Segoe Print&quot;;
 	border-image: 30px ;
 }
 
@@ -149,7 +150,7 @@ QPushButton
 {
 	color : black ;
 	background-color : ;
-	font: 700 10pt &quot;B Koodak&quot;;
+	font: 700 10pt &quot;Segoe Print&quot;;
 	border-image: 30px ;
 }
 

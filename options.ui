@@ -31,7 +31,7 @@ QPushButton
 {
 	color : black ;
 	background-color : ;
-	font: 700 10pt &quot;B Koodak&quot;;
+	font: 700 10pt &quot;Segoe Print&quot;;
 	border-image: 30px ;
 }
 
@@ -69,7 +69,7 @@ QPushButton
 {
 	color : black ;
 	background-color : ;
-	font: 700 13pt &quot;B Koodak&quot;;
+	font: 700 13pt &quot;Segoe Print&quot;;
 	border-image: 30px ;
 }
 
@@ -107,7 +107,7 @@ QPushButton
 {
 	color : black ;
 	background-color : ;
-	font: 700 11pt &quot;B Koodak&quot;;
+	font: 700 11pt &quot;Segoe Print&quot;;
 	border-image: 30px ;
 }
 
@@ -145,7 +145,7 @@ QPushButton
 {
 	color : black ;
 	background-color : ;
-	font: 700 13pt &quot;B Koodak&quot;;
+	font: 700 13pt &quot;Segoe Print&quot;;
 	border-image: 30px ;
 }
 
@@ -199,7 +199,7 @@ QPushButton
 {
 	color : black ;
 	background-color : ;
-	font: 700 11pt &quot;B Koodak&quot;;
+	font: 700 11pt &quot;Segoe Print&quot;;
 	border-image: 30px ;
 }
 
