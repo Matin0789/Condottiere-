@@ -5,7 +5,6 @@
 #include <map>
 #include "game.h"
 #include "userinterface.h"
-#include "controller.h"
 #include "setplayer.h"
 
 namespace Ui {

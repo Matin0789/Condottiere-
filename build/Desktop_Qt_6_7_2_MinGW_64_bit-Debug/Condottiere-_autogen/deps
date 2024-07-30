@@ -651,8 +651,6 @@ Condottiere-_autogen/timestamp: \
 	C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/moc_predefs.h \
 	C:/project/Condottiere-/campaign.cpp \
 	C:/project/Condottiere-/campaign.h \
-	C:/project/Condottiere-/controller.cpp \
-	C:/project/Condottiere-/controller.h \
 	C:/project/Condottiere-/data.qrc \
 	C:/project/Condottiere-/img.qrc \
 	C:/project/Condottiere-/inc/card/bishop.h \

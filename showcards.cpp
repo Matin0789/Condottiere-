@@ -27,6 +27,4 @@ void showCards::on_cb_show_player_list_activated(int index)
 void showCards::on_btn_lets_go_clicked()
 {
     hide();
-    Campaign = new campaign(this);
-    Campaign->show();
 }

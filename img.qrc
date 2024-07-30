@@ -110,5 +110,7 @@
         <file>Description/Graphics/Assets/Qermez/Herkol.png</file>
         <file>Description/Graphics/Assets/Qermez/Koh_Shekan.png</file>
         <file>Description/Graphics/Assets/Qermez/Roh_Jangal.png</file>
+        <file>Description/Graphics/photos/mute.png</file>
+        <file>Description/Graphics/photos/volume.png</file>
     </qresource>
 </RCC>

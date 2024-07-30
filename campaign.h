@@ -20,13 +20,13 @@ namespace Ui {
 class campaign;
 }
 
-class campaign : public QDialog
+class Campaign : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit campaign(QWidget *parent = nullptr);
-    ~campaign();
+    explicit Campaign(QWidget *parent = nullptr);
+    ~Campaign();
 
 private slots:
     void on_pb_help_clicked();

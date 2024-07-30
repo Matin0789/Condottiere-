@@ -19,7 +19,9 @@ class Locateinfo : public QDialog
 public:
     explicit Locateinfo(QWidget *parent = nullptr);
     ~Locateinfo();
-
+public slots:
+    State* set_battleground(const Player&,GameBoard&);
+    State* set_favorground(const Player&,GameBoard&);
 private slots:
     void on_lb_state_linkActivated(const QString &link);
     void on_cb_activated(int index);
@@ -29,7 +31,7 @@ private slots:
     void on_btn_back_clicked();
 private:
     Ui::Locateinfo *ui;
-    campaign *Campaign;
+    Campaign *Campaign;
     Game *game;
     UserInterface *user;
 };

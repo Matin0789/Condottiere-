@@ -2,10 +2,13 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <controller.h>
 
+#include "game.h"
 #include "start.h"
 #include "setplayer.h"
+#include "campaign.h"
+#include "locateinfo.h"
+#include "marker.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -22,8 +25,8 @@ public:
     ~MainWindow();
 
 public slots:
-    void nextPage();
-
+    void startGame();
+    void showLocateinfo(Marker*);
 private slots:
     void on_btn_Start_clicked();
     void on_btn_exit_clicked();
@@ -34,6 +37,9 @@ private:
     Ui::MainWindow *ui;
     Start *start;
     showCards *showcards;
+    Campaign *campaign;
     Game *game;
+    Locateinfo *battleground_page;
+    Locateinfo *favorground_page;
 };
 #endif // MAINWINDOW_H

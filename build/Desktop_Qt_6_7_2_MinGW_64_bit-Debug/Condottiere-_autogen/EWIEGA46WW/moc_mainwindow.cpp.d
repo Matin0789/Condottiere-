@@ -369,7 +369,6 @@ C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_a
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
   C:/project/Condottiere-/Help.h \
   C:/project/Condottiere-/campaign.h \
-  C:/project/Condottiere-/controller.h \
   C:/project/Condottiere-/inc/card/bishop.h \
   C:/project/Condottiere-/inc/card/card.h \
   C:/project/Condottiere-/inc/card/drummer.h \
@@ -392,6 +391,7 @@ C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_a
   C:/project/Condottiere-/inc/player.h \
   C:/project/Condottiere-/inc/state.h \
   C:/project/Condottiere-/inc/userinterface.h \
+  C:/project/Condottiere-/locateinfo.h \
   C:/project/Condottiere-/options.h \
   C:/project/Condottiere-/setplayer.h \
   C:/project/Condottiere-/showcards.h \

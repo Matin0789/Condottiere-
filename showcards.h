@@ -29,7 +29,7 @@ private slots:
 
 private:
     Ui::showCards *ui;
-    campaign *Campaign;
+    Campaign *Campaign;
     Game *game;
     UserInterface *user;
 };

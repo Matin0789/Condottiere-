@@ -13,6 +13,16 @@ Locateinfo::~Locateinfo()
     delete ui;
 }
 
+State *Locateinfo::set_battleground(const Player &, GameBoard &)
+{
+
+}
+
+State *Locateinfo::set_favorground(const Player &, GameBoard &)
+{
+
+}
+
 void Locateinfo::on_lb_state_linkActivated(const QString &link)
 {
 

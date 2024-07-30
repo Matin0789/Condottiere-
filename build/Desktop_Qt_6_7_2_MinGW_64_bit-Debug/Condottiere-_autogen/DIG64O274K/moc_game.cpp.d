@@ -1,4 +1,4 @@
-C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/EWIEGA46WW/moc_controller.cpp: C:/project/Condottiere-/controller.h \
+C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/DIG64O274K/moc_game.cpp: C:/project/Condottiere-/inc/game.h \
   C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/moc_predefs.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/QObject \
   C:/Qt/6.7.2/mingw_64/include/QtCore/q20functional.h \
@@ -310,7 +310,6 @@ C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_a
   C:/project/Condottiere-/inc/card/winter.h \
   C:/project/Condottiere-/inc/card/yellowcard.h \
   C:/project/Condottiere-/inc/enumcolor.h \
-  C:/project/Condottiere-/inc/game.h \
   C:/project/Condottiere-/inc/gameboard.h \
   C:/project/Condottiere-/inc/marker/battlemarker.h \
   C:/project/Condottiere-/inc/marker/favormarker.h \

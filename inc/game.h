@@ -29,6 +29,16 @@
 
 class Game : public QObject
 {
+    Q_OBJECT
+public:
+    size_t compareAge();
+    Game(QObject *parent = nullptr);
+    ~Game();
+    static std::string getHelp();
+    void play();
+    static bool check_number_of_player(std::string);
+    bool save(std::string) const; 	// (save file path)
+    bool load(std::string);	// (save file path)
 public slots:
     /*
     std::string getCommand(const Player&, const BattleMarker&, const Card*);
@@ -38,7 +48,7 @@ public slots:
     void getPlayerPlayedCards(const Player&) const;
     std::string get_card_name();*/
 
-    void getPlayer(std::string, size_t, Color);
+    void get_player(std::string, size_t, Color);
 
     //
     /*void declare_warWinner(const Player&) const;
@@ -48,16 +58,7 @@ public slots:
 signals :
     State* set_battleground(const Player&,GameBoard&);
     State* set_favorground(const Player&,GameBoard&);
-public:
-	size_t compareAge();
-    Game();
-	~Game();
-	static std::string getHelp();
-    void play();
-	static bool check_number_of_player(std::string);
-	bool save(std::string) const; 	// (save file path)
-	bool load(std::string);	// (save file path)
-    void getPlayer(std::string, size_t, Color);
+    void show_set_ground_page(Marker*);
 private:
 	//private methods
 	size_t warـanalyst();

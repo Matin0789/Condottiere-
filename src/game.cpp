@@ -13,7 +13,8 @@
 
 std::string Game::help; // set help
 // constructor
-Game::Game() :
+Game::Game(QObject *parent) :
+    QObject{parent},
     season(nullptr),
     gameBoard(BOARD_FILE)
 {
@@ -201,7 +202,7 @@ bool Game::find_game_winner(const Player& player){
     return false;
 }
 
-void Game::getPlayer(std::string name, size_t age, Color color) {
+void Game::get_player(std::string name, size_t age, Color color) {
     players.push_back(Player(name, players.size(), age, color));
 }
 
@@ -228,9 +229,11 @@ void Game::play()
     size_t battleSetterID = currentPlayerID;
     while (true){
         if (favorSetterID < players.size()) {
-            favorMarker.setState(set_favorground(players[favorSetterID], gameBoard));
+            emit show_set_ground_page(&favorMarker);
+            favorMarker.setState(emit set_favorground(players[favorSetterID], gameBoard));
         }
-        battleMarker.setState(set_battleground(players[battleSetterID], gameBoard));
+        emit show_set_ground_page(&battleMarker);
+        battleMarker.setState(emit set_battleground(players[battleSetterID], gameBoard));
         std::pair<size_t, std::pair<size_t, size_t>> war_return_value = war(currentPlayerID);
         currentPlayerID = war_return_value.first;
         favorSetterID = war_return_value.second.first;

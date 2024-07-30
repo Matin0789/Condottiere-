@@ -90,13 +90,13 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         Help.h Help.cpp Help.ui
         options.h options.cpp options.ui
         Warwinner.h Warwinner.cpp Warwinner.ui
-
         locateinfo.h locateinfo.cpp locateinfo.ui
         setplayer.h setplayer.cpp setplayer.ui
 
         img.qrc
         sound.qrc
         data.qrc
+
 
     )
 # Define target properties for Android with Qt 6 as:

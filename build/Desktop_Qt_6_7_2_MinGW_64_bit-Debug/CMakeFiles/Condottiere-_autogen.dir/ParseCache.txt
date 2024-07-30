@@ -4,6 +4,7 @@ C:/project/Condottiere-/src/player.cpp
 C:/project/Condottiere-/src/card/card.cpp
 C:/project/Condottiere-/Help.h
  mmc:Q_OBJECT
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/QObject
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/q20functional.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/q20memory.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/q20type_traits.h
@@ -378,6 +379,7 @@ C:/project/Condottiere-/Help.h
  mdp:C:/project/Condottiere-/inc/userinterface.h
 C:/project/Condottiere-/Warwinner.h
  mmc:Q_OBJECT
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/QObject
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/q20functional.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/q20memory.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/q20type_traits.h
@@ -755,6 +757,7 @@ C:/project/Condottiere-/inc/card/bishop.h
 C:/project/Condottiere-/inc/card/heroine.h
 C:/project/Condottiere-/campaign.h
  mmc:Q_OBJECT
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/QObject
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/q20functional.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/q20memory.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/q20type_traits.h
@@ -1147,6 +1150,7 @@ C:/project/Condottiere-/inc/marker/marker.h
 C:/project/Condottiere-/inc/state.h
 C:/project/Condottiere-/options.h
  mmc:Q_OBJECT
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/QObject
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/q20functional.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/q20memory.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/q20type_traits.h
@@ -1521,7 +1525,22 @@ C:/project/Condottiere-/options.h
  mdp:C:/project/Condottiere-/options.h
 C:/project/Condottiere-/src/card/season.cpp
 C:/project/Condottiere-/inc/card/card.h
-C:/project/Condottiere-/controller.h
+C:/project/Condottiere-/inc/card/purplecard.h
+C:/project/Condottiere-/inc/card/scarecrow.h
+C:/project/Condottiere-/start.cpp
+ uic:ui_start.h
+C:/project/Condottiere-/inc/card/spring.h
+C:/project/Condottiere-/inc/card/winter.h
+C:/project/Condottiere-/src/card/yellowcard.cpp
+C:/project/Condottiere-/inc/card/spy.h
+C:/project/Condottiere-/inc/card/turncoat.h
+C:/project/Condottiere-/setplayer.cpp
+ uic:ui_Setplayer.h
+C:/project/Condottiere-/inc/card/yellowcard.h
+C:/project/Condottiere-/inc/enumcolor.h
+C:/project/Condottiere-/inc/filepath.h
+C:/project/Condottiere-/src/card/bishop.cpp
+C:/project/Condottiere-/inc/game.h
  mmc:Q_OBJECT
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/QObject
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/q20functional.h
@@ -1821,7 +1840,6 @@ C:/project/Condottiere-/controller.h
  mdp:C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h
  mdp:C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
  mdp:C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/moc_predefs.h
- mdp:C:/project/Condottiere-/controller.h
  mdp:C:/project/Condottiere-/inc/card/bishop.h
  mdp:C:/project/Condottiere-/inc/card/card.h
  mdp:C:/project/Condottiere-/inc/card/drummer.h
@@ -1844,22 +1862,6 @@ C:/project/Condottiere-/controller.h
  mdp:C:/project/Condottiere-/inc/player.h
  mdp:C:/project/Condottiere-/inc/state.h
  mdp:C:/project/Condottiere-/inc/userinterface.h
-C:/project/Condottiere-/inc/card/purplecard.h
-C:/project/Condottiere-/inc/card/scarecrow.h
-C:/project/Condottiere-/start.cpp
- uic:ui_start.h
-C:/project/Condottiere-/inc/card/spring.h
-C:/project/Condottiere-/inc/card/winter.h
-C:/project/Condottiere-/src/card/yellowcard.cpp
-C:/project/Condottiere-/inc/card/spy.h
-C:/project/Condottiere-/inc/card/turncoat.h
-C:/project/Condottiere-/setplayer.cpp
- uic:ui_Setplayer.h
-C:/project/Condottiere-/inc/card/yellowcard.h
-C:/project/Condottiere-/inc/enumcolor.h
-C:/project/Condottiere-/inc/filepath.h
-C:/project/Condottiere-/src/card/bishop.cpp
-C:/project/Condottiere-/inc/game.h
 C:/project/Condottiere-/inc/gameboard.h
 C:/project/Condottiere-/inc/marker/battlemarker.h
 C:/project/Condottiere-/inc/marker/favormarker.h
@@ -1870,6 +1872,7 @@ C:/project/Condottiere-/src/card/heroine.cpp
 C:/project/Condottiere-/inc/player.h
 C:/project/Condottiere-/locateinfo.h
  mmc:Q_OBJECT
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/QObject
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/q20functional.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/q20memory.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/q20type_traits.h
@@ -2630,7 +2633,6 @@ C:/project/Condottiere-/mainwindow.h
  mdp:C:/project/Condottiere-/Help.h
  mdp:C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/moc_predefs.h
  mdp:C:/project/Condottiere-/campaign.h
- mdp:C:/project/Condottiere-/controller.h
  mdp:C:/project/Condottiere-/inc/card/bishop.h
  mdp:C:/project/Condottiere-/inc/card/card.h
  mdp:C:/project/Condottiere-/inc/card/drummer.h
@@ -2653,6 +2655,7 @@ C:/project/Condottiere-/mainwindow.h
  mdp:C:/project/Condottiere-/inc/player.h
  mdp:C:/project/Condottiere-/inc/state.h
  mdp:C:/project/Condottiere-/inc/userinterface.h
+ mdp:C:/project/Condottiere-/locateinfo.h
  mdp:C:/project/Condottiere-/mainwindow.h
  mdp:C:/project/Condottiere-/options.h
  mdp:C:/project/Condottiere-/setplayer.h
@@ -2660,6 +2663,7 @@ C:/project/Condottiere-/mainwindow.h
  mdp:C:/project/Condottiere-/start.h
 C:/project/Condottiere-/setplayer.h
  mmc:Q_OBJECT
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/QObject
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/q20functional.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/q20memory.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/q20type_traits.h
@@ -3053,6 +3057,7 @@ C:/project/Condottiere-/setplayer.h
  mdp:C:/project/Condottiere-/showcards.h
 C:/project/Condottiere-/showcards.h
  mmc:Q_OBJECT
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/QObject
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/q20functional.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/q20memory.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/q20type_traits.h
@@ -3812,7 +3817,6 @@ C:/project/Condottiere-/start.h
  mdp:C:/project/Condottiere-/Help.h
  mdp:C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/moc_predefs.h
  mdp:C:/project/Condottiere-/campaign.h
- mdp:C:/project/Condottiere-/controller.h
  mdp:C:/project/Condottiere-/inc/card/bishop.h
  mdp:C:/project/Condottiere-/inc/card/card.h
  mdp:C:/project/Condottiere-/inc/card/drummer.h
@@ -3844,7 +3848,6 @@ C:/project/Condottiere-/Help.cpp
  uic:ui_Help.h
 C:/project/Condottiere-/campaign.cpp
  uic:ui_campaign.h
-C:/project/Condottiere-/controller.cpp
 C:/project/Condottiere-/locateinfo.cpp
  uic:ui_locateinfo.h
 C:/project/Condottiere-/src/marker/marker.cpp
