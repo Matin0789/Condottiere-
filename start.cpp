@@ -18,7 +18,7 @@ Start::Start(QWidget *parent)
     freeColors["RED"]    =  red;
     freeColors["GRAY"]   =  gray;
     freeColors["BROWN"]  =  brown;
-    this->setWindowTitle(QString::fromStdString("get player number"));
+    this->setWindowTitle("get player number");
 }
 
 Start::~Start()

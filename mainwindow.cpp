@@ -19,6 +19,7 @@ MainWindow::MainWindow(QWidget *parent)
     favorground_page(new Locateinfo("favor", this))
 {
     ui->setupUi(this);
+    this->setWindowTitle("Condottiere");
     start = new Start(this);
     QObject::connect(start, &Start::end, this, &MainWindow::startGame);
     QObject::connect(start, &Start::set_player, game, &Game::get_player);

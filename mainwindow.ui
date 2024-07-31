@@ -27,7 +27,7 @@
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(255, 255, 255);
-border-image: url(:/Description/Graphics/photos/Sc 145857.jpg.png);</string>
+background-image: url(:/Description/Graphics/photos/Sc 145857.jpg.png);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="btn_Start">
