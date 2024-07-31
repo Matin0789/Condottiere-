@@ -10,8 +10,11 @@
     <height>796</height>
    </rect>
   </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>campaign</string>
   </property>
   <property name="styleSheet">
    <string notr="true">border-image: url(:/Description/Graphics/photos/12485407-medieval-knights-in-battle-background-rider-leader-duel.jpg);</string>

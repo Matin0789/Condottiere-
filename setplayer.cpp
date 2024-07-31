@@ -12,6 +12,11 @@ Setplayer::Setplayer(std::map<QString, Color> freeColors, size_t playerID, QWidg
     for(auto &&freeColor : freeColors)
         ui->comboBox_color->addItem(freeColor.first);
     this->freeColors = freeColors;
+    /*ui->sb_age->setMaximum(100);
+    ui->sb_age->setMaximum(0);*/
+    std::string labelText = "Player " + std::to_string(playerID + 1);
+    ui->lb_player_counter->setText(QString::fromStdString(labelText));
+    this->setWindowTitle(QString::fromStdString(labelText));
 }
 
 Setplayer::~Setplayer()
@@ -22,7 +27,7 @@ Setplayer::~Setplayer()
 void Setplayer::on_btn_next_clicked()
 {
     QString name = ui->lineEdit_name->text();
-    QString old = ui->lineEdit_age->text();
+    size_t old = ui->sb_age->value();
     QString color = ui->comboBox_color->currentText();
 
     if(name == "") {
@@ -30,7 +35,7 @@ void Setplayer::on_btn_next_clicked()
         ErrorMessage.setText("name is empty!");
         ErrorMessage.exec();
     }
-    else if (old == ""){
+    else if (old == 0){
         QMessageBox ErrorMessage;
         ErrorMessage.setText("age is empty!");
         ErrorMessage.exec();
@@ -41,10 +46,10 @@ void Setplayer::on_btn_next_clicked()
         ErrorMessage.exec();
     }
     else {
-        hide();
         Color choiceColor;
         choiceColor = freeColors[color];
-        emit get_player(name.toStdString(), old.toInt(), choiceColor);
+        this->hide();
+        emit get_player(name.toStdString(), old, choiceColor);
     }
 }
 

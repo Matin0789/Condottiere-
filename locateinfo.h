@@ -17,11 +17,10 @@ class Locateinfo : public QDialog
     Q_OBJECT
 
 public:
-    explicit Locateinfo(QWidget *parent = nullptr);
+    explicit Locateinfo(QString type,QWidget *parent = nullptr);
     ~Locateinfo();
 public slots:
-    State* set_battleground(const Player&,GameBoard&);
-    State* set_favorground(const Player&,GameBoard&);
+    State* set_ground(const Player&,GameBoard&);
 private slots:
     void on_lb_state_linkActivated(const QString &link);
     void on_cb_activated(int index);

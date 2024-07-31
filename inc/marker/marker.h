@@ -18,6 +18,7 @@ public:
     bool is_set() const;
     bool save(std::string) const;
     bool load(std::string, GameBoard&);
+    virtual std::string getType() const = 0;
 };
 
 #endif // MARKER_H

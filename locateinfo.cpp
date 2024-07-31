@@ -1,11 +1,12 @@
 #include "locateinfo.h"
 #include "ui_locateinfo.h"
 
-Locateinfo::Locateinfo(QWidget *parent)
+Locateinfo::Locateinfo(QString type,QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::Locateinfo)
 {
     ui->setupUi(this);
+    ui->lb_state->setText("Please select a " + type + "state to start the battle ...");
 }
 
 Locateinfo::~Locateinfo()
@@ -13,12 +14,7 @@ Locateinfo::~Locateinfo()
     delete ui;
 }
 
-State *Locateinfo::set_battleground(const Player &, GameBoard &)
-{
-
-}
-
-State *Locateinfo::set_favorground(const Player &, GameBoard &)
+State *Locateinfo::set_ground(const Player &, GameBoard &)
 {
 
 }

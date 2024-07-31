@@ -10,6 +10,7 @@ private:
     /* data */
 public:
     FavorMarker();
+    virtual std::string getType() const;
 };
 
 #endif // FAVORMARKER_H

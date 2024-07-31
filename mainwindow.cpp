@@ -15,24 +15,24 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow),
     game(new Game),
-    battleground_page(new Locateinfo),
-    favorground_page(new Locateinfo)
+    battleground_page(new Locateinfo("battle", this)),
+    favorground_page(new Locateinfo("favor", this))
 {
     ui->setupUi(this);
     start = new Start(this);
     QObject::connect(start, &Start::end, this, &MainWindow::startGame);
     QObject::connect(start, &Start::set_player, game, &Game::get_player);
     QObject::connect(game, &Game::show_set_ground_page, this, &MainWindow::showLocateinfo);
-    QObject::connect(game, &Game::set_battleground, battleground_page, &Locateinfo::set_battleground );
-    QObject::connect(game, &Game::set_favorground,  favorground_page,  &Locateinfo::set_favorground );
+    QObject::connect(game, &Game::set_battleground, battleground_page, &Locateinfo::set_ground );
+    QObject::connect(game, &Game::set_favorground,  favorground_page,  &Locateinfo::set_ground );
 }
 
 MainWindow::~MainWindow()
 {
     QObject::disconnect(start, &Start::set_player, game, &Game::get_player);
     QObject::disconnect(start, &Start::end, this, &MainWindow::startGame);
-    QObject::disconnect(game, &Game::set_battleground, battleground_page, &Locateinfo::set_battleground );
-    QObject::disconnect(game, &Game::set_favorground,  favorground_page,  &Locateinfo::set_favorground );
+    QObject::disconnect(game, &Game::set_battleground, battleground_page, &Locateinfo::set_ground );
+    QObject::disconnect(game, &Game::set_favorground,  favorground_page,  &Locateinfo::set_ground );
     delete battleground_page;
     delete favorground_page;
     delete start;
@@ -49,24 +49,25 @@ void MainWindow::startGame()
 
 void MainWindow::showLocateinfo(Marker *marker)
 {
-    if (typeid(*marker) == typeid(BattleMarker)){
+    if (marker->getType() == "BattleMarker"){
         battleground_page->show();
+        hide();
     }
-    else if (typeid(*marker) == typeid(FavorMarker)) {
+    else if (marker->getType() == "FavorMarker") {
         favorground_page->show();
+        hide();
     }
     else {
         QMessageBox msgBox;
-        msgBox.setText(QString::fromStdString(typeid(*marker).name()));
+        msgBox.setText("invalid marker");
         msgBox.exec();
-        //throw std::runtime_error("invalid marker");
     }
 }
 
 void MainWindow::on_btn_Start_clicked()
 {
-    hide();
     start->show();
+    hide();
 }
 
 void MainWindow::on_btn_exit_clicked()

@@ -8,6 +8,7 @@ private:
     /* data */
 public:
     BattleMarker();
+    virtual std::string getType() const;
 };
 
 #endif // BATTLEMARKER_H

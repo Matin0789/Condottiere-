@@ -18,6 +18,7 @@ Start::Start(QWidget *parent)
     freeColors["RED"]    =  red;
     freeColors["GRAY"]   =  gray;
     freeColors["BROWN"]  =  brown;
+    this->setWindowTitle(QString::fromStdString("get player number"));
 }
 
 Start::~Start()
@@ -43,7 +44,6 @@ void Start::get_player(std::string name, size_t age, Color color)
         setplayer->show();
     }
     else {
-        hide();
         emit end();
     }
 }
@@ -54,6 +54,7 @@ void Start::on_btn_next_clicked()
     setplayer = new Setplayer(freeColors, playerID,this);
     QObject::connect(setplayer, &Setplayer::get_player, this, &get_player);
     setplayer->show();
+    this->hide();
 }
 
 void Start::on_btn_back_clicked()
