@@ -8,8 +8,6 @@
 #include <QMediaPlayer>
 #include <QAudioOutput>
 
-#include <typeinfo>
-
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -25,6 +23,12 @@ MainWindow::MainWindow(QWidget *parent)
     QObject::connect(start, &Start::set_player, game, &Game::get_player);
     QObject::connect(game, &Game::set_battleground, battleground_page, &Locateinfo::set_ground );
     QObject::connect(game, &Game::set_favorground,  favorground_page,  &Locateinfo::set_ground );
+    player = new QMediaPlayer;
+    audioOutput = new QAudioOutput;
+    player->setAudioOutput(audioOutput);
+    player->setSource(QUrl::fromLocalFile("../../Description/Graphics/Sounds/background_music.mp3"));
+    audioOutput->setVolume(100);
+    player->play();
 }
 
 MainWindow::~MainWindow()
@@ -66,11 +70,15 @@ void MainWindow::on_btn_load_game_clicked()
 void MainWindow::on_btn_sound_clicked()
 {
     static bool enable = true;
-    enable = (enable != true);
-    if (enable = true){
+    player->stop();
+    /*if (enable = true){
         ui->btn_sound->setStyleSheet("qrc:/Description/Graphics/photos/volume.png");
+        player->play();
+        enable = true;
     }
     else {
         ui->btn_sound->setStyleSheet("qrc:/Description/Graphics/photos/mute.png");
-    }
+        player->stop();
+        enable = false;
+    }*/
 }

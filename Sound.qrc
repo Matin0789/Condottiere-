@@ -1,5 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>Description/Graphics/Sounds/pirate-of-caribbean.mp3</file>
+        <file>Description/Graphics/Sounds/background_music.mp3</file>
     </qresource>
 </RCC>

@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-a0c7b5bd3442812b0d17.json",
+					"jsonFile" : "directory-.-Debug-84c02dd80487f1166240.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Condottiere-::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Condottiere--Debug-5f9adc38463fbce03a98.json",
+					"jsonFile" : "target-Condottiere--Debug-4845c76b767be063f307.json",
 					"name" : "Condottiere-",
 					"projectIndex" : 0
 				},

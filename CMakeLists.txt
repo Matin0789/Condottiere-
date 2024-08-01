@@ -13,7 +13,6 @@ find_package(Qt6 REQUIRED COMPONENTS Core)
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 find_package(Qt6 REQUIRED COMPONENTS Multimedia)
-#find_package(Qt6 REQUIRED COMPONENTS Multimedia Widgets)
 
 
 set(SOURCE_FILES
@@ -120,7 +119,6 @@ endif()
 target_link_libraries(Condottiere- PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 target_link_libraries(Condottiere- PRIVATE Qt6::Multimedia)
 target_link_libraries(Condottiere- PRIVATE Qt6::Core)
-#target_link_libraries(Condottiere- PRIVATE Qt6::MultimediaWidgets)
 
 target_include_directories(Condottiere- PRIVATE
     ${PROJECT_SOURCE_DIR}/inc

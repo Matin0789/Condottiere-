@@ -9,7 +9,7 @@
 	"INCLUDE_DIR" : "C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/include",
 	"INPUTS" : 
 	[
-		"C:/project/Condottiere-/Description/Graphics/Sounds/pirate-of-caribbean.mp3"
+		"C:/project/Condottiere-/Description/Graphics/Sounds/background_music.mp3"
 	],
 	"LOCK_FILE" : "C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/Condottiere-_autogen.dir/AutoRcc_Sound_EWIEGA46WW_Lock.lock",
 	"MULTI_CONFIG" : false,

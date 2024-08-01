@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QMediaPlayer>
+#include <QAudioOutput>
 
 #include "game.h"
 #include "start.h"
@@ -40,5 +42,7 @@ private:
     Game *game;
     Locateinfo *battleground_page;
     Locateinfo *favorground_page;
+    QMediaPlayer* player;
+    QAudioOutput* audioOutput;
 };
 #endif // MAINWINDOW_H
