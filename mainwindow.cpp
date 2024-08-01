@@ -29,6 +29,7 @@ MainWindow::MainWindow(QWidget *parent)
     player->setSource(QUrl::fromLocalFile("../../Description/Graphics/Sounds/background_music.mp3"));
     audioOutput->setVolume(100);
     player->play();
+    player->setLoops(QMediaPlayer::Infinite);
 }
 
 MainWindow::~MainWindow()
@@ -70,15 +71,14 @@ void MainWindow::on_btn_load_game_clicked()
 void MainWindow::on_btn_sound_clicked()
 {
     static bool enable = true;
-    player->stop();
-    /*if (enable = true){
-        ui->btn_sound->setStyleSheet("qrc:/Description/Graphics/photos/volume.png");
+    if (enable == true){
+        ui->btn_sound->setStyleSheet("../../Description/Graphics/photos/volume.png");
+        player->pause();
+        enable = false;
+    }
+    else {
+        ui->btn_sound->setStyleSheet("../../Description/Graphics/photos/mute.png");
         player->play();
         enable = true;
     }
-    else {
-        ui->btn_sound->setStyleSheet("qrc:/Description/Graphics/photos/mute.png");
-        player->stop();
-        enable = false;
-    }*/
 }
