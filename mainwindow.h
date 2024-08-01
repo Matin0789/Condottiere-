@@ -26,7 +26,6 @@ public:
 
 public slots:
     void startGame();
-    void showLocateinfo(Marker*);
 private slots:
     void on_btn_Start_clicked();
     void on_btn_exit_clicked();

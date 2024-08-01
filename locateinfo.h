@@ -33,6 +33,7 @@ private:
     Campaign *Campaign;
     Game *game;
     UserInterface *user;
+    bool next_click;
 };
 
 #endif // LOCATEINFO_H

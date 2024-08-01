@@ -13,15 +13,12 @@
 #include <QFile>
 
 GameBoard::GameBoard(std::string filePath) {
-    /*std::ifstream file(filePath);
+    std::ifstream file(filePath);
     if (!file) {
         throw std::runtime_error("board file cannot be open");
-    }*/
-    QFile file(QString::fromStdString(filePath));
-    if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
-        throw std::runtime_error("board file cannot be open");
+    }
 
-    /*std::string tmp_state_name;
+    std::string tmp_state_name;
     while(file >> quoted(tmp_state_name)){ // add state to states and adjacent of them
         states.insert(std::pair<std::string, State>(tmp_state_name, State(tmp_state_name)));
         std::string tmp_adjacency_line; //A line in the file where the adjacent is written
@@ -31,7 +28,7 @@ GameBoard::GameBoard(std::string filePath) {
         while(tmp >> quoted(tmp_adjacency_state_name)) { // add adjacent of the state to adjacency
             adjacency[tmp_state_name].push_back(tmp_adjacency_state_name);
         }
-    }*/
+    }
 }
 
 bool GameBoard::checkAdjacency(const std::string state1Name,const std::string state2Name, const std::string state3Name) {

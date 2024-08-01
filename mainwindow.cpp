@@ -23,7 +23,6 @@ MainWindow::MainWindow(QWidget *parent)
     start = new Start(this);
     QObject::connect(start, &Start::end, this, &MainWindow::startGame);
     QObject::connect(start, &Start::set_player, game, &Game::get_player);
-    QObject::connect(game, &Game::show_set_ground_page, this, &MainWindow::showLocateinfo);
     QObject::connect(game, &Game::set_battleground, battleground_page, &Locateinfo::set_ground );
     QObject::connect(game, &Game::set_favorground,  favorground_page,  &Locateinfo::set_ground );
 }
@@ -45,24 +44,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::startGame()
 {
-    game->play();
-}
-
-void MainWindow::showLocateinfo(Marker *marker)
-{
-    if (marker->getType() == "BattleMarker"){
-        battleground_page->show();
-        hide();
-    }
-    else if (marker->getType() == "FavorMarker") {
-        favorground_page->show();
-        hide();
-    }
-    else {
-        QMessageBox msgBox;
-        msgBox.setText("invalid marker");
-        msgBox.exec();
-    }
+    game->start();
 }
 
 void MainWindow::on_btn_Start_clicked()

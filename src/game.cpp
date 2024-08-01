@@ -220,7 +220,7 @@ void Game::shuffle()  //This function is for shuffling cards
     std::random_shuffle(cards.begin(), cards.end()); //This is a default function in C++ that is used for shuffling
 }
 
-void Game::play()
+void Game::start()
 {
     distributeCards();
     size_t currentPlayerID = 1;
@@ -229,11 +229,10 @@ void Game::play()
     size_t battleSetterID = currentPlayerID;
     while (true){
         if (favorSetterID < players.size()) {
-            emit show_set_ground_page(&favorMarker);
             favorMarker.setState(emit set_favorground(players[favorSetterID], gameBoard));
         }
-        emit show_set_ground_page(&battleMarker);
         battleMarker.setState(emit set_battleground(players[battleSetterID], gameBoard));
+
         std::pair<size_t, std::pair<size_t, size_t>> war_return_value = war(currentPlayerID);
         currentPlayerID = war_return_value.first;
         favorSetterID = war_return_value.second.first;

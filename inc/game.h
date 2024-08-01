@@ -35,7 +35,7 @@ public:
     Game(QObject *parent = nullptr);
     ~Game();
     static std::string getHelp();
-    void play();
+    void start();
     static bool check_number_of_player(std::string);
     bool save(std::string) const; 	// (save file path)
     bool load(std::string);	// (save file path)
@@ -58,7 +58,6 @@ public slots:
 signals :
     State* set_battleground(const Player&,GameBoard&);
     State* set_favorground(const Player&,GameBoard&);
-    void show_set_ground_page(Marker*);
 private:
 	//private methods
 	size_t warـanalyst();
