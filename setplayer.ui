@@ -14,7 +14,7 @@
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">border-image: url(:/Description/Graphics/photos/galileus_medieval_heroes_Crusaders_78320800-6418-4de7-bf57-39a3ad7f6f3b-1024x512.jpg);</string>
+   <string notr="true"/>
   </property>
   <widget class="QLabel" name="label_Color">
    <property name="geometry">
@@ -211,13 +211,40 @@ color: rgb(0, 0, 0);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/Description/Graphics/photos/white (1).jpg);
+
 color: rgb(0, 0, 0);
 
-font: 700 italic 12pt &quot;Segoe Print&quot;;
+font: 700 italic 12pt &quot;Sitka Text&quot;;
 
 </string>
    </property>
   </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>600</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/Description/Graphics/photos/crusades-timeline-1024x512.jpg);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>label_Color</zorder>
+  <zorder>lineEdit_name</zorder>
+  <zorder>label_Name</zorder>
+  <zorder>comboBox_color</zorder>
+  <zorder>btn_next</zorder>
+  <zorder>btn_back</zorder>
+  <zorder>label_Age</zorder>
+  <zorder>lb_player_counter</zorder>
+  <zorder>sb_age</zorder>
  </widget>
  <resources/>
  <connections/>

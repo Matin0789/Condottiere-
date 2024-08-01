@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>800</width>
-    <height>607</height>
+    <height>600</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -27,7 +27,7 @@
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(255, 255, 255);
-background-image: url(:/Description/Graphics/photos/Sc 145857.jpg.png);</string>
+</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="btn_Start">
@@ -46,21 +46,21 @@ QPushButton
 	color : black ;
 	background-color : ;
 	font: 700 13pt &quot;Segoe Print&quot;;
-	border-image: 30px ;
+	border-image: 30px url(:/Description/Graphics/photos/images (1852).jpg); 
 }
 
 QPushButton : Hover
 {
 	background-color : ;
     border-radius : 40px ;
-	border-image: 10px ;
+	border-image: 10px url(:/Description/Graphics/photos/blue.jpg) ;
 }
 
 QPushButton : pressed
 {
 	background-color :black ;
 	color : white ;
-	border-image: url(:/Description/Graphics/photos/blue.jpg);
+	border-image: 10px url(:/Description/Graphics/photos/images (1852).jpg); 
 
 }</string>
     </property>
@@ -176,6 +176,27 @@ QPushButton : pressed
      <string>Exit</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-20</y>
+      <width>800</width>
+      <height>611</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/Description/Graphics/photos/Sc 145857.jpg.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>btn_Start</zorder>
+   <zorder>btn_sound</zorder>
+   <zorder>btn_load_game</zorder>
+   <zorder>btn_exit</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

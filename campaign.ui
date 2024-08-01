@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1340</width>
-    <height>796</height>
+    <width>1300</width>
+    <height>800</height>
    </rect>
   </property>
   <property name="cursor">
@@ -17,7 +17,7 @@
    <string>campaign</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">border-image: url(:/Description/Graphics/photos/12485407-medieval-knights-in-battle-background-rider-leader-duel.jpg);</string>
+   <string notr="true"/>
   </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
@@ -211,6 +211,35 @@
     <string/>
    </property>
   </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1300</width>
+     <height>800</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/Description/Graphics/photos/12485407-medieval-knights-in-battle-background-rider-leader-duel.jpg);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>label_8</zorder>
+  <zorder>label</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_3</zorder>
+  <zorder>label_10</zorder>
+  <zorder>label_12</zorder>
+  <zorder>label_7</zorder>
+  <zorder>label_5</zorder>
+  <zorder>label_6</zorder>
+  <zorder>label_4</zorder>
+  <zorder>label_15</zorder>
+  <zorder>pb_help</zorder>
+  <zorder>pb_setting</zorder>
  </widget>
  <resources/>
  <connections/>

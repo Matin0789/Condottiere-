@@ -14,7 +14,7 @@
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">border-image: url(:/Description/Graphics/photos/knights-templar.jpg);</string>
+   <string notr="true"/>
   </property>
   <widget class="QPushButton" name="btn_next">
    <property name="geometry">
@@ -110,6 +110,23 @@ font: 700 italic 12pt &quot;Segoe Print&quot;;
 </string>
    </property>
   </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>600</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/Description/Graphics/photos/knights-templar.jpg);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>label</zorder>
   <zorder>btn_back</zorder>
   <zorder>btn_next</zorder>
   <zorder>sb</zorder>

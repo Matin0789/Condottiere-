@@ -6,15 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1087</width>
-    <height>762</height>
+    <width>1090</width>
+    <height>760</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">border-image: url(:/Description/Graphics/photos/galileus_Medieval_Crusades_1142ddf9-36f2-4043-962c-1104585e7033.jpg);</string>
+   <string notr="true"/>
   </property>
   <widget class="QPushButton" name="btn_lets_go">
    <property name="geometry">
@@ -269,19 +269,42 @@ QPushButton : pressed
     <string>Next player</string>
    </property>
   </widget>
-  <widget class="QSpinBox" name="sb">
+  <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>490</x>
-     <y>110</y>
-     <width>101</width>
-     <height>25</height>
+     <x>0</x>
+     <y>0</y>
+     <width>1090</width>
+     <height>760</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/Description/Graphics/photos/brown.jpg);</string>
+    <string notr="true">border-image: url(:/Description/Graphics/photos/fantasy-knight-banner-crusade-medieval-hd-wallpaper-preview.jpg);</string>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
+  <widget class="QLabel" name="lb_player_counter">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>120</y>
+     <width>291</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 9pt &quot;Segoe Print&quot;;
+
+background-color: rgb(117, 117, 117);
+color: rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string> player !</string>
+   </property>
+  </widget>
+  <zorder>label</zorder>
   <zorder>label_5</zorder>
   <zorder>btn_lets_go</zorder>
   <zorder>toolButton</zorder>
@@ -295,7 +318,7 @@ QPushButton : pressed
   <zorder>toolButton_9</zorder>
   <zorder>toolButton_10</zorder>
   <zorder>btn_Nplayer</zorder>
-  <zorder>sb</zorder>
+  <zorder>lb_player_counter</zorder>
  </widget>
  <resources/>
  <connections/>
