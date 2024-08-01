@@ -70,15 +70,14 @@ void MainWindow::on_btn_load_game_clicked()
 void MainWindow::on_btn_sound_clicked()
 {
     static bool enable = true;
-    player->stop();
-    /*if (enable = true){
-        ui->btn_sound->setStyleSheet("qrc:/Description/Graphics/photos/volume.png");
+    if (enable == true){
+        ui->btn_sound->setStyleSheet("../../Description/Graphics/photos/volume.png");
+        player->pause();
+        enable = false;
+    }
+    else {
+        ui->btn_sound->setStyleSheet("../../Description/Graphics/photos/mute.png");
         player->play();
         enable = true;
     }
-    else {
-        ui->btn_sound->setStyleSheet("qrc:/Description/Graphics/photos/mute.png");
-        player->stop();
-        enable = false;
-    }*/
 }
