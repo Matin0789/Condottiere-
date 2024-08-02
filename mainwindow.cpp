@@ -72,12 +72,12 @@ void MainWindow::on_btn_sound_clicked()
 {
     static bool enable = true;
     if (enable == true){
-        ui->btn_sound->setStyleSheet("../../Description/Graphics/photos/volume.png");
+        ui->btn_sound->setStyleSheet("border-image:url(:/Description/Graphics/photos/mute.png)");
         player->pause();
         enable = false;
     }
     else {
-        ui->btn_sound->setStyleSheet("../../Description/Graphics/photos/mute.png");
+        ui->btn_sound->setStyleSheet("border-image:url(:/Description/Graphics/photos/volume.png)");
         player->play();
         enable = true;
     }
