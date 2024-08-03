@@ -16,4 +16,17 @@
 
 #define BOARD_FILE          "../../data/board/adjacency.txt"
 
+#define BISHOP_IMAGE    ":/Description/Graphics/Assets/Banafsh/Rish_Sefid.png"
+#define DRUMMER_IMAGE   ":/Description/Graphics/Assets/Banafsh/Tabl_Zan.png"
+#define HEROINE_IMAGE   ":/Description/Graphics/Assets/Banafsh/Shah_Dokht.png"
+#define SCARECROW_IMAGE ":/Description/Graphics/Assets/Banafsh/Matarsak.png"
+#define SPRING_IMAGE    ":/Description/Graphics/Assets/Banafsh/Bahar.png"
+#define WINTER_IMAGE    ":/Description/Graphics/Assets/Banafsh/Zemestan.png"
+#define SPY_IMAGE       ":/Description/Graphics/Assets/Banafsh/Shir_Zan.png"
+#define TURNCOAT_IMAGE  ":/Description/Graphics/Assets/Banafsh/Parcham_Dar.png"
+
+#define BATTLE_MARKER_IMAGE ":/Description/Graphics/markers/icons8-battle-100(1).png"
+#define PEACE_MARKER_IMAGE  ":/Description/Graphics/markers/icons8-peace-100.png"
+#define PLAYER_MARKER_IMAGE ":/Description/Graphics/markers/icons8-flag-100.png"
+
 #endif // FILEPATH_H

@@ -6,6 +6,8 @@
 #include <QGraphicsRectItem>
 #include <QGraphicsView>
 
+#include <map>
+
 #include "options.h"
 #include "Help.h"
 
@@ -41,6 +43,8 @@ private:
         QGraphicsView *view = new QGraphicsView(scene);
         Game *game;
         UserInterface *user;
+        map<std::string, std::string> cards;
+        map<std::string, std::string> markers;
 };
 
 #endif // CAMPAIGN_H
