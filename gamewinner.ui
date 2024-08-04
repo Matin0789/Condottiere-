@@ -20,7 +20,7 @@
       <x>0</x>
       <y>-20</y>
       <width>800</width>
-      <height>600</height>
+      <height>621</height>
      </rect>
     </property>
     <property name="cursor">
@@ -36,7 +36,7 @@
    <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
      <rect>
-      <x>330</x>
+      <x>270</x>
       <y>230</y>
       <width>121</width>
       <height>41</height>
@@ -77,9 +77,9 @@ QPushButton : pressed
    <widget class="QLabel" name="lb_player_counter">
     <property name="geometry">
      <rect>
-      <x>250</x>
+      <x>180</x>
       <y>40</y>
-      <width>291</width>
+      <width>451</width>
       <height>41</height>
      </rect>
     </property>
@@ -96,19 +96,50 @@ color: rgb(0, 0, 0);</string>
      <enum>QFrame::Box</enum>
     </property>
     <property name="text">
-     <string> player !</string>
+     <string>Player ! won this game and became the emperor of the world</string>
     </property>
    </widget>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>800</width>
-     <height>21</height>
-    </rect>
-   </property>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>230</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ClosedHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton
+{
+	color : black ;
+	background-color : ;
+	font: 700 10pt &quot;Segoe Print&quot;;
+	border-image: 30px ;
+}
+
+QPushButton : Hover
+{
+	background-color : ;
+    border-radius : 40px ;
+	border-image: 10px ;
+}
+
+QPushButton : pressed
+{
+	background-color :black ;
+	color : white ;
+	border-image: url(:/Description/Graphics/photos/blue.jpg);
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Quit Game</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>

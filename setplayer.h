@@ -26,9 +26,11 @@ private slots:
     void on_btn_back_clicked();
 signals:
     void get_player(std::string, size_t, Color);
+
 private:
     Ui::Setplayer *ui;
     std::map<QString, Color> freeColors;
+
 };
 
 #endif // SETPLAYER_H

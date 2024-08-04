@@ -9,13 +9,6 @@ Campaign::Campaign(QWidget *parent)
 {
     ui->setupUi(this);
 
-   // QLabel *NameLabels = new QLabel(this);
-   // for (int var = 0; var < total; ++var)
-   // {
-
-   // }
-
-
     cardsImageRef["Bishop"]    = "border-image:url(" + std::string(BISHOP_IMAGE)    + ")";
     cardsImageRef["Drummer"]   = "border-image:url(" + std::string(DRUMMER_IMAGE)   + ")";
     cardsImageRef["Heroine"]   = "border-image:url(" + std::string(HEROINE_IMAGE)   + ")";

@@ -21,7 +21,7 @@
     <rect>
      <x>530</x>
      <y>540</y>
-     <width>121</width>
+     <width>111</width>
      <height>41</height>
     </rect>
    </property>
@@ -60,8 +60,8 @@ QPushButton : pressed
   <widget class="QPushButton" name="btn_Nplayer">
    <property name="geometry">
     <rect>
-     <x>640</x>
-     <y>480</y>
+     <x>540</x>
+     <y>600</y>
      <width>91</width>
      <height>41</height>
     </rect>
@@ -95,7 +95,7 @@ QPushButton : pressed
 }</string>
    </property>
    <property name="text">
-    <string>Next player</string>
+    <string>Next </string>
    </property>
   </widget>
   <widget class="QLabel" name="label">
@@ -139,13 +139,13 @@ color: rgb(0, 0, 0);</string>
     <string> player !</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_2">
+  <widget class="QLabel" name="lb_color">
    <property name="geometry">
     <rect>
      <x>60</x>
      <y>300</y>
      <width>1031</width>
-     <height>101</height>
+     <height>111</height>
     </rect>
    </property>
    <property name="cursor">
@@ -153,6 +153,7 @@ color: rgb(0, 0, 0);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);
+color: rgb(170, 85, 0);
 background-image: url(:/Description/Graphics/photos/blue.jpg);</string>
    </property>
    <property name="text">
@@ -162,7 +163,7 @@ background-image: url(:/Description/Graphics/photos/blue.jpg);</string>
   <widget class="QLabel" name="lb_card_1">
    <property name="geometry">
     <rect>
-     <x>40</x>
+     <x>140</x>
      <y>260</y>
      <width>80</width>
      <height>120</height>
@@ -172,7 +173,7 @@ background-image: url(:/Description/Graphics/photos/blue.jpg);</string>
     <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/Description/Graphics/photos/white (1).jpg);</string>
+    <string notr="true">border-image: url(:/Description/Graphics/Assets/zard/Back.png);</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::Box</enum>
@@ -184,7 +185,7 @@ background-image: url(:/Description/Graphics/photos/blue.jpg);</string>
   <widget class="QLabel" name="lb_card_2">
    <property name="geometry">
     <rect>
-     <x>130</x>
+     <x>230</x>
      <y>260</y>
      <width>80</width>
      <height>120</height>
@@ -194,7 +195,7 @@ background-image: url(:/Description/Graphics/photos/blue.jpg);</string>
     <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/Description/Graphics/photos/white (1).jpg);</string>
+    <string notr="true">border-image: url(:/Description/Graphics/Assets/zard/Back.png);</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::Box</enum>
@@ -206,7 +207,7 @@ background-image: url(:/Description/Graphics/photos/blue.jpg);</string>
   <widget class="QLabel" name="lb_card_3">
    <property name="geometry">
     <rect>
-     <x>220</x>
+     <x>320</x>
      <y>260</y>
      <width>80</width>
      <height>120</height>
@@ -216,7 +217,7 @@ background-image: url(:/Description/Graphics/photos/blue.jpg);</string>
     <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/Description/Graphics/photos/white (1).jpg);</string>
+    <string notr="true">border-image: url(:/Description/Graphics/Assets/zard/Back.png);</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::Box</enum>
@@ -228,7 +229,7 @@ background-image: url(:/Description/Graphics/photos/blue.jpg);</string>
   <widget class="QLabel" name="lb_card_4">
    <property name="geometry">
     <rect>
-     <x>310</x>
+     <x>410</x>
      <y>260</y>
      <width>80</width>
      <height>120</height>
@@ -238,7 +239,7 @@ background-image: url(:/Description/Graphics/photos/blue.jpg);</string>
     <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/Description/Graphics/photos/white (1).jpg);</string>
+    <string notr="true">border-image: url(:/Description/Graphics/Assets/zard/Back.png);</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::Box</enum>
@@ -250,7 +251,7 @@ background-image: url(:/Description/Graphics/photos/blue.jpg);</string>
   <widget class="QLabel" name="lb_card_5">
    <property name="geometry">
     <rect>
-     <x>400</x>
+     <x>500</x>
      <y>260</y>
      <width>80</width>
      <height>120</height>
@@ -260,7 +261,7 @@ background-image: url(:/Description/Graphics/photos/blue.jpg);</string>
     <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/Description/Graphics/photos/white (1).jpg);</string>
+    <string notr="true">border-image: url(:/Description/Graphics/Assets/zard/Back.png);</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::Box</enum>
@@ -272,7 +273,7 @@ background-image: url(:/Description/Graphics/photos/blue.jpg);</string>
   <widget class="QLabel" name="lb_card_6">
    <property name="geometry">
     <rect>
-     <x>490</x>
+     <x>590</x>
      <y>260</y>
      <width>80</width>
      <height>120</height>
@@ -282,7 +283,8 @@ background-image: url(:/Description/Graphics/photos/blue.jpg);</string>
     <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/Description/Graphics/photos/white (1).jpg);</string>
+    <string notr="true">border-image: url(:/Description/Graphics/Assets/zard/Back.png);
+</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::Box</enum>
@@ -294,7 +296,7 @@ background-image: url(:/Description/Graphics/photos/blue.jpg);</string>
   <widget class="QLabel" name="lb_card_7">
    <property name="geometry">
     <rect>
-     <x>580</x>
+     <x>680</x>
      <y>260</y>
      <width>80</width>
      <height>120</height>
@@ -304,7 +306,7 @@ background-image: url(:/Description/Graphics/photos/blue.jpg);</string>
     <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/Description/Graphics/photos/white (1).jpg);</string>
+    <string notr="true">border-image: url(:/Description/Graphics/Assets/zard/Back.png);</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::Box</enum>
@@ -316,7 +318,7 @@ background-image: url(:/Description/Graphics/photos/blue.jpg);</string>
   <widget class="QLabel" name="lb_card_8">
    <property name="geometry">
     <rect>
-     <x>670</x>
+     <x>770</x>
      <y>260</y>
      <width>80</width>
      <height>120</height>
@@ -326,7 +328,7 @@ background-image: url(:/Description/Graphics/photos/blue.jpg);</string>
     <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/Description/Graphics/photos/white (1).jpg);</string>
+    <string notr="true">border-image: url(:/Description/Graphics/Assets/zard/Back.png);</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::Box</enum>
@@ -338,7 +340,7 @@ background-image: url(:/Description/Graphics/photos/blue.jpg);</string>
   <widget class="QLabel" name="lb_card_9">
    <property name="geometry">
     <rect>
-     <x>760</x>
+     <x>860</x>
      <y>260</y>
      <width>80</width>
      <height>120</height>
@@ -348,7 +350,7 @@ background-image: url(:/Description/Graphics/photos/blue.jpg);</string>
     <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/Description/Graphics/photos/white (1).jpg);</string>
+    <string notr="true">border-image: url(:/Description/Graphics/Assets/zard/Back.png);</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::Box</enum>
@@ -360,7 +362,7 @@ background-image: url(:/Description/Graphics/photos/blue.jpg);</string>
   <widget class="QLabel" name="lb_card_10">
    <property name="geometry">
     <rect>
-     <x>850</x>
+     <x>950</x>
      <y>260</y>
      <width>80</width>
      <height>120</height>
@@ -370,7 +372,7 @@ background-image: url(:/Description/Graphics/photos/blue.jpg);</string>
     <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/Description/Graphics/photos/white (1).jpg);</string>
+    <string notr="true">border-image: url(:/Description/Graphics/Assets/zard/Back.png);</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::Box</enum>
@@ -382,8 +384,8 @@ background-image: url(:/Description/Graphics/photos/blue.jpg);</string>
   <widget class="QLabel" name="lb_card_11">
    <property name="geometry">
     <rect>
-     <x>940</x>
-     <y>260</y>
+     <x>410</x>
+     <y>390</y>
      <width>80</width>
      <height>120</height>
     </rect>
@@ -392,7 +394,7 @@ background-image: url(:/Description/Graphics/photos/blue.jpg);</string>
     <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/Description/Graphics/photos/white (1).jpg);</string>
+    <string notr="true">border-image: url(:/Description/Graphics/Assets/zard/Back.png);</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::Box</enum>
@@ -404,8 +406,8 @@ background-image: url(:/Description/Graphics/photos/blue.jpg);</string>
   <widget class="QLabel" name="lb_card_12">
    <property name="geometry">
     <rect>
-     <x>1030</x>
-     <y>260</y>
+     <x>500</x>
+     <y>390</y>
      <width>80</width>
      <height>120</height>
     </rect>
@@ -414,7 +416,7 @@ background-image: url(:/Description/Graphics/photos/blue.jpg);</string>
     <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/Description/Graphics/photos/white (1).jpg);</string>
+    <string notr="true">border-image: url(:/Description/Graphics/Assets/zard/Back.png);</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::Box</enum>
@@ -423,49 +425,74 @@ background-image: url(:/Description/Graphics/photos/blue.jpg);</string>
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="btn_back">
+  <widget class="QLabel" name="lb_card_13">
    <property name="geometry">
     <rect>
-     <x>440</x>
-     <y>480</y>
-     <width>91</width>
-     <height>41</height>
+     <x>590</x>
+     <y>390</y>
+     <width>80</width>
+     <height>120</height>
     </rect>
    </property>
    <property name="cursor">
-    <cursorShape>ClosedHandCursor</cursorShape>
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
-    <string notr="true">
-QPushButton
-{
-	color : black ;
-	background-color : ;
-	font: 700 10pt &quot;Segoe Print&quot;;
-	border-image: 30px ;
-}
-
-QPushButton : Hover
-{
-	background-color : ;
-    border-radius : 40px ;
-	border-image: 10px ;
-}
-
-QPushButton : pressed
-{
-	background-color :black ;
-	color : white ;
-	border-image: url(:/Description/Graphics/photos/blue.jpg);
-
-}</string>
+    <string notr="true">border-image: url(:/Description/Graphics/Assets/zard/Back.png);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
    </property>
    <property name="text">
-    <string>Back</string>
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_card_14">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>390</y>
+     <width>80</width>
+     <height>120</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/Description/Graphics/Assets/zard/Back.png);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_card_15">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>80</width>
+     <height>120</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/Description/Graphics/Assets/zard/Back.png);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
   <zorder>label</zorder>
-  <zorder>label_2</zorder>
+  <zorder>lb_color</zorder>
   <zorder>btn_lets_go</zorder>
   <zorder>btn_Nplayer</zorder>
   <zorder>lb_player_counter</zorder>
@@ -481,7 +508,9 @@ QPushButton : pressed
   <zorder>lb_card_10</zorder>
   <zorder>lb_card_11</zorder>
   <zorder>lb_card_12</zorder>
-  <zorder>btn_back</zorder>
+  <zorder>lb_card_13</zorder>
+  <zorder>lb_card_14</zorder>
+  <zorder>lb_card_15</zorder>
  </widget>
  <resources/>
  <connections/>

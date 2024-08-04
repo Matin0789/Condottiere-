@@ -57,47 +57,6 @@ QPushButton : pressed
     <string>Next</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="btn_back">
-   <property name="geometry">
-    <rect>
-     <x>310</x>
-     <y>220</y>
-     <width>161</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="cursor">
-    <cursorShape>ClosedHandCursor</cursorShape>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">
-QPushButton
-{
-	color : black ;
-	background-color : ;
-	font: 700 13pt &quot;Segoe Print&quot;;
-	border-image: 30px ;
-}
-
-QPushButton : Hover
-{
-	background-color : ;
-    border-radius : 40px ;
-	border-image: 10px ;
-}
-
-QPushButton : pressed
-{
-	background-color :black ;
-	color : white ;
-	border-image: url(:/Description/Graphics/photos/blue.jpg);
-
-}</string>
-   </property>
-   <property name="text">
-    <string>Back</string>
-   </property>
-  </widget>
   <widget class="QSpinBox" name="sb">
    <property name="geometry">
     <rect>
@@ -139,7 +98,6 @@ font: 700 italic 12pt &quot;Segoe Print&quot;;
    </property>
   </widget>
   <zorder>label</zorder>
-  <zorder>btn_back</zorder>
   <zorder>btn_next</zorder>
   <zorder>sb</zorder>
  </widget>

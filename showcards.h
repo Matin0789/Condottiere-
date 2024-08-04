@@ -12,6 +12,7 @@
 #include "campaign.h"
 #include "player.h"
 
+
 namespace Ui {
 class showCards;
 }
@@ -34,9 +35,10 @@ private slots:
 
 private:
     Ui::showCards *ui;
-    Campaign *Campaign;
+    Campaign *campaign;
     QVector<QLabel*> cardLabel;
     std::map<std::string, std::string> cardsImageRef;
+
 };
 
 #endif // SHOWCARDS_H

@@ -60,28 +60,6 @@ color: rgb(0, 0, 0);</string>
     <string>Next</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="btn_back">
-   <property name="geometry">
-    <rect>
-     <x>310</x>
-     <y>390</y>
-     <width>80</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="cursor">
-    <cursorShape>ClosedHandCursor</cursorShape>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(:/Description/Graphics/photos/download7.jpg);
-font: 9pt &quot;Segoe Print&quot;;
-
-color: rgb(0, 0, 0);</string>
-   </property>
-   <property name="text">
-    <string>Back</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="lb_player_counter">
    <property name="geometry">
     <rect>
@@ -239,7 +217,6 @@ border-image: url(:/Description/Graphics/photos/galileus_medieval_Crusader_knigh
   <zorder>label</zorder>
   <zorder>lb_state</zorder>
   <zorder>btn_next</zorder>
-  <zorder>btn_back</zorder>
   <zorder>lb_player_counter</zorder>
   <zorder>cb_2</zorder>
   <zorder>label_2</zorder>

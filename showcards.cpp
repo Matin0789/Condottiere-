@@ -21,6 +21,8 @@ showCards::showCards(QWidget *parent)
     this->cardLabel.push_back(ui->lb_card_10);
     this->cardLabel.push_back(ui->lb_card_11);
     this->cardLabel.push_back(ui->lb_card_12);
+    this->cardLabel.push_back(ui->lb_card_13);
+    this->cardLabel.push_back(ui->lb_card_14);
 
     cardsImageRef["Bishop"]    = "border-image:url(" + std::string(BISHOP_IMAGE)    + ")";
     cardsImageRef["Drummer"]   = "border-image:url(" + std::string(DRUMMER_IMAGE)   + ")";
@@ -84,5 +86,5 @@ void showCards::on_cb_show_player_list_activated(int index)
 
 void showCards::on_btn_lets_go_clicked()
 {
-    hide();
+
 }
