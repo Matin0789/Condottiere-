@@ -24,6 +24,14 @@
 #define WINTER_IMAGE    ":/Description/Graphics/Assets/Banafsh/Zemestan.png"
 #define SPY_IMAGE       ":/Description/Graphics/Assets/Banafsh/Shir_Zan.png"
 #define TURNCOAT_IMAGE  ":/Description/Graphics/Assets/Banafsh/Parcham_Dar.png"
+#define ONE_IMAGE       ":/Description/Graphics/Assets/zard/001.png"
+#define TWO_IMAGE       ":/Description/Graphics/Assets/zard/002.png"
+#define THREE_IMAGE      ":/Description/Graphics/Assets/zard/003.png"
+#define FOUR_IMAGE      ":/Description/Graphics/Assets/zard/004.png"
+#define FIVE_IMAGE      ":/Description/Graphics/Assets/zard/005.png"
+#define SIX_IMAGE       ":/Description/Graphics/Assets/zard/006.png"
+#define TEN_IMAGE       ":/Description/Graphics/Assets/zard/010.png"
+
 
 #define BATTLE_MARKER_IMAGE ":/Description/Graphics/markers/icons8-battle-100(1).png"
 #define PEACE_MARKER_IMAGE  ":/Description/Graphics/markers/icons8-peace-100.png"

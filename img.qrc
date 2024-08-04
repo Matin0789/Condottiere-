@@ -120,5 +120,16 @@
         <file>Description/Graphics/Assets/Banafsh/Shir_Zan.png</file>
         <file>Description/Graphics/Assets/Banafsh/Tabl_Zan.png</file>
         <file>Description/Graphics/Assets/Banafsh/Zemestan.png</file>
+        <file>Description/Graphics/Assets/zard/001.png</file>
+        <file>Description/Graphics/Assets/zard/002.png</file>
+        <file>Description/Graphics/Assets/zard/003.png</file>
+        <file>Description/Graphics/Assets/zard/004.png</file>
+        <file>Description/Graphics/Assets/zard/005.png</file>
+        <file>Description/Graphics/Assets/zard/006.png</file>
+        <file>Description/Graphics/Assets/zard/007.png</file>
+        <file>Description/Graphics/Assets/zard/008.png</file>
+        <file>Description/Graphics/Assets/zard/009.png</file>
+        <file>Description/Graphics/Assets/zard/010.png</file>
+        <file>Description/Graphics/Assets/zard/Back.png</file>
     </qresource>
 </RCC>

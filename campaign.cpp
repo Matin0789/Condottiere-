@@ -16,14 +16,21 @@ Campaign::Campaign(QWidget *parent)
    // }
 
 
-    cards["Bishop"]    = "border-image:url(" + std::string(BISHOP_IMAGE)    + ")";
-    cards["Drummer"]   = "border-image:url(" + std::string(DRUMMER_IMAGE)   + ")";
-    cards["Heroine"]   = "border-image:url(" + std::string(HEROINE_IMAGE)   + ")";
-    cards["Scarecrow"] = "border-image:url(" + std::string(SCARECROW_IMAGE) + ")";
-    cards["Spring"]    = "border-image:url(" + std::string(SPRING_IMAGE)    + ")";
-    cards["Winter"]    = "border-image:url(" + std::string(WINTER_IMAGE)    + ")";
-    cards["Spy"]       = "border-image:url(" + std::string(SPY_IMAGE)       + ")";
-    cards["Turncoat"]  = "border-image:url(" + std::string(TURNCOAT_IMAGE)  + ")";
+    cardsImageRef["Bishop"]    = "border-image:url(" + std::string(BISHOP_IMAGE)    + ")";
+    cardsImageRef["Drummer"]   = "border-image:url(" + std::string(DRUMMER_IMAGE)   + ")";
+    cardsImageRef["Heroine"]   = "border-image:url(" + std::string(HEROINE_IMAGE)   + ")";
+    cardsImageRef["Scarecrow"] = "border-image:url(" + std::string(SCARECROW_IMAGE) + ")";
+    cardsImageRef["Spring"]    = "border-image:url(" + std::string(SPRING_IMAGE)    + ")";
+    cardsImageRef["Winter"]    = "border-image:url(" + std::string(WINTER_IMAGE)    + ")";
+    cardsImageRef["Spy"]       = "border-image:url(" + std::string(SPY_IMAGE)       + ")";
+    cardsImageRef["Turncoat"]  = "border-image:url(" + std::string(TURNCOAT_IMAGE)  + ")";
+    cardsImageRef["1"]         = "border-image:url(" + std::string(ONE_IMAGE)  + ")";
+    cardsImageRef["2"]         = "border-image:url(" + std::string(TWO_IMAGE)  + ")";
+    cardsImageRef["3"]         = "border-image:url(" + std::string(THREE_IMAGE)  + ")";
+    cardsImageRef["4"]         = "border-image:url(" + std::string(FOUR_IMAGE)  + ")";
+    cardsImageRef["5"]         = "border-image:url(" + std::string(FIVE_IMAGE)  + ")";
+    cardsImageRef["6"]         = "border-image:url(" + std::string(SIX_IMAGE)  + ")";
+    cardsImageRef["10"]        = "border-image:url(" + std::string(TEN_IMAGE)  + ")";
 
     markers["BattleMarker"] = "border-image:url(" + std::string(BATTLE_MARKER_IMAGE)  + ")";
     markers["FavorMarker"]  = "border-image:url(" + std::string(PEACE_MARKER_IMAGE)   + ")";

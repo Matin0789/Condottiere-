@@ -30,13 +30,13 @@ showCards::showCards(QWidget *parent)
     cardsImageRef["Winter"]    = "border-image:url(" + std::string(WINTER_IMAGE)    + ")";
     cardsImageRef["Spy"]       = "border-image:url(" + std::string(SPY_IMAGE)       + ")";
     cardsImageRef["Turncoat"]  = "border-image:url(" + std::string(TURNCOAT_IMAGE)  + ")";
-    cardsImageRef["1"]         = "border-image:url(" + std::string(":/Description/Graphics/Assets/Pe_Sym.png")  + ")";
-    cardsImageRef["2"]         = "border-image:url(" + std::string(":/Description/Graphics/Assets/Pe_Sym.png")  + ")";
-    cardsImageRef["3"]         = "border-image:url(" + std::string(":/Description/Graphics/Assets/Pe_Sym.png")  + ")";
-    cardsImageRef["4"]         = "border-image:url(" + std::string(":/Description/Graphics/Assets/Pe_Sym.png")  + ")";
-    cardsImageRef["5"]         = "border-image:url(" + std::string(":/Description/Graphics/Assets/Pe_Sym.png")  + ")";
-    cardsImageRef["6"]         = "border-image:url(" + std::string(":/Description/Graphics/Assets/Pe_Sym.png")  + ")";
-    cardsImageRef["10"]        = "border-image:url(" + std::string(":/Description/Graphics/Assets/Pe_Sym.png")  + ")";
+    cardsImageRef["1"]         = "border-image:url(" + std::string(ONE_IMAGE)  + ")";
+    cardsImageRef["2"]         = "border-image:url(" + std::string(TWO_IMAGE)  + ")";
+    cardsImageRef["3"]         = "border-image:url(" + std::string(THREE_IMAGE)  + ")";
+    cardsImageRef["4"]         = "border-image:url(" + std::string(FOUR_IMAGE)  + ")";
+    cardsImageRef["5"]         = "border-image:url(" + std::string(FIVE_IMAGE)  + ")";
+    cardsImageRef["6"]         = "border-image:url(" + std::string(SIX_IMAGE)  + ")";
+    cardsImageRef["10"]        = "border-image:url(" + std::string(TEN_IMAGE)  + ")";
 
 }
 

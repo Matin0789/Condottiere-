@@ -42,7 +42,7 @@ private:
     QGraphicsScene *scene = new QGraphicsScene();
     QGraphicsRectItem *rect = new QGraphicsRectItem();
     QGraphicsView *view = new QGraphicsView(scene);
-    std::map<std::string, std::string> cards;
+    std::map<std::string, std::string> cardsImageRef;
     std::map<std::string, std::string> markers;
     //QVector<QLabel*> Nameoflabels;
 
