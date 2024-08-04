@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1021</width>
-    <height>789</height>
+    <width>530</width>
+    <height>760</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,11 +19,14 @@
   <widget class="QPushButton" name="btn_load_games">
    <property name="geometry">
     <rect>
-     <x>460</x>
-     <y>360</y>
+     <x>210</x>
+     <y>350</y>
      <width>101</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>ClosedHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">
@@ -57,11 +60,14 @@ QPushButton : pressed
   <widget class="QPushButton" name="btn_save">
    <property name="geometry">
     <rect>
-     <x>460</x>
-     <y>200</y>
+     <x>210</x>
+     <y>190</y>
      <width>101</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>ClosedHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">
@@ -95,11 +101,14 @@ QPushButton : pressed
   <widget class="QPushButton" name="btn_quit">
    <property name="geometry">
     <rect>
-     <x>460</x>
-     <y>520</y>
+     <x>210</x>
+     <y>510</y>
      <width>101</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>ClosedHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">
@@ -133,11 +142,14 @@ QPushButton : pressed
   <widget class="QPushButton" name="btn_audio">
    <property name="geometry">
     <rect>
-     <x>460</x>
-     <y>440</y>
+     <x>210</x>
+     <y>430</y>
      <width>101</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>ClosedHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">
@@ -171,11 +183,14 @@ QPushButton : pressed
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>247</x>
-     <y>10</y>
+     <x>-3</x>
+     <y>0</y>
      <width>531</width>
-     <height>751</height>
+     <height>760</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>OpenHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/Description/Graphics/photos/e03bae63714b1f018fd4da139fc52e78.jpg);</string>
@@ -187,11 +202,14 @@ QPushButton : pressed
   <widget class="QPushButton" name="btn_Continue">
    <property name="geometry">
     <rect>
-     <x>460</x>
-     <y>280</y>
+     <x>210</x>
+     <y>270</y>
      <width>101</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>ClosedHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">
@@ -225,8 +243,8 @@ QPushButton : pressed
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>400</x>
-     <y>70</y>
+     <x>150</x>
+     <y>60</y>
      <width>231</width>
      <height>101</height>
     </rect>

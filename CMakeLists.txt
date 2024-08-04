@@ -85,7 +85,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
 
         start.h start.cpp start.ui
         showcards.h showcards.cpp showcards.ui
-        campaign.h campaign.cpp campaign.ui
+
         Help.h Help.cpp Help.ui
         options.h options.cpp options.ui
         Warwinner.h Warwinner.cpp Warwinner.ui
@@ -95,6 +95,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         img.qrc
         sound.qrc
         data.qrc
+        campaign.h campaign.cpp campaign.ui
+        gamewinner.h gamewinner.cpp gamewinner.ui
 
 
     )

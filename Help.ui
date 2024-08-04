@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1028</width>
-    <height>796</height>
+    <width>650</width>
+    <height>750</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,14 +19,17 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>170</x>
-     <y>20</y>
-     <width>691</width>
-     <height>741</height>
+     <x>0</x>
+     <y>0</y>
+     <width>650</width>
+     <height>750</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>OpenHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/Description/Graphics/photos/pngtree-vintage-paper-background-with-old-map-art-image_627360.jpg);</string>
+    <string notr="true">border-image: url(:/Description/Graphics/photos/antique-style-lined-paper-template-design-f0afe8303318fda46d4c362bd2d0d70d_screen.jpg);</string>
    </property>
    <property name="text">
     <string/>
@@ -35,14 +38,17 @@
   <widget class="QComboBox" name="cb_help_list">
    <property name="geometry">
     <rect>
-     <x>200</x>
-     <y>50</y>
+     <x>30</x>
+     <y>30</y>
      <width>101</width>
      <height>24</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>IBeamCursor</cursorShape>
+   </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(0, 0, 0);
+    <string notr="true">
 font: 9pt &quot;Segoe Print&quot;;
 color: rgb(0, 0, 0);</string>
    </property>
@@ -100,11 +106,14 @@ color: rgb(0, 0, 0);</string>
   <widget class="QPushButton" name="btn_ok">
    <property name="geometry">
     <rect>
-     <x>260</x>
-     <y>90</y>
+     <x>90</x>
+     <y>70</y>
      <width>41</width>
      <height>24</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>ClosedHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">
@@ -138,11 +147,14 @@ QPushButton : pressed
   <widget class="QPushButton" name="ptn_back">
    <property name="geometry">
     <rect>
-     <x>200</x>
-     <y>90</y>
+     <x>30</x>
+     <y>70</y>
      <width>41</width>
      <height>24</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>ClosedHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">
@@ -176,17 +188,49 @@ QPushButton : pressed
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>400</x>
-     <y>30</y>
+     <x>230</x>
+     <y>10</y>
      <width>231</width>
      <height>101</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>OpenHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/Description/Graphics/photos/t 2024-07-14 141911.jpg.png);</string>
    </property>
    <property name="text">
     <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_help_txt">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>150</y>
+     <width>350</width>
+     <height>550</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>UpArrowCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/Description/Graphics/photos/images (1852).jpg);
+font: 9pt &quot;Segoe Print&quot;;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
    </property>
   </widget>
  </widget>

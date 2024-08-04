@@ -25,6 +25,9 @@
      <height>31</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>ClosedHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">
 QPushButton
@@ -62,6 +65,9 @@ QPushButton : pressed
      <width>161</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>ClosedHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">
@@ -101,6 +107,9 @@ QPushButton : pressed
      <height>25</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/Description/Graphics/photos/white (1).jpg);
 color: rgb(0, 0, 0);
@@ -118,6 +127,9 @@ font: 700 italic 12pt &quot;Segoe Print&quot;;
      <width>800</width>
      <height>600</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>OpenHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/Description/Graphics/photos/knights-templar.jpg);</string>

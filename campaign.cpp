@@ -2,27 +2,18 @@
 #include "ui_campaign.h"
 
 Campaign::Campaign(QWidget *parent)
-    : QDialog(parent)
-    , ui(new Ui::campaign)
+    : QMainWindow(parent)
+    , ui(new Ui::Campaign)
 {
     ui->setupUi(this);
+   // QLabel *NameLabels = new QLabel(this);
+   // for (int var = 0; var < total; ++var)
+   // {
+
+   // }
 }
 
 Campaign::~Campaign()
 {
     delete ui;
-}
-
-void Campaign::on_pb_help_clicked()
-{
-    hide();
-    help = new Help(this);
-    help->show();
-}
-
-void Campaign::on_pb_setting_clicked()
-{
-    hide();
-    options = new Options(this);
-    options->show();
 }

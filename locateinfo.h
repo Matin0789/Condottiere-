@@ -6,7 +6,7 @@
 #include "campaign.h"
 #include "game.h"
 #include "userinterface.h"
-
+#include "showcards.h"
 
 namespace Ui {
 class Locateinfo;
@@ -34,6 +34,7 @@ private:
     Game *game;
     UserInterface *user;
     bool next_click;
+    showCards* showcards;
 };
 
 #endif // LOCATEINFO_H

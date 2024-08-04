@@ -79,6 +79,9 @@ background-color: rgb(0, 0, 0);</string>
      <height>31</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/Description/Graphics/photos/white (1).jpg);
 color: rgb(0, 0, 0);</string>
@@ -92,6 +95,9 @@ color: rgb(0, 0, 0);</string>
      <width>229</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>ClosedHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">
@@ -131,6 +137,9 @@ QPushButton : pressed
      <width>229</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>ClosedHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">
@@ -190,6 +199,9 @@ background-color: rgb(0, 0, 0);</string>
      <height>41</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>IBeamCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">font: 9pt &quot;Segoe Print&quot;;
 border-image: url(:/Description/Graphics/photos/white (1).jpg);
@@ -209,6 +221,9 @@ color: rgb(0, 0, 0);</string>
      <height>31</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>IBeamCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/Description/Graphics/photos/white (1).jpg);
 
@@ -227,6 +242,9 @@ font: 700 italic 12pt &quot;Sitka Text&quot;;
      <width>800</width>
      <height>600</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>OpenHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/Description/Graphics/photos/crusades-timeline-1024x512.jpg);</string>

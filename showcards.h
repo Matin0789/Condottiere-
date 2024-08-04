@@ -4,11 +4,12 @@
 #include <QDialog>
 #include <QGraphicsPixmapItem>
 #include <QGraphicsItem>
+#include <QLabel>
+#include <QVector>
 
 #include "campaign.h"
 #include "game.h"
 #include "userinterface.h"
-
 
 namespace Ui {
 class showCards;
@@ -32,6 +33,7 @@ private:
     Campaign *Campaign;
     Game *game;
     UserInterface *user;
+    //QVector<QLabel*> Nameoflabels;
 };
 
 #endif // SHOWCARDS_H

@@ -25,8 +25,11 @@
      <height>91</height>
     </rect>
    </property>
+   <property name="cursor" stdset="0">
+    <cursorShape>IBeamCursor</cursorShape>
+   </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/Description/Graphics/photos/9b85ec34701519f045aec6aba077ae13.jpg);
+    <string notr="true">border-image: url(:/Description/Graphics/photos/pexels-elina-araja-1743227-3377405.jpg);
 color: rgb(0, 0, 0);
 color: rgb(0, 0, 0);
 font: 9pt &quot;Segoe Print&quot;;</string>
@@ -50,6 +53,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <width>121</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>ClosedHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">
@@ -89,8 +95,11 @@ QPushButton : pressed
      <height>600</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>OpenHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/Description/Graphics/photos/pngtree-game-war-texture-background-image_784885.jpg);</string>
+    <string notr="true">border-image: url(:/Description/Graphics/photos/medieval-knight-crusaders-hd-wallpaper-preview.jpg);</string>
    </property>
    <property name="text">
     <string/>

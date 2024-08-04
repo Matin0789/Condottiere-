@@ -6,7 +6,11 @@ showCards::showCards(QWidget *parent)
     , ui(new Ui::showCards)
 {
     ui->setupUi(this);
+    // QLabel *NameLabels = new QLabel(this);
+    // for (int var = 0; var < total; ++var)
+    // {
 
+    // }
 }
 
 showCards::~showCards()
