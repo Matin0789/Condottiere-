@@ -7,9 +7,10 @@
 #include <QLabel>
 #include <QVector>
 
+#include <map>
+
 #include "campaign.h"
-#include "game.h"
-#include "userinterface.h"
+#include "player.h"
 
 namespace Ui {
 class showCards;
@@ -23,6 +24,9 @@ public:
     explicit showCards(QWidget *parent = nullptr);
     ~showCards();
 
+public slots:
+    void getPlayer(const Player&);
+
 private slots:
     void on_btn_Nplayer_clicked();
     void on_cb_show_player_list_activated(int index);
@@ -31,9 +35,8 @@ private slots:
 private:
     Ui::showCards *ui;
     Campaign *Campaign;
-    Game *game;
-    UserInterface *user;
-    //QVector<QLabel*> Nameoflabels;
+    QVector<QLabel*> cardLabel;
+    std::map<std::string, std::string> cardsImageRef;
 };
 
 #endif // SHOWCARDS_H

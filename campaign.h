@@ -16,8 +16,6 @@
 #include "options.h"
 #include "Help.h"
 
-#include "game.h"
-#include "userinterface.h"
 #include "enumcolor.h"
 #include "purplecard.h"
 #include "player.h"
@@ -44,8 +42,6 @@ private:
     QGraphicsScene *scene = new QGraphicsScene();
     QGraphicsRectItem *rect = new QGraphicsRectItem();
     QGraphicsView *view = new QGraphicsView(scene);
-    Game *game;
-    UserInterface *user;
     std::map<std::string, std::string> cards;
     std::map<std::string, std::string> markers;
     //QVector<QLabel*> Nameoflabels;

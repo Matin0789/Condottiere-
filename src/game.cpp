@@ -213,6 +213,9 @@ void Game::distributeCards() {
         cards.erase(cards.begin(), cards.begin() + (10 + player.getStateNumber()));
         player.setCards(playerCards);
     }
+    for (auto &&player : players) {
+        emit showPlayerCards(player);
+    }
 }
 
 void Game::shuffle()  //This function is for shuffling cards

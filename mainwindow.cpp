@@ -19,10 +19,12 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     this->setWindowTitle("Condottiere");
     start = new Start(this);
+    showcards = new showCards;
     QObject::connect(start, &Start::end, this, &MainWindow::startGame);
     QObject::connect(start, &Start::set_player, game, &Game::get_player);
-    QObject::connect(game, &Game::set_battleground, battleground_page, &Locateinfo::set_ground );
-    QObject::connect(game, &Game::set_favorground,  favorground_page,  &Locateinfo::set_ground );
+    QObject::connect(game, &Game::set_battleground, battleground_page, &Locateinfo::set_ground);
+    QObject::connect(game, &Game::set_favorground,  favorground_page,  &Locateinfo::set_ground);
+    QObject::connect(game, &Game::showPlayerCards, showcards, &showCards::getPlayer);
     player = new QMediaPlayer;
     audioOutput = new QAudioOutput;
     player->setAudioOutput(audioOutput);
@@ -38,6 +40,7 @@ MainWindow::~MainWindow()
     QObject::disconnect(start, &Start::end, this, &MainWindow::startGame);
     QObject::disconnect(game, &Game::set_battleground, battleground_page, &Locateinfo::set_ground );
     QObject::disconnect(game, &Game::set_favorground,  favorground_page,  &Locateinfo::set_ground );
+    QObject::disconnect(game, &Game::showPlayerCards, showcards, &showCards::getPlayer);
     delete battleground_page;
     delete favorground_page;
     delete start;

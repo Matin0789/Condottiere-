@@ -58,6 +58,7 @@ public slots:
 signals :
     State* set_battleground(const Player&,GameBoard&);
     State* set_favorground(const Player&,GameBoard&);
+    void showPlayerCards(const Player&);
 private:
 	//private methods
 	size_t warـanalyst();

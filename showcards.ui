@@ -19,9 +19,9 @@
   <widget class="QPushButton" name="btn_lets_go">
    <property name="geometry">
     <rect>
-     <x>540</x>
+     <x>530</x>
      <y>540</y>
-     <width>91</width>
+     <width>121</width>
      <height>41</height>
     </rect>
    </property>
@@ -54,7 +54,7 @@ QPushButton : pressed
 }</string>
    </property>
    <property name="text">
-    <string>Lets Go</string>
+    <string>Show Cards</string>
    </property>
   </widget>
   <widget class="QPushButton" name="btn_Nplayer">
