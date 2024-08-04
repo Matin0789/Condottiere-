@@ -92,11 +92,12 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         locateinfo.h locateinfo.cpp locateinfo.ui
         setplayer.h setplayer.cpp setplayer.ui
 
-        img.qrc
+
         sound.qrc
         data.qrc
         campaign.h campaign.cpp campaign.ui
         gamewinner.h gamewinner.cpp gamewinner.ui
+        img.qrc
 
 
     )

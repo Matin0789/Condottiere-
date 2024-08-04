@@ -109,7 +109,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -248,7 +248,7 @@
      <cursorShape>ClosedHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -558,7 +558,7 @@
      <cursorShape>ClosedHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -580,7 +580,7 @@
      <cursorShape>ClosedHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -602,7 +602,7 @@
      <cursorShape>ClosedHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -624,7 +624,7 @@
      <cursorShape>ClosedHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -646,7 +646,7 @@
      <cursorShape>ClosedHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -668,7 +668,7 @@
      <cursorShape>ClosedHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -693,7 +693,7 @@
      <cursorShape>ClosedHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -715,7 +715,7 @@
      <cursorShape>ClosedHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -737,7 +737,7 @@
      <cursorShape>ClosedHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -759,7 +759,7 @@
      <cursorShape>ClosedHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -781,7 +781,7 @@
      <cursorShape>ClosedHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -803,7 +803,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -828,7 +828,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -853,7 +853,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -878,7 +878,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -903,7 +903,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -928,7 +928,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -953,7 +953,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -978,7 +978,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1003,7 +1003,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1028,7 +1028,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1053,7 +1053,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1078,7 +1078,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1103,7 +1103,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1128,7 +1128,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1153,7 +1153,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1178,7 +1178,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1203,7 +1203,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1228,7 +1228,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1253,7 +1253,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1278,7 +1278,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1303,7 +1303,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1328,7 +1328,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1353,7 +1353,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1378,7 +1378,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1403,7 +1403,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1428,7 +1428,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1453,7 +1453,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1478,7 +1478,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1503,7 +1503,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1528,7 +1528,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1553,7 +1553,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1578,7 +1578,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1603,7 +1603,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1628,7 +1628,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1653,7 +1653,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1678,7 +1678,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1703,7 +1703,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1728,7 +1728,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1753,7 +1753,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1778,7 +1778,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1803,7 +1803,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1828,7 +1828,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1853,7 +1853,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1878,7 +1878,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1903,7 +1903,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1928,7 +1928,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1953,7 +1953,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1978,7 +1978,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -2003,7 +2003,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -2028,7 +2028,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -2053,7 +2053,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -2078,7 +2078,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -2103,7 +2103,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -2128,7 +2128,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -2153,7 +2153,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -2178,7 +2178,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -2203,7 +2203,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -2228,7 +2228,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -2253,7 +2253,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -2278,7 +2278,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -2303,7 +2303,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -2328,7 +2328,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -2353,7 +2353,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -2378,7 +2378,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -2403,7 +2403,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -2428,7 +2428,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -2453,7 +2453,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -2478,7 +2478,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -2503,7 +2503,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -2528,7 +2528,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -2553,7 +2553,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/cards/unnamed.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/unnamed.png);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>

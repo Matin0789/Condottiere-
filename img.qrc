@@ -2,6 +2,7 @@
     <qresource prefix="/">
         <file>Description/Graphics/photos/5bba6fa3f10dc.jpg</file>
         <file>Description/Graphics/photos/9b85ec34701519f045aec6aba077ae13.jpg</file>
+        <file>Description/Graphics/photos/45-451742_svg-icon-free-download-mute-and-unmute-button.png</file>
         <file>Description/Graphics/photos/360_F_554613505_mHuxeAL5xSskoGxXUIiKqoeJlc84iA1z.jpg</file>
         <file>Description/Graphics/photos/360_F_581151308_Z0lMkq1tP9zwkzDLE4wiVhemu7kIksky.jpg</file>
         <file>Description/Graphics/photos/500439-ELEX-video-games-nature-fantasy-art-sword-landscape.jpg</file>
@@ -23,6 +24,7 @@
         <file>Description/Graphics/photos/crusader_knights (1).jpg</file>
         <file>Description/Graphics/photos/crusader_knights.jpg</file>
         <file>Description/Graphics/photos/crusades-timeline-1024x512.jpg</file>
+        <file>Description/Graphics/photos/design-space-paper-textured-background_53876-160488.jpg</file>
         <file>Description/Graphics/photos/desktop-wallpaper-1920x1080-anime-landscape-cherry-blossom-bridge-waterfall-anime-girl-nature-for-widescreen-pink-anime-landscape.jpg</file>
         <file>Description/Graphics/photos/desktop-wallpaper-1920x1080-hellblade-game-hero-laptop-full-epic-full.jpg</file>
         <file>Description/Graphics/photos/download.jpg</file>
@@ -40,6 +42,7 @@
         <file>Description/Graphics/photos/epic-medieval-battle-with-warriors-men-fighting-battlefield-scene-background-digital-illustration_124507-23154.jpg</file>
         <file>Description/Graphics/photos/fairy-tale-castle-hd-8k-wallpaper-stock-photographic-image_853645-59431.avif</file>
         <file>Description/Graphics/photos/fantasy-knight-banner-crusade-medieval-hd-wallpaper-preview.jpg</file>
+        <file>Description/Graphics/photos/galileus_Christian_Crusader_states_after_the_First_Crusade_phot_3f76cc8a-f768-430f-b89d-e6e33662c73c-1024x512.jpg</file>
         <file>Description/Graphics/photos/galileus_medieval_Crusader_knights_photo_realistic_3ec554ad-f8c8-4fc9-b88c-0af222cac15a.jpg</file>
         <file>Description/Graphics/photos/galileus_Medieval_Crusades_1142ddf9-36f2-4043-962c-1104585e7033.jpg</file>
         <file>Description/Graphics/photos/galileus_medieval_heroes_Crusaders_78320800-6418-4de7-bf57-39a3ad7f6f3b-1024x512.jpg</file>
@@ -53,14 +56,18 @@
         <file>Description/Graphics/photos/hogwarts-legacy-dark-edition-official-pc-wallpaper-v0-potn7vwaxyj91.webp</file>
         <file>Description/Graphics/photos/il_fullxfull.5425467394_o9t0.jpg</file>
         <file>Description/Graphics/photos/images (1).jpg</file>
+        <file>Description/Graphics/photos/images (1852).jpg</file>
         <file>Description/Graphics/photos/images.jfif</file>
         <file>Description/Graphics/photos/images.png</file>
         <file>Description/Graphics/photos/istockphoto-604867582-170667a.jpg</file>
         <file>Description/Graphics/photos/istockphoto-852110414-170667a.jpg</file>
         <file>Description/Graphics/photos/knights-templar.jpg</file>
+        <file>Description/Graphics/photos/leaders_of_the_crusades-1024x512.jpg</file>
         <file>Description/Graphics/photos/mars-planet-style-concept-space-fantastic-planet-surface-rocky-mountains-background-against-night-sky-with-stars-shining-bright-horizon-generative-ai_1423-10194.avif</file>
         <file>Description/Graphics/photos/medieval-knight-crusaders-hd-wallpaper-preview.jpg</file>
         <file>Description/Graphics/photos/mercenaries2.webp</file>
+        <file>Description/Graphics/photos/mute.png</file>
+        <file>Description/Graphics/photos/mute-unmute-icon-6.jpg</file>
         <file>Description/Graphics/photos/nature-landscape.jpg</file>
         <file>Description/Graphics/photos/orange.jpg</file>
         <file>Description/Graphics/photos/pexels-elina-araja-1743227-3377405.jpg</file>
@@ -84,7 +91,10 @@
         <file>Description/Graphics/photos/Screenshot 2024-07-14 135947.jpg.png</file>
         <file>Description/Graphics/photos/snowy-landscape-with-lake-and-pine-tree-mountain-scene-background-nature-and-rural-scene-concept-digital-art-illustration-generative-ai-photo.jpg</file>
         <file>Description/Graphics/photos/t 2024-07-14 141911.jpg.png</file>
+        <file>Description/Graphics/photos/The-First-Crusade.jpg</file>
         <file>Description/Graphics/photos/unnamed.jpg</file>
+        <file>Description/Graphics/photos/unnamed.png</file>
+        <file>Description/Graphics/photos/volume.png</file>
         <file>Description/Graphics/photos/warriors-in-medieval-battle-scene-fighting-in-silhouette-against-a-foggy-background-with-castle-free-photo.jpg</file>
         <file>Description/Graphics/photos/white (1).jpg</file>
         <file>Description/Graphics/photos/wp3945596.jpg</file>
@@ -94,11 +104,14 @@
         <file>Description/Graphics/markers/icons8-battle-100-white.png</file>
         <file>Description/Graphics/markers/icons8-flag-100.png</file>
         <file>Description/Graphics/markers/icons8-peace-90.png</file>
-        <file>Description/Graphics/markers/icons8-peace-100_black.png</file>
         <file>Description/Graphics/markers/icons8-peace-100.png</file>
+        <file>Description/Graphics/markers/icons8-peace-100_black.png</file>
         <file>Description/Graphics/Assets/Map.png</file>
         <file>Description/Graphics/Assets/Pe_Sym.png</file>
         <file>Description/Graphics/Assets/Wa_Sym.png</file>
+        <file>Description/Graphics/Assets/Qermez/Herkol.png</file>
+        <file>Description/Graphics/Assets/Qermez/Koh_Shekan.png</file>
+        <file>Description/Graphics/Assets/Qermez/Roh_Jangal.png</file>
         <file>Description/Graphics/Assets/Banafsh/Bahar.png</file>
         <file>Description/Graphics/Assets/Banafsh/Matarsak.png</file>
         <file>Description/Graphics/Assets/Banafsh/Parcham_Dar.png</file>
@@ -107,31 +120,5 @@
         <file>Description/Graphics/Assets/Banafsh/Shir_Zan.png</file>
         <file>Description/Graphics/Assets/Banafsh/Tabl_Zan.png</file>
         <file>Description/Graphics/Assets/Banafsh/Zemestan.png</file>
-        <file>Description/Graphics/Assets/Qermez/Herkol.png</file>
-        <file>Description/Graphics/Assets/Qermez/Koh_Shekan.png</file>
-        <file>Description/Graphics/Assets/Qermez/Roh_Jangal.png</file>
-        <file>Description/Graphics/photos/mute.png</file>
-        <file>Description/Graphics/photos/volume.png</file>
-        <file>Description/Graphics/photos/design-space-paper-textured-background_53876-160488.jpg</file>
-        <file>Description/Graphics/photos/images (1852).jpg</file>
-        <file>Description/Graphics/photos/45-451742_svg-icon-free-download-mute-and-unmute-button.png</file>
-        <file>Description/Graphics/photos/mute-unmute-icon-6.jpg</file>
-        <file>Description/Graphics/cards/6a716371fffbef1b06266b2b824b965f (1).jpg</file>
-        <file>Description/Graphics/cards/6a716371fffbef1b06266b2b824b965f.jpg</file>
-        <file>Description/Graphics/cards/31a647160bb8313551a692b796feeb7e.jpg</file>
-        <file>Description/Graphics/cards/81bc3413372a06f4fc1ba2aa80df35cb.jpg</file>
-        <file>Description/Graphics/cards/9317967-playing-card-back-side-60x90-mm.jpg</file>
-        <file>Description/Graphics/cards/9317968-トランプのカードの裏面-60-×-90-mm.jpg</file>
-        <file>Description/Graphics/cards/10443393-playing-card-back-side-60x90-mm.jpg</file>
-        <file>Description/Graphics/cards/13612246-トランプのカードの裏面-62-x-90-mm.jpg</file>
-        <file>Description/Graphics/cards/14167519-playing-card-back-side-60x90-mm.jpg</file>
-        <file>Description/Graphics/cards/77419285-playing-card-back-side.jpg</file>
-        <file>Description/Graphics/cards/a4e0696ca84a2af68e342fb3f76b7e61.jpg</file>
-        <file>Description/Graphics/cards/a4214361df73d1d2e613c38fb53c553f.jpg</file>
-        <file>Description/Graphics/cards/f9698365a69335d5090c5afdc8458bec.jpg</file>
-        <file>Description/Graphics/cards/unnamed.png</file>
-        <file>Description/Graphics/photos/galileus_Christian_Crusader_states_after_the_First_Crusade_phot_3f76cc8a-f768-430f-b89d-e6e33662c73c-1024x512.jpg</file>
-        <file>Description/Graphics/photos/leaders_of_the_crusades-1024x512.jpg</file>
-        <file>Description/Graphics/photos/The-First-Crusade.jpg</file>
     </qresource>
 </RCC>
