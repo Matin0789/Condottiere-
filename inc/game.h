@@ -50,16 +50,17 @@ public slots:
     void get_player(std::string, size_t, Color);
 
     //
-    /*void declare_warWinner(const Player&) const;
-    void declare_warWinner() const;
 
-    void declare_gameWinner(const Player&) const;*/
 signals :
     State* set_battleground(const std::vector<Player>&,const Player&, GameBoard&, FavorMarker& );
     State* set_favorground(const std::vector<Player>&,const Player&, GameBoard&, FavorMarker& );
     void showPlayerCards(const Player&);
-    void startWar(BattleMarker&, FavorMarker&);
-    std::string changePlayer(const Player& ,const std::vector<Player*>&,const Card*);
+    void startWar(const std::vector<Player>&, BattleMarker&, FavorMarker&);
+    std::string getCommand(const Player& ,const std::vector<Player*>&,const Card*);
+    std::string scarecrow_get_card(const Player&);
+    void declare_warWinner(const Player&);
+    void declare_warWinner();
+    void declare_gameWinner(const Player&);
 private:
 	//private methods
 	size_t warـanalyst();

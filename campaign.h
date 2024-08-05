@@ -33,7 +33,10 @@ class Campaign : public QMainWindow
 public:
     explicit Campaign(QWidget *parent = nullptr);
     ~Campaign();
-
+public slots:
+    void startWar(const std::vector<Player>&, BattleMarker&, FavorMarker&);
+    std::string getCommand(const Player& ,const std::vector<Player*>&,const Card*);
+    std::string scarecrow_get_card(const Player&);
 private:
 
     Ui::Campaign *ui;

@@ -14,6 +14,8 @@ class GameWinner : public QMainWindow
 public:
     explicit GameWinner(QWidget *parent = nullptr);
     ~GameWinner();
+public slots:
+    void declare(const Player&);
 
 private:
     Ui::GameWinner *ui;
