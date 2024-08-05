@@ -232,9 +232,9 @@ void Game::start()
     size_t battleSetterID = currentPlayerID;
     while (true){
         if (favorSetterID < players.size()) {
-            favorMarker.setState(emit set_favorground(players[favorSetterID], gameBoard));
+            favorMarker.setState(emit set_favorground(players ,players[favorSetterID], gameBoard, favorMarker));
         }
-        battleMarker.setState(emit set_battleground(players[battleSetterID], gameBoard));
+        battleMarker.setState(emit set_battleground(players, players[battleSetterID], gameBoard, favorMarker));
 
         std::pair<size_t, std::pair<size_t, size_t>> war_return_value = war(currentPlayerID);
         currentPlayerID = war_return_value.first;
@@ -425,15 +425,7 @@ std::pair<size_t, std::pair<size_t, size_t>> Game::war(int currentPlayerID) {   
     size_t favorSetterID = players.size();
     std::vector<size_t> spyCounter(players.size());
     for (;!activePlayers.empty(); i++) {
-        for (auto &&player : players)
-        {
-            //ui->showPlayerPlayedCards(player);
-        }
-        for (auto &&player : players)
-        {
-            //ui->showPlayerStates(player);
-        }
-        std::string command /*= ui->getCommand(*activePlayers[i],battleMarker, season)*/;
+        std::string command = emit changePlayer(*activePlayers[i], activePlayers, season);
         if (command == "pass") {       // if player select passing 
             if (activePlayers.size() == 1) currentPlayerID = activePlayers[i]->getID();
             activePlayers.erase(activePlayers.begin() + i);
@@ -447,28 +439,17 @@ std::pair<size_t, std::pair<size_t, size_t>> Game::war(int currentPlayerID) {   
             }
             else if (typeid(*drawnCard) == typeid(Scarecrow)){
                 if (!activePlayers[i]->getPlayedCards().empty()) {
-                    bool flag = false;
-                    do {
-                        //ui->showPlayerPlayedCards(*activePlayers[i]);
-                        std::string choose /*= ui->get_card_name()*/;
-                        if (choose[0] >= '0' and choose[0] <= '9'){
-                            for (const auto &card : activePlayers[i]->getPlayedCards()) {
-                                if (card->getType() == choose) {
-                                    const Card* drawnPlayedCard = activePlayers[i]->drawn_playedCard(choose);
-                                    activePlayers[i]->push_to_playedCards(drawnCard);
-                                    activePlayers[i]->push_to_cards(drawnPlayedCard);
-                                    flag = true;
-                                }
+                    //ui->showPlayerPlayedCards(*activePlayers[i]);
+                    std::string choose /*= ui->get_card_name()*/;
+                    if (choose[0] >= '0' and choose[0] <= '9'){
+                        for (const auto &card : activePlayers[i]->getPlayedCards()) {
+                            if (card->getType() == choose) {
+                                const Card* drawnPlayedCard = activePlayers[i]->drawn_playedCard(choose);
+                                activePlayers[i]->push_to_playedCards(drawnCard);
+                                activePlayers[i]->push_to_cards(drawnPlayedCard);
                             }
                         }
-                        else {
-                            //*ui << "You can only choose from yellow cards, ";
-                            flag = false;
-                        }
-                        if (!flag) {
-                            //*ui << "Please try again";
-                        }
-                    } while (!flag);
+                    }
                 }
                 else{
                     activePlayers[i]->push_to_playedCards(drawnCard);

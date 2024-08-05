@@ -13,8 +13,8 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow),
     game(new Game),
-    battleground_page(new Locateinfo("battle", this)),
-    favorground_page(new Locateinfo("favor", this))
+    battleground_page(new Locateinfo("BattleMarker", this)),
+    favorground_page(new Locateinfo( "FavorMarker", this))
 {
     ui->setupUi(this);
     this->setWindowTitle("Condottiere");

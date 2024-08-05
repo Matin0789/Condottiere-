@@ -316,5 +316,4 @@ C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_a
   C:/project/Condottiere-/inc/marker/marker.h \
   C:/project/Condottiere-/inc/marker/playermarker.h \
   C:/project/Condottiere-/inc/player.h \
-  C:/project/Condottiere-/inc/state.h \
-  C:/project/Condottiere-/inc/userinterface.h
+  C:/project/Condottiere-/inc/state.h

@@ -17,7 +17,7 @@ public:
     std::string getName() const;
     int getAge() const;
     int getID() const;
-
+    Color getColor() const;
     //
     const std::vector<const Card*>& getPlayedCards() const;
     const std::vector<const Card*>& getCards() const;
@@ -40,7 +40,7 @@ public:
     // save and load
     bool save(std::string) const;
     bool load(std::string, GameBoard&);
-    std::array<PlayerMarker, 5> markers;
+
 private:
     std::string name;
     size_t ID;
@@ -48,7 +48,7 @@ private:
     std::vector<const Card*> cards;
     std::vector<const Card*> playedCards;
     size_t stateCounter;
-
+    std::array<PlayerMarker, 5> markers;
 };
 
 #endif // PLAYER_H

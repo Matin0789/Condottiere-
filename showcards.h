@@ -6,6 +6,9 @@
 #include <QGraphicsItem>
 #include <QLabel>
 #include <QVector>
+#include <QSequentialAnimationGroup>
+#include <QPropertyAnimation>
+
 
 #include <map>
 
@@ -38,6 +41,9 @@ private:
     Campaign *campaign;
     QVector<QLabel*> cardLabel;
     std::map<std::string, std::string> cardsImageRef;
+
+    QSequentialAnimationGroup group;
+    QVector<QPropertyAnimation*> animation;
 
 };
 

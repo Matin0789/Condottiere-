@@ -10,7 +10,6 @@
 
 #include "player.h"
 #include "gameboard.h"
-#include "userinterface.h"
 
 #include "card.h"
 #include "yellowcard.h"
@@ -56,9 +55,11 @@ public slots:
 
     void declare_gameWinner(const Player&) const;*/
 signals :
-    State* set_battleground(const Player&,GameBoard&);
-    State* set_favorground(const Player&,GameBoard&);
+    State* set_battleground(const std::vector<Player>&,const Player&, GameBoard&, FavorMarker& );
+    State* set_favorground(const std::vector<Player>&,const Player&, GameBoard&, FavorMarker& );
     void showPlayerCards(const Player&);
+    void startWar(BattleMarker&, FavorMarker&);
+    std::string changePlayer(const Player& ,const std::vector<Player*>&,const Card*);
 private:
 	//private methods
 	size_t warـanalyst();
@@ -67,7 +68,9 @@ private:
 	void shuffle();
 	void distributeCards();
 	std::pair<size_t, std::pair<size_t, size_t>> war(int); // // first currentplayerID, second.first favorSetterID, second.second battleSetterID
-	//private atributes
+
+
+    //private atributes
 	static std::string help;
     //data
 	BattleMarker battleMarker;
@@ -76,7 +79,6 @@ private:
     const Card* season;
 	GameBoard gameBoard;
 	std::vector<Player> players;
-    UserInterface *ui;
 	//
 };
 

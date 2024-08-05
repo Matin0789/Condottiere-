@@ -17,7 +17,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="lbl_map">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -385,7 +385,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_101">
+   <widget class="QLabel" name="lb_borge">
     <property name="geometry">
      <rect>
       <x>490</x>
@@ -2629,7 +2629,7 @@
    <zorder>lb_player_4</zorder>
    <zorder>lb_player_5</zorder>
    <zorder>lb_player_6</zorder>
-   <zorder>label_2</zorder>
+   <zorder>lbl_map</zorder>
    <zorder>pushButton_138</zorder>
    <zorder>pushButton_140</zorder>
    <zorder>lb_plr_6_cd_1</zorder>
@@ -2643,7 +2643,7 @@
    <zorder>lb_elinia</zorder>
    <zorder>lb_talmone</zorder>
    <zorder>lb_morina</zorder>
-   <zorder>label_101</zorder>
+   <zorder>lb_borge</zorder>
    <zorder>lb_pladaci</zorder>
    <zorder>lb_bella</zorder>
    <zorder>lb_caline</zorder>

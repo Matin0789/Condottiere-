@@ -9,26 +9,40 @@ Campaign::Campaign(QWidget *parent)
 {
     ui->setupUi(this);
 
-    cardsImageRef["Bishop"]    = "border-image:url(" + std::string(BISHOP_IMAGE)    + ")";
-    cardsImageRef["Drummer"]   = "border-image:url(" + std::string(DRUMMER_IMAGE)   + ")";
-    cardsImageRef["Heroine"]   = "border-image:url(" + std::string(HEROINE_IMAGE)   + ")";
-    cardsImageRef["Scarecrow"] = "border-image:url(" + std::string(SCARECROW_IMAGE) + ")";
-    cardsImageRef["Spring"]    = "border-image:url(" + std::string(SPRING_IMAGE)    + ")";
-    cardsImageRef["Winter"]    = "border-image:url(" + std::string(WINTER_IMAGE)    + ")";
-    cardsImageRef["Spy"]       = "border-image:url(" + std::string(SPY_IMAGE)       + ")";
-    cardsImageRef["Turncoat"]  = "border-image:url(" + std::string(TURNCOAT_IMAGE)  + ")";
-    cardsImageRef["1"]         = "border-image:url(" + std::string(ONE_IMAGE)  + ")";
-    cardsImageRef["2"]         = "border-image:url(" + std::string(TWO_IMAGE)  + ")";
-    cardsImageRef["3"]         = "border-image:url(" + std::string(THREE_IMAGE)  + ")";
-    cardsImageRef["4"]         = "border-image:url(" + std::string(FOUR_IMAGE)  + ")";
-    cardsImageRef["5"]         = "border-image:url(" + std::string(FIVE_IMAGE)  + ")";
-    cardsImageRef["6"]         = "border-image:url(" + std::string(SIX_IMAGE)  + ")";
-    cardsImageRef["10"]        = "border-image:url(" + std::string(TEN_IMAGE)  + ")";
+    cardsImageRef["Bishop"]    = "border-image:url(" + QString(BISHOP_IMAGE)    + ")";
+    cardsImageRef["Drummer"]   = "border-image:url(" + QString(DRUMMER_IMAGE)   + ")";
+    cardsImageRef["Heroine"]   = "border-image:url(" + QString(HEROINE_IMAGE)   + ")";
+    cardsImageRef["Scarecrow"] = "border-image:url(" + QString(SCARECROW_IMAGE) + ")";
+    cardsImageRef["Spring"]    = "border-image:url(" + QString(SPRING_IMAGE)    + ")";
+    cardsImageRef["Winter"]    = "border-image:url(" + QString(WINTER_IMAGE)    + ")";
+    cardsImageRef["Spy"]       = "border-image:url(" + QString(SPY_IMAGE)       + ")";
+    cardsImageRef["Turncoat"]  = "border-image:url(" + QString(TURNCOAT_IMAGE)  + ")";
+    cardsImageRef["1"]         = "border-image:url(" + QString(ONE_IMAGE)  + ")";
+    cardsImageRef["2"]         = "border-image:url(" + QString(TWO_IMAGE)  + ")";
+    cardsImageRef["3"]         = "border-image:url(" + QString(THREE_IMAGE)  + ")";
+    cardsImageRef["4"]         = "border-image:url(" + QString(FOUR_IMAGE)  + ")";
+    cardsImageRef["5"]         = "border-image:url(" + QString(FIVE_IMAGE)  + ")";
+    cardsImageRef["6"]         = "border-image:url(" + QString(SIX_IMAGE)  + ")";
+    cardsImageRef["10"]        = "border-image:url(" + QString(TEN_IMAGE)  + ")";
 
-    markers["BattleMarker"] = "border-image:url(" + std::string(BATTLE_MARKER_IMAGE)  + ")";
-    markers["FavorMarker"]  = "border-image:url(" + std::string(PEACE_MARKER_IMAGE)   + ")";
-    markers[""]             = "border-image:url(" + std::string(PLAYER_MARKER_IMAGE)  + ")";
+    markers["BattleMarker"] = "border-image:url(" + QString(BATTLE_MARKER_IMAGE)  + ")";
+    markers["FavorMarker"]  = "border-image:url(" + QString(PEACE_MARKER_IMAGE)   + ")";
+    markers[""]             = "border-image:url(" + QString(PLAYER_MARKER_IMAGE)  + ")";
 
+    stateLabels["BELLA"] = ui->lb_bella;
+    stateLabels["PLADACI"] = ui->lb_pladaci;
+    stateLabels["ROLLO"] = ui->lb_rollo;
+    stateLabels["ELINIA"] = ui->lb_elinia;
+    stateLabels["CALINE"] = ui->lb_caline;
+    stateLabels["BORGE"] = ui->lb_borge;
+    stateLabels["OLIVADI"] = ui->lb_olivadi;
+    stateLabels["ARMENTO"] = ui->lb_armento;
+    stateLabels["TALMONE"] = ui->lb_talmone;
+    stateLabels["ENNA"] = ui->lb_enna;
+    stateLabels["LIA"] = ui->lb_lia;
+    stateLabels["MORINA"] = ui->lb_morina;
+    stateLabels["DIMASE"] = ui->lb_dimase;
+    stateLabels["ATELA"] = ui->lb_atela;
 }
 
 Campaign::~Campaign()

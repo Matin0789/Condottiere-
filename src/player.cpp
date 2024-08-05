@@ -39,7 +39,11 @@ int Player::getAge() const  // submit age
 
 int Player::getID() const {  // submit id
     return ID;
-};
+}
+
+Color Player::getColor() const {
+    return markers[0].getColor();
+}
 
 const std::vector<const Card*>& Player::getPlayedCards() const {  // submit played cards
     return playedCards;

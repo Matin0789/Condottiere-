@@ -19,6 +19,11 @@ bool Marker::is_set() const{
     return set;
 }
 
+Color Marker::getColor() const
+{
+    return color;
+}
+
 bool Marker::save(std::string filePath) const {
     std::ofstream file(filePath, std::ios::binary | std::ios::app);
     if (!file) {

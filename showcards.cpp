@@ -2,7 +2,7 @@
 #include "ui_showcards.h"
 #include "filepath.h"
 
-#include <QThread>
+#include <QColor>
 
 showCards::showCards(QWidget *parent)
     : QDialog(parent)
@@ -49,28 +49,103 @@ showCards::~showCards()
 
 void showCards::getPlayer(const Player &player)
 {
+    //QColor playerColor;
+    QString lbl_colorStyleSheet;
+    switch(player.getColor()) {
+    case orange :
+        //playerColor.setNamedColor("orange");
+        lbl_colorStyleSheet = "QLabel { background-color : orange;}";
+        break;
+    case blue   :
+        //playerColor.setNamedColor("blue");
+        lbl_colorStyleSheet = "QLabel { background-color : blue;}";
+        break;
+    case green  :
+        //playerColor.setNamedColor("green");
+        lbl_colorStyleSheet = "QLabel { background-color : green;}";
+        break;
+    case red    :
+        //playerColor.setNamedColor("red");
+        lbl_colorStyleSheet = "QLabel { background-color : red;}";
+        break;
+    case gray   :
+        //playerColor.setNamedColor("gray");
+        lbl_colorStyleSheet = "QLabel { background-color : gray;}";
+        break;
+    case brown  :
+        //playerColor.setNamedColor("brown");
+        lbl_colorStyleSheet = "QLabel { background-color : brown;}";
+        break;
+    default     :
+        //playerColor.setNamedColor("white");
+        lbl_colorStyleSheet = "QLabel { background-color : white;}";
+        break;
+    }
+    ui->lb_color->setStyleSheet(lbl_colorStyleSheet);
 
+    ui->btn_lets_go->setVisible(false);
     for (auto &&label : cardLabel) {
+        label->setStyleSheet("border-image:url(:/Description/Graphics/Assets/zard/Back.png)");
         label->setVisible(false);
     }
     ui->lb_player_counter->setText("Player " + QString::number(player.getID() + 1));
     this->show();
 
-    QEventLoop loop;
-    /*QObject::connect(ui->btn_lets_go, SIGNAL(clicked(bool)), &loop, SLOT(quit()));
-    loop.exec();
-    QObject::disconnect(ui->btn_lets_go, SIGNAL(clicked(bool)), &loop, SLOT(quit()));*/
-
     const std::vector<const Card*>& playerCards = player.getCards();
     for (int i = 0; i < playerCards.size(); ++i) {
-        cardLabel[i]->setStyleSheet(QString::fromStdString(cardsImageRef[playerCards[i]->getType()]));
-        cardLabel[i]->setVisible(true);
-        QThread::msleep(10);
+        animation.push_back(new QPropertyAnimation(cardLabel[i], "geometry", this));
     }
 
+    QSequentialAnimationGroup group;
+    for (int i = 0; i < playerCards.size(); ++i) {
+        cardLabel[i]->setVisible(true);
+        QRect end(cardLabel[i]->geometry());
+        cardLabel[i]->setGeometry(QRect(0 ,0, 0, 0));
+
+        animation[i]->setDuration(300);
+        animation[i]->setStartValue(QRect(0 ,0, 0, 0));
+        animation[i]->setEndValue(end);
+        group.addAnimation(animation[i]);
+    }
+    group.start();
+
+    QEventLoop loop;
+    QObject::connect(&group, SIGNAL(finished()), &loop, SLOT(quit()));
+    loop.exec();
+    ui->btn_lets_go->setVisible(true);
+    QObject::disconnect(&group, SIGNAL(finished()), &loop, SLOT(quit()));
+
+    QObject::connect(ui->btn_lets_go, SIGNAL(clicked(bool)), &loop, SLOT(quit()));
+    loop.exec();
+    QObject::disconnect(ui->btn_lets_go, SIGNAL(clicked(bool)), &loop, SLOT(quit()));
+
+
+    for (int i = 0; i < playerCards.size(); ++i) {
+        QRect end(cardLabel[i]->geometry());
+        animation[i]->setDuration(300);
+        animation[i]->setStartValue(end);
+        animation[i]->setEndValue(QRect(end.left() + (end.width()/2), end.top(), 0, end.height()));
+        animation[i]->start();
+        QEventLoop loop;
+        QObject::connect(animation[i], SIGNAL(finished()), &loop, SLOT(quit()));
+        loop.exec();
+        cardLabel[i]->setStyleSheet(QString::fromStdString(cardsImageRef[playerCards[i]->getType()]));
+
+        animation[i]->setDuration(300);
+        animation[i]->setStartValue(QRect(end.left() + (end.width()/2), end.top(), 0, end.height()));
+        animation[i]->setEndValue(end);
+        animation[i]->start();
+    }
+    QObject::disconnect(ui->btn_lets_go, SIGNAL(clicked(bool)), &loop, SLOT(quit()));
+    ui->btn_lets_go->setVisible(false);
     QObject::connect(ui->btn_Nplayer, SIGNAL(clicked(bool)), &loop, SLOT(quit()));
     loop.exec();
     QObject::disconnect(ui->btn_Nplayer, SIGNAL(clicked(bool)), &loop, SLOT(quit()));
+
+    for (int i = 0; i < playerCards.size(); ++i) {
+        delete animation[i];
+    }
+    animation.clear();
     this->hide();
 }
 
