@@ -1,12 +1,12 @@
 # Fdb version 3
-["xdvipdfmx"] 1722858528 "WorkReport.xdv" "WorkReport.pdf" "WorkReport" 1722858529
-  "WorkReport.xdv" 1722858528 209252 44fdaae3e7a89c752e1676a16cbb1f86 "xelatex"
+["xdvipdfmx"] 1722859286 "WorkReport.xdv" "WorkReport.pdf" "WorkReport" 1722859286
+  "WorkReport.xdv" 1722859286 209472 78419ae9478cbfd133d36f2cc258ba74 "xelatex"
   (generated)
   "WorkReport.pdf"
-["xelatex"] 1722858525 "/home/matin/Documents/University/Advanced/Project/Condottiere-/workReport/WorkReport.tex" "WorkReport.xdv" "WorkReport" 1722858529
+["xelatex"] 1722859283 "/home/matin/Documents/University/Advanced/Project/Condottiere-/workReport/WorkReport.tex" "WorkReport.xdv" "WorkReport" 1722859286
   "/etc/texmf/web2c/texmf.cnf" 1706551891 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/matin/.texlive2021/texmf-var/web2c/xetex/xelatex.fmt" 1717055491 3606616 0eff829f5979ccd6ce182b9a2b213e3a ""
-  "/home/matin/Documents/University/Advanced/Project/Condottiere-/workReport/WorkReport.tex" 1722858519 27396 ee01160bb6f2d7888bc96a05ae542eee ""
+  "/home/matin/Documents/University/Advanced/Project/Condottiere-/workReport/WorkReport.tex" 1722859248 27459 088b4196256f9e55e634807b92237a32 ""
   "/home/matin/texmf/tex/xelatex/xepersian/footnote-xepersian.def" 1645392184 2032 925324c7e792eb09f55c80e2d3b3c3b5 ""
   "/home/matin/texmf/tex/xelatex/xepersian/hyperref-xepersian.def" 1645392184 3464 34913ba6d370fe5640882042aa30a7b5 ""
   "/home/matin/texmf/tex/xelatex/xepersian/loadingorder-xepersian.def" 1645392184 4455 c619d7d8c852676c055e0e312e7a91dc ""
@@ -170,10 +170,10 @@
   "Graphics/0d430388ec86043008f3ddd51b87958a.jpeg" 1722858258 21821 c8883737ef812da9627f44481bc90044 ""
   "Graphics/BASU_logo.png" 1722858258 8265 99a5458fe64928071521352680874b55 ""
   "Graphics/nav-logo.png" 1722858258 8107 35e287152256388327344ab98d30054a ""
-  "WorkReport.aux" 1722858528 8963 2e710db3c48f9ba80437417c16d92be7 "xelatex"
-  "WorkReport.out" 1722858528 2381 14bd707f1ebc5bccab660d82e4aa0f6b "xelatex"
-  "WorkReport.tex" 1722858519 27396 ee01160bb6f2d7888bc96a05ae542eee ""
-  "WorkReport.toc" 1722858528 4109 74dde1061a457b38f8769a57e519608d "xelatex"
+  "WorkReport.aux" 1722859286 8962 5d24c485899005634c963a0ea24c47c7 "xelatex"
+  "WorkReport.out" 1722859286 2381 14bd707f1ebc5bccab660d82e4aa0f6b "xelatex"
+  "WorkReport.tex" 1722859248 27459 088b4196256f9e55e634807b92237a32 ""
+  "WorkReport.toc" 1722859286 4109 74dde1061a457b38f8769a57e519608d "xelatex"
   (generated)
   "WorkReport.aux"
   "WorkReport.log"

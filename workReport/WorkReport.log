@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.5.30)  5 AUG 2024 15:18
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.5.30)  5 AUG 2024 15:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -964,16 +964,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--158
 [][]
  []
 
-
-Overfull \hbox (779.56601pt too wide) in paragraph at lines 161--163
-[][][]\TU/lmroman10-regular(0)/m/n/18 Start_*start[]\TU/BZar(0)/m/n/18 ،[]\TU/lmroman10-regular(0)/m/n/18 showCards_*showcards[]\TU/BZar(0)/m/n/18 ،[]\TU/lmroman10-regular(0)/m/n/18 Campaign_*campaign[]\TU/BZar(0)/m/n/18 ،[]\TU/lmroman10-regular(0)/m/n/18 Game_*game[]\TU/BZar(0)/m/n/18 ،[]\TU/lmroman10-regular(0)/m/n/18 Locateinfo_*battleground_page[]\TU/BZar(0)/m/n/18 ،[]\TU/lmroman10-regular(0)/m/n/18 Locateinfo_*favorground_page[] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 164--166
-[][]
- []
-
 File: Graphics/nav-logo.png Graphic file (type bmp)
 <Graphics/nav-logo.png>
 
@@ -986,22 +976,27 @@ Package fancyhdr Warning: \headheight is too small (24.0pt):
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 173--175
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--171
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
 [][]
  []
 
 
-Overfull \hbox (1.90202pt too wide) in paragraph at lines 173--174
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
+[][]
+ []
+
+
+Overfull \hbox (1.90202pt too wide) in paragraph at lines 182--183
 [][][]\TU/lmroman10-regular(0)/m/n/18 showcards[] \TU/BZar(0)/m/n/18 در این صفحه کارت هایی که به صورت شانسی[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--174
+Underfull \hbox (badness 10000) in paragraph at lines 182--183
 [][]
  []
 
@@ -1017,22 +1012,22 @@ Package fancyhdr Warning: \headheight is too small (24.0pt):
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
 [10]
-Overfull \hbox (38.25713pt too wide) in paragraph at lines 178--183
+Overfull \hbox (38.25713pt too wide) in paragraph at lines 187--192
 []\TU/BZar(0)/m/n/18 دو متغیر خصوصی نیز با نام های []\TU/lmroman10-regular(0)/m/n/18 playersNumber[] \TU/BZar(0)/m/n/18 ، []\TU/lmroman10-regular(0)/m/n/18 playerID[] []
  []
 
 
-Overfull \hbox (4.90938pt too wide) in paragraph at lines 178--183
+Overfull \hbox (4.90938pt too wide) in paragraph at lines 187--192
 []\TU/BZar(0)/m/n/18 صفحه هست و دیگری برای اطلاعات بازیکنان []\TU/lmroman10-regular(0)/m/n/18 get_player[] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--183
+Underfull \hbox (badness 10000) in paragraph at lines 187--192
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--185
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
 [][]
  []
 
@@ -1048,12 +1043,12 @@ Package fancyhdr Warning: \headheight is too small (24.0pt):
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 193--194
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
 [][]
  []
 
 
-Overfull \hbox (22.32434pt too wide) in paragraph at lines 195--198
+Overfull \hbox (22.32434pt too wide) in paragraph at lines 204--207
 []\TU/BZar(0)/m/n/18 شامل ۱۴ استان میشوند این استان ها با استفاده از []\TU/lmroman10-regular(0)/m/n/18 unordered_map[][]
  []
 
@@ -1069,7 +1064,7 @@ Package fancyhdr Warning: \headheight is too small (24.0pt):
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 212--214
+Underfull \hbox (badness 10000) in paragraph at lines 221--223
 [][]
  []
 
@@ -1085,7 +1080,7 @@ Package fancyhdr Warning: \headheight is too small (24.0pt):
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 251--254
+Underfull \hbox (badness 10000) in paragraph at lines 260--263
 [][]
  []
 
@@ -1114,12 +1109,12 @@ Package fancyhdr Warning: \headheight is too small (24.0pt):
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 284--285
+Underfull \hbox (badness 10000) in paragraph at lines 293--294
 [][]
  []
 
 
-Overfull \hbox (2.3174pt too wide) in paragraph at lines 288--289
+Overfull \hbox (2.3174pt too wide) in paragraph at lines 297--298
 [][][]\TU/lmroman10-regular(0)/m/n/18 applyFeature[] \TU/BZar(0)/m/n/18 این تابع نیز برای اعمال ویژگی کارت است []
  []
 
@@ -1161,7 +1156,7 @@ Package fancyhdr Warning: \headheight is too small (24.0pt):
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 347--348
+Underfull \hbox (badness 10000) in paragraph at lines 356--357
 [][]
  []
 
@@ -1207,7 +1202,7 @@ Missing character: There is no ت (U+062A) in font [lmroman10-regular]/OT:script
 Missing character: There is no ا (U+0627) in font [lmroman10-regular]/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no ن (U+0646) in font [lmroman10-regular]/OT:script=latn;language=dflt;mapping=tex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 372--373
+Underfull \hbox (badness 10000) in paragraph at lines 381--382
 [][]
  []
 
@@ -1223,12 +1218,12 @@ Package fancyhdr Warning: \headheight is too small (24.0pt):
 File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 <Graphics/0d430388ec86043008f3ddd51b87958a.jpeg>
 [20]
-Overfull \hbox (15.00752pt too wide) in paragraph at lines 381--382
+Overfull \hbox (15.00752pt too wide) in paragraph at lines 390--391
 [][][]\TU/lmroman10-regular(0)/m/n/18 getPlayedCards[] \TU/BZar(0)/m/n/18 برای ارسال کارت های بازی شده بازیکن []
  []
 
 
-Overfull \hbox (8.67351pt too wide) in paragraph at lines 388--389
+Overfull \hbox (8.67351pt too wide) in paragraph at lines 397--398
 [][][]\TU/lmroman10-regular(0)/m/n/18 push_to_playedCards[] \TU/BZar(0)/m/n/18 افزودن به کارت های مصرف[]
  []
 
@@ -1249,7 +1244,7 @@ File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
  [22
 
 ]
-Overfull \hbox (6.39075pt too wide) in paragraph at lines 401--402
+Overfull \hbox (6.39075pt too wide) in paragraph at lines 410--411
 [][]\TU/BZar(0)/m/n/18 پیاده سازی ماهیت استان ها با استفاده از []\TU/lmroman10-regular(0)/m/n/18 unordered_map[] []
  []
 
@@ -1272,7 +1267,7 @@ File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
 ]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 411.
+(hyperref)                than one, level fixed on input line 420.
 
 File: Graphics/nav-logo.png Graphic file (type bmp)
 <Graphics/nav-logo.png>
@@ -1291,7 +1286,7 @@ File: Graphics/0d430388ec86043008f3ddd51b87958a.jpeg Graphic file (type bmp)
  [26
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 420--421
+Underfull \hbox (badness 10000) in paragraph at lines 429--430
 [][]
  []
 
@@ -1318,12 +1313,12 @@ Package rerunfilecheck Info: File `WorkReport.out' has not changed.
 (rerunfilecheck)             Checksum: 14BD707F1EBC5BCCAB660D82E4AA0F6B;2381.
  ) 
 Here is how much of TeX's memory you used:
- 23707 strings out of 478190
- 501146 string characters out of 5854827
+ 23709 strings out of 478190
+ 501239 string characters out of 5854827
  901806 words of memory out of 5000000
- 43842 multiletter control sequences out of 15000+600000
- 475349 words of font info for 78 fonts, out of 8000000 for 9000
+ 43843 multiletter control sequences out of 15000+600000
+ 475357 words of font info for 79 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 99i,13n,103p,1114b,798s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,13n,103p,1114b,916s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on WorkReport.xdv (31 pages, 209252 bytes).
+Output written on WorkReport.xdv (31 pages, 209472 bytes).
