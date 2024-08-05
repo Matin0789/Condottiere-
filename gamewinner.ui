@@ -18,7 +18,7 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>-20</y>
+      <y>0</y>
       <width>800</width>
       <height>621</height>
      </rect>
@@ -36,8 +36,8 @@
    <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>230</y>
+      <x>260</x>
+      <y>450</y>
       <width>121</width>
       <height>41</height>
      </rect>
@@ -103,7 +103,7 @@ color: rgb(0, 0, 0);</string>
     <property name="geometry">
      <rect>
       <x>420</x>
-      <y>230</y>
+      <y>450</y>
       <width>121</width>
       <height>41</height>
      </rect>
@@ -140,6 +140,268 @@ QPushButton : pressed
      <string>Quit Game</string>
     </property>
    </widget>
+   <widget class="QLabel" name="lb_pladaci">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>150</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ClosedHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_talmone">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>170</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ClosedHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_caline">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>180</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ClosedHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_bella">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>130</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ClosedHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_olivadi">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>280</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ClosedHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_enna">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>230</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ClosedHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_atela">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>320</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ClosedHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_borge">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>180</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ClosedHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>90</y>
+      <width>451</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/Description/Graphics/Assets/Map.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_morina">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>220</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ClosedHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_lia">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>360</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ClosedHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_elinia">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>180</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ClosedHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_dimase">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>340</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ClosedHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_rollo">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>110</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ClosedHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_armento">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>310</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ClosedHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>label_2</zorder>
+   <zorder>pushButton_3</zorder>
+   <zorder>lb_player_counter</zorder>
+   <zorder>pushButton_4</zorder>
+   <zorder>lb_pladaci</zorder>
+   <zorder>lb_talmone</zorder>
+   <zorder>lb_caline</zorder>
+   <zorder>lb_bella</zorder>
+   <zorder>lb_olivadi</zorder>
+   <zorder>lb_enna</zorder>
+   <zorder>lb_atela</zorder>
+   <zorder>lb_borge</zorder>
+   <zorder>lb_morina</zorder>
+   <zorder>lb_lia</zorder>
+   <zorder>lb_elinia</zorder>
+   <zorder>lb_dimase</zorder>
+   <zorder>lb_rollo</zorder>
+   <zorder>lb_armento</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
