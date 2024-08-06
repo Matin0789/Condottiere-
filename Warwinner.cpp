@@ -20,8 +20,8 @@ void Winner::declare(const Player &winner, BattleMarker& battleMarker, bool win)
     this->show();
     if (win) {
         ui->label_2->setText("The player" +
-                             QString::number(winner.getID()) +
-                             "Won the Battle Of Emperors and captured the " +
+                             QString::number(winner.getID() + 1) +
+                             " Won the Battle and captured the " +
                              QString::fromStdString(battleMarker.getState().getName()));
     }
     else {

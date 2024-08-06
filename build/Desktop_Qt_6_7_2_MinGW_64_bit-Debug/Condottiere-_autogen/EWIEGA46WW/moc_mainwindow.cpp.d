@@ -1,6 +1,7 @@
 C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/EWIEGA46WW/moc_mainwindow.cpp: C:/project/Condottiere-/mainwindow.h \
   C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/moc_predefs.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/QObject \
+  C:/Qt/6.7.2/mingw_64/include/QtCore/QParallelAnimationGroup \
   C:/Qt/6.7.2/mingw_64/include/QtCore/QPropertyAnimation \
   C:/Qt/6.7.2/mingw_64/include/QtCore/QSequentialAnimationGroup \
   C:/Qt/6.7.2/mingw_64/include/QtCore/QVector \
@@ -75,6 +76,7 @@ C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_a
   C:/Qt/6.7.2/mingw_64/include/QtCore/qobjectdefs_impl.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qoverload.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qpair.h \
+  C:/Qt/6.7.2/mingw_64/include/QtCore/qparallelanimationgroup.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qpoint.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qprocessordetection.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qpropertyanimation.h \

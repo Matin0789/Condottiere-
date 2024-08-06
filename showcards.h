@@ -6,9 +6,11 @@
 #include <QGraphicsItem>
 #include <QLabel>
 #include <QVector>
+#include <QParallelAnimationGroup>
 #include <QSequentialAnimationGroup>
 #include <QPropertyAnimation>
-
+#include <QMediaPlayer>
+#include <QAudioOutput>
 
 #include <map>
 
@@ -44,6 +46,9 @@ private:
 
     QSequentialAnimationGroup group;
     QVector<QPropertyAnimation*> animation;
+
+    QMediaPlayer* audioPlayer;
+    QAudioOutput* audioOutput;
 
 };
 

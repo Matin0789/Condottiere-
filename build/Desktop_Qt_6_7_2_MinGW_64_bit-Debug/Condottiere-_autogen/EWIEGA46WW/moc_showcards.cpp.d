@@ -1,6 +1,7 @@
 C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/EWIEGA46WW/moc_showcards.cpp: C:/project/Condottiere-/showcards.h \
   C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/moc_predefs.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/QObject \
+  C:/Qt/6.7.2/mingw_64/include/QtCore/QParallelAnimationGroup \
   C:/Qt/6.7.2/mingw_64/include/QtCore/QPropertyAnimation \
   C:/Qt/6.7.2/mingw_64/include/QtCore/QSequentialAnimationGroup \
   C:/Qt/6.7.2/mingw_64/include/QtCore/QVector \
@@ -64,6 +65,7 @@ C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_a
   C:/Qt/6.7.2/mingw_64/include/QtCore/qmargins.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qmath.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qmetacontainer.h \
+  C:/Qt/6.7.2/mingw_64/include/QtCore/qmetaobject.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qmetatype.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qminmax.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qnamespace.h \
@@ -74,6 +76,7 @@ C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_a
   C:/Qt/6.7.2/mingw_64/include/QtCore/qobjectdefs_impl.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qoverload.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qpair.h \
+  C:/Qt/6.7.2/mingw_64/include/QtCore/qparallelanimationgroup.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qpoint.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qprocessordetection.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qpropertyanimation.h \
@@ -161,6 +164,16 @@ C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_a
   C:/Qt/6.7.2/mingw_64/include/QtGui/qtransform.h \
   C:/Qt/6.7.2/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.7.2/mingw_64/include/QtGui/qwindowdefs_win.h \
+  C:/Qt/6.7.2/mingw_64/include/QtMultimedia/QAudioOutput \
+  C:/Qt/6.7.2/mingw_64/include/QtMultimedia/QMediaPlayer \
+  C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qaudio.h \
+  C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qaudiooutput.h \
+  C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qmediaenumdebug.h \
+  C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qmediaplayer.h \
+  C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtaudio.h \
+  C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
+  C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
+  C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/QDialog \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/QGraphicsItem \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/QGraphicsPixmapItem \

@@ -33,11 +33,19 @@ Locateinfo::Locateinfo(QString type,QWidget *parent)
     stateLabels["MORINA"] = ui->lb_morina;
     stateLabels["DIMASE"] = ui->lb_dimase;
     stateLabels["ATELA"] = ui->lb_atela;
+
+    player = new QMediaPlayer;
+    audioOutput = new QAudioOutput;
+    player->setAudioOutput(audioOutput);
+    player->setSource(QUrl::fromLocalFile("../../Description/Graphics/Sounds/sword.mp3"));
+    audioOutput->setVolume(100);
 }
 
 Locateinfo::~Locateinfo()
 {
     delete ui;
+    delete audioOutput;
+    delete player;
 }
 
 State *Locateinfo::set_ground(const std::vector<Player>& players,const Player & currentPlayer,GameBoard & gameBoard, FavorMarker& favorMarker)
@@ -107,7 +115,7 @@ void Locateinfo::on_le_peace_sign_cursorPositionChanged(int arg1, int arg2)
 
 void Locateinfo::on_btn_next_clicked()
 {
-
+    player->play();
 }
 
 

@@ -37,7 +37,7 @@ MainWindow::MainWindow(QWidget *parent)
     audioOutput = new QAudioOutput;
     player->setAudioOutput(audioOutput);
     player->setSource(QUrl::fromLocalFile("../../Description/Graphics/Sounds/background_music.mp3"));
-    audioOutput->setVolume(100);
+    audioOutput->setVolume(1);
     player->play();
     player->setLoops(QMediaPlayer::Infinite);
 }

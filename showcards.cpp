@@ -40,11 +40,20 @@ showCards::showCards(QWidget *parent)
     cardsImageRef["6"]         = "border-image:url(" + std::string(SIX_IMAGE)  + ")";
     cardsImageRef["10"]        = "border-image:url(" + std::string(TEN_IMAGE)  + ")";
 
+    audioPlayer = new QMediaPlayer;
+    audioOutput = new QAudioOutput;
+    audioPlayer->setAudioOutput(audioOutput);
+    audioPlayer->setSource(QUrl::fromLocalFile("../../Description/Graphics/Sounds/distribute.mp3"));
+    audioOutput->setVolume(100);
+    audioPlayer->setLoops(QMediaPlayer::Infinite);
+    audioPlayer->setPlaybackRate(3.0);
 }
 
 showCards::~showCards()
 {
     delete ui;
+    delete audioOutput;
+    delete audioPlayer;
 }
 
 void showCards::getPlayer(const Player &player)
@@ -74,15 +83,18 @@ void showCards::getPlayer(const Player &player)
         animation[i]->setStartValue(QRect(0 ,0, 0, 0));
         animation[i]->setEndValue(end);
         group.addAnimation(animation[i]);
-    }
-    group.start();
 
+    }
+
+    QObject::connect(&group, SIGNAL(finished()), audioPlayer, SLOT(stop()));
     QEventLoop loop;
     QObject::connect(&group, SIGNAL(finished()), &loop, SLOT(quit()));
+    audioPlayer->play();
+    group.start();
     loop.exec();
     ui->btn_lets_go->setVisible(true);
     QObject::disconnect(&group, SIGNAL(finished()), &loop, SLOT(quit()));
-
+    QObject::disconnect(&group, SIGNAL(finished()), audioPlayer, SLOT(stop()));
     QObject::connect(ui->btn_lets_go, SIGNAL(clicked(bool)), &loop, SLOT(quit()));
     loop.exec();
     QObject::disconnect(ui->btn_lets_go, SIGNAL(clicked(bool)), &loop, SLOT(quit()));

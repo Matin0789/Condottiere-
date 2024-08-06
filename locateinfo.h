@@ -2,9 +2,10 @@
 #define LOCATEINFO_H
 
 #include <QDialog>
+#include <QMediaPlayer>
+#include <QAudioOutput>
 
 #include "campaign.h"
-#include "game.h"
 #include "userinterface.h"
 #include "showcards.h"
 
@@ -42,6 +43,9 @@ private:
     QString type;
     std::map<std::string, QString> markers;
     std::map<std::string, QLabel*> stateLabels;
+
+    QMediaPlayer* player;
+    QAudioOutput* audioOutput;
 
 };
 

@@ -2252,6 +2252,7 @@ C:/project/Condottiere-/inc/player.h
 C:/project/Condottiere-/locateinfo.h
  mmc:Q_OBJECT
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/QObject
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/QParallelAnimationGroup
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/QPropertyAnimation
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/QSequentialAnimationGroup
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/QVector
@@ -2315,6 +2316,7 @@ C:/project/Condottiere-/locateinfo.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qmargins.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qmath.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qmetacontainer.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qmetaobject.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qmetatype.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qminmax.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qnamespace.h
@@ -2325,6 +2327,7 @@ C:/project/Condottiere-/locateinfo.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qobjectdefs_impl.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qoverload.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qpair.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qparallelanimationgroup.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qpoint.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qprocessordetection.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qpropertyanimation.h
@@ -2412,6 +2415,16 @@ C:/project/Condottiere-/locateinfo.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtGui/qtransform.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtGui/qwindowdefs.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtGui/qwindowdefs_win.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/QAudioOutput
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/QMediaPlayer
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qaudio.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qaudiooutput.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qmediaenumdebug.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qmediaplayer.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtaudio.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimedia-config.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaexports.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaglobal.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtWidgets/QDialog
  mdp:C:/Qt/6.7.2/mingw_64/include/QtWidgets/QGraphicsItem
  mdp:C:/Qt/6.7.2/mingw_64/include/QtWidgets/QGraphicsPixmapItem
@@ -2665,6 +2678,7 @@ C:/project/Condottiere-/locateinfo.h
 C:/project/Condottiere-/mainwindow.h
  mmc:Q_OBJECT
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/QObject
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/QParallelAnimationGroup
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/QPropertyAnimation
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/QSequentialAnimationGroup
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/QVector
@@ -2739,6 +2753,7 @@ C:/project/Condottiere-/mainwindow.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qobjectdefs_impl.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qoverload.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qpair.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qparallelanimationgroup.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qpoint.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qprocessordetection.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qpropertyanimation.h
@@ -3094,6 +3109,7 @@ C:/project/Condottiere-/mainwindow.h
 C:/project/Condottiere-/setplayer.h
  mmc:Q_OBJECT
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/QObject
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/QParallelAnimationGroup
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/QPropertyAnimation
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/QSequentialAnimationGroup
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/QVector
@@ -3157,6 +3173,7 @@ C:/project/Condottiere-/setplayer.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qmargins.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qmath.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qmetacontainer.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qmetaobject.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qmetatype.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qminmax.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qnamespace.h
@@ -3167,6 +3184,7 @@ C:/project/Condottiere-/setplayer.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qobjectdefs_impl.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qoverload.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qpair.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qparallelanimationgroup.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qpoint.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qprocessordetection.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qpropertyanimation.h
@@ -3254,6 +3272,16 @@ C:/project/Condottiere-/setplayer.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtGui/qtransform.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtGui/qwindowdefs.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtGui/qwindowdefs_win.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/QAudioOutput
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/QMediaPlayer
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qaudio.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qaudiooutput.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qmediaenumdebug.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qmediaplayer.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtaudio.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimedia-config.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaexports.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaglobal.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtWidgets/QDialog
  mdp:C:/Qt/6.7.2/mingw_64/include/QtWidgets/QGraphicsItem
  mdp:C:/Qt/6.7.2/mingw_64/include/QtWidgets/QGraphicsPixmapItem
@@ -3507,6 +3535,7 @@ C:/project/Condottiere-/setplayer.h
 C:/project/Condottiere-/showcards.h
  mmc:Q_OBJECT
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/QObject
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/QParallelAnimationGroup
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/QPropertyAnimation
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/QSequentialAnimationGroup
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/QVector
@@ -3570,6 +3599,7 @@ C:/project/Condottiere-/showcards.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qmargins.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qmath.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qmetacontainer.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qmetaobject.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qmetatype.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qminmax.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qnamespace.h
@@ -3580,6 +3610,7 @@ C:/project/Condottiere-/showcards.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qobjectdefs_impl.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qoverload.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qpair.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qparallelanimationgroup.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qpoint.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qprocessordetection.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qpropertyanimation.h
@@ -3667,6 +3698,16 @@ C:/project/Condottiere-/showcards.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtGui/qtransform.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtGui/qwindowdefs.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtGui/qwindowdefs_win.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/QAudioOutput
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/QMediaPlayer
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qaudio.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qaudiooutput.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qmediaenumdebug.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qmediaplayer.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtaudio.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimedia-config.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaexports.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaglobal.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtWidgets/QDialog
  mdp:C:/Qt/6.7.2/mingw_64/include/QtWidgets/QGraphicsItem
  mdp:C:/Qt/6.7.2/mingw_64/include/QtWidgets/QGraphicsPixmapItem
@@ -3919,6 +3960,7 @@ C:/project/Condottiere-/showcards.h
 C:/project/Condottiere-/start.h
  mmc:Q_OBJECT
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/QObject
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/QParallelAnimationGroup
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/QPropertyAnimation
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/QSequentialAnimationGroup
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/QVector
@@ -3982,6 +4024,7 @@ C:/project/Condottiere-/start.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qmargins.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qmath.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qmetacontainer.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qmetaobject.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qmetatype.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qminmax.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qnamespace.h
@@ -3992,6 +4035,7 @@ C:/project/Condottiere-/start.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qobjectdefs_impl.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qoverload.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qpair.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qparallelanimationgroup.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qpoint.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qprocessordetection.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/qpropertyanimation.h
@@ -4079,6 +4123,16 @@ C:/project/Condottiere-/start.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtGui/qtransform.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtGui/qwindowdefs.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtGui/qwindowdefs_win.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/QAudioOutput
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/QMediaPlayer
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qaudio.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qaudiooutput.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qmediaenumdebug.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qmediaplayer.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtaudio.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimedia-config.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaexports.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaglobal.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtWidgets/QDialog
  mdp:C:/Qt/6.7.2/mingw_64/include/QtWidgets/QGraphicsItem
  mdp:C:/Qt/6.7.2/mingw_64/include/QtWidgets/QGraphicsPixmapItem
