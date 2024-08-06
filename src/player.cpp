@@ -41,8 +41,32 @@ int Player::getID() const {  // submit id
     return ID;
 }
 
-Color Player::getColor() const {
-    return markers[0].getColor();
+std::string Player::getColor() const {
+    std::string color;
+    switch(markers[0].getColor()){
+    case orange :
+        color = "orange";
+        break;
+    case blue   :
+        color = "blue";
+        break;
+    case green  :
+        color = "green";
+        break;
+    case red    :
+        color = "red";
+        break;
+    case gray   :
+        color = "gray";
+        break;
+    case brown  :
+        color = "brown";
+        break;
+    default     :
+        color = "white";
+        break;
+    }
+    return color;
 }
 
 const std::vector<const Card*>& Player::getPlayedCards() const {  // submit played cards

@@ -31,7 +31,7 @@
 #define FIVE_IMAGE      ":/Description/Graphics/Assets/zard/005.png"
 #define SIX_IMAGE       ":/Description/Graphics/Assets/zard/006.png"
 #define TEN_IMAGE       ":/Description/Graphics/Assets/zard/010.png"
-
+#define BACK_IMAGE      ":/Description/Graphics/Assets/zard/Back.png"
 
 #define BATTLE_MARKER_IMAGE ":/Description/Graphics/markers/icons8-battle-100(1).png"
 #define PEACE_MARKER_IMAGE  ":/Description/Graphics/markers/icons8-peace-100.png"

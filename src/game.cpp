@@ -243,7 +243,7 @@ void Game::start()
 
         bool gameEnd = find_game_winner(players[currentPlayerID]);
         if (gameEnd){
-            emit declare_gameWinner(players[currentPlayerID]);
+            emit declare_gameWinner(players, players[currentPlayerID]);
             break;
         }
         size_t counter = 0;
@@ -416,7 +416,7 @@ bool Game::load(std::string filePath) {
     return true;
 }
 std::pair<size_t, std::pair<size_t, size_t>> Game::war(int currentPlayerID) {     //This function starts working when the conditions are ready and the province of the battle location is selected
-    emit startWar(players);
+    emit startWar(players, battleMarker, favorMarker);
     std::vector<Player*> activePlayers;
     for (auto &&player : players) {
         activePlayers.push_back(&player);
@@ -426,7 +426,7 @@ std::pair<size_t, std::pair<size_t, size_t>> Game::war(int currentPlayerID) {   
     size_t favorSetterID = players.size();
     std::vector<size_t> spyCounter(players.size());
     for (;!activePlayers.empty(); i++) {
-        std::string command = emit getCommand(*activePlayers[i], activePlayers, season);
+        std::string command = emit getCommand(players, *activePlayers[i], season);
         if (command == "pass") {       // if player select passing 
             if (activePlayers.size() == 1) currentPlayerID = activePlayers[i]->getID();
             activePlayers.erase(activePlayers.begin() + i);
@@ -440,7 +440,7 @@ std::pair<size_t, std::pair<size_t, size_t>> Game::war(int currentPlayerID) {   
             }
             else if (typeid(*drawnCard) == typeid(Scarecrow)){
                 if (!activePlayers[i]->getPlayedCards().empty()) {
-                    std::string choose = emit scarecrow_get_card(*activePlayers[i]);
+                    std::string choose ;//= emit scarecrow_get_card(*activePlayers[i]);
                     if (choose[0] >= '0' and choose[0] <= '9'){
                         for (const auto &card : activePlayers[i]->getPlayedCards()) {
                             if (card->getType() == choose) {
@@ -477,10 +477,10 @@ std::pair<size_t, std::pair<size_t, size_t>> Game::war(int currentPlayerID) {   
     if (winnerID < players.size()) {
         currentPlayerID = winnerID;
         players[currentPlayerID].setState(&battleMarker.getState());
-        emit declare_warWinner(players[currentPlayerID]);
+        emit declare_warWinner(players[currentPlayerID], battleMarker);
     }
     else {
-        emit declare_warWinner();
+        emit declare_warWinner(players[currentPlayerID], battleMarker, false);
         battleMarker.getState().set(false);
     }
     

@@ -56,11 +56,10 @@ signals :
     State* set_favorground(const std::vector<Player>&,const Player&, GameBoard&, FavorMarker& );
     void showPlayerCards(const Player&);
     void startWar(const std::vector<Player>&, BattleMarker&, FavorMarker&);
-    std::string getCommand(const Player& ,const std::vector<Player*>&,const Card*);
-    std::string scarecrow_get_card(const Player&);
-    void declare_warWinner(const Player&);
-    void declare_warWinner();
-    void declare_gameWinner(const Player&);
+    std::string getCommand(const std::vector<Player>&, const Player&, const Card*);
+    //std::string scarecrow_get_card(const Player&);
+    void declare_warWinner(const Player&, BattleMarker&, bool = true);
+    void declare_gameWinner(const std::vector<Player>&, const Player&);
 private:
 	//private methods
 	size_t warـanalyst();

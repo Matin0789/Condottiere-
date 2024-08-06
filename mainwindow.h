@@ -11,6 +11,8 @@
 #include "campaign.h"
 #include "locateinfo.h"
 #include "marker.h"
+#include "Warwinner.h"
+#include "gamewinner.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -42,6 +44,9 @@ private:
     Game *game;
     Locateinfo *battleground_page;
     Locateinfo *favorground_page;
+    Winner *warWinner_page;
+    GameWinner *gameWinner_page;
+
     QMediaPlayer* player;
     QAudioOutput* audioOutput;
 };

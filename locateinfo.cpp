@@ -13,11 +13,11 @@ Locateinfo::Locateinfo(QString type,QWidget *parent)
 {
     this->type = type;
     ui->setupUi(this);
-    ui->lb_state->setText("Please select a " + (type == "BattleMarker") ? "battle":"favor" + " state to start the battle ...");
+    ui->lb_state->setText("Please select a " + QString((type == "BattleMarker") ? "battle":"favor") + " state to start the battle ...");
     this->next_click = false;
-    markers["BattleMarker"] = "border_image:url(" + QString(BATTLE_MARKER_IMAGE)  + ")";
-    markers["FavorMarker"]  = "border_image:url(" + QString(PEACE_MARKER_IMAGE)   + ")";
-    markers[""]             = "border_image:url(" + QString(PLAYER_MARKER_IMAGE)  + ")";
+    markers["BattleMarker"] = "border-image:url(" + QString(BATTLE_MARKER_IMAGE)  + ")";
+    markers["FavorMarker"]  = "border-image:url(" + QString(PEACE_MARKER_IMAGE)   + ")";
+    markers[""]             = "border-image:url(" + QString(PLAYER_MARKER_IMAGE)  + ")";
 
     stateLabels["BELLA"] = ui->lb_bella;
     stateLabels["PLADACI"] = ui->lb_pladaci;

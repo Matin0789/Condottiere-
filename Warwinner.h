@@ -19,10 +19,10 @@ public:
     explicit Winner(QWidget *parent = nullptr);
     ~Winner();
 
+public slots:
+    void declare(const Player&, BattleMarker&, bool);
 private:
     Ui::Winner *ui;
-    Game *game;
-    UserInterface *user;
 };
 
 #endif // WARWINNER_H

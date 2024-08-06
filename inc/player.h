@@ -17,7 +17,7 @@ public:
     std::string getName() const;
     int getAge() const;
     int getID() const;
-    Color getColor() const;
+    std::string getColor() const;
     //
     const std::vector<const Card*>& getPlayedCards() const;
     const std::vector<const Card*>& getCards() const;

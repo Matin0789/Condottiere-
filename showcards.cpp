@@ -49,39 +49,7 @@ showCards::~showCards()
 
 void showCards::getPlayer(const Player &player)
 {
-    //QColor playerColor;
-    QString lbl_colorStyleSheet;
-    switch(player.getColor()) {
-    case orange :
-        //playerColor.setNamedColor("orange");
-        lbl_colorStyleSheet = "QLabel { background-color : orange;}";
-        break;
-    case blue   :
-        //playerColor.setNamedColor("blue");
-        lbl_colorStyleSheet = "QLabel { background-color : blue;}";
-        break;
-    case green  :
-        //playerColor.setNamedColor("green");
-        lbl_colorStyleSheet = "QLabel { background-color : green;}";
-        break;
-    case red    :
-        //playerColor.setNamedColor("red");
-        lbl_colorStyleSheet = "QLabel { background-color : red;}";
-        break;
-    case gray   :
-        //playerColor.setNamedColor("gray");
-        lbl_colorStyleSheet = "QLabel { background-color : gray;}";
-        break;
-    case brown  :
-        //playerColor.setNamedColor("brown");
-        lbl_colorStyleSheet = "QLabel { background-color : brown;}";
-        break;
-    default     :
-        //playerColor.setNamedColor("white");
-        lbl_colorStyleSheet = "QLabel { background-color : white;}";
-        break;
-    }
-    ui->lb_color->setStyleSheet(lbl_colorStyleSheet);
+    ui->lb_color->setStyleSheet("QLabel { background-color : " + QString::fromStdString(player.getColor()) +";}");
 
     ui->btn_lets_go->setVisible(false);
     for (auto &&label : cardLabel) {
