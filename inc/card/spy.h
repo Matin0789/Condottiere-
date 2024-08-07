@@ -13,7 +13,6 @@ protected:
     
 private:
     static std::string help;
-    unsigned int point;
 };
 
 #endif // SPY_H

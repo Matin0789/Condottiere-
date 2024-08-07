@@ -38,12 +38,14 @@ void GameWinner::declare(const std::vector<Player> &players, const Player &winne
     this->show();
     for(auto &&label : stateLabels) {
         label.second->setStyleSheet("");
+        label.second->setVisible(false);
     }
-    ui->lb_player_counter->setText("Player " + QString::number(winner.getID()) + " won this game and became the emperor of the world");
+    ui->lb_player_counter->setText("Player " + QString::number(winner.getID() + 1) + " won this game and became the emperor of the world");
 
     for (auto &&player : players) {
         for (auto &&state_name : player.get_states_name()) {
             stateLabels[state_name]->setStyleSheet(markers[""]);
+            stateLabels[state_name]->setVisible(true);
         }
     }
 
@@ -57,5 +59,13 @@ void GameWinner::declare(const std::vector<Player> &players, const Player &winne
 void GameWinner::on_pushButton_4_clicked()
 {
     exit(EXIT_SUCCESS);
+}
+
+
+void GameWinner::on_pushButton_3_clicked()
+{
+    QMainWindow *menu = qobject_cast<QMainWindow*>(parent());
+    menu->show();
+    this->hide();
 }
 

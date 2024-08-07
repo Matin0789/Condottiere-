@@ -64,6 +64,7 @@ void MainWindow::on_btn_Start_clicked()
     QObject::connect(game, &Game::set_favorground,  favorground_page,  &Locateinfo::set_ground);
     QObject::connect(game, &Game::showPlayerCards, showcards, &showCards::getPlayer);
     QObject::connect(game, &Game::startWar, campaign, &Campaign::startWar);
+    QObject::connect(game, &Game::endWar, campaign, &Campaign::hide);
     QObject::connect(game, &Game::getCommand, campaign, &Campaign::getCommand);
     QObject::connect(game, &Game::declare_gameWinner, gameWinner_page, &GameWinner::declare);
     QObject::connect(game, &Game::declare_warWinner, warWinner_page, &Winner::declare);
@@ -78,6 +79,7 @@ void MainWindow::on_btn_Start_clicked()
     QObject::disconnect(game, &Game::showPlayerCards, showcards, &showCards::getPlayer);
     QObject::disconnect(game, &Game::showPlayerCards, showcards, &showCards::getPlayer);
     QObject::disconnect(game, &Game::startWar, campaign, &Campaign::startWar);
+    QObject::disconnect(game, &Game::endWar, campaign, &Campaign::hide);
     QObject::disconnect(game, &Game::getCommand, campaign, &Campaign::getCommand);
     QObject::disconnect(game, &Game::declare_gameWinner, gameWinner_page, &GameWinner::declare);
     QObject::disconnect(game, &Game::declare_warWinner, warWinner_page, &Winner::declare);

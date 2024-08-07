@@ -22,7 +22,9 @@ GameBoard::GameBoard(std::string filePath) {
     while(file >> quoted(tmp_state_name)){ // add state to states and adjacent of them
         states.insert(std::pair<std::string, State>(tmp_state_name, State(tmp_state_name)));
         std::string tmp_adjacency_line; //A line in the file where the adjacent is written
+        file.ignore(256,'\n');
         getline(file, tmp_adjacency_line);// read adjacency line in file
+        file.ignore(256,'\n');
         std::stringstream tmp(tmp_adjacency_line); // for keep the line of adjacency
         std::string tmp_adjacency_state_name;// Name of the adjacent state
         while(tmp >> quoted(tmp_adjacency_state_name)) { // add adjacent of the state to adjacency

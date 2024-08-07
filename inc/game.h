@@ -46,6 +46,7 @@ signals :
     State* set_favorground(const std::vector<Player>&,const Player&, GameBoard&, FavorMarker& );
     void showPlayerCards(const Player&);
     void startWar(const std::vector<Player>&, BattleMarker&, FavorMarker&);
+    void endWar();
     std::string getCommand(const std::vector<Player>&, const Player&, const Card*);
     //std::string scarecrow_get_card(const Player&);
     void declare_warWinner(const Player&, BattleMarker&, bool = true);

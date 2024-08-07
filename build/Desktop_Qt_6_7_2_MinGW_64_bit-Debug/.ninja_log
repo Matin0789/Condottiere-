@@ -1,4 +1,5 @@
 # ninja log v6
+<<<<<<< HEAD
 29048	34596	7447236938191069	CMakeFiles/Condottiere-.dir/src/card/winter.cpp.obj	49ad948a49db0928
 10283	10556	7447031807379544	Condottiere-_autogen/EWIEGA46WW/qrc_data.cpp	dd9dab1d139ded89
 268	13016	7447236776390731	Condottiere-_autogen/timestamp	b859fbc0306305c0
@@ -12,11 +13,27 @@
 13018	13888	7447236786140679	C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/EWIEGA46WW/qrc_Sound.cpp	29ee083326a0be86
 57012	70684	7447237217824457	CMakeFiles/Condottiere-.dir/campaign.cpp.obj	fca16f70a8a2189d
 13888	24694	7447236786590666	CMakeFiles/Condottiere-.dir/Condottiere-_autogen/mocs_compilation.cpp.obj	f818549b39f942c3
+=======
+17617	26880	7447214378712290	CMakeFiles/Condottiere-.dir/src/card/winter.cpp.obj	49ad948a49db0928
+10283	10556	7447031807379544	Condottiere-_autogen/EWIEGA46WW/qrc_data.cpp	dd9dab1d139ded89
+107	768	7447219595693565	Condottiere-_autogen/timestamp	b859fbc0306305c0
+107	768	7447219595693565	Condottiere-_autogen/mocs_compilation.cpp	b859fbc0306305c0
+107	768	7447219595693565	C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/timestamp	b859fbc0306305c0
+107	768	7447219595693565	C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/mocs_compilation.cpp	b859fbc0306305c0
+10283	10556	7447031807379544	C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/EWIEGA46WW/qrc_data.cpp	dd9dab1d139ded89
+10268	11254	7447031814391554	Condottiere-_autogen/EWIEGA46WW/qrc_Sound.cpp	29ee083326a0be86
+13428	22528	7447219728904331	CMakeFiles/Condottiere-.dir/gamewinner.cpp.obj	4d9393c7116697ea
+13815	17922	7447144603631807	CMakeFiles/Condottiere-.dir/src/card/spy.cpp.obj	47b0a77bb79659d6
+10268	11254	7447031814391554	C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/EWIEGA46WW/qrc_Sound.cpp	29ee083326a0be86
+13023	25965	7447219724855756	CMakeFiles/Condottiere-.dir/campaign.cpp.obj	fca16f70a8a2189d
+8978	26154	7447214292331615	CMakeFiles/Condottiere-.dir/Condottiere-_autogen/mocs_compilation.cpp.obj	f818549b39f942c3
+>>>>>>> b14e1c4cc28408f8182d6f9482578bbd6b497fea
 10296	12891	7447031830848949	Condottiere-_autogen/EWIEGA46WW/qrc_img.cpp	e65ab9c5019a0923
 10296	12891	7447031830848949	C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/EWIEGA46WW/qrc_img.cpp	e65ab9c5019a0923
 12953	15261	7447031831773608	CMakeFiles/Condottiere-.dir/src/card/yellowcard.cpp.obj	b79356a4681197c4
 12930	15381	7447031831533746	CMakeFiles/Condottiere-.dir/src/card/purplecard.cpp.obj	a59bfd1a39569fd5
 15262	19450	7447031854860620	CMakeFiles/Condottiere-.dir/src/card/season.cpp.obj	dab27c4b47703852
+<<<<<<< HEAD
 22761	29048	7447236875320669	CMakeFiles/Condottiere-.dir/src/card/card.cpp.obj	f3e8b024214d2a35
 31365	34418	7447236961351064	CMakeFiles/Condottiere-.dir/src/player.cpp.obj	1089e766ccd03ce0
 13893	22761	7447236786630694	CMakeFiles/Condottiere-.dir/main.cpp.obj	eca6e275f1d1d790
@@ -27,11 +44,24 @@
 22705	28871	7447031929291141	CMakeFiles/Condottiere-.dir/src/card/turncoat.cpp.obj	9d2e4f8fa933829d
 30229	34720	7447032004531354	CMakeFiles/Condottiere-.dir/src/marker/favormarker.cpp.obj	d4f387a360503dbc
 24694	31364	7447236894650702	CMakeFiles/Condottiere-.dir/src/card/scarecrow.cpp.obj	c886fc32df6b64c1
+=======
+8998	17616	7447214292534722	CMakeFiles/Condottiere-.dir/src/card/card.cpp.obj	f3e8b024214d2a35
+17922	25729	7447144644701049	CMakeFiles/Condottiere-.dir/src/player.cpp.obj	1089e766ccd03ce0
+8984	21495	7447214292384803	CMakeFiles/Condottiere-.dir/main.cpp.obj	eca6e275f1d1d790
+546	8227	7447157751394882	CMakeFiles/Condottiere-.dir/src/card/bishop.cpp.obj	824569ed979a5e2b
+771	15649	7447219602346427	CMakeFiles/Condottiere-.dir/mainwindow.cpp.obj	d679723ead1f4208
+20969	24728	7447031911927054	CMakeFiles/Condottiere-.dir/src/card/heroine.cpp.obj	d9530d5ece9b6fe3
+9006	18262	7447214292599829	CMakeFiles/Condottiere-.dir/src/card/drummer.cpp.obj	11445cb992c6dc89
+22705	28871	7447031929291141	CMakeFiles/Condottiere-.dir/src/card/turncoat.cpp.obj	9d2e4f8fa933829d
+30229	34720	7447032004531354	CMakeFiles/Condottiere-.dir/src/marker/favormarker.cpp.obj	d4f387a360503dbc
+9022	18284	7447214292769735	CMakeFiles/Condottiere-.dir/src/card/scarecrow.cpp.obj	c886fc32df6b64c1
+>>>>>>> b14e1c4cc28408f8182d6f9482578bbd6b497fea
 27238	31218	7447031974621087	CMakeFiles/Condottiere-.dir/src/card/spring.cpp.obj	47850995c97fe77b
 29873	33275	7447032000967578	CMakeFiles/Condottiere-.dir/src/marker/battlemarker.cpp.obj	91e4e57495e93071
 31218	34435	7447032014427920	CMakeFiles/Condottiere-.dir/src/marker/playermarker.cpp.obj	77d8025a2763045c
 28872	34765	7447031990955912	CMakeFiles/Condottiere-.dir/src/marker/marker.cpp.obj	d5344a1a0aa2958
 34435	37242	7447032046598197	CMakeFiles/Condottiere-.dir/src/state.cpp.obj	e64f26a5f59a2b9f
+<<<<<<< HEAD
 33489	45059	7447032037135266	CMakeFiles/Condottiere-.dir/src/gameboard.cpp.obj	4713b47632eb1ef0
 44631	54809	7447237094013211	CMakeFiles/Condottiere-.dir/options.cpp.obj	348eaa443d70be02
 30968	41843	7447236957381072	CMakeFiles/Condottiere-.dir/src/game.cpp.obj	d7c8faab64ab20d2
@@ -115,3 +145,46 @@
 18632	35947	7447339733752857	CMakeFiles/Condottiere-.dir/locateinfo.cpp.obj	83008dc0413e27e3
 19955	37752	7447339746976948	CMakeFiles/Condottiere-.dir/campaign.cpp.obj	fca16f70a8a2189d
 37752	44507	7447339924947366	Condottiere-.exe	faa53f070cf1583f
+=======
+901	15148	7447194609152580	CMakeFiles/Condottiere-.dir/src/gameboard.cpp.obj	4713b47632eb1ef0
+801	12787	7447219602636244	CMakeFiles/Condottiere-.dir/options.cpp.obj	348eaa443d70be02
+18263	35355	7447214385180141	CMakeFiles/Condottiere-.dir/src/game.cpp.obj	d7c8faab64ab20d2
+778	13908	7447219602416377	CMakeFiles/Condottiere-.dir/start.cpp.obj	320f110f651ae8cc
+812	13023	7447219602756254	CMakeFiles/Condottiere-.dir/Warwinner.cpp.obj	a5b057061e3e53cc
+786	16087	7447219602486343	CMakeFiles/Condottiere-.dir/showcards.cpp.obj	77a1183f7bf1354c
+58038	60248	7447032282631354	CMakeFiles/Condottiere-.dir/Condottiere-_autogen/EWIEGA46WW/qrc_data.cpp.obj	1e5d5b6d68b1edbb
+794	13428	7447219602566292	CMakeFiles/Condottiere-.dir/Help.cpp.obj	9dd98531151291e8
+35356	47963	7447214556105487	CMakeFiles/Condottiere-.dir/setplayer.cpp.obj	e5e7ea0f913f6f6
+12788	23856	7447219722506552	CMakeFiles/Condottiere-.dir/locateinfo.cpp.obj	83008dc0413e27e3
+56121	104840	7447032263452947	CMakeFiles/Condottiere-.dir/Condottiere-_autogen/EWIEGA46WW/qrc_Sound.cpp.obj	7cbe7eebb807d64f
+60248	151715	7447032304753869	CMakeFiles/Condottiere-.dir/Condottiere-_autogen/EWIEGA46WW/qrc_img.cpp.obj	bde80a0eec447a75
+25966	32623	7447219854286342	Condottiere-.exe	faa53f070cf1583f
+74	897	7447222325851191	Condottiere-_autogen/timestamp	b859fbc0306305c0
+74	897	7447222325851191	Condottiere-_autogen/mocs_compilation.cpp	b859fbc0306305c0
+74	897	7447222325851191	C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/timestamp	b859fbc0306305c0
+74	897	7447222325851191	C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/mocs_compilation.cpp	b859fbc0306305c0
+932	9719	7447222334439198	CMakeFiles/Condottiere-.dir/options.cpp.obj	348eaa443d70be02
+917	15229	7447222334288626	CMakeFiles/Condottiere-.dir/showcards.cpp.obj	77a1183f7bf1354c
+926	15949	7447222334373781	CMakeFiles/Condottiere-.dir/Help.cpp.obj	9dd98531151291e8
+900	18849	7447222334118390	CMakeFiles/Condottiere-.dir/mainwindow.cpp.obj	d679723ead1f4208
+939	19210	7447222334514229	CMakeFiles/Condottiere-.dir/Warwinner.cpp.obj	a5b057061e3e53cc
+908	19548	7447222334213487	CMakeFiles/Condottiere-.dir/start.cpp.obj	320f110f651ae8cc
+9719	23662	7447222422308948	CMakeFiles/Condottiere-.dir/locateinfo.cpp.obj	83008dc0413e27e3
+15949	25594	7447222484605509	CMakeFiles/Condottiere-.dir/gamewinner.cpp.obj	4d9393c7116697ea
+15230	30583	7447222477413169	CMakeFiles/Condottiere-.dir/campaign.cpp.obj	fca16f70a8a2189d
+30583	36040	7447222630949822	Condottiere-.exe	faa53f070cf1583f
+135	1162	7447224781816526	Condottiere-_autogen/timestamp	b859fbc0306305c0
+135	1162	7447224781816526	Condottiere-_autogen/mocs_compilation.cpp	b859fbc0306305c0
+135	1162	7447224781816526	C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/timestamp	b859fbc0306305c0
+135	1162	7447224781816526	C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/mocs_compilation.cpp	b859fbc0306305c0
+1174	11970	7447224792202304	CMakeFiles/Condottiere-.dir/start.cpp.obj	320f110f651ae8cc
+1225	12664	7447224792722051	CMakeFiles/Condottiere-.dir/Warwinner.cpp.obj	a5b057061e3e53cc
+1187	16248	7447224792342224	CMakeFiles/Condottiere-.dir/Help.cpp.obj	9dd98531151291e8
+1209	18796	7447224792552096	CMakeFiles/Condottiere-.dir/options.cpp.obj	348eaa443d70be02
+1165	19479	7447224792122343	CMakeFiles/Condottiere-.dir/mainwindow.cpp.obj	d679723ead1f4208
+1180	20222	7447224792272266	CMakeFiles/Condottiere-.dir/showcards.cpp.obj	77a1183f7bf1354c
+12665	24814	7447224907113535	CMakeFiles/Condottiere-.dir/campaign.cpp.obj	fca16f70a8a2189d
+11970	26314	7447224900171125	CMakeFiles/Condottiere-.dir/locateinfo.cpp.obj	83008dc0413e27e3
+16248	27564	7447224942949838	CMakeFiles/Condottiere-.dir/gamewinner.cpp.obj	4d9393c7116697ea
+27564	33812	7447225056112268	Condottiere-.exe	faa53f070cf1583f
+>>>>>>> b14e1c4cc28408f8182d6f9482578bbd6b497fea
