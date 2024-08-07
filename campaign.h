@@ -38,10 +38,14 @@ public:
 public slots:
     void startWar(const std::vector<Player>&, BattleMarker&, FavorMarker&);
     std::string getCommand(const std::vector<Player>&, const Player&, const Card*);
-    //std::string scarecrow_get_card(const Player&);
+    std::string scarecrow_get_card(const Player&);
 private slots:
     void findSelectedCard();
     void on_btn_pass_clicked();
+
+    void on_pushButton_138_clicked();
+
+    void on_pushButton_140_clicked();
 
 private:
     Ui::Campaign *ui;

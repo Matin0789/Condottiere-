@@ -6,8 +6,13 @@
 Campaign::Campaign(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::Campaign)
+    , options(new Options(this))
+    , help(new Help(this))
 {
     ui->setupUi(this);
+
+    connect(options , SIGNAL(muteAudio()), qobject_cast<QMainWindow*>(parent), SLOT(on_btn_sound_clicked()));
+    connect(options , SIGNAL(loadGame()), qobject_cast<QMainWindow*>(parent), SLOT(on_btn_load_game_clicked()));
 
     cardsImageRef["Bishop"]    = "border-image:url(" + QString(BISHOP_IMAGE)    + ")";
     cardsImageRef["Drummer"]   = "border-image:url(" + QString(DRUMMER_IMAGE)   + ")";
@@ -28,7 +33,12 @@ Campaign::Campaign(QWidget *parent)
 
     markers["BattleMarker"] = "border-image:url(" + QString(BATTLE_MARKER_IMAGE)  + ")";
     markers["FavorMarker"]  = "border-image:url(" + QString(PEACE_MARKER_IMAGE)   + ")";
-    markers[""]             = "border-image:url(" + QString(PLAYER_MARKER_IMAGE)  + ")";
+    markers["blue"]         = "border-image:url(" + QString(PLAYER_BLUE_MARKER_IMAGE)  + ")";
+    markers["green"]        = "border-image:url(" + QString(PLAYER_GREEN_MARKER_IMAGE)  + ")";
+    markers["red"]          = "border-image:url(" + QString(PLAYER_RED_MARKER_IMAGE)  + ")";
+    markers["orange"]       = "border-image:url(" + QString(PLAYER_ORANGE_MARKER_IMAGE)  + ")";
+    markers["gray"]         = "border-image:url(" + QString(PLAYER_GRAY_MARKER_IMAGE)  + ")";
+    markers["brown"]        = "border-image:url(" + QString(PLAYER_BROWN_MARKER_IMAGE)  + ")";
 
     stateLabels["BELLA"] = ui->lb_bella;
     stateLabels["PLADACI"] = ui->lb_pladaci;
@@ -175,6 +185,8 @@ Campaign::Campaign(QWidget *parent)
 
 Campaign::~Campaign()
 {
+    disconnect(options, SIGNAL(loadGame()), qobject_cast<QMainWindow*>(parent()), SLOT(on_btn_load_game_clicked()));
+    disconnect(options, SIGNAL(muteAudio()), qobject_cast<QMainWindow*>(parent()), SLOT(on_btn_sound_clicked()));
     delete ui;
 }
 
@@ -188,7 +200,7 @@ void Campaign::startWar(const std::vector<Player> &players, BattleMarker & battl
     for (auto &&player : players) {
         for (auto &&state_name : player.get_states_name()) {
             stateLabels[state_name]->setVisible(true);
-            stateLabels[state_name]->setStyleSheet(markers[""]);
+            stateLabels[state_name]->setStyleSheet(markers[player.getColor()]);
         }
     }
     stateLabels[battleMarker.getState().getName()]->setStyleSheet(markers["BattleMarker"]);
@@ -267,6 +279,42 @@ std::string Campaign::getCommand(const std::vector<Player>& players, const Playe
     return command.toStdString();
 }
 
+std::string Campaign::scarecrow_get_card(const Player & currentPlayer)
+{
+    command = "";
+    for(auto && currentPlayerCard_lbl :currentPlayerCards_btn) {
+        currentPlayerCard_lbl->setVisible(false);
+        currentPlayerCard_lbl->setStyleSheet("");
+        currentPlayerCard_lbl->setText("");
+    }
+
+    std::vector<const Card*> currentPlayerPlayedCard = currentPlayer.getPlayedCards();
+    bool flag = false;
+    for (int i = 0; i < currentPlayerPlayedCard.size(); i++) {
+        if(currentPlayerPlayedCard[i]->getType()[0] >= '0' && currentPlayerPlayedCard[i]->getType()[0] <= '9')
+        {
+            currentPlayerCards_btn[i]->setVisible(true);
+            currentPlayerCards_btn[i]->setStyleSheet(cardsImageRef[currentPlayerPlayedCard[i]->getType()]);
+            connect(currentPlayerCards_btn[i], SIGNAL(clicked(bool)), this, SLOT(findSelectedCard()));
+            flag = true;
+        }
+    }
+    if (flag == true){
+        QEventLoop loop;
+        connect(this, SIGNAL(checked()), &loop, SLOT(quit()));
+        loop.exec();
+        for (auto &&currentPlayerCard_lbl : currentPlayerCards_btn) {
+            disconnect(currentPlayerCard_lbl, SIGNAL(clicked(bool)), this, SLOT(findSelectedCard()));
+        }
+        disconnect(this, SIGNAL(checked()), &loop, SLOT(quit()));
+
+    }
+    else {
+        command = "";
+    }
+    return command.toStdString();
+}
+
 void Campaign::findSelectedCard()
 {
     QString check = qobject_cast<QPushButton*>(sender())->styleSheet();
@@ -283,5 +331,19 @@ void Campaign::on_btn_pass_clicked()
 {
     command = "pass";
     emit checked();
+}
+
+
+void Campaign::on_pushButton_138_clicked()
+{
+    this->hide();
+    help->show();
+}
+
+
+void Campaign::on_pushButton_140_clicked()
+{
+    this->hide();
+    options->show();
 }
 

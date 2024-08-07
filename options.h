@@ -2,9 +2,7 @@
 #define OPTIONS_H
 
 #include <QDialog>
-
-#include "game.h"
-#include "userinterface.h"
+#include <QMainWindow>
 
 namespace Ui {
 class Options;
@@ -13,7 +11,9 @@ class Options;
 class Options : public QDialog
 {
     Q_OBJECT
-
+signals:
+    void muteAudio();
+    void loadGame();
 public:
     explicit Options(QWidget *parent = nullptr);
     ~Options();
@@ -27,8 +27,6 @@ private slots:
 
 private:
     Ui::Options *ui;
-    Game *game;
-    UserInterface *user;
 };
 
 #endif // OPTIONS_H

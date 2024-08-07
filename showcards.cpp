@@ -79,7 +79,7 @@ void showCards::getPlayer(const Player &player)
         QRect end(cardLabel[i]->geometry());
         cardLabel[i]->setGeometry(QRect(0 ,0, 0, 0));
 
-        animation[i]->setDuration(300);
+        animation[i]->setDuration(200);
         animation[i]->setStartValue(QRect(0 ,0, 0, 0));
         animation[i]->setEndValue(end);
         group.addAnimation(animation[i]);
@@ -102,7 +102,7 @@ void showCards::getPlayer(const Player &player)
 
     for (int i = 0; i < playerCards.size(); ++i) {
         QRect end(cardLabel[i]->geometry());
-        animation[i]->setDuration(300);
+        animation[i]->setDuration(200);
         animation[i]->setStartValue(end);
         animation[i]->setEndValue(QRect(end.left() + (end.width()/2), end.top(), 0, end.height()));
         animation[i]->start();
@@ -111,7 +111,7 @@ void showCards::getPlayer(const Player &player)
         loop.exec();
         cardLabel[i]->setStyleSheet(QString::fromStdString(cardsImageRef[playerCards[i]->getType()]));
 
-        animation[i]->setDuration(300);
+        animation[i]->setDuration(200);
         animation[i]->setStartValue(QRect(end.left() + (end.width()/2), end.top(), 0, end.height()));
         animation[i]->setEndValue(end);
         animation[i]->start();

@@ -1,6 +1,5 @@
 C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/EWIEGA46WW/moc_options.cpp: C:/project/Condottiere-/options.h \
   C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/moc_predefs.h \
-  C:/Qt/6.7.2/mingw_64/include/QtCore/QObject \
   C:/Qt/6.7.2/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/q20memory.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/q20type_traits.h \
@@ -144,8 +143,11 @@ C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_a
   C:/Qt/6.7.2/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.7.2/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/QDialog \
+  C:/Qt/6.7.2/mingw_64/include/QtWidgets/QMainWindow \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/qdialog.h \
+  C:/Qt/6.7.2/mingw_64/include/QtWidgets/qmainwindow.h \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/qsizepolicy.h \
+  C:/Qt/6.7.2/mingw_64/include/QtWidgets/qtabwidget.h \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -348,26 +350,4 @@ C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_a
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/sys/types.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
-  C:/project/Condottiere-/inc/card/bishop.h \
-  C:/project/Condottiere-/inc/card/card.h \
-  C:/project/Condottiere-/inc/card/drummer.h \
-  C:/project/Condottiere-/inc/card/heroine.h \
-  C:/project/Condottiere-/inc/card/purplecard.h \
-  C:/project/Condottiere-/inc/card/scarecrow.h \
-  C:/project/Condottiere-/inc/card/season.h \
-  C:/project/Condottiere-/inc/card/spring.h \
-  C:/project/Condottiere-/inc/card/spy.h \
-  C:/project/Condottiere-/inc/card/turncoat.h \
-  C:/project/Condottiere-/inc/card/winter.h \
-  C:/project/Condottiere-/inc/card/yellowcard.h \
-  C:/project/Condottiere-/inc/enumcolor.h \
-  C:/project/Condottiere-/inc/game.h \
-  C:/project/Condottiere-/inc/gameboard.h \
-  C:/project/Condottiere-/inc/marker/battlemarker.h \
-  C:/project/Condottiere-/inc/marker/favormarker.h \
-  C:/project/Condottiere-/inc/marker/marker.h \
-  C:/project/Condottiere-/inc/marker/playermarker.h \
-  C:/project/Condottiere-/inc/player.h \
-  C:/project/Condottiere-/inc/state.h \
-  C:/project/Condottiere-/inc/userinterface.h
+  C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h

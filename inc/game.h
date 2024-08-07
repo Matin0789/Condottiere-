@@ -48,7 +48,7 @@ signals :
     void startWar(const std::vector<Player>&, BattleMarker&, FavorMarker&);
     void endWar();
     std::string getCommand(const std::vector<Player>&, const Player&, const Card*);
-    //std::string scarecrow_get_card(const Player&);
+    std::string scarecrow_get_card(const Player&);
     void declare_warWinner(const Player&, BattleMarker&, bool = true);
     void declare_gameWinner(const std::vector<Player>&, const Player&);
     size_t get_players_number();

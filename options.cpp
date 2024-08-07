@@ -20,20 +20,23 @@ void Options::on_btn_save_clicked()
 
 void Options::on_btn_Continue_clicked()
 {
-
+    QMainWindow *campaign = qobject_cast<QMainWindow*>(parent());
+    campaign->show();
+    this->hide();
 }
 
 void Options::on_btn_load_games_clicked()
 {
-    //game.load();
+    this->hide();
+    emit loadGame();
 }
 
 void Options::on_btn_audio_clicked()
 {
-
+    emit muteAudio();
 }
 
 void Options::on_btn_quit_clicked()
 {
-    close();
+    exit(EXIT_SUCCESS);
 }

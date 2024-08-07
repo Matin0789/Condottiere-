@@ -1527,7 +1527,6 @@ C:/project/Condottiere-/gamewinner.h
 C:/project/Condottiere-/src/card/season.cpp
 C:/project/Condottiere-/options.h
  mmc:Q_OBJECT
- mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/QObject
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/q20functional.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/q20memory.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/q20type_traits.h
@@ -1671,8 +1670,11 @@ C:/project/Condottiere-/options.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtGui/qwindowdefs.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtGui/qwindowdefs_win.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtWidgets/QDialog
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtWidgets/QMainWindow
  mdp:C:/Qt/6.7.2/mingw_64/include/QtWidgets/qdialog.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtWidgets/qmainwindow.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtWidgets/qsizepolicy.h
+ mdp:C:/Qt/6.7.2/mingw_64/include/QtWidgets/qtabwidget.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtWidgets/qtwidgets-config.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtWidgets/qtwidgetsexports.h
  mdp:C:/Qt/6.7.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h
@@ -1877,28 +1879,6 @@ C:/project/Condottiere-/options.h
  mdp:C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h
  mdp:C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
  mdp:C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/moc_predefs.h
- mdp:C:/project/Condottiere-/inc/card/bishop.h
- mdp:C:/project/Condottiere-/inc/card/card.h
- mdp:C:/project/Condottiere-/inc/card/drummer.h
- mdp:C:/project/Condottiere-/inc/card/heroine.h
- mdp:C:/project/Condottiere-/inc/card/purplecard.h
- mdp:C:/project/Condottiere-/inc/card/scarecrow.h
- mdp:C:/project/Condottiere-/inc/card/season.h
- mdp:C:/project/Condottiere-/inc/card/spring.h
- mdp:C:/project/Condottiere-/inc/card/spy.h
- mdp:C:/project/Condottiere-/inc/card/turncoat.h
- mdp:C:/project/Condottiere-/inc/card/winter.h
- mdp:C:/project/Condottiere-/inc/card/yellowcard.h
- mdp:C:/project/Condottiere-/inc/enumcolor.h
- mdp:C:/project/Condottiere-/inc/game.h
- mdp:C:/project/Condottiere-/inc/gameboard.h
- mdp:C:/project/Condottiere-/inc/marker/battlemarker.h
- mdp:C:/project/Condottiere-/inc/marker/favormarker.h
- mdp:C:/project/Condottiere-/inc/marker/marker.h
- mdp:C:/project/Condottiere-/inc/marker/playermarker.h
- mdp:C:/project/Condottiere-/inc/player.h
- mdp:C:/project/Condottiere-/inc/state.h
- mdp:C:/project/Condottiere-/inc/userinterface.h
  mdp:C:/project/Condottiere-/options.h
 C:/project/Condottiere-/inc/state.h
 C:/project/Condottiere-/inc/marker/marker.h

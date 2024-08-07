@@ -114,7 +114,8 @@ size_t Game::warـanalyst(){
 
     for (size_t i = 0; i < players.size(); i++)
     {
-        for (auto &&card : players[i].getPlayedCards())
+        const std::vector<const Card*> playerPlayedCards = players[i].getPlayedCards();
+        for (auto &&card : playerPlayedCards)
         {
             if (card->getType()[0] >= '0' && card->getType()[0] <= '9'){
                 
@@ -439,7 +440,7 @@ std::pair<size_t, std::pair<size_t, size_t>> Game::war(int currentPlayerID) {   
         activePlayers.push_back(&player);
     }
     size_t i = currentPlayerID;
-    size_t battleSetterID = players.size();
+    size_t battleSetterID;
     size_t favorSetterID = players.size();
     std::vector<std::pair<size_t, size_t>> spyCounter(players.size());
     for(size_t i = 0;i < players.size(); i++) {
@@ -461,7 +462,7 @@ std::pair<size_t, std::pair<size_t, size_t>> Game::war(int currentPlayerID) {   
             }
             else if (drawnCard->getType() == "Scarecrow"){
                 if (!activePlayers[i]->getPlayedCards().empty()) {
-                    std::string choose ;//= emit scarecrow_get_card(*activePlayers[i]);
+                    std::string choose = emit scarecrow_get_card(*activePlayers[i]);
                     if (choose[0] >= '0' and choose[0] <= '9'){
                         for (const auto &card : activePlayers[i]->getPlayedCards()) {
                             if (card->getType() == choose) {
@@ -470,6 +471,9 @@ std::pair<size_t, std::pair<size_t, size_t>> Game::war(int currentPlayerID) {   
                                 activePlayers[i]->push_to_cards(drawnPlayedCard);
                             }
                         }
+                    }
+                    else {
+                        activePlayers[i]->push_to_playedCards(drawnCard);
                     }
                 }
                 else{

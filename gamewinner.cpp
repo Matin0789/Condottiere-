@@ -10,7 +10,12 @@ GameWinner::GameWinner(QWidget *parent)
 
     markers["BattleMarker"] = "border-image:url(" + QString(BATTLE_MARKER_IMAGE)  + ")";
     markers["FavorMarker"]  = "border-image:url(" + QString(PEACE_MARKER_IMAGE)   + ")";
-    markers[""]             = "border-image:url(" + QString(PLAYER_MARKER_IMAGE)  + ")";
+    markers["blue"]         = "border-image:url(" + QString(PLAYER_BLUE_MARKER_IMAGE)  + ")";
+    markers["green"]        = "border-image:url(" + QString(PLAYER_GREEN_MARKER_IMAGE)  + ")";
+    markers["red"]          = "border-image:url(" + QString(PLAYER_RED_MARKER_IMAGE)  + ")";
+    markers["orange"]       = "border-image:url(" + QString(PLAYER_ORANGE_MARKER_IMAGE)  + ")";
+    markers["gray"]         = "border-image:url(" + QString(PLAYER_GRAY_MARKER_IMAGE)  + ")";
+    markers["brown"]        = "border-image:url(" + QString(PLAYER_BROWN_MARKER_IMAGE)  + ")";
 
     stateLabels["BELLA"] = ui->lb_bella;
     stateLabels["PLADACI"] = ui->lb_pladaci;
@@ -44,7 +49,7 @@ void GameWinner::declare(const std::vector<Player> &players, const Player &winne
 
     for (auto &&player : players) {
         for (auto &&state_name : player.get_states_name()) {
-            stateLabels[state_name]->setStyleSheet(markers[""]);
+            stateLabels[state_name]->setStyleSheet(markers[player.getColor()]);
             stateLabels[state_name]->setVisible(true);
         }
     }

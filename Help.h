@@ -26,10 +26,11 @@ private slots:
 
     void on_cb_help_list_activated(int index);
 
+    void on_cb_help_list_currentTextChanged(const QString &arg1);
+
 private:
     Ui::Help *ui;
-    Game *game;
-    UserInterface *user;
+    std::map<std::string, QString> cardsImageRef;
 };
 
 #endif // HELP_H
