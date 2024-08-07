@@ -19,12 +19,8 @@ public:
     explicit Start(QWidget *parent = nullptr);
     ~Start();
 public slots:
-    void get_player(std::string, size_t, Color);
-signals:
-    void set_player(std::string, size_t, Color);
-    void end();
+    size_t get_players_number();
 private slots:
-
     void on_btn_next_clicked();
 
     void on_btn_back_clicked();
@@ -33,10 +29,6 @@ private slots:
 
 private:
     Ui::Start *ui;
-    Setplayer *setplayer;
-    size_t playersNumber;
-    size_t playerID;
-    std::map<QString, Color> freeColors;
 };
 
 #endif // START_H

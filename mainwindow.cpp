@@ -11,28 +11,21 @@
 
 
 MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent)
-    , ui(new Ui::MainWindow),
+    : QMainWindow(parent),
+    ui(new Ui::MainWindow),
     game(new Game),
     battleground_page(new Locateinfo("BattleMarker", this)),
     favorground_page(new Locateinfo( "FavorMarker", this)),
     start(new Start(this)),
+    setplayer(new Setplayer(this)),
     campaign(new Campaign(this)),
     warWinner_page(new Winner(this)),
-    gameWinner_page(new GameWinner(this))
+    gameWinner_page(new GameWinner(this)),
+    showcards(new showCards(this))
 {
     ui->setupUi(this);
     this->setWindowTitle("Condottiere");
-    showcards = new showCards;
-    QObject::connect(start, &Start::end, this, &MainWindow::startGame);
-    QObject::connect(start, &Start::set_player, game, &Game::get_player);
-    QObject::connect(game, &Game::set_battleground, battleground_page, &Locateinfo::set_ground);
-    QObject::connect(game, &Game::set_favorground,  favorground_page,  &Locateinfo::set_ground);
-    QObject::connect(game, &Game::showPlayerCards, showcards, &showCards::getPlayer);
-    QObject::connect(game, &Game::startWar, campaign, &Campaign::startWar);
-    QObject::connect(game, &Game::getCommand, campaign, &Campaign::getCommand);
-    QObject::connect(game, &Game::declare_gameWinner, gameWinner_page, &GameWinner::declare);
-    QObject::connect(game, &Game::declare_warWinner, warWinner_page, &Winner::declare);
+
     player = new QMediaPlayer;
     audioOutput = new QAudioOutput;
     player->setAudioOutput(audioOutput);
@@ -44,19 +37,10 @@ MainWindow::MainWindow(QWidget *parent)
 
 MainWindow::~MainWindow()
 {
-    QObject::disconnect(start, &Start::set_player, game, &Game::get_player);
-    QObject::disconnect(start, &Start::end, this, &MainWindow::startGame);
-    QObject::disconnect(game, &Game::set_battleground, battleground_page, &Locateinfo::set_ground );
-    QObject::disconnect(game, &Game::set_favorground,  favorground_page,  &Locateinfo::set_ground );
-    QObject::disconnect(game, &Game::showPlayerCards, showcards, &showCards::getPlayer);
-    QObject::disconnect(game, &Game::showPlayerCards, showcards, &showCards::getPlayer);
-    QObject::disconnect(game, &Game::startWar, campaign, &Campaign::startWar);
-    QObject::disconnect(game, &Game::getCommand, campaign, &Campaign::getCommand);
-    QObject::disconnect(game, &Game::declare_gameWinner, gameWinner_page, &GameWinner::declare);
-    QObject::disconnect(game, &Game::declare_warWinner, warWinner_page, &Winner::declare);
     delete battleground_page;
     delete favorground_page;
     delete start;
+    delete setplayer;
     delete ui;
     delete game;
     delete showcards;
@@ -67,15 +51,36 @@ MainWindow::~MainWindow()
     delete warWinner_page;
 }
 
-void MainWindow::startGame()
-{
-    game->start();
-}
-
 void MainWindow::on_btn_Start_clicked()
 {
-    start->show();
     hide();
+    delete game;
+    game = new Game;
+
+    QObject::connect(game, &Game::get_players_number, start, &Start::get_players_number);
+    QObject::connect(game, &Game::get_player_page_show, setplayer, &Setplayer::page_show);
+    QObject::connect(setplayer, &Setplayer::get_player, game, &Game::get_player);
+    QObject::connect(game, &Game::set_battleground, battleground_page, &Locateinfo::set_ground);
+    QObject::connect(game, &Game::set_favorground,  favorground_page,  &Locateinfo::set_ground);
+    QObject::connect(game, &Game::showPlayerCards, showcards, &showCards::getPlayer);
+    QObject::connect(game, &Game::startWar, campaign, &Campaign::startWar);
+    QObject::connect(game, &Game::getCommand, campaign, &Campaign::getCommand);
+    QObject::connect(game, &Game::declare_gameWinner, gameWinner_page, &GameWinner::declare);
+    QObject::connect(game, &Game::declare_warWinner, warWinner_page, &Winner::declare);
+
+    game->start();
+
+    QObject::disconnect(game, &Game::get_players_number, start, &Start::get_players_number);
+    QObject::disconnect(game, &Game::get_player_page_show, setplayer, &Setplayer::page_show);
+    QObject::disconnect(setplayer, &Setplayer::get_player, game, &Game::get_player);
+    QObject::disconnect(game, &Game::set_battleground, battleground_page, &Locateinfo::set_ground );
+    QObject::disconnect(game, &Game::set_favorground,  favorground_page,  &Locateinfo::set_ground );
+    QObject::disconnect(game, &Game::showPlayerCards, showcards, &showCards::getPlayer);
+    QObject::disconnect(game, &Game::showPlayerCards, showcards, &showCards::getPlayer);
+    QObject::disconnect(game, &Game::startWar, campaign, &Campaign::startWar);
+    QObject::disconnect(game, &Game::getCommand, campaign, &Campaign::getCommand);
+    QObject::disconnect(game, &Game::declare_gameWinner, gameWinner_page, &GameWinner::declare);
+    QObject::disconnect(game, &Game::declare_warWinner, warWinner_page, &Winner::declare);
 }
 
 void MainWindow::on_btn_exit_clicked()
@@ -85,8 +90,33 @@ void MainWindow::on_btn_exit_clicked()
 
 void MainWindow::on_btn_load_game_clicked()
 {
+    hide();
+    delete game;
+    game = new Game;
+    QObject::connect(game, &Game::get_players_number, start, &Start::get_players_number);
+    QObject::connect(game, &Game::get_player_page_show, setplayer, &Setplayer::page_show);
+    QObject::connect(setplayer, &Setplayer::get_player, game, &Game::get_player);
+    QObject::connect(game, &Game::set_battleground, battleground_page, &Locateinfo::set_ground);
+    QObject::connect(game, &Game::set_favorground,  favorground_page,  &Locateinfo::set_ground);
+    QObject::connect(game, &Game::showPlayerCards, showcards, &showCards::getPlayer);
+    QObject::connect(game, &Game::startWar, campaign, &Campaign::startWar);
+    QObject::connect(game, &Game::getCommand, campaign, &Campaign::getCommand);
+    QObject::connect(game, &Game::declare_gameWinner, gameWinner_page, &GameWinner::declare);
+    QObject::connect(game, &Game::declare_warWinner, warWinner_page, &Winner::declare);
+
     //game->load();
-    game->start();
+
+    QObject::disconnect(game, &Game::get_players_number, start, &Start::get_players_number);
+    QObject::disconnect(game, &Game::get_player_page_show, setplayer, &Setplayer::page_show);
+    QObject::disconnect(setplayer, &Setplayer::get_player, game, &Game::get_player);
+    QObject::disconnect(game, &Game::set_battleground, battleground_page, &Locateinfo::set_ground );
+    QObject::disconnect(game, &Game::set_favorground,  favorground_page,  &Locateinfo::set_ground );
+    QObject::disconnect(game, &Game::showPlayerCards, showcards, &showCards::getPlayer);
+    QObject::disconnect(game, &Game::showPlayerCards, showcards, &showCards::getPlayer);
+    QObject::disconnect(game, &Game::startWar, campaign, &Campaign::startWar);
+    QObject::disconnect(game, &Game::getCommand, campaign, &Campaign::getCommand);
+    QObject::disconnect(game, &Game::declare_gameWinner, gameWinner_page, &GameWinner::declare);
+    QObject::disconnect(game, &Game::declare_warWinner, warWinner_page, &Winner::declare);
 }
 
 void MainWindow::on_btn_sound_clicked()

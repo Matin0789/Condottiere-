@@ -6,7 +6,8 @@
 #include <utility>
 #include <fstream> // for files
 #include <sstream> // for read file as stream
-#include <typeinfo>
+#include <QDebug>
+
 
 #include "game.h"
 #include "filepath.h"
@@ -34,8 +35,14 @@ Game::Game(QObject *parent) :
     else
         throw std::runtime_error("The game help file cannot be opened");
     //
-
     
+    freeColors["ORANGE"] =  orange;
+    freeColors["BLUE"]   =  blue;
+    freeColors["GREEN"]  =  green;
+    freeColors["RED"]    =  red;
+    freeColors["GRAY"]   =  gray;
+    freeColors["BROWN"]  =  brown;
+
     for (int i = 0; i < 10; i++)
     {
         cards.push_back(new YellowCard(1));  // an array of yellow cards
@@ -133,7 +140,7 @@ size_t Game::warـanalyst(){
         });
     for (auto &&purpleCard : purpleCards)
     {
-        if (typeid(*purpleCard.second) == typeid(Drummer)) {
+        if (purpleCard.second->getType() == "Drummer") {
             if (drummer_set[purpleCard.first] == false) {
                 purpleCard.second->applyFeature(pointCards, purpleCard.first);
                 drummer_set[purpleCard.first] = true;
@@ -203,6 +210,11 @@ bool Game::find_game_winner(const Player& player){
 }
 
 void Game::get_player(std::string name, size_t age, Color color) {
+    for (auto &&freeColor : freeColors) {
+        if(freeColor.second == color){
+            freeColors.erase(freeColors.find(freeColor.first));
+        }
+    }
     players.push_back(Player(name, players.size(), age, color));
 }
 
@@ -225,6 +237,12 @@ void Game::shuffle()  //This function is for shuffling cards
 
 void Game::start()
 {
+    size_t players_number = emit get_players_number();
+    qInfo() << "game ok";
+    for (size_t i = 0; i < players_number; i++) {
+        emit get_player_page_show(freeColors, i + 1);
+        qInfo() << "setplayer ok";
+    }
     distributeCards();
     size_t currentPlayerID = 1;
     currentPlayerID = compareAge();
@@ -434,11 +452,11 @@ std::pair<size_t, std::pair<size_t, size_t>> Game::war(int currentPlayerID) {   
         }
         else {
             const Card* drawnCard = activePlayers[i]->drawn_card(command);
-            if (typeid(*drawnCard) == typeid(Turncoat)){
+            if (drawnCard->getType() == "Turncoat"){
                 cards.push_back(drawnCard);
                 break;
             }
-            else if (typeid(*drawnCard) == typeid(Scarecrow)){
+            else if (drawnCard->getType() == "Scarecrow"){
                 if (!activePlayers[i]->getPlayedCards().empty()) {
                     std::string choose ;//= emit scarecrow_get_card(*activePlayers[i]);
                     if (choose[0] >= '0' and choose[0] <= '9'){
@@ -460,10 +478,10 @@ std::pair<size_t, std::pair<size_t, size_t>> Game::war(int currentPlayerID) {   
                 season = drawnCard;
             }
             else{
-                if (typeid(*drawnCard) == typeid(Bishop)) {
+                if (drawnCard->getType() == "Bishop") {
                     battleSetterID = activePlayers[i]->getID();
                 }
-                else if (typeid(*drawnCard) == typeid(Spy)) {
+                else if (drawnCard->getType() == "Spy") {
                     spyCounter[activePlayers[i]->getID()]++;
                 }
                 activePlayers[i]->push_to_playedCards(drawnCard);

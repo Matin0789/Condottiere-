@@ -49,6 +49,7 @@ public slots:
 
     void get_player(std::string, size_t, Color);
 
+
     //
 
 signals :
@@ -60,6 +61,8 @@ signals :
     //std::string scarecrow_get_card(const Player&);
     void declare_warWinner(const Player&, BattleMarker&, bool = true);
     void declare_gameWinner(const std::vector<Player>&, const Player&);
+    size_t get_players_number();
+    void get_player_page_show(std::map<QString, Color>, size_t);
 private:
 	//private methods
 	size_t warـanalyst();
@@ -79,6 +82,7 @@ private:
     const Card* season;
 	GameBoard gameBoard;
 	std::vector<Player> players;
+    std::map<QString, Color> freeColors;
 	//
 };
 

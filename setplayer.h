@@ -18,9 +18,10 @@ class Setplayer : public QDialog
     Q_OBJECT
 
 public:
-    explicit Setplayer(std::map<QString, Color>, size_t, QWidget *parent = nullptr);
+    explicit Setplayer(QWidget *parent = nullptr);
     ~Setplayer();
-
+public slots:
+    void page_show(std::map<QString, Color>, size_t);
 private slots:
     void on_btn_next_clicked();
     void on_btn_back_clicked();

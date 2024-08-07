@@ -29,7 +29,7 @@ public:
     ~MainWindow();
 
 public slots:
-    void startGame();
+
 private slots:
     void on_btn_Start_clicked();
     void on_btn_exit_clicked();
@@ -39,6 +39,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
     Start *start;
+    Setplayer *setplayer;
     showCards *showcards;
     Campaign *campaign;
     Game *game;
