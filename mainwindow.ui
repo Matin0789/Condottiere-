@@ -201,7 +201,7 @@ QPushButton : pressed
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/photos/Sc 145857.jpg.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/condottiere.jpg);</string>
     </property>
     <property name="text">
      <string/>

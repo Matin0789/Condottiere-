@@ -31,7 +31,8 @@ std::string Drummer::getHelp() {
 void Drummer::applyFeature(std::vector<std::vector<unsigned int>>& playersCardPoints, int currentPlayerID) const {
     for (auto &&point : playersCardPoints[currentPlayerID])
     {
-        point *= 2;
+        point *= 1.5;  // point*=2
+        //This change is for the third phase of the project 
     }
     
 }
