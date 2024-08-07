@@ -202,12 +202,12 @@ void Campaign::startWar(const std::vector<Player> &players, BattleMarker & battl
 std::string Campaign::getCommand(const std::vector<Player>& players, const Player & currentPlayer, const Card * season)
 {
     command = "";
-    ui->btn_pass->setText("PASS");
     ui->lb_season->setVisible(false);
     ui->lb_season->setStyleSheet("");
     for(auto && currentPlayerCard_lbl :currentPlayerCards_btn) {
         currentPlayerCard_lbl->setVisible(false);
         currentPlayerCard_lbl->setStyleSheet("");
+        currentPlayerCard_lbl->setText("");
     }
     for (int i = 0; i < colors_lbl.size(); i++) {
         colors_lbl[i]->setVisible(false);
@@ -244,19 +244,18 @@ std::string Campaign::getCommand(const std::vector<Player>& players, const Playe
     }
 
     ui->lb_player->setStyleSheet("QLabel { background-color : " + QString::fromStdString(currentPlayer.getColor()) +";}");
-    std::vector<const Card*> currentPlayerCard = currentPlayer.getCards();
-    for (int i = 0; i < currentPlayerCard.size(); i++) {
-        currentPlayerCards_btn[i]->setVisible(true);
-        currentPlayerCards_btn[i]->setStyleSheet(cardsImageRef[currentPlayerCard[i]->getType()]);
-        connect(currentPlayerCards_btn[i], SIGNAL(clicked(bool)), this, SLOT(findSelectedCard()));
-    }
     std::vector<const Card*> currentPlayerPlayedCard = currentPlayer.getPlayedCards();
     for (int i = 0; i < currentPlayerPlayedCard.size(); i++) {
-        currentPlayerCards_btn[i + currentPlayerCard.size()]->setVisible(true);
-        currentPlayerCards_btn[i + currentPlayerCard.size()]->setStyleSheet(cardsImageRef[currentPlayerPlayedCard[i]->getType()]);
-        currentPlayerCards_btn[i + currentPlayerCard.size()]->setText("PLAYED");
+        currentPlayerCards_btn[i]->setVisible(true);
+        currentPlayerCards_btn[i]->setStyleSheet(cardsImageRef[currentPlayerPlayedCard[i]->getType()]);
+        currentPlayerCards_btn[i]->setText("PLAYED");
     }
-
+    std::vector<const Card*> currentPlayerCard = currentPlayer.getCards();
+    for (int i = 0; i < currentPlayerCard.size(); i++) {
+        currentPlayerCards_btn[i + currentPlayerPlayedCard.size()]->setVisible(true);
+        currentPlayerCards_btn[i + currentPlayerPlayedCard.size()]->setStyleSheet(cardsImageRef[currentPlayerCard[i]->getType()]);
+        connect(currentPlayerCards_btn[i + currentPlayerPlayedCard.size()], SIGNAL(clicked(bool)), this, SLOT(findSelectedCard()));
+    }
 
     QEventLoop loop;
     connect(this, SIGNAL(checked()), &loop, SLOT(quit()));

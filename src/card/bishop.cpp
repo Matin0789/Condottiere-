@@ -27,21 +27,23 @@ std::string Bishop::getHelp() {
     return Bishop::help;
 }
 
-void Bishop::applyFeature(std::vector<std::vector<unsigned int>>& playersCardPoints, int currentPlayerID) const { 
-    unsigned int minPoint = 0;
+void Bishop::applyFeature(std::vector<std::vector<unsigned int>>& playersCardPoints, int currentPlayerID) const {
+    unsigned int maxPoint = 0;
     for (auto &&cardsPoint : playersCardPoints)
     {
-        unsigned int playerMinPoint = *std::min_element(cardsPoint.begin(), cardsPoint.end());
-        minPoint = (minPoint > playerMinPoint) ? playerMinPoint:minPoint;
+        if (!cardsPoint.empty()) {
+            unsigned int playerMaxPoint = *std::max_element(cardsPoint.begin(), cardsPoint.end());
+            maxPoint = (maxPoint < playerMaxPoint) ? playerMaxPoint:maxPoint;
+        }
     }
     
     for (auto &&cardsPoint : playersCardPoints)
 	{
 		if (!cardsPoint.empty()) {
-			for (auto &&point : cardsPoint)
+            for (auto &&cardPoint : cardsPoint)
 			{
-				if (point == minPoint) {
-                    point = 0;
+                if (cardPoint == maxPoint) {
+                    cardPoint = 0;
                 }
 			}
 		}

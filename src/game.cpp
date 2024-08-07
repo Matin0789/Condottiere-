@@ -526,6 +526,7 @@ std::pair<size_t, std::pair<size_t, size_t>> Game::war(int currentPlayerID) {   
     r.first = currentPlayerID;
     r.second.first = favorSetterID;
     r.second.second = battleSetterID;
+    emit endWar();
     return r;
 }
 
