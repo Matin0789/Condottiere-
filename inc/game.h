@@ -39,18 +39,7 @@ public:
     bool save(std::string) const; 	// (save file path)
     bool load(std::string);	// (save file path)
 public slots:
-    /*
-    std::string getCommand(const Player&, const BattleMarker&, const Card*);
-
-    void getPlayerStates(const Player&) const;
-    void getPlayerCards(const Player&) const;
-    void getPlayerPlayedCards(const Player&) const;
-    std::string get_card_name();*/
-
     void get_player(std::string, size_t, Color);
-
-
-    //
 
 signals :
     State* set_battleground(const std::vector<Player>&,const Player&, GameBoard&, FavorMarker& );

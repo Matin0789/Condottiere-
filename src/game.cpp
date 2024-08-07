@@ -213,6 +213,7 @@ void Game::get_player(std::string name, size_t age, Color color) {
     for (auto &&freeColor : freeColors) {
         if(freeColor.second == color){
             freeColors.erase(freeColors.find(freeColor.first));
+            break;
         }
     }
     players.push_back(Player(name, players.size(), age, color));
@@ -238,10 +239,8 @@ void Game::shuffle()  //This function is for shuffling cards
 void Game::start()
 {
     size_t players_number = emit get_players_number();
-    qInfo() << "game ok";
     for (size_t i = 0; i < players_number; i++) {
-        emit get_player_page_show(freeColors, i + 1);
-        qInfo() << "setplayer ok";
+        emit get_player_page_show(freeColors, i);
     }
     distributeCards();
     size_t currentPlayerID = 1;
@@ -442,7 +441,11 @@ std::pair<size_t, std::pair<size_t, size_t>> Game::war(int currentPlayerID) {   
     size_t i = currentPlayerID;
     size_t battleSetterID = players.size();
     size_t favorSetterID = players.size();
-    std::vector<size_t> spyCounter(players.size());
+    std::vector<std::pair<size_t, size_t>> spyCounter(players.size());
+    for(size_t i = 0;i < players.size(); i++) {
+        spyCounter[i].first = players[i].getID();
+        spyCounter[i].second = 0;
+    }
     for (;!activePlayers.empty(); i++) {
         std::string command = emit getCommand(players, *activePlayers[i], season);
         if (command == "pass") {       // if player select passing 
@@ -479,10 +482,10 @@ std::pair<size_t, std::pair<size_t, size_t>> Game::war(int currentPlayerID) {   
             }
             else{
                 if (drawnCard->getType() == "Bishop") {
-                    battleSetterID = activePlayers[i]->getID();
+                    favorSetterID = activePlayers[i]->getID();
                 }
                 else if (drawnCard->getType() == "Spy") {
-                    spyCounter[activePlayers[i]->getID()]++;
+                    spyCounter[activePlayers[i]->getID()].second++;
                 }
                 activePlayers[i]->push_to_playedCards(drawnCard);
             }
@@ -502,16 +505,27 @@ std::pair<size_t, std::pair<size_t, size_t>> Game::war(int currentPlayerID) {   
         battleMarker.getState().set(false);
     }
     
-    favorSetterID = (std::max_element(spyCounter.begin(), spyCounter.end()) - spyCounter.begin());
+
+
+    std::sort(spyCounter.begin(), spyCounter.end(),
+              [](const std::pair<size_t,size_t>& p1, const std::pair<size_t,size_t>& p2) {
+        return p1.second > p2.second;
+    });
+    if (spyCounter[0].second != 0)
+        if (spyCounter[0].second == spyCounter[1].second){
+           battleSetterID = currentPlayerID;
+        }
+        else {
+            battleSetterID = spyCounter[0].first;
+        }
+    else {
+        battleSetterID = currentPlayerID;
+    }
+
     std::pair<size_t, std::pair<size_t, size_t>> r; // first currentplayerID, second.first favorSetterID, second.second battleSetterID
     r.first = currentPlayerID;
     r.second.first = favorSetterID;
-    if (battleSetterID < players.size()){
-        r.second.second = battleSetterID;
-    }
-    else {
-        r.second.second = currentPlayerID;
-    }
+    r.second.second = battleSetterID;
     return r;
 }
 
