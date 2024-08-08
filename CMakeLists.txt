@@ -99,6 +99,10 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         campaign.h campaign.cpp campaign.ui
         gamewinner.h gamewinner.cpp gamewinner.ui
         img.qrc
+        loadgames.h loadgames.cpp loadgames.ui
+        savegame.h savegame.cpp savegame.ui
+
+
 
 
     )

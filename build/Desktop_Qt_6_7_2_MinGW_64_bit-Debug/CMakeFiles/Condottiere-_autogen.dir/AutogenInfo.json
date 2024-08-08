@@ -522,6 +522,12 @@
 			null
 		],
 		[
+			"C:/project/Condottiere-/loadgames.h",
+			"MU",
+			"EWIEGA46WW/moc_loadgames.cpp",
+			null
+		],
+		[
 			"C:/project/Condottiere-/locateinfo.h",
 			"MU",
 			"EWIEGA46WW/moc_locateinfo.cpp",
@@ -537,6 +543,12 @@
 			"C:/project/Condottiere-/options.h",
 			"MU",
 			"EWIEGA46WW/moc_options.cpp",
+			null
+		],
+		[
+			"C:/project/Condottiere-/savegame.h",
+			"MU",
+			"EWIEGA46WW/moc_savegame.cpp",
 			null
 		],
 		[
@@ -641,10 +653,12 @@
 		[ "C:/project/Condottiere-/Warwinner.cpp", "MU", null ],
 		[ "C:/project/Condottiere-/campaign.cpp", "MU", null ],
 		[ "C:/project/Condottiere-/gamewinner.cpp", "MU", null ],
+		[ "C:/project/Condottiere-/loadgames.cpp", "MU", null ],
 		[ "C:/project/Condottiere-/locateinfo.cpp", "MU", null ],
 		[ "C:/project/Condottiere-/main.cpp", "MU", null ],
 		[ "C:/project/Condottiere-/mainwindow.cpp", "MU", null ],
 		[ "C:/project/Condottiere-/options.cpp", "MU", null ],
+		[ "C:/project/Condottiere-/savegame.cpp", "MU", null ],
 		[ "C:/project/Condottiere-/setplayer.cpp", "MU", null ],
 		[ "C:/project/Condottiere-/showcards.cpp", "MU", null ],
 		[ "C:/project/Condottiere-/src/card/bishop.cpp", "MU", null ],

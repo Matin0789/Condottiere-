@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>loadGames</class>
+ <widget class="QMainWindow" name="loadGames">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -10,37 +10,18 @@
     <height>600</height>
    </rect>
   </property>
-  <property name="minimumSize">
-   <size>
-    <width>800</width>
-    <height>0</height>
-   </size>
-  </property>
-  <property name="maximumSize">
-   <size>
-    <width>800</width>
-    <height>607</height>
-   </size>
-  </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <property name="styleSheet">
-   <string notr="true">background-color: rgb(255, 255, 255);
-</string>
-  </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="btn_Start">
+   <widget class="QPushButton" name="pb_L_1">
     <property name="geometry">
      <rect>
-      <x>310</x>
-      <y>450</y>
-      <width>179</width>
+      <x>350</x>
+      <y>140</y>
+      <width>91</width>
       <height>31</height>
      </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>ClosedHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
      <string notr="true">
@@ -49,143 +30,203 @@ QPushButton
 	color : black ;
 	background-color : ;
 	font: 700 13pt &quot;Segoe Print&quot;;
-	border-image: 30px url(:/Description/Graphics/photos/images (1852).jpg); 
+	border-image: 30px ;
+}
+
+QPushButton : Hover
+{
+	background-color :rgb(255, 240, 196) ;
+    border-radius : 40px ;
+	border-image: 10px ;
+}
+
+QPushButton : pressed
+{
+	background-color :rgb(255, 240, 196) ;
+	color : white ;
+	border-image: 10px;
+
+}</string>
+    </property>
+    <property name="text">
+     <string> #name</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_L_2">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>200</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton
+{
+	color : black ;
+	background-color : ;
+	font: 700 13pt &quot;Segoe Print&quot;;
+	border-image: 30px ;
 }
 
 QPushButton : Hover
 {
 	background-color : ;
     border-radius : 40px ;
-	border-image: 10px url(:/Description/Graphics/photos/blue.jpg) ;
+	border-image: 10px ;
 }
 
 QPushButton : pressed
 {
 	background-color :black ;
 	color : white ;
-	border-image: 10px url(:/Description/Graphics/photos/images (1852).jpg); 
+	border-image: url(:/Description/Graphics/photos/blue.jpg);
 
 }</string>
     </property>
     <property name="text">
-     <string>Start Game</string>
+     <string> #name</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="btn_sound">
+   <widget class="QPushButton" name="pb_L_3">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>20</y>
-      <width>41</width>
+      <x>350</x>
+      <y>260</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton
+{
+	color : black ;
+	background-color : ;
+	font: 700 13pt &quot;Segoe Print&quot;;
+	border-image: 30px ;
+}
+
+QPushButton : Hover
+{
+	background-color : ;
+    border-radius : 40px ;
+	border-image: 10px ;
+}
+
+QPushButton : pressed
+{
+	background-color :black ;
+	color : white ;
+	border-image: url(:/Description/Graphics/photos/blue.jpg);
+
+}</string>
+    </property>
+    <property name="text">
+     <string> #name</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_L_4">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>320</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton
+{
+	color : black ;
+	background-color : ;
+	font: 700 13pt &quot;Segoe Print&quot;;
+	border-image: 30px ;
+}
+
+QPushButton : Hover
+{
+	background-color : ;
+    border-radius : 40px ;
+	border-image: 10px ;
+}
+
+QPushButton : pressed
+{
+	background-color :black ;
+	color : white ;
+	border-image: url(:/Description/Graphics/photos/blue.jpg);
+
+}</string>
+    </property>
+    <property name="text">
+     <string> #name</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_L_5">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>380</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton
+{
+	color : black ;
+	background-color : ;
+	font: 700 13pt &quot;Segoe Print&quot;;
+	border-image: 30px ;
+}
+
+QPushButton : Hover
+{
+	background-color : ;
+    border-radius : 40px ;
+	border-image: 10px ;
+}
+
+QPushButton : pressed
+{
+	background-color :black ;
+	color : white ;
+	border-image: url(:/Description/Graphics/photos/blue.jpg);
+
+}</string>
+    </property>
+    <property name="text">
+     <string> #name</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_player_counter">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>30</y>
+      <width>331</width>
       <height>41</height>
      </rect>
     </property>
     <property name="cursor">
-     <cursorShape>ClosedHandCursor</cursorShape>
+     <cursorShape>UpArrowCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">
-QPushButton
-{
+     <string notr="true">font: 9pt &quot;Segoe Print&quot;;
 
-	color : black ;
-	background-color : ;
-	font: 700 13pt &quot;B Koodak&quot;;
-	border-image: url(:/Description/Graphics/photos/volume.png);
-}
-QPushButton : Hover
-{
-	background-color : ;
-    border-radius : 40px ;
-	border-image: 10px url(:/Description/Graphics/photos/volume.png);
-}
-QPushButton : pressed
-{
-	background-color :black ;
-	color : black ;
-	border-image: 10px url(:/Description/Graphics/photos/volume.png);
-}</string>
+background-color: rgb(255, 240, 196);
+color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
     </property>
     <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btn_load_game">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>480</y>
-      <width>179</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>ClosedHandCursor</cursorShape>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-QPushButton
-{
-
-	color : black ;
-	background-color : ;
-	font: 700 13pt &quot;Segoe Print&quot;;
-	border-image: 30px ;
-}
-QPushButton : Hover
-{
-	background-color : ;
-    border-radius : 40px ;
-	border-image: 10px ;
-}
-QPushButton : pressed
-{
-	background-color :black ;
-	color : black ;
-	border-image: 10px  ;
-}</string>
-    </property>
-    <property name="text">
-     <string>Load Game</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btn_exit">
-    <property name="geometry">
-     <rect>
-      <x>510</x>
-      <y>480</y>
-      <width>179</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>ClosedHandCursor</cursorShape>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-QPushButton
-{
-
-	color : black ;
-	background-color : ;
-	font: 700 13pt &quot;Segoe Print&quot;;
-	border-image: 30px ;
-}
-QPushButton : Hover
-{
-	background-color : ;
-    border-radius : 40px ;
-	border-image: 10px ;
-}
-QPushButton : pressed
-{
-	background-color :black ;
-	color : black ;
-	border-image: 10px  ;
-}</string>
-    </property>
-    <property name="text">
-     <string>Exit</string>
+     <string>            Welcome To Load Games Empire !</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
@@ -194,24 +235,23 @@ QPushButton : pressed
       <x>0</x>
       <y>-20</y>
       <width>800</width>
-      <height>611</height>
+      <height>600</height>
      </rect>
     </property>
-    <property name="cursor">
-     <cursorShape>OpenHandCursor</cursorShape>
-    </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Description/Graphics/photos/Sc 145857.jpg.png);</string>
+     <string notr="true">border-image: url(:/Description/Graphics/photos/hq720.jpg);</string>
     </property>
     <property name="text">
      <string/>
     </property>
    </widget>
    <zorder>label</zorder>
-   <zorder>btn_Start</zorder>
-   <zorder>btn_sound</zorder>
-   <zorder>btn_load_game</zorder>
-   <zorder>btn_exit</zorder>
+   <zorder>pb_L_1</zorder>
+   <zorder>pb_L_2</zorder>
+   <zorder>pb_L_3</zorder>
+   <zorder>pb_L_4</zorder>
+   <zorder>pb_L_5</zorder>
+   <zorder>lb_player_counter</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -223,6 +263,7 @@ QPushButton : pressed
     </rect>
    </property>
   </widget>
+  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>
