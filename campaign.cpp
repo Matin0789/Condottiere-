@@ -259,6 +259,7 @@ std::string Campaign::getCommand(const std::vector<Player>& players, const Playe
 
     QParallelAnimationGroup group;
     ui->lb_player->setStyleSheet("QLabel { background-color : " + QString::fromStdString(currentPlayer.getColor()) +";}");
+    //
     std::vector<const Card*> currentPlayerPlayedCard = currentPlayer.getPlayedCards();
     for (int i = 0; i < currentPlayerPlayedCard.size(); i++) {
         currentPlayerCards_btn[i]->setVisible(true);
@@ -282,12 +283,12 @@ std::string Campaign::getCommand(const std::vector<Player>& players, const Playe
         QRect end(currentPlayerCards_btn[i + currentPlayerPlayedCard.size()]->geometry());
         currentPlayerCards_btn[i + currentPlayerPlayedCard.size()]->setGeometry(currentPlayerCards_btn[0]->geometry());
 
-        animations[i]->setDuration(400);
-        animations[i]->setStartValue(currentPlayerCards_btn[0]->geometry());
-        animations[i]->setEndValue(end);
-        group.addAnimation(animations[i]);
+        animations[i + currentPlayerPlayedCard.size()]->setDuration(400);
+        animations[i + currentPlayerPlayedCard.size()]->setStartValue(currentPlayerCards_btn[0]->geometry());
+        animations[i + currentPlayerPlayedCard.size()]->setEndValue(end);
+        group.addAnimation(animations[i + currentPlayerPlayedCard.size()]);
     }
-
+    //
     QEventLoop loop;
     QObject::connect(&group, SIGNAL(finished()), &loop, SLOT(quit()));
     group.start();
