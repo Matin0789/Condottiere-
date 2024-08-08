@@ -10,6 +10,9 @@
 #include <QGraphicsScene>
 #include <QGraphicsRectItem>
 #include <QGraphicsView>
+#include <QParallelAnimationGroup>
+#include <QSequentialAnimationGroup>
+#include <QPropertyAnimation>
 
 #include <map>
 
@@ -63,6 +66,8 @@ private:
     QVector<QPushButton*> currentPlayerCards_btn;
 
     QString command;
+
+    QVector<QPropertyAnimation*> animations;
 };
 
 #endif // CAMPAIGN_H

@@ -213,6 +213,7 @@ void Campaign::startWar(const std::vector<Player> &players, BattleMarker & battl
 
 std::string Campaign::getCommand(const std::vector<Player>& players, const Player & currentPlayer, const Card * season)
 {
+    ui->btn_showCards->setVisible(false);
     command = "";
     ui->lb_season->setVisible(false);
     ui->lb_season->setStyleSheet("");
@@ -230,6 +231,7 @@ std::string Campaign::getCommand(const std::vector<Player>& players, const Playe
             card_lbl->setText("");
         }
     }
+
     if (season) {
         ui->lb_season->setVisible(true);
         if (season->getType() == "Winter") {
@@ -255,27 +257,85 @@ std::string Campaign::getCommand(const std::vector<Player>& players, const Playe
         }
     }
 
+    QParallelAnimationGroup group;
     ui->lb_player->setStyleSheet("QLabel { background-color : " + QString::fromStdString(currentPlayer.getColor()) +";}");
     std::vector<const Card*> currentPlayerPlayedCard = currentPlayer.getPlayedCards();
     for (int i = 0; i < currentPlayerPlayedCard.size(); i++) {
         currentPlayerCards_btn[i]->setVisible(true);
         currentPlayerCards_btn[i]->setStyleSheet(cardsImageRef[currentPlayerPlayedCard[i]->getType()]);
         currentPlayerCards_btn[i]->setText("PLAYED");
+        animations.push_back(new QPropertyAnimation(currentPlayerCards_btn[i], "geometry", this));
+        QRect end(currentPlayerCards_btn[i]->geometry());
+        currentPlayerCards_btn[i]->setGeometry(currentPlayerCards_btn[0]->geometry());
+
+        animations[i]->setDuration(400);
+        animations[i]->setStartValue(currentPlayerCards_btn[0]->geometry());
+        animations[i]->setEndValue(end);
+        group.addAnimation(animations[i]);
     }
     std::vector<const Card*> currentPlayerCard = currentPlayer.getCards();
     for (int i = 0; i < currentPlayerCard.size(); i++) {
         currentPlayerCards_btn[i + currentPlayerPlayedCard.size()]->setVisible(true);
-        currentPlayerCards_btn[i + currentPlayerPlayedCard.size()]->setStyleSheet(cardsImageRef[currentPlayerCard[i]->getType()]);
-        connect(currentPlayerCards_btn[i + currentPlayerPlayedCard.size()], SIGNAL(clicked(bool)), this, SLOT(findSelectedCard()));
+        currentPlayerCards_btn[i + currentPlayerPlayedCard.size()]->setStyleSheet(
+            "border-image:url(" + QString(BACK_IMAGE) + ")");
+        animations.push_back(new QPropertyAnimation(currentPlayerCards_btn[i + currentPlayerPlayedCard.size()], "geometry", this));
+        QRect end(currentPlayerCards_btn[i + currentPlayerPlayedCard.size()]->geometry());
+        currentPlayerCards_btn[i + currentPlayerPlayedCard.size()]->setGeometry(currentPlayerCards_btn[0]->geometry());
+
+        animations[i]->setDuration(400);
+        animations[i]->setStartValue(currentPlayerCards_btn[0]->geometry());
+        animations[i]->setEndValue(end);
+        group.addAnimation(animations[i]);
     }
 
     QEventLoop loop;
+    QObject::connect(&group, SIGNAL(finished()), &loop, SLOT(quit()));
+    group.start();
+    loop.exec();
+    ui->btn_showCards->setVisible(true);
+    QObject::disconnect(&group, SIGNAL(finished()), &loop, SLOT(quit()));
+    QObject::connect(ui->btn_showCards, SIGNAL(clicked(bool)), &loop, SLOT(quit()));
+    loop.exec();
+    QObject::disconnect(ui->btn_showCards, SIGNAL(clicked(bool)), &loop, SLOT(quit()));
+
+    for(auto &&animation : animations)
+        delete animation;
+    animations.clear();
+
+    for (int i = 0; i < currentPlayerCard.size(); i++) {
+        animations.push_back(new QPropertyAnimation(currentPlayerCards_btn[i + currentPlayerPlayedCard.size()], "geometry", this));
+        QRect end(currentPlayerCards_btn[i + currentPlayerPlayedCard.size()]->geometry());
+        animations[i]->setDuration(200);
+        animations[i]->setStartValue(end);
+        animations[i]->setEndValue(QRect(end.left() + (end.width()/2), end.top(), 0, end.height()));
+        animations[i]->start();
+
+        QObject::connect(animations[i], SIGNAL(finished()), &loop, SLOT(quit()));
+        loop.exec();
+        QObject::disconnect(animations[i], SIGNAL(finished()), &loop, SLOT(quit()));
+
+        currentPlayerCards_btn[i + currentPlayerPlayedCard.size()]->setStyleSheet(cardsImageRef[currentPlayerCard[i]->getType()]);
+        connect(currentPlayerCards_btn[i + currentPlayerPlayedCard.size()], SIGNAL(clicked(bool)), this, SLOT(findSelectedCard()));
+
+        animations[i]->setDuration(200);
+        animations[i]->setStartValue(QRect(end.left() + (end.width()/2), end.top(), 0, end.height()));
+        animations[i]->setEndValue(end);
+        animations[i]->start();
+    }
+    ui->btn_showCards->setVisible(false);
+
+
     connect(this, SIGNAL(checked()), &loop, SLOT(quit()));
     loop.exec();
     for (auto &&currentPlayerCard_lbl : currentPlayerCards_btn) {
         disconnect(currentPlayerCard_lbl, SIGNAL(clicked(bool)), this, SLOT(findSelectedCard()));
     }
     disconnect(this, SIGNAL(checked()), &loop, SLOT(quit()));
+
+    for(auto &&animation : animations)
+        delete animation;
+    animations.clear();
+
     return command.toStdString();
 }
 

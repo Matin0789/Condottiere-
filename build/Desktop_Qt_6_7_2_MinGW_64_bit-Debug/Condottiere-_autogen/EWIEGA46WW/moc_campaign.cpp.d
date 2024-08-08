@@ -1,12 +1,17 @@
 C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/EWIEGA46WW/moc_campaign.cpp: C:/project/Condottiere-/campaign.h \
   C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_autogen/moc_predefs.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/QObject \
+  C:/Qt/6.7.2/mingw_64/include/QtCore/QParallelAnimationGroup \
+  C:/Qt/6.7.2/mingw_64/include/QtCore/QPropertyAnimation \
+  C:/Qt/6.7.2/mingw_64/include/QtCore/QSequentialAnimationGroup \
   C:/Qt/6.7.2/mingw_64/include/QtCore/QVector \
   C:/Qt/6.7.2/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/q20memory.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/q20type_traits.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/q23utility.h \
+  C:/Qt/6.7.2/mingw_64/include/QtCore/qabstractanimation.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qalgorithms.h \
+  C:/Qt/6.7.2/mingw_64/include/QtCore/qanimationgroup.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qanystringview.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qarraydata.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qarraydataops.h \
@@ -34,6 +39,7 @@ C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_a
   C:/Qt/6.7.2/mingw_64/include/QtCore/qdarwinhelpers.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qdatastream.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qdebug.h \
+  C:/Qt/6.7.2/mingw_64/include/QtCore/qeasingcurve.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qendian.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qexceptionhandling.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qflags.h \
@@ -69,12 +75,15 @@ C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_a
   C:/Qt/6.7.2/mingw_64/include/QtCore/qobjectdefs_impl.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qoverload.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qpair.h \
+  C:/Qt/6.7.2/mingw_64/include/QtCore/qparallelanimationgroup.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qpoint.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qprocessordetection.h \
+  C:/Qt/6.7.2/mingw_64/include/QtCore/qpropertyanimation.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qrect.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qrefcount.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qscopedpointer.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qscopeguard.h \
+  C:/Qt/6.7.2/mingw_64/include/QtCore/qsequentialanimationgroup.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qset.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qshareddata.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qshareddata_impl.h \
@@ -117,6 +126,7 @@ C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_a
   C:/Qt/6.7.2/mingw_64/include/QtCore/qurl.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qutf8stringview.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qvariant.h \
+  C:/Qt/6.7.2/mingw_64/include/QtCore/qvariantanimation.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qvarlengtharray.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qvector.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qversiontagging.h \

@@ -2818,6 +2818,19 @@
      <string/>
     </property>
    </widget>
+   <widget class="QPushButton" name="btn_showCards">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>570</y>
+      <width>80</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Show cards</string>
+    </property>
+   </widget>
    <zorder>label</zorder>
    <zorder>lb_player_1</zorder>
    <zorder>lb_player_2</zorder>
@@ -2943,6 +2956,7 @@
    <zorder>btn_card_12</zorder>
    <zorder>btn_card_13</zorder>
    <zorder>btn_card_14</zorder>
+   <zorder>btn_showCards</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
