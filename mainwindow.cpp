@@ -66,6 +66,7 @@ void MainWindow::on_btn_Start_clicked()
     QObject::connect(game, &Game::startWar, campaign, &Campaign::startWar);
     QObject::connect(game, &Game::endWar, campaign, &Campaign::hide);
     QObject::connect(game, &Game::getCommand, campaign, &Campaign::getCommand);
+    QObject::connect(game, &Game::scarecrow_get_card, campaign, &Campaign::scarecrow_get_card);
     QObject::connect(game, &Game::declare_gameWinner, gameWinner_page, &GameWinner::declare);
     QObject::connect(game, &Game::declare_warWinner, warWinner_page, &Winner::declare);
 
@@ -81,6 +82,7 @@ void MainWindow::on_btn_Start_clicked()
     QObject::disconnect(game, &Game::startWar, campaign, &Campaign::startWar);
     QObject::disconnect(game, &Game::endWar, campaign, &Campaign::hide);
     QObject::disconnect(game, &Game::getCommand, campaign, &Campaign::getCommand);
+    QObject::disconnect(game, &Game::scarecrow_get_card, campaign, &Campaign::scarecrow_get_card);
     QObject::disconnect(game, &Game::declare_gameWinner, gameWinner_page, &GameWinner::declare);
     QObject::disconnect(game, &Game::declare_warWinner, warWinner_page, &Winner::declare);
 }
@@ -95,6 +97,7 @@ void MainWindow::on_btn_load_game_clicked()
     hide();
     delete game;
     game = new Game;
+
     QObject::connect(game, &Game::get_players_number, start, &Start::get_players_number);
     QObject::connect(game, &Game::get_player_page_show, setplayer, &Setplayer::page_show);
     QObject::connect(setplayer, &Setplayer::get_player, game, &Game::get_player);
@@ -103,10 +106,12 @@ void MainWindow::on_btn_load_game_clicked()
     QObject::connect(game, &Game::showPlayerCards, showcards, &showCards::getPlayer);
     QObject::connect(game, &Game::startWar, campaign, &Campaign::startWar);
     QObject::connect(game, &Game::getCommand, campaign, &Campaign::getCommand);
+    QObject::connect(game, &Game::scarecrow_get_card, campaign, &Campaign::scarecrow_get_card);
     QObject::connect(game, &Game::declare_gameWinner, gameWinner_page, &GameWinner::declare);
     QObject::connect(game, &Game::declare_warWinner, warWinner_page, &Winner::declare);
 
     //game->load();
+    game->start();
 
     QObject::disconnect(game, &Game::get_players_number, start, &Start::get_players_number);
     QObject::disconnect(game, &Game::get_player_page_show, setplayer, &Setplayer::page_show);
@@ -117,6 +122,7 @@ void MainWindow::on_btn_load_game_clicked()
     QObject::disconnect(game, &Game::showPlayerCards, showcards, &showCards::getPlayer);
     QObject::disconnect(game, &Game::startWar, campaign, &Campaign::startWar);
     QObject::disconnect(game, &Game::getCommand, campaign, &Campaign::getCommand);
+    QObject::disconnect(game, &Game::scarecrow_get_card, campaign, &Campaign::scarecrow_get_card);
     QObject::disconnect(game, &Game::declare_gameWinner, gameWinner_page, &GameWinner::declare);
     QObject::disconnect(game, &Game::declare_warWinner, warWinner_page, &Winner::declare);
 }

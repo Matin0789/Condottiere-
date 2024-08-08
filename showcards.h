@@ -44,7 +44,6 @@ private:
     QVector<QLabel*> cardLabel;
     std::map<std::string, std::string> cardsImageRef;
 
-    QSequentialAnimationGroup group;
     QVector<QPropertyAnimation*> animation;
 
     QMediaPlayer* audioPlayer;

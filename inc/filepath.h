@@ -35,6 +35,11 @@
 
 #define BATTLE_MARKER_IMAGE ":/Description/Graphics/markers/icons8-battle-100(1).png"
 #define PEACE_MARKER_IMAGE  ":/Description/Graphics/markers/icons8-peace-100.png"
-#define PLAYER_MARKER_IMAGE ":/Description/Graphics/markers/icons8-flag-100.png"
+#define PLAYER_BLUE_MARKER_IMAGE ":/Description/Graphics/markers/blue.png"
+#define PLAYER_BROWN_MARKER_IMAGE ":/Description/Graphics/markers/brown.png"
+#define PLAYER_GRAY_MARKER_IMAGE ":/Description/Graphics/markers/gray.png"
+#define PLAYER_GREEN_MARKER_IMAGE ":/Description/Graphics/markers/green.png"
+#define PLAYER_ORANGE_MARKER_IMAGE ":/Description/Graphics/markers/orange.png"
+#define PLAYER_RED_MARKER_IMAGE ":/Description/Graphics/markers/red.png"
 
 #endif // FILEPATH_H

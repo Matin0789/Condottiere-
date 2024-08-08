@@ -59,6 +59,11 @@ color: rgb(0, 0, 0);</string>
    </item>
    <item>
     <property name="text">
+     <string>Game</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
      <string>Drummer</string>
     </property>
    </item>
@@ -106,50 +111,9 @@ color: rgb(0, 0, 0);</string>
   <widget class="QPushButton" name="btn_ok">
    <property name="geometry">
     <rect>
-     <x>90</x>
-     <y>70</y>
-     <width>41</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="cursor">
-    <cursorShape>ClosedHandCursor</cursorShape>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">
-QPushButton
-{
-	color : black ;
-	background-color : ;
-	font: 700 10pt &quot;Segoe Print&quot;;
-	border-image: 30px ;
-}
-
-QPushButton : Hover
-{
-	background-color : ;
-    border-radius : 40px ;
-	border-image: 10px ;
-}
-
-QPushButton : pressed
-{
-	background-color :black ;
-	color : white ;
-	border-image: url(:/Description/Graphics/photos/blue.jpg);
-
-}</string>
-   </property>
-   <property name="text">
-    <string>OK</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="ptn_back">
-   <property name="geometry">
-    <rect>
      <x>30</x>
      <y>70</y>
-     <width>41</width>
+     <width>101</width>
      <height>24</height>
     </rect>
    </property>
@@ -182,7 +146,7 @@ QPushButton : pressed
 }</string>
    </property>
    <property name="text">
-    <string>Back</string>
+    <string>continue</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_3">
@@ -207,18 +171,24 @@ QPushButton : pressed
   <widget class="QLabel" name="lb_help_txt">
    <property name="geometry">
     <rect>
-     <x>170</x>
-     <y>150</y>
-     <width>350</width>
-     <height>550</height>
+     <x>50</x>
+     <y>140</y>
+     <width>551</width>
+     <height>231</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>NPIAlmass</family>
+     <pointsize>14</pointsize>
+    </font>
    </property>
    <property name="cursor">
     <cursorShape>UpArrowCursor</cursorShape>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/Description/Graphics/photos/images (1852).jpg);
-font: 9pt &quot;Segoe Print&quot;;</string>
+    <string notr="true">color: rgb(0, 0, 0);
+alternate-background-color: rgb(255, 170, 127);</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::StyledPanel</enum>
@@ -231,6 +201,22 @@ font: 9pt &quot;Segoe Print&quot;;</string>
    </property>
    <property name="textFormat">
     <enum>Qt::AutoText</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>400</y>
+     <width>111</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
  </widget>

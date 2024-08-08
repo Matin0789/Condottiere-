@@ -20,7 +20,7 @@
    <property name="geometry">
     <rect>
      <x>210</x>
-     <y>350</y>
+     <y>260</y>
      <width>101</width>
      <height>41</height>
     </rect>
@@ -57,6 +57,7 @@ QPushButton : pressed
     <string>LOAD GAMES</string>
    </property>
   </widget>
+<<<<<<< HEAD
   <widget class="QPushButton" name="btn_save">
    <property name="geometry">
     <rect>
@@ -98,11 +99,13 @@ QPushButton : pressed
     <string>SAVE</string>
    </property>
   </widget>
+=======
+>>>>>>> 7c47c47e2a9d817ec9a6852e902ba563fd52ca88
   <widget class="QPushButton" name="btn_quit">
    <property name="geometry">
     <rect>
      <x>210</x>
-     <y>510</y>
+     <y>420</y>
      <width>101</width>
      <height>41</height>
     </rect>
@@ -143,7 +146,7 @@ QPushButton : pressed
    <property name="geometry">
     <rect>
      <x>210</x>
-     <y>430</y>
+     <y>340</y>
      <width>101</width>
      <height>41</height>
     </rect>
@@ -183,7 +186,7 @@ QPushButton : pressed
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>-3</x>
+     <x>0</x>
      <y>0</y>
      <width>531</width>
      <height>760</height>
@@ -203,7 +206,7 @@ QPushButton : pressed
    <property name="geometry">
     <rect>
      <x>210</x>
-     <y>270</y>
+     <y>180</y>
      <width>101</width>
      <height>41</height>
     </rect>
@@ -258,7 +261,6 @@ QPushButton : pressed
   </widget>
   <zorder>label</zorder>
   <zorder>btn_load_games</zorder>
-  <zorder>btn_save</zorder>
   <zorder>btn_quit</zorder>
   <zorder>btn_audio</zorder>
   <zorder>btn_Continue</zorder>
