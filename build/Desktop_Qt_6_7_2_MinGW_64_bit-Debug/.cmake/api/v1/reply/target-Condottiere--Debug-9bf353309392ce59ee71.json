@@ -78,13 +78,7 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 155,
-				"parent" : 0
-			},
-			{
-				"command" : 5,
-				"file" : 1,
-				"line" : 127,
+				"line" : 156,
 				"parent" : 0
 			},
 			{
@@ -96,7 +90,13 @@
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 130,
+				"line" : 129,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 131,
 				"parent" : 0
 			},
 			{
@@ -318,7 +318,7 @@
 			{
 				"command" : 11,
 				"file" : 1,
-				"line" : 132,
+				"line" : 133,
 				"parent" : 0
 			}
 		]
@@ -489,8 +489,8 @@
 				66,
 				71,
 				74,
-				78,
-				81,
+				77,
+				80,
 				96,
 				97,
 				98
@@ -500,11 +500,11 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 0,
-			"id" : "Condottiere-_autogen::@6890427a1f51a3e7e1df"
+			"id" : "Condottiere-_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "Condottiere-_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"backtrace" : 0,
+			"id" : "Condottiere-_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "Condottiere-::@6890427a1f51a3e7e1df",
@@ -661,8 +661,8 @@
 				66,
 				71,
 				74,
-				78,
-				81,
+				77,
+				80,
 				96,
 				97,
 				98
@@ -704,8 +704,8 @@
 				65,
 				70,
 				73,
-				77,
-				80,
+				76,
+				79,
 				83,
 				84,
 				85,
@@ -736,8 +736,8 @@
 				69,
 				72,
 				75,
-				76,
-				79,
+				78,
+				81,
 				82,
 				95
 			]
@@ -1170,11 +1170,6 @@
 		},
 		{
 			"backtrace" : 4,
-			"path" : "img.qrc",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 4,
 			"path" : "loadgames.h",
 			"sourceGroupIndex" : 1
 		},
@@ -1203,6 +1198,11 @@
 		{
 			"backtrace" : 4,
 			"path" : "savegame.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "img.qrc",
 			"sourceGroupIndex" : 2
 		},
 		{

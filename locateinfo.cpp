@@ -15,14 +15,14 @@ Locateinfo::Locateinfo(QString type,QWidget *parent)
     ui->setupUi(this);
     ui->lb_state->setText("Please select a " + QString((type == "BattleMarker") ? "battle":"favor") + " state to start the battle ...");
     this->next_click = false;
-    markers["BattleMarker"] = "border-image:url(" + QString(BATTLE_MARKER_IMAGE)  + ")";
-    markers["FavorMarker"]  = "border-image:url(" + QString(PEACE_MARKER_IMAGE)   + ")";
-    markers["blue"]         = "border-image:url(" + QString(PLAYER_BLUE_MARKER_IMAGE)  + ")";
-    markers["green"]        = "border-image:url(" + QString(PLAYER_GREEN_MARKER_IMAGE)  + ")";
-    markers["red"]          = "border-image:url(" + QString(PLAYER_RED_MARKER_IMAGE)  + ")";
-    markers["orange"]       = "border-image:url(" + QString(PLAYER_ORANGE_MARKER_IMAGE)  + ")";
-    markers["gray"]         = "border-image:url(" + QString(PLAYER_GRAY_MARKER_IMAGE)  + ")";
-    markers["brown"]        = "border-image:url(" + QString(PLAYER_BROWN_MARKER_IMAGE)  + ")";
+    markers["BattleMarker"] = "border-image:url(" + QString(BATTLE_MARKER_IMAGE)  + ");" + " background-color:transparent";
+    markers["FavorMarker"]  = "border-image:url(" + QString(PEACE_MARKER_IMAGE)   + ");" + " background-color:transparent";
+    markers["blue"]         = "border-image:url(" + QString(PLAYER_BLUE_MARKER_IMAGE)  + ");" + " background-color:transparent";
+    markers["green"]        = "border-image:url(" + QString(PLAYER_GREEN_MARKER_IMAGE)  + ");" + " background-color:transparent";
+    markers["red"]          = "border-image:url(" + QString(PLAYER_RED_MARKER_IMAGE)  + ");" + " background-color:transparent";
+    markers["orange"]       = "border-image:url(" + QString(PLAYER_ORANGE_MARKER_IMAGE)  + ");" + " background-color:transparent";
+    markers["gray"]         = "border-image:url(" + QString(PLAYER_GRAY_MARKER_IMAGE)  + ");" + " background-color:transparent";
+    markers["brown"]        = "border-image:url(" + QString(PLAYER_BROWN_MARKER_IMAGE)  + ");" + " background-color:transparent";
 
     stateLabels["BELLA"] = ui->lb_bella;
     stateLabels["PLADACI"] = ui->lb_pladaci;
