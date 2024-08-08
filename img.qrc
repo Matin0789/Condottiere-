@@ -1,11 +1,12 @@
 <RCC>
     <qresource prefix="/">
-        <file>Description/Graphics/photos/45-451742_svg-icon-free-download-mute-and-unmute-button.png</file>
-        <file>Description/Graphics/photos/360_F_554613505_mHuxeAL5xSskoGxXUIiKqoeJlc84iA1z.jpg</file>
         <file>Description/Graphics/photos/360_F_581151308_Z0lMkq1tP9zwkzDLE4wiVhemu7kIksky.jpg</file>
+        <file>Description/Graphics/photos/500439-ELEX-video-games-nature-fantasy-art-sword-landscape.jpg</file>
+        <file>Description/Graphics/photos/1440496.jpg</file>
         <file>Description/Graphics/photos/12485407-medieval-knights-in-battle-background-rider-leader-duel.jpg</file>
         <file>Description/Graphics/photos/93452799-old-grungy-vintage-paper-blank-with-curly-oriental-frame-ornament-worn-papyrus-template-for-mail.jpg</file>
         <file>Description/Graphics/photos/68747470733.jpg</file>
+        <file>Description/Graphics/photos/ai-generated-a-snowy-mountain-landscape-with-a-blue-sky-photo.jpg</file>
         <file>Description/Graphics/photos/antique-style-lined-paper-template-design-f0afe8303318fda46d4c362bd2d0d70d_screen.jpg</file>
         <file>Description/Graphics/photos/blue.jpg</file>
         <file>Description/Graphics/photos/brown.jpg</file>
@@ -13,8 +14,6 @@
         <file>Description/Graphics/photos/crusader_knights (1).jpg</file>
         <file>Description/Graphics/photos/crusader_knights.jpg</file>
         <file>Description/Graphics/photos/crusades-timeline-1024x512.jpg</file>
-        <file>Description/Graphics/photos/design-space-paper-textured-background_53876-160488.jpg</file>
-        <file>Description/Graphics/photos/desktop-wallpaper-1920x1080-hellblade-game-hero-laptop-full-epic-full.jpg</file>
         <file>Description/Graphics/photos/download.jpg</file>
         <file>Description/Graphics/photos/download2.jpg</file>
         <file>Description/Graphics/photos/download3.jpg</file>
@@ -25,43 +24,37 @@
         <file>Description/Graphics/photos/download12.jpg</file>
         <file>Description/Graphics/photos/e03bae63714b1f018fd4da139fc52e78.jpg</file>
         <file>Description/Graphics/photos/ef5dd880b6270f53b0d7350675952f9a.jpg</file>
+        <file>Description/Graphics/photos/enchanted-garden-1920-x-1080-wallpaper-ojek6zerpim27rv6.jpg</file>
         <file>Description/Graphics/photos/fantasy-knight-banner-crusade-medieval-hd-wallpaper-preview.jpg</file>
         <file>Description/Graphics/photos/galileus_Christian_Crusader_states_after_the_First_Crusade_phot_3f76cc8a-f768-430f-b89d-e6e33662c73c-1024x512.jpg</file>
         <file>Description/Graphics/photos/galileus_medieval_Crusader_knights_photo_realistic_3ec554ad-f8c8-4fc9-b88c-0af222cac15a.jpg</file>
         <file>Description/Graphics/photos/galileus_Medieval_Crusades_1142ddf9-36f2-4043-962c-1104585e7033.jpg</file>
         <file>Description/Graphics/photos/galileus_medieval_heroes_Crusaders_78320800-6418-4de7-bf57-39a3ad7f6f3b-1024x512.jpg</file>
-        <file>Description/Graphics/photos/gray-painted-background_53876-94041.jpg</file>
+        <file>Description/Graphics/photos/galileus_most_famous_Crusader_of_the_Middle_Ages_0a2d09df-a761-49e8-9cab-c7e9e3a0eb9c.jpg</file>
         <file>Description/Graphics/photos/grunge-vintage-background-mask-space-260nw-59379229.heic</file>
+        <file>Description/Graphics/photos/grunge-vintage-background-mask-space-260nw-59379229.jpg</file>
+        <file>Description/Graphics/photos/HD-wallpaper-spring-garden-game-garden-castle-screenshot.jpg</file>
+        <file>Description/Graphics/photos/HD-wallpaper-spring-land-art-bridge-game-spring-trees-scene.jpg</file>
+        <file>Description/Graphics/photos/HD-wallpaper-spring-sakura-luminos-game-tree-blossom-fantasy-blade-and-soul-flower-pink.jpg</file>
+        <file>Description/Graphics/photos/HD-wallpaper-spring-tree-art-tree-oriental-asian-beautiful-spring-blossons-cherry.jpg</file>
+        <file>Description/Graphics/photos/hogwarts-legacy-dark-edition-official-pc-wallpaper-v0-potn7vwaxyj91.webp</file>
+        <file>Description/Graphics/photos/hq720.jpg</file>
         <file>Description/Graphics/photos/images (1852).jpg</file>
-        <file>Description/Graphics/photos/istockphoto-604867582-170667a.jpg</file>
-        <file>Description/Graphics/photos/istockphoto-852110414-170667a.jpg</file>
         <file>Description/Graphics/photos/knights-templar.jpg</file>
         <file>Description/Graphics/photos/leaders_of_the_crusades-1024x512.jpg</file>
-        <file>Description/Graphics/photos/mars-planet-style-concept-space-fantastic-planet-surface-rocky-mountains-background-against-night-sky-with-stars-shining-bright-horizon-generative-ai_1423-10194.avif</file>
         <file>Description/Graphics/photos/medieval-knight-crusaders-hd-wallpaper-preview.jpg</file>
-        <file>Description/Graphics/photos/mercenaries2.webp</file>
         <file>Description/Graphics/photos/mute.png</file>
         <file>Description/Graphics/photos/mute-unmute-icon-6.jpg</file>
-        <file>Description/Graphics/photos/nature-landscape.jpg</file>
         <file>Description/Graphics/photos/orange.jpg</file>
         <file>Description/Graphics/photos/pexels-elina-araja-1743227-3377405.jpg</file>
         <file>Description/Graphics/photos/pexels-photo-247671.jpg</file>
         <file>Description/Graphics/photos/pic6974400.webp</file>
-        <file>Description/Graphics/photos/pngtree-3d-flowing-stone-forest-game-field-scene-picture-image_2207164.jpg</file>
         <file>Description/Graphics/photos/pngtree-canyon-game-cg-scene-background-map-image_2207196.jpg</file>
         <file>Description/Graphics/photos/pngtree-cartoon-game-cg-forest-landscape-scene-image_2207174.jpg</file>
-        <file>Description/Graphics/photos/pngtree-exquisite-game-scene-with-castle-far-away-picture-image_2251023.jpg</file>
-        <file>Description/Graphics/photos/pngtree-game-cloud-trees-image_2409255.jpg</file>
-        <file>Description/Graphics/photos/pngtree-game-scene-building-landscape-castle-background-picture-image_2395421.jpg</file>
-        <file>Description/Graphics/photos/pngtree-game-scene-castle-forest-background-picture-image_2395513.jpg</file>
-        <file>Description/Graphics/photos/pngtree-game-scene-war-scene-image_810708.jpg</file>
-        <file>Description/Graphics/photos/pngtree-game-war-texture-background-image_784885.jpg</file>
         <file>Description/Graphics/photos/pngtree-vintage-paper-background-with-old-map-art-image_627360.jpg</file>
-        <file>Description/Graphics/photos/pngtree-waterside-building-scene-game-background-picture-image_2511459.jpg</file>
         <file>Description/Graphics/photos/S24-07-14 142516.jpg.png</file>
         <file>Description/Graphics/photos/Sc 145857.jpg.png</file>
         <file>Description/Graphics/photos/Screenshot 2024-07-14 13uj5947.jpg.png</file>
-        <file>Description/Graphics/photos/Screenshot 2024-07-14 135947.jpg.png</file>
         <file>Description/Graphics/photos/snowy-landscape-with-lake-and-pine-tree-mountain-scene-background-nature-and-rural-scene-concept-digital-art-illustration-generative-ai-photo.jpg</file>
         <file>Description/Graphics/photos/t 2024-07-14 141911.jpg.png</file>
         <file>Description/Graphics/photos/The-First-Crusade.jpg</file>
@@ -107,7 +100,5 @@
         <file>Description/Graphics/Assets/zard/009.png</file>
         <file>Description/Graphics/Assets/zard/010.png</file>
         <file>Description/Graphics/Assets/zard/Back.png</file>
-        <file>Description/Graphics/photos/galileus_most_famous_Crusader_of_the_Middle_Ages_0a2d09df-a761-49e8-9cab-c7e9e3a0eb9c.jpg</file>
-        <file>Description/Graphics/photos/hq720.jpg</file>
     </qresource>
 </RCC>
