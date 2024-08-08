@@ -12,7 +12,7 @@
 //
 #define BEL "BELLA"
 #define CAL "CALINE"
-#define ENN "ENNA"
+#define ENN "ENNA"      //This code is related to phase 3 of the project
 #define ATE "ATELA"
 #define PLA "PLADACI"
 #define BOR "BORGE"
@@ -22,8 +22,9 @@
 #define ROL "ROLLO"
 #define TAL "TALIMONE"
 #define ARM "ARMENTO"
-#define LIA "LIA"
+#define LIA "LIA"        //This code is related to phase 3 of the project
 #define ELI "ELINIA"
+#define HMD "HAMEDAN"    //This code is related to phase 3 of the project
 //
 
 class GameBoard
