@@ -306,7 +306,7 @@ std::string Campaign::getCommand(const std::vector<Player>& players, const Playe
     for (int i = 0; i < currentPlayerCard.size(); i++) {
         animations.push_back(new QPropertyAnimation(currentPlayerCards_btn[i + currentPlayerPlayedCard.size()], "geometry", this));
         QRect end(currentPlayerCards_btn[i + currentPlayerPlayedCard.size()]->geometry());
-        animations[i]->setDuration(200);
+        animations[i]->setDuration(100);
         animations[i]->setStartValue(end);
         animations[i]->setEndValue(QRect(end.left() + (end.width()/2), end.top(), 0, end.height()));
         animations[i]->start();
@@ -318,7 +318,7 @@ std::string Campaign::getCommand(const std::vector<Player>& players, const Playe
         currentPlayerCards_btn[i + currentPlayerPlayedCard.size()]->setStyleSheet(cardsImageRef[currentPlayerCard[i]->getType()]);
         connect(currentPlayerCards_btn[i + currentPlayerPlayedCard.size()], SIGNAL(clicked(bool)), this, SLOT(findSelectedCard()));
 
-        animations[i]->setDuration(200);
+        animations[i]->setDuration(100);
         animations[i]->setStartValue(QRect(end.left() + (end.width()/2), end.top(), 0, end.height()));
         animations[i]->setEndValue(end);
         animations[i]->start();

@@ -21,10 +21,14 @@ MainWindow::MainWindow(QWidget *parent)
     campaign(new Campaign(this)),
     warWinner_page(new Winner(this)),
     gameWinner_page(new GameWinner(this)),
-    showcards(new showCards(this))
+    showcards(new showCards(this)),
+    load_page(new loadGames(this)),
+    save_page(new saveGame(this))
 {
     ui->setupUi(this);
     this->setWindowTitle("Condottiere");
+
+    ui->btn_sound->setStyleSheet("border-image:url(:/Description/Graphics/photos/volume.png);background-color:transparent");
 
     player = new QMediaPlayer;
     audioOutput = new QAudioOutput;
@@ -70,7 +74,15 @@ void MainWindow::on_btn_Start_clicked()
     QObject::connect(game, &Game::declare_gameWinner, gameWinner_page, &GameWinner::declare);
     QObject::connect(game, &Game::declare_warWinner, warWinner_page, &Winner::declare);
 
+    QObject::connect(this, SIGNAL(getLoadFile()), load_page, SLOT(load()));
+    QObject::connect(save_page, &saveGame::data_save, game, &Game::save);
+    QObject::connect(warWinner_page, SIGNAL(save()), save_page, SLOT(save()));
+
     game->start();
+
+    QObject::disconnect(this, SIGNAL(getLoadFile()), load_page, SLOT(load()));
+    QObject::disconnect(save_page, &saveGame::data_save, game, &Game::save);
+    QObject::disconnect(warWinner_page, SIGNAL(save()), save_page, SLOT(show()));
 
     QObject::disconnect(game, &Game::get_players_number, start, &Start::get_players_number);
     QObject::disconnect(game, &Game::get_player_page_show, setplayer, &Setplayer::page_show);
@@ -110,8 +122,16 @@ void MainWindow::on_btn_load_game_clicked()
     QObject::connect(game, &Game::declare_gameWinner, gameWinner_page, &GameWinner::declare);
     QObject::connect(game, &Game::declare_warWinner, warWinner_page, &Winner::declare);
 
-    //game->load();
+    QObject::connect(this, SIGNAL(getLoadFile()), load_page, SLOT(load()));
+    QObject::connect(save_page, &saveGame::data_save, game, &Game::save);
+    QObject::connect(warWinner_page, SIGNAL(save()), save_page, SLOT(show()));
+
+    game->load(SAVE_FILE(emit getLoadFile()));
     game->start();
+
+    QObject::disconnect(this, SIGNAL(getLoadFile()), load_page, SLOT(load()));
+    QObject::disconnect(save_page, &saveGame::data_save, game, &Game::save);
+    QObject::disconnect(warWinner_page, SIGNAL(save()), save_page, SLOT(show()));
 
     QObject::disconnect(game, &Game::get_players_number, start, &Start::get_players_number);
     QObject::disconnect(game, &Game::get_player_page_show, setplayer, &Setplayer::page_show);
@@ -131,12 +151,12 @@ void MainWindow::on_btn_sound_clicked()
 {
     static bool enable = true;
     if (enable == true){
-        ui->btn_sound->setStyleSheet("border-image:url(:/Description/Graphics/photos/mute.png)");
+        ui->btn_sound->setStyleSheet("border-image:url(:/Description/Graphics/photos/mute.png);background-color:transparent");
         player->pause();
         enable = false;
     }
     else {
-        ui->btn_sound->setStyleSheet("border-image:url(:/Description/Graphics/photos/volume.png)");
+        ui->btn_sound->setStyleSheet("border-image:url(:/Description/Graphics/photos/volume.png);background-color:transparent");
         player->play();
         enable = true;
     }

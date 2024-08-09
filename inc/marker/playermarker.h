@@ -11,6 +11,7 @@ private:
 public:
     PlayerMarker(Color);
     virtual std::string getType() const;
+    void setColor(Color);
 };
 
 #endif // PLAYERMARKER_H

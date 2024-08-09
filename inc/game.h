@@ -36,11 +36,10 @@ public:
     static std::string getHelp();
     void start();
     static bool check_number_of_player(std::string);
-    bool save(std::string) const; 	// (save file path)
-    bool load(std::string);	// (save file path)
 public slots:
     void get_player(std::string, size_t, Color);
-
+    void save(std::string); 	// (save file path)
+    void load(std::string);// (save file path)
 signals :
     State* set_battleground(const std::vector<Player>&,const Player&, GameBoard&, FavorMarker& );
     State* set_favorground(const std::vector<Player>&,const Player&, GameBoard&, FavorMarker& );
@@ -60,7 +59,7 @@ private:
 
 	void shuffle();
 	void distributeCards();
-	std::pair<size_t, std::pair<size_t, size_t>> war(int); // // first currentplayerID, second.first favorSetterID, second.second battleSetterID
+    void war(int); // // first currentplayerID, second.first favorSetterID, second.second battleSetterID
 
 
     //private atributes
@@ -73,7 +72,13 @@ private:
 	GameBoard gameBoard;
 	std::vector<Player> players;
     std::map<QString, Color> freeColors;
+
+    bool is_load;
 	//
+
+    size_t currentPlayerID;
+    size_t favorSetterID;
+    size_t battleSetterID;
 };
 
 #endif // GAME_H

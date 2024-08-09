@@ -182,6 +182,8 @@ C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_a
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/QGraphicsView \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/QLabel \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/QMainWindow \
+  C:/Qt/6.7.2/mingw_64/include/QtWidgets/QPushButton \
+  C:/Qt/6.7.2/mingw_64/include/QtWidgets/qabstractbutton.h \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/qdialog.h \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/qframe.h \
@@ -190,6 +192,7 @@ C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_a
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/qgraphicsview.h \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/qlabel.h \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/qmainwindow.h \
+  C:/Qt/6.7.2/mingw_64/include/QtWidgets/qpushbutton.h \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/qtabwidget.h \
@@ -422,8 +425,10 @@ C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_a
   C:/project/Condottiere-/inc/player.h \
   C:/project/Condottiere-/inc/state.h \
   C:/project/Condottiere-/inc/userinterface.h \
+  C:/project/Condottiere-/loadgames.h \
   C:/project/Condottiere-/locateinfo.h \
   C:/project/Condottiere-/options.h \
+  C:/project/Condottiere-/savegame.h \
   C:/project/Condottiere-/setplayer.h \
   C:/project/Condottiere-/showcards.h \
   C:/project/Condottiere-/start.h

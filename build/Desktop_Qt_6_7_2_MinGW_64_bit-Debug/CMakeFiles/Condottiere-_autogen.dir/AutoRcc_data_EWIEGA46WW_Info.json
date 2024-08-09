@@ -19,11 +19,7 @@
 		"C:/project/Condottiere-/data/help/WinterHelp.txt",
 		"C:/project/Condottiere-/data/help/TurncoatHelp.txt",
 		"C:/project/Condottiere-/data/help/DrummerHelp.txt",
-		"C:/project/Condottiere-/data/save/save_4.bin",
-		"C:/project/Condottiere-/data/save/save_1.bin",
-		"C:/project/Condottiere-/data/save/save_2.bin",
-		"C:/project/Condottiere-/data/save/save_3.bin",
-		"C:/project/Condottiere-/data/save/save_5.bin"
+		"C:/project/Condottiere-/data/save/save_config.txt"
 	],
 	"LOCK_FILE" : "C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/Condottiere-_autogen.dir/AutoRcc_data_EWIEGA46WW_Lock.lock",
 	"MULTI_CONFIG" : false,

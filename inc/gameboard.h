@@ -33,8 +33,8 @@ public:
 	bool checkAdjacency(const std::string, const std::string, const std::string);
 	State* getState(std::string);
 	std::vector<std::string> get_active_states_name() const;
-	/*bool save(std::string) const;
-	bool load(std::string);*/
+    bool save(std::string) const;
+    bool load(std::string);
 	
 private:
 	std::unordered_map<std::string, State> states;// states

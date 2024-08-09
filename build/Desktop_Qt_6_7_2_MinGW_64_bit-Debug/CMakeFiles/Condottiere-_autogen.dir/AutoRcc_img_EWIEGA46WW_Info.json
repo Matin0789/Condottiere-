@@ -10,8 +10,6 @@
 	"INPUTS" : 
 	[
 		"C:/project/Condottiere-/Description/Graphics/Assets/Map.png",
-		"C:/project/Condottiere-/Description/Graphics/Assets/Pe_Sym.png",
-		"C:/project/Condottiere-/Description/Graphics/Assets/Wa_Sym.png",
 		"C:/project/Condottiere-/Description/Graphics/Assets/Banafsh/Bahar.png",
 		"C:/project/Condottiere-/Description/Graphics/Assets/Banafsh/Parcham_Dar.png",
 		"C:/project/Condottiere-/Description/Graphics/Assets/Banafsh/Shah_Dokht.png",
@@ -104,11 +102,9 @@
 		"C:/project/Condottiere-/Description/Graphics/markers/icons8-battle-100-white.png",
 		"C:/project/Condottiere-/Description/Graphics/markers/icons8-battle-100(1).png",
 		"C:/project/Condottiere-/Description/Graphics/markers/orange.png",
-		"C:/project/Condottiere-/Description/Graphics/markers/icons8-peace-90.png",
 		"C:/project/Condottiere-/Description/Graphics/markers/brown.png",
 		"C:/project/Condottiere-/Description/Graphics/markers/icons8-peace-100.png",
-		"C:/project/Condottiere-/Description/Graphics/markers/icons8-peace-100_black.png",
-		"C:/project/Condottiere-/Description/Graphics/markers/brown 2.png"
+		"C:/project/Condottiere-/Description/Graphics/markers/icons8-peace-100_black.png"
 	],
 	"LOCK_FILE" : "C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/Condottiere-_autogen.dir/AutoRcc_img_EWIEGA46WW_Lock.lock",
 	"MULTI_CONFIG" : false,

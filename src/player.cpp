@@ -1,5 +1,6 @@
 #include <stdexcept>
 #include <fstream>
+#include <iomanip>
 
 #include "player.h"
 
@@ -143,92 +144,132 @@ std::vector<const Card*> Player::burnPlayedCards(){  // killing cards or delete 
 }
 
 bool Player::save(std::string filePath) const{
-    std::ofstream file(filePath, std::ios::binary | std::ios::app);
+    std::ofstream file(filePath, std::ios::app);
     if (!file) {
         throw std::runtime_error("file " + filePath + " cannot be open in player" + std::to_string(ID));
     }
-    
+
+    // ID
+    // file.write(reinterpret_cast<const char*>(&ID), sizeof(size_t));
+    file << "player" << std::to_string(ID) << std::endl;
 
     // name
-    {
-        size_t size = name.capacity();
-        file.write(reinterpret_cast<const char*>(&size), sizeof(size_t));
-        file.write(reinterpret_cast<const char*>(&name), size);
-    }
-    
-    // ID
-    file.write(reinterpret_cast<const char*>(&ID), sizeof(size_t));
+    // {
+    //     size_t size = name.capacity();
+    //     file.write(reinterpret_cast<const char*>(&size), sizeof(size_t));
+    //     file.write(reinterpret_cast<const char*>(&name), size);
+    // }
+
+    file << '\"' << name << '\"' << std::endl;
+
 
     // age
-    file.write(reinterpret_cast<const char*>(&age), sizeof(size_t));
+    // file.write(reinterpret_cast<const char*>(&age), sizeof(size_t));
+    file << age << std::endl;
 
     // save cards
+    // {
+    //     size_t size = cards.size();
+    //     file.write(reinterpret_cast<const char*>(&size), sizeof(size_t));
+    //     for (auto &&card : cards) {
+    //         size_t capacity = card->getType().capacity();
+    //         file.write(reinterpret_cast<const char*>(&capacity), sizeof(size_t));
+    //         std::string tmp = card->getType();
+    //         file.write(reinterpret_cast<const char*>(&tmp), capacity);
+    //     }
+    // }
     {
         size_t size = cards.size();
-        file.write(reinterpret_cast<const char*>(&size), sizeof(size_t));
+        file << size << ' ';
         for (auto &&card : cards) {
-            size_t capacity = card->getType().capacity();
-            file.write(reinterpret_cast<const char*>(&capacity), sizeof(size_t));
-            std::string tmp = card->getType();
-            file.write(reinterpret_cast<const char*>(&tmp), capacity);
-        }  
-    }
-    
-
-    // save played cards
-    {
-        size_t size = playedCards.size();
-        file.write(reinterpret_cast<const char*>(&size), sizeof(size_t));
-        for (auto &&playedCard : playedCards) {
-            size_t capacity = playedCard->getType().capacity();
-            file.write(reinterpret_cast<const char*>(&capacity), sizeof(size_t));
-            std::string tmp = playedCard->getType();
-            file.write(reinterpret_cast<const char*>(&tmp), capacity);
+            std::string card_name = card->getType();
+            file << '\"' << card_name << '\"' << ' ';
         }
+        file << std::endl;
     }
-    
+
+    // file.write(reinterpret_cast<const char*>(&color), sizeof(Color));
+    // file.write(reinterpret_cast<const char*>(&set), sizeof(bool));
+    std::string color_name;
+    Color color = markers[0].getColor();
+    switch(color){
+    case orange :
+        color_name = "orange";
+        break;
+    case blue   :
+        color_name = "blue";
+        break;
+    case green  :
+        color_name = "green";
+        break;
+    case red    :
+        color_name = "red";
+        break;
+    case gray   :
+        color_name = "gray";
+        break;
+    case brown  :
+        color_name = "brown";
+        break;
+    default     :
+        throw std::runtime_error("file " + filePath + "cannot write color");;
+        break;
+    }
+    file << '\"' << color_name << '\"';
+    file << std::endl;
+
     // state counter
-    file.write(reinterpret_cast<const char*>(&stateCounter), sizeof(size_t));
-
+    // file.write(reinterpret_cast<const char*>(&stateCounter), sizeof(size_t));
+    file << stateCounter << std::endl;
     file.close();
-
     // markers
-    for (auto &&marker : markers)
+    for (int i = 0;i < stateCounter;i++)
     {
-        marker.save(filePath);
+        markers[i].save(filePath, i);
     }
+
     return true;
 }
 
 bool Player::load(std::string filePath, GameBoard& gameBoard) {
-    std::ifstream file(filePath, std::ios::binary);
+    std::ifstream file(filePath);
     if (!file) {
         throw std::runtime_error("file " + filePath + " cannot be open in player" + std::to_string(ID));
     }
 
-    // name
-    {
-        size_t size;
-        file.read(reinterpret_cast<char*>(&size), sizeof(size_t));
-        file.read(reinterpret_cast<char*>(&name), size);
+    std::string finder;
+    while(getline(file, finder)) {
+        if (finder == ("player" + std::to_string(ID))) {
+            break;
+        }
     }
 
-    // ID
-    file.read(reinterpret_cast<char*>(&ID), sizeof(size_t));
+    // name
+    {
+        // size_t size;
+        // file.read(reinterpret_cast<char*>(&size), sizeof(size_t));
+        // file.read(reinterpret_cast<char*>(&name), size);
+        file >> quoted(name);
+    }
+
 
     // age
-    file.read(reinterpret_cast<char*>(&age), sizeof(size_t));
+    // file.read(reinterpret_cast<char*>(&age), sizeof(size_t));
+    file >> age;
 
     // read cards
     {
         size_t size;
-        file.read(reinterpret_cast<char*>(&size), sizeof(size_t));
+        //file.read(reinterpret_cast<char*>(&size), sizeof(size_t));
+        file >> size;
+
         for (size_t i = 0; i < size; i++)
         {
-            size_t capacity;
-            file.read(reinterpret_cast<char*>(&capacity), sizeof(size_t));
+            // size_t capacity;
+            // file.read(reinterpret_cast<char*>(&capacity), sizeof(size_t));
             std::string cardName;
-            file.read(reinterpret_cast<char*>(&cardName), sizeof(capacity));
+            // file.read(reinterpret_cast<char*>(&cardName), sizeof(capacity));
+            file >> quoted(cardName);
             if (cardName == "1")
                 cards.push_back(new YellowCard(1));
             else if (cardName == "2")
@@ -255,55 +296,51 @@ bool Player::load(std::string filePath, GameBoard& gameBoard) {
                 cards.push_back(new Bishop(BISHOP_HELP_FILE));
             else if (cardName == "Spy")
                 cards.push_back(new Spy(SPY_HELP_FILE));
+            else if (cardName == "Winter") {
+                cards.push_back(new Winter(WINTER_HELP_FILE));
+            }
+            else if (cardName == "Spring") {
+                cards.push_back(new Spring(SPRING_HELP_FILE));
+            }
             else 
                 throw std::runtime_error("card" + cardName + " not found");
         }
     }
 
-    // read played cards
-    {
-        size_t size;
-        file.read(reinterpret_cast<char*>(&size), sizeof(size_t));
-        for (size_t i = 0; i < size; i++)
-        {
-            size_t capacity;
-            file.read(reinterpret_cast<char*>(&capacity), sizeof(size_t));
-            std::string cardName;
-            file.read(reinterpret_cast<char*>(&cardName), sizeof(capacity));
-            if (cardName == "1")
-                playedCards.push_back(new YellowCard(1));
-            else if (cardName == "2")
-                playedCards.push_back(new YellowCard(2));
-            else if (cardName == "3")
-                playedCards.push_back(new YellowCard(3));
-            else if (cardName == "4")
-                playedCards.push_back(new YellowCard(4));
-            else if (cardName == "5")
-                playedCards.push_back(new YellowCard(5));
-            else if (cardName == "6")
-                playedCards.push_back(new YellowCard(6));
-            else if (cardName == "10")
-                playedCards.push_back(new YellowCard(10));
-            else if (cardName == "Heroine")
-                playedCards.push_back(new Heroine(HEROINE_HELP_FILE));
-            else if (cardName == "Turncoat")
-                playedCards.push_back(new Turncoat(TURNCOAT_HELP_FILE));
-            else if (cardName == "Scarecrow")
-                playedCards.push_back(new Scarecrow(SCARECROW_HELP_FILE));
-            else if (cardName == "Drummer")
-                playedCards.push_back(new Drummer(DRUMMER_HELP_FILE));
-            else if (cardName == "Bishop")
-                cards.push_back(new Bishop(BISHOP_HELP_FILE));
-            else if (cardName == "Spy")
-                playedCards.push_back(new Spy(SPY_HELP_FILE));
-            else 
-                throw std::runtime_error("card" + cardName + " not found");
-        }
-    }
+    // file.read(reinterpret_cast<char*>(&color), sizeof(Color));
+    // file.read(reinterpret_cast<char*>(&set), sizeof(bool));
+    std::string color_name;
+    file >> quoted(color_name);
+    Color color;
+    if (color_name == "orange")
+        color = orange;
+    else if (color_name == "blue")
+        color = blue;
+    else if (color_name == "green")
+        color = green;
+    else if (color_name == "red")
+        color = red;
+    else if (color_name == "gray")
+        color = gray;
+    else if (color_name == "brown")
+        color = brown;
+    else
+        throw std::runtime_error("file " + filePath + "cannot found color");
 
     // state counter
-    file.read(reinterpret_cast<char*>(&stateCounter), sizeof(size_t));
+    //file.read(reinterpret_cast<char*>(&stateCounter), sizeof(size_t));
+    file >> stateCounter;
 
     file.close();
+
+    // markers
+    for (int i = 0;i < stateCounter;i++)
+    {
+        markers[i].load(filePath, gameBoard, i, ID);
+    }
+
+    for (auto &&marker : markers) {
+        marker.setColor(color);
+    }
     return true;
 }

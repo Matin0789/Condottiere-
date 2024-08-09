@@ -10,8 +10,6 @@
 #include <algorithm>
 #include <utility>
 
-#include <QFile>
-
 GameBoard::GameBoard(std::string filePath) {
     std::ifstream file(filePath);
     if (!file) {
@@ -76,34 +74,62 @@ std::vector<std::string> GameBoard::get_active_states_name() const{
     return active_states_name;
 }
 
-/*bool GameBoard::save(std::string filePath) const{
-    std::ofstream file(filePath, std::ios::binary | std::ios::app);
+bool GameBoard::save(std::string filePath) const{
+    std::ofstream file(filePath, std::ios::app);
     if (!file) {
         throw std::runtime_error("save file cannot be open in gameboard");
     }
 
-
+    file << "GameBoard" << std::endl;
     //save unordered_map states
-    size_t statesSize = states.size();
-    file.write(reinterpret_cast<const char*>(&statesSize), sizeof(size_t));
-    for (auto &&state : states)
-    {
-        std::pair<std::string,State> tmp(state.first, state.second);
-        size_t statesCount = sizeof(tmp);
-        file.write(reinterpret_cast<const char*>(&statesCount), sizeof(size_t));
-        file.write(reinterpret_cast<const char*>(&tmp), statesCount);
-        std::list<std::string> tmp_state_adjacency_list (adjacency.find(tmp.first)->second);
-        
-        size_t state_adjacent_count = tmp_state_adjacency_list.size();
-        file.write(reinterpret_cast<const char*>(&state_adjacent_count), sizeof(size_t));
-        for (auto &&stateAdjacent : tmp_state_adjacency_list)
-        {
-            size_t size = stateAdjacent.capacity();
-            file.write(reinterpret_cast<const char*>(&size), sizeof(size_t));
-            file.write(reinterpret_cast<const char*>(&stateAdjacent), size);
+    // for (auto &&state : states)
+    // {
+    //     size_t nameSize = sizeof(state.first);
+    //     file.write(reinterpret_cast<const char*>(&nameSize), sizeof(size_t));
+    //     file.write(reinterpret_cast<const char*>(&state.first), nameSize);
+    //     bool set = state.second.is_set();
+    //     file.write(reinterpret_cast<const char*>(&set), sizeof(bool));
+    // }
+
+    for (auto &&state : states) {
+        file << '\"' << state.first << '\"' << ' ';
+        bool set = state.second.is_set();
+        file << set << std::endl;
+    }
+    file.close();
+    return true;
+}
+
+bool GameBoard::load(std::string filePath)
+{
+    std::ifstream file(filePath);
+    if (!file) {
+        throw std::runtime_error("save file cannot be open in gameboard");
+    }
+
+    std::string finder;
+    while (getline(file, finder)) {
+        if (finder == "GameBoard") {
+            break;
         }
     }
 
+    //load unordered_map states
+    for (size_t i = 0;i < states.size();i++)
+    {
+        // size_t nameSize;
+        // file.read(reinterpret_cast<char*>(&nameSize), sizeof(size_t));
+        std::string name;
+        // file.read(reinterpret_cast<char*>(&name), nameSize);
+        file >> quoted(name);
+        bool isSet;
+        // file.read(reinterpret_cast<char*>(&isSet), sizeof(bool));
+        file >> isSet;
+        (*states.find(name)).second.set(isSet);
+    }
+
     file.close();
+
     return true;
-}*/
+
+}
