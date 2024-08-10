@@ -7,9 +7,9 @@
 #include <stdexcept>
 #include <sstream>
 
-std::string whiteseals::help;
+std::string WhiteSeal::help;
 
-whiteseals::whiteseals(std::string helpFilePath) : PurpleCard(0,"whiteseals",3){
+WhiteSeal::WhiteSeal(std::string helpFilePath) : PurpleCard(0,"whiteseals",3){
     std::ifstream helpFile(helpFilePath);
     if (helpFile.is_open()){
         std::stringstream helpString;
@@ -24,11 +24,11 @@ whiteseals::whiteseals(std::string helpFilePath) : PurpleCard(0,"whiteseals",3){
         throw std::runtime_error("The whiteseals help file cannot be opened");
 }
 
-std::string whiteseals::getHelp() {
+std::string WhiteSeal::getHelp() {
     return help;
 }
 
-void whiteseals::applyFeature(std::vector<std::vector<unsigned int>>& playersCardPoints, int currentPlayerID) const {
+void WhiteSeal::applyFeature(std::vector<std::vector<unsigned int>>& playersCardPoints, int currentPlayerID) const {
 
 }
  

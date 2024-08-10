@@ -7,9 +7,9 @@
 #include <stdexcept>
 #include <sstream>
 
-std::string whiterakhsh::help;
+std::string WhiteRakhsh::help;
 
-whiterakhsh::whiterakhsh(std::string helpFilePath) : PurpleCard(0,"whiterakhsh",3){
+WhiteRakhsh::WhiteRakhsh(std::string helpFilePath) : PurpleCard(0,"whiterakhsh",3){
     std::ifstream helpFile(helpFilePath);
     if (helpFile.is_open()){
         std::stringstream helpString;
@@ -24,10 +24,10 @@ whiterakhsh::whiterakhsh(std::string helpFilePath) : PurpleCard(0,"whiterakhsh",
         throw std::runtime_error("The whiterakhsh help file cannot be opened");
 }
 
-std::string whiterakhsh::getHelp() {
+std::string WhiteRakhsh::getHelp() {
     return help;
 }
 
-void whiterakhsh::applyFeature(std::vector<std::vector<unsigned int>>& playersCardPoints, int currentPlayerID) const {
+void WhiteRakhsh::applyFeature(std::vector<std::vector<unsigned int>>& playersCardPoints, int currentPlayerID) const {
 
 }

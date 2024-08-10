@@ -446,8 +446,8 @@ border-image: url(:/Description/Graphics/photos/galileus_medieval_Crusader_knigh
   <widget class="QLabel" name="lb_hamedan">
    <property name="geometry">
     <rect>
-     <x>540</x>
-     <y>480</y>
+     <x>520</x>
+     <y>460</y>
      <width>16</width>
      <height>16</height>
     </rect>

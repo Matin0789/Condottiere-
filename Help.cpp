@@ -20,17 +20,17 @@ Help::Help(QWidget *parent)
 {
     ui->setupUi(this);
 
-    cardsImageRef["Bishop"]    = "border-image:url(" + QString(BISHOP_IMAGE)    + ")";            // Bishop image 
-    cardsImageRef["Drummer"]   = "border-image:url(" + QString(DRUMMER_IMAGE)   + ")";            // Drummer image 
-    cardsImageRef["Heroine"]   = "border-image:url(" + QString(HEROINE_IMAGE)   + ")";            // heroine image 
-    cardsImageRef["Scarecrow"] = "border-image:url(" + QString(SCARECROW_IMAGE) + ")";            // Scarecrow image
-    cardsImageRef["Spring"]    = "border-image:url(" + QString(SPRING_IMAGE)    + ")";            // Spring image
-    cardsImageRef["Winter"]    = "border-image:url(" + QString(WINTER_IMAGE)    + ")";            // winter image 
-    cardsImageRef["Spy"]       = "border-image:url(" + QString(SPY_IMAGE)       + ")";            // spy image 
-    cardsImageRef["Turncoat"]  = "border-image:url(" + QString(TURNCOAT_IMAGE)  + ")";            // turncoat image 
-    cardsImageRef["WhiteRakhsh"] = "border-image:url(" + std::string(WHITERAKHSH_IMAGE) + ")";           //This code is related to phase 3 of the project
-    cardsImageRef["WhiteSeals"] = "border-image:url(" + std::string(WHITESEALS_IMAGE) + ")";            //This code is related to phase 3 of the project
-    cardsImageRef["ShirinAghl"] = "border-image:url(" + std::string(SHIRINAGHL_IMAGE) + ")";           //This code is related to phase 3 of the project
+    cardsImageRef["Bishop"]      = "border-image:url(" + QString(BISHOP_IMAGE)    + ")";            // Bishop image
+    cardsImageRef["Drummer"]     = "border-image:url(" + QString(DRUMMER_IMAGE)   + ")";            // Drummer image
+    cardsImageRef["Heroine"]     = "border-image:url(" + QString(HEROINE_IMAGE)   + ")";            // heroine image
+    cardsImageRef["Scarecrow"]   = "border-image:url(" + QString(SCARECROW_IMAGE) + ")";            // Scarecrow image
+    cardsImageRef["Spring"]      = "border-image:url(" + QString(SPRING_IMAGE)    + ")";            // Spring image
+    cardsImageRef["Winter"]      = "border-image:url(" + QString(WINTER_IMAGE)    + ")";            // winter image
+    cardsImageRef["Spy"]         = "border-image:url(" + QString(SPY_IMAGE)       + ")";            // spy image
+    cardsImageRef["Turncoat"]    = "border-image:url(" + QString(TURNCOAT_IMAGE)  + ")";            // turncoat image
+    cardsImageRef["WhiteRakhsh"] = "border-image:url(" + QString(WHITERAKHSH_IMAGE) + ")";           //This code is related to phase 3 of the project
+    cardsImageRef["WhiteSeals"]  = "border-image:url(" + QString(WHITESEALS_IMAGE) + ")";            //This code is related to phase 3 of the project
+    cardsImageRef["ShirinAghl"]  = "border-image:url(" + QString(SHIRINAGHL_IMAGE) + ")";           //This code is related to phase 3 of the project
 
 }
 
