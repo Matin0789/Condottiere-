@@ -33,6 +33,9 @@
 #define SIX_IMAGE       ":/Description/Graphics/Assets/zard/006.png"
 #define TEN_IMAGE       ":/Description/Graphics/Assets/zard/010.png"
 #define BACK_IMAGE      ":/Description/Graphics/Assets/zard/Back.png"
+#define WHITESEALS_IMAGE ":/Description/Graphics/Assets/phase/ws.png"
+#define WHITERAKHSH_IMAGE ":/Description/Graphics/Assets/phase/wh.png"
+#define SHIRINAGHL_IMAGE  ":/Description/Graphics/Assets/phase/sa.png"
 
 #define BATTLE_MARKER_IMAGE ":/Description/Graphics/markers/icons8-battle-100(1).png"
 #define PEACE_MARKER_IMAGE  ":/Description/Graphics/markers/icons8-peace-100_black.png"
