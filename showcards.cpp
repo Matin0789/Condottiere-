@@ -35,7 +35,7 @@ showCards::showCards(QWidget *parent)
     cardsImageRef["Turncoat"]  = "border-image:url(" + std::string(TURNCOAT_IMAGE)  + ")";
     cardsImageRef["WhiteRakhsh"] = "border-image:url(" + std::string(WHITERAKHSH_IMAGE) + ")";           //This code is related to phase 3 of the project
     cardsImageRef["WhiteSeals"] = "border-image:url(" + std::string(WHITESEALS_IMAGE) + ")";            //This code is related to phase 3 of the project
-    cardsImageRef["ShirinAghl"] = "border-image:url(" + std::string(SHIRINAGHL_IMAGE) + ")";           //This code is related to phase 3 of the project
+    //cardsImageRef["ShirinAghl"] = "border-image:url(" + std::string(SHIRINAGHL_IMAGE) + ")";           //This code is related to phase 3 of the project
     cardsImageRef["1"]         = "border-image:url(" + std::string(ONE_IMAGE)  + ")";
     cardsImageRef["2"]         = "border-image:url(" + std::string(TWO_IMAGE)  + ")";
     cardsImageRef["3"]         = "border-image:url(" + std::string(THREE_IMAGE)  + ")";

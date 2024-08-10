@@ -24,7 +24,7 @@ Campaign::Campaign(QWidget *parent)
     cardsImageRef["Turncoat"]   = "border-image:url(" + QString(TURNCOAT_IMAGE)  + ")";
     cardsImageRef["WhiteRakhsh"]= "border-image:url("+ QString(WHITERAKHSH_IMAGE) + ")";           //This code is related to phase 3 of the project
     cardsImageRef["WhiteSeals"] = "border-image:url(" + QString(WHITESEALS_IMAGE) + ")";            //This code is related to phase 3 of the project
-    cardsImageRef["ShirinAghl"] = "border-image:url(" + QString(SHIRINAGHL_IMAGE) + ")";           //This code is related to phase 3 of the project
+    //cardsImageRef["ShirinAghl"] = "border-image:url(" + QString(SHIRINAGHL_IMAGE) + ")";           //This code is related to phase 3 of the project
     cardsImageRef["1"]          = "border-image:url(" + QString(ONE_IMAGE)  + ")";
     cardsImageRef["2"]          = "border-image:url(" + QString(TWO_IMAGE)  + ")";
     cardsImageRef["3"]          = "border-image:url(" + QString(THREE_IMAGE)  + ")";

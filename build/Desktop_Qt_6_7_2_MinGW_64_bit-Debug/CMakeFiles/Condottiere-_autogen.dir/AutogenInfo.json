@@ -390,12 +390,6 @@
 			null
 		],
 		[
-			"C:/project/Condottiere-/inc/card/ShirinAghl.h",
-			"MU",
-			"EV75SBWRFC/moc_ShirinAghl.cpp",
-			null
-		],
-		[
 			"C:/project/Condottiere-/inc/card/bishop.h",
 			"MU",
 			"EV75SBWRFC/moc_bishop.cpp",
@@ -679,7 +673,6 @@
 		[ "C:/project/Condottiere-/savegame.cpp", "MU", null ],
 		[ "C:/project/Condottiere-/setplayer.cpp", "MU", null ],
 		[ "C:/project/Condottiere-/showcards.cpp", "MU", null ],
-		[ "C:/project/Condottiere-/src/card/ShirinAghl.cpp", "MU", null ],
 		[ "C:/project/Condottiere-/src/card/bishop.cpp", "MU", null ],
 		[ "C:/project/Condottiere-/src/card/card.cpp", "MU", null ],
 		[ "C:/project/Condottiere-/src/card/drummer.cpp", "MU", null ],

@@ -311,9 +311,9 @@ bool Player::load(std::string filePath, GameBoard& gameBoard) {
             else if (cardName == "WhiteSeal") {
                 cards.push_back(new WhiteSeal(WHITESEALS_HELP_FILE));
             }
-            else if (cardName == "ShirinAghl") {
-                cards.push_back(new ShirinAghl(SHIRINAGHL_HELP_FILE));
-            }
+          // else if (cardName == "ShirinAghl") {
+        //     cards.push_back(new ShirinAghl(SHIRINAGHL_HELP_FILE));
+           // }
             else 
                 throw std::runtime_error("card" + cardName + " not found");
         }

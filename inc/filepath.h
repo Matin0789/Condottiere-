@@ -16,7 +16,7 @@
 #define SPY_HELP_FILE          "../../data/help/SpyHelp.txt"
 #define WHITERAKHSH_HELP_FILE  "../../data/help/WhiteRakhshHelp.txt"
 #define WHITESEALS_HELP_FILE   "../../data/help/WhitesealsHelp.txt"
-#define SHIRINAGHL_HELP_FILE   "../../data/help/ShirinAghlHelp.txt"
+//#define SHIRINAGHL_HELP_FILE   "../../data/help/ShirinAghlHelp.txt"
 
 #define BOARD_FILE          "../../data/board/adjacency.txt"
 
@@ -38,7 +38,7 @@
 #define BACK_IMAGE      ":/Description/Graphics/Assets/zard/Back.png"
 #define WHITESEALS_IMAGE ":/Description/Graphics/Assets/phase/hh.jpg"
 #define WHITERAKHSH_IMAGE ":/Description/Graphics/Assets/phase/wh.png"
-#define SHIRINAGHL_IMAGE  ":/Description/Graphics/Assets/phase/sa.png"
+//#define SHIRINAGHL_IMAGE  ":/Description/Graphics/Assets/phase/sa.png"
 
 #define BATTLE_MARKER_IMAGE ":/Description/Graphics/markers/icons8-battle-100(1).png"
 #define PEACE_MARKER_IMAGE  ":/Description/Graphics/markers/icons8-peace-100_black.png"

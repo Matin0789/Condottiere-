@@ -1,7 +1,7 @@
 #include "ShirinAghl.h"
 #include "player.h"
 #include "yellowcard.h"
-
+#include "card.h"
 
 #include <fstream>
 #include <string>

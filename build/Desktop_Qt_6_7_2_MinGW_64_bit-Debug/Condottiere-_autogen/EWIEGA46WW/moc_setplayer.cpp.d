@@ -414,6 +414,7 @@ C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_a
   C:/project/Condottiere-/inc/card/winter.h \
   C:/project/Condottiere-/inc/card/yellowcard.h \
   C:/project/Condottiere-/inc/enumcolor.h \
+  C:/project/Condottiere-/inc/filepath.h \
   C:/project/Condottiere-/inc/game.h \
   C:/project/Condottiere-/inc/gameboard.h \
   C:/project/Condottiere-/inc/marker/battlemarker.h \

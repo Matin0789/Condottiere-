@@ -19,3 +19,4 @@ bool Card::is_season() const{
 void Card::setPoint(unsigned int) {
    this->point = point ; 
 }
+

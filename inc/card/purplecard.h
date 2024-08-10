@@ -9,6 +9,7 @@ class PurpleCard : public Card {
 public:
     PurpleCard(int, std::string, int);// (point,type,priority)
     virtual std::string getType() const override;
+
 protected:
 private:
     const std::string type;

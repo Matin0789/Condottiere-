@@ -104,8 +104,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         img.qrc
         inc/card/whiterakhsh.h inc/card/whiteseals.h
         src/card/whiterakhsh.cpp src/card/whiteseals.cpp
-        src/card/ShirinAghl.cpp
-        inc/card/ShirinAghl.h
+
+
 
 
 
