@@ -7,7 +7,7 @@
 \setlength{\headheight}{24pt}
 \pagestyle{fancy}
 \rhead{\includegraphics[scale=0.2]{Graphics/nav-logo.png}}
-\chead{فاز یک پروژه پیشرفته}
+\chead{پروژه پیشرفته}
 
 \usepackage[hidelinks]{hyperref}
 
@@ -52,7 +52,7 @@
 
 	\begin{abstract}
 		
-		در دورانی که قلمرو شاهی به استان های خود مختار تقسیم شده،سردارانی از گوشه ی سرزمین در سودای کشورگشایی،ارتش خود را برای فتح شهرها گسیل داشته اند.تا با مهارت و شجاعت بجنگند و با تدبیر و مکر به حریفان رکب بزنند تا قدرت و افتخار کسب کنند \\
+	در دورانی که قلمرو شاهی به استان های خود مختار تقسیم شده،سردارانی از گوشه ی سرزمین در سودای کشورگشایی،ارتش خود را برای فتح شهرها گسیل داشته اند.تا با مهارت و شجاعت بجنگند و با تدبیر و مکر به حریفان رکب بزنند تا قدرت و افتخار کسب کنند \\
 
      بازی رکب یک بازی تخته ای است که توسط 3 تا 6 بازیکن انجام میشود 
 	 این بازی شامل دو نوع کارت بنفش و زرد است که هر کارت بنفش امتیاز خاص خود را دارد ولی کارت های زرد ویژگی خاصی ندارند
@@ -138,32 +138,95 @@
 قسمت گرافیکی این نرم افزار به وسیله محیط \lr{QT} طراحی شده است. \\
 ما از ورژن \lr{QT6\_widget} استفاده کردیم و برنامه را به صورت شی گرا برای کاربران به نمایش میگذاریم.\\
     
-
 	\paragraph{کلاس ها}
-	قسمت گرافیکی این پروژه از 10 کلاس تشکیل شده است \\
+	قسمت گرافیکی این پروژه از 12 کلاس تشکیل شده است \\
 	\begin{itemize}
 		\item \lr{Campaign}  این صفحه اصلی ترین قسمت بازی هست جایی است که در بازی انجام میشود و امپراطور ها بر سر سرزمین با هم میجنگند . در این صفحه نوارهایی برای قرار گیری کارت بازیکنان وجود دارد , نقشه اصلی بازی وجود دارد و بر روی هر استان یک لیبل گذاشته شده تا بازیکنان بتوانند نشان های مورد نیاز را روی نقشه بگذارند.\\ هنگامی که نوبت هر بازیکن میشود کارت های او در پایین صفحه نمایش داده میشوند تا از میان آنها یک کارت را انتخاب کند و یا دکمه پاس دادن را بزند.\\
-		\paragraph{توابع} 
+		\paragraph{صفات و ویژگی ها} 
+        \lr{back\_end} در این کلاس از کلاس های گرافیکی پیش فرض خود کیوتی استفاده کردیم و روابطی با بقیه کلاس ها برقرار کردیم و همچنین از ساختار داده ای مپ استفاده نموده ایم که در پایین برایتان توضیح خواهیم داد :
+		\begin{latin}
+			\begin{itemize}
+				\item Ui::Campaign *ui
+				\item Options\ *options
+				\item Help\*help
+				\item QGraphicsScene\ *scene\ =\ new\ QGraphicsScene()  کلاس پیش فرض
+				\item QGraphicsRectItem\ *rect\ =\ new\ QGraphicsRectItem()  کلاس پیش فرض مستطیل
+				\item QGraphicsView\ *view\ =\ new\ QGraphicsView(scene) کلاس پیش فرض کیوتی  
+				\item std::map<std::string,\ QString>\ cardsImageRef 
+				\item std::map<std::string,\ QString>\ markers
+				\item std::map<std::string,\ QLabel*>\ stateLabels
+				\item QVector<QVector<QLabel*>>\ playersCards_lbl
+				\item QVector<QLabel*>\ colors_lbl
+				\item QVector<QPushButton*>\ currentPlayerCards_btn
+				\item QString command\
+				\item QVector<QPropertyAnimation*>\ animations
+				\item void\ findSelectedCard()
+				\item void\ on_btn_pass_clicked()
+				\item void\ startWar
+				\item std::string\ getCommand
+                \item std::string\ scarecrow_get_card
+				\item void\ checked()
+
+			\end{itemize}
+
+			 در میان متد های کلاس هایی که ارائه کردیم بخشی از آنها به صورت خصوصی هستند بخشی به عنوان توابع عمومی و بخشی از آنها سیکنال هستند که با مشاهده کد به آنها پی خواهید برد.\\
+		\end{latin}
 		
 		\item \lr{gameWinner}  در این صفحه یک متن قرار گرفته برای نمایش نام بازیکنی که برنده کل بازی میشود به این معنی که 5 استان یا 3 استان مجاور را فتح کرده است.در این صفحه دو دکمه گذاشته شده برای خروج از بازی یا برگشتن به منوی اصلی .\\
-		\paragraph{توابع} 
+		\lr{back\_end}  این کلاس دو داده خصوصی دو اسلات خصوصی و یک تابع دارد :
+		\begin{latin}
+			\begin{itemize}
+				\item Ui::GameWinner\ *ui  شی از رابط گرافیکی
+				\item std::map<std::string,\ QString>\ markers  یک نمونه از ساختار داده ای مپ برای نشان ها
+				\item std::map<std::string,\ QLabel*>\ stateLabels یک نمونه از ساختار داده ای مپ برای لیبل استان ها ها
+				\item void\ declare(const std::vector<Player>&, const Player&)
+			\end{itemize}
+		\end{latin}
 
 		\item \lr{Help}  همانگونه که قبلا گفته شد برای هر شخصیت بازی و یا کلیت بازی یک متن آماده شده و بازیکنان میتوانند در فرایند بازی درخواست کمک کنند تا توضیحات برایشان نمایش داده شود پس هنگامی که بازیکن دکمه کمک را میزند به این صفحه می آید تا توضیحات درباره ی هر چیزی که میخواهد برایش نمایش داده شود.\\
-		\paragraph{توابع} 
-
+		\paragraph{صفات و ویژگی ها} 
+        \lr{back\_end} این کلاس برای نمایش توضیحات بازی و کارت ها ست که از 4 تابع برای کلید ها و دو داده خصوصی ساخته شده :
+		\begin{latin}
+			\begin{itemize}
+				\item Ui::Help\ *ui شی از  نوع رابط گرافیکی 
+				\item void\ on_btn_ok_clicked() نمونه ای از توابع 
+			\end{itemize} 
+		\end{latin} 	
+		
 		\item \lr{locateinfo}  در این صفحه نشان جنگ گذاشته میشود یعنی استان محل جنگ توسط کم سن ترین بازیکن انتخاب میشود در این صفحه یک شماتیک از نقشه بازی وجود دارد و بازیکن نام استان مورد نظر را انتخاب میکند.\\
-		\paragraph{توابع} 
+		\paragraph{صفات و ویژگی ها} 
+        \lr{back\_end} این کلاس شامل یک شی از کلاس پیش فرض گرافیکی خود کیوتی و چندین توابع برای کلید های این صفحه :
+		\begin{latin}
+			\begin{itemize}
+				\item Ui::Locateinfo\ *ui;
+				\item Campaign\ *Campaign
+				\item Game\ *game
+				\item UserInterface\ *user
+				\item bool\ next_click
+				\item showCards\ *showcards
+				\item bool\ startGet
+				\item QString\ currentState
+				\item QString\ type
+				\item std::map<std::string,\ QString>\ markers
+				\item std::map<std::string,\ QLabel*>\ stateLabels
+				\item QMediaPlayer\ *player  کلاس پیش فرض کیوتی 
+				\item QAudioOutput\ *audioOutput  کلاس پیش فرض کیوتی برای پخش صدا یا ویدیو
+				\item State\ *set_ground  
+
+			\end{itemize}
+
+		\end{latin} 
 
 		\item \lr{mainwindow}  این کلاس اولین کلاسی هست که به نمایش گذاشته میشود و منوی بازی ما محسوب میشود و شامل سه دکمه ی آغاز بازی , بازی های ذخیره شده و خروج از بازی میشود همچنین امکان قطع صدای بازی را هم داریم .\\
 		\paragraph{صفات و ویژگی ها} 
         \lr{back\_end} این کلاس ما چندین شیء به صورت اشاره گری از کلاس های دیگر داریم که روابط را برای ما ایجاد میکنند این اشیاء عبارتند از :
 		\begin{latin}
 			\begin{itemize}
-				\item Start\_*start
-				\item Campaign\_*campaign
-				\item Game\_*game
-				\item Locateinfo\_*battleground\_page
-				\item Locateinfo\_*favorground\_page
+				\item Start\ *start
+				\item Campaign\ *campaign
+				\item Game\ *game
+				\item Locateinfo\ *battleground\_page
+				\item Locateinfo\ *favorground\_page
 			\end{itemize}
 		\end{latin}
 		
@@ -174,24 +237,90 @@
 		 توابع فعال این کلاس اول کانستراکتور آن هست که بیشتر فرایند هارا انجام میدهد و دوم تابع کلید صدای آن است که صدای موسیقی در جریان بازی را کم و زیاد میکند.\\
 		
 		\item \lr{options}  در تمام بازی های دنیا یک صفحه برای تنظیمات تهیه میشود که در فرایند اصلی بازی اگر بازیکن نیاز به تغییرات تنظیمات را داشت بتواند کارش را انجام دهد یا از فرایند خارج شود پس ما هم تصمیم گرفتیم تا صفحه ای طراحی کنیم که این کار را بکند و در آن کلید هایی با عنوان ذخیره بازی , خروج از بازی ,  بازی های لود شده و ... گذاشته ایم هنگامی که بازی کن بر روی چرخ دنده داخل صفحه اصلی بزند به این صفحه آورده میشود. \\
-		\paragraph{توابع} 
+		\paragraph{صفات و ویژگی ها} 
+        \lr{back\_end} این کلاس فقط شامل توابع کلید ها میشود : 
+		\begin{latin}
+			\begin{itemize}
+				\item void\ on_btn_save_clicked() کلید ذخیره بازی 
+				\item void\ on_btn_Continue_clicked() کلید ادامه بازی
+				\item void\ on_btn_load_games_clicked() کلید بازی های ذخیره شده
+				\item void\ on_btn_audio_clicked() کلید صدا
+				\item void\ on_btn_quit_clicked() کلید خروج
+			\end{itemize}
+		\end{latin}
 
-		\item \lr{setplayer}   در این صفحه بازیکنان نام سن و رنگ نشان خود را انتخاب وارد میکنند تا اطلاعات آنها ذخیره شود و بازی را شروع کنند.\\
-		\paragraph{توابع} 
+		\item \lr{setplayer} \\
+		\paragraph{صفات و ویژگی ها} 
+		\lr{back\_end}  این کلاس شامل یک داده ساختاری مپ از رنگ های نشان بازیکنان و دو تابع برای کلید است.
+		\begin{latin}
+			\begin{itemize}
+				\item Ui::Setplayer\ *ui
+				\item std::map<QString,\ Color>\ freeColors
+				\item void\ on_btn_next_clicked()
+				\item void\ on_btn_back_clicked()
+			\end{itemize}
+
+			در این صفحه اطلاعات بازیکنان گرفته و ذخیره میشود.
+		\end{latin}
 
 		\item \lr{showcards}  در این صفحه کارت هایی که به صورت شانسی به بازیکنان داده میشود را به ترتیب سن از کوچک به بزرگ نمایش میدهد.\\
-		\paragraph{توابع} 
+		\lr{back\_end} این کلاس درواقع سخت ترین قسمت این پروژه بود که از بسیاری از کلاس های پیش فرض میوتی در آن استفاده کرده ایم  در ادامه لیستی از تمام اشیاء مورد نیاز این صفحه را خواهید دید.\\ :
+		\begin{latin}
+			\begin{itemize}
+				\item Ui::showCards\ *ui
+				\item Campaign\ *campaign
+				\item QVector<QLabel*>\ cardLabel
+				\item std::map<std::string,\ std::string>\ cardsImageRef
+				\item QVector<QPropertyAnimation*>\ animation
+				\item QMediaPlayer\ *audioPlayer
+				\item QAudioOutput\ *audioOutput
+				\item void\ getPlayer(const\ Player&)
+				\item void\ on_cb_show_player_list_activated(int\ index)
+				\item void\ on_btn_lets_go_clicked()
+				\item void\ on_btn_Nplayer_clicked()
+
+			\end{itemize}
+		\end{latin}
 
 		\item \lr{start} \\.فرایند اصلی بازی از این صفحه آغاز میشود که در اینجا تعداد نفراتی که بازی میکنند گرفته میشود
 		\paragraph{صفات و ویژگی ها} 
-		در این کلاس برای ارتباط با بیرون از خود شی از کلاس های دیگر دارد که به شرح زیر است :
-		\lr{Setplayer\_*setplayer} \\
-		دو متغیر خصوصی نیز با نام های \lr{playersNumber} , \lr{playerID} \\
-		 و یک نوع داده ای مپ از رنگ ها داریم برای نشان بازیکنان \lr{std::map<QString, Color>\_freeColors} \\
-		  توابع فعال نیز دو تابع هستند که یکی برای دکمه بعدی در داخل صفحه هست و دیگری برای اطلاعات بازیکنان \lr{get\_player} \\
+        \lr{back\_end} این کلاس شامل یک شی از کلاس پیش فرض گرافیکی خود کیوتی و چندین توابع برای کلید های این صفحه :
+		\begin{latin}
+			\begin{itemize}
+				\item Ui::Start\ *ui
+				\item void\ on_btn_back_clicked()
+				\item void\ on_btn_next_clicked()
+				\item size_t\ get_players_number()  این تابع برای بازیکنان است
+			\end{itemize}
+		\end{latin}
 
-		\item \lr{warWinner}   در این صفحه یک متن چاپ میشود که در آن نوشته شده کدام بازیکن برنده آن تک جنگ است و شماره آن بازیکن را نمایش میدهد.\\
- 
+		\item \lr{savegame}  این صفحه برای ذخبره بازی انجام میشود\\
+		\paragraph{صفات و ویژگی ها} 
+        \lr{back\_end}  این صفحه چیز خاصی ندارد:
+		\begin{latin}
+			\begin{itemize}
+				\item Ui::saveGame\ *ui
+			\end{itemize}
+		\end{latin}
+
+		\item \lr{warWinner}   در این صفحه برنده جنگ نمایش داده میشود \\
+		\paragraph{صفات و ویژگی ها} 
+        
+		\begin{latin}
+			\begin{itemize}
+				\item void\ declare(const\ Player&,\ BattleMarker&,\ bool)
+				\item Ui::Winner\ *ui
+
+			\end{itemize}
+		\end{latin}
+
+		\item \lr{loadgames}  در این صفحه بازی های ذخیره شده نمایش داده میشوند \\
+		\paragraph{صفات و ویژگی ها} 
+		\begin{latin}
+			\begin{itemize}
+				\item Ui::loadGames\ *ui
+			\end{itemize}
+		\end{latin}
 	\end{itemize}
 
 	\newpage

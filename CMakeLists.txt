@@ -102,6 +102,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         loadgames.h loadgames.cpp loadgames.ui
         savegame.h savegame.cpp savegame.ui
         img.qrc
+        inc/card/whiterakhsh.h inc/card/whiteseals.h
+        src/card/whiterakhsh.cpp src/card/whiteseals.cpp
 
 
 
