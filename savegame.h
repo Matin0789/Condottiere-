@@ -14,6 +14,12 @@ class saveGame : public QMainWindow
 public:
     explicit saveGame(QWidget *parent = nullptr);
     ~saveGame();
+public slots:
+    void save();
+signals:
+    void data_save(std::string);
+private slots:
+    void on_btn_save_clicked();
 
 private:
     Ui::saveGame *ui;

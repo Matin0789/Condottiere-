@@ -13,6 +13,8 @@
 #include "marker.h"
 #include "Warwinner.h"
 #include "gamewinner.h"
+#include "savegame.h"
+#include "loadgames.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -23,11 +25,11 @@ QT_END_NAMESPACE
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
-
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-
+signals :
+    std::string getLoadFile();
 public slots:
     void on_btn_load_game_clicked();
     void on_btn_sound_clicked();
@@ -38,6 +40,8 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+
+    // pages
     Start *start;
     Setplayer *setplayer;
     showCards *showcards;
@@ -47,7 +51,10 @@ private:
     Locateinfo *favorground_page;
     Winner *warWinner_page;
     GameWinner *gameWinner_page;
+    saveGame *save_page;
+    loadGames *load_page;
 
+    // music players
     QMediaPlayer* player;
     QAudioOutput* audioOutput;
 };

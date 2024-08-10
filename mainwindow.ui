@@ -104,7 +104,8 @@ QPushButton : pressed
 	background-color :black ;
 	color : black ;
 	border-image: 10px url(:/Description/Graphics/photos/volume.png);
-}</string>
+}
+background-color:transparent</string>
     </property>
     <property name="text">
      <string/>

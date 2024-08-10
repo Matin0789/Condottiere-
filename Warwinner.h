@@ -21,6 +21,10 @@ public:
 
 public slots:
     void declare(const Player&, BattleMarker&, bool);
+private slots:
+    void on_btn_save_clicked();
+signals:
+    void save();
 private:
     Ui::Winner *ui;
 };

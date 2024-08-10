@@ -36,3 +36,9 @@ void Winner::declare(const Player &winner, BattleMarker& battleMarker, bool win)
     disconnect(ui->pushButton_3, SIGNAL(clicked(bool)), &loop, SLOT(quit()));
     this->hide();
 }
+
+void Winner::on_btn_save_clicked()
+{
+    emit save();
+}
+

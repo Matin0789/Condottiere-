@@ -14,83 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pb_L_1">
-    <property name="geometry">
-     <rect>
-      <x>350</x>
-      <y>140</y>
-      <width>91</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-QPushButton
-{
-	color : black ;
-	background-color : ;
-	font: 700 13pt &quot;Segoe Print&quot;;
-	border-image: 30px ;
-}
-
-QPushButton : Hover
-{
-	background-color :rgb(255, 240, 196) ;
-    border-radius : 40px ;
-	border-image: 10px ;
-}
-
-QPushButton : pressed
-{
-	background-color :rgb(255, 240, 196) ;
-	color : white ;
-	border-image: 10px;
-
-}</string>
-    </property>
-    <property name="text">
-     <string> #name</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pb_L_2">
-    <property name="geometry">
-     <rect>
-      <x>350</x>
-      <y>200</y>
-      <width>91</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-QPushButton
-{
-	color : black ;
-	background-color : ;
-	font: 700 13pt &quot;Segoe Print&quot;;
-	border-image: 30px ;
-}
-
-QPushButton : Hover
-{
-	background-color : ;
-    border-radius : 40px ;
-	border-image: 10px ;
-}
-
-QPushButton : pressed
-{
-	background-color :black ;
-	color : white ;
-	border-image: url(:/Description/Graphics/photos/blue.jpg);
-
-}</string>
-    </property>
-    <property name="text">
-     <string> #name</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pb_L_3">
+   <widget class="QPushButton" name="btn_load">
     <property name="geometry">
      <rect>
       <x>350</x>
@@ -125,83 +49,7 @@ QPushButton : pressed
 }</string>
     </property>
     <property name="text">
-     <string> #name</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pb_L_4">
-    <property name="geometry">
-     <rect>
-      <x>350</x>
-      <y>320</y>
-      <width>91</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-QPushButton
-{
-	color : black ;
-	background-color : ;
-	font: 700 13pt &quot;Segoe Print&quot;;
-	border-image: 30px ;
-}
-
-QPushButton : Hover
-{
-	background-color : ;
-    border-radius : 40px ;
-	border-image: 10px ;
-}
-
-QPushButton : pressed
-{
-	background-color :black ;
-	color : white ;
-	border-image: url(:/Description/Graphics/photos/blue.jpg);
-
-}</string>
-    </property>
-    <property name="text">
-     <string> #name</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pb_L_5">
-    <property name="geometry">
-     <rect>
-      <x>350</x>
-      <y>380</y>
-      <width>91</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-QPushButton
-{
-	color : black ;
-	background-color : ;
-	font: 700 13pt &quot;Segoe Print&quot;;
-	border-image: 30px ;
-}
-
-QPushButton : Hover
-{
-	background-color : ;
-    border-radius : 40px ;
-	border-image: 10px ;
-}
-
-QPushButton : pressed
-{
-	background-color :black ;
-	color : white ;
-	border-image: url(:/Description/Graphics/photos/blue.jpg);
-
-}</string>
-    </property>
-    <property name="text">
-     <string> #name</string>
+     <string>load</string>
     </property>
    </widget>
    <widget class="QLabel" name="lb_player_counter">
@@ -245,13 +93,25 @@ color: rgb(0, 0, 0);</string>
      <string/>
     </property>
    </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>311</x>
+      <y>170</y>
+      <width>181</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/Description/Graphics/photos/images (1852).jpg);
+font: 9pt &quot;Segoe Print&quot;;
+color: rgb(0, 0, 0);</string>
+    </property>
+   </widget>
    <zorder>label</zorder>
-   <zorder>pb_L_1</zorder>
-   <zorder>pb_L_2</zorder>
-   <zorder>pb_L_3</zorder>
-   <zorder>pb_L_4</zorder>
-   <zorder>pb_L_5</zorder>
+   <zorder>btn_load</zorder>
    <zorder>lb_player_counter</zorder>
+   <zorder>comboBox</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

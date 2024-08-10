@@ -10,10 +10,6 @@
         <file>data/help/SpyHelp.txt</file>
         <file>data/help/TurncoatHelp.txt</file>
         <file>data/help/WinterHelp.txt</file>
-        <file>data/save/save_1.bin</file>
-        <file>data/save/save_2.bin</file>
-        <file>data/save/save_3.bin</file>
-        <file>data/save/save_4.bin</file>
-        <file>data/save/save_5.bin</file>
+        <file>data/save/save_config.txt</file>
     </qresource>
 </RCC>

@@ -7,7 +7,7 @@
 #include <fstream> // for files
 #include <sstream> // for read file as stream
 #include <QDebug>
-
+#include <iomanip>
 
 #include "game.h"
 #include "filepath.h"
@@ -17,7 +17,8 @@ std::string Game::help; // set help
 Game::Game(QObject *parent) :
     QObject{parent},
     season(nullptr),
-    gameBoard(BOARD_FILE)
+    gameBoard(BOARD_FILE),
+    is_load(false)
 {
     srand(time(0));    // for rand function
 
@@ -94,13 +95,17 @@ Game::~Game() {
         }
     }
 
-    cards.push_back(season);
-    season = nullptr;
+    if (season) {
+        cards.push_back(season);
+        season = nullptr;
+    }
 
     for (auto &&card : cards)
     {
         delete card;
     }
+    cards.clear();
+
 }
 
 std::string Game::getHelp() {    // send help texts for user
@@ -238,25 +243,24 @@ void Game::shuffle()  //This function is for shuffling cards
 
 void Game::start()
 {
-    size_t players_number = emit get_players_number();
-    for (size_t i = 0; i < players_number; i++) {
-        emit get_player_page_show(freeColors, i);
+    if (!is_load) {
+        size_t players_number = emit get_players_number();
+        for (size_t i = 0; i < players_number; i++) {
+            emit get_player_page_show(freeColors, i);
+        }
+        distributeCards();
+        currentPlayerID = 1;
+        currentPlayerID = compareAge();
+        favorSetterID = players.size();
+        battleSetterID = currentPlayerID;
     }
-    distributeCards();
-    size_t currentPlayerID = 1;
-    currentPlayerID = compareAge();
-    size_t favorSetterID = players.size();
-    size_t battleSetterID = currentPlayerID;
     while (true){
         if (favorSetterID < players.size()) {
             favorMarker.setState(emit set_favorground(players ,players[favorSetterID], gameBoard, favorMarker));
         }
         battleMarker.setState(emit set_battleground(players, players[battleSetterID], gameBoard, favorMarker));
 
-        std::pair<size_t, std::pair<size_t, size_t>> war_return_value = war(currentPlayerID);
-        currentPlayerID = war_return_value.first;
-        favorSetterID = war_return_value.second.first;
-        battleSetterID = war_return_value.second.second;
+        war(currentPlayerID);
 
         bool gameEnd = find_game_winner(players[currentPlayerID]);
         if (gameEnd){
@@ -293,146 +297,220 @@ bool Game::check_number_of_player(std::string n) {
     }
 }
 
-bool Game::save(std::string filePath) const {
-    std::ofstream file(filePath, std::ios::binary | std::ios::trunc | std::ios::app);
-    if (!file) {
-        throw std::runtime_error("file " + filePath + " cannot be open in game");
+void Game::save(std::string filePath) {
+    std::ofstream file(filePath, std::ios::trunc);
+    if(!file){
+        throw std::runtime_error("file cannot be save");
     }
+
+    //qInfo() << "save ok";
+    // save battle data
+
+    // file.write(reinterpret_cast<const char*>(&currentPlayerID), sizeof(size_t));
+    // file.write(reinterpret_cast<const char*>(&battleSetterID), sizeof(size_t));
+    // file.write(reinterpret_cast<const char*>(&favorSetterID), sizeof(size_t));
+    file << currentPlayerID << ' ' << battleSetterID << ' ' << favorSetterID << std::endl;
 
     // save cards
+    // binary
+    // size_t size = cards.size();
+    // file.write(reinterpret_cast<const char*>(&size), sizeof(size_t));
+    // for (auto &&card : cards) {
+    //     size_t capacity = card->getType().capacity();
+    //     file.write(reinterpret_cast<const char*>(&capacity), sizeof(size_t));
+    //     std::string cardName = card->getType();
+    //     file.write(reinterpret_cast<const char*>(&cardName[0]), capacity);
+    // }
+    // bool season_set = false;
+    // if (season){
+    //     season_set = true;
+    //     file.write(reinterpret_cast<const char*>(&season_set), sizeof(bool));
+    //     std::string season_type = season->getType();
+    //     size_t capacity = season_type.capacity();
+    //     file.write(reinterpret_cast<const char*>(&capacity), sizeof(size_t));
+    //     file.write(reinterpret_cast<const char*>(&season_type), capacity);
+    // }
+    // else {
+    //     season_set = false;
+    //     file.write(reinterpret_cast<const char*>(&season_set), sizeof(bool));
+    // }
+
+    // txt
     size_t size = cards.size();
-    file.write(reinterpret_cast<const char*>(&size), sizeof(size_t));
+    file << size << ' ';
     for (auto &&card : cards) {
-        size_t capacity = card->getType().capacity();
-        file.write(reinterpret_cast<const char*>(&capacity), sizeof(size_t));
         std::string cardName = card->getType();
-        file.write(reinterpret_cast<const char*>(&cardName), capacity);
+        file << '\"' << cardName << '\"' << ' ';
     }
+    file << std::endl;
+
     bool season_set = false;
-    if (season){
-        season_set = true;
-        file.write(reinterpret_cast<const char*>(&season_set), sizeof(bool));
+    season_set = season ? true:false;
+    file << season_set;
+    if (season_set){
         std::string season_type = season->getType();
-        size_t capacity = season_type.capacity();
-        file.write(reinterpret_cast<const char*>(&capacity), sizeof(size_t));
-        file.write(reinterpret_cast<const char*>(&season_type), capacity);
+        file << ' ' << season_type;
     }
-    else {
-        season_set = false;
-        file.write(reinterpret_cast<const char*>(&season_set), sizeof(bool));
-    }
+    file << std::endl;
 
-    // save ui object
-    //size_t size_UI = sizeof(*ui);
-    //file.write(reinterpret_cast<const char*>(&size_UI), sizeof(size_t));
-    //file.write(reinterpret_cast<const char*>(&*ui), size_UI);
-
+    size_t players_size = players.size();
+    // file.write(reinterpret_cast<const char*>(&players_size), sizeof(size_t));
+    file << players_size << std::endl;
 
     file.close();
 
-    // save gameboard
-    size_t gameBoard_size = sizeof(gameBoard);
-    file.write(reinterpret_cast<const char*>(&gameBoard_size), sizeof(size_t));
-    file.write(reinterpret_cast<const char*>(&gameBoard), gameBoard_size);
-    // save markers
-    favorMarker.save(filePath);
-    battleMarker.save(filePath);
-
-    size_t players_size = players.size();
-    file.write(reinterpret_cast<const char*>(&players_size), sizeof(size_t));
     for (auto &&player : players) {
         player.save(filePath);
     }
 
-    return true;
+    // save gameboard
+    gameBoard.save(filePath);
+    // save markers
+
+
+
+
 }
 
-bool Game::load(std::string filePath) {
-    std::ifstream file(filePath, std::ios::binary);
+void Game::load(std::string filePath) {
+    std::ifstream file(filePath);
     if (!file) {
         throw std::runtime_error("file " + filePath + " cannot be open in game");
     }
 
+    for (auto &&player : players)
+    {
+        std::vector<const Card*> tmp(player.burnCards());
+        if (!tmp.empty()){
+            cards.insert(cards.end(), tmp.begin(), tmp.end());
+        }
+    }
+    for (auto &&player : players)
+    {
+        std::vector<const Card*> tmp(player.burnPlayedCards());
+        if (!tmp.empty()){
+            cards.insert(cards.end(), tmp.begin(), tmp.end());
+        }
+    }
+
+    if (season) {
+        cards.push_back(season);
+        season = nullptr;
+    }
+
+    for (auto &&card : cards)
+    {
+        delete card;
+    }
+    cards.clear();
+    ////////////////////////////////////
+
+
+
+    // read battle data
+    // file.read(reinterpret_cast<char*>(&currentPlayerID), sizeof(size_t));
+    // file.read(reinterpret_cast<char*>(&battleSetterID), sizeof(size_t));
+    // file.read(reinterpret_cast<char*>(&favorSetterID), sizeof(size_t));
+    file >> currentPlayerID >> battleSetterID >> favorSetterID;
+
     // read cards
     size_t size;
-    file.read(reinterpret_cast<char*>(&size), sizeof(size_t));
+    //file.read(reinterpret_cast<char*>(&size), sizeof(size_t));
+    file >> size;
     for (size_t i = 0; i < size; i++)
     {
-        size_t capacity;
-        file.read(reinterpret_cast<char*>(&capacity), sizeof(size_t));
+        // size_t capacity;
+        // file.read(reinterpret_cast<char*>(&capacity), sizeof(size_t));
         std::string cardName;
-        file.read(reinterpret_cast<char*>(&cardName), sizeof(capacity));
-        if (cardName == "1")
+        //file.read(reinterpret_cast<char*>(&cardName[0]), sizeof(capacity));
+        file >> quoted(cardName);
+        if (cardName == "1") {
             cards.push_back(new YellowCard(1));
-        else if (cardName == "2")
+        }
+        else if (cardName == "2") {
             cards.push_back(new YellowCard(2));
-        else if (cardName == "3")
+        }
+        else if (cardName == "3") {
             cards.push_back(new YellowCard(3));
-        else if (cardName == "4")
+        }
+        else if (cardName == "4") {
             cards.push_back(new YellowCard(4));
-        else if (cardName == "5")
+        }
+        else if (cardName == "5") {
             cards.push_back(new YellowCard(5));
-        else if (cardName == "6")
+        }
+        else if (cardName == "6") {
             cards.push_back(new YellowCard(6));
-        else if (cardName == "10")
+        }
+        else if (cardName == "10") {
             cards.push_back(new YellowCard(10));
-        else if (cardName == "Heroine")
+        }
+        else if (cardName == "Heroine") {
             cards.push_back(new Heroine(HEROINE_HELP_FILE));
-        else if (cardName == "Turncoat")
+        }
+        else if (cardName == "Turncoat") {
             cards.push_back(new Turncoat(TURNCOAT_HELP_FILE));
-        else if (cardName == "Scarecrow")
+        }
+        else if (cardName == "Scarecrow") {
             cards.push_back(new Scarecrow(SCARECROW_HELP_FILE));
-        else if (cardName == "Drummer")
+        }
+        else if (cardName == "Drummer") {
             cards.push_back(new Drummer(DRUMMER_HELP_FILE));
-        else if (cardName == "Bishop")
+        }
+        else if (cardName == "Bishop") {
             cards.push_back(new Bishop(BISHOP_HELP_FILE));
-        else if (cardName == "Spy")
+        }
+        else if (cardName == "Spy") {
             cards.push_back(new Spy(SPY_HELP_FILE));
-        else 
+        }
+        else if (cardName == "Winter") {
+            cards.push_back(new Winter(WINTER_HELP_FILE));
+        }
+        else if (cardName == "Spring") {
+            cards.push_back(new Spring(SPRING_HELP_FILE));
+        }
+        else  {
             throw std::runtime_error("card" + cardName + " not found");
+        }
     }
 
     bool season_set;
-    file.read(reinterpret_cast<char*>(&season_set), sizeof(bool));
+    //file.read(reinterpret_cast<char*>(&season_set), sizeof(bool));
+    file >> season_set;
     if (season_set){
-        size_t capacity;
-        file.read(reinterpret_cast<char*>(&capacity), sizeof(size_t));
+        // size_t capacity;
+        // file.read(reinterpret_cast<char*>(&capacity), sizeof(size_t));
         std::string season_type;
-        file.read(reinterpret_cast<char*>(&season_type), capacity);
+        // file.read(reinterpret_cast<char*>(&season_type), capacity);
+        file >> quoted(season_type);
         if (season_type == "Spring")
             season = new Spring(SPRING_HELP_FILE);
         else if (season_type == "Winter")
             season = new Winter(WINTER_HELP_FILE);
     }
-    // read ui object
-    //size_t size_UI;
-    //file.read(reinterpret_cast<char*>(&size_UI), sizeof(size_t));
-    //file.read(reinterpret_cast<char*>(&*ui), size_UI);
-    // read gameboard
-    size_t gameBoard_size;
-    file.read(reinterpret_cast<char*>(&gameBoard_size), sizeof(size_t));
-    file.read(reinterpret_cast<char*>(&gameBoard), gameBoard_size);
-
-    file.close();
-    
-    // read markers
-    favorMarker.load(filePath, gameBoard);
-    battleMarker.load(filePath, gameBoard);
 
     // read players
     size_t players_size;
-    file.read(reinterpret_cast<char*>(&players_size), sizeof(size_t));
+    //file.read(reinterpret_cast<char*>(&players_size), sizeof(size_t));
+    file >> players_size;
+    file.close();
+
     players.clear();
     for (size_t i = 0; i < players_size; i++)
     {
-        Player tmp(" ", players_size, 0, Color::white);
+        Player tmp(" ", i, 0, Color::white);
         tmp.load(filePath, gameBoard);
         players.push_back(tmp);
     }
 
-    return true;
+
+    // read gameboard
+    gameBoard.load(filePath);
+
+    is_load = true;
 }
-std::pair<size_t, std::pair<size_t, size_t>> Game::war(int currentPlayerID) {     //This function starts working when the conditions are ready and the province of the battle location is selected
+
+void Game::war(int currentPlayerID) {     //This function starts working when the conditions are ready and the province of the battle location is selected
     emit startWar(players, battleMarker, favorMarker);
     std::vector<Player*> activePlayers;
     for (auto &&player : players) {
@@ -502,10 +580,8 @@ std::pair<size_t, std::pair<size_t, size_t>> Game::war(int currentPlayerID) {   
     if (winnerID < players.size()) {
         currentPlayerID = winnerID;
         players[currentPlayerID].setState(&battleMarker.getState());
-        emit declare_warWinner(players[currentPlayerID], battleMarker);
     }
     else {
-        emit declare_warWinner(players[currentPlayerID], battleMarker, false);
         battleMarker.getState().set(false);
     }
     
@@ -526,12 +602,18 @@ std::pair<size_t, std::pair<size_t, size_t>> Game::war(int currentPlayerID) {   
         battleSetterID = currentPlayerID;
     }
 
-    std::pair<size_t, std::pair<size_t, size_t>> r; // first currentplayerID, second.first favorSetterID, second.second battleSetterID
-    r.first = currentPlayerID;
-    r.second.first = favorSetterID;
-    r.second.second = battleSetterID;
+    this->currentPlayerID = currentPlayerID;
+    this->favorSetterID = favorSetterID;
+    this->battleSetterID = battleSetterID;
+
     emit endWar();
-    return r;
+
+    if (winnerID < players.size()) {
+        emit declare_warWinner(players[currentPlayerID], battleMarker);
+    }
+    else {
+        emit declare_warWinner(players[currentPlayerID], battleMarker, false);
+    }
 }
 
 size_t Game::compareAge()   // search in players ages

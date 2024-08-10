@@ -2,7 +2,8 @@
 #define FILEPATH_H
 
 // The file path of the game guide
-#define SAVE_FILE(n)        "../../data/save/save_" + std::to_string(n) + ".bin"
+#define SAVE_FILE(n)        "../../data/save/" + n + ".txt"
+#define SAVE_CONFIG         "../../data/save/save_config.txt"
 
 #define Game_HELP_FILE      "../../data/help/GameHelp.txt"
 #define BISHOP_HELP_FILE    "../../data/help/BishopHelp.txt"
@@ -34,7 +35,7 @@
 #define BACK_IMAGE      ":/Description/Graphics/Assets/zard/Back.png"
 
 #define BATTLE_MARKER_IMAGE ":/Description/Graphics/markers/icons8-battle-100(1).png"
-#define PEACE_MARKER_IMAGE  ":/Description/Graphics/markers/icons8-peace-100.png"
+#define PEACE_MARKER_IMAGE  ":/Description/Graphics/markers/icons8-peace-100_black.png"
 #define PLAYER_BLUE_MARKER_IMAGE ":/Description/Graphics/markers/blue.png"
 #define PLAYER_BROWN_MARKER_IMAGE ":/Description/Graphics/markers/brown.png"
 #define PLAYER_GRAY_MARKER_IMAGE ":/Description/Graphics/markers/gray.png"

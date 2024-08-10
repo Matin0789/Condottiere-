@@ -9,16 +9,17 @@ class Marker
 {
 private:
     State* state;
-    Color color;
     bool set;
+protected :
+    Color color;
 public:
     Marker(Color);
     void setState(State*);
     State& getState() const;
     bool is_set() const;
     Color getColor() const;
-    bool save(std::string) const;
-    bool load(std::string, GameBoard&);
+    bool save(std::string, size_t) const;
+    bool load(std::string, GameBoard&, size_t, size_t);
     virtual std::string getType() const = 0;
 };
 
