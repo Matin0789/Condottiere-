@@ -1,0 +1,9 @@
+C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/Condottiere-.dir
+C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/list_install_components.dir
+C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/install.dir
+C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/install/local.dir
+C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/install/strip.dir
+C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/Condottiere-_autogen_timestamp_deps.dir
+C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/Condottiere-_autogen.dir

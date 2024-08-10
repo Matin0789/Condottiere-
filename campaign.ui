@@ -20,7 +20,7 @@
    <widget class="QLabel" name="lbl_map">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>50</x>
       <y>80</y>
       <width>771</width>
       <height>471</height>
@@ -257,7 +257,7 @@
    <widget class="QLabel" name="lb_rollo">
     <property name="geometry">
      <rect>
-      <x>190</x>
+      <x>210</x>
       <y>100</y>
       <width>30</width>
       <height>30</height>
@@ -273,7 +273,7 @@
    <widget class="QLabel" name="lb_elinia">
     <property name="geometry">
      <rect>
-      <x>60</x>
+      <x>80</x>
       <y>210</y>
       <width>30</width>
       <height>30</height>
@@ -289,7 +289,7 @@
    <widget class="QLabel" name="lb_talmone">
     <property name="geometry">
      <rect>
-      <x>330</x>
+      <x>350</x>
       <y>190</y>
       <width>30</width>
       <height>30</height>
@@ -305,7 +305,7 @@
    <widget class="QLabel" name="lb_morina">
     <property name="geometry">
      <rect>
-      <x>410</x>
+      <x>430</x>
       <y>260</y>
       <width>30</width>
       <height>30</height>
@@ -321,7 +321,7 @@
    <widget class="QLabel" name="lb_borge">
     <property name="geometry">
      <rect>
-      <x>510</x>
+      <x>530</x>
       <y>210</y>
       <width>30</width>
       <height>30</height>
@@ -337,7 +337,7 @@
    <widget class="QLabel" name="lb_pladaci">
     <property name="geometry">
      <rect>
-      <x>510</x>
+      <x>530</x>
       <y>160</y>
       <width>30</width>
       <height>30</height>
@@ -353,7 +353,7 @@
    <widget class="QLabel" name="lb_bella">
     <property name="geometry">
      <rect>
-      <x>620</x>
+      <x>640</x>
       <y>150</y>
       <width>30</width>
       <height>30</height>
@@ -369,7 +369,7 @@
    <widget class="QLabel" name="lb_caline">
     <property name="geometry">
      <rect>
-      <x>740</x>
+      <x>760</x>
       <y>210</y>
       <width>30</width>
       <height>30</height>
@@ -385,7 +385,7 @@
    <widget class="QLabel" name="lb_atela">
     <property name="geometry">
      <rect>
-      <x>640</x>
+      <x>660</x>
       <y>410</y>
       <width>30</width>
       <height>30</height>
@@ -401,7 +401,7 @@
    <widget class="QLabel" name="lb_enna">
     <property name="geometry">
      <rect>
-      <x>630</x>
+      <x>650</x>
       <y>290</y>
       <width>30</width>
       <height>30</height>
@@ -417,8 +417,8 @@
    <widget class="QLabel" name="lb_dimase">
     <property name="geometry">
      <rect>
-      <x>590</x>
-      <y>450</y>
+      <x>570</x>
+      <y>370</y>
       <width>30</width>
       <height>30</height>
      </rect>
@@ -433,7 +433,7 @@
    <widget class="QLabel" name="lb_lia">
     <property name="geometry">
      <rect>
-      <x>370</x>
+      <x>390</x>
       <y>480</y>
       <width>30</width>
       <height>30</height>
@@ -449,7 +449,7 @@
    <widget class="QLabel" name="lb_armento">
     <property name="geometry">
      <rect>
-      <x>380</x>
+      <x>400</x>
       <y>400</y>
       <width>30</width>
       <height>30</height>
@@ -465,7 +465,7 @@
    <widget class="QLabel" name="lb_olivadi">
     <property name="geometry">
      <rect>
-      <x>420</x>
+      <x>440</x>
       <y>370</y>
       <width>30</width>
       <height>30</height>
@@ -2556,7 +2556,7 @@
    <widget class="QLabel" name="lb_season">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>90</x>
       <y>310</y>
       <width>70</width>
       <height>90</height>
@@ -2837,7 +2837,7 @@
    <widget class="QLabel" name="lb_hamedan">
     <property name="geometry">
      <rect>
-      <x>620</x>
+      <x>640</x>
       <y>490</y>
       <width>30</width>
       <height>30</height>
@@ -2978,7 +2978,6 @@
    <zorder>btn_showCards</zorder>
    <zorder>lb_hamedan</zorder>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>

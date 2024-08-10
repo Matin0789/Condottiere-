@@ -126,7 +126,7 @@ QPushButton : pressed
       <x>0</x>
       <y>-20</y>
       <width>800</width>
-      <height>600</height>
+      <height>621</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -142,17 +142,6 @@ QPushButton : pressed
    <zorder>lb_player_counter_2</zorder>
    <zorder>btn_save</zorder>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>800</width>
-     <height>21</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>

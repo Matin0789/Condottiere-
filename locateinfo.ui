@@ -334,8 +334,8 @@ border-image: url(:/Description/Graphics/photos/galileus_medieval_Crusader_knigh
   <widget class="QLabel" name="lb_dimase">
    <property name="geometry">
     <rect>
-     <x>520</x>
-     <y>450</y>
+     <x>490</x>
+     <y>390</y>
      <width>16</width>
      <height>16</height>
     </rect>

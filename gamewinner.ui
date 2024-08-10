@@ -338,8 +338,8 @@ QPushButton : pressed
    <widget class="QLabel" name="lb_dimase">
     <property name="geometry">
      <rect>
-      <x>510</x>
-      <y>340</y>
+      <x>480</x>
+      <y>300</y>
       <width>16</width>
       <height>16</height>
      </rect>
@@ -420,7 +420,6 @@ QPushButton : pressed
    <zorder>lb_armento</zorder>
    <zorder>lb_hamedan</zorder>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>
