@@ -115,7 +115,7 @@ std::string Game::getHelp() {    // send help texts for user
 size_t Game::warـanalyst(){    
     std::vector<std::vector<unsigned int>> pointCards(players.size());
     std::vector<std::pair<size_t ,const Card*>> purpleCards;
-    std::vector<bool> drummer_set(players.size(),false);
+    std::vector<bool> drummer_set(players.size(),false);   //This code is related to phase 3 of the project
 
     for (size_t i = 0; i < players.size(); i++)
     {
@@ -146,10 +146,12 @@ size_t Game::warـanalyst(){
         });
     for (auto &&purpleCard : purpleCards)
     {
-        if (purpleCard.second->getType() == "Spy") {
-           // if () {
-
-            //}
+        if (purpleCard.second->getType() == "Heroine") {        //This code is related to phase 3 of the project
+            if(season) {                                                 //This code is related to phase 3 of the project
+                if (season->getType() == "Spring") {                              //This code is related to phase 3 of the project
+                    pointCards[purpleCard.first].push_back(purpleCard.second->getPoint()+3);                  //This code is related to phase 3 of the project
+                }
+            }
         }
         else{
             purpleCard.second->applyFeature(pointCards, purpleCard.first);
@@ -520,6 +522,8 @@ void Game::war(int currentPlayerID) {     //This function starts working when th
     size_t battleSetterID;
     size_t favorSetterID = players.size();
     std::vector<std::pair<size_t, size_t>> spyCounter(players.size());
+    size_t checkTurncoatApply = players.size();                    //This code is related to phase 3 of the project
+    size_t checkWhiteRakhshApply = players.size();                      //This code is related to phase 3 of the project
     for(size_t i = 0;i < players.size(); i++) {
         spyCounter[i].first = players[i].getID();
         spyCounter[i].second = 0;
@@ -533,8 +537,15 @@ void Game::war(int currentPlayerID) {     //This function starts working when th
         }
         else {
             const Card* drawnCard = activePlayers[i]->drawn_card(command);
-            if (drawnCard->getType() == "Turncoat"){
-                cards.push_back(drawnCard);
+            if (drawnCard->getType() == "Turncoat"){                 //This code is related to phase 3 of the project
+                cards.push_back(drawnCard);                             //This code is related to phase 3 of the project
+                if(activePlayers.size() == players.size()) {                    //This code is related to phase 3 of the project
+                  checkTurncoatApply = activePlayers[i-1]->getID();                       //This code is related to phase 3 of the project
+                }
+                break;
+            }
+            else if(drawnCard->getType() == "WhiteRakhsh") {            //This code is related to phase 3 of the project          
+                checkWhiteRakhshApply = activePlayers[i]->getID();          //This code is related to phase 3 of the project
                 break;
             }
             else if (drawnCard->getType() == "Scarecrow"){
@@ -574,9 +585,13 @@ void Game::war(int currentPlayerID) {     //This function starts working when th
         }
         if (i >= activePlayers.size() - 1) i = -1;
     }
-
-    size_t winnerID = warـanalyst();
-
+    size_t winnerID ;
+    if (checkWhiteRakhshApply < players.size()) {
+        winnerID = checkWhiteRakhshApply ;
+    }
+    else {
+        winnerID = warـanalyst();
+    }
     if (winnerID < players.size()) {
         currentPlayerID = winnerID;
         players[currentPlayerID].setState(&battleMarker.getState());
@@ -591,13 +606,18 @@ void Game::war(int currentPlayerID) {     //This function starts working when th
               [](const std::pair<size_t,size_t>& p1, const std::pair<size_t,size_t>& p2) {
         return p1.second > p2.second;
     });
-    if (spyCounter[0].second != 0)
+
+    if (spyCounter[0].second != 0) {
         if (spyCounter[0].second == spyCounter[1].second){
            battleSetterID = currentPlayerID;
         }
         else {
             battleSetterID = spyCounter[0].first;
         }
+    }    
+    else if (checkTurncoatApply < players.size() ) {
+        battleSetterID = checkTurncoatApply ;
+    }
     else {
         battleSetterID = currentPlayerID;
     }

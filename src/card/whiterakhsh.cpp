@@ -9,7 +9,7 @@
 
 std::string WhiteRakhsh::help;
 
-WhiteRakhsh::WhiteRakhsh(std::string helpFilePath) : PurpleCard(0,"whiterakhsh",3){
+WhiteRakhsh::WhiteRakhsh(std::string helpFilePath) : PurpleCard(0,"WhiteRakhsh",3){
     std::ifstream helpFile(helpFilePath);
     if (helpFile.is_open()){
         std::stringstream helpString;
