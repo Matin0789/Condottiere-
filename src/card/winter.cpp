@@ -35,7 +35,7 @@ void Winter::applyFeature(std::vector<std::vector<unsigned int>>& playersCardPoi
 		if (!CardsPoint.empty()) {
 			for (auto &&point : CardsPoint)
 			{
-                point = point/2;  
+                point /= 2;  
                  //This code is related to phase 3 of the project  // point = 1;
 			}
 		}
