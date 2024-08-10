@@ -21,9 +21,9 @@ public:
 public slots:
     size_t get_players_number();
 private slots:
-    void on_btn_next_clicked();
+    void on_btn_next_clicked();    // next page
 
-    void on_btn_back_clicked();
+    void on_btn_back_clicked();     // delete this
 
     //void on_le_number_cursorPositionChanged(int arg1);
 

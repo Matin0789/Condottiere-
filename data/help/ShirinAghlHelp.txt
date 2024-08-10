@@ -1,0 +1,4 @@
+ShirinAghl help:
+A new card has been found in the card category. Shirin Aql card is one of the cards as soon as it enters the game
+Played copies the player randomly and behaves exactly like him, but if no card has been played
+A child becomes a soldier with zero strength. (It can also imitate purple cards)

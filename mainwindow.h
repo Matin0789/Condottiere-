@@ -39,11 +39,11 @@ private slots:
 
 
 private:
-    Ui::MainWindow *ui;
+    Ui::MainWindow *ui;       //userinterface 
 
     // pages
-    Start *start;
-    Setplayer *setplayer;
+    Start *start;             // first page 
+    Setplayer *setplayer;          // setplayer
     showCards *showcards;
     Campaign *campaign;
     Game *game;
@@ -55,7 +55,7 @@ private:
     loadGames *load_page;
 
     // music players
-    QMediaPlayer* player;
-    QAudioOutput* audioOutput;
+    QMediaPlayer* player;            // this class and object is for play music 
+    QAudioOutput* audioOutput;          /// play music in output
 };
 #endif // MAINWINDOW_H

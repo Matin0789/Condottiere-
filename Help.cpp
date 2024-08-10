@@ -20,14 +20,18 @@ Help::Help(QWidget *parent)
 {
     ui->setupUi(this);
 
-    cardsImageRef["Bishop"]    = "border-image:url(" + QString(BISHOP_IMAGE)    + ")";
-    cardsImageRef["Drummer"]   = "border-image:url(" + QString(DRUMMER_IMAGE)   + ")";
-    cardsImageRef["Heroine"]   = "border-image:url(" + QString(HEROINE_IMAGE)   + ")";
-    cardsImageRef["Scarecrow"] = "border-image:url(" + QString(SCARECROW_IMAGE) + ")";
-    cardsImageRef["Spring"]    = "border-image:url(" + QString(SPRING_IMAGE)    + ")";
-    cardsImageRef["Winter"]    = "border-image:url(" + QString(WINTER_IMAGE)    + ")";
-    cardsImageRef["Spy"]       = "border-image:url(" + QString(SPY_IMAGE)       + ")";
-    cardsImageRef["Turncoat"]  = "border-image:url(" + QString(TURNCOAT_IMAGE)  + ")";
+    cardsImageRef["Bishop"]    = "border-image:url(" + QString(BISHOP_IMAGE)    + ")";            // Bishop image 
+    cardsImageRef["Drummer"]   = "border-image:url(" + QString(DRUMMER_IMAGE)   + ")";            // Drummer image 
+    cardsImageRef["Heroine"]   = "border-image:url(" + QString(HEROINE_IMAGE)   + ")";            // heroine image 
+    cardsImageRef["Scarecrow"] = "border-image:url(" + QString(SCARECROW_IMAGE) + ")";            // Scarecrow image
+    cardsImageRef["Spring"]    = "border-image:url(" + QString(SPRING_IMAGE)    + ")";            // Spring image
+    cardsImageRef["Winter"]    = "border-image:url(" + QString(WINTER_IMAGE)    + ")";            // winter image 
+    cardsImageRef["Spy"]       = "border-image:url(" + QString(SPY_IMAGE)       + ")";            // spy image 
+    cardsImageRef["Turncoat"]  = "border-image:url(" + QString(TURNCOAT_IMAGE)  + ")";            // turncoat image 
+    cardsImageRef["WhiteRakhsh"] = "border-image:url(" + std::string(WHITERAKHSH_IMAGE) + ")";           //This code is related to phase 3 of the project
+    cardsImageRef["WhiteSeals"] = "border-image:url(" + std::string(WHITESEALS_IMAGE) + ")";            //This code is related to phase 3 of the project
+    cardsImageRef["ShirinAghl"] = "border-image:url(" + std::string(SHIRINAGHL_IMAGE) + ")";           //This code is related to phase 3 of the project
+
 }
 
 Help::~Help()
@@ -50,65 +54,65 @@ void Help::on_ptn_back_clicked()
 void Help::on_cb_help_list_activated(int index)
 {
 
-}
-void Help::on_cb_help_list_currentTextChanged(const QString &arg1)
+} 
+void Help::on_cb_help_list_currentTextChanged(const QString &arg1)                             /// show help text fo player 
 {
     ui->label_2->setVisible(false);
     ui->lb_help_txt->setVisible(false);
     if (arg1 == "Game") {
-        ui->lb_help_txt->setText(QString::fromStdString(Game::getHelp()));
+        ui->lb_help_txt->setText(QString::fromStdString(Game::getHelp()));            ///  with gethelp function on the card class
         ui->lb_help_txt->setVisible(true);
     }
     else if(arg1 == "Bishop") {
-        ui->lb_help_txt->setText(QString::fromStdString(Bishop::getHelp()));
+        ui->lb_help_txt->setText(QString::fromStdString(Bishop::getHelp()));     ///  with gethelp function on the card class
         ui->lb_help_txt->setVisible(true);
         ui->label_2->setStyleSheet(cardsImageRef["Bishop"]);
         ui->label_2->setVisible(true);
     }
     else if(arg1 == "Heroine") {
-        ui->lb_help_txt->setText(QString::fromStdString(Heroine::getHelp()));
+        ui->lb_help_txt->setText(QString::fromStdString(Heroine::getHelp()));      ///  with gethelp function on the card class
         ui->lb_help_txt->setVisible(true);
         ui->label_2->setStyleSheet(cardsImageRef["Heroine"]);
         ui->label_2->setVisible(true);
     }
     else if(arg1 == "Drummer") {
-        ui->lb_help_txt->setText(QString::fromStdString(Drummer::getHelp()));
+        ui->lb_help_txt->setText(QString::fromStdString(Drummer::getHelp()));                 ///  with gethelp function on the card class
         ui->lb_help_txt->setVisible(true);
         ui->label_2->setStyleSheet(cardsImageRef["Drummer"]);
         ui->label_2->setVisible(true);
     }
     else if(arg1 == "Heroine") {
-        ui->lb_help_txt->setText(QString::fromStdString(Heroine::getHelp()));
+        ui->lb_help_txt->setText(QString::fromStdString(Heroine::getHelp()));        ///  with gethelp function on the card class
         ui->lb_help_txt->setVisible(false);
         ui->label_2->setStyleSheet(cardsImageRef["Heroine"]);
         ui->label_2->setVisible(true);
     }
     else if(arg1 == "Scarecrow") {
-        ui->lb_help_txt->setText(QString::fromStdString(Scarecrow::getHelp()));
+        ui->lb_help_txt->setText(QString::fromStdString(Scarecrow::getHelp()));                ///  with gethelp function on the card class
         ui->lb_help_txt->setVisible(true);
         ui->label_2->setStyleSheet(cardsImageRef["Scarecrow"]);
         ui->label_2->setVisible(true);
     }
     else if(arg1 == "Spring") {
-        ui->lb_help_txt->setText(QString::fromStdString(Spring::getHelp()));
+        ui->lb_help_txt->setText(QString::fromStdString(Spring::getHelp()));         ///  with gethelp function on the card class
         ui->lb_help_txt->setVisible(true);
         ui->label_2->setStyleSheet(cardsImageRef["Spring"]);
         ui->label_2->setVisible(true);
     }
     else if(arg1 == "Winter") {
-        ui->lb_help_txt->setText(QString::fromStdString(Winter::getHelp()));
+        ui->lb_help_txt->setText(QString::fromStdString(Winter::getHelp()));       ///  with gethelp function on the card class
         ui->lb_help_txt->setVisible(true);
         ui->label_2->setStyleSheet(cardsImageRef["Winter"]);
         ui->label_2->setVisible(true);
     }
     else if(arg1 == "Spy") {
-        ui->lb_help_txt->setText(QString::fromStdString(Spy::getHelp()));
+        ui->lb_help_txt->setText(QString::fromStdString(Spy::getHelp()));              ///  with gethelp function on the card class
         ui->lb_help_txt->setVisible(true);
         ui->label_2->setStyleSheet(cardsImageRef["Spy"]);
         ui->label_2->setVisible(true);
     }
     else if(arg1 == "Turncoat") {
-        ui->lb_help_txt->setText(QString::fromStdString(Turncoat::getHelp()));
+        ui->lb_help_txt->setText(QString::fromStdString(Turncoat::getHelp()));     ///  with gethelp function on the card class
         ui->lb_help_txt->setVisible(true);
         ui->label_2->setStyleSheet(cardsImageRef["Turncoat"]);
         ui->label_2->setVisible(true);

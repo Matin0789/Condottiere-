@@ -22,22 +22,22 @@ void Winner::declare(const Player &winner, BattleMarker& battleMarker, bool win)
         ui->label_2->setText("The player" +
                              QString::number(winner.getID() + 1) +
                              " Won the Battle and captured the " +
-                             QString::fromStdString(battleMarker.getState().getName()));
+                             QString::fromStdString(battleMarker.getState().getName()));   // show name of winner player
     }
     else {
         ui->label_2->setText("The battle was inconclusive and the state of " +
-                             QString::fromStdString(battleMarker.getState().getName()) +
+                             QString::fromStdString(battleMarker.getState().getName()) +    // show name of winner player
                              " still remains");
     }
 
     QEventLoop loop;
-    connect(ui->pushButton_3, SIGNAL(clicked(bool)), &loop, SLOT(quit()));
+    connect(ui->pushButton_3, SIGNAL(clicked(bool)), &loop, SLOT(quit()));      //signal and slot
     loop.exec();
-    disconnect(ui->pushButton_3, SIGNAL(clicked(bool)), &loop, SLOT(quit()));
+    disconnect(ui->pushButton_3, SIGNAL(clicked(bool)), &loop, SLOT(quit()));    //signal and slot
     this->hide();
 }
 
-void Winner::on_btn_save_clicked()
+void Winner::on_btn_save_clicked()    /// save button
 {
     emit save();
 }

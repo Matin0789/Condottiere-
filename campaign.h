@@ -7,11 +7,11 @@
 #include <QVector>
 
 #include <QDialog>
-#include <QGraphicsScene>
-#include <QGraphicsRectItem>
-#include <QGraphicsView>
+#include <QGraphicsScene>           // graphic
+#include <QGraphicsRectItem>         // rectangle 
+#include <QGraphicsView>              // view graphic
 #include <QParallelAnimationGroup>
-#include <QSequentialAnimationGroup>
+#include <QSequentialAnimationGroup>        // animation
 #include <QPropertyAnimation>
 
 #include <map>
@@ -34,7 +34,7 @@ class Campaign : public QMainWindow
 {
     Q_OBJECT
 signals:
-    void checked();
+    void checked();        // check signal 
 public:
     explicit Campaign(QWidget *parent = nullptr);
     ~Campaign();
@@ -51,23 +51,23 @@ private slots:
     void on_pushButton_140_clicked();
 
 private:
-    Ui::Campaign *ui;
-    Options *options;
+    Ui::Campaign *ui;         /// userinterface 
+    Options *options;             /// settings 
     Help *help;
-    QGraphicsScene *scene = new QGraphicsScene();
-    QGraphicsRectItem *rect = new QGraphicsRectItem();
-    QGraphicsView *view = new QGraphicsView(scene);
-    std::map<std::string, QString> cardsImageRef;
-    std::map<std::string, QString> markers;
-    std::map<std::string, QLabel*> stateLabels;
+    QGraphicsScene *scene = new QGraphicsScene();         /// object of Scene
+    QGraphicsRectItem *rect = new QGraphicsRectItem();         /// object of rectangle class  
+    QGraphicsView *view = new QGraphicsView(scene);               /// object of graphic view 
+    std::map<std::string, QString> cardsImageRef;                /// images
+    std::map<std::string, QString> markers;                          /// label of markers 
+    std::map<std::string, QLabel*> stateLabels;                       //// label on the states  
 
-    QVector<QVector<QLabel*>> playersCards_lbl;
-    QVector<QLabel*> colors_lbl;
-    QVector<QPushButton*> currentPlayerCards_btn;
+    QVector<QVector<QLabel*>> playersCards_lbl;                          /// vector of player cards with label 
+    QVector<QLabel*> colors_lbl;                                   /// vector of color of players   with label 
+    QVector<QPushButton*> currentPlayerCards_btn;                        // // cards 
 
     QString command;
 
-    QVector<QPropertyAnimation*> animations;
+    QVector<QPropertyAnimation*> animations;                       /// Animations 
 };
 
 #endif // CAMPAIGN_H

@@ -15,7 +15,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui(new Ui::MainWindow),
     game(new Game),
     battleground_page(new Locateinfo("BattleMarker", this)),
-    favorground_page(new Locateinfo( "FavorMarker", this)),
+    favorground_page(new Locateinfo( "FavorMarker", this)),                 // ///  set classes 
     start(new Start(this)),
     setplayer(new Setplayer(this)),
     campaign(new Campaign(this)),
@@ -28,15 +28,15 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     this->setWindowTitle("Condottiere");
 
-    ui->btn_sound->setStyleSheet("border-image:url(:/Description/Graphics/photos/volume.png);background-color:transparent");
+    ui->btn_sound->setStyleSheet("border-image:url(:/Description/Graphics/photos/volume.png);background-color:transparent");       // change stylesheets
 
-    player = new QMediaPlayer;
+    player = new QMediaPlayer;                 // play media 
     audioOutput = new QAudioOutput;
     player->setAudioOutput(audioOutput);
-    player->setSource(QUrl::fromLocalFile("../../Description/Graphics/Sounds/background_music.mp3"));
-    audioOutput->setVolume(1);
-    player->play();
-    player->setLoops(QMediaPlayer::Infinite);
+    player->setSource(QUrl::fromLocalFile("../../Description/Graphics/Sounds/background_music.mp3"));       // path of music of game    // 
+    audioOutput->setVolume(1);                          // set volume 
+    player->play();                                   // start music
+    player->setLoops(QMediaPlayer::Infinite);             // pause 
 }
 
 MainWindow::~MainWindow()
@@ -46,7 +46,7 @@ MainWindow::~MainWindow()
     delete start;
     delete setplayer;
     delete ui;
-    delete game;
+    delete game;                                            // distructor of objects 
     delete showcards;
     delete campaign;
     delete player;
@@ -109,7 +109,7 @@ void MainWindow::on_btn_load_game_clicked()
     hide();
     delete game;
     game = new Game;
-
+                                                                 // connect and disconnect of classes and objects  // 
     QObject::connect(game, &Game::get_players_number, start, &Start::get_players_number);
     QObject::connect(game, &Game::get_player_page_show, setplayer, &Setplayer::page_show);
     QObject::connect(setplayer, &Setplayer::get_player, game, &Game::get_player);
@@ -151,12 +151,12 @@ void MainWindow::on_btn_sound_clicked()
 {
     static bool enable = true;
     if (enable == true){
-        ui->btn_sound->setStyleSheet("border-image:url(:/Description/Graphics/photos/mute.png);background-color:transparent");
+        ui->btn_sound->setStyleSheet("border-image:url(:/Description/Graphics/photos/mute.png);background-color:transparent");       // stylesheets of mute button   //path
         player->pause();
-        enable = false;
+        enable = false; 
     }
     else {
-        ui->btn_sound->setStyleSheet("border-image:url(:/Description/Graphics/photos/volume.png);background-color:transparent");
+        ui->btn_sound->setStyleSheet("border-image:url(:/Description/Graphics/photos/volume.png);background-color:transparent");    // stylesheets of unmute button   //path
         player->play();
         enable = true;
     }

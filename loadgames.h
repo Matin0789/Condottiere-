@@ -18,7 +18,7 @@ public:
 public slots:
     std::string load();
 private:
-    Ui::loadGames *ui;
+    Ui::loadGames *ui;    //userinterface 
 };
 
 #endif // LOADGAMES_H

@@ -7,7 +7,7 @@ GameWinner::GameWinner(QWidget *parent)
     , ui(new Ui::GameWinner)
 {
     ui->setupUi(this);
-
+                                                                 /// this is for show to how set photo on the labels and show on ui /// 
     markers["BattleMarker"] = "border-image:url(" + QString(BATTLE_MARKER_IMAGE)  + ");" + " background-color:transparent";
     markers["FavorMarker"]  = "border-image:url(" + QString(PEACE_MARKER_IMAGE)   + ");" + " background-color:transparent";
     markers["blue"]         = "border-image:url(" + QString(PLAYER_BLUE_MARKER_IMAGE)  + ");" + " background-color:transparent";
@@ -46,19 +46,19 @@ void GameWinner::declare(const std::vector<Player> &players, const Player &winne
         label.second->setStyleSheet("");
         label.second->setVisible(false);
     }
-    ui->lb_player_counter->setText("Player " + QString::number(winner.getID() + 1) + " won this game and became the emperor of the world");
+    ui->lb_player_counter->setText("Player " + QString::number(winner.getID() + 1) + " won this game and became the emperor of the world");    // show text for winner 
 
     for (auto &&player : players) {
         for (auto &&state_name : player.get_states_name()) {
-            stateLabels[state_name]->setStyleSheet(markers[player.getColor()]);
+            stateLabels[state_name]->setStyleSheet(markers[player.getColor()]);              // show color 
             stateLabels[state_name]->setVisible(true);
         }
     }
 
     QEventLoop loop;
-    connect(ui->pushButton_3, SIGNAL(clicked(bool)), &loop, SLOT(quit()));
+    connect(ui->pushButton_3, SIGNAL(clicked(bool)), &loop, SLOT(quit()));          //signal and slots 
     loop.exec();
-    disconnect(ui->pushButton_3, SIGNAL(clicked(bool)), &loop, SLOT(quit()));
+    disconnect(ui->pushButton_3, SIGNAL(clicked(bool)), &loop, SLOT(quit()));          // aignal and slots 
     this->hide();
 }
 
@@ -70,7 +70,7 @@ void GameWinner::on_pushButton_4_clicked()
 
 void GameWinner::on_pushButton_3_clicked()
 {
-    QMainWindow *menu = qobject_cast<QMainWindow*>(parent());
+    QMainWindow *menu = qobject_cast<QMainWindow*>(parent());           /// go to main menu page 
     menu->show();
     this->hide();
 }

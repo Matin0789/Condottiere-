@@ -21,7 +21,7 @@ public:
     explicit Setplayer(QWidget *parent = nullptr);
     ~Setplayer();
 public slots:
-    void page_show(std::map<QString, Color>, size_t);
+    void page_show(std::map<QString, Color>, size_t);      // show colors 
 private slots:
     void on_btn_next_clicked();
     void on_btn_back_clicked();
@@ -30,7 +30,7 @@ signals:
 
 private:
     Ui::Setplayer *ui;
-    std::map<QString, Color> freeColors;
+    std::map<QString, Color> freeColors;      // this map is for color of markers // player marker 
 
 };
 

@@ -20,11 +20,11 @@ public:
     ~Winner();
 
 public slots:
-    void declare(const Player&, BattleMarker&, bool);
+    void declare(const Player&, BattleMarker&, bool);  // for battlemarker and player number
 private slots:
     void on_btn_save_clicked();
 signals:
-    void save();
+    void save();   // save signal
 private:
     Ui::Winner *ui;
 };

@@ -28,12 +28,12 @@ void Options::on_btn_Continue_clicked()
 void Options::on_btn_load_games_clicked()
 {
     this->hide();
-    emit loadGame();
+    emit loadGame();          //  load games 
 }
 
 void Options::on_btn_audio_clicked()
 {
-    emit muteAudio();
+    emit muteAudio();                       // mute music
 }
 
 void Options::on_btn_quit_clicked()

@@ -19,12 +19,12 @@ loadGames::~loadGames()
     delete ui;
 }
 
-std::string loadGames::load()
+std::string loadGames::load()                   /// this function is for show load games 
 {
 
     std::ifstream file(SAVE_CONFIG);
     if (!file)
-        throw std::runtime_error("save config file cannot be open");
+        throw std::runtime_error("save config file cannot be open");       // exception handeling       // if runtime error 
     std::string saveName;
     while(file >> quoted(saveName)) {
         ui->comboBox->addItem(QString::fromStdString(saveName));
@@ -34,9 +34,9 @@ std::string loadGames::load()
 
     QEventLoop loop;
 
-    connect(ui->btn_load, SIGNAL(clicked(bool)), &loop, SLOT(quit()));
+    connect(ui->btn_load, SIGNAL(clicked(bool)), &loop, SLOT(quit()));         // signal and slots 
     loop.exec();
-    connect(ui->btn_load, SIGNAL(clicked(bool)), &loop, SLOT(quit()));
+    connect(ui->btn_load, SIGNAL(clicked(bool)), &loop, SLOT(quit()));         // signal and slots 
 
     this->hide();
 

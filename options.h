@@ -19,14 +19,15 @@ public:
     ~Options();
 
 private slots:
-    void on_btn_save_clicked();
-    void on_btn_Continue_clicked();
-    void on_btn_load_games_clicked();
-    void on_btn_audio_clicked();
-    void on_btn_quit_clicked();
+         //  this functions is for buttons 
+    void on_btn_save_clicked();    //save   
+    void on_btn_Continue_clicked();     // continue
+    void on_btn_load_games_clicked();      //loads 
+    void on_btn_audio_clicked();           // audio
+    void on_btn_quit_clicked();           //quit 
 
 private:
-    Ui::Options *ui;
+    Ui::Options *ui;        /// objects of userinterface 
 };
 
 #endif // OPTIONS_H

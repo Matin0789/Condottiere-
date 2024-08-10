@@ -21,9 +21,9 @@ public:
 
 private:
     Ui::Shapes *ui;
-    enumcolor *color;
-    PurpleCard *purplecard;
-    UserInterface *userinterface;
+    enumcolor *color;  // marker colors
+    PurpleCard *purplecard;         // cards
+    UserInterface *userinterface;         // ui
 };
 
 #endif // SHAPES_H

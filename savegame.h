@@ -17,9 +17,9 @@ public:
 public slots:
     void save();
 signals:
-    void data_save(std::string);
+    void data_save(std::string);      // signal and slots 
 private slots:
-    void on_btn_save_clicked();
+    void on_btn_save_clicked();  //save button
 
 private:
     Ui::saveGame *ui;

@@ -23,6 +23,8 @@ public:
 public slots:
     State* set_ground(const std::vector<Player>&, const Player&, GameBoard&, FavorMarker&);
 private slots:
+
+                                  /////  buttons  /////
     void on_lb_state_linkActivated(const QString &link);
     void on_cb_activated(int index);
     void on_lb_peace_linkActivated(const QString &link);
@@ -31,8 +33,8 @@ private slots:
     void on_btn_back_clicked();
     void on_cb_2_currentTextChanged(const QString &arg1);
 
-private:
-    Ui::Locateinfo *ui;
+private:  
+    Ui::Locateinfo *ui;               //  userinterface 
     Campaign *Campaign;
     Game *game;
     UserInterface *user;
@@ -42,10 +44,10 @@ private:
     QString currentState;
     QString type;
     std::map<std::string, QString> markers;
-    std::map<std::string, QLabel*> stateLabels;
+    std::map<std::string, QLabel*> stateLabels;       // only labels on the map
 
-    QMediaPlayer* player;
-    QAudioOutput* audioOutput;
+    QMediaPlayer* player;             // labels 
+    QAudioOutput* audioOutput;       // for labels 
 
 };
 

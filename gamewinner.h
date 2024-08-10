@@ -26,8 +26,8 @@ private slots:
     void on_pushButton_3_clicked();
 private:
     Ui::GameWinner *ui;
-    std::map<std::string, QString> markers;
-    std::map<std::string, QLabel*> stateLabels;
+    std::map<std::string, QString> markers;              // map structure for markers 
+    std::map<std::string, QLabel*> stateLabels;         // map structure for cards 
 };
 
 #endif // GAMEWINNER_H

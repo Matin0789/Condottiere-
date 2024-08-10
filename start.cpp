@@ -19,9 +19,9 @@ Start::~Start()
     delete ui;
 }
 
-size_t Start::get_players_number()
+size_t Start::get_players_number()      // players information
 {
-    ui->sb->setValue(3);
+    ui->sb->setValue(3);   // 3 4 5 6 
     this->show();
     QEventLoop loop;
     connect(ui->btn_next, SIGNAL(clicked(bool)), &loop, SLOT(quit()));

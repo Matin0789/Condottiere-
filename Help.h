@@ -30,7 +30,7 @@ private slots:
 
 private:
     Ui::Help *ui;
-    std::map<std::string, QString> cardsImageRef;
+    std::map<std::string, QString> cardsImageRef;    // map of cards for show informations 
 };
 
 #endif // HELP_H

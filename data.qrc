@@ -10,6 +10,9 @@
         <file>data/help/SpyHelp.txt</file>
         <file>data/help/TurncoatHelp.txt</file>
         <file>data/help/WinterHelp.txt</file>
+        <file>data/help/ShirinAghlHelp.txt</file>
+        <file>data/help/WhitesealsHelp.txt</file>
+        <file>data/help/WhiterakhshHelp.txt</file>
         <file>data/save/save_config.txt</file>
     </qresource>
 </RCC>

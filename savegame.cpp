@@ -21,12 +21,12 @@ saveGame::~saveGame()
 void saveGame::save()
 {
     this->show();
-    std::ofstream file(SAVE_CONFIG, std::ios::app);
+    std::ofstream file(SAVE_CONFIG, std::ios::app);           /// connection txt file input or output
     QEventLoop loop;
-    connect(ui->btn_save, SIGNAL(clicked(bool)), &loop, SLOT(quit()));
+    connect(ui->btn_save, SIGNAL(clicked(bool)), &loop, SLOT(quit()));           /// signal and slots  
     loop.exec();
     disconnect(ui->btn_save, SIGNAL(clicked(bool)), &loop, SLOT(quit()));
-    file << ui->lineEdit_name->text().toStdString() << std::endl;
+    file << ui->lineEdit_name->text().toStdString() << std::endl;               ///   name 
     this->hide();
     emit data_save(SAVE_FILE(ui->lineEdit_name->text().toStdString()));
 }

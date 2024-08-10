@@ -22,6 +22,9 @@ Campaign::Campaign(QWidget *parent)
     cardsImageRef["Winter"]    = "border-image:url(" + QString(WINTER_IMAGE)    + ")";
     cardsImageRef["Spy"]       = "border-image:url(" + QString(SPY_IMAGE)       + ")";
     cardsImageRef["Turncoat"]  = "border-image:url(" + QString(TURNCOAT_IMAGE)  + ")";
+    cardsImageRef["WhiteRakhsh"] = "border-image:url(" + std::string(WHITERAKHSH_IMAGE) + ")";           //This code is related to phase 3 of the project
+    cardsImageRef["WhiteSeals"] = "border-image:url(" + std::string(WHITESEALS_IMAGE) + ")";            //This code is related to phase 3 of the project
+    cardsImageRef["ShirinAghl"] = "border-image:url(" + std::string(SHIRINAGHL_IMAGE) + ")";           //This code is related to phase 3 of the project
     cardsImageRef["1"]         = "border-image:url(" + QString(ONE_IMAGE)  + ")";
     cardsImageRef["2"]         = "border-image:url(" + QString(TWO_IMAGE)  + ")";
     cardsImageRef["3"]         = "border-image:url(" + QString(THREE_IMAGE)  + ")";
@@ -69,7 +72,8 @@ Campaign::Campaign(QWidget *parent)
     QVector<QLabel*> tmpPlayer4Cards;
     QVector<QLabel*> tmpPlayer5Cards;
     QVector<QLabel*> tmpPlayer6Cards;
-
+                                         /// push back cards on vectors ///
+                                         //   1
     tmpPlayer1Cards.push_back(ui->lb_plr_1_cd_1);
     tmpPlayer1Cards.push_back(ui->lb_plr_1_cd_2);
     tmpPlayer1Cards.push_back(ui->lb_plr_1_cd_3);
@@ -84,7 +88,7 @@ Campaign::Campaign(QWidget *parent)
     tmpPlayer1Cards.push_back(ui->lb_plr_1_cd_12);
     tmpPlayer1Cards.push_back(ui->lb_plr_1_cd_13);
     tmpPlayer1Cards.push_back(ui->lb_plr_1_cd_14);
-
+                                        ////  2
     tmpPlayer2Cards.push_back(ui->lb_plr_2_cd_1);
     tmpPlayer2Cards.push_back(ui->lb_plr_2_cd_2);
     tmpPlayer2Cards.push_back(ui->lb_plr_2_cd_3);
@@ -99,7 +103,7 @@ Campaign::Campaign(QWidget *parent)
     tmpPlayer2Cards.push_back(ui->lb_plr_2_cd_12);
     tmpPlayer2Cards.push_back(ui->lb_plr_2_cd_13);
     tmpPlayer2Cards.push_back(ui->lb_plr_2_cd_14);
-
+                                            ///       3
     tmpPlayer3Cards.push_back(ui->lb_plr_3_cd_1);
     tmpPlayer3Cards.push_back(ui->lb_plr_3_cd_2);
     tmpPlayer3Cards.push_back(ui->lb_plr_3_cd_3);
@@ -114,7 +118,7 @@ Campaign::Campaign(QWidget *parent)
     tmpPlayer3Cards.push_back(ui->lb_plr_3_cd_12);
     tmpPlayer3Cards.push_back(ui->lb_plr_3_cd_13);
     tmpPlayer3Cards.push_back(ui->lb_plr_3_cd_14);
-
+                                        //      4
     tmpPlayer4Cards.push_back(ui->lb_plr_4_cd_1);
     tmpPlayer4Cards.push_back(ui->lb_plr_4_cd_2);
     tmpPlayer4Cards.push_back(ui->lb_plr_4_cd_3);
@@ -129,7 +133,7 @@ Campaign::Campaign(QWidget *parent)
     tmpPlayer4Cards.push_back(ui->lb_plr_4_cd_12);
     tmpPlayer4Cards.push_back(ui->lb_plr_4_cd_13);
     tmpPlayer4Cards.push_back(ui->lb_plr_4_cd_14);
-
+                                                //     5
     tmpPlayer5Cards.push_back(ui->lb_plr_5_cd_1);
     tmpPlayer5Cards.push_back(ui->lb_plr_5_cd_2);
     tmpPlayer5Cards.push_back(ui->lb_plr_5_cd_3);
@@ -144,7 +148,7 @@ Campaign::Campaign(QWidget *parent)
     tmpPlayer5Cards.push_back(ui->lb_plr_5_cd_12);
     tmpPlayer5Cards.push_back(ui->lb_plr_5_cd_13);
     tmpPlayer5Cards.push_back(ui->lb_plr_5_cd_14);
-
+                                         ///     6
     tmpPlayer6Cards.push_back(ui->lb_plr_6_cd_1);
     tmpPlayer6Cards.push_back(ui->lb_plr_6_cd_2);
     tmpPlayer6Cards.push_back(ui->lb_plr_6_cd_3);
@@ -191,35 +195,35 @@ Campaign::~Campaign()
     delete ui;
 }
 
-void Campaign::startWar(const std::vector<Player> &players, BattleMarker & battleMarker, FavorMarker & favorMarker)
+void Campaign::startWar(const std::vector<Player> &players, BattleMarker & battleMarker, FavorMarker & favorMarker)          // handlling game 
 {
     this->show();
-    for(auto &&label : stateLabels) {
+    for(auto &&label : stateLabels) {             // set player card
         label.second->setVisible(false);
         label.second->setStyleSheet("");
     }
     for (auto &&player : players) {
-        for (auto &&state_name : player.get_states_name()) {
+        for (auto &&state_name : player.get_states_name()) {             /// state label 
             stateLabels[state_name]->setVisible(true);
-            stateLabels[state_name]->setStyleSheet(markers[player.getColor()]);
+            stateLabels[state_name]->setStyleSheet(markers[player.getColor()]);        // change stylesheet 
         }
     }
     stateLabels[battleMarker.getState().getName()]->setStyleSheet(markers["BattleMarker"]);
     stateLabels[battleMarker.getState().getName()]->setVisible(true);
     if (favorMarker.is_set()) {
-        stateLabels[favorMarker.getState().getName()]->setStyleSheet(markers["FavorMarker"]);
-        stateLabels[favorMarker.getState().getName()]->setVisible(true);
+        stateLabels[favorMarker.getState().getName()]->setStyleSheet(markers["FavorMarker"]);        // name of state 
+        stateLabels[favorMarker.getState().getName()]->setVisible(true);                  
     }
 }
 
-std::string Campaign::getCommand(const std::vector<Player>& players, const Player & currentPlayer, const Card * season)
+std::string Campaign::getCommand(const std::vector<Player>& players, const Player & currentPlayer, const Card * season)         // command 
 {
     ui->btn_showCards->setVisible(false);
     command = "";
-    ui->lb_season->setVisible(false);
+    ui->lb_season->setVisible(false);                  // set label for season cards 
     ui->lb_season->setStyleSheet("");
     for(auto && currentPlayerCard_lbl :currentPlayerCards_btn) {
-        currentPlayerCard_lbl->setVisible(false);
+        currentPlayerCard_lbl->setVisible(false);               //set player card
         currentPlayerCard_lbl->setStyleSheet("");
         currentPlayerCard_lbl->setText("");
     }
@@ -259,7 +263,7 @@ std::string Campaign::getCommand(const std::vector<Player>& players, const Playe
     }
 
     QParallelAnimationGroup group;
-    ui->lb_player->setStyleSheet("QLabel { background-color : " + QString::fromStdString(currentPlayer.getColor()) +";}");
+    ui->lb_player->setStyleSheet("QLabel { background-color : " + QString::fromStdString(currentPlayer.getColor()) +";}");      // background label 
     //
     std::vector<const Card*> currentPlayerPlayedCard = currentPlayer.getPlayedCards();
     for (int i = 0; i < currentPlayerPlayedCard.size(); i++) {
@@ -284,7 +288,7 @@ std::string Campaign::getCommand(const std::vector<Player>& players, const Playe
         QRect end(currentPlayerCards_btn[i + currentPlayerPlayedCard.size()]->geometry());
         currentPlayerCards_btn[i + currentPlayerPlayedCard.size()]->setGeometry(currentPlayerCards_btn[0]->geometry());
 
-        animations[i + currentPlayerPlayedCard.size()]->setDuration(400);
+        animations[i + currentPlayerPlayedCard.size()]->setDuration(400);                               // animation to show cards 
         animations[i + currentPlayerPlayedCard.size()]->setStartValue(currentPlayerCards_btn[0]->geometry());
         animations[i + currentPlayerPlayedCard.size()]->setEndValue(end);
         group.addAnimation(animations[i + currentPlayerPlayedCard.size()]);
@@ -379,7 +383,7 @@ std::string Campaign::scarecrow_get_card(const Player & currentPlayer)
 
 void Campaign::findSelectedCard()
 {
-    QString check = qobject_cast<QPushButton*>(sender())->styleSheet();
+    QString check = qobject_cast<QPushButton*>(sender())->styleSheet();     /// select card
     for(auto&& cardImageRef : cardsImageRef) {
         if (check == cardImageRef.second) {
             command = QString::fromStdString(cardImageRef.first);
