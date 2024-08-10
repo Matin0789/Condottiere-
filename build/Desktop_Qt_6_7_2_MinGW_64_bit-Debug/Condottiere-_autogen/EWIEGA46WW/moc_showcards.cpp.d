@@ -398,6 +398,7 @@ C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_a
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
   C:/project/Condottiere-/Help.h \
   C:/project/Condottiere-/campaign.h \
+  C:/project/Condottiere-/inc/card/ShirinAghl.h \
   C:/project/Condottiere-/inc/card/bishop.h \
   C:/project/Condottiere-/inc/card/card.h \
   C:/project/Condottiere-/inc/card/drummer.h \
@@ -408,6 +409,8 @@ C:/project/Condottiere-/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Condottiere-_a
   C:/project/Condottiere-/inc/card/spring.h \
   C:/project/Condottiere-/inc/card/spy.h \
   C:/project/Condottiere-/inc/card/turncoat.h \
+  C:/project/Condottiere-/inc/card/whiterakhsh.h \
+  C:/project/Condottiere-/inc/card/whiteseals.h \
   C:/project/Condottiere-/inc/card/winter.h \
   C:/project/Condottiere-/inc/card/yellowcard.h \
   C:/project/Condottiere-/inc/enumcolor.h \

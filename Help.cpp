@@ -10,7 +10,10 @@
 #include "winter.h"
 #include "spring.h"
 #include "turncoat.h"
-#include "game.h"
+#include "whiteseals.h"
+#include "whiterakhsh.h"
+#include "ShirinAghl.h"
+
 
 #include <QMainWindow>
 
@@ -29,7 +32,7 @@ Help::Help(QWidget *parent)
     cardsImageRef["Spy"]         = "border-image:url(" + QString(SPY_IMAGE)       + ")";            // spy image
     cardsImageRef["Turncoat"]    = "border-image:url(" + QString(TURNCOAT_IMAGE)  + ")";            // turncoat image
     cardsImageRef["WhiteRakhsh"] = "border-image:url(" + QString(WHITERAKHSH_IMAGE) + ")";           //This code is related to phase 3 of the project
-    cardsImageRef["WhiteSeals"]  = "border-image:url(" + QString(WHITESEALS_IMAGE) + ")";            //This code is related to phase 3 of the project
+    cardsImageRef["WhiteSeal"]   = "border-image:url(" + QString(WHITESEALS_IMAGE) + ")";            //This code is related to phase 3 of the project
     cardsImageRef["ShirinAghl"]  = "border-image:url(" + QString(SHIRINAGHL_IMAGE) + ")";           //This code is related to phase 3 of the project
 
 }
@@ -117,5 +120,24 @@ void Help::on_cb_help_list_currentTextChanged(const QString &arg1)              
         ui->label_2->setStyleSheet(cardsImageRef["Turncoat"]);
         ui->label_2->setVisible(true);
     }
+    else if(arg1 == "WhiteSeal") {
+        ui->lb_help_txt->setText(QString::fromStdString(WhiteSeal::getHelp()));     ///  with gethelp function on the card class
+        ui->lb_help_txt->setVisible(true);
+        ui->label_2->setStyleSheet(cardsImageRef["WhiteSeal"]);
+        ui->label_2->setVisible(true);
+    }
+        else if(arg1 == "WhiteRakhsh") {
+        ui->lb_help_txt->setText(QString::fromStdString(WhiteRakhsh::getHelp()));     ///  with gethelp function on the card class
+        ui->lb_help_txt->setVisible(true);
+        ui->label_2->setStyleSheet(cardsImageRef["WhiteRakhsh"]);
+        ui->label_2->setVisible(true);
+    }
+        else if(arg1 == "ShirinAghl") {
+        ui->lb_help_txt->setText(QString::fromStdString(ShirinAghl::getHelp()));     ///  with gethelp function on the card class
+        ui->lb_help_txt->setVisible(true);
+        ui->label_2->setStyleSheet(cardsImageRef["ShirinAghl"]);
+        ui->label_2->setVisible(true);
+    }
+
 }
 

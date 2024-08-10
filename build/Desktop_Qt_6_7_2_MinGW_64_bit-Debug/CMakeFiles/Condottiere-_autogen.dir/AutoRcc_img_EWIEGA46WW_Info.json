@@ -10,6 +10,12 @@
 	"INPUTS" : 
 	[
 		"C:/project/Condottiere-/Description/Graphics/Assets/Map.png",
+		"C:/project/Condottiere-/Description/Graphics/Assets/phase/q.png",
+		"C:/project/Condottiere-/Description/Graphics/Assets/phase/whiteseal.jpg",
+		"C:/project/Condottiere-/Description/Graphics/Assets/phase/hh.jpg",
+		"C:/project/Condottiere-/Description/Graphics/Assets/phase/sa.png",
+		"C:/project/Condottiere-/Description/Graphics/Assets/phase/wh.png",
+		"C:/project/Condottiere-/Description/Graphics/Assets/phase/ws.png",
 		"C:/project/Condottiere-/Description/Graphics/Assets/Banafsh/Bahar.png",
 		"C:/project/Condottiere-/Description/Graphics/Assets/Banafsh/Parcham_Dar.png",
 		"C:/project/Condottiere-/Description/Graphics/Assets/Banafsh/Shah_Dokht.png",

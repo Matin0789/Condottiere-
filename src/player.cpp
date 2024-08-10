@@ -13,6 +13,9 @@
 #include "winter.h"
 #include "spring.h"
 #include "turncoat.h"
+#include "whiterakhsh.h"
+#include "whiteseals.h"
+#include "ShirinAghl.h"
 
 #include "filepath.h"
 
@@ -236,7 +239,7 @@ bool Player::load(std::string filePath, GameBoard& gameBoard) {
     if (!file) {
         throw std::runtime_error("file " + filePath + " cannot be open in player" + std::to_string(ID));
     }
-
+    
     std::string finder;
     while(getline(file, finder)) {
         if (finder == ("player" + std::to_string(ID))) {
@@ -301,6 +304,15 @@ bool Player::load(std::string filePath, GameBoard& gameBoard) {
             }
             else if (cardName == "Spring") {
                 cards.push_back(new Spring(SPRING_HELP_FILE));
+            }
+            else if (cardName == "WhiteRakhsh") {
+                cards.push_back(new WhiteRakhsh(WHITERAKHSH_HELP_FILE));
+            }
+            else if (cardName == "WhiteSeal") {
+                cards.push_back(new WhiteSeal(WHITESEALS_HELP_FILE));
+            }
+            else if (cardName == "ShirinAghl") {
+                cards.push_back(new ShirinAghl(SHIRINAGHL_HELP_FILE));
             }
             else 
                 throw std::runtime_error("card" + cardName + " not found");

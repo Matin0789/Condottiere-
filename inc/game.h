@@ -21,10 +21,15 @@
 #include "winter.h"
 #include "spring.h"
 #include "turncoat.h"
+#include "ShirinAghl.h"
+#include "whiterakhsh.h"
+#include "whiteseals.h"
+
 #include "marker.h"
 #include "playermarker.h"
 #include "favormarker.h"
 #include "battlemarker.h"
+
 
 class Game : public QObject
 {

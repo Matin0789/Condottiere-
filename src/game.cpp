@@ -77,6 +77,14 @@ Game::Game(QObject *parent) :
     for (int i = 0;i < 12;i++){
         cards.push_back(new Spy(SPY_HELP_FILE));
     }
+    for (int i = 0;i < 1;i++){
+        cards.push_back(new WhiteSeal(WHITESEALS_HELP_FILE));
+        cards.push_back(new ShirinAghl(SHIRINAGHL_HELP_FILE));
+    }
+    for (int i = 0;i < 2;i++){
+        cards.push_back(new WhiteRakhsh(WHITERAKHSH_HELP_FILE));
+
+    }
 }
 
 Game::~Game() {
@@ -471,6 +479,15 @@ void Game::load(std::string filePath) {
         else if (cardName == "Spring") {
             cards.push_back(new Spring(SPRING_HELP_FILE));
         }
+        else if (cardName == "WhiteRakhsh") {
+            cards.push_back(new WhiteRakhsh(WHITERAKHSH_HELP_FILE));
+        }
+        else if (cardName == "WhiteSeal") {
+            cards.push_back(new WhiteSeal(WHITESEALS_HELP_FILE));
+        }
+        else if (cardName == "ShirinAghl") {
+            cards.push_back(new ShirinAghl(SHIRINAGHL_HELP_FILE));
+        }
         else  {
             throw std::runtime_error("card" + cardName + " not found");
         }
@@ -548,6 +565,15 @@ void Game::war(int currentPlayerID) {     //This function starts working when th
                 checkWhiteRakhshApply = activePlayers[i]->getID();          //This code is related to phase 3 of the project
                 break;
             }
+            else if (drawnCard->getType() == "WhiteSeal") {
+                for(auto && player: players) {
+                    cards.push_back(player.burnPlayedCards());
+                }
+            }
+            else if (drawnCard->getType() == "ShirinAghl") {
+                drawnCard->shirinAghlFeature(*activePlayers[i]);
+            }
+                
             else if (drawnCard->getType() == "Scarecrow"){
                 if (!activePlayers[i]->getPlayedCards().empty()) {
                     std::string choose = emit scarecrow_get_card(*activePlayers[i]);

@@ -18,6 +18,7 @@ public:
     unsigned int getPriority() const;
 	void setPoint(unsigned int);
 	unsigned int getPoint() const;
+    virtual void shirinAghlFeature(const & Player) = 0 ;
 protected:
     unsigned int point;
 private:

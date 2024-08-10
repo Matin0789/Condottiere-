@@ -96,5 +96,11 @@
         <file>Description/Graphics/Assets/zard/009.png</file>
         <file>Description/Graphics/Assets/zard/010.png</file>
         <file>Description/Graphics/Assets/zard/Back.png</file>
+        <file>Description/Graphics/Assets/phase/sa.png</file>
+        <file>Description/Graphics/Assets/phase/wh.png</file>
+        <file>Description/Graphics/Assets/phase/ws.png</file>
+        <file>Description/Graphics/Assets/phase/whiteseal.jpg</file>
+        <file>Description/Graphics/Assets/phase/q.png</file>
+        <file>Description/Graphics/Assets/phase/hh.jpg</file>
     </qresource>
 </RCC>

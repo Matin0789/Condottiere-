@@ -9,7 +9,7 @@
 
 std::string WhiteSeal::help;
 
-WhiteSeal::WhiteSeal(std::string helpFilePath) : PurpleCard(0,"whiteseals",3){
+WhiteSeal::WhiteSeal(std::string helpFilePath) : PurpleCard(0,"WhiteSeal",3){
     std::ifstream helpFile(helpFilePath);
     if (helpFile.is_open()){
         std::stringstream helpString;
