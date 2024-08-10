@@ -141,11 +141,10 @@ size_t Game::warـanalyst(){
         });
     for (auto &&purpleCard : purpleCards)
     {
-        if (purpleCard.second->getType() == "Drummer") {
-            if (drummer_set[purpleCard.first] == false) {
-                purpleCard.second->applyFeature(pointCards, purpleCard.first);
-                drummer_set[purpleCard.first] = true;
-            }
+        if (purpleCard.second->getType() == "Spy") {
+           // if () {
+
+            //}
         }
         else{
             purpleCard.second->applyFeature(pointCards, purpleCard.first);
@@ -486,6 +485,7 @@ std::pair<size_t, std::pair<size_t, size_t>> Game::war(int currentPlayerID) {   
             }
             else{
                 if (drawnCard->getType() == "Bishop") {
+                    
                     favorSetterID = activePlayers[i]->getID();
                 }
                 else if (drawnCard->getType() == "Spy") {
