@@ -1,20 +1,18 @@
-#ifndef BISHOP_H
-#define BISHOP_H
-
-#include <string>
+#ifndef WHITESEALS_H
+#define WHITESEALS_H
 
 #include "purplecard.h"
 
-
-class Bishop : public PurpleCard {
+class WhiteSeal : public PurpleCard {
 public:
-    Bishop(std::string); // (help file path)
+    WhiteSeal
+(std::string); // (help file path)
     static std::string getHelp();
     virtual void applyFeature(std::vector<std::vector<unsigned int>>&, int) const override;
+
 protected:
 private:
     static std::string help;
-    
 };
 
-#endif // BISHOP_H
+#endif // WHITESEALS_H

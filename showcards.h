@@ -40,14 +40,14 @@ private slots:
 
 private:
     Ui::showCards *ui;
-    Campaign *campaign;
-    QVector<QLabel*> cardLabel;
-    std::map<std::string, std::string> cardsImageRef;
+    Campaign *campaign;   // object of central page
+    QVector<QLabel*> cardLabel; // vector of cards
+    std::map<std::string, std::string> cardsImageRef; // map of cards
 
-    QVector<QPropertyAnimation*> animation;
+    QVector<QPropertyAnimation*> animation;  //vector of cards animation
 
-    QMediaPlayer* audioPlayer;
-    QAudioOutput* audioOutput;
+    QMediaPlayer* audioPlayer;   // object for play animation
+    QAudioOutput* audioOutput;  // object for play audio
 
 };
 
